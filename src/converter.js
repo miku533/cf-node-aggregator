@@ -6,13 +6,18 @@ import yaml from 'js-yaml';
 export class ClashConverter {
   constructor(config) {
     this.config = config;
+    this.nameCounter = new Map(); // 用于跟踪重复的名称
   }
 
   /**
    * 将解析后的节点转换为 Clash 配置
    */
   convert(nodes) {
+    this.nameCounter.clear(); // 重置计数器
     const proxies = nodes.map(node => this.convertNode(node)).filter(Boolean);
+    
+    // 确保所有节点名称唯一
+    this.ensureUniqueNames(proxies);
     
     const clashConfig = {
       port: this.config.port || 7890,
@@ -154,6 +159,35 @@ export class ClashConverter {
       protocol: node.protocol,
       obfs: node.obfs
     };
+  }
+
+  /**
+   * 确保所有节点名称唯一
+   */
+  ensureUniqueNames(proxies) {
+    const nameCount = new Map();
+    
+    // 第一遍：统计每个名称出现的次数
+    proxies.forEach(proxy => {
+      const count = nameCount.get(proxy.name) || 0;
+      nameCount.set(proxy.name, count + 1);
+    });
+    
+    // 第二遍：为重复的名称添加编号
+    const nameIndex = new Map();
+    proxies.forEach(proxy => {
+      const originalName = proxy.name;
+      const totalCount = nameCount.get(originalName);
+      
+      if (totalCount > 1) {
+        const index = nameIndex.get(originalName) || 0;
+        nameIndex.set(originalName, index + 1);
+        
+        if (index > 0) {
+          proxy.name = `${originalName} [${index}]`;
+        }
+      }
+    });
   }
 
   /**

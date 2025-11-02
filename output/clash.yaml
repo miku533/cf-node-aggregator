@@ -395,6 +395,19 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
+  - name: 美国 CloudFlare节点 [1]
+    type: vmess
+    server: 104.21.46.90
+    port: 443
+    uuid: 1ae6dcb3-8d05-4eee-b550-32904c88c312
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /ri9mOOVJuAimB74kgXZ
+      headers:
+        Host: fde63b24-7fe1-5a22-949e-a30c5a39eb58.freevpnatm.dpdns.org
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -446,6 +459,7 @@ proxy-groups:
       - US_speednode_0063
       - 美国 CloudFlare节点
       - 加拿大 V2CROSS.COM
+      - 美国 CloudFlare节点 [1]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -493,6 +507,7 @@ proxy-groups:
       - US_speednode_0063
       - 美国 CloudFlare节点
       - 加拿大 V2CROSS.COM
+      - 美国 CloudFlare节点 [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -542,6 +557,7 @@ proxy-groups:
       - US_speednode_0063
       - 美国 CloudFlare节点
       - 加拿大 V2CROSS.COM
+      - 美国 CloudFlare节点 [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
