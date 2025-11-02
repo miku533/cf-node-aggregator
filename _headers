@@ -1,0 +1,18 @@
+# 缓存配置
+/output/*
+  Cache-Control: public, max-age=3600
+  X-Robots-Tag: noindex
+
+# 安全头
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  Permissions-Policy: interest-cohort=()
+
+# CORS 配置（如果需要跨域访问）
+/output/clash.yaml
+  Access-Control-Allow-Origin: *
+  
+/output/nodes.txt
+  Access-Control-Allow-Origin: *

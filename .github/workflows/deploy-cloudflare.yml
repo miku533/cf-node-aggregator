@@ -1,0 +1,50 @@
+name: 部署到 Cloudflare Pages
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'config.json'
+      - 'src/**'
+      - '.github/workflows/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+        
+      - name: 设置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          
+      - name: 安装依赖
+        run: npm install
+        
+      - name: 运行节点聚合
+        run: npm start
+        
+      - name: 部署到 Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: cf-node-aggregator
+          directory: .
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: 清除 Cloudflare 缓存（可选）
+        if: success()
+        run: |
+          echo "部署成功！"
+          echo "访问地址: https://cf-node-aggregator.pages.dev"

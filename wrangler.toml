@@ -1,0 +1,12 @@
+name = "cf-node-aggregator"
+compatibility_date = "2024-01-01"
+
+[site]
+bucket = "."
+
+[build]
+command = "npm install && npm start"
+cwd = "."
+
+[build.upload]
+format = "service-worker"
