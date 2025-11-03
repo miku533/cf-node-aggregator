@@ -122,7 +122,7 @@ proxies:
     password: BxceQaOe
     sni: 36.151.192.242
     skip-cert-verify: true
-  - name: HK_speednode_0009
+  - name: 香港5|@ripaojiedian
     type: trojan
     server: 203.198.122.129
     port: 443
@@ -145,7 +145,7 @@ proxies:
     password: BxceQaOe
     sni: 36.150.215.197
     skip-cert-verify: true
-  - name: CN_speednode_0003
+  - name: 日本2|@ripaojiedian
     type: trojan
     server: 117.172.176.24
     port: 1332
@@ -159,7 +159,7 @@ proxies:
     password: bca467b8c15211d189008a93c7519d3b
     sni: www.nintendogames.net
     skip-cert-verify: false
-  - name: CN_speednode_0004
+  - name: 新加坡2|@ripaojiedian
     type: trojan
     server: 117.172.176.24
     port: 2283
@@ -194,6 +194,92 @@ proxies:
     password: BxceQaOe
     sni: 36.151.251.47
     skip-cert-verify: true
+  - name: CN_speednode_0001
+    type: vless
+    server: linkgulang.evoay.com
+    port: 53214
+    uuid: 6c0472bc-82df-449e-90bd-2f91c6a46402
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: HK_speednode_0011
+    type: vless
+    server: hk4.cv1168.com
+    port: 36666
+    uuid: aae56c24-7511-4526-9708-3fcbd804253c
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: HK_speednode_0012
+    type: vless
+    server: hk3.cv1168.com
+    port: 36666
+    uuid: aae56c24-7511-4526-9708-3fcbd804253c
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: HK_speednode_0013
+    type: vless
+    server: hk2.cv1168.com
+    port: 36666
+    uuid: aae56c24-7511-4526-9708-3fcbd804253c
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: LB_speednode_0026
+    type: vless
+    server: 77.110.119.225
+    port: 443
+    uuid: 4819860c-0e62-4804-9c59-967e5c2bed7a
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: US_speednode_0045
+    type: vless
+    server: 192.238.204.48
+    port: 55558
+    uuid: 1eb58333-3051-47c2-a2eb-44e5b64233c8
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: US_speednode_0091
+    type: vless
+    server: 38.102.235.136
+    port: 15614
+    uuid: b5544203-55e3-426e-92f1-0684c93f9829
+    tls: true
+    network: ws
+    ws-opts:
+      path: /fp=random
+      headers:
+        Host: snippet.danfeng.site
+  - name: US_speednode_0100
+    type: vless
+    server: 45.159.23.10
+    port: 993
+    uuid: 40730d97-ffa7-1108-2c53-761516eb5fda
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: US_speednode_0101
+    type: vless
+    server: 193.31.127.10
+    port: 443
+    uuid: 40730d97-ffa7-1108-2c53-761516eb5fda
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: US_speednode_0102
+    type: vless
+    server: 69.84.182.18
+    port: 443
+    uuid: a25ff90c-964c-485a-b72a-858864a27dc0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /profile/sharenodesecurity=tls
+      headers:
+        Host: cdn-node-oss-63.paofu.de
   - name: CA_speednode_0001
     type: vless
     server: 40.233.118.103
@@ -238,14 +324,6 @@ proxies:
     password: trojan
     sni: wahaha.yingyangkuaixian.dpdns.org
     skip-cert-verify: false
-  - name: LB_speednode_0022
-    type: vless
-    server: 77.110.119.225
-    port: 443
-    uuid: 4819860c-0e62-4804-9c59-967e5c2bed7a
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
   - name: RU_speednode_0023
     type: vless
     server: russia22.clearorbitllc.com
@@ -333,17 +411,6 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: US_speednode_0061
-    type: vless
-    server: 69.84.182.18
-    port: 443
-    uuid: a25ff90c-964c-485a-b72a-858864a27dc0
-    tls: false
-    network: ws
-    ws-opts:
-      path: /profile/sharenodesecurity=tls
-      headers:
-        Host: cdn-node-oss-63.paofu.de
   - name: US_speednode_0062
     type: vless
     server: freev2.cloudflare.182682.xyz
@@ -368,31 +435,21 @@ proxies:
         Host: do-lon1.862400.xyz
   - name: 香港 电讯盈科有限公司
     type: vmess
-    server: c5765779-sv2sg0-syu0n5-1hd7v.hk3.p5pv.com
+    server: cb884b8d-suvds0-tb6yrr-1tfcw.hk3.p5pv.com
     port: 80
-    uuid: f73c64bc-9e8c-11ec-bd7c-f23c913c8d2b
+    uuid: 1282cc1a-f426-11ef-9495-f23c91cfbbc9
     alterId: 2
     cipher: auto
     tls: false
     network: ws
     ws-opts:
       path: /
-      headers:
-        Host: broadcastlv.chat.bilibili.com
-  - name: 香港 Cloudie数据中心
-    type: vmess
-    server: 103.243.26.209
-    port: 10086
-    uuid: c5ec2e3f-c058-46a8-a148-1831824bb94b
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
+      headers: {}
   - name: 香港 电讯盈科有限公司 [1]
     type: vmess
-    server: 1b6c49f6-sv2sg0-tcmken-19les.hk3.p5pv.com
+    server: e0349a52-sv8cg0-t7uinf-i8ie.hk3.p5pv.com
     port: 80
-    uuid: d095ecc6-7b69-11eb-b77b-f23c913c8d2b
+    uuid: 990e8f34-bd4f-11ef-bdb9-f23c91cfbbc9
     alterId: 2
     cipher: auto
     tls: false
@@ -403,21 +460,31 @@ proxies:
         Host: broadcastlv.chat.bilibili.com
   - name: 香港 电讯盈科有限公司 [2]
     type: vmess
-    server: 34013157-sunz40-taz53d-1j0y6.hk3.p5pv.com
+    server: 77e1818c-t13gg0-t5fh9u-1uni.hk3.p5pv.com
     port: 80
-    uuid: 1cce7df2-251c-11ee-9409-f23c9164ca5d
+    uuid: adbd0a82-3336-11ed-bd7c-f23c913c8d2b
     alterId: 2
     cipher: auto
     tls: false
     network: ws
     ws-opts:
       path: /
-      headers: {}
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - name: 加拿大 V2CROSS.COM
+    type: vmess
+    server: 165.154.197.225
+    port: 35218
+    uuid: 1a237dd2-851c-47e1-cf7e-e447a363830a
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
   - name: 香港 电讯盈科有限公司 [3]
     type: vmess
-    server: 8ad47030-sv2sg0-t5wcb1-13x18.hk3.p5pv.com
+    server: f72738d2-sv0xs0-tc2sod-1tizo.hk3.p5pv.com
     port: 80
-    uuid: e4499a62-0cfe-11eb-ad8c-f23c9164ca5d
+    uuid: bf36227c-0191-11f0-aee1-f23c91cfbbc9
     alterId: 2
     cipher: auto
     tls: false
@@ -427,130 +494,6 @@ proxies:
       headers:
         Host: broadcastlv.chat.bilibili.com
   - name: 香港 电讯盈科有限公司 [4]
-    type: vmess
-    server: 9984b70d-sv4n40-sx16xo-1j3zm.hk3.p5pv.com
-    port: 80
-    uuid: 6ce63b80-8b5b-11ef-b635-f23c9164ca5d
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: broadcastlv.chat.bilibili.com
-  - name: 香港 电讯盈科有限公司 [5]
-    type: vmess
-    server: e1d5ad80-svc1s0-sxv7gp-8rja.hk3.p5pv.com
-    port: 80
-    uuid: d18bcaf4-1323-11ec-a0fc-f23c913c8d2b
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: broadcastlv.chat.bilibili.com
-  - name: 香港 电讯盈科有限公司 [6]
-    type: vmess
-    server: bca6ef41-sv4n40-t5wcb1-13x18.hk3.p5pv.com
-    port: 80
-    uuid: e4499a62-0cfe-11eb-ad8c-f23c9164ca5d
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: broadcastlv.chat.bilibili.com
-  - name: 香港 电讯盈科有限公司 [7]
-    type: vmess
-    server: 659ce73e-sv2sg0-tcsjnd-1tff5.hk3.p5pv.com
-    port: 80
-    uuid: dfb6b402-f422-11ef-80e5-f23c9164ca5d
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: broadcastlv.chat.bilibili.com
-  - name: 香港+电讯盈科有限公司
-    type: trojan
-    server: 58.152.46.98
-    port: 443
-    password: BxceQaOe
-    sni: 58.152.46.98
-    skip-cert-verify: false
-  - name: 德国 V2CROSS.COM
-    type: vmess
-    server: 77.37.33.25
-    port: 80
-    uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
-      headers:
-        Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-  - name: 香港 电讯盈科有限公司 [8]
-    type: vmess
-    server: 6d010e37-sva740-sxv7gp-8rja.hk3.p5pv.com
-    port: 80
-    uuid: d18bcaf4-1323-11ec-a0fc-f23c913c8d2b
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: broadcastlv.chat.bilibili.com
-  - name: 香港 电讯盈科有限公司 [9]
-    type: vmess
-    server: c25c61db-sv2sg0-tbpu76-1thmd.hk3.p5pv.com
-    port: 80
-    uuid: 2d8c38cc-fc12-11ef-94aa-f23c913c8d2b
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: broadcastlv.chat.bilibili.com
-  - name: 香港 电讯盈科有限公司 [10]
-    type: vmess
-    server: f51a53a1-sv0xs0-swbdgq-1iddy.hk3.p5pv.com
-    port: 80
-    uuid: e168c43e-c6d9-11ed-a8bf-f23c91cfbbc9
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: broadcastlv.chat.bilibili.com
-  - name: 香港 电讯盈科有限公司 [11]
-    type: vmess
-    server: 80f0806d-szg740-t41p4y-1hpo0.hk3.p5pv.com
-    port: 80
-    uuid: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: broadcastlv.chat.bilibili.com
-  - name: 香港 电讯盈科有限公司 [12]
     type: vmess
     server: 0afadb4a-sv4n40-tc61cs-1tja8.hk3.p5pv.com
     port: 80
@@ -563,11 +506,11 @@ proxies:
       path: /
       headers:
         Host: broadcastlv.chat.bilibili.com
-  - name: 香港 电讯盈科有限公司 [13]
+  - name: 香港 电讯盈科有限公司 [5]
     type: vmess
-    server: 4b718efc-sv2sg0-t65a3e-tqgz.hk3.p5pv.com
+    server: 3f54bee7-sv4n40-tbpu76-1thmd.hk3.p5pv.com
     port: 80
-    uuid: 88da0d21-b25d-11ec-b9f7-f23c91cfbbc9
+    uuid: 2d8c38cc-fc12-11ef-94aa-f23c913c8d2b
     alterId: 2
     cipher: auto
     tls: false
@@ -576,11 +519,11 @@ proxies:
       path: /
       headers:
         Host: broadcastlv.chat.bilibili.com
-  - name: 香港 电讯盈科有限公司 [14]
+  - name: 香港 电讯盈科有限公司 [6]
     type: vmess
-    server: 4bbf82ea-t0bog0-ta64ri-1qzi1.hk3.p5pv.com
+    server: 98e590b8-t0kxs0-t5xs0q-1462e.hk3.p5pv.com
     port: 80
-    uuid: 8f99107c-f091-11ee-9935-f23c9164ca5d
+    uuid: a6cf58d6-14d1-11eb-a8bf-f23c91cfbbc9
     alterId: 2
     cipher: auto
     tls: false
@@ -589,9 +532,21 @@ proxies:
       path: /
       headers:
         Host: broadcastlv.chat.bilibili.com
-  - name: 香港 电讯盈科有限公司 [15]
+  - name: 香港 电讯盈科有限公司 [7]
     type: vmess
-    server: 4c2c02b9-sv2sg0-sv75lj-1swf9.hk3.p5pv.com
+    server: 34013157-sunz40-taz53d-1j0y6.hk3.p5pv.com
+    port: 80
+    uuid: 1cce7df2-251c-11ee-9409-f23c9164ca5d
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers: {}
+  - name: 香港 电讯盈科有限公司 [8]
+    type: vmess
+    server: d9864c5f-sv6hs0-sv75lj-1swf9.hk3.p5pv.com
     port: 80
     uuid: 2bb1edc8-fa5d-11ef-9dd9-f23c9164ca5d
     alterId: 2
@@ -602,11 +557,115 @@ proxies:
       path: /
       headers:
         Host: broadcastlv.chat.bilibili.com
+  - name: 香港 电讯盈科有限公司 [9]
+    type: vmess
+    server: 865c5c01-sv4n40-t65a3e-tqgz.hk3.p5pv.com
+    port: 80
+    uuid: 88da0d21-b25d-11ec-b9f7-f23c91cfbbc9
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - name: 香港 电讯盈科有限公司 [10]
+    type: vmess
+    server: a7cf5f1e-sva740-tc67m2-1tjc4.hk3.p5pv.com
+    port: 80
+    uuid: fac704ae-0304-11f0-a2ef-f23c91cfbbc9
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - name: 香港 电讯盈科有限公司 [11]
+    type: vmess
+    server: v10.heduian.link
+    port: 30807
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /oooo
+      headers:
+        Host: baidu.com
+  - name: 香港 电讯盈科有限公司 [12]
+    type: vmess
+    server: 8ad47030-sv2sg0-t5wcb1-13x18.hk3.p5pv.com
+    port: 80
+    uuid: e4499a62-0cfe-11eb-ad8c-f23c9164ca5d
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - name: 香港 电讯盈科有限公司 [13]
+    type: vmess
+    server: bca6ef41-sv4n40-t5wcb1-13x18.hk3.p5pv.com
+    port: 80
+    uuid: e4499a62-0cfe-11eb-ad8c-f23c9164ca5d
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - name: 香港 电讯盈科有限公司 [14]
+    type: vmess
+    server: 659ce73e-sv2sg0-tcsjnd-1tff5.hk3.p5pv.com
+    port: 80
+    uuid: dfb6b402-f422-11ef-80e5-f23c9164ca5d
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - name: 香港 电讯盈科有限公司 [15]
+    type: vmess
+    server: c5765779-sv2sg0-syu0n5-1hd7v.hk3.p5pv.com
+    port: 80
+    uuid: f73c64bc-9e8c-11ec-bd7c-f23c913c8d2b
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
   - name: 香港 电讯盈科有限公司 [16]
     type: vmess
-    server: b1601217-sv2sg0-tcdlur-1qwom.hk3.p5pv.com
+    server: 360de725-sv4n40-t2y63q-1jk6u.hk3.p5pv.com
     port: 80
-    uuid: 8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9
+    uuid: 45bc25b2-1a10-11ed-91c0-f23c91cfbbc9
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - name: 香港 电讯盈科有限公司 [17]
+    type: vmess
+    server: 8685e774-sv2sg0-svq7uu-1gevg.hk3.p5pv.com
+    port: 80
+    uuid: f02ee2b4-d760-11ec-bd7c-f23c913c8d2b
     alterId: 2
     cipher: auto
     tls: false
@@ -635,22 +694,31 @@ proxy-groups:
       - 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
-      - HK_speednode_0009
+      - 香港5|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
       - 日本|@ripaojiedian
-      - CN_speednode_0003
+      - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
-      - CN_speednode_0004
+      - 新加坡2|@ripaojiedian
       - 新加坡3|@ripaojiedian
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
+      - CN_speednode_0001
+      - HK_speednode_0011
+      - HK_speednode_0012
+      - HK_speednode_0013
+      - LB_speednode_0026
+      - US_speednode_0045
+      - US_speednode_0091
+      - US_speednode_0100
+      - US_speednode_0101
+      - US_speednode_0102
       - CA_speednode_0001
       - CA_speednode_0002
       - CN_speednode_0005
       - IQ_speednode_0010
       - JP_speednode_0020
-      - LB_speednode_0022
       - RU_speednode_0023
       - RU_speednode_0024
       - RU_speednode_0025
@@ -660,20 +728,17 @@ proxy-groups:
       - US_speednode_0058
       - US_speednode_0059
       - US_speednode_0060
-      - US_speednode_0061
       - US_speednode_0062
       - US_speednode_0063
       - 香港 电讯盈科有限公司
-      - 香港 Cloudie数据中心
       - 香港 电讯盈科有限公司 [1]
       - 香港 电讯盈科有限公司 [2]
+      - 加拿大 V2CROSS.COM
       - 香港 电讯盈科有限公司 [3]
       - 香港 电讯盈科有限公司 [4]
       - 香港 电讯盈科有限公司 [5]
       - 香港 电讯盈科有限公司 [6]
       - 香港 电讯盈科有限公司 [7]
-      - 香港+电讯盈科有限公司
-      - 德国 V2CROSS.COM
       - 香港 电讯盈科有限公司 [8]
       - 香港 电讯盈科有限公司 [9]
       - 香港 电讯盈科有限公司 [10]
@@ -683,6 +748,7 @@ proxy-groups:
       - 香港 电讯盈科有限公司 [14]
       - 香港 电讯盈科有限公司 [15]
       - 香港 电讯盈科有限公司 [16]
+      - 香港 电讯盈科有限公司 [17]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -699,22 +765,31 @@ proxy-groups:
       - 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
-      - HK_speednode_0009
+      - 香港5|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
       - 日本|@ripaojiedian
-      - CN_speednode_0003
+      - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
-      - CN_speednode_0004
+      - 新加坡2|@ripaojiedian
       - 新加坡3|@ripaojiedian
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
+      - CN_speednode_0001
+      - HK_speednode_0011
+      - HK_speednode_0012
+      - HK_speednode_0013
+      - LB_speednode_0026
+      - US_speednode_0045
+      - US_speednode_0091
+      - US_speednode_0100
+      - US_speednode_0101
+      - US_speednode_0102
       - CA_speednode_0001
       - CA_speednode_0002
       - CN_speednode_0005
       - IQ_speednode_0010
       - JP_speednode_0020
-      - LB_speednode_0022
       - RU_speednode_0023
       - RU_speednode_0024
       - RU_speednode_0025
@@ -724,20 +799,17 @@ proxy-groups:
       - US_speednode_0058
       - US_speednode_0059
       - US_speednode_0060
-      - US_speednode_0061
       - US_speednode_0062
       - US_speednode_0063
       - 香港 电讯盈科有限公司
-      - 香港 Cloudie数据中心
       - 香港 电讯盈科有限公司 [1]
       - 香港 电讯盈科有限公司 [2]
+      - 加拿大 V2CROSS.COM
       - 香港 电讯盈科有限公司 [3]
       - 香港 电讯盈科有限公司 [4]
       - 香港 电讯盈科有限公司 [5]
       - 香港 电讯盈科有限公司 [6]
       - 香港 电讯盈科有限公司 [7]
-      - 香港+电讯盈科有限公司
-      - 德国 V2CROSS.COM
       - 香港 电讯盈科有限公司 [8]
       - 香港 电讯盈科有限公司 [9]
       - 香港 电讯盈科有限公司 [10]
@@ -747,6 +819,7 @@ proxy-groups:
       - 香港 电讯盈科有限公司 [14]
       - 香港 电讯盈科有限公司 [15]
       - 香港 电讯盈科有限公司 [16]
+      - 香港 电讯盈科有限公司 [17]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -765,22 +838,31 @@ proxy-groups:
       - 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
-      - HK_speednode_0009
+      - 香港5|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
       - 日本|@ripaojiedian
-      - CN_speednode_0003
+      - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
-      - CN_speednode_0004
+      - 新加坡2|@ripaojiedian
       - 新加坡3|@ripaojiedian
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
+      - CN_speednode_0001
+      - HK_speednode_0011
+      - HK_speednode_0012
+      - HK_speednode_0013
+      - LB_speednode_0026
+      - US_speednode_0045
+      - US_speednode_0091
+      - US_speednode_0100
+      - US_speednode_0101
+      - US_speednode_0102
       - CA_speednode_0001
       - CA_speednode_0002
       - CN_speednode_0005
       - IQ_speednode_0010
       - JP_speednode_0020
-      - LB_speednode_0022
       - RU_speednode_0023
       - RU_speednode_0024
       - RU_speednode_0025
@@ -790,20 +872,17 @@ proxy-groups:
       - US_speednode_0058
       - US_speednode_0059
       - US_speednode_0060
-      - US_speednode_0061
       - US_speednode_0062
       - US_speednode_0063
       - 香港 电讯盈科有限公司
-      - 香港 Cloudie数据中心
       - 香港 电讯盈科有限公司 [1]
       - 香港 电讯盈科有限公司 [2]
+      - 加拿大 V2CROSS.COM
       - 香港 电讯盈科有限公司 [3]
       - 香港 电讯盈科有限公司 [4]
       - 香港 电讯盈科有限公司 [5]
       - 香港 电讯盈科有限公司 [6]
       - 香港 电讯盈科有限公司 [7]
-      - 香港+电讯盈科有限公司
-      - 德国 V2CROSS.COM
       - 香港 电讯盈科有限公司 [8]
       - 香港 电讯盈科有限公司 [9]
       - 香港 电讯盈科有限公司 [10]
@@ -813,6 +892,7 @@ proxy-groups:
       - 香港 电讯盈科有限公司 [14]
       - 香港 电讯盈科有限公司 [15]
       - 香港 电讯盈科有限公司 [16]
+      - 香港 电讯盈科有限公司 [17]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
