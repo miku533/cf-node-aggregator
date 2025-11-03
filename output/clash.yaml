@@ -129,13 +129,6 @@ proxies:
     password: BxceQaOe
     sni: 203.198.122.129
     skip-cert-verify: true
-  - name: 日本|@ripaojiedian
-    type: trojan
-    server: 36.150.215.236
-    port: 4492
-    password: BxceQaOe
-    sni: 36.150.215.236
-    skip-cert-verify: true
   - name: 🇭🇰 香港6|@ripaojiedian
     type: vmess
     server: 36.133.73.36
@@ -145,6 +138,13 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
+  - name: 日本|@ripaojiedian
+    type: trojan
+    server: 36.150.215.197
+    port: 8112
+    password: BxceQaOe
+    sni: 36.150.215.197
+    skip-cert-verify: true
   - name: CN_speednode_0003
     type: trojan
     server: 117.172.176.24
@@ -155,7 +155,7 @@ proxies:
   - name: 日本3|@ripaojiedian
     type: trojan
     server: 117.172.176.24
-    port: 3161
+    port: 316
     password: bca467b8c15211d189008a93c7519d3b
     sni: www.nintendogames.net
     skip-cert-verify: false
@@ -166,19 +166,12 @@ proxies:
     password: bca467b8c15211d189008a93c7519d3b
     sni: www.nintendogames.net
     skip-cert-verify: false
-  - name: 新加坡2|@ripaojiedian
-    type: trojan
-    server: 160.16.107.37
-    port: 5048
-    password: bca467b8c15211d189008a93c7519d3b
-    sni: www.nintendogames.net
-    skip-cert-verify: false
   - name: 新加坡3|@ripaojiedian
     type: trojan
-    server: 36.150.215.197
-    port: 51825
+    server: 36.150.215.236
+    port: 24392
     password: BxceQaOe
-    sni: 36.150.215.197
+    sni: 36.150.215.236
     skip-cert-verify: true
   - name: 美国|@ripaojiedian
     type: trojan
@@ -373,59 +366,7 @@ proxies:
       path: /announcementfp=random
       headers:
         Host: do-lon1.862400.xyz
-  - name: 香港 电讯盈科
-    type: vmess
-    server: 8e42f8d1-sv0xs0-szxh9w-46gc.hk3.p5pv.com
-    port: 80
-    uuid: 225d1cca-d744-11ef-b790-f23c91cfbbc9
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: broadcastlv.chat.bilibili.com
-  - name: 香港 电讯盈科 [1]
-    type: vmess
-    server: d9864c5f-sv6hs0-sv75lj-1swf9.hk3.p5pv.com
-    port: 80
-    uuid: 2bb1edc8-fa5d-11ef-9dd9-f23c9164ca5d
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: broadcastlv.chat.bilibili.com
-  - name: 香港 电讯盈科 [2]
-    type: vmess
-    server: a0ae8f27-sv4n40-sw5wi7-ufc0.hk3.p5pv.com
-    port: 80
-    uuid: 22308988-8548-11ea-a22e-f23c91cfbbc9
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: broadcastlv.chat.bilibili.com
-  - name: 香港 电讯盈科 [3]
-    type: vmess
-    server: 7f346235-sv4n40-t76x2i-wj6v.hk3.p5pv.com
-    port: 80
-    uuid: 847c03b2-0a9d-11eb-a8bf-f23c91cfbbc9
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: broadcastlv.chat.bilibili.com
-  - name: 香港 电讯盈科 [4]
+  - name: 香港 电讯盈科有限公司
     type: vmess
     server: c5765779-sv2sg0-syu0n5-1hd7v.hk3.p5pv.com
     port: 80
@@ -438,11 +379,33 @@ proxies:
       path: /
       headers:
         Host: broadcastlv.chat.bilibili.com
-  - name: 香港 电讯盈科 [5]
+  - name: 香港 Cloudie数据中心
     type: vmess
-    server: 14269f63-t049s0-t1kmeg-mv7m.hk3.p5pv.com
+    server: 103.243.26.209
+    port: 10086
+    uuid: c5ec2e3f-c058-46a8-a148-1831824bb94b
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 香港 电讯盈科有限公司 [1]
+    type: vmess
+    server: 1b6c49f6-sv2sg0-tcmken-19les.hk3.p5pv.com
     port: 80
-    uuid: 94d40708-8273-11ea-8fc9-f23c913c8d2b
+    uuid: d095ecc6-7b69-11eb-b77b-f23c913c8d2b
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - name: 香港 电讯盈科有限公司 [2]
+    type: vmess
+    server: 34013157-sunz40-taz53d-1j0y6.hk3.p5pv.com
+    port: 80
+    uuid: 1cce7df2-251c-11ee-9409-f23c9164ca5d
     alterId: 2
     cipher: auto
     tls: false
@@ -450,11 +413,11 @@ proxies:
     ws-opts:
       path: /
       headers: {}
-  - name: 香港 电讯盈科 [6]
+  - name: 香港 电讯盈科有限公司 [3]
     type: vmess
-    server: 4c2c02b9-sv2sg0-sv75lj-1swf9.hk3.p5pv.com
+    server: 8ad47030-sv2sg0-t5wcb1-13x18.hk3.p5pv.com
     port: 80
-    uuid: 2bb1edc8-fa5d-11ef-9dd9-f23c9164ca5d
+    uuid: e4499a62-0cfe-11eb-ad8c-f23c9164ca5d
     alterId: 2
     cipher: auto
     tls: false
@@ -463,11 +426,11 @@ proxies:
       path: /
       headers:
         Host: broadcastlv.chat.bilibili.com
-  - name: 香港 电讯盈科 [7]
+  - name: 香港 电讯盈科有限公司 [4]
     type: vmess
-    server: 8b31a356-sv2sg0-tb224g-1h0r9.hk3.p5pv.com
+    server: 9984b70d-sv4n40-sx16xo-1j3zm.hk3.p5pv.com
     port: 80
-    uuid: 9bfd0dde-957e-11ec-a8bf-f23c91cfbbc9
+    uuid: 6ce63b80-8b5b-11ef-b635-f23c9164ca5d
     alterId: 2
     cipher: auto
     tls: false
@@ -476,11 +439,11 @@ proxies:
       path: /
       headers:
         Host: broadcastlv.chat.bilibili.com
-  - name: 香港 电讯盈科 [8]
+  - name: 香港 电讯盈科有限公司 [5]
     type: vmess
-    server: bfce8c8d-sva740-tbe46y-1la7v.hk3.p5pv.com
+    server: e1d5ad80-svc1s0-sxv7gp-8rja.hk3.p5pv.com
     port: 80
-    uuid: 460749c2-bcef-11ee-89fc-f23c913c8d2b
+    uuid: d18bcaf4-1323-11ec-a0fc-f23c913c8d2b
     alterId: 2
     cipher: auto
     tls: false
@@ -489,18 +452,11 @@ proxies:
       path: /
       headers:
         Host: broadcastlv.chat.bilibili.com
-  - name: 香港+电讯盈科有限公司
-    type: trojan
-    server: 58.152.53.3
-    port: 443
-    password: BxceQaOe
-    sni: 58.152.53.3
-    skip-cert-verify: false
-  - name: 香港 电讯盈科 [9]
+  - name: 香港 电讯盈科有限公司 [6]
     type: vmess
-    server: a7cf5f1e-sva740-tc67m2-1tjc4.hk3.p5pv.com
+    server: bca6ef41-sv4n40-t5wcb1-13x18.hk3.p5pv.com
     port: 80
-    uuid: fac704ae-0304-11f0-a2ef-f23c91cfbbc9
+    uuid: e4499a62-0cfe-11eb-ad8c-f23c9164ca5d
     alterId: 2
     cipher: auto
     tls: false
@@ -509,46 +465,7 @@ proxies:
       path: /
       headers:
         Host: broadcastlv.chat.bilibili.com
-  - name: 香港 电讯盈科 [10]
-    type: vmess
-    server: 00711758-sva740-tbrhck-1thqb.hk3.p5pv.com
-    port: 80
-    uuid: 4f4c6876-fcf6-11ef-94aa-f23c913c8d2b
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: broadcastlv.chat.bilibili.com
-  - name: 香港 电讯盈科 [11]
-    type: vmess
-    server: 87a8ce25-sv2sg0-tbicd9-1go3q.hk3.p5pv.com
-    port: 80
-    uuid: 19dd9c70-e4a5-11ed-8347-f23c9164ca5d
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: broadcastlv.chat.bilibili.com
-  - name: 香港 电讯盈科 [12]
-    type: vmess
-    server: b1601217-sv2sg0-tcdlur-1qwom.hk3.p5pv.com
-    port: 80
-    uuid: 8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: broadcastlv.chat.bilibili.com
-  - name: 香港 电讯盈科 [13]
+  - name: 香港 电讯盈科有限公司 [7]
     type: vmess
     server: 659ce73e-sv2sg0-tcsjnd-1tff5.hk3.p5pv.com
     port: 80
@@ -561,11 +478,31 @@ proxies:
       path: /
       headers:
         Host: broadcastlv.chat.bilibili.com
-  - name: 香港 电讯盈科 [14]
+  - name: 香港+电讯盈科有限公司
+    type: trojan
+    server: 58.152.46.98
+    port: 443
+    password: BxceQaOe
+    sni: 58.152.46.98
+    skip-cert-verify: false
+  - name: 德国 V2CROSS.COM
     type: vmess
-    server: 2e617951-sv2sg0-taj9mo-1tco3.hk3.p5pv.com
+    server: 77.37.33.25
     port: 80
-    uuid: e29de954-ea01-11ef-a271-f23c91cfbbc9
+    uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+      headers:
+        Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  - name: 香港 电讯盈科有限公司 [8]
+    type: vmess
+    server: 6d010e37-sva740-sxv7gp-8rja.hk3.p5pv.com
+    port: 80
+    uuid: d18bcaf4-1323-11ec-a0fc-f23c913c8d2b
     alterId: 2
     cipher: auto
     tls: false
@@ -574,11 +511,11 @@ proxies:
       path: /
       headers:
         Host: broadcastlv.chat.bilibili.com
-  - name: 香港 电讯盈科 [15]
+  - name: 香港 电讯盈科有限公司 [9]
     type: vmess
-    server: d2d4314f-sv2sg0-t66zs1-1pq44.hk3.p5pv.com
+    server: c25c61db-sv2sg0-tbpu76-1thmd.hk3.p5pv.com
     port: 80
-    uuid: 3f194e88-8eac-11ee-be7f-f23c9164ca5d
+    uuid: 2d8c38cc-fc12-11ef-94aa-f23c913c8d2b
     alterId: 2
     cipher: auto
     tls: false
@@ -587,7 +524,46 @@ proxies:
       path: /
       headers:
         Host: broadcastlv.chat.bilibili.com
-  - name: 香港 电讯盈科 [16]
+  - name: 香港 电讯盈科有限公司 [10]
+    type: vmess
+    server: f51a53a1-sv0xs0-swbdgq-1iddy.hk3.p5pv.com
+    port: 80
+    uuid: e168c43e-c6d9-11ed-a8bf-f23c91cfbbc9
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - name: 香港 电讯盈科有限公司 [11]
+    type: vmess
+    server: 80f0806d-szg740-t41p4y-1hpo0.hk3.p5pv.com
+    port: 80
+    uuid: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - name: 香港 电讯盈科有限公司 [12]
+    type: vmess
+    server: 0afadb4a-sv4n40-tc61cs-1tja8.hk3.p5pv.com
+    port: 80
+    uuid: d2f0bee2-02f1-11f0-8eb0-f23c9164ca5d
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - name: 香港 电讯盈科有限公司 [13]
     type: vmess
     server: 4b718efc-sv2sg0-t65a3e-tqgz.hk3.p5pv.com
     port: 80
@@ -600,11 +576,11 @@ proxies:
       path: /
       headers:
         Host: broadcastlv.chat.bilibili.com
-  - name: 香港 电讯盈科 [17]
+  - name: 香港 电讯盈科有限公司 [14]
     type: vmess
-    server: 4020d7a1-sv0xs0-swkmdk-1imi4.hk3.p5pv.com
+    server: 4bbf82ea-t0bog0-ta64ri-1qzi1.hk3.p5pv.com
     port: 80
-    uuid: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
+    uuid: 8f99107c-f091-11ee-9935-f23c9164ca5d
     alterId: 2
     cipher: auto
     tls: false
@@ -613,11 +589,11 @@ proxies:
       path: /
       headers:
         Host: broadcastlv.chat.bilibili.com
-  - name: 香港 电讯盈科 [18]
+  - name: 香港 电讯盈科有限公司 [15]
     type: vmess
-    server: ae709d15-sv0xs0-svim0o-1slop.hk3.p5pv.com
+    server: 4c2c02b9-sv2sg0-sv75lj-1swf9.hk3.p5pv.com
     port: 80
-    uuid: 520b9126-9870-11ef-81b0-f23c9164ca5d
+    uuid: 2bb1edc8-fa5d-11ef-9dd9-f23c9164ca5d
     alterId: 2
     cipher: auto
     tls: false
@@ -626,11 +602,11 @@ proxies:
       path: /
       headers:
         Host: broadcastlv.chat.bilibili.com
-  - name: 香港 电讯盈科 [19]
+  - name: 香港 电讯盈科有限公司 [16]
     type: vmess
-    server: 1dd7778a-sv4n40-szxh9w-46gc.hk3.p5pv.com
+    server: b1601217-sv2sg0-tcdlur-1qwom.hk3.p5pv.com
     port: 80
-    uuid: 225d1cca-d744-11ef-b790-f23c91cfbbc9
+    uuid: 8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9
     alterId: 2
     cipher: auto
     tls: false
@@ -639,1944 +615,6 @@ proxies:
       path: /
       headers:
         Host: broadcastlv.chat.bilibili.com
-  - name: 香港 电讯盈科 [20]
-    type: vmess
-    server: 749bd19a-sv4n40-svq7uu-1gevg.hk3.p5pv.com
-    port: 80
-    uuid: f02ee2b4-d760-11ec-bd7c-f23c913c8d2b
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: broadcastlv.chat.bilibili.com
-  - name: 原生地址-443-WS-TLS
-    type: vless
-    server: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 原生地址-80-WS
-    type: vless
-    server: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-    port: 80
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇯🇵 A-JP-Inzai-16043-WS-TLS
-    type: vless
-    server: 152.70.101.24
-    port: 16043
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇯🇵 A-JP-Inzai-14453-WS-TLS
-    type: vless
-    server: 138.2.12.103
-    port: 14453
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇯🇵 A-JP-Inzai-16072-WS-TLS
-    type: vless
-    server: 152.70.101.24
-    port: 16072
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇯🇵 A-JP-Osaka-15805-WS-TLS
-    type: vless
-    server: 140.83.59.158
-    port: 15805
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇯🇵 A-JP-Kyoto-19842-WS-TLS
-    type: vless
-    server: 121.85.55.59
-    port: 19842
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇯🇵 A-JP-Tokyo-443-WS-TLS
-    type: vless
-    server: 47.79.35.191
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇯🇵 A-JP-Tokyo-443-WS-TLS 2
-    type: vless
-    server: 43.153.155.49
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇯🇵 A-JP-Minamishinagawa-443-WS-TLS
-    type: vless
-    server: 45.32.55.253
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇯🇵 A-JP-Osaka-443-WS-TLS
-    type: vless
-    server: 168.138.46.67
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇯🇵 A-JP-Osaka-55007-WS-TLS
-    type: vless
-    server: 64.110.101.90
-    port: 55007
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇭🇰 A-HK-Hong_Kong-443-WS-TLS
-    type: vless
-    server: 154.16.10.177
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇭🇰 A-HK-N/A-18622-WS-TLS
-    type: vless
-    server: 210.6.207.42
-    port: 18622
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇭🇰 A-HK-Hong_Kong-443-WS-TLS 2
-    type: vless
-    server: 119.28.68.147
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇭🇰 A-HK-N/A-8443-WS-TLS
-    type: vless
-    server: 103.85.73.112
-    port: 8443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇭🇰 A-HK-Hong_Kong-443-WS-TLS 3
-    type: vless
-    server: 46.232.108.217
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇭🇰 A-HK-Hong_Kong-8080-WS
-    type: vless
-    server: 154.16.10.34
-    port: 8080
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇭🇰 A-HK-Hong_Kong-443-WS-TLS 4
-    type: vless
-    server: 185.241.40.85
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇭🇰 A-HK-Wong_Tai_Sin-57537-WS-TLS
-    type: vless
-    server: 221.125.10.8
-    port: 57537
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇭🇰 A-HK-Tsuen_Wan-18443-WS-TLS
-    type: vless
-    server: 154.18.161.172
-    port: 18443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇭🇰 A-HK-N/A-12457-WS-TLS
-    type: vless
-    server: 223.16.138.113
-    port: 12457
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 A-US-New_York-8443-WS-TLS
-    type: vless
-    server: 92.53.183.82
-    port: 8443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 A-US-Santa_Clara-443-WS-TLS
-    type: vless
-    server: 107.172.101.181
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 A-US-New_York-443-WS-TLS
-    type: vless
-    server: 92.118.10.56
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 A-US-N/A-443-WS-TLS
-    type: vless
-    server: 23.254.226.110
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 A-US-Dallas-2053-WS-TLS
-    type: vless
-    server: 172.86.114.182
-    port: 2053
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 A-US-Columbus-443-WS-TLS
-    type: vless
-    server: 67.226.222.2
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 A-US-Dovr_Foxcroft-8443-WS-TLS
-    type: vless
-    server: 169.244.242.250
-    port: 8443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 A-US-Dallas-81-WS-TLS
-    type: vless
-    server: 185.186.245.45
-    port: 81
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 A-US-Los_Angeles-443-WS-TLS
-    type: vless
-    server: 104.224.153.46
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 A-US-N/A-443-WS-TLS 2
-    type: vless
-    server: 192.236.249.99
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 B-US-San_Francisco-443-WS-TLS
-    type: vless
-    server: 104.17.48.0
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 B-US-San_Francisco-443-WS-TLS 2
-    type: vless
-    server: 104.18.35.42
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 B-US-San_Francisco-443-WS-TLS 3
-    type: vless
-    server: 104.18.32.42
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇭🇰 B-HK-Hong_Kong-443-WS-TLS
-    type: vless
-    server: 104.18.33.4
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 B-US-San_Francisco-443-WS-TLS 4
-    type: vless
-    server: 104.18.37.4
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 B-US-San_Francisco-443-WS-TLS 5
-    type: vless
-    server: 104.18.38.4
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 B-US-San_Francisco-443-WS-TLS 6
-    type: vless
-    server: 104.18.40.4
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 B-US-San_Francisco-443-WS-TLS 7
-    type: vless
-    server: 104.18.41.46
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 B-US-San_Francisco-443-WS-TLS 8
-    type: vless
-    server: 104.18.42.4
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 B-US-San_Francisco-443-WS-TLS 9
-    type: vless
-    server: 104.18.43.4
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇭🇰 B-HK-Hong_Kong-443-WS-TLS 2
-    type: vless
-    server: 104.18.44.4
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 B-US-San_Francisco-443-WS-TLS 10
-    type: vless
-    server: 104.18.45.4
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇭🇰 B-HK-Hong_Kong-443-WS-TLS 3
-    type: vless
-    server: 104.18.46.4
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 B-US-紐約-443-WS-TLS
-    type: vless
-    server: 104.18.47.4
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 B-US-紐華克-443-WS-TLS
-    type: vless
-    server: 104.18.39.4
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 B-US-紐華克-443-WS-TLS 2
-    type: vless
-    server: 104.18.35.4
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇨🇦 B-CA-多伦多-443-WS-TLS
-    type: vless
-    server: 172.64.152.0
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 B-US-紐華克-443-WS-TLS 3
-    type: vless
-    server: 104.17.144.0
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇨🇦 B-CA-多伦多-443-WS-TLS 2
-    type: vless
-    server: 172.64.229.1
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇨🇦 B-CA-多伦多-443-WS-TLS 3
-    type: vless
-    server: 162.159.58.20
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇨🇦 B-CA-多伦多-443-WS-TLS 4
-    type: vless
-    server: 172.64.228.0
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-紐約-443-WS-TLS
-    type: vless
-    server: 13.32.15.24
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇸🇬 C-SG-新加坡-443-WS-TLS
-    type: vless
-    server: 13.35.201.105
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇸🇬 C-SG-新加坡-443-WS-TLS 2
-    type: vless
-    server: 13.35.224.134
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇭🇰 C-HK-香港-443-WS-TLS
-    type: vless
-    server: 13.226.57.190
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-洛杉矶-443-WS-TLS
-    type: vless
-    server: 13.249.112.208
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-丹佛-443-WS-TLS
-    type: vless
-    server: 18.154.100.209
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-凤凰城-443-WS-TLS
-    type: vless
-    server: 18.238.100.193
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇸🇬 C-SG-新加坡-443-WS-TLS 3
-    type: vless
-    server: 43.132.81.139
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇸🇬 C-SG-新加坡-443-WS-TLS 4
-    type: vless
-    server: 43.174.52.185
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇸🇬 C-SG-新加坡-443-WS-TLS 5
-    type: vless
-    server: 43.174.196.54
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇸🇬 C-SG-新加坡-443-WS-TLS 6
-    type: vless
-    server: 43.174.198.12
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇸🇬 C-SG-新加坡-443-WS-TLS 7
-    type: vless
-    server: 43.174.198.253
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇸🇬 C-SG-新加坡-443-WS-TLS 8
-    type: vless
-    server: 43.174.229.224
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇸🇬 C-SG-新加坡-443-WS-TLS 9
-    type: vless
-    server: 43.174.242.49
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇸🇬 C-SG-新加坡-443-WS-TLS 10
-    type: vless
-    server: 43.174.243.213
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇸🇬 C-SG-新加坡-443-WS-TLS 11
-    type: vless
-    server: 43.174.244.123
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-洛杉矶-443-WS-TLS 2
-    type: vless
-    server: 43.175.7.224
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇭🇰 C-HK-香港-443-WS-TLS 2
-    type: vless
-    server: 43.175.115.195
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇩🇪 C-DE-法兰克福-443-WS-TLS
-    type: vless
-    server: 43.175.162.204
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇳🇱 C-NL-阿姆斯特丹-443-WS-TLS
-    type: vless
-    server: 43.175.165.65
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇳🇱 C-NL-阿姆斯特丹-443-WS-TLS 2
-    type: vless
-    server: 43.175.165.184
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇭🇰 C-HK-香港-443-WS-TLS 3
-    type: vless
-    server: 43.175.213.50
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-芝加哥-443-WS-TLS
-    type: vless
-    server: 52.84.16.38
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇮🇳 C-IN-金奈-443-WS-TLS
-    type: vless
-    server: 65.8.72.74
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-聖荷西-443-WS-TLS
-    type: vless
-    server: 65.8.158.156
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-洛杉矶-443-WS-TLS 3
-    type: vless
-    server: 99.84.208.155
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-紐華克-443-WS-TLS
-    type: vless
-    server: 104.16.62.77
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Chicago-443-WS-TLS
-    type: vless
-    server: 104.16.63.86
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-紐華克-443-WS-TLS 2
-    type: vless
-    server: 104.16.65.1
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-紐華克-443-WS-TLS 3
-    type: vless
-    server: 104.16.105.166
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-紐華克-443-WS-TLS 4
-    type: vless
-    server: 104.16.177.98
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-紐華克-443-WS-TLS 5
-    type: vless
-    server: 104.17.46.187
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-紐華克-443-WS-TLS 6
-    type: vless
-    server: 104.17.69.244
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-紐華克-443-WS-TLS 7
-    type: vless
-    server: 104.17.139.37
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-紐華克-443-WS-TLS 8
-    type: vless
-    server: 104.17.142.212
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Chicago-443-WS-TLS 2
-    type: vless
-    server: 104.17.150.16
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-紐華克-443-WS-TLS 9
-    type: vless
-    server: 104.17.162.3
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-紐華克-443-WS-TLS 10
-    type: vless
-    server: 104.17.167.134
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-紐華克-443-WS-TLS 11
-    type: vless
-    server: 104.17.221.227
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Newark-443-WS-TLS
-    type: vless
-    server: 104.18.14.8
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Newark-443-WS-TLS 2
-    type: vless
-    server: 104.18.14.198
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Newark-443-WS-TLS 3
-    type: vless
-    server: 104.18.32.6
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Dallas-443-WS-TLS
-    type: vless
-    server: 104.18.77.224
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS
-    type: vless
-    server: 104.18.81.19
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 2
-    type: vless
-    server: 104.18.89.52
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 3
-    type: vless
-    server: 104.18.151.172
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Chicago-443-WS-TLS 3
-    type: vless
-    server: 104.18.166.129
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 4
-    type: vless
-    server: 104.18.189.153
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Newark-443-WS-TLS 4
-    type: vless
-    server: 104.18.223.253
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 5
-    type: vless
-    server: 104.18.255.167
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 6
-    type: vless
-    server: 104.19.29.213
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 7
-    type: vless
-    server: 104.19.70.9
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Newark-443-WS-TLS 5
-    type: vless
-    server: 104.19.143.208
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Dallas-443-WS-TLS 2
-    type: vless
-    server: 104.19.148.121
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Newark-443-WS-TLS 6
-    type: vless
-    server: 104.19.154.200
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Newark-443-WS-TLS 7
-    type: vless
-    server: 104.19.212.207
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Dallas-443-WS-TLS 3
-    type: vless
-    server: 104.19.220.22
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-New_York-443-WS-TLS
-    type: vless
-    server: 104.21.70.243
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 8
-    type: vless
-    server: 104.21.239.53
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 9
-    type: vless
-    server: 104.21.239.238
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Newark-443-WS-TLS 8
-    type: vless
-    server: 104.26.3.162
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Newark-443-WS-TLS 9
-    type: vless
-    server: 104.26.4.90
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 10
-    type: vless
-    server: 104.26.5.134
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Newark-443-WS-TLS 10
-    type: vless
-    server: 104.26.8.117
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Newark-443-WS-TLS 11
-    type: vless
-    server: 104.31.16.158
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Seattle-443-WS-TLS
-    type: vless
-    server: 108.138.100.69
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Seattle-443-WS-TLS 2
-    type: vless
-    server: 108.138.100.234
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 11
-    type: vless
-    server: 108.162.198.52
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 12
-    type: vless
-    server: 108.162.198.242
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Washington-443-WS-TLS
-    type: vless
-    server: 141.101.114.226
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Seattle-443-WS-TLS 3
-    type: vless
-    server: 143.204.153.80
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Seattle-443-WS-TLS 4
-    type: vless
-    server: 143.204.153.166
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 13
-    type: vless
-    server: 162.159.24.131
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Los_Angeles-443-WS-TLS
-    type: vless
-    server: 162.159.38.223
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Los_Angeles-443-WS-TLS 2
-    type: vless
-    server: 162.159.38.248
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Los_Angeles-443-WS-TLS 3
-    type: vless
-    server: 162.159.39.142
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Los_Angeles-443-WS-TLS 4
-    type: vless
-    server: 162.159.39.171
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Los_Angeles-443-WS-TLS 5
-    type: vless
-    server: 162.159.44.74
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Los_Angeles-443-WS-TLS 6
-    type: vless
-    server: 162.159.44.154
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Los_Angeles-443-WS-TLS 7
-    type: vless
-    server: 162.159.45.28
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-Los_Angeles-443-WS-TLS 8
-    type: vless
-    server: 162.159.45.50
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 14
-    type: vless
-    server: 162.159.58.65
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 15
-    type: vless
-    server: 162.159.61.146
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 16
-    type: vless
-    server: 162.159.61.183
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 17
-    type: vless
-    server: 162.159.128.253
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 18
-    type: vless
-    server: 162.159.136.89
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 19
-    type: vless
-    server: 162.159.137.204
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 20
-    type: vless
-    server: 162.159.140.85
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 21
-    type: vless
-    server: 162.159.140.116
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 22
-    type: vless
-    server: 162.159.251.53
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 23
-    type: vless
-    server: 172.64.48.226
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 24
-    type: vless
-    server: 172.64.52.83
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 25
-    type: vless
-    server: 172.64.52.127
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 26
-    type: vless
-    server: 172.64.53.109
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 27
-    type: vless
-    server: 172.64.82.114
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 28
-    type: vless
-    server: 172.64.91.69
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 29
-    type: vless
-    server: 172.64.144.19
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 30
-    type: vless
-    server: 172.64.158.244
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 31
-    type: vless
-    server: 172.64.229.7
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 32
-    type: vless
-    server: 172.64.229.120
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 33
-    type: vless
-    server: 172.64.229.197
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 34
-    type: vless
-    server: 172.67.127.56
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 35
-    type: vless
-    server: 172.67.144.48
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 36
-    type: vless
-    server: 172.67.158.120
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 37
-    type: vless
-    server: 172.67.168.177
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 38
-    type: vless
-    server: 173.245.49.194
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 39
-    type: vless
-    server: 198.41.194.162
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 40
-    type: vless
-    server: 198.41.208.15
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 41
-    type: vless
-    server: 198.41.208.120
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 42
-    type: vless
-    server: 198.41.208.224
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 43
-    type: vless
-    server: 198.41.211.185
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 C-US-San_Francisco-443-WS-TLS 44
-    type: vless
-    server: 198.41.222.252
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 D-US-Chicago_[CF]-443-WS-TLS
-    type: vless
-    server: 104.17.49.8
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 D-US-Chicago_[CF]-443-WS-TLS 2
-    type: vless
-    server: 104.19.154.10
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 D-US-Newark_[CF]-443-WS-TLS
-    type: vless
-    server: 104.19.144.110
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 D-US-San_Francisco_[CF]-443-WS-TLS
-    type: vless
-    server: 172.64.159.52
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 D-US-San_Francisco_[CF]-443-WS-TLS 2
-    type: vless
-    server: 104.17.61.224
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 D-US-Newark_[CF]-443-WS-TLS 2
-    type: vless
-    server: 104.19.145.183
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 D-US-San_Francisco_[CF]-443-WS-TLS 3
-    type: vless
-    server: 104.16.153.128
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 D-US-San_Francisco_[CF]-443-WS-TLS 4
-    type: vless
-    server: 172.64.157.76
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 D-US-San_Francisco_[CF]-443-WS-TLS 5
-    type: vless
-    server: 104.19.61.100
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
-  - name: 🇺🇸 D-US-San_Francisco_[CF]-443-WS-TLS 6
-    type: vless
-    server: 104.19.59.159
-    port: 443
-    uuid: 6a77d98d-2b42-4b99-9bdb-f90084262907
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: isha.e.e.d.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -2598,12 +636,11 @@ proxy-groups:
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
       - HK_speednode_0009
-      - 日本|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
+      - 日本|@ripaojiedian
       - CN_speednode_0003
       - 日本3|@ripaojiedian
       - CN_speednode_0004
-      - 新加坡2|@ripaojiedian
       - 新加坡3|@ripaojiedian
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
@@ -2626,203 +663,26 @@ proxy-groups:
       - US_speednode_0061
       - US_speednode_0062
       - US_speednode_0063
-      - 香港 电讯盈科
-      - 香港 电讯盈科 [1]
-      - 香港 电讯盈科 [2]
-      - 香港 电讯盈科 [3]
-      - 香港 电讯盈科 [4]
-      - 香港 电讯盈科 [5]
-      - 香港 电讯盈科 [6]
-      - 香港 电讯盈科 [7]
-      - 香港 电讯盈科 [8]
+      - 香港 电讯盈科有限公司
+      - 香港 Cloudie数据中心
+      - 香港 电讯盈科有限公司 [1]
+      - 香港 电讯盈科有限公司 [2]
+      - 香港 电讯盈科有限公司 [3]
+      - 香港 电讯盈科有限公司 [4]
+      - 香港 电讯盈科有限公司 [5]
+      - 香港 电讯盈科有限公司 [6]
+      - 香港 电讯盈科有限公司 [7]
       - 香港+电讯盈科有限公司
-      - 香港 电讯盈科 [9]
-      - 香港 电讯盈科 [10]
-      - 香港 电讯盈科 [11]
-      - 香港 电讯盈科 [12]
-      - 香港 电讯盈科 [13]
-      - 香港 电讯盈科 [14]
-      - 香港 电讯盈科 [15]
-      - 香港 电讯盈科 [16]
-      - 香港 电讯盈科 [17]
-      - 香港 电讯盈科 [18]
-      - 香港 电讯盈科 [19]
-      - 香港 电讯盈科 [20]
-      - 原生地址-443-WS-TLS
-      - 原生地址-80-WS
-      - 🇯🇵 A-JP-Inzai-16043-WS-TLS
-      - 🇯🇵 A-JP-Inzai-14453-WS-TLS
-      - 🇯🇵 A-JP-Inzai-16072-WS-TLS
-      - 🇯🇵 A-JP-Osaka-15805-WS-TLS
-      - 🇯🇵 A-JP-Kyoto-19842-WS-TLS
-      - 🇯🇵 A-JP-Tokyo-443-WS-TLS
-      - 🇯🇵 A-JP-Tokyo-443-WS-TLS 2
-      - 🇯🇵 A-JP-Minamishinagawa-443-WS-TLS
-      - 🇯🇵 A-JP-Osaka-443-WS-TLS
-      - 🇯🇵 A-JP-Osaka-55007-WS-TLS
-      - 🇭🇰 A-HK-Hong_Kong-443-WS-TLS
-      - 🇭🇰 A-HK-N/A-18622-WS-TLS
-      - 🇭🇰 A-HK-Hong_Kong-443-WS-TLS 2
-      - 🇭🇰 A-HK-N/A-8443-WS-TLS
-      - 🇭🇰 A-HK-Hong_Kong-443-WS-TLS 3
-      - 🇭🇰 A-HK-Hong_Kong-8080-WS
-      - 🇭🇰 A-HK-Hong_Kong-443-WS-TLS 4
-      - 🇭🇰 A-HK-Wong_Tai_Sin-57537-WS-TLS
-      - 🇭🇰 A-HK-Tsuen_Wan-18443-WS-TLS
-      - 🇭🇰 A-HK-N/A-12457-WS-TLS
-      - 🇺🇸 A-US-New_York-8443-WS-TLS
-      - 🇺🇸 A-US-Santa_Clara-443-WS-TLS
-      - 🇺🇸 A-US-New_York-443-WS-TLS
-      - 🇺🇸 A-US-N/A-443-WS-TLS
-      - 🇺🇸 A-US-Dallas-2053-WS-TLS
-      - 🇺🇸 A-US-Columbus-443-WS-TLS
-      - 🇺🇸 A-US-Dovr_Foxcroft-8443-WS-TLS
-      - 🇺🇸 A-US-Dallas-81-WS-TLS
-      - 🇺🇸 A-US-Los_Angeles-443-WS-TLS
-      - 🇺🇸 A-US-N/A-443-WS-TLS 2
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS 2
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS 3
-      - 🇭🇰 B-HK-Hong_Kong-443-WS-TLS
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS 4
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS 5
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS 6
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS 7
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS 8
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS 9
-      - 🇭🇰 B-HK-Hong_Kong-443-WS-TLS 2
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS 10
-      - 🇭🇰 B-HK-Hong_Kong-443-WS-TLS 3
-      - 🇺🇸 B-US-紐約-443-WS-TLS
-      - 🇺🇸 B-US-紐華克-443-WS-TLS
-      - 🇺🇸 B-US-紐華克-443-WS-TLS 2
-      - 🇨🇦 B-CA-多伦多-443-WS-TLS
-      - 🇺🇸 B-US-紐華克-443-WS-TLS 3
-      - 🇨🇦 B-CA-多伦多-443-WS-TLS 2
-      - 🇨🇦 B-CA-多伦多-443-WS-TLS 3
-      - 🇨🇦 B-CA-多伦多-443-WS-TLS 4
-      - 🇺🇸 C-US-紐約-443-WS-TLS
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 2
-      - 🇭🇰 C-HK-香港-443-WS-TLS
-      - 🇺🇸 C-US-洛杉矶-443-WS-TLS
-      - 🇺🇸 C-US-丹佛-443-WS-TLS
-      - 🇺🇸 C-US-凤凰城-443-WS-TLS
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 3
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 4
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 5
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 6
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 7
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 8
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 9
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 10
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 11
-      - 🇺🇸 C-US-洛杉矶-443-WS-TLS 2
-      - 🇭🇰 C-HK-香港-443-WS-TLS 2
-      - 🇩🇪 C-DE-法兰克福-443-WS-TLS
-      - 🇳🇱 C-NL-阿姆斯特丹-443-WS-TLS
-      - 🇳🇱 C-NL-阿姆斯特丹-443-WS-TLS 2
-      - 🇭🇰 C-HK-香港-443-WS-TLS 3
-      - 🇺🇸 C-US-芝加哥-443-WS-TLS
-      - 🇮🇳 C-IN-金奈-443-WS-TLS
-      - 🇺🇸 C-US-聖荷西-443-WS-TLS
-      - 🇺🇸 C-US-洛杉矶-443-WS-TLS 3
-      - 🇺🇸 C-US-紐華克-443-WS-TLS
-      - 🇺🇸 C-US-Chicago-443-WS-TLS
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 2
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 3
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 4
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 5
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 6
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 7
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 8
-      - 🇺🇸 C-US-Chicago-443-WS-TLS 2
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 9
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 10
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 11
-      - 🇺🇸 C-US-Newark-443-WS-TLS
-      - 🇺🇸 C-US-Newark-443-WS-TLS 2
-      - 🇺🇸 C-US-Newark-443-WS-TLS 3
-      - 🇺🇸 C-US-Dallas-443-WS-TLS
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 2
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 3
-      - 🇺🇸 C-US-Chicago-443-WS-TLS 3
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 4
-      - 🇺🇸 C-US-Newark-443-WS-TLS 4
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 5
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 6
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 7
-      - 🇺🇸 C-US-Newark-443-WS-TLS 5
-      - 🇺🇸 C-US-Dallas-443-WS-TLS 2
-      - 🇺🇸 C-US-Newark-443-WS-TLS 6
-      - 🇺🇸 C-US-Newark-443-WS-TLS 7
-      - 🇺🇸 C-US-Dallas-443-WS-TLS 3
-      - 🇺🇸 C-US-New_York-443-WS-TLS
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 8
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 9
-      - 🇺🇸 C-US-Newark-443-WS-TLS 8
-      - 🇺🇸 C-US-Newark-443-WS-TLS 9
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 10
-      - 🇺🇸 C-US-Newark-443-WS-TLS 10
-      - 🇺🇸 C-US-Newark-443-WS-TLS 11
-      - 🇺🇸 C-US-Seattle-443-WS-TLS
-      - 🇺🇸 C-US-Seattle-443-WS-TLS 2
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 11
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 12
-      - 🇺🇸 C-US-Washington-443-WS-TLS
-      - 🇺🇸 C-US-Seattle-443-WS-TLS 3
-      - 🇺🇸 C-US-Seattle-443-WS-TLS 4
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 13
-      - 🇺🇸 C-US-Los_Angeles-443-WS-TLS
-      - 🇺🇸 C-US-Los_Angeles-443-WS-TLS 2
-      - 🇺🇸 C-US-Los_Angeles-443-WS-TLS 3
-      - 🇺🇸 C-US-Los_Angeles-443-WS-TLS 4
-      - 🇺🇸 C-US-Los_Angeles-443-WS-TLS 5
-      - 🇺🇸 C-US-Los_Angeles-443-WS-TLS 6
-      - 🇺🇸 C-US-Los_Angeles-443-WS-TLS 7
-      - 🇺🇸 C-US-Los_Angeles-443-WS-TLS 8
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 14
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 15
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 16
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 17
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 18
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 19
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 20
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 21
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 22
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 23
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 24
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 25
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 26
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 27
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 28
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 29
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 30
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 31
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 32
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 33
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 34
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 35
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 36
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 37
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 38
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 39
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 40
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 41
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 42
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 43
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 44
-      - 🇺🇸 D-US-Chicago_[CF]-443-WS-TLS
-      - 🇺🇸 D-US-Chicago_[CF]-443-WS-TLS 2
-      - 🇺🇸 D-US-Newark_[CF]-443-WS-TLS
-      - 🇺🇸 D-US-San_Francisco_[CF]-443-WS-TLS
-      - 🇺🇸 D-US-San_Francisco_[CF]-443-WS-TLS 2
-      - 🇺🇸 D-US-Newark_[CF]-443-WS-TLS 2
-      - 🇺🇸 D-US-San_Francisco_[CF]-443-WS-TLS 3
-      - 🇺🇸 D-US-San_Francisco_[CF]-443-WS-TLS 4
-      - 🇺🇸 D-US-San_Francisco_[CF]-443-WS-TLS 5
-      - 🇺🇸 D-US-San_Francisco_[CF]-443-WS-TLS 6
+      - 德国 V2CROSS.COM
+      - 香港 电讯盈科有限公司 [8]
+      - 香港 电讯盈科有限公司 [9]
+      - 香港 电讯盈科有限公司 [10]
+      - 香港 电讯盈科有限公司 [11]
+      - 香港 电讯盈科有限公司 [12]
+      - 香港 电讯盈科有限公司 [13]
+      - 香港 电讯盈科有限公司 [14]
+      - 香港 电讯盈科有限公司 [15]
+      - 香港 电讯盈科有限公司 [16]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -2840,12 +700,11 @@ proxy-groups:
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
       - HK_speednode_0009
-      - 日本|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
+      - 日本|@ripaojiedian
       - CN_speednode_0003
       - 日本3|@ripaojiedian
       - CN_speednode_0004
-      - 新加坡2|@ripaojiedian
       - 新加坡3|@ripaojiedian
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
@@ -2868,203 +727,26 @@ proxy-groups:
       - US_speednode_0061
       - US_speednode_0062
       - US_speednode_0063
-      - 香港 电讯盈科
-      - 香港 电讯盈科 [1]
-      - 香港 电讯盈科 [2]
-      - 香港 电讯盈科 [3]
-      - 香港 电讯盈科 [4]
-      - 香港 电讯盈科 [5]
-      - 香港 电讯盈科 [6]
-      - 香港 电讯盈科 [7]
-      - 香港 电讯盈科 [8]
+      - 香港 电讯盈科有限公司
+      - 香港 Cloudie数据中心
+      - 香港 电讯盈科有限公司 [1]
+      - 香港 电讯盈科有限公司 [2]
+      - 香港 电讯盈科有限公司 [3]
+      - 香港 电讯盈科有限公司 [4]
+      - 香港 电讯盈科有限公司 [5]
+      - 香港 电讯盈科有限公司 [6]
+      - 香港 电讯盈科有限公司 [7]
       - 香港+电讯盈科有限公司
-      - 香港 电讯盈科 [9]
-      - 香港 电讯盈科 [10]
-      - 香港 电讯盈科 [11]
-      - 香港 电讯盈科 [12]
-      - 香港 电讯盈科 [13]
-      - 香港 电讯盈科 [14]
-      - 香港 电讯盈科 [15]
-      - 香港 电讯盈科 [16]
-      - 香港 电讯盈科 [17]
-      - 香港 电讯盈科 [18]
-      - 香港 电讯盈科 [19]
-      - 香港 电讯盈科 [20]
-      - 原生地址-443-WS-TLS
-      - 原生地址-80-WS
-      - 🇯🇵 A-JP-Inzai-16043-WS-TLS
-      - 🇯🇵 A-JP-Inzai-14453-WS-TLS
-      - 🇯🇵 A-JP-Inzai-16072-WS-TLS
-      - 🇯🇵 A-JP-Osaka-15805-WS-TLS
-      - 🇯🇵 A-JP-Kyoto-19842-WS-TLS
-      - 🇯🇵 A-JP-Tokyo-443-WS-TLS
-      - 🇯🇵 A-JP-Tokyo-443-WS-TLS 2
-      - 🇯🇵 A-JP-Minamishinagawa-443-WS-TLS
-      - 🇯🇵 A-JP-Osaka-443-WS-TLS
-      - 🇯🇵 A-JP-Osaka-55007-WS-TLS
-      - 🇭🇰 A-HK-Hong_Kong-443-WS-TLS
-      - 🇭🇰 A-HK-N/A-18622-WS-TLS
-      - 🇭🇰 A-HK-Hong_Kong-443-WS-TLS 2
-      - 🇭🇰 A-HK-N/A-8443-WS-TLS
-      - 🇭🇰 A-HK-Hong_Kong-443-WS-TLS 3
-      - 🇭🇰 A-HK-Hong_Kong-8080-WS
-      - 🇭🇰 A-HK-Hong_Kong-443-WS-TLS 4
-      - 🇭🇰 A-HK-Wong_Tai_Sin-57537-WS-TLS
-      - 🇭🇰 A-HK-Tsuen_Wan-18443-WS-TLS
-      - 🇭🇰 A-HK-N/A-12457-WS-TLS
-      - 🇺🇸 A-US-New_York-8443-WS-TLS
-      - 🇺🇸 A-US-Santa_Clara-443-WS-TLS
-      - 🇺🇸 A-US-New_York-443-WS-TLS
-      - 🇺🇸 A-US-N/A-443-WS-TLS
-      - 🇺🇸 A-US-Dallas-2053-WS-TLS
-      - 🇺🇸 A-US-Columbus-443-WS-TLS
-      - 🇺🇸 A-US-Dovr_Foxcroft-8443-WS-TLS
-      - 🇺🇸 A-US-Dallas-81-WS-TLS
-      - 🇺🇸 A-US-Los_Angeles-443-WS-TLS
-      - 🇺🇸 A-US-N/A-443-WS-TLS 2
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS 2
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS 3
-      - 🇭🇰 B-HK-Hong_Kong-443-WS-TLS
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS 4
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS 5
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS 6
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS 7
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS 8
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS 9
-      - 🇭🇰 B-HK-Hong_Kong-443-WS-TLS 2
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS 10
-      - 🇭🇰 B-HK-Hong_Kong-443-WS-TLS 3
-      - 🇺🇸 B-US-紐約-443-WS-TLS
-      - 🇺🇸 B-US-紐華克-443-WS-TLS
-      - 🇺🇸 B-US-紐華克-443-WS-TLS 2
-      - 🇨🇦 B-CA-多伦多-443-WS-TLS
-      - 🇺🇸 B-US-紐華克-443-WS-TLS 3
-      - 🇨🇦 B-CA-多伦多-443-WS-TLS 2
-      - 🇨🇦 B-CA-多伦多-443-WS-TLS 3
-      - 🇨🇦 B-CA-多伦多-443-WS-TLS 4
-      - 🇺🇸 C-US-紐約-443-WS-TLS
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 2
-      - 🇭🇰 C-HK-香港-443-WS-TLS
-      - 🇺🇸 C-US-洛杉矶-443-WS-TLS
-      - 🇺🇸 C-US-丹佛-443-WS-TLS
-      - 🇺🇸 C-US-凤凰城-443-WS-TLS
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 3
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 4
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 5
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 6
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 7
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 8
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 9
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 10
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 11
-      - 🇺🇸 C-US-洛杉矶-443-WS-TLS 2
-      - 🇭🇰 C-HK-香港-443-WS-TLS 2
-      - 🇩🇪 C-DE-法兰克福-443-WS-TLS
-      - 🇳🇱 C-NL-阿姆斯特丹-443-WS-TLS
-      - 🇳🇱 C-NL-阿姆斯特丹-443-WS-TLS 2
-      - 🇭🇰 C-HK-香港-443-WS-TLS 3
-      - 🇺🇸 C-US-芝加哥-443-WS-TLS
-      - 🇮🇳 C-IN-金奈-443-WS-TLS
-      - 🇺🇸 C-US-聖荷西-443-WS-TLS
-      - 🇺🇸 C-US-洛杉矶-443-WS-TLS 3
-      - 🇺🇸 C-US-紐華克-443-WS-TLS
-      - 🇺🇸 C-US-Chicago-443-WS-TLS
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 2
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 3
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 4
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 5
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 6
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 7
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 8
-      - 🇺🇸 C-US-Chicago-443-WS-TLS 2
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 9
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 10
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 11
-      - 🇺🇸 C-US-Newark-443-WS-TLS
-      - 🇺🇸 C-US-Newark-443-WS-TLS 2
-      - 🇺🇸 C-US-Newark-443-WS-TLS 3
-      - 🇺🇸 C-US-Dallas-443-WS-TLS
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 2
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 3
-      - 🇺🇸 C-US-Chicago-443-WS-TLS 3
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 4
-      - 🇺🇸 C-US-Newark-443-WS-TLS 4
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 5
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 6
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 7
-      - 🇺🇸 C-US-Newark-443-WS-TLS 5
-      - 🇺🇸 C-US-Dallas-443-WS-TLS 2
-      - 🇺🇸 C-US-Newark-443-WS-TLS 6
-      - 🇺🇸 C-US-Newark-443-WS-TLS 7
-      - 🇺🇸 C-US-Dallas-443-WS-TLS 3
-      - 🇺🇸 C-US-New_York-443-WS-TLS
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 8
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 9
-      - 🇺🇸 C-US-Newark-443-WS-TLS 8
-      - 🇺🇸 C-US-Newark-443-WS-TLS 9
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 10
-      - 🇺🇸 C-US-Newark-443-WS-TLS 10
-      - 🇺🇸 C-US-Newark-443-WS-TLS 11
-      - 🇺🇸 C-US-Seattle-443-WS-TLS
-      - 🇺🇸 C-US-Seattle-443-WS-TLS 2
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 11
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 12
-      - 🇺🇸 C-US-Washington-443-WS-TLS
-      - 🇺🇸 C-US-Seattle-443-WS-TLS 3
-      - 🇺🇸 C-US-Seattle-443-WS-TLS 4
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 13
-      - 🇺🇸 C-US-Los_Angeles-443-WS-TLS
-      - 🇺🇸 C-US-Los_Angeles-443-WS-TLS 2
-      - 🇺🇸 C-US-Los_Angeles-443-WS-TLS 3
-      - 🇺🇸 C-US-Los_Angeles-443-WS-TLS 4
-      - 🇺🇸 C-US-Los_Angeles-443-WS-TLS 5
-      - 🇺🇸 C-US-Los_Angeles-443-WS-TLS 6
-      - 🇺🇸 C-US-Los_Angeles-443-WS-TLS 7
-      - 🇺🇸 C-US-Los_Angeles-443-WS-TLS 8
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 14
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 15
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 16
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 17
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 18
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 19
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 20
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 21
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 22
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 23
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 24
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 25
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 26
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 27
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 28
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 29
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 30
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 31
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 32
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 33
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 34
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 35
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 36
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 37
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 38
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 39
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 40
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 41
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 42
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 43
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 44
-      - 🇺🇸 D-US-Chicago_[CF]-443-WS-TLS
-      - 🇺🇸 D-US-Chicago_[CF]-443-WS-TLS 2
-      - 🇺🇸 D-US-Newark_[CF]-443-WS-TLS
-      - 🇺🇸 D-US-San_Francisco_[CF]-443-WS-TLS
-      - 🇺🇸 D-US-San_Francisco_[CF]-443-WS-TLS 2
-      - 🇺🇸 D-US-Newark_[CF]-443-WS-TLS 2
-      - 🇺🇸 D-US-San_Francisco_[CF]-443-WS-TLS 3
-      - 🇺🇸 D-US-San_Francisco_[CF]-443-WS-TLS 4
-      - 🇺🇸 D-US-San_Francisco_[CF]-443-WS-TLS 5
-      - 🇺🇸 D-US-San_Francisco_[CF]-443-WS-TLS 6
+      - 德国 V2CROSS.COM
+      - 香港 电讯盈科有限公司 [8]
+      - 香港 电讯盈科有限公司 [9]
+      - 香港 电讯盈科有限公司 [10]
+      - 香港 电讯盈科有限公司 [11]
+      - 香港 电讯盈科有限公司 [12]
+      - 香港 电讯盈科有限公司 [13]
+      - 香港 电讯盈科有限公司 [14]
+      - 香港 电讯盈科有限公司 [15]
+      - 香港 电讯盈科有限公司 [16]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -3084,12 +766,11 @@ proxy-groups:
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
       - HK_speednode_0009
-      - 日本|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
+      - 日本|@ripaojiedian
       - CN_speednode_0003
       - 日本3|@ripaojiedian
       - CN_speednode_0004
-      - 新加坡2|@ripaojiedian
       - 新加坡3|@ripaojiedian
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
@@ -3112,203 +793,26 @@ proxy-groups:
       - US_speednode_0061
       - US_speednode_0062
       - US_speednode_0063
-      - 香港 电讯盈科
-      - 香港 电讯盈科 [1]
-      - 香港 电讯盈科 [2]
-      - 香港 电讯盈科 [3]
-      - 香港 电讯盈科 [4]
-      - 香港 电讯盈科 [5]
-      - 香港 电讯盈科 [6]
-      - 香港 电讯盈科 [7]
-      - 香港 电讯盈科 [8]
+      - 香港 电讯盈科有限公司
+      - 香港 Cloudie数据中心
+      - 香港 电讯盈科有限公司 [1]
+      - 香港 电讯盈科有限公司 [2]
+      - 香港 电讯盈科有限公司 [3]
+      - 香港 电讯盈科有限公司 [4]
+      - 香港 电讯盈科有限公司 [5]
+      - 香港 电讯盈科有限公司 [6]
+      - 香港 电讯盈科有限公司 [7]
       - 香港+电讯盈科有限公司
-      - 香港 电讯盈科 [9]
-      - 香港 电讯盈科 [10]
-      - 香港 电讯盈科 [11]
-      - 香港 电讯盈科 [12]
-      - 香港 电讯盈科 [13]
-      - 香港 电讯盈科 [14]
-      - 香港 电讯盈科 [15]
-      - 香港 电讯盈科 [16]
-      - 香港 电讯盈科 [17]
-      - 香港 电讯盈科 [18]
-      - 香港 电讯盈科 [19]
-      - 香港 电讯盈科 [20]
-      - 原生地址-443-WS-TLS
-      - 原生地址-80-WS
-      - 🇯🇵 A-JP-Inzai-16043-WS-TLS
-      - 🇯🇵 A-JP-Inzai-14453-WS-TLS
-      - 🇯🇵 A-JP-Inzai-16072-WS-TLS
-      - 🇯🇵 A-JP-Osaka-15805-WS-TLS
-      - 🇯🇵 A-JP-Kyoto-19842-WS-TLS
-      - 🇯🇵 A-JP-Tokyo-443-WS-TLS
-      - 🇯🇵 A-JP-Tokyo-443-WS-TLS 2
-      - 🇯🇵 A-JP-Minamishinagawa-443-WS-TLS
-      - 🇯🇵 A-JP-Osaka-443-WS-TLS
-      - 🇯🇵 A-JP-Osaka-55007-WS-TLS
-      - 🇭🇰 A-HK-Hong_Kong-443-WS-TLS
-      - 🇭🇰 A-HK-N/A-18622-WS-TLS
-      - 🇭🇰 A-HK-Hong_Kong-443-WS-TLS 2
-      - 🇭🇰 A-HK-N/A-8443-WS-TLS
-      - 🇭🇰 A-HK-Hong_Kong-443-WS-TLS 3
-      - 🇭🇰 A-HK-Hong_Kong-8080-WS
-      - 🇭🇰 A-HK-Hong_Kong-443-WS-TLS 4
-      - 🇭🇰 A-HK-Wong_Tai_Sin-57537-WS-TLS
-      - 🇭🇰 A-HK-Tsuen_Wan-18443-WS-TLS
-      - 🇭🇰 A-HK-N/A-12457-WS-TLS
-      - 🇺🇸 A-US-New_York-8443-WS-TLS
-      - 🇺🇸 A-US-Santa_Clara-443-WS-TLS
-      - 🇺🇸 A-US-New_York-443-WS-TLS
-      - 🇺🇸 A-US-N/A-443-WS-TLS
-      - 🇺🇸 A-US-Dallas-2053-WS-TLS
-      - 🇺🇸 A-US-Columbus-443-WS-TLS
-      - 🇺🇸 A-US-Dovr_Foxcroft-8443-WS-TLS
-      - 🇺🇸 A-US-Dallas-81-WS-TLS
-      - 🇺🇸 A-US-Los_Angeles-443-WS-TLS
-      - 🇺🇸 A-US-N/A-443-WS-TLS 2
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS 2
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS 3
-      - 🇭🇰 B-HK-Hong_Kong-443-WS-TLS
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS 4
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS 5
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS 6
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS 7
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS 8
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS 9
-      - 🇭🇰 B-HK-Hong_Kong-443-WS-TLS 2
-      - 🇺🇸 B-US-San_Francisco-443-WS-TLS 10
-      - 🇭🇰 B-HK-Hong_Kong-443-WS-TLS 3
-      - 🇺🇸 B-US-紐約-443-WS-TLS
-      - 🇺🇸 B-US-紐華克-443-WS-TLS
-      - 🇺🇸 B-US-紐華克-443-WS-TLS 2
-      - 🇨🇦 B-CA-多伦多-443-WS-TLS
-      - 🇺🇸 B-US-紐華克-443-WS-TLS 3
-      - 🇨🇦 B-CA-多伦多-443-WS-TLS 2
-      - 🇨🇦 B-CA-多伦多-443-WS-TLS 3
-      - 🇨🇦 B-CA-多伦多-443-WS-TLS 4
-      - 🇺🇸 C-US-紐約-443-WS-TLS
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 2
-      - 🇭🇰 C-HK-香港-443-WS-TLS
-      - 🇺🇸 C-US-洛杉矶-443-WS-TLS
-      - 🇺🇸 C-US-丹佛-443-WS-TLS
-      - 🇺🇸 C-US-凤凰城-443-WS-TLS
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 3
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 4
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 5
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 6
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 7
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 8
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 9
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 10
-      - 🇸🇬 C-SG-新加坡-443-WS-TLS 11
-      - 🇺🇸 C-US-洛杉矶-443-WS-TLS 2
-      - 🇭🇰 C-HK-香港-443-WS-TLS 2
-      - 🇩🇪 C-DE-法兰克福-443-WS-TLS
-      - 🇳🇱 C-NL-阿姆斯特丹-443-WS-TLS
-      - 🇳🇱 C-NL-阿姆斯特丹-443-WS-TLS 2
-      - 🇭🇰 C-HK-香港-443-WS-TLS 3
-      - 🇺🇸 C-US-芝加哥-443-WS-TLS
-      - 🇮🇳 C-IN-金奈-443-WS-TLS
-      - 🇺🇸 C-US-聖荷西-443-WS-TLS
-      - 🇺🇸 C-US-洛杉矶-443-WS-TLS 3
-      - 🇺🇸 C-US-紐華克-443-WS-TLS
-      - 🇺🇸 C-US-Chicago-443-WS-TLS
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 2
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 3
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 4
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 5
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 6
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 7
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 8
-      - 🇺🇸 C-US-Chicago-443-WS-TLS 2
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 9
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 10
-      - 🇺🇸 C-US-紐華克-443-WS-TLS 11
-      - 🇺🇸 C-US-Newark-443-WS-TLS
-      - 🇺🇸 C-US-Newark-443-WS-TLS 2
-      - 🇺🇸 C-US-Newark-443-WS-TLS 3
-      - 🇺🇸 C-US-Dallas-443-WS-TLS
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 2
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 3
-      - 🇺🇸 C-US-Chicago-443-WS-TLS 3
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 4
-      - 🇺🇸 C-US-Newark-443-WS-TLS 4
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 5
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 6
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 7
-      - 🇺🇸 C-US-Newark-443-WS-TLS 5
-      - 🇺🇸 C-US-Dallas-443-WS-TLS 2
-      - 🇺🇸 C-US-Newark-443-WS-TLS 6
-      - 🇺🇸 C-US-Newark-443-WS-TLS 7
-      - 🇺🇸 C-US-Dallas-443-WS-TLS 3
-      - 🇺🇸 C-US-New_York-443-WS-TLS
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 8
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 9
-      - 🇺🇸 C-US-Newark-443-WS-TLS 8
-      - 🇺🇸 C-US-Newark-443-WS-TLS 9
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 10
-      - 🇺🇸 C-US-Newark-443-WS-TLS 10
-      - 🇺🇸 C-US-Newark-443-WS-TLS 11
-      - 🇺🇸 C-US-Seattle-443-WS-TLS
-      - 🇺🇸 C-US-Seattle-443-WS-TLS 2
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 11
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 12
-      - 🇺🇸 C-US-Washington-443-WS-TLS
-      - 🇺🇸 C-US-Seattle-443-WS-TLS 3
-      - 🇺🇸 C-US-Seattle-443-WS-TLS 4
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 13
-      - 🇺🇸 C-US-Los_Angeles-443-WS-TLS
-      - 🇺🇸 C-US-Los_Angeles-443-WS-TLS 2
-      - 🇺🇸 C-US-Los_Angeles-443-WS-TLS 3
-      - 🇺🇸 C-US-Los_Angeles-443-WS-TLS 4
-      - 🇺🇸 C-US-Los_Angeles-443-WS-TLS 5
-      - 🇺🇸 C-US-Los_Angeles-443-WS-TLS 6
-      - 🇺🇸 C-US-Los_Angeles-443-WS-TLS 7
-      - 🇺🇸 C-US-Los_Angeles-443-WS-TLS 8
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 14
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 15
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 16
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 17
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 18
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 19
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 20
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 21
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 22
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 23
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 24
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 25
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 26
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 27
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 28
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 29
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 30
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 31
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 32
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 33
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 34
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 35
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 36
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 37
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 38
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 39
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 40
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 41
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 42
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 43
-      - 🇺🇸 C-US-San_Francisco-443-WS-TLS 44
-      - 🇺🇸 D-US-Chicago_[CF]-443-WS-TLS
-      - 🇺🇸 D-US-Chicago_[CF]-443-WS-TLS 2
-      - 🇺🇸 D-US-Newark_[CF]-443-WS-TLS
-      - 🇺🇸 D-US-San_Francisco_[CF]-443-WS-TLS
-      - 🇺🇸 D-US-San_Francisco_[CF]-443-WS-TLS 2
-      - 🇺🇸 D-US-Newark_[CF]-443-WS-TLS 2
-      - 🇺🇸 D-US-San_Francisco_[CF]-443-WS-TLS 3
-      - 🇺🇸 D-US-San_Francisco_[CF]-443-WS-TLS 4
-      - 🇺🇸 D-US-San_Francisco_[CF]-443-WS-TLS 5
-      - 🇺🇸 D-US-San_Francisco_[CF]-443-WS-TLS 6
+      - 德国 V2CROSS.COM
+      - 香港 电讯盈科有限公司 [8]
+      - 香港 电讯盈科有限公司 [9]
+      - 香港 电讯盈科有限公司 [10]
+      - 香港 电讯盈科有限公司 [11]
+      - 香港 电讯盈科有限公司 [12]
+      - 香港 电讯盈科有限公司 [13]
+      - 香港 电讯盈科有限公司 [14]
+      - 香港 电讯盈科有限公司 [15]
+      - 香港 电讯盈科有限公司 [16]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
