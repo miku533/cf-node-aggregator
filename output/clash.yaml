@@ -289,9 +289,40 @@ proxies:
       path: /profile/sharenodesecurity=tls
       headers:
         Host: cdn-node-oss-63.paofu.de
-  - name: 美国 CloudFlare节点
+  - name: 中国 阿里云
     type: vmess
-    server: 141.101.121.3
+    server: 8.217.21.237
+    port: 35638
+    uuid: 132c1dc3-9ac5-4a54-9945-7b2aae2eacaa
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /arki?ed=2048
+      headers: {}
+  - name: 香港+电讯盈科有限公司
+    type: trojan
+    server: 58.152.53.3
+    port: 443
+    password: BxceQaOe
+    sni: 58.152.53.3
+    skip-cert-verify: false
+  - name: 美国 阿里云
+    type: vmess
+    server: 47.238.247.69
+    port: 25608
+    uuid: 575ac013-bfe8-4b24-8e9f-cc29a6bc8151
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /arki?ed=2048
+      headers: {}
+  - name: 瑞典 V2CROSS.COM
+    type: vmess
+    server: 185.146.173.117
     port: 80
     uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
     alterId: 0
@@ -302,9 +333,9 @@ proxies:
       path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
       headers:
         Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-  - name: 美国 CloudFlare节点 [1]
+  - name: 瑞典 V2CROSS.COM [1]
     type: vmess
-    server: 104.18.240.238
+    server: 185.146.173.126
     port: 80
     uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
     alterId: 0
@@ -356,8 +387,11 @@ proxy-groups:
       - US_speednode_0100
       - US_speednode_0101
       - US_speednode_0102
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
+      - 中国 阿里云
+      - 香港+电讯盈科有限公司
+      - 美国 阿里云
+      - 瑞典 V2CROSS.COM
+      - 瑞典 V2CROSS.COM [1]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -395,8 +429,11 @@ proxy-groups:
       - US_speednode_0100
       - US_speednode_0101
       - US_speednode_0102
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
+      - 中国 阿里云
+      - 香港+电讯盈科有限公司
+      - 美国 阿里云
+      - 瑞典 V2CROSS.COM
+      - 瑞典 V2CROSS.COM [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -436,8 +473,11 @@ proxy-groups:
       - US_speednode_0100
       - US_speednode_0101
       - US_speednode_0102
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
+      - 中国 阿里云
+      - 香港+电讯盈科有限公司
+      - 美国 阿里云
+      - 瑞典 V2CROSS.COM
+      - 瑞典 V2CROSS.COM [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
