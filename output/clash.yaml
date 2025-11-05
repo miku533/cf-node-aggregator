@@ -203,30 +203,53 @@ proxies:
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
-  - name: US_speednode_0019
+  - name: CN_speednode_0030
+    type: trojan
+    server: n001.xunxunmimisbs.sbs
+    port: 24100
+    password: d0d86fb6-7597-4382-8bd8-773d0cd26e59
+    sni: us01.xxxxyyyysbs.sbs
+    skip-cert-verify: false
+  - name: US_speednode_0045
     type: vless
-    server: usa32.clearorbitllc.com
-    port: 443
-    uuid: 9daf8f3e-089b-4989-9502-dd3d727edb6c
+    server: usvless.yydzx.xyz
+    port: 17597
+    uuid: 4741863d-e3ac-4b9d-8185-466f437b3fa8
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 瑞典 V2CROSS.COM
-    type: vmess
-    server: 185.146.173.16
-    port: 80
-    uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-    alterId: 0
-    cipher: auto
+  - name: US_speednode_0048
+    type: vless
+    server: linux.do
+    port: 2095
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
     tls: false
     network: ws
     ws-opts:
-      path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+      path: /
       headers:
-        Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-  - name: 瑞典 V2CROSS.COM [1]
+        Host: fangbinxingnmsl.pusytroller.cf
+  - name: US_speednode_0049
+    type: vless
+    server: www.npmjs.com
+    port: 2095
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: fangbinxingnmsl.pusytroller.cf
+  - name: 香港+电讯盈科有限公司
+    type: trojan
+    server: 58.152.46.98
+    port: 443
+    password: BxceQaOe
+    sni: 58.152.46.98
+    skip-cert-verify: false
+  - name: 瑞典 V2CROSS.COM
     type: vmess
-    server: 185.146.173.117
+    server: 185.146.173.16
     port: 80
     uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
     alterId: 0
@@ -268,9 +291,12 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - US_speednode_0019
+      - CN_speednode_0030
+      - US_speednode_0045
+      - US_speednode_0048
+      - US_speednode_0049
+      - 香港+电讯盈科有限公司
       - 瑞典 V2CROSS.COM
-      - 瑞典 V2CROSS.COM [1]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -298,9 +324,12 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - US_speednode_0019
+      - CN_speednode_0030
+      - US_speednode_0045
+      - US_speednode_0048
+      - US_speednode_0049
+      - 香港+电讯盈科有限公司
       - 瑞典 V2CROSS.COM
-      - 瑞典 V2CROSS.COM [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -330,9 +359,12 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - US_speednode_0019
+      - CN_speednode_0030
+      - US_speednode_0045
+      - US_speednode_0048
+      - US_speednode_0049
+      - 香港+电讯盈科有限公司
       - 瑞典 V2CROSS.COM
-      - 瑞典 V2CROSS.COM [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
