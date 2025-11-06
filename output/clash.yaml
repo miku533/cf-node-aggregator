@@ -228,6 +228,22 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
+  - name: RU_speednode_0007
+    type: vless
+    server: g72oiqhd.tun.nodeflex.cc
+    port: 30865
+    uuid: d43bc5b9-21f8-42a7-adf8-8db943de75eb
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: RU_speednode_0008
+    type: vless
+    server: g72oiqhd.tun.nodeflex.cc
+    port: 30866
+    uuid: 1922fd72-8ebf-44f8-86ea-a032be1d26d7
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
   - name: CA_speednode_0001
     type: vless
     server: 132.145.99.18
@@ -342,22 +358,6 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0032
-    type: vless
-    server: g72oiqhd.tun.nodeflex.cc
-    port: 30866
-    uuid: 1922fd72-8ebf-44f8-86ea-a032be1d26d7
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0033
-    type: vless
-    server: g72oiqhd.tun.nodeflex.cc
-    port: 30865
-    uuid: d43bc5b9-21f8-42a7-adf8-8db943de75eb
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
   - name: US_speednode_0036
     type: trojan
     server: 167.68.4.199
@@ -365,66 +365,9 @@ proxies:
     password: Aimer
     sni: epge.muarua.filegear-sg.me
     skip-cert-verify: true
-  - name: CN_speednode_0030
-    type: trojan
-    server: n001.xunxunmimisbs.sbs
-    port: 24100
-    password: d0d86fb6-7597-4382-8bd8-773d0cd26e59
-    sni: us01.xxxxyyyysbs.sbs
-    skip-cert-verify: false
-  - name: US_speednode_0045
-    type: vless
-    server: usvless.yydzx.xyz
-    port: 17597
-    uuid: 4741863d-e3ac-4b9d-8185-466f437b3fa8
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: US_speednode_0048
-    type: vless
-    server: linux.do
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: fangbinxingnmsl.pusytroller.cf
-  - name: US_speednode_0049
-    type: vless
-    server: www.npmjs.com
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: fangbinxingnmsl.pusytroller.cf
-  - name: 江苏省+移动
-    type: trojan
-    server: 36.150.215.137
-    port: 5156
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
   - name: 瑞典 V2CROSS.COM
     type: vmess
-    server: 185.146.173.16
-    port: 80
-    uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
-      headers:
-        Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 104.18.240.238
+    server: 185.146.173.24
     port: 80
     uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
     alterId: 0
@@ -469,6 +412,8 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇻🇳 越南|@ripaojiedian
+      - RU_speednode_0007
+      - RU_speednode_0008
       - CA_speednode_0001
       - CN_speednode_0002
       - CN_speednode_0005
@@ -485,16 +430,8 @@ proxy-groups:
       - CN_speednode_0026
       - CN_speednode_0029
       - LB_speednode_0031
-      - RU_speednode_0032
-      - RU_speednode_0033
       - US_speednode_0036
-      - CN_speednode_0030
-      - US_speednode_0045
-      - US_speednode_0048
-      - US_speednode_0049
-      - 江苏省+移动
       - 瑞典 V2CROSS.COM
-      - 美国 CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -525,6 +462,8 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇻🇳 越南|@ripaojiedian
+      - RU_speednode_0007
+      - RU_speednode_0008
       - CA_speednode_0001
       - CN_speednode_0002
       - CN_speednode_0005
@@ -541,16 +480,8 @@ proxy-groups:
       - CN_speednode_0026
       - CN_speednode_0029
       - LB_speednode_0031
-      - RU_speednode_0032
-      - RU_speednode_0033
       - US_speednode_0036
-      - CN_speednode_0030
-      - US_speednode_0045
-      - US_speednode_0048
-      - US_speednode_0049
-      - 江苏省+移动
       - 瑞典 V2CROSS.COM
-      - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -583,6 +514,8 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇻🇳 越南|@ripaojiedian
+      - RU_speednode_0007
+      - RU_speednode_0008
       - CA_speednode_0001
       - CN_speednode_0002
       - CN_speednode_0005
@@ -599,16 +532,8 @@ proxy-groups:
       - CN_speednode_0026
       - CN_speednode_0029
       - LB_speednode_0031
-      - RU_speednode_0032
-      - RU_speednode_0033
       - US_speednode_0036
-      - CN_speednode_0030
-      - US_speednode_0045
-      - US_speednode_0048
-      - US_speednode_0049
-      - 江苏省+移动
       - 瑞典 V2CROSS.COM
-      - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
