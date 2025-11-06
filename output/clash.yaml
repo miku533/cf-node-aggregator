@@ -228,146 +228,44 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: RU_speednode_0007
-    type: vless
-    server: g72oiqhd.tun.nodeflex.cc
-    port: 30865
-    uuid: d43bc5b9-21f8-42a7-adf8-8db943de75eb
-    tls: true
+  - name: 香港 Cloudie数据中心
+    type: vmess
+    server: 103.243.26.209
+    port: 10086
+    uuid: c5ec2e3f-c058-46a8-a148-1831824bb94b
+    alterId: 0
+    cipher: auto
+    tls: false
     network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0008
-    type: vless
-    server: g72oiqhd.tun.nodeflex.cc
-    port: 30866
-    uuid: 1922fd72-8ebf-44f8-86ea-a032be1d26d7
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: CA_speednode_0001
-    type: vless
-    server: 132.145.99.18
-    port: 40106
-    uuid: dcdd09ad-4519-46f7-8107-4c4290a9b2a3
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: CN_speednode_0002
-    type: trojan
-    server: n001.xunxunmimisbs.sbs
-    port: 41300
-    password: 5a27a43b-c50f-4374-85b0-300c4e0a77f2
-    sni: jp01.xxxxyyyysbs.sbs
-    skip-cert-verify: true
-  - name: CN_speednode_0005
-    type: trojan
-    server: n001.xunxunmimisbs.sbs
-    port: 31200
-    password: 5a27a43b-c50f-4374-85b0-300c4e0a77f2
-    sni: sg01.xxxxyyyysbs.sbs
-    skip-cert-verify: false
-  - name: CN_speednode_0008
-    type: trojan
-    server: n002.xunxunmimisbs.sbs
-    port: 21201
-    password: 85c7bad3-d246-4ca4-8ecf-f10317bc1c21
-    sni: hk02.xxxxyyyysbs.sbs
-    skip-cert-verify: false
-  - name: CN_speednode_0009
-    type: trojan
-    server: n002.xunxunmimisbs.sbs
-    port: 31200
-    password: a7bb66bd-973c-424e-90ef-3f2841b2c44f
-    sni: sg01.xxxxyyyysbs.sbs
-    skip-cert-verify: false
-  - name: CN_speednode_0011
-    type: trojan
-    server: n002.xunxunmimisbs.sbs
-    port: 27100
-    password: 85c7bad3-d246-4ca4-8ecf-f10317bc1c21
-    sni: in01.xxxxyyyysbs.sbs
-    skip-cert-verify: false
-  - name: CN_speednode_0012
-    type: trojan
-    server: n002.xunxunmimisbs.sbs
-    port: 28300
-    password: 85c7bad3-d246-4ca4-8ecf-f10317bc1c21
-    sni: tai01.xxxxyyyysbs.sbs
-    skip-cert-verify: false
-  - name: CN_speednode_0013
-    type: trojan
-    server: n002.xunxunmimisbs.sbs
-    port: 28200
-    password: 85c7bad3-d246-4ca4-8ecf-f10317bc1c21
-    sni: vn01.xxxxyyyysbs.sbs
-    skip-cert-verify: false
-  - name: CN_speednode_0015
-    type: trojan
-    server: n001.xunxunmimisbs.sbs
-    port: 22100
-    password: 5a27a43b-c50f-4374-85b0-300c4e0a77f2
-    sni: kr01.xxxxyyyysbs.sbs
-    skip-cert-verify: false
-  - name: CN_speednode_0017
-    type: trojan
-    server: n001.xunxunmimisbs.sbs
-    port: 28200
-    password: 85c7bad3-d246-4ca4-8ecf-f10317bc1c21
-    sni: vn01.xxxxyyyysbs.sbs
-    skip-cert-verify: false
-  - name: CN_speednode_0020
-    type: trojan
-    server: n002.xunxunmimisbs.sbs
-    port: 22100
-    password: 5a27a43b-c50f-4374-85b0-300c4e0a77f2
-    sni: kr01.xxxxyyyysbs.sbs
-    skip-cert-verify: false
-  - name: CN_speednode_0024
-    type: trojan
-    server: n001.xunxunmimisbs.sbs
-    port: 26100
-    password: 85c7bad3-d246-4ca4-8ecf-f10317bc1c21
-    sni: fr01.xxxxyyyysbs.sbs
-    skip-cert-verify: false
-  - name: CN_speednode_0025
-    type: trojan
-    server: n002.xunxunmimisbs.sbs
-    port: 26100
-    password: 85c7bad3-d246-4ca4-8ecf-f10317bc1c21
-    sni: fr01.xxxxyyyysbs.sbs
-    skip-cert-verify: false
-  - name: CN_speednode_0026
-    type: trojan
-    server: n002.xunxunmimisbs.sbs
-    port: 23100
-    password: 5a27a43b-c50f-4374-85b0-300c4e0a77f2
-    sni: uk01.xxxxyyyysbs.sbs
-    skip-cert-verify: false
-  - name: CN_speednode_0029
-    type: trojan
-    server: n001.xunxunmimisbs.sbs
-    port: 23100
-    password: 5a27a43b-c50f-4374-85b0-300c4e0a77f2
-    sni: uk01.xxxxyyyysbs.sbs
-    skip-cert-verify: false
-  - name: LB_speednode_0031
-    type: vless
-    server: 77.110.119.225
-    port: 443
-    uuid: 4819860c-0e62-4804-9c59-967e5c2bed7a
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: US_speednode_0036
-    type: trojan
-    server: 167.68.4.199
-    port: 2053
-    password: Aimer
-    sni: epge.muarua.filegear-sg.me
-    skip-cert-verify: true
   - name: 瑞典 V2CROSS.COM
     type: vmess
-    server: 185.146.173.24
+    server: 185.146.173.126
+    port: 80
+    uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+      headers:
+        Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 141.101.120.130
+    port: 80
+    uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?---@AZARBAYKAB1---@AZARBAYJAB1---@AZARBAYJAB1---@AZARBAYJAB1---@AZARBAYJAB1/?ed=2560
+      headers:
+        Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  - name: 美国 CloudFlare节点 [1]
+    type: vmess
+    server: 141.101.121.250
     port: 80
     uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
     alterId: 0
@@ -412,26 +310,10 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇻🇳 越南|@ripaojiedian
-      - RU_speednode_0007
-      - RU_speednode_0008
-      - CA_speednode_0001
-      - CN_speednode_0002
-      - CN_speednode_0005
-      - CN_speednode_0008
-      - CN_speednode_0009
-      - CN_speednode_0011
-      - CN_speednode_0012
-      - CN_speednode_0013
-      - CN_speednode_0015
-      - CN_speednode_0017
-      - CN_speednode_0020
-      - CN_speednode_0024
-      - CN_speednode_0025
-      - CN_speednode_0026
-      - CN_speednode_0029
-      - LB_speednode_0031
-      - US_speednode_0036
+      - 香港 Cloudie数据中心
       - 瑞典 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 [1]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -462,26 +344,10 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇻🇳 越南|@ripaojiedian
-      - RU_speednode_0007
-      - RU_speednode_0008
-      - CA_speednode_0001
-      - CN_speednode_0002
-      - CN_speednode_0005
-      - CN_speednode_0008
-      - CN_speednode_0009
-      - CN_speednode_0011
-      - CN_speednode_0012
-      - CN_speednode_0013
-      - CN_speednode_0015
-      - CN_speednode_0017
-      - CN_speednode_0020
-      - CN_speednode_0024
-      - CN_speednode_0025
-      - CN_speednode_0026
-      - CN_speednode_0029
-      - LB_speednode_0031
-      - US_speednode_0036
+      - 香港 Cloudie数据中心
       - 瑞典 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -514,26 +380,10 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇻🇳 越南|@ripaojiedian
-      - RU_speednode_0007
-      - RU_speednode_0008
-      - CA_speednode_0001
-      - CN_speednode_0002
-      - CN_speednode_0005
-      - CN_speednode_0008
-      - CN_speednode_0009
-      - CN_speednode_0011
-      - CN_speednode_0012
-      - CN_speednode_0013
-      - CN_speednode_0015
-      - CN_speednode_0017
-      - CN_speednode_0020
-      - CN_speednode_0024
-      - CN_speednode_0025
-      - CN_speednode_0026
-      - CN_speednode_0029
-      - LB_speednode_0031
-      - US_speednode_0036
+      - 香港 Cloudie数据中心
       - 瑞典 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
