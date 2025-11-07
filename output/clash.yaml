@@ -228,18 +228,22 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 香港 Cloudie数据中心
+  - name: 广东省 移动
     type: vmess
-    server: 103.243.26.209
-    port: 10086
-    uuid: c5ec2e3f-c058-46a8-a148-1831824bb94b
+    server: gtm1.ktmwan.net
+    port: 12891
+    uuid: 0d36b2c4-a554-4e54-bd53-1975fc960ba6
     alterId: 0
     cipher: auto
     tls: false
-    network: tcp
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: v1.pstatp.com
   - name: 瑞典 V2CROSS.COM
     type: vmess
-    server: 185.146.173.126
+    server: 185.146.173.16
     port: 80
     uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
     alterId: 0
@@ -247,25 +251,32 @@ proxies:
     tls: false
     network: ws
     ws-opts:
-      path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+      path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+      headers:
+        Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  - name: 香港+电讯盈科有限公司
+    type: trojan
+    server: 58.152.46.98
+    port: 443
+    password: BxceQaOe
+    sni: 58.152.46.98
+    skip-cert-verify: false
+  - name: 瑞典 V2CROSS.COM [1]
+    type: vmess
+    server: 185.146.173.82
+    port: 80
+    uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
       headers:
         Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 141.101.120.130
-    port: 80
-    uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?---@AZARBAYKAB1---@AZARBAYJAB1---@AZARBAYJAB1---@AZARBAYJAB1---@AZARBAYJAB1/?ed=2560
-      headers:
-        Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-  - name: 美国 CloudFlare节点 [1]
-    type: vmess
-    server: 141.101.121.250
+    server: 141.101.121.3
     port: 80
     uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
     alterId: 0
@@ -310,10 +321,11 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇻🇳 越南|@ripaojiedian
-      - 香港 Cloudie数据中心
+      - 广东省 移动
       - 瑞典 V2CROSS.COM
+      - 香港+电讯盈科有限公司
+      - 瑞典 V2CROSS.COM [1]
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -344,10 +356,11 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇻🇳 越南|@ripaojiedian
-      - 香港 Cloudie数据中心
+      - 广东省 移动
       - 瑞典 V2CROSS.COM
+      - 香港+电讯盈科有限公司
+      - 瑞典 V2CROSS.COM [1]
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -380,10 +393,11 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇻🇳 越南|@ripaojiedian
-      - 香港 Cloudie数据中心
+      - 广东省 移动
       - 瑞典 V2CROSS.COM
+      - 香港+电讯盈科有限公司
+      - 瑞典 V2CROSS.COM [1]
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
