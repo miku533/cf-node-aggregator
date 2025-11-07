@@ -235,9 +235,18 @@ proxies:
     uuid: cdc453bb-34c8-4405-a322-56f6878ccd40
     tls: false
     network: tcp
+  - name: 香港 Cloudie数据中心
+    type: vmess
+    server: 103.243.26.209
+    port: 8080
+    uuid: bc7e6840-ab83-4570-eaae-d9aff1e2da09
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
   - name: 瑞典 V2CROSS.COM
     type: vmess
-    server: 185.146.173.24
+    server: 185.146.173.117
     port: 80
     uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
     alterId: 0
@@ -248,11 +257,11 @@ proxies:
       path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
       headers:
         Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-  - name: 香港 Cloudie数据中心
+  - name: 西班牙 V2CROSS.COM
     type: vmess
-    server: 103.243.26.209
-    port: 8080
-    uuid: bc7e6840-ab83-4570-eaae-d9aff1e2da09
+    server: 164.138.202.55
+    port: 50475
+    uuid: b3bfb11c-43ff-41f3-9ba7-18b615baa134
     alterId: 0
     cipher: auto
     tls: false
@@ -292,8 +301,9 @@ proxy-groups:
       - 美国3|@ripaojiedian
       - 🇻🇳 越南|@ripaojiedian
       - US_speednode_0018
-      - 瑞典 V2CROSS.COM
       - 香港 Cloudie数据中心
+      - 瑞典 V2CROSS.COM
+      - 西班牙 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -325,8 +335,9 @@ proxy-groups:
       - 美国3|@ripaojiedian
       - 🇻🇳 越南|@ripaojiedian
       - US_speednode_0018
-      - 瑞典 V2CROSS.COM
       - 香港 Cloudie数据中心
+      - 瑞典 V2CROSS.COM
+      - 西班牙 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -360,8 +371,9 @@ proxy-groups:
       - 美国3|@ripaojiedian
       - 🇻🇳 越南|@ripaojiedian
       - US_speednode_0018
-      - 瑞典 V2CROSS.COM
       - 香港 Cloudie数据中心
+      - 瑞典 V2CROSS.COM
+      - 西班牙 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
