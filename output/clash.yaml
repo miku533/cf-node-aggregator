@@ -228,34 +228,16 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 香港 电讯盈科有限公司
-    type: vmess
-    server: v10.heduian.link
-    port: 30807
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
+  - name: US_speednode_0018
+    type: vless
+    server: 198.186.131.216
+    port: 47387
+    uuid: cdc453bb-34c8-4405-a322-56f6878ccd40
     tls: false
-    network: ws
-    ws-opts:
-      path: /oooo
-      headers:
-        Host: baidu.com
-  - name: 香港 阿里云
-    type: vmess
-    server: 47.243.172.177
-    port: 17527
-    uuid: 499ee2c5-30a7-4939-8b3c-781b07486d4c
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /arki?ed=2048
-      headers: {}
+    network: tcp
   - name: 瑞典 V2CROSS.COM
     type: vmess
-    server: 185.146.173.82
+    server: 185.146.173.24
     port: 80
     uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
     alterId: 0
@@ -266,28 +248,15 @@ proxies:
       path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
       headers:
         Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-  - name: 广东省广州市 移动
+  - name: 香港 Cloudie数据中心
     type: vmess
-    server: tkcmi.5tk.top
-    port: 38637
-    uuid: 93058ab5-bb29-44d4-c309-d224c0967732
+    server: 103.243.26.209
+    port: 8080
+    uuid: bc7e6840-ab83-4570-eaae-d9aff1e2da09
     alterId: 0
     cipher: auto
     tls: false
     network: tcp
-  - name: 瑞典 V2CROSS.COM [1]
-    type: vmess
-    server: 185.146.173.16
-    port: 80
-    uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
-      headers:
-        Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -322,11 +291,9 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇻🇳 越南|@ripaojiedian
-      - 香港 电讯盈科有限公司
-      - 香港 阿里云
+      - US_speednode_0018
       - 瑞典 V2CROSS.COM
-      - 广东省广州市 移动
-      - 瑞典 V2CROSS.COM [1]
+      - 香港 Cloudie数据中心
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -357,11 +324,9 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇻🇳 越南|@ripaojiedian
-      - 香港 电讯盈科有限公司
-      - 香港 阿里云
+      - US_speednode_0018
       - 瑞典 V2CROSS.COM
-      - 广东省广州市 移动
-      - 瑞典 V2CROSS.COM [1]
+      - 香港 Cloudie数据中心
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -394,11 +359,9 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇻🇳 越南|@ripaojiedian
-      - 香港 电讯盈科有限公司
-      - 香港 阿里云
+      - US_speednode_0018
       - 瑞典 V2CROSS.COM
-      - 广东省广州市 移动
-      - 瑞典 V2CROSS.COM [1]
+      - 香港 Cloudie数据中心
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
