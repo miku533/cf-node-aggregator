@@ -201,11 +201,77 @@ proxies:
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
+  - name: CA_speednode_0002
+    type: vless
+    server: 40.233.71.65
+    port: 26113
+    uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: CN_speednode_0003
+    type: trojan
+    server: naiu-hk.05vr9nyqg5.download
+    port: 13007
+    password: dce3c42b-f259-4b18-b5c1-a42ebef4e732
+    sni: cloudflare.node-ssl.cdn-alibaba.com
+    skip-cert-verify: false
+  - name: GB_speednode_0011
+    type: vless
+    server: dl.darkterror.fonixapp.org
+    port: 20579
+    uuid: 93cd7e0f-8a81-4076-be8b-6d3bf3f8f810
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: HK_speednode_0013
+    type: trojan
+    server: 58.152.46.98
+    port: 443
+    password: BxceQaOe
+    sni: 58.152.46.98
+    skip-cert-verify: true
+  - name: RO_speednode_0022
+    type: vless
+    server: london.fonixapp.org
+    port: 11133
+    uuid: 160a7b5d-fd67-4e83-8d8e-73dcfb6d91c2
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: US_speednode_0025
+    type: vless
+    server: ef87bb2b.meti-e9q.pages.dev
+    port: 443
+    uuid: 923509aa-bfb0-4758-a5a1-a6c2d0468169
+    tls: true
+    network: ws
+    ws-opts:
+      path: /ck2vlelfdajoybac?ed=2560fp=chrome
+      headers:
+        Host: ef87bb2b.meti-e9q.pages.dev
+  - name: US_speednode_0026
+    type: vless
+    server: virginia.fonixapp.org
+    port: 52230
+    uuid: dd2961de-3cff-4b6d-bbd1-819d571df66b
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
   - name: US_speednode_0018
     type: vless
     server: 198.186.131.216
     port: 47387
     uuid: cdc453bb-34c8-4405-a322-56f6878ccd40
+    tls: false
+    network: tcp
+  - name: 香港 Cloudie数据中心
+    type: vmess
+    server: 103.243.26.209
+    port: 8080
+    uuid: bc7e6840-ab83-4570-eaae-d9aff1e2da09
+    alterId: 0
+    cipher: auto
     tls: false
     network: tcp
   - name: 瑞典 V2CROSS.COM
@@ -221,50 +287,19 @@ proxies:
       path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
       headers:
         Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-  - name: 奥地利 V2CROSS.COM
+  - name: 香港 电讯盈科
     type: vmess
-    server: 46.29.34.205
-    port: 22947
-    uuid: d7291fc4-1702-4826-8fe1-ab301b1c8f82
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 141.101.121.250
-    port: 80
-    uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-    alterId: 0
+    server: v10.heduian.link
+    port: 30807
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
     cipher: auto
     tls: false
     network: ws
     ws-opts:
-      path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+      path: /oooo
       headers:
-        Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-  - name: 奥地利 V2CROSS.COM [1]
-    type: vmess
-    server: 46.29.34.205
-    port: 59956
-    uuid: ca0c9937-58a6-44ea-9111-a6abac267d0f
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 瑞典 V2CROSS.COM [1]
-    type: vmess
-    server: 185.146.173.24
-    port: 80
-    uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
-      headers:
-        Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+        Host: baidu.com
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -296,12 +331,17 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
+      - CA_speednode_0002
+      - CN_speednode_0003
+      - GB_speednode_0011
+      - HK_speednode_0013
+      - RO_speednode_0022
+      - US_speednode_0025
+      - US_speednode_0026
       - US_speednode_0018
+      - 香港 Cloudie数据中心
       - 瑞典 V2CROSS.COM
-      - 奥地利 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 奥地利 V2CROSS.COM [1]
-      - 瑞典 V2CROSS.COM [1]
+      - 香港 电讯盈科
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -329,12 +369,17 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
+      - CA_speednode_0002
+      - CN_speednode_0003
+      - GB_speednode_0011
+      - HK_speednode_0013
+      - RO_speednode_0022
+      - US_speednode_0025
+      - US_speednode_0026
       - US_speednode_0018
+      - 香港 Cloudie数据中心
       - 瑞典 V2CROSS.COM
-      - 奥地利 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 奥地利 V2CROSS.COM [1]
-      - 瑞典 V2CROSS.COM [1]
+      - 香港 电讯盈科
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -364,12 +409,17 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
+      - CA_speednode_0002
+      - CN_speednode_0003
+      - GB_speednode_0011
+      - HK_speednode_0013
+      - RO_speednode_0022
+      - US_speednode_0025
+      - US_speednode_0026
       - US_speednode_0018
+      - 香港 Cloudie数据中心
       - 瑞典 V2CROSS.COM
-      - 奥地利 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 奥地利 V2CROSS.COM [1]
-      - 瑞典 V2CROSS.COM [1]
+      - 香港 电讯盈科
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
