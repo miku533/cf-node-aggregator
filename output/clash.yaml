@@ -110,15 +110,15 @@ proxies:
         Host: baidu.com
   - name: 香港3|@ripaojiedian
     type: trojan
-    server: 203.198.122.194
-    port: 443
+    server: 221.128.195.12
+    port: 3841
     password: 1b57001bd214304027025a740b6cf1ac
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 香港4|@ripaojiedian
     type: trojan
-    server: 58.152.30.26
-    port: 443
+    server: 36.150.215.247
+    port: 1251
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
@@ -129,75 +129,84 @@ proxies:
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
-  - name: 日本|@ripaojiedian
-    type: trojan
-    server: 36.150.215.248
-    port: 4492
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
   - name: 🇭🇰 香港6|@ripaojiedian
     type: vmess
-    server: 36.150.27.76
-    port: 49509
-    uuid: aed41f1e-75e7-41ce-a2d4-38f65a6bbc86
-    alterId: 0
+    server: 8.148.194.27
+    port: 11210
+    uuid: c74f0304-5b43-3772-852a-2b108c423d23
+    alterId: 2
     cipher: auto
     tls: false
     network: tcp
+  - name: 日本|@ripaojiedian
+    type: trojan
+    server: 36.150.215.248
+    port: 4011
+    password: BxceQaOe
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
   - name: 日本2|@ripaojiedian
     type: trojan
-    server: 202.181.103.246
-    port: 4452
+    server: 117.172.176.22
+    port: 1334
     password: 1b57001bd214304027025a740b6cf1ac
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 日本3|@ripaojiedian
     type: trojan
-    server: 202.181.103.246
-    port: 1332
+    server: 117.172.176.22
+    port: 4095
     password: 1b57001bd214304027025a740b6cf1ac
     sni: www.nintendogames.net
     skip-cert-verify: false
+  - name: 🇰🇷 韩国|@ripaojiedian
+    type: vmess
+    server: 8.148.248.105
+    port: 11215
+    uuid: c74f0304-5b43-3772-852a-2b108c423d23
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: tcp
   - name: 新加坡|@ripaojiedian
     type: trojan
-    server: 202.181.103.246
+    server: 117.172.176.22
     port: 2283
     password: 1b57001bd214304027025a740b6cf1ac
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 新加坡2|@ripaojiedian
     type: trojan
-    server: 202.181.103.246
+    server: 117.172.176.22
     port: 2173
     password: 1b57001bd214304027025a740b6cf1ac
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 新加坡3|@ripaojiedian
     type: trojan
-    server: 36.150.215.244
-    port: 2753
+    server: 36.150.215.248
+    port: 8041
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
   - name: 美国|@ripaojiedian
     type: trojan
-    server: 117.172.176.22
-    port: 373
+    server: 153.121.44.99
+    port: 1328
     password: 1b57001bd214304027025a740b6cf1ac
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 美国2|@ripaojiedian
     type: trojan
-    server: 160.16.150.76
-    port: 50974
+    server: 117.172.176.22
+    port: 4173
     password: e4e262d453466988575c397a30562337
     sni: www.nintendogames.net
     skip-cert-verify: true
   - name: 美国3|@ripaojiedian
     type: trojan
     server: 36.151.251.38
-    port: 25891
+    port: 38799
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
@@ -258,22 +267,108 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: US_speednode_0018
-    type: vless
-    server: 198.186.131.216
-    port: 47387
-    uuid: cdc453bb-34c8-4405-a322-56f6878ccd40
-    tls: false
-    network: tcp
-  - name: 香港 Cloudie数据中心
+  - name: 香港3|@ripaojiedian [1]
+    type: trojan
+    server: 203.198.122.194
+    port: 443
+    password: 1b57001bd214304027025a740b6cf1ac
+    sni: www.nintendogames.net
+    skip-cert-verify: false
+  - name: 香港4|@ripaojiedian [1]
+    type: trojan
+    server: 58.152.30.26
+    port: 443
+    password: BxceQaOe
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
+  - name: 日本|@ripaojiedian [1]
+    type: trojan
+    server: 36.150.215.248
+    port: 4492
+    password: BxceQaOe
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
+  - name: 🇭🇰 香港6|@ripaojiedian [1]
     type: vmess
-    server: 103.243.26.209
-    port: 8080
-    uuid: bc7e6840-ab83-4570-eaae-d9aff1e2da09
+    server: 36.150.27.76
+    port: 49509
+    uuid: aed41f1e-75e7-41ce-a2d4-38f65a6bbc86
     alterId: 0
     cipher: auto
     tls: false
     network: tcp
+  - name: 日本2|@ripaojiedian [1]
+    type: trojan
+    server: 202.181.103.246
+    port: 4452
+    password: 1b57001bd214304027025a740b6cf1ac
+    sni: www.nintendogames.net
+    skip-cert-verify: false
+  - name: 日本3|@ripaojiedian [1]
+    type: trojan
+    server: 202.181.103.246
+    port: 1332
+    password: 1b57001bd214304027025a740b6cf1ac
+    sni: www.nintendogames.net
+    skip-cert-verify: false
+  - name: 新加坡|@ripaojiedian [1]
+    type: trojan
+    server: 202.181.103.246
+    port: 2283
+    password: 1b57001bd214304027025a740b6cf1ac
+    sni: www.nintendogames.net
+    skip-cert-verify: false
+  - name: 新加坡2|@ripaojiedian [1]
+    type: trojan
+    server: 202.181.103.246
+    port: 2173
+    password: 1b57001bd214304027025a740b6cf1ac
+    sni: www.nintendogames.net
+    skip-cert-verify: false
+  - name: 新加坡3|@ripaojiedian [1]
+    type: trojan
+    server: 36.150.215.244
+    port: 2753
+    password: BxceQaOe
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
+  - name: 美国|@ripaojiedian [1]
+    type: trojan
+    server: 117.172.176.22
+    port: 373
+    password: 1b57001bd214304027025a740b6cf1ac
+    sni: www.nintendogames.net
+    skip-cert-verify: false
+  - name: 美国2|@ripaojiedian [1]
+    type: trojan
+    server: 160.16.150.76
+    port: 50974
+    password: e4e262d453466988575c397a30562337
+    sni: www.nintendogames.net
+    skip-cert-verify: true
+  - name: 美国3|@ripaojiedian [1]
+    type: trojan
+    server: 36.151.251.38
+    port: 25891
+    password: BxceQaOe
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
+  - name: 香港 Cloudie数据中心
+    type: vmess
+    server: 103.243.26.209
+    port: 10086
+    uuid: c5ec2e3f-c058-46a8-a148-1831824bb94b
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 香港+电讯盈科有限公司
+    type: trojan
+    server: 203.198.122.129
+    port: 443
+    password: BxceQaOe
+    sni: 203.198.122.129
+    skip-cert-verify: false
   - name: 瑞典 V2CROSS.COM
     type: vmess
     server: 185.146.173.16
@@ -287,19 +382,6 @@ proxies:
       path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
       headers:
         Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-  - name: 香港 电讯盈科
-    type: vmess
-    server: v10.heduian.link
-    port: 30807
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /oooo
-      headers:
-        Host: baidu.com
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -321,10 +403,11 @@ proxy-groups:
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
-      - 日本|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
+      - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
+      - 🇰🇷 韩国|@ripaojiedian
       - 新加坡|@ripaojiedian
       - 新加坡2|@ripaojiedian
       - 新加坡3|@ripaojiedian
@@ -338,10 +421,21 @@ proxy-groups:
       - RO_speednode_0022
       - US_speednode_0025
       - US_speednode_0026
-      - US_speednode_0018
+      - 香港3|@ripaojiedian [1]
+      - 香港4|@ripaojiedian [1]
+      - 日本|@ripaojiedian [1]
+      - 🇭🇰 香港6|@ripaojiedian [1]
+      - 日本2|@ripaojiedian [1]
+      - 日本3|@ripaojiedian [1]
+      - 新加坡|@ripaojiedian [1]
+      - 新加坡2|@ripaojiedian [1]
+      - 新加坡3|@ripaojiedian [1]
+      - 美国|@ripaojiedian [1]
+      - 美国2|@ripaojiedian [1]
+      - 美国3|@ripaojiedian [1]
       - 香港 Cloudie数据中心
+      - 香港+电讯盈科有限公司
       - 瑞典 V2CROSS.COM
-      - 香港 电讯盈科
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -359,10 +453,11 @@ proxy-groups:
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
-      - 日本|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
+      - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
+      - 🇰🇷 韩国|@ripaojiedian
       - 新加坡|@ripaojiedian
       - 新加坡2|@ripaojiedian
       - 新加坡3|@ripaojiedian
@@ -376,10 +471,21 @@ proxy-groups:
       - RO_speednode_0022
       - US_speednode_0025
       - US_speednode_0026
-      - US_speednode_0018
+      - 香港3|@ripaojiedian [1]
+      - 香港4|@ripaojiedian [1]
+      - 日本|@ripaojiedian [1]
+      - 🇭🇰 香港6|@ripaojiedian [1]
+      - 日本2|@ripaojiedian [1]
+      - 日本3|@ripaojiedian [1]
+      - 新加坡|@ripaojiedian [1]
+      - 新加坡2|@ripaojiedian [1]
+      - 新加坡3|@ripaojiedian [1]
+      - 美国|@ripaojiedian [1]
+      - 美国2|@ripaojiedian [1]
+      - 美国3|@ripaojiedian [1]
       - 香港 Cloudie数据中心
+      - 香港+电讯盈科有限公司
       - 瑞典 V2CROSS.COM
-      - 香港 电讯盈科
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -399,10 +505,11 @@ proxy-groups:
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
-      - 日本|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
+      - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
+      - 🇰🇷 韩国|@ripaojiedian
       - 新加坡|@ripaojiedian
       - 新加坡2|@ripaojiedian
       - 新加坡3|@ripaojiedian
@@ -416,10 +523,21 @@ proxy-groups:
       - RO_speednode_0022
       - US_speednode_0025
       - US_speednode_0026
-      - US_speednode_0018
+      - 香港3|@ripaojiedian [1]
+      - 香港4|@ripaojiedian [1]
+      - 日本|@ripaojiedian [1]
+      - 🇭🇰 香港6|@ripaojiedian [1]
+      - 日本2|@ripaojiedian [1]
+      - 日本3|@ripaojiedian [1]
+      - 新加坡|@ripaojiedian [1]
+      - 新加坡2|@ripaojiedian [1]
+      - 新加坡3|@ripaojiedian [1]
+      - 美国|@ripaojiedian [1]
+      - 美国2|@ripaojiedian [1]
+      - 美国3|@ripaojiedian [1]
       - 香港 Cloudie数据中心
+      - 香港+电讯盈科有限公司
       - 瑞典 V2CROSS.COM
-      - 香港 电讯盈科
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
