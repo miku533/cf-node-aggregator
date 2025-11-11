@@ -385,44 +385,37 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 德国 黑森州法兰克福23media数据中心
-    type: vmess
-    server: 62.113.200.175
-    port: 44749
-    uuid: ba1d9a12-7fb5-495e-a547-c87264db41ea
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: none
   - name: 香港+电讯盈科有限公司
     type: trojan
-    server: 58.152.30.26
+    server: 58.152.46.98
     port: 443
     password: BxceQaOe
-    sni: t.me%2Fripaojiedian
+    sni: 58.152.46.98
     skip-cert-verify: false
-  - name: 广东省广州市 移动
+  - name: 香港 阿里云
     type: vmess
-    server: aflzzul.meiquankongjian.com
-    port: 52511
-    uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
+    server: 8.210.122.139
+    port: 34491
+    uuid: 1712079d-f516-419b-adad-babaf3280e36
     alterId: 0
     cipher: auto
     tls: false
     network: ws
     ws-opts:
-      path: /564dfa20/
-      headers:
-        Host: aflzzul.meiquankongjian.com
-  - name: 德国 黑森州法兰克福23media数据中心 [1]
+      path: /arki?ed=2048
+      headers: {}
+  - name: 美国 阿里云
     type: vmess
-    server: 62.113.200.175
-    port: 27576
-    uuid: 09c3c665-981e-40b9-d6c7-96259f1175e8
+    server: 47.239.102.115
+    port: 56675
+    uuid: 36303fd3-e1e3-4159-81cb-92a7580db3b8
     alterId: 0
     cipher: auto
     tls: false
-    network: none
+    network: ws
+    ws-opts:
+      path: /arki?ed=2048
+      headers: {}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -477,10 +470,9 @@ proxy-groups:
       - TR_speednode_0027
       - US_speednode_0028
       - US_speednode_0029
-      - 德国 黑森州法兰克福23media数据中心
       - 香港+电讯盈科有限公司
-      - 广东省广州市 移动
-      - 德国 黑森州法兰克福23media数据中心 [1]
+      - 香港 阿里云
+      - 美国 阿里云
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -531,10 +523,9 @@ proxy-groups:
       - TR_speednode_0027
       - US_speednode_0028
       - US_speednode_0029
-      - 德国 黑森州法兰克福23media数据中心
       - 香港+电讯盈科有限公司
-      - 广东省广州市 移动
-      - 德国 黑森州法兰克福23media数据中心 [1]
+      - 香港 阿里云
+      - 美国 阿里云
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -587,10 +578,9 @@ proxy-groups:
       - TR_speednode_0027
       - US_speednode_0028
       - US_speednode_0029
-      - 德国 黑森州法兰克福23media数据中心
       - 香港+电讯盈科有限公司
-      - 广东省广州市 移动
-      - 德国 黑森州法兰克福23media数据中心 [1]
+      - 香港 阿里云
+      - 美国 阿里云
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
