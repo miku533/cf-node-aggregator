@@ -385,24 +385,11 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 141.101.121.250
-    port: 80
-    uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
-      headers:
-        Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
   - name: 德国 黑森州法兰克福23media数据中心
     type: vmess
     server: 62.113.200.175
-    port: 46668
-    uuid: 680f3f4d-a13a-4869-ada6-894683cf2ffe
+    port: 44749
+    uuid: ba1d9a12-7fb5-495e-a547-c87264db41ea
     alterId: 0
     cipher: auto
     tls: false
@@ -414,18 +401,24 @@ proxies:
     password: BxceQaOe
     sni: t.me%2Fripaojiedian
     skip-cert-verify: false
-  - name: 广东省广州市+移动
-    type: trojan
-    server: oss-cn-shanghai.letssepub.com
-    port: 20021
-    password: adbac894-90b9-4913-b77e-a715a8d4ebc8
-    sni: dingding-doc.com
-    skip-cert-verify: false
-  - name: 美国 V2CROSS.COM
+  - name: 广东省广州市 移动
     type: vmess
-    server: 208.76.223.218
-    port: 27092
-    uuid: a0596ba6-72a3-4366-8992-77088da65bd8
+    server: aflzzul.meiquankongjian.com
+    port: 52511
+    uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /564dfa20/
+      headers:
+        Host: aflzzul.meiquankongjian.com
+  - name: 德国 黑森州法兰克福23media数据中心 [1]
+    type: vmess
+    server: 62.113.200.175
+    port: 27576
+    uuid: 09c3c665-981e-40b9-d6c7-96259f1175e8
     alterId: 0
     cipher: auto
     tls: false
@@ -484,11 +477,10 @@ proxy-groups:
       - TR_speednode_0027
       - US_speednode_0028
       - US_speednode_0029
-      - 美国 CloudFlare节点
       - 德国 黑森州法兰克福23media数据中心
       - 香港+电讯盈科有限公司
-      - 广东省广州市+移动
-      - 美国 V2CROSS.COM
+      - 广东省广州市 移动
+      - 德国 黑森州法兰克福23media数据中心 [1]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -539,11 +531,10 @@ proxy-groups:
       - TR_speednode_0027
       - US_speednode_0028
       - US_speednode_0029
-      - 美国 CloudFlare节点
       - 德国 黑森州法兰克福23media数据中心
       - 香港+电讯盈科有限公司
-      - 广东省广州市+移动
-      - 美国 V2CROSS.COM
+      - 广东省广州市 移动
+      - 德国 黑森州法兰克福23media数据中心 [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -596,11 +587,10 @@ proxy-groups:
       - TR_speednode_0027
       - US_speednode_0028
       - US_speednode_0029
-      - 美国 CloudFlare节点
       - 德国 黑森州法兰克福23media数据中心
       - 香港+电讯盈科有限公司
-      - 广东省广州市+移动
-      - 美国 V2CROSS.COM
+      - 广东省广州市 移动
+      - 德国 黑森州法兰克福23media数据中心 [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
