@@ -192,6 +192,50 @@ proxies:
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
+  - name: HK_speednode_0004
+    type: trojan
+    server: 116.49.237.130
+    port: 4569
+    password: BxceQaOe
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
+  - name: NL_speednode_0006
+    type: trojan
+    server: 194.147.115.149
+    port: 443
+    password: c2d6a850-7e35-44f5-ab9f-8299f6f8c72b
+    sni: joss.dus.biz.id
+    skip-cert-verify: false
+  - name: PL_speednode_0007
+    type: trojan
+    server: 45.144.48.158
+    port: 8443
+    password: 49d416e1-4cec-41e1-bff6-3748c466f275
+    sni: joss.dus.biz.id
+    skip-cert-verify: false
+  - name: RU_speednode_0008
+    type: vless
+    server: cdn.cloudconvert.top
+    port: 10012
+    uuid: 258a5f07-d07e-4de4-90b6-69a0ca34bab7
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: RU_speednode_0009
+    type: trojan
+    server: 213.159.208.88
+    port: 2053
+    password: 14d6efcf-b0d3-4054-9d4e-e1347e3ceaa2
+    sni: joss.dus.biz.id
+    skip-cert-verify: false
+  - name: US_speednode_0019
+    type: vless
+    server: 104.167.199.50
+    port: 443
+    uuid: b25e3c62-f4eb-45df-adda-eb738959b845
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
   - name: AT_speednode_0001
     type: vless
     server: drow-ranger.fonixapp.org
@@ -375,56 +419,25 @@ proxies:
     password: telegram-id-directvpn
     sni: trojan.burgerip.co.uk
     skip-cert-verify: true
-  - name: US_speednode_0029
-    type: vless
-    server: 104.167.199.50
-    port: 443
-    uuid: b25e3c62-f4eb-45df-adda-eb738959b845
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: 江苏省+移动
+  - name: 美国 加利福尼亚州洛杉矶Dedipath数据中心
+    type: vmess
+    server: 45.89.107.51
+    port: 20521
+    uuid: 3dbaa5c3-f493-4ad1-9c5d-8525f4962a6c
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers: {}
+  - name: 香港+电讯盈科有限公司
     type: trojan
-    server: 36.150.215.147
-    port: 4666
+    server: 58.152.46.98
+    port: 443
     password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
-  - name: 瑞典 V2CROSS.COM
-    type: vmess
-    server: 185.146.173.126
-    port: 80
-    uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
-      headers:
-        Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-  - name: 澳大利亚 新南威尔士州悉尼Amazon数据中心
-    type: vmess
-    server: 54.206.192.9
-    port: 16407
-    uuid: 08f45028-1db6-4e93-bf51-d344b6c71e19
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: none
-  - name: 瑞典 V2CROSS.COM [1]
-    type: vmess
-    server: 185.146.173.82
-    port: 80
-    uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
-      headers:
-        Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+    sni: 58.152.46.98
+    skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -455,6 +468,12 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
+      - HK_speednode_0004
+      - NL_speednode_0006
+      - PL_speednode_0007
+      - RU_speednode_0008
+      - RU_speednode_0009
+      - US_speednode_0019
       - AT_speednode_0001
       - AT_speednode_0002
       - AT_speednode_0003
@@ -478,11 +497,8 @@ proxy-groups:
       - SI_speednode_0026
       - TR_speednode_0027
       - US_speednode_0028
-      - US_speednode_0029
-      - 江苏省+移动
-      - 瑞典 V2CROSS.COM
-      - 澳大利亚 新南威尔士州悉尼Amazon数据中心
-      - 瑞典 V2CROSS.COM [1]
+      - 美国 加利福尼亚州洛杉矶Dedipath数据中心
+      - 香港+电讯盈科有限公司
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -509,6 +525,12 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
+      - HK_speednode_0004
+      - NL_speednode_0006
+      - PL_speednode_0007
+      - RU_speednode_0008
+      - RU_speednode_0009
+      - US_speednode_0019
       - AT_speednode_0001
       - AT_speednode_0002
       - AT_speednode_0003
@@ -532,11 +554,8 @@ proxy-groups:
       - SI_speednode_0026
       - TR_speednode_0027
       - US_speednode_0028
-      - US_speednode_0029
-      - 江苏省+移动
-      - 瑞典 V2CROSS.COM
-      - 澳大利亚 新南威尔士州悉尼Amazon数据中心
-      - 瑞典 V2CROSS.COM [1]
+      - 美国 加利福尼亚州洛杉矶Dedipath数据中心
+      - 香港+电讯盈科有限公司
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -565,6 +584,12 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
+      - HK_speednode_0004
+      - NL_speednode_0006
+      - PL_speednode_0007
+      - RU_speednode_0008
+      - RU_speednode_0009
+      - US_speednode_0019
       - AT_speednode_0001
       - AT_speednode_0002
       - AT_speednode_0003
@@ -588,11 +613,8 @@ proxy-groups:
       - SI_speednode_0026
       - TR_speednode_0027
       - US_speednode_0028
-      - US_speednode_0029
-      - 江苏省+移动
-      - 瑞典 V2CROSS.COM
-      - 澳大利亚 新南威尔士州悉尼Amazon数据中心
-      - 瑞典 V2CROSS.COM [1]
+      - 美国 加利福尼亚州洛杉矶Dedipath数据中心
+      - 香港+电讯盈科有限公司
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
