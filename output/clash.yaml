@@ -283,33 +283,115 @@ proxies:
       path: /websocketplsecurity=tls
       headers:
         Host: cdn.filterai.ru
-  - name: 伊朗+V2CROSS.COM
-    type: trojan
-    server: 151.242.165.233
-    port: 3443
-    password: c2e3cdc0-bc72-3505-b2a9-ea5ed7bfa23f
-    sni: origin-a.akamaihd.net
-    skip-cert-verify: false
-  - name: 伊朗+V2CROSS.COM [1]
-    type: trojan
-    server: 151.242.164.127
-    port: 3443
-    password: c2e3cdc0-bc72-3505-b2a9-ea5ed7bfa23f
-    sni: 151.242.164.127
-    skip-cert-verify: false
-  - name: 美国 V2CROSS.COM
+  - name: 美国 阿里云
     type: vmess
-    server: 172.82.67.156.sslip.io
-    port: 443
-    uuid: 55821780-6970-49df-8a23-800c2c9b7d3a
+    server: 47.238.71.166
+    port: 4728
+    uuid: 001a840d-6472-4374-95d7-a15a016a26cd
     alterId: 0
     cipher: auto
-    tls: true
+    tls: false
     network: ws
     ws-opts:
-      path: /SGBvMNdpPtNtvgyaVXm
+      path: /
+      headers: {}
+  - name: 中国 阿里云
+    type: vmess
+    server: 8.217.206.25
+    port: 4728
+    uuid: 894c08a6-3d76-443b-9ad8-00dfa396a4a1
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers: {}
+  - name: 美国 华盛顿Cogent通信公司
+    type: vmess
+    server: 38.71.119.142
+    port: 18659
+    uuid: 4946c814-15b6-4a1d-c110-433b46c373f7
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
+  - name: 中国 阿里云 [1]
+    type: vmess
+    server: 8.217.206.25
+    port: 3721
+    uuid: 9acdcaad-ac14-44ae-a675-017ea1431789
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers: {}
+  - name: 美国 阿里云 [1]
+    type: vmess
+    server: 47.238.71.166
+    port: 13502
+    uuid: 7ecfb350-e87b-4c3b-b90a-de4884ad2838
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
+  - name: 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+    type: vmess
+    server: 172.245.59.239
+    port: 28306
+    uuid: 60834747-f332-4118-fc16-7d0aff2cf110
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 141.101.121.120
+    port: 80
+    uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
       headers:
-        Host: 172.82.67.156.sslip.io
+        Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  - name: 中国 阿里云 [2]
+    type: vmess
+    server: 8.218.17.136
+    port: 52986
+    uuid: 7363d47e-ac8b-4fe0-d23e-99077999a70d
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
+  - name: 中国 阿里云 [3]
+    type: vmess
+    server: 8.218.199.111
+    port: 8080
+    uuid: f55db42d-ee52-4a47-880b-6f7b123ab222
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers: {}
+  - name: 中国 阿里云 [4]
+    type: vmess
+    server: 8.218.17.136
+    port: 3721
+    uuid: 33755eb3-5c12-4ca7-b86e-6f1aa6e7ce27
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers: {}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -351,9 +433,16 @@ proxy-groups:
       - LB_speednode_0011
       - LB_speednode_0012
       - RU_speednode_0013
-      - 伊朗+V2CROSS.COM
-      - 伊朗+V2CROSS.COM [1]
-      - 美国 V2CROSS.COM
+      - 美国 阿里云
+      - 中国 阿里云
+      - 美国 华盛顿Cogent通信公司
+      - 中国 阿里云 [1]
+      - 美国 阿里云 [1]
+      - 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+      - 美国 CloudFlare节点
+      - 中国 阿里云 [2]
+      - 中国 阿里云 [3]
+      - 中国 阿里云 [4]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -391,9 +480,16 @@ proxy-groups:
       - LB_speednode_0011
       - LB_speednode_0012
       - RU_speednode_0013
-      - 伊朗+V2CROSS.COM
-      - 伊朗+V2CROSS.COM [1]
-      - 美国 V2CROSS.COM
+      - 美国 阿里云
+      - 中国 阿里云
+      - 美国 华盛顿Cogent通信公司
+      - 中国 阿里云 [1]
+      - 美国 阿里云 [1]
+      - 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+      - 美国 CloudFlare节点
+      - 中国 阿里云 [2]
+      - 中国 阿里云 [3]
+      - 中国 阿里云 [4]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -433,9 +529,16 @@ proxy-groups:
       - LB_speednode_0011
       - LB_speednode_0012
       - RU_speednode_0013
-      - 伊朗+V2CROSS.COM
-      - 伊朗+V2CROSS.COM [1]
-      - 美国 V2CROSS.COM
+      - 美国 阿里云
+      - 中国 阿里云
+      - 美国 华盛顿Cogent通信公司
+      - 中国 阿里云 [1]
+      - 美国 阿里云 [1]
+      - 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+      - 美国 CloudFlare节点
+      - 中国 阿里云 [2]
+      - 中国 阿里云 [3]
+      - 中国 阿里云 [4]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
