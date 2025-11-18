@@ -201,78 +201,29 @@ proxies:
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
-  - name: AT_speednode_0001
-    type: vless
-    server: shadowshaman.fonixapp.org
-    port: 26861
-    uuid: 04db6938-72dc-42b4-a096-cc6a5e8316d2
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: AT_speednode_0002
-    type: vless
-    server: graygoat.fonixapp.org
-    port: 12645
-    uuid: 8d5bca78-f49f-4e49-ad7b-bb58da44d40b
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: AT_speednode_0003
-    type: vless
-    server: windrunner.fonixapp.org
-    port: 27274
-    uuid: f07cb7d9-36d3-4b65-b4dd-186be58218dd
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: AT_speednode_0004
-    type: vless
-    server: silverzebra.fonixapp.org
-    port: 31502
-    uuid: b20c12e7-f071-4829-94e7-17dc4e43a37a
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: DE_speednode_0005
-    type: vless
-    server: facelessvoid.fonixapp.org
-    port: 22155
-    uuid: 1d83ca4e-9708-4338-b177-403aa258488b
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: GB_speednode_0009
-    type: vless
-    server: 140.238.100.35
-    port: 40721
-    uuid: bf3e8944-8d26-47de-8748-b9aa74cce974
-    tls: true
-    network: tcp
-  - name: GR_speednode_0010
-    type: vless
-    server: 185.242.84.182
+  - name: CH_speednode_0001
+    type: trojan
+    server: 194.87.18.124
     port: 443
-    uuid: 3c0e49cb-8940-561a-83b8-1efbb17f7cf7
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: LB_speednode_0011
+    password: 019a8c1f-3d28-74e8-8a8e-40045d7ec77f
+    sni: www.bilibili.com
+    skip-cert-verify: true
+  - name: GB_speednode_0005
     type: vless
-    server: 77.110.127.105
+    server: nl.nodes.rocketnetwork.ru
     port: 443
-    uuid: 72239cbc-5a25-411c-b4f5-b9167a10f5e1
+    uuid: bccbecc9-c1d2-45d1-b3fa-771a19b9831c
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: LB_speednode_0012
-    type: vless
-    server: 77.110.119.225
+  - name: IL_speednode_0006
+    type: trojan
+    server: 45.144.172.243
     port: 443
-    uuid: 4819860c-0e62-4804-9c59-967e5c2bed7a
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0013
+    password: 019a8c1f-3d28-74e8-8a8e-40045d7ec77f
+    sni: www.bilibili.com
+    skip-cert-verify: true
+  - name: RU_speednode_0012
     type: vless
     server: 81.161.98.228
     port: 1443
@@ -283,6 +234,20 @@ proxies:
       path: /websocketplsecurity=tls
       headers:
         Host: cdn.filterai.ru
+  - name: US_speednode_0013
+    type: trojan
+    server: 108.165.255.5
+    port: 443
+    password: 019a8c1f-3d28-74e8-8a8e-40045d7ec77f
+    sni: www.bilibili.com
+    skip-cert-verify: true
+  - name: US_speednode_0014
+    type: trojan
+    server: 96.126.190.132
+    port: 443
+    password: 019a8c1f-3d28-74e8-8a8e-40045d7ec77f
+    sni: www.bilibili.com
+    skip-cert-verify: true
   - name: 美国 CloudFlare节点
     type: vmess
     server: cf.fovi.tk
@@ -295,45 +260,7 @@ proxies:
     ws-opts:
       path: /eisasqa
       headers:
-        Host: foxpol.fovi.tk
-  - name: 中国 阿里云
-    type: vmess
-    server: 8.217.85.61
-    port: 4728
-    uuid: 9c72b70e-7de9-4b04-8667-e3ea48cbbbdb
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers: {}
-  - name: 中国 阿里云 [1]
-    type: vmess
-    server: n1744454501.4u9ma.icu
-    port: 443
-    uuid: bed7b743-6bf8-46a2-b346-c60e60919220
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: n1744454501.4u9ma.icu
-  - name: 美国 CloudFlare节点 [1]
-    type: vmess
-    server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-    port: 443
-    uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /azumase.ren
-      headers:
-        Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+        Host: foxlux.fovi.tk
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -365,20 +292,13 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - AT_speednode_0001
-      - AT_speednode_0002
-      - AT_speednode_0003
-      - AT_speednode_0004
-      - DE_speednode_0005
-      - GB_speednode_0009
-      - GR_speednode_0010
-      - LB_speednode_0011
-      - LB_speednode_0012
-      - RU_speednode_0013
+      - CH_speednode_0001
+      - GB_speednode_0005
+      - IL_speednode_0006
+      - RU_speednode_0012
+      - US_speednode_0013
+      - US_speednode_0014
       - 美国 CloudFlare节点
-      - 中国 阿里云
-      - 中国 阿里云 [1]
-      - 美国 CloudFlare节点 [1]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -406,20 +326,13 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - AT_speednode_0001
-      - AT_speednode_0002
-      - AT_speednode_0003
-      - AT_speednode_0004
-      - DE_speednode_0005
-      - GB_speednode_0009
-      - GR_speednode_0010
-      - LB_speednode_0011
-      - LB_speednode_0012
-      - RU_speednode_0013
+      - CH_speednode_0001
+      - GB_speednode_0005
+      - IL_speednode_0006
+      - RU_speednode_0012
+      - US_speednode_0013
+      - US_speednode_0014
       - 美国 CloudFlare节点
-      - 中国 阿里云
-      - 中国 阿里云 [1]
-      - 美国 CloudFlare节点 [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -449,20 +362,13 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - AT_speednode_0001
-      - AT_speednode_0002
-      - AT_speednode_0003
-      - AT_speednode_0004
-      - DE_speednode_0005
-      - GB_speednode_0009
-      - GR_speednode_0010
-      - LB_speednode_0011
-      - LB_speednode_0012
-      - RU_speednode_0013
+      - CH_speednode_0001
+      - GB_speednode_0005
+      - IL_speednode_0006
+      - RU_speednode_0012
+      - US_speednode_0013
+      - US_speednode_0014
       - 美国 CloudFlare节点
-      - 中国 阿里云
-      - 中国 阿里云 [1]
-      - 美国 CloudFlare节点 [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
