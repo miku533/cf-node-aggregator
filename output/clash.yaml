@@ -285,26 +285,55 @@ proxies:
         Host: cdn.filterai.ru
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 141.101.121.120
-    port: 80
-    uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+    server: cf.fovi.tk
+    port: 443
+    uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /eisasqa
+      headers:
+        Host: foxpol.fovi.tk
+  - name: 中国 阿里云
+    type: vmess
+    server: 8.217.85.61
+    port: 4728
+    uuid: 9c72b70e-7de9-4b04-8667-e3ea48cbbbdb
     alterId: 0
     cipher: auto
     tls: false
     network: ws
     ws-opts:
-      path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
-      headers:
-        Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-  - name: 西班牙 V2CROSS.COM
+      path: /
+      headers: {}
+  - name: 中国 阿里云 [1]
     type: vmess
-    server: 185.221.23.251
-    port: 29431
-    uuid: 8b78363e-3c3a-44ab-f0d8-f13d950c8572
+    server: n1744454501.4u9ma.icu
+    port: 443
+    uuid: bed7b743-6bf8-46a2-b346-c60e60919220
     alterId: 0
     cipher: auto
-    tls: false
-    network: none
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: n1744454501.4u9ma.icu
+  - name: 美国 CloudFlare节点 [1]
+    type: vmess
+    server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+    port: 443
+    uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /azumase.ren
+      headers:
+        Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -347,7 +376,9 @@ proxy-groups:
       - LB_speednode_0012
       - RU_speednode_0013
       - 美国 CloudFlare节点
-      - 西班牙 V2CROSS.COM
+      - 中国 阿里云
+      - 中国 阿里云 [1]
+      - 美国 CloudFlare节点 [1]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -386,7 +417,9 @@ proxy-groups:
       - LB_speednode_0012
       - RU_speednode_0013
       - 美国 CloudFlare节点
-      - 西班牙 V2CROSS.COM
+      - 中国 阿里云
+      - 中国 阿里云 [1]
+      - 美国 CloudFlare节点 [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -427,7 +460,9 @@ proxy-groups:
       - LB_speednode_0012
       - RU_speednode_0013
       - 美国 CloudFlare节点
-      - 西班牙 V2CROSS.COM
+      - 中国 阿里云
+      - 中国 阿里云 [1]
+      - 美国 CloudFlare节点 [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
