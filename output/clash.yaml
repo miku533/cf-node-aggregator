@@ -115,7 +115,7 @@ proxies:
     password: dd2f25b4c70689de8bc0f7fa9d6591cb
     sni: www.nintendogames.net
     skip-cert-verify: false
-  - name: 香港4|@ripaojiedian
+  - name: HK_speednode_0012
     type: trojan
     server: 58.152.26.173
     port: 443
@@ -201,14 +201,7 @@ proxies:
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
-  - name: CH_speednode_0001
-    type: trojan
-    server: 194.87.18.124
-    port: 443
-    password: 019a8c1f-3d28-74e8-8a8e-40045d7ec77f
-    sni: www.bilibili.com
-    skip-cert-verify: true
-  - name: GB_speednode_0005
+  - name: GB_speednode_0006
     type: vless
     server: nl.nodes.rocketnetwork.ru
     port: 443
@@ -216,14 +209,23 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: IL_speednode_0006
-    type: trojan
-    server: 45.144.172.243
+  - name: IL_speednode_0014
+    type: vless
+    server: ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz
     port: 443
-    password: 019a8c1f-3d28-74e8-8a8e-40045d7ec77f
-    sni: www.bilibili.com
-    skip-cert-verify: true
-  - name: RU_speednode_0012
+    uuid: 0e8a6896-ad90-4a3b-89a3-77d64aa409e2
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: RU_speednode_0015
+    type: vless
+    server: ru-msk.shvurgceo.online
+    port: 51224
+    uuid: 14305246-dc93-4b3c-9f6c-d0b29fa7e4fa
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: RU_speednode_0016
     type: vless
     server: 81.161.98.228
     port: 1443
@@ -234,20 +236,6 @@ proxies:
       path: /websocketplsecurity=tls
       headers:
         Host: cdn.filterai.ru
-  - name: US_speednode_0013
-    type: trojan
-    server: 108.165.255.5
-    port: 443
-    password: 019a8c1f-3d28-74e8-8a8e-40045d7ec77f
-    sni: www.bilibili.com
-    skip-cert-verify: true
-  - name: US_speednode_0014
-    type: trojan
-    server: 96.126.190.132
-    port: 443
-    password: 019a8c1f-3d28-74e8-8a8e-40045d7ec77f
-    sni: www.bilibili.com
-    skip-cert-verify: true
   - name: 伊朗+V2CROSS.COM
     type: trojan
     server: 37.202.200.19
@@ -255,41 +243,6 @@ proxies:
     password: 09e71e3b-1f9f-44ab-9a10-02e0e10e2f05
     sni: 37.202.200.19
     skip-cert-verify: false
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-    port: 443
-    uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /azumase.ren
-      headers:
-        Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-  - name: 瑞典 V2CROSS.COM
-    type: vmess
-    server: 185.146.173.16
-    port: 80
-    uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
-      headers:
-        Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-  - name: 美国 华盛顿Cogent通信公司
-    type: vmess
-    server: th0603-1.ysds168.shop
-    port: 1036
-    uuid: 5893c6cd-c14f-4e99-a9ae-6c2ca7456584
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: tcp
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -309,7 +262,7 @@ proxy-groups:
       - '防范境外势力渗透 #9'
       - 香港|@ripaojiedian
       - 香港3|@ripaojiedian
-      - 香港4|@ripaojiedian
+      - HK_speednode_0012
       - 香港5|@ripaojiedian
       - 🇹🇼 台湾|@ripaojiedian
       - 日本|@ripaojiedian
@@ -321,16 +274,11 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - CH_speednode_0001
-      - GB_speednode_0005
-      - IL_speednode_0006
-      - RU_speednode_0012
-      - US_speednode_0013
-      - US_speednode_0014
+      - GB_speednode_0006
+      - IL_speednode_0014
+      - RU_speednode_0015
+      - RU_speednode_0016
       - 伊朗+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 瑞典 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -346,7 +294,7 @@ proxy-groups:
       - '防范境外势力渗透 #9'
       - 香港|@ripaojiedian
       - 香港3|@ripaojiedian
-      - 香港4|@ripaojiedian
+      - HK_speednode_0012
       - 香港5|@ripaojiedian
       - 🇹🇼 台湾|@ripaojiedian
       - 日本|@ripaojiedian
@@ -358,16 +306,11 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - CH_speednode_0001
-      - GB_speednode_0005
-      - IL_speednode_0006
-      - RU_speednode_0012
-      - US_speednode_0013
-      - US_speednode_0014
+      - GB_speednode_0006
+      - IL_speednode_0014
+      - RU_speednode_0015
+      - RU_speednode_0016
       - 伊朗+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 瑞典 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -385,7 +328,7 @@ proxy-groups:
       - '防范境外势力渗透 #9'
       - 香港|@ripaojiedian
       - 香港3|@ripaojiedian
-      - 香港4|@ripaojiedian
+      - HK_speednode_0012
       - 香港5|@ripaojiedian
       - 🇹🇼 台湾|@ripaojiedian
       - 日本|@ripaojiedian
@@ -397,16 +340,11 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - CH_speednode_0001
-      - GB_speednode_0005
-      - IL_speednode_0006
-      - RU_speednode_0012
-      - US_speednode_0013
-      - US_speednode_0014
+      - GB_speednode_0006
+      - IL_speednode_0014
+      - RU_speednode_0015
+      - RU_speednode_0016
       - 伊朗+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 瑞典 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
