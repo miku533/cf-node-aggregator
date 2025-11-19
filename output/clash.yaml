@@ -248,15 +248,13 @@ proxies:
     password: 019a8c1f-3d28-74e8-8a8e-40045d7ec77f
     sni: www.bilibili.com
     skip-cert-verify: true
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 216.238.89.53
-    port: 57283
-    uuid: 1a5aafc0-6482-451d-fe76-6875b7818579
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: none
+  - name: 伊朗+V2CROSS.COM
+    type: trojan
+    server: 37.202.200.19
+    port: 25010
+    password: 09e71e3b-1f9f-44ab-9a10-02e0e10e2f05
+    sni: 37.202.200.19
+    skip-cert-verify: false
   - name: 美国 CloudFlare节点
     type: vmess
     server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
@@ -268,20 +266,30 @@ proxies:
     network: ws
     ws-opts:
       path: /azumase.ren
-      headers: {}
-  - name: 美国 CloudFlare节点 [1]
+      headers:
+        Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+  - name: 瑞典 V2CROSS.COM
     type: vmess
-    server: cf.fovi.tk
-    port: 443
-    uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
+    server: 185.146.173.16
+    port: 80
+    uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+      headers:
+        Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  - name: 美国 华盛顿Cogent通信公司
+    type: vmess
+    server: th0603-1.ysds168.shop
+    port: 1036
+    uuid: 5893c6cd-c14f-4e99-a9ae-6c2ca7456584
     alterId: 0
     cipher: auto
     tls: true
-    network: ws
-    ws-opts:
-      path: /eisasqa
-      headers:
-        Host: foxlux.fovi.tk
+    network: tcp
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -319,9 +327,10 @@ proxy-groups:
       - RU_speednode_0012
       - US_speednode_0013
       - US_speednode_0014
-      - 美国 V2CROSS.COM
+      - 伊朗+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
+      - 瑞典 V2CROSS.COM
+      - 美国 华盛顿Cogent通信公司
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -355,9 +364,10 @@ proxy-groups:
       - RU_speednode_0012
       - US_speednode_0013
       - US_speednode_0014
-      - 美国 V2CROSS.COM
+      - 伊朗+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
+      - 瑞典 V2CROSS.COM
+      - 美国 华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -393,9 +403,10 @@ proxy-groups:
       - RU_speednode_0012
       - US_speednode_0013
       - US_speednode_0014
-      - 美国 V2CROSS.COM
+      - 伊朗+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
+      - 瑞典 V2CROSS.COM
+      - 美国 华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
