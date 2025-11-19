@@ -248,6 +248,28 @@ proxies:
     password: 019a8c1f-3d28-74e8-8a8e-40045d7ec77f
     sni: www.bilibili.com
     skip-cert-verify: true
+  - name: 香港 阿里云
+    type: vmess
+    server: n1744453319.lie5d.cyou
+    port: 443
+    uuid: 6928af97-a23e-408c-956e-5cd2207f3557
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: n1744453319.lie5d.cyou
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 208.76.223.218
+    port: 27092
+    uuid: a0596ba6-72a3-4366-8992-77088da65bd8
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
   - name: 美国 CloudFlare节点
     type: vmess
     server: cf.fovi.tk
@@ -260,7 +282,7 @@ proxies:
     ws-opts:
       path: /eisasqa
       headers:
-        Host: foxlux.fovi.tk
+        Host: foxpol.fovi.tk
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -298,6 +320,8 @@ proxy-groups:
       - RU_speednode_0012
       - US_speednode_0013
       - US_speednode_0014
+      - 香港 阿里云
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
@@ -332,6 +356,8 @@ proxy-groups:
       - RU_speednode_0012
       - US_speednode_0013
       - US_speednode_0014
+      - 香港 阿里云
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -368,6 +394,8 @@ proxy-groups:
       - RU_speednode_0012
       - US_speednode_0013
       - US_speednode_0014
+      - 香港 阿里云
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 300
