@@ -324,29 +324,6 @@ proxies:
       path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy
       headers:
         Host: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.digitalcity5.xyz.
-  - name: GB_speednode_0006
-    type: vless
-    server: nl.nodes.rocketnetwork.ru
-    port: 443
-    uuid: bccbecc9-c1d2-45d1-b3fa-771a19b9831c
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: HK_speednode_0012
-    type: trojan
-    server: 58.152.26.173
-    port: 443
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
-  - name: IL_speednode_0014 [1]
-    type: vless
-    server: ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz
-    port: 443
-    uuid: 0e8a6896-ad90-4a3b-89a3-77d64aa409e2
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
   - name: 香港 阿里云
     type: vmess
     server: n1744453320.lie5d.cyou
@@ -358,14 +335,24 @@ proxies:
     network: ws
     ws-opts:
       path: /
-      headers: {}
+      headers:
+        Host: n1744453320.lie5d.cyou
+  - name: 乌克兰 V2CROSS.COM
+    type: vmess
+    server: 2.59.62.63
+    port: 19365
+    uuid: 9583a647-b0ba-47b0-d4b0-4e12a0201d67
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
   - name: 香港+电讯盈科有限公司
     type: trojan
     server: 219.79.165.55
     port: 443
     password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
+    sni: t.me%2Fripaojiedian
+    skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -412,10 +399,8 @@ proxy-groups:
       - TW_speednode_0028
       - US_speednode_0029
       - US_speednode_0030
-      - GB_speednode_0006
-      - HK_speednode_0012
-      - IL_speednode_0014 [1]
       - 香港 阿里云
+      - 乌克兰 V2CROSS.COM
       - 香港+电讯盈科有限公司
   - name: ♻️ 自动选择
     type: url-test
@@ -459,10 +444,8 @@ proxy-groups:
       - TW_speednode_0028
       - US_speednode_0029
       - US_speednode_0030
-      - GB_speednode_0006
-      - HK_speednode_0012
-      - IL_speednode_0014 [1]
       - 香港 阿里云
+      - 乌克兰 V2CROSS.COM
       - 香港+电讯盈科有限公司
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -508,10 +491,8 @@ proxy-groups:
       - TW_speednode_0028
       - US_speednode_0029
       - US_speednode_0030
-      - GB_speednode_0006
-      - HK_speednode_0012
-      - IL_speednode_0014 [1]
       - 香港 阿里云
+      - 乌克兰 V2CROSS.COM
       - 香港+电讯盈科有限公司
     url: http://www.gstatic.com/generate_204
     interval: 300
