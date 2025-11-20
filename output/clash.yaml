@@ -324,6 +324,13 @@ proxies:
       path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy
       headers:
         Host: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.digitalcity5.xyz.
+  - name: 香港+电讯盈科有限公司
+    type: trojan
+    server: 219.79.165.55
+    port: 443
+    password: BxceQaOe
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
   - name: 香港 阿里云
     type: vmess
     server: n1744453320.lie5d.cyou
@@ -335,24 +342,7 @@ proxies:
     network: ws
     ws-opts:
       path: /
-      headers:
-        Host: n1744453320.lie5d.cyou
-  - name: 乌克兰 V2CROSS.COM
-    type: vmess
-    server: 2.59.62.63
-    port: 19365
-    uuid: 9583a647-b0ba-47b0-d4b0-4e12a0201d67
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: none
-  - name: 香港+电讯盈科有限公司
-    type: trojan
-    server: 219.79.165.55
-    port: 443
-    password: BxceQaOe
-    sni: t.me%2Fripaojiedian
-    skip-cert-verify: false
+      headers: {}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -399,9 +389,8 @@ proxy-groups:
       - TW_speednode_0028
       - US_speednode_0029
       - US_speednode_0030
-      - 香港 阿里云
-      - 乌克兰 V2CROSS.COM
       - 香港+电讯盈科有限公司
+      - 香港 阿里云
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -444,9 +433,8 @@ proxy-groups:
       - TW_speednode_0028
       - US_speednode_0029
       - US_speednode_0030
-      - 香港 阿里云
-      - 乌克兰 V2CROSS.COM
       - 香港+电讯盈科有限公司
+      - 香港 阿里云
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -491,9 +479,8 @@ proxy-groups:
       - TW_speednode_0028
       - US_speednode_0029
       - US_speednode_0030
-      - 香港 阿里云
-      - 乌克兰 V2CROSS.COM
       - 香港+电讯盈科有限公司
+      - 香港 阿里云
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
