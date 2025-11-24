@@ -482,13 +482,19 @@ proxies:
       path: /kbjc/fr1fp=random
       headers:
         Host: fr-1-fr-1.aiopen.sbs
-  - name: 日本+东京SAKURA数据中心
-    type: trojan
-    server: 153.121.53.187
-    port: 2145
-    password: BxceQaOe
-    sni: t.me%2Fripaojiedian
-    skip-cert-verify: false
+  - name: 美国 弗吉尼亚州斯特灵阿里云
+    type: vmess
+    server: n1749032902.xlxzzx.com
+    port: 443
+    uuid: 6f932d64-1eb4-4160-bc8d-6085cfd4d37d
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: n1749032902.xlxzzx.com
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -549,7 +555,7 @@ proxy-groups:
       - RU_speednode_0043
       - RU_speednode_0044
       - US_speednode_0045
-      - 日本+东京SAKURA数据中心
+      - 美国 弗吉尼亚州斯特灵阿里云
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -606,7 +612,7 @@ proxy-groups:
       - RU_speednode_0043
       - RU_speednode_0044
       - US_speednode_0045
-      - 日本+东京SAKURA数据中心
+      - 美国 弗吉尼亚州斯特灵阿里云
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -665,7 +671,7 @@ proxy-groups:
       - RU_speednode_0043
       - RU_speednode_0044
       - US_speednode_0045
-      - 日本+东京SAKURA数据中心
+      - 美国 弗吉尼亚州斯特灵阿里云
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
