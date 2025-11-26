@@ -579,20 +579,11 @@ proxies:
     password: telegram-id-directvpn
     sni: trojan.burgerip.co.uk
     skip-cert-verify: true
-  - name: 英国 V2CROSS.COM
+  - name: 香港 阿里云
     type: vmess
-    server: 91.228.186.242
-    port: 53858
-    uuid: 17c6ee92-0c6d-43be-851b-ff5415a0b067
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: none
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 00yin6.keeoomboom.de
+    server: n1744453319.lie5d.cyou
     port: 443
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    uuid: 6928af97-a23e-408c-956e-5cd2207f3557
     alterId: 0
     cipher: auto
     tls: true
@@ -600,7 +591,16 @@ proxies:
     ws-opts:
       path: /
       headers:
-        Host: 00yin6.keeoomboom.de
+        Host: n1744453319.lie5d.cyou
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 208.76.223.218
+    port: 40433
+    uuid: d8fd8955-78db-49ba-d86f-3e4729f6ac4d
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -674,8 +674,8 @@ proxy-groups:
       - US_speednode_0042
       - US_speednode_0043
       - US_speednode_0044
-      - 英国 V2CROSS.COM
-      - 美国 CloudFlare节点
+      - 香港 阿里云
+      - 美国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -745,8 +745,8 @@ proxy-groups:
       - US_speednode_0042
       - US_speednode_0043
       - US_speednode_0044
-      - 英国 V2CROSS.COM
-      - 美国 CloudFlare节点
+      - 香港 阿里云
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -818,8 +818,8 @@ proxy-groups:
       - US_speednode_0042
       - US_speednode_0043
       - US_speednode_0044
-      - 英国 V2CROSS.COM
-      - 美国 CloudFlare节点
+      - 香港 阿里云
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
