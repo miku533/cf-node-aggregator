@@ -588,15 +588,6 @@ proxies:
     password: telegram-id-directvpn
     sni: trojan.burgerip.co.uk
     skip-cert-verify: true
-  - name: 中国 V2CROSS.COM
-    type: vmess
-    server: v30.hdacd.com
-    port: 30830
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
   - name: 美国 CloudFlare节点
     type: vmess
     server: cf.fovi.tk
@@ -609,7 +600,7 @@ proxies:
     ws-opts:
       path: /eisasqa
       headers:
-        Host: foxlux.fovi.tk
+        Host: foxpol.fovi.tk
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -684,7 +675,6 @@ proxy-groups:
       - US_speednode_0042
       - US_speednode_0043
       - US_speednode_0044
-      - 中国 V2CROSS.COM
       - 美国 CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
@@ -756,7 +746,6 @@ proxy-groups:
       - US_speednode_0042
       - US_speednode_0043
       - US_speednode_0044
-      - 中国 V2CROSS.COM
       - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -830,7 +819,6 @@ proxy-groups:
       - US_speednode_0042
       - US_speednode_0043
       - US_speednode_0044
-      - 中国 V2CROSS.COM
       - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 300
