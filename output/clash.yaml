@@ -4201,19 +4201,6 @@ proxies:
     password: Sp3eDVp
     sni: 185.212.200.75
     skip-cert-verify: false
-  - name: 日本 V2CROSS.COM
-    type: vmess
-    server: seoul02.zgjok.com
-    port: 443
-    uuid: 1a1e5196-eab4-4772-9012-65c27f19a524
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: seoul02.zgjok.com
   - name: 英国 V2CROSS.COM
     type: vmess
     server: 82.198.246.97
@@ -4223,19 +4210,37 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 英国 V2CROSS.COM [1]
+  - name: 澳大利亚 新南威尔士州悉尼Amazon数据中心
     type: vmess
-    server: singapore02.zgjok.com
+    server: 54.206.192.9
+    port: 16407
+    uuid: 08f45028-1db6-4e93-bf51-d344b6c71e19
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
+  - name: 中国 V2CROSS.COM
+    type: vmess
+    server: 144.48.180.187
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: cf.fovi.tk
     port: 443
-    uuid: 780c7671-e8c8-45ab-922b-4fdfc4310aa0
+    uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
     alterId: 0
     cipher: auto
     tls: true
     network: ws
     ws-opts:
-      path: /
+      path: /eisasqa
       headers:
-        Host: singapore02.zgjok.com
+        Host: foxpol.fovi.tk
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -4818,9 +4823,10 @@ proxy-groups:
       - 未知 TROJAN-644@free-nodes
       - 未知 TROJAN-645@free-nodes
       - 未知 TROJAN-646@free-nodes
-      - 日本 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 英国 V2CROSS.COM [1]
+      - 澳大利亚 新南威尔士州悉尼Amazon数据中心
+      - 中国 V2CROSS.COM
+      - 美国 CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -5399,9 +5405,10 @@ proxy-groups:
       - 未知 TROJAN-644@free-nodes
       - 未知 TROJAN-645@free-nodes
       - 未知 TROJAN-646@free-nodes
-      - 日本 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 英国 V2CROSS.COM [1]
+      - 澳大利亚 新南威尔士州悉尼Amazon数据中心
+      - 中国 V2CROSS.COM
+      - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -5982,9 +5989,10 @@ proxy-groups:
       - 未知 TROJAN-644@free-nodes
       - 未知 TROJAN-645@free-nodes
       - 未知 TROJAN-646@free-nodes
-      - 日本 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 英国 V2CROSS.COM [1]
+      - 澳大利亚 新南威尔士州悉尼Amazon数据中心
+      - 中国 V2CROSS.COM
+      - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
