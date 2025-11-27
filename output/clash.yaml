@@ -588,23 +588,10 @@ proxies:
     password: telegram-id-directvpn
     sni: trojan.burgerip.co.uk
     skip-cert-verify: true
-  - name: 日本 阿里云
-    type: vmess
-    server: n1744454498.lie5d.cyou
-    port: 443
-    uuid: cd26abca-0d84-43d0-8f69-9c1143b569e9
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: n1744454498.lie5d.cyou
   - name: 中国 V2CROSS.COM
     type: vmess
-    server: v30.hdacd.com
-    port: 30830
+    server: 144.48.180.187
+    port: 30812
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     alterId: 0
     cipher: auto
@@ -612,17 +599,17 @@ proxies:
     network: tcp
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cf.fovi.tk
+    server: 00yin6.keeoomboom.de
     port: 443
-    uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
     alterId: 0
     cipher: auto
     tls: true
     network: ws
     ws-opts:
-      path: /eisasqa
+      path: /
       headers:
-        Host: foxpol.fovi.tk
+        Host: 00yin6.keeoomboom.de
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -697,7 +684,6 @@ proxy-groups:
       - US_speednode_0042
       - US_speednode_0043
       - US_speednode_0044
-      - 日本 阿里云
       - 中国 V2CROSS.COM
       - 美国 CloudFlare节点
   - name: ♻️ 自动选择
@@ -770,7 +756,6 @@ proxy-groups:
       - US_speednode_0042
       - US_speednode_0043
       - US_speednode_0044
-      - 日本 阿里云
       - 中国 V2CROSS.COM
       - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
@@ -845,7 +830,6 @@ proxy-groups:
       - US_speednode_0042
       - US_speednode_0043
       - US_speednode_0044
-      - 日本 阿里云
       - 中国 V2CROSS.COM
       - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
