@@ -4201,24 +4201,6 @@ proxies:
     password: Sp3eDVp
     sni: 185.212.200.75
     skip-cert-verify: false
-  - name: 英国 V2CROSS.COM
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 澳大利亚 新南威尔士州悉尼Amazon数据中心
-    type: vmess
-    server: 54.206.192.9
-    port: 16407
-    uuid: 08f45028-1db6-4e93-bf51-d344b6c71e19
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: none
   - name: 中国 V2CROSS.COM
     type: vmess
     server: 144.48.180.187
@@ -4228,19 +4210,15 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 美国 CloudFlare节点
+  - name: 俄罗斯 莫斯科JustHost
     type: vmess
-    server: cf.fovi.tk
-    port: 443
-    uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
+    server: 45.136.244.201
+    port: 49934
+    uuid: 90afa47d-341a-497d-ae25-1d81258804d5
     alterId: 0
     cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /eisasqa
-      headers:
-        Host: foxpol.fovi.tk
+    tls: false
+    network: tcp
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -4823,10 +4801,8 @@ proxy-groups:
       - 未知 TROJAN-644@free-nodes
       - 未知 TROJAN-645@free-nodes
       - 未知 TROJAN-646@free-nodes
-      - 英国 V2CROSS.COM
-      - 澳大利亚 新南威尔士州悉尼Amazon数据中心
       - 中国 V2CROSS.COM
-      - 美国 CloudFlare节点
+      - 俄罗斯 莫斯科JustHost
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -5405,10 +5381,8 @@ proxy-groups:
       - 未知 TROJAN-644@free-nodes
       - 未知 TROJAN-645@free-nodes
       - 未知 TROJAN-646@free-nodes
-      - 英国 V2CROSS.COM
-      - 澳大利亚 新南威尔士州悉尼Amazon数据中心
       - 中国 V2CROSS.COM
-      - 美国 CloudFlare节点
+      - 俄罗斯 莫斯科JustHost
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -5989,10 +5963,8 @@ proxy-groups:
       - 未知 TROJAN-644@free-nodes
       - 未知 TROJAN-645@free-nodes
       - 未知 TROJAN-646@free-nodes
-      - 英国 V2CROSS.COM
-      - 澳大利亚 新南威尔士州悉尼Amazon数据中心
       - 中国 V2CROSS.COM
-      - 美国 CloudFlare节点
+      - 俄罗斯 莫斯科JustHost
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
