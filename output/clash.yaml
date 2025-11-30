@@ -4061,17 +4061,30 @@ proxies:
     password: Sp3eDVp
     sni: 185.212.200.75
     skip-cert-verify: false
-  - name: 美国 V2CROSS.COM
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 74.117.196.232
-    port: 37934
-    uuid: 254551f6-ec28-4938-ad0e-0aa4aa1965ec
+    server: sy4.620720.xyz
+    port: 443
+    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
     alterId: 0
     cipher: auto
     tls: true
     network: ws
     ws-opts:
-      path: /speedtest
+      path: /
+      headers:
+        Host: sy4.620720.xyz
+  - name: 法国 OVH SAS
+    type: vmess
+    server: 91.134.8.101
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /linkvws
       headers: {}
 proxy-groups:
   - name: 🚀 节点选择
@@ -4642,7 +4655,8 @@ proxy-groups:
       - 未知 TROJAN-644@free-nodes
       - 未知 TROJAN-645@free-nodes
       - 未知 TROJAN-646@free-nodes
-      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 法国 OVH SAS
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -5208,7 +5222,8 @@ proxy-groups:
       - 未知 TROJAN-644@free-nodes
       - 未知 TROJAN-645@free-nodes
       - 未知 TROJAN-646@free-nodes
-      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 法国 OVH SAS
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -5776,7 +5791,8 @@ proxy-groups:
       - 未知 TROJAN-644@free-nodes
       - 未知 TROJAN-645@free-nodes
       - 未知 TROJAN-646@free-nodes
-      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 法国 OVH SAS
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
