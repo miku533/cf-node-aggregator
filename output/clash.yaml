@@ -4061,35 +4061,18 @@ proxies:
     password: Sp3eDVp
     sni: 185.212.200.75
     skip-cert-verify: false
-  - name: 美国 Alabanza
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: free.best-antiaging-reviews.com
-    port: 2053
-    uuid: 095ee315-a14c-4bf7-8bcb-568392415e26
+    server: 74.117.196.232
+    port: 37934
+    uuid: 254551f6-ec28-4938-ad0e-0aa4aa1965ec
     alterId: 0
     cipher: auto
     tls: true
     network: ws
     ws-opts:
-      path: /
-      headers:
-        Host: free.best-antiaging-reviews.com
-  - name: 伊朗+V2CROSS.COM
-    type: trojan
-    server: 37.202.200.19
-    port: 25010
-    password: 09e71e3b-1f9f-44ab-9a10-02e0e10e2f05
-    sni: 37.202.200.19
-    skip-cert-verify: false
-  - name: 英国 V2CROSS.COM
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
+      path: /speedtest
+      headers: {}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -4659,9 +4642,7 @@ proxy-groups:
       - 未知 TROJAN-644@free-nodes
       - 未知 TROJAN-645@free-nodes
       - 未知 TROJAN-646@free-nodes
-      - 美国 Alabanza
-      - 伊朗+V2CROSS.COM
-      - 英国 V2CROSS.COM
+      - 美国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -5227,9 +5208,7 @@ proxy-groups:
       - 未知 TROJAN-644@free-nodes
       - 未知 TROJAN-645@free-nodes
       - 未知 TROJAN-646@free-nodes
-      - 美国 Alabanza
-      - 伊朗+V2CROSS.COM
-      - 英国 V2CROSS.COM
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -5797,9 +5776,7 @@ proxy-groups:
       - 未知 TROJAN-644@free-nodes
       - 未知 TROJAN-645@free-nodes
       - 未知 TROJAN-646@free-nodes
-      - 美国 Alabanza
-      - 伊朗+V2CROSS.COM
-      - 英国 V2CROSS.COM
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
