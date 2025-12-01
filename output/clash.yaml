@@ -4355,6 +4355,13 @@ proxies:
     password: Sp3eDVp
     sni: 185.212.200.75
     skip-cert-verify: false
+  - name: 伊朗+V2CROSS.COM
+    type: trojan
+    server: 37.202.200.19
+    port: 25010
+    password: 09e71e3b-1f9f-44ab-9a10-02e0e10e2f05
+    sni: 37.202.200.19
+    skip-cert-verify: false
   - name: 美国 华盛顿Cogent通信公司
     type: vmess
     server: 38.54.98.110
@@ -4364,38 +4371,26 @@ proxies:
     cipher: auto
     tls: true
     network: none
-  - name: 中国 V2CROSS.COM
-    type: vmess
-    server: v12.hdacd.com
-    port: 30812
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 45.136.12.37
-    port: 38141
-    uuid: fd291be6-b48d-43a1-da38-66c7f80e2f80
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: none
-  - name: 伊朗+V2CROSS.COM
-    type: trojan
-    server: 37.202.200.19
-    port: 25010
-    password: 09e71e3b-1f9f-44ab-9a10-02e0e10e2f05
-    sni: 37.202.200.19
-    skip-cert-verify: false
   - name: 香港+电讯盈科有限公司
     type: trojan
     server: 112.118.116.66
     port: 443
     password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
+    sni: t.me%2Fripaojiedian
+    skip-cert-verify: false
+  - name: 日本 福岛县白河市IDC Frontier东日本软银(SoftBank)数据中心
+    type: vmess
+    server: w12.luoli.de
+    port: 443
+    uuid: 42a99644-b90b-3627-8809-a2d6c4078b59
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /v2ws
+      headers:
+        Host: w12.luoli.de
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -5000,11 +4995,10 @@ proxy-groups:
       - 未知 TROJAN-644@free-nodes
       - 未知 TROJAN-645@free-nodes
       - 未知 TROJAN-646@free-nodes
-      - 美国 华盛顿Cogent通信公司
-      - 中国 V2CROSS.COM
-      - 美国 V2CROSS.COM
       - 伊朗+V2CROSS.COM
+      - 美国 华盛顿Cogent通信公司
       - 香港+电讯盈科有限公司
+      - 日本 福岛县白河市IDC Frontier东日本软银(SoftBank)数据中心
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -5605,11 +5599,10 @@ proxy-groups:
       - 未知 TROJAN-644@free-nodes
       - 未知 TROJAN-645@free-nodes
       - 未知 TROJAN-646@free-nodes
-      - 美国 华盛顿Cogent通信公司
-      - 中国 V2CROSS.COM
-      - 美国 V2CROSS.COM
       - 伊朗+V2CROSS.COM
+      - 美国 华盛顿Cogent通信公司
       - 香港+电讯盈科有限公司
+      - 日本 福岛县白河市IDC Frontier东日本软银(SoftBank)数据中心
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -6212,11 +6205,10 @@ proxy-groups:
       - 未知 TROJAN-644@free-nodes
       - 未知 TROJAN-645@free-nodes
       - 未知 TROJAN-646@free-nodes
-      - 美国 华盛顿Cogent通信公司
-      - 中国 V2CROSS.COM
-      - 美国 V2CROSS.COM
       - 伊朗+V2CROSS.COM
+      - 美国 华盛顿Cogent通信公司
       - 香港+电讯盈科有限公司
+      - 日本 福岛县白河市IDC Frontier东日本软银(SoftBank)数据中心
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
