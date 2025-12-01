@@ -4355,42 +4355,177 @@ proxies:
     password: Sp3eDVp
     sni: 185.212.200.75
     skip-cert-verify: false
-  - name: 伊朗+V2CROSS.COM
-    type: trojan
-    server: 37.202.200.19
-    port: 25010
-    password: 09e71e3b-1f9f-44ab-9a10-02e0e10e2f05
-    sni: 37.202.200.19
-    skip-cert-verify: false
-  - name: 美国 华盛顿Cogent通信公司
+  - name: 香港 阿里云
     type: vmess
-    server: 38.54.98.110
-    port: 2052
-    uuid: 665d9b8f-153d-4907-adac-de12afd9c851
+    server: 47.242.238.231
+    port: 47843
+    uuid: c12ab974-7b02-42fd-a99b-576a03b0c433
     alterId: 0
     cipher: auto
-    tls: true
-    network: none
-  - name: 香港+电讯盈科有限公司
-    type: trojan
-    server: 112.118.116.66
-    port: 443
-    password: BxceQaOe
-    sni: t.me%2Fripaojiedian
-    skip-cert-verify: false
-  - name: 日本 福岛县白河市IDC Frontier东日本软银(SoftBank)数据中心
-    type: vmess
-    server: w12.luoli.de
-    port: 443
-    uuid: 42a99644-b90b-3627-8809-a2d6c4078b59
-    alterId: 0
-    cipher: auto
-    tls: true
+    tls: false
     network: ws
     ws-opts:
-      path: /v2ws
-      headers:
-        Host: w12.luoli.de
+      path: /arki?ed=2048
+      headers: {}
+  - name: 澳大利亚 新南威尔士州悉尼亚马逊(Amazon)公司数据中心
+    type: vmess
+    server: 54.252.240.128
+    port: 1000
+    uuid: ca26a9fd-fef8-4ea7-d194-450ce4e0c67a
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
+  - name: 香港 阿里云 [1]
+    type: vmess
+    server: 47.242.125.104
+    port: 22739
+    uuid: d769d708-2250-402b-b8a7-4419a158bb52
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /arki?ed=2048
+      headers: {}
+  - name: 英国 V2CROSS.COM
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 香港 阿里云 [2]
+    type: vmess
+    server: 47.242.140.52
+    port: 9756
+    uuid: c77628dd-51e7-4996-a408-aaab8baaf79e
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /arki?ed=2048
+      headers: {}
+  - name: 香港 阿里云 [3]
+    type: vmess
+    server: 47.243.153.104
+    port: 2447
+    uuid: 8a721b92-2596-4c3a-8bf4-b0ff36657fd2
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /arki?ed=2048
+      headers: {}
+  - name: 香港 阿里云 [4]
+    type: vmess
+    server: 47.242.162.235
+    port: 13767
+    uuid: d77fcaf1-8356-47bc-8883-a80d15e1bd78
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /arki?ed=2048
+      headers: {}
+  - name: 日本 V2CROSS.COM
+    type: vmess
+    server: 43.165.180.102
+    port: 18818
+    uuid: 6ce04d2f-feb4-4620-e108-489a343a8107
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
+  - name: 香港 阿里云 [5]
+    type: vmess
+    server: 47.242.20.123
+    port: 50235
+    uuid: 7bcf120d-b7f9-4083-8eb0-b5c04d196dad
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /arki?ed=2048
+      headers: {}
+  - name: 香港 阿里云 [6]
+    type: vmess
+    server: 47.243.213.247
+    port: 5689
+    uuid: a99d08eb-81c5-4944-ba16-4461bb2ec808
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /arki?ed=2048
+      headers: {}
+  - name: 香港 阿里云 [7]
+    type: vmess
+    server: 47.243.153.104
+    port: 46524
+    uuid: d91888a4-a16f-4f34-b070-6746db4e711d
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /arki?ed=2048
+      headers: {}
+  - name: 香港 阿里云 [8]
+    type: vmess
+    server: 47.242.162.235
+    port: 3787
+    uuid: e748fe05-2678-4c31-84c6-14ed825b92b4
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /arki?ed=2048
+      headers: {}
+  - name: 香港 阿里云 [9]
+    type: vmess
+    server: 47.242.162.148
+    port: 31813
+    uuid: 00308f3b-747a-4710-b2cb-32c8de9785a1
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /arki?ed=2048
+      headers: {}
+  - name: 香港 阿里云 [10]
+    type: vmess
+    server: 47.243.60.22
+    port: 17727
+    uuid: 11814d1c-e6b2-4b8a-9cbf-a6d6a2f61b89
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /arki?ed=2048
+      headers: {}
+  - name: 香港 阿里云 [11]
+    type: vmess
+    server: 47.242.162.235
+    port: 10806
+    uuid: 26175245-f147-4eb5-b488-ad958983d396
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /arki?ed=2048
+      headers: {}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -4995,10 +5130,21 @@ proxy-groups:
       - 未知 TROJAN-644@free-nodes
       - 未知 TROJAN-645@free-nodes
       - 未知 TROJAN-646@free-nodes
-      - 伊朗+V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 香港+电讯盈科有限公司
-      - 日本 福岛县白河市IDC Frontier东日本软银(SoftBank)数据中心
+      - 香港 阿里云
+      - 澳大利亚 新南威尔士州悉尼亚马逊(Amazon)公司数据中心
+      - 香港 阿里云 [1]
+      - 英国 V2CROSS.COM
+      - 香港 阿里云 [2]
+      - 香港 阿里云 [3]
+      - 香港 阿里云 [4]
+      - 日本 V2CROSS.COM
+      - 香港 阿里云 [5]
+      - 香港 阿里云 [6]
+      - 香港 阿里云 [7]
+      - 香港 阿里云 [8]
+      - 香港 阿里云 [9]
+      - 香港 阿里云 [10]
+      - 香港 阿里云 [11]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -5599,10 +5745,21 @@ proxy-groups:
       - 未知 TROJAN-644@free-nodes
       - 未知 TROJAN-645@free-nodes
       - 未知 TROJAN-646@free-nodes
-      - 伊朗+V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 香港+电讯盈科有限公司
-      - 日本 福岛县白河市IDC Frontier东日本软银(SoftBank)数据中心
+      - 香港 阿里云
+      - 澳大利亚 新南威尔士州悉尼亚马逊(Amazon)公司数据中心
+      - 香港 阿里云 [1]
+      - 英国 V2CROSS.COM
+      - 香港 阿里云 [2]
+      - 香港 阿里云 [3]
+      - 香港 阿里云 [4]
+      - 日本 V2CROSS.COM
+      - 香港 阿里云 [5]
+      - 香港 阿里云 [6]
+      - 香港 阿里云 [7]
+      - 香港 阿里云 [8]
+      - 香港 阿里云 [9]
+      - 香港 阿里云 [10]
+      - 香港 阿里云 [11]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -6205,10 +6362,21 @@ proxy-groups:
       - 未知 TROJAN-644@free-nodes
       - 未知 TROJAN-645@free-nodes
       - 未知 TROJAN-646@free-nodes
-      - 伊朗+V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 香港+电讯盈科有限公司
-      - 日本 福岛县白河市IDC Frontier东日本软银(SoftBank)数据中心
+      - 香港 阿里云
+      - 澳大利亚 新南威尔士州悉尼亚马逊(Amazon)公司数据中心
+      - 香港 阿里云 [1]
+      - 英国 V2CROSS.COM
+      - 香港 阿里云 [2]
+      - 香港 阿里云 [3]
+      - 香港 阿里云 [4]
+      - 日本 V2CROSS.COM
+      - 香港 阿里云 [5]
+      - 香港 阿里云 [6]
+      - 香港 阿里云 [7]
+      - 香港 阿里云 [8]
+      - 香港 阿里云 [9]
+      - 香港 阿里云 [10]
+      - 香港 阿里云 [11]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
