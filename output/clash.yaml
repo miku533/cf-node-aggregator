@@ -134,58 +134,71 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
+  - name: 香港7|@ripaojiedian
+    type: vmess
+    server: a48b0e7b-t6ngg0-t8tsp0-1szmi.hk3.p5pv.com
+    port: 80
+    uuid: ba151628-b3a2-11ef-bdb9-f23c91cfbbc9
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
   - name: 日本|@ripaojiedian
     type: trojan
     server: 52.195.176.26
-    port: 2145
+    port: 5156
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
   - name: 日本2|@ripaojiedian
     type: trojan
-    server: 160.16.138.24
-    port: 3169
+    server: 160.16.236.32
+    port: 3093
     password: 79314e99f0a473fe86efc7827942ad00
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 日本3|@ripaojiedian
     type: trojan
-    server: 160.16.223.205
+    server: 160.16.138.24
     port: 1331
     password: 79314e99f0a473fe86efc7827942ad00
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 新加坡|@ripaojiedian
     type: trojan
-    server: 160.16.214.6
+    server: 160.16.124.55
     port: 2760
     password: 79314e99f0a473fe86efc7827942ad00
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 新加坡2|@ripaojiedian
     type: trojan
-    server: 153.121.73.102
+    server: 160.16.81.84
     port: 2760
     password: 79314e99f0a473fe86efc7827942ad00
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 新加坡3|@ripaojiedian
     type: trojan
-    server: 95.40.76.44
-    port: 2673
+    server: 52.199.79.149
+    port: 1196
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
   - name: 美国|@ripaojiedian
     type: trojan
-    server: 18.162.142.242
+    server: 160.16.236.32
     port: 4054
     password: 79314e99f0a473fe86efc7827942ad00
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 美国2|@ripaojiedian
     type: trojan
-    server: 160.16.214.6
+    server: 160.16.81.84
     port: 4054
     password: 79314e99f0a473fe86efc7827942ad00
     sni: www.nintendogames.net
@@ -3935,13 +3948,6 @@ proxies:
     password: 253bc477d4e43c209f2d427272968280
     sni: fe2.update.microsoft.com
     skip-cert-verify: false
-  - name: 未知 TROJAN-574@free-nodes
-    type: trojan
-    server: 160.16.138.24
-    port: 1331
-    password: 253bc477d4e43c209f2d427272968280
-    sni: www.nintendogames.net
-    skip-cert-verify: false
   - name: 未知 TROJAN-577@free-nodes
     type: trojan
     server: 211.72.35.155
@@ -4355,6 +4361,40 @@ proxies:
     password: Sp3eDVp
     sni: 185.212.200.75
     skip-cert-verify: false
+  - name: 日本 V2CROSS.COM
+    type: vmess
+    server: 43.165.180.102
+    port: 18818
+    uuid: 6ce04d2f-feb4-4620-e108-489a343a8107
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
+  - name: 中国 阿里云
+    type: vmess
+    server: 8.218.17.136
+    port: 52986
+    uuid: 7363d47e-ac8b-4fe0-d23e-99077999a70d
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
+  - name: 中国 阿里云 [1]
+    type: vmess
+    server: 8.217.176.108
+    port: 33185
+    uuid: ebb5a5db-c0dc-487a-c41f-07219c9a0ddc
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
+  - name: 香港+电讯盈科有限公司
+    type: trojan
+    server: 112.118.116.66
+    port: 443
+    password: BxceQaOe
+    sni: t.me%2Fripaojiedian
+    skip-cert-verify: false
   - name: 美国 科罗拉多州NTT(美国)通信公司
     type: vmess
     server: 216.167.49.157
@@ -4364,70 +4404,6 @@ proxies:
     cipher: auto
     tls: false
     network: none
-  - name: 中国 V2CROSS.COM
-    type: vmess
-    server: v12.hdacd.com
-    port: 30812
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 香港 阿里云
-    type: vmess
-    server: 47.242.140.52
-    port: 9756
-    uuid: c77628dd-51e7-4996-a408-aaab8baaf79e
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /arki?ed=2048
-      headers: {}
-  - name: 香港+电讯盈科有限公司
-    type: trojan
-    server: 112.118.116.66
-    port: 443
-    password: BxceQaOe
-    sni: t.me%2Fripaojiedian
-    skip-cert-verify: false
-  - name: 香港 阿里云 [1]
-    type: vmess
-    server: 47.243.212.142
-    port: 35193
-    uuid: c76ee219-2274-4768-8953-200fa72d2a60
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /arki?ed=2048
-      headers: {}
-  - name: 香港 阿里云 [2]
-    type: vmess
-    server: 47.242.162.235
-    port: 10806
-    uuid: 26175245-f147-4eb5-b488-ad958983d396
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /arki?ed=2048
-      headers: {}
-  - name: 香港 阿里云 [3]
-    type: vmess
-    server: 47.242.162.235
-    port: 3787
-    uuid: e748fe05-2678-4c31-84c6-14ed825b92b4
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /arki?ed=2048
-      headers: {}
   - name: 英国 V2CROSS.COM
     type: vmess
     server: 82.198.246.97
@@ -4459,6 +4435,7 @@ proxy-groups:
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
+      - 香港7|@ripaojiedian
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
@@ -4981,7 +4958,6 @@ proxy-groups:
       - 未知 TROJAN-571@free-nodes
       - 未知 TROJAN-572@free-nodes
       - 未知 TROJAN-573@free-nodes
-      - 未知 TROJAN-574@free-nodes
       - 未知 TROJAN-577@free-nodes
       - 未知 TROJAN-578@free-nodes
       - 未知 TROJAN-579@free-nodes
@@ -5041,13 +5017,11 @@ proxy-groups:
       - 未知 TROJAN-644@free-nodes
       - 未知 TROJAN-645@free-nodes
       - 未知 TROJAN-646@free-nodes
-      - 美国 科罗拉多州NTT(美国)通信公司
-      - 中国 V2CROSS.COM
-      - 香港 阿里云
+      - 日本 V2CROSS.COM
+      - 中国 阿里云
+      - 中国 阿里云 [1]
       - 香港+电讯盈科有限公司
-      - 香港 阿里云 [1]
-      - 香港 阿里云 [2]
-      - 香港 阿里云 [3]
+      - 美国 科罗拉多州NTT(美国)通信公司
       - 英国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
@@ -5067,6 +5041,7 @@ proxy-groups:
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
+      - 香港7|@ripaojiedian
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
@@ -5589,7 +5564,6 @@ proxy-groups:
       - 未知 TROJAN-571@free-nodes
       - 未知 TROJAN-572@free-nodes
       - 未知 TROJAN-573@free-nodes
-      - 未知 TROJAN-574@free-nodes
       - 未知 TROJAN-577@free-nodes
       - 未知 TROJAN-578@free-nodes
       - 未知 TROJAN-579@free-nodes
@@ -5649,13 +5623,11 @@ proxy-groups:
       - 未知 TROJAN-644@free-nodes
       - 未知 TROJAN-645@free-nodes
       - 未知 TROJAN-646@free-nodes
-      - 美国 科罗拉多州NTT(美国)通信公司
-      - 中国 V2CROSS.COM
-      - 香港 阿里云
+      - 日本 V2CROSS.COM
+      - 中国 阿里云
+      - 中国 阿里云 [1]
       - 香港+电讯盈科有限公司
-      - 香港 阿里云 [1]
-      - 香港 阿里云 [2]
-      - 香港 阿里云 [3]
+      - 美国 科罗拉多州NTT(美国)通信公司
       - 英国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -5677,6 +5649,7 @@ proxy-groups:
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
+      - 香港7|@ripaojiedian
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
@@ -6199,7 +6172,6 @@ proxy-groups:
       - 未知 TROJAN-571@free-nodes
       - 未知 TROJAN-572@free-nodes
       - 未知 TROJAN-573@free-nodes
-      - 未知 TROJAN-574@free-nodes
       - 未知 TROJAN-577@free-nodes
       - 未知 TROJAN-578@free-nodes
       - 未知 TROJAN-579@free-nodes
@@ -6259,13 +6231,11 @@ proxy-groups:
       - 未知 TROJAN-644@free-nodes
       - 未知 TROJAN-645@free-nodes
       - 未知 TROJAN-646@free-nodes
-      - 美国 科罗拉多州NTT(美国)通信公司
-      - 中国 V2CROSS.COM
-      - 香港 阿里云
+      - 日本 V2CROSS.COM
+      - 中国 阿里云
+      - 中国 阿里云 [1]
       - 香港+电讯盈科有限公司
-      - 香港 阿里云 [1]
-      - 香港 阿里云 [2]
-      - 香港 阿里云 [3]
+      - 美国 科罗拉多州NTT(美国)通信公司
       - 英国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
