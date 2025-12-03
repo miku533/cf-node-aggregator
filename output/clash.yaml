@@ -4106,19 +4106,22 @@ proxies:
     password: Sp3eDVp
     sni: 185.212.200.75
     skip-cert-verify: false
-  - name: 英国 V2CROSS.COM
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    server: 74.117.196.232
+    port: 37934
+    uuid: 3b475934-cb2a-4d96-b260-5e50cca5d430
     alterId: 0
     cipher: auto
-    tls: false
-    network: tcp
-  - name: 福建省泉州市 电信
+    tls: true
+    network: ws
+    ws-opts:
+      path: /speedtest
+      headers: {}
+  - name: 广东省深圳市 BGP数据中心
     type: vmess
-    server: m.cnmjin.net
-    port: 16632
+    server: planb.mojcn.com
+    port: 16616
     uuid: 77439561-dcef-4e45-803a-743cfa7d20c2
     alterId: 0
     cipher: auto
@@ -4128,6 +4131,54 @@ proxies:
       path: /
       headers:
         Host: 9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: sy4.620720.xyz
+    port: 443
+    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: sy4.620720.xyz
+  - name: 亚太地区 V2CROSS.COM
+    type: vmess
+    server: m.cnmjin.net
+    port: 16617
+    uuid: 77439561-dcef-4e45-803a-743cfa7d20c2
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: 9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com
+  - name: 湖北省 移动(全省通用)
+    type: vmess
+    server: planb.mojcn.com
+    port: 16641
+    uuid: 77439561-dcef-4e45-803a-743cfa7d20c2
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: 9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com
+  - name: 中国 V2CROSS.COM
+    type: vmess
+    server: v12.hdacd.com
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -4703,8 +4754,12 @@ proxy-groups:
       - 未知 TROJAN-644@free-nodes
       - 未知 TROJAN-645@free-nodes
       - 未知 TROJAN-646@free-nodes
-      - 英国 V2CROSS.COM
-      - 福建省泉州市 电信
+      - 美国 V2CROSS.COM
+      - 广东省深圳市 BGP数据中心
+      - 美国 CloudFlare节点
+      - 亚太地区 V2CROSS.COM
+      - 湖北省 移动(全省通用)
+      - 中国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -5276,8 +5331,12 @@ proxy-groups:
       - 未知 TROJAN-644@free-nodes
       - 未知 TROJAN-645@free-nodes
       - 未知 TROJAN-646@free-nodes
-      - 英国 V2CROSS.COM
-      - 福建省泉州市 电信
+      - 美国 V2CROSS.COM
+      - 广东省深圳市 BGP数据中心
+      - 美国 CloudFlare节点
+      - 亚太地区 V2CROSS.COM
+      - 湖北省 移动(全省通用)
+      - 中国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -5851,8 +5910,12 @@ proxy-groups:
       - 未知 TROJAN-644@free-nodes
       - 未知 TROJAN-645@free-nodes
       - 未知 TROJAN-646@free-nodes
-      - 英国 V2CROSS.COM
-      - 福建省泉州市 电信
+      - 美国 V2CROSS.COM
+      - 广东省深圳市 BGP数据中心
+      - 美国 CloudFlare节点
+      - 亚太地区 V2CROSS.COM
+      - 湖北省 移动(全省通用)
+      - 中国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
