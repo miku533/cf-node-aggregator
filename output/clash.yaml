@@ -104,16 +104,9 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 香港2|@ripaojiedian
-    type: trojan
-    server: 120.232.81.194
-    port: 49213
-    password: 887a23bb-c1d0-4ead-b164-e107e68dd083
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
   - name: 香港3|@ripaojiedian
     type: trojan
-    server: 58.152.18.71
+    server: 112.118.116.127
     port: 443
     password: 76d630f2af6619c4a5de0ef953df3c6a
     sni: www.nintendogames.net
@@ -132,99 +125,204 @@ proxies:
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
-  - name: 🇹🇼 台湾|@ripaojiedian
-    type: vmess
-    server: 120.233.207.243
-    port: 29502
-    uuid: 9018c068-87ee-4c17-848a-540d36a0ab7b
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
   - name: 日本|@ripaojiedian
     type: trojan
-    server: 54.248.4.79
-    port: 41017
+    server: 3.112.202.47
+    port: 26378
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
   - name: 日本2|@ripaojiedian
     type: trojan
-    server: 153.121.67.215
-    port: 1331
+    server: 153.121.65.107
+    port: 3093
     password: 76d630f2af6619c4a5de0ef953df3c6a
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 日本3|@ripaojiedian
     type: trojan
-    server: 13.112.81.124
-    port: 3169
+    server: 153.121.53.187
+    port: 3093
     password: 76d630f2af6619c4a5de0ef953df3c6a
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 新加坡|@ripaojiedian
     type: trojan
-    server: 52.197.139.174
+    server: 160.16.144.208
     port: 507
     password: 76d630f2af6619c4a5de0ef953df3c6a
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 新加坡2|@ripaojiedian
     type: trojan
-    server: 52.197.139.174
+    server: 52.195.224.88
     port: 3145
     password: 76d630f2af6619c4a5de0ef953df3c6a
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 新加坡3|@ripaojiedian
     type: trojan
-    server: 43.198.206.171
-    port: 2673
+    server: 52.195.5.65
+    port: 804
     password: BxceQaOe
     sni: t.me%2Fripaojiedian
     skip-cert-verify: true
   - name: 美国|@ripaojiedian
     type: trojan
-    server: 160.16.223.205
+    server: 160.16.236.32
     port: 4054
     password: 76d630f2af6619c4a5de0ef953df3c6a
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 美国2|@ripaojiedian
     type: trojan
-    server: 160.16.124.55
+    server: 153.121.51.29
     port: 2890
     password: 76d630f2af6619c4a5de0ef953df3c6a
     sni: www.nintendogames.net
     skip-cert-verify: true
   - name: 美国3|@ripaojiedian
     type: trojan
-    server: 43.198.206.171
-    port: 4710
+    server: 52.195.5.65
+    port: 4569
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
-  - name: 美国4|@ripaojiedian
-    type: vmess
-    server: 104.19.61.72
-    port: 443
-    uuid: 4bf075f5-4d5e-4d39-f5ab-b32a86250f0e
-    alterId: 0
-    cipher: auto
+  - name: AE_speednode_0001
+    type: vless
+    server: 213.109.168.67
+    port: 30837
+    uuid: d8f02a97-4124-44d5-a949-c300525d0bca
+    tls: false
+    network: tcp
+  - name: AE_speednode_0002
+    type: vless
+    server: 213.109.168.67
+    port: 2087
+    uuid: 9da0dda1-011b-447e-8607-f0cd178bc3ba
+    tls: false
+    network: tcp
+  - name: AE_speednode_0003
+    type: vless
+    server: 213.109.168.67
+    port: 42539
+    uuid: 87ce996d-8fec-49e1-9bbb-e7404c0274ba
+    tls: false
+    network: tcp
+  - name: BG_speednode_0005
+    type: vless
+    server: 178.239.126.118
+    port: 2443
+    uuid: d6b62381-8d75-4a0c-9946-bf8f40772afe
     tls: true
-    network: ws
-    ws-opts:
-      path: /aa
-      headers:
-        Host: hk.nbee.pp.ua
-  - name: IL_speednode_0006
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: CA_speednode_0006
+    type: vless
+    server: 167.17.70.16
+    port: 8443
+    uuid: 55975415-43c0-461c-8752-d5b8013364e3
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: CH_speednode_0007
+    type: vless
+    server: swiss.intfreed.ru
+    port: 443
+    uuid: bf92bdef-ab8d-4481-8798-2d39023357b2
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: DE_speednode_0008
+    type: vless
+    server: deu637.webunlocked.org
+    port: 443
+    uuid: 51be809d-3e82-4090-b14f-a42a32100ff9
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: GB_speednode_0011
+    type: vless
+    server: 140.238.100.35
+    port: 40721
+    uuid: bf3e8944-8d26-47de-8748-b9aa74cce974
+    tls: true
+    network: tcp
+  - name: GB_speednode_0012
+    type: vless
+    server: 144.124.246.55
+    port: 8443
+    uuid: fcc9576b-b096-5c00-bda9-6853d03d85c7
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: IL_speednode_0021
     type: vless
     server: 185.136.132.171
     port: 24170
     uuid: fe21e399-ec6f-4cb5-8441-e911178665b1
     tls: true
     network: tcp
-  - name: RU_speednode_0010
+  - name: IR_speednode_0022
+    type: vless
+    server: 151.241.226.160
+    port: 8443
+    uuid: 01cc2a19-7e26-4698-8d10-0b61bc125938
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: IR_speednode_0023
+    type: vless
+    server: tr.intfreed.ru
+    port: 443
+    uuid: bf92bdef-ab8d-4481-8798-2d39023357b2
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: IT_speednode_0024
+    type: vless
+    server: usaa.fastlynew.hosting-ip.com
+    port: 80
+    uuid: a9c5ad15-776d-45b8-b853-c20a92084f27
+    tls: false
+    network: ws
+    ws-opts:
+      path: /telegeam-@v2_city--?ed=2048
+      headers:
+        Host: mojhsjd.global.ssl.fastly.net
+  - name: LB_speednode_0026
+    type: vless
+    server: 213.165.60.36
+    port: 443
+    uuid: 7f674fcd-fb20-4cae-b444-29eeb716e78a
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: LB_speednode_0027
+    type: vless
+    server: us01-vlr01-gmn03.vpnvezdehod.net
+    port: 443
+    uuid: 2ca07504-c06a-41a4-b26b-99807a7d24cf
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: NL_speednode_0031
+    type: vless
+    server: test-pc.intfreed.ru
+    port: 443
+    uuid: bf92bdef-ab8d-4481-8798-2d39023357b2
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: RU_speednode_0033
+    type: vless
+    server: 51.250.20.121
+    port: 443
+    uuid: 20cf5921-f7fa-47c5-81ae-947fbef83a4d
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: RU_speednode_0034
     type: vless
     server: 89.23.101.203
     port: 443
@@ -232,22 +330,94 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0011
+  - name: RU_speednode_0035
     type: vless
-    server: 85.192.24.131
-    port: 443
-    uuid: 07e0d9f5-6ed1-4bfb-8c19-311a312cba7d
+    server: 51.250.25.11
+    port: 1488
+    uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0012
+  - name: RU_speednode_0036
+    type: vless
+    server: yo.himikvpn.online
+    port: 8443
+    uuid: 4a406d5c-839d-41f0-83b1-c03a62eb0e6b
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: RU_speednode_0037
+    type: vless
+    server: 51.250.109.47
+    port: 1488
+    uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: RU_speednode_0038
+    type: vless
+    server: 85.192.33.79
+    port: 8443
+    uuid: 4a406d5c-839d-41f0-83b1-c03a62eb0e6b
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: RU_speednode_0040
+    type: vless
+    server: 51.250.24.245
+    port: 4249
+    uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: RU_speednode_0041
     type: vless
     server: 178.236.16.98
     port: 35728
     uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
     tls: true
     network: tcp
-  - name: RU VLESS-01 | free-nodes
+  - name: US_speednode_0044
+    type: vless
+    server: www.visa.com
+    port: 80
+    uuid: a0af2643-a236-463c-8056-3f71d05eed53
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: shomal-g74f3znf-v2.shomal-321.workers.dev
+  - name: US_speednode_0046
+    type: vless
+    server: 104.24.231.82
+    port: 80
+    uuid: 7df49a25-5785-41e0-a6ae-2369d68bfea3
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: red-morning-7c21.daheg47484.workers.dev
+  - name: US_speednode_0047
+    type: vless
+    server: www.speedtest.net
+    port: 2083
+    uuid: 94a64eb4-b438-4088-b2bd-6f3ac279c418
+    tls: true
+    network: ws
+    ws-opts:
+      path: /---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN?ed=8080fp=chrome
+      headers:
+        Host: golestan.hajalwi.ir.
+  - name: US_speednode_0048
+    type: vless
+    server: 172.233.171.226
+    port: 10001
+    uuid: 0f1b978a-e1ea-4bcd-84fa-16d77cdc5b6a
+    tls: true
+    network: tcp
+  - name: RU VLESS-02 | free-nodes
     type: vless
     server: net2.intfreed.ru
     port: 443
@@ -255,21 +425,22 @@ proxies:
     tls: false
     network: tcp
     flow: xtls-rprx-vision
-  - name: 未知 VLESS-05 | free-nodes
+  - name: 未知 VLESS-06 | free-nodes
     type: vless
     server: ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz
     port: 443
     uuid: 0e8a6896-ad90-4a3b-89a3-77d64aa409e2
     tls: false
     network: tcp
-  - name: 未知 VLESS-06 | free-nodes
+    flow: xtls-rprx-vision
+  - name: 未知 VLESS-07 | free-nodes
     type: vless
     server: eng25.netliberated.org
     port: 443
     uuid: 3513666b-d8ca-414f-856b-4ce192a0071b
     tls: false
     network: tcp
-  - name: DE VLESS-07 | free-nodes
+  - name: DE VLESS-08 | free-nodes
     type: vless
     server: de.intfreed.ru
     port: 443
@@ -277,23 +448,7 @@ proxies:
     tls: false
     network: tcp
     flow: xtls-rprx-vision
-  - name: RU VLESS-11 | free-nodes
-    type: vless
-    server: swiss.intfreed.ru
-    port: 443
-    uuid: bf92bdef-ab8d-4481-8798-2d39023357b2
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: DE VLESS-12 | free-nodes
-    type: vless
-    server: test-pc.intfreed.ru
-    port: 443
-    uuid: bf92bdef-ab8d-4481-8798-2d39023357b2
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: DE VLESS-14 | free-nodes
+  - name: DE VLESS-15 | free-nodes
     type: vless
     server: de-b.vasilej.org
     port: 7443
@@ -301,14 +456,7 @@ proxies:
     tls: false
     network: tcp
     flow: xtls-rprx-vision
-  - name: DE VLESS-19 | free-nodes
-    type: vless
-    server: 78.159.111.154
-    port: 44232
-    uuid: e2baf74f-81b8-4284-8b81-b3c8aab00496
-    tls: false
-    network: grpc
-  - name: 未知 VLESS-20 | free-nodes
+  - name: 未知 VLESS-18 | free-nodes
     type: vless
     server: vn.yxzbp.click
     port: 80
@@ -319,23 +467,7 @@ proxies:
       path: /vn
       headers:
         Host: vn.yxzbp.click
-  - name: RU VLESS-22 | free-nodes
-    type: vless
-    server: fin.intfreed.ru
-    port: 443
-    uuid: bf92bdef-ab8d-4481-8798-2d39023357b2
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: CA VLESS-23 | free-nodes
-    type: vless
-    server: us.intfreed.ru
-    port: 443
-    uuid: bf92bdef-ab8d-4481-8798-2d39023357b2
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: DE VLESS-24 | free-nodes
+  - name: DE VLESS-20 | free-nodes
     type: vless
     server: deu519.globalunlock.org
     port: 443
@@ -343,7 +475,7 @@ proxies:
     tls: false
     network: tcp
     flow: xtls-rprx-vision
-  - name: 未知 VLESS-25 | free-nodes
+  - name: 未知 VLESS-21 | free-nodes
     type: vless
     server: fs.ir-sub.fun
     port: 80
@@ -354,22 +486,14 @@ proxies:
       path: /ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
       headers:
         Host: zedd2.global.ssl.fastly.net
-  - name: DE VLESS-26 | free-nodes
+  - name: DE VLESS-22 | free-nodes
     type: vless
     server: 91.98.92.70
     port: 3060
     uuid: Telegram-SRCVPN-
     tls: false
     network: grpc
-  - name: 未知 VLESS-28 | free-nodes
-    type: vless
-    server: 45.67.231.116
-    port: 4443
-    uuid: 281d153a-2fae-4725-84ed-602fb3627ca6
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: US VLESS-30 | free-nodes
+  - name: US VLESS-25 | free-nodes
     type: vless
     server: delilah.ns.cloudflare.com
     port: 443
@@ -380,7 +504,7 @@ proxies:
       path: /xlqwgows
       headers:
         Host: 639009907244596240.tucson-amsiz.info
-  - name: US VLESS-31 | free-nodes
+  - name: US VLESS-26 | free-nodes
     type: vless
     server: 5.180.24.11
     port: 4443
@@ -388,14 +512,7 @@ proxies:
     tls: false
     network: tcp
     flow: xtls-rprx-vision
-  - name: RU VLESS-35 | free-nodes
-    type: vless
-    server: 51.250.20.121
-    port: 443
-    uuid: 20cf5921-f7fa-47c5-81ae-947fbef83a4d
-    tls: false
-    network: tcp
-  - name: DE VLESS-36 | free-nodes
+  - name: DE VLESS-31 | free-nodes
     type: vless
     server: 91.107.143.41
     port: 443
@@ -406,7 +523,7 @@ proxies:
       path: /09hmyzvdljYpebWBPqDV7
       headers:
         Host: ognbqqfj1a49.greendop.com
-  - name: DE VLESS-37 | free-nodes
+  - name: DE VLESS-32 | free-nodes
     type: vless
     server: 91.107.244.240
     port: 443
@@ -417,21 +534,25 @@ proxies:
       path: /
       headers:
         Host: soft98.ir
-  - name: 未知 VLESS-38 | free-nodes
+  - name: 未知 VLESS-33 | free-nodes
     type: vless
     server: m47a.vip784.com
     port: 33801
     uuid: b0181dbd-7b08-4539-a525-0376a997b31e
     tls: false
     network: tcp
-  - name: 未知 VLESS-40 | free-nodes
+  - name: 未知 VLESS-35 | free-nodes
     type: vless
     server: brenna.ns.cloudflare.com
     port: 443
     uuid: 7fb9813a-e15d-4c40-a78b-882ff80d1efb
-    tls: false
-    network: tcp
-  - name: 未知 VLESS-41 | free-nodes
+    tls: true
+    network: ws
+    ws-opts:
+      path: /ztznofws
+      headers:
+        Host: 639009462851028680.passat-amsiy.info
+  - name: 未知 VLESS-36 | free-nodes
     type: vless
     server: clyde.ns.cloudflare.com
     port: 443
@@ -442,35 +563,28 @@ proxies:
       path: /ltyhduws
       headers:
         Host: 639009270246638675.golf-amsiy.info
-  - name: 未知 VLESS-42 | free-nodes
+  - name: 未知 VLESS-37 | free-nodes
     type: vless
     server: m59a.vip784.com
     port: 33801
     uuid: f8a88a3f-1cca-4f93-ad79-4ccc1714c1c2
     tls: false
     network: tcp
-  - name: TR VLESS-43 | free-nodes
-    type: vless
-    server: 151.241.226.160
-    port: 8443
-    uuid: 01cc2a19-7e26-4698-8d10-0b61bc125938
-    tls: false
-    network: tcp
-  - name: 未知 VLESS-45 | free-nodes
+  - name: 未知 VLESS-40 | free-nodes
     type: vless
     server: m57a.vip784.com
     port: 33801
     uuid: f0ee92ea-68ac-4c13-8529-d302baaa9f0d
     tls: false
     network: tcp
-  - name: DE VLESS-46 | free-nodes
+  - name: DE VLESS-41 | free-nodes
     type: vless
     server: m33a.vip784.com
     port: 33801
     uuid: f2045695-8c88-44f3-a26e-f41ea43f7255
     tls: false
     network: tcp
-  - name: FR VLESS-48 | free-nodes
+  - name: FR VLESS-43 | free-nodes
     type: vless
     server: norman.ns.cloudflare.com
     port: 443
@@ -481,14 +595,14 @@ proxies:
       path: /cahttingws
       headers:
         Host: 639004957474582477.tiguan-amsit.info
-  - name: HK TROJAN-49 | free-nodes
+  - name: HK TROJAN-44 | free-nodes
     type: trojan
     server: 58.152.110.82
     port: 443
     password: 76d630f2af6619c4a5de0ef953df3c6a
     sni: www.nintendogames.net
     skip-cert-verify: false
-  - name: RU VLESS-52 | free-nodes
+  - name: RU VLESS-47 | free-nodes
     type: vless
     server: 185.251.90.45
     port: 4443
@@ -496,7 +610,7 @@ proxies:
     tls: false
     network: tcp
     flow: xtls-rprx-vision
-  - name: DE VLESS-53 | free-nodes
+  - name: DE VLESS-48 | free-nodes
     type: vless
     server: 168.119.104.156
     port: 10200
@@ -506,7 +620,7 @@ proxies:
     ws-opts:
       path: /
       headers: {}
-  - name: 未知 VLESS-55 | free-nodes
+  - name: 未知 VLESS-50 | free-nodes
     type: vless
     server: www.speedtest.net
     port: 2096
@@ -517,7 +631,7 @@ proxies:
       path: /
       headers:
         Host: smart.zarnovia.info
-  - name: RU VLESS-57 | free-nodes
+  - name: RU VLESS-52 | free-nodes
     type: vless
     server: 158.160.175.98
     port: 2443
@@ -525,50 +639,42 @@ proxies:
     tls: false
     network: tcp
     flow: xtls-rprx-vision
-  - name: DE VLESS-59 | free-nodes
+  - name: DE VLESS-54 | free-nodes
     type: vless
     server: m95a.vip784.com
     port: 33801
     uuid: 7d3bb6bd-8122-4cce-ba4a-2f8df0bcd816
     tls: false
     network: tcp
-  - name: DE VLESS-60 | free-nodes
+  - name: DE VLESS-55 | free-nodes
     type: vless
     server: m35a.vip784.com
     port: 33801
     uuid: a959f004-f691-4a6a-80e8-d1b5d4d85e12
     tls: false
     network: tcp
-  - name: GB VLESS-61 | free-nodes
+  - name: GB VLESS-56 | free-nodes
     type: vless
     server: 94.72.99.160
     port: 8443
     uuid: f5d7d068-3325-43d8-85bd-e8ed665abcd5
     tls: false
     network: tcp
-  - name: 未知 VLESS-62 | free-nodes
+  - name: 未知 VLESS-57 | free-nodes
     type: vless
     server: m88a.vip784.com
     port: 33801
     uuid: 9980305e-536a-4db4-92e9-3ec43fb05318
     tls: false
     network: tcp
-  - name: 未知 VLESS-63 | free-nodes
+  - name: 未知 VLESS-58 | free-nodes
     type: vless
     server: 208.69.78.5
     port: 443
     uuid: 0a21d713-6e6f-4274-8b84-464019325513
     tls: false
     network: tcp
-  - name: DE VLESS-66 | free-nodes
-    type: vless
-    server: 51.250.24.245
-    port: 4249
-    uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 未知 VLESS-67 | free-nodes
+  - name: 未知 VLESS-62 | free-nodes
     type: vless
     server: 51.250.99.190
     port: 1488
@@ -576,23 +682,7 @@ proxies:
     tls: false
     network: tcp
     flow: xtls-rprx-vision
-  - name: 未知 VLESS-68 | free-nodes
-    type: vless
-    server: 51.250.109.47
-    port: 1488
-    uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: DE VLESS-69 | free-nodes
-    type: vless
-    server: 51.250.25.11
-    port: 1488
-    uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: TR VLESS-70 | free-nodes
+  - name: TR VLESS-65 | free-nodes
     type: vless
     server: 5.180.45.176
     port: 4443
@@ -600,14 +690,14 @@ proxies:
     tls: false
     network: tcp
     flow: xtls-rprx-vision
-  - name: DE VLESS-71 | free-nodes
+  - name: DE VLESS-66 | free-nodes
     type: vless
     server: lovetea.parsianboton.ir
     port: 3002
     uuid: d42d0748-fd4c-4f96-977a-863e5e245aa3
     tls: false
     network: tcp
-  - name: 未知 VLESS-72 | free-nodes
+  - name: 未知 VLESS-67 | free-nodes
     type: vless
     server: 146.19.143.8
     port: 8443
@@ -615,22 +705,14 @@ proxies:
     tls: false
     network: tcp
     flow: xtls-rprx-vision
-  - name: 未知 VLESS-73 | free-nodes
+  - name: 未知 VLESS-68 | free-nodes
     type: vless
     server: 65.109.230.46
     port: 16553
     uuid: e94ad226-4aa4-451e-84b3-ee728ac9f8c4
     tls: false
     network: grpc
-  - name: 未知 VLESS-75 | free-nodes
-    type: vless
-    server: 152.53.60.157
-    port: 8443
-    uuid: 62b0e46b-d2a5-423d-8457-95bde707fc19
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: GB VLESS-76 | free-nodes
+  - name: GB VLESS-70 | free-nodes
     type: vless
     server: 84.8.145.58
     port: 443
@@ -641,135 +723,120 @@ proxies:
       path: /proxyip=sjc.o00o.ooo
       headers:
         Host: ak.suoni.nyc.mn
-  - name: DE VLESS-77 | free-nodes
+  - name: DE VLESS-71 | free-nodes
     type: vless
     server: m37a.vip784.com
     port: 33801
     uuid: 0a06d540-6fdd-416c-bdc3-54686f1f3659
     tls: false
     network: tcp
-  - name: 未知 VLESS-78 | free-nodes
+  - name: 未知 VLESS-72 | free-nodes
     type: vless
     server: 65.21.240.236
     port: 443
     uuid: 22948aee-4981-4ba1-b8df-7a2b494a8a28
     tls: true
     network: tcp
-  - name: 未知 VLESS-79 | free-nodes
-    type: vless
-    server: 88.218.94.97
-    port: 8443
-    uuid: 62b0e46b-d2a5-423d-8457-95bde707fc19
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: RU VLESS-80 | free-nodes
+  - name: RU VLESS-73 | free-nodes
     type: vless
     server: 217.16.24.170
     port: 443
     uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
     tls: false
     network: tcp
-  - name: SG VLESS-84 | free-nodes
+    flow: xtls-rprx-vision
+  - name: SG VLESS-77 | free-nodes
     type: vless
     server: 38.134.189.186
     port: 443
     uuid: ef4d7a6a-a7f0-48e1-8c77-cd305fdca732
     tls: false
     network: tcp
-  - name: 未知 VLESS-85 | free-nodes
+  - name: 未知 VLESS-78 | free-nodes
     type: vless
     server: 38.180.144.156
     port: 8443
     uuid: ae0a43bc-6189-456e-9b8a-a93f39af336e
     tls: false
     network: tcp
-  - name: DE VLESS-86 | free-nodes
+  - name: DE VLESS-79 | free-nodes
     type: vless
     server: m42a.vip784.com
     port: 33801
     uuid: 5f5d90b3-1fdd-4b29-bddc-586c6d3e220e
     tls: false
     network: tcp
-  - name: 未知 VLESS-87 | free-nodes
-    type: vless
-    server: 167.17.70.16
-    port: 8443
-    uuid: 55975415-43c0-461c-8752-d5b8013364e3
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: DE VLESS-88 | free-nodes
+  - name: DE VLESS-81 | free-nodes
     type: vless
     server: m10a.vip784.com
     port: 33801
     uuid: da284625-10d0-4d38-8276-3f1b7a195e99
     tls: false
     network: tcp
-  - name: DE VLESS-89 | free-nodes
+  - name: DE VLESS-82 | free-nodes
     type: vless
     server: 91.107.179.81
     port: 41647
     uuid: e50fa46f-20c6-4c0d-fa0e-d9ffd92df36f
     tls: false
     network: grpc
-  - name: DE VLESS-90 | free-nodes
+  - name: DE VLESS-83 | free-nodes
     type: vless
     server: 91.99.82.11
     port: 443
     uuid: 2ee2a715-d541-416a-8713-d66567448c2e
     tls: false
     network: grpc
-  - name: DE VLESS-91 | free-nodes
+  - name: DE VLESS-84 | free-nodes
     type: vless
     server: m90a.vip784.com
     port: 33801
     uuid: 7d9223e9-9ab1-4a8c-b8ec-3bc4fb937cd8
     tls: false
     network: tcp
-  - name: DE VLESS-92 | free-nodes
+  - name: DE VLESS-85 | free-nodes
     type: vless
     server: 91.107.178.246
     port: 41647
     uuid: e50fa46f-20c6-4c0d-fa0e-d9ffd92df36f
     tls: false
     network: grpc
-  - name: DE VLESS-93 | free-nodes
+  - name: DE VLESS-86 | free-nodes
     type: vless
     server: 91.107.169.78
     port: 41647
     uuid: e50fa46f-20c6-4c0d-fa0e-d9ffd92df36f
     tls: false
     network: grpc
-  - name: 未知 VLESS-94 | free-nodes
+  - name: 未知 VLESS-87 | free-nodes
     type: vless
     server: m80a.vip784.com
     port: 33801
     uuid: 0945839b-113a-4272-a67c-1852b990abf5
     tls: false
     network: tcp
-  - name: DE VLESS-95 | free-nodes
+  - name: DE VLESS-88 | free-nodes
     type: vless
     server: m89a.vip784.com
     port: 33801
     uuid: 5313b989-41c7-4878-b60c-50bf3353b7d3
     tls: false
     network: tcp
-  - name: 未知 VLESS-97 | free-nodes
+  - name: 未知 VLESS-90 | free-nodes
     type: vless
     server: 31.44.0.63
     port: 58349
     uuid: 48a8cab5-ce75-4c8a-90f5-dcd020c89b4b
     tls: false
     network: tcp
-  - name: 未知 VLESS-98 | free-nodes
+  - name: 未知 VLESS-91 | free-nodes
     type: vless
     server: v547154.hosted-by-vdsina.com
     port: 8443
     uuid: TrueVPN_91780028
     tls: false
     network: tcp
-  - name: 未知 VLESS-100 | free-nodes
+  - name: 未知 VLESS-93 | free-nodes
     type: vless
     server: 45.131.185.234
     port: 443
@@ -780,18 +847,7 @@ proxies:
       path: /proxyip=sjc.o00o.ooo
       headers:
         Host: ak.suoni.nyc.mn
-  - name: 未知 VLESS-101 | free-nodes
-    type: vless
-    server: 172.64.33.91
-    port: 443
-    uuid: 02e46039-200d-4ae4-ac90-b0d619f72034
-    tls: true
-    network: ws
-    ws-opts:
-      path: /aafeuws
-      headers:
-        Host: redlabell.info
-  - name: 未知 VLESS-104 | free-nodes
+  - name: 未知 VLESS-97 | free-nodes
     type: vless
     server: 194.36.37.254
     port: 8443
@@ -799,7 +855,7 @@ proxies:
     tls: false
     network: tcp
     flow: xtls-rprx-vision
-  - name: JP VLESS-105 | free-nodes
+  - name: JP VLESS-98 | free-nodes
     type: vless
     server: 138.2.50.155
     port: 38487
@@ -807,28 +863,28 @@ proxies:
     tls: false
     network: tcp
     flow: xtls-rprx-vision
-  - name: 未知 VLESS-106 | free-nodes
+  - name: 未知 VLESS-99 | free-nodes
     type: vless
     server: 141.227.178.242
     port: 29803
     uuid: aa4f8c93-e4ec-48fe-8043-2f8e4f1c006d
     tls: false
     network: grpc
-  - name: 未知 VLESS-107 | free-nodes
+  - name: 未知 VLESS-100 | free-nodes
     type: vless
     server: 141.227.134.118
     port: 18929
     uuid: 681550bc-d418-46eb-b5da-b2408fbaf19f
     tls: false
     network: grpc
-  - name: GB VLESS-108 | free-nodes
+  - name: GB VLESS-101 | free-nodes
     type: vless
     server: 141.227.174.26
     port: 32418
     uuid: aab74025-0737-410c-b048-bcbde3bc1852
     tls: false
     network: grpc
-  - name: HK VLESS-110 | free-nodes
+  - name: HK VLESS-103 | free-nodes
     type: vless
     server: n1761184273.mv7wh.tech
     port: 443
@@ -839,28 +895,29 @@ proxies:
       path: /a4c6bbd7-6ea5-44b2-9829-08f5ae615d49
       headers:
         Host: n1761184273.mv7wh.tech
-  - name: 未知 VLESS-112 | free-nodes
+  - name: 未知 VLESS-105 | free-nodes
     type: vless
     server: 72.56.74.98
     port: 443
     uuid: b148ea58-3fc7-4f27-8d8b-2b8e007e59fc
     tls: false
     network: tcp
-  - name: 未知 VLESS-114 | free-nodes
+    flow: xtls-rprx-vision
+  - name: 未知 VLESS-107 | free-nodes
     type: vless
     server: 72.56.74.74
     port: 443
     uuid: 90c9c25c-df6c-4438-83d3-ef97166a9184
     tls: false
     network: tcp
-  - name: 未知 VLESS-115 | free-nodes
+  - name: 未知 VLESS-108 | free-nodes
     type: vless
     server: serena.ns.cloudflare.com
     port: 443
     uuid: f028a8c0-6763-4558-aee3-2563db9d7825
     tls: false
     network: tcp
-  - name: 未知 VLESS-116 | free-nodes
+  - name: 未知 VLESS-109 | free-nodes
     type: vless
     server: betty.ns.cloudflare.com
     port: 443
@@ -871,14 +928,14 @@ proxies:
       path: /tixvuws
       headers:
         Host: vangoghh.info
-  - name: SG TROJAN-119 | free-nodes
+  - name: SG TROJAN-112 | free-nodes
     type: trojan
     server: 160.16.233.76
     port: 507
     password: 76d630f2af6619c4a5de0ef953df3c6a
     sni: www.nintendogames.net
     skip-cert-verify: false
-  - name: US VLESS-120 | free-nodes
+  - name: US VLESS-113 | free-nodes
     type: vless
     server: 104.21.3.219
     port: 8443
@@ -889,7 +946,7 @@ proxies:
       path: /57ba2ab1
       headers:
         Host: ovhwuxian.pai50288.uk
-  - name: 未知 VLESS-123 | free-nodes
+  - name: 未知 VLESS-116 | free-nodes
     type: vless
     server: 217.16.24.170
     port: 8443
@@ -897,61 +954,49 @@ proxies:
     tls: false
     network: tcp
     flow: xtls-rprx-vision
-  - name: 未知 VLESS-127 | free-nodes
-    type: vless
-    server: 172.64.32.220
-    port: 443
-    uuid: f028a8c0-6763-4558-aee3-2563db9d7825
-    tls: true
-    network: ws
-    ws-opts:
-      path: /xxvclws
-      headers:
-        Host: freudd.info
-  - name: GB VLESS-129 | free-nodes
+  - name: GB VLESS-122 | free-nodes
     type: vless
     server: 108.162.195.45
     port: 443
     uuid: 7270612b-49f6-4b04-999c-34d8263da767
     tls: false
     network: tcp
-  - name: 未知 VLESS-130 | free-nodes
+  - name: 未知 VLESS-123 | free-nodes
     type: vless
     server: 147.45.234.51
     port: 443
-    uuid: fd0718a1-c463-4297-8ba9-a7f4b93ce436
+    uuid: f021325f-867c-476b-b7bc-9d78d594c57a
     tls: false
     network: tcp
-    flow: xtls-rprx-vision
-  - name: HK TROJAN-132 | free-nodes
+  - name: HK TROJAN-125 | free-nodes
     type: trojan
     server: 47.242.225.242
     port: 443
     password: 92690597d6298061459918a371e8d77d
     sni: hezijiasuqi.com
     skip-cert-verify: false
-  - name: DE VLESS-133 | free-nodes
+  - name: DE VLESS-126 | free-nodes
     type: vless
     server: 91.107.130.76
     port: 41647
     uuid: e50fa46f-20c6-4c0d-fa0e-d9ffd92df36f
     tls: false
     network: tcp
-  - name: HK TROJAN-134 | free-nodes
+  - name: HK TROJAN-127 | free-nodes
     type: trojan
     server: 58.152.25.242
     port: 443
     password: BxceQaOe
-    sni: t.me%2Fripaojiedian
+    sni: t.me%252Fripaojiedian
     skip-cert-verify: false
-  - name: US TROJAN-135 | free-nodes
+  - name: US TROJAN-128 | free-nodes
     type: trojan
     server: 160.16.214.6
     port: 2890
     password: 76d630f2af6619c4a5de0ef953df3c6a
     sni: www.nintendogames.net
     skip-cert-verify: false
-  - name: GB VLESS-136 | free-nodes
+  - name: GB VLESS-129 | free-nodes
     type: vless
     server: cosmin.ns.cloudflare.com
     port: 443
@@ -962,6 +1007,50 @@ proxies:
       path: /aymdlws
       headers:
         Host: picassoo.info
+  - name: US VLESS-133 | free-nodes
+    type: vless
+    server: 216.106.176.106
+    port: 8443
+    uuid: f7af49ea-f51f-4c71-9e12-0c2f3085f3b8
+    tls: false
+    network: tcp
+    flow: xtls-rprx-vision
+  - name: 未知 VLESS-134 | free-nodes
+    type: vless
+    server: 89.110.68.47
+    port: 8443
+    uuid: 787ae54e-40ad-4caf-899b-ad3a19ff1103
+    tls: false
+    network: tcp
+    flow: xtls-rprx-vision
+  - name: DE VLESS-135 | free-nodes
+    type: vless
+    server: 91.99.27.92
+    port: 443
+    uuid: 2ee2a715-d541-416a-8713-d66567448c2e
+    tls: false
+    network: grpc
+  - name: SG TROJAN-136 | free-nodes
+    type: trojan
+    server: 160.16.153.13
+    port: 3145
+    password: 76d630f2af6619c4a5de0ef953df3c6a
+    sni: www.nintendogames.net
+    skip-cert-verify: false
+  - name: HK TROJAN-137 | free-nodes
+    type: trojan
+    server: 58.152.30.120
+    port: 443
+    password: BxceQaOe
+    sni: t.me/ripaojiedian
+    skip-cert-verify: false
+  - name: 未知 VLESS-139 | free-nodes
+    type: vless
+    server: 141.227.140.217
+    port: 23991
+    uuid: d016da91-83a9-42dc-a246-b27c192e40af
+    tls: false
+    network: tcp
   - name: 未知 TROJAN-140 | free-nodes
     type: trojan
     server: download2hkt.windowsupdate.lol
@@ -1753,6 +1842,13 @@ proxies:
     password: 4863e1b2-ec2f-4c71-b862-ce533028e57e
     sni: trus.moonfree.top
     skip-cert-verify: false
+  - name: 未知 TROJAN-270 | free-nodes
+    type: trojan
+    server: 54.248.4.79
+    port: 41017
+    password: BxceQaOe
+    sni: t.me/ripaojiedian
+    skip-cert-verify: false
   - name: 未知 TROJAN-271 | free-nodes
     type: trojan
     server: london11.yukiss.eu.org
@@ -2278,13 +2374,6 @@ proxies:
     password: 76d630f2af6619c4a5de0ef953df3c6a
     sni: www.nintendogames.net
     skip-cert-verify: false
-  - name: 未知 TROJAN-368 | free-nodes
-    type: trojan
-    server: 58.152.30.120
-    port: 443
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: false
   - name: 未知 TROJAN-369 | free-nodes
     type: trojan
     server: 219.76.13.175
@@ -2312,6 +2401,13 @@ proxies:
     port: 2096
     password: lionssh_Ckkfjff
     sni: ca1.goserver.pw
+    skip-cert-verify: false
+  - name: 未知 TROJAN-374 | free-nodes
+    type: trojan
+    server: 160.16.124.55
+    port: 2890
+    password: 76d630f2af6619c4a5de0ef953df3c6a
+    sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 未知 TROJAN-375 | free-nodes
     type: trojan
@@ -2439,6 +2535,13 @@ proxies:
     password: 21e10785-99c6-316e-a184-a03384ee06e5
     sni: $$vutnkr01.xiaohouzi.club
     skip-cert-verify: false
+  - name: 未知 TROJAN-403 | free-nodes
+    type: trojan
+    server: 43.198.206.171
+    port: 2673
+    password: BxceQaOe
+    sni: t.me%2Fripaojiedian
+    skip-cert-verify: true
   - name: 未知 TROJAN-404 | free-nodes
     type: trojan
     server: 45.64.22.55
@@ -2726,13 +2829,6 @@ proxies:
     password: 7d223bae-e183-4bf6-89c3-e327b15df490
     sni: 183.236.51.7
     skip-cert-verify: false
-  - name: 未知 TROJAN-477 | free-nodes
-    type: trojan
-    server: 160.16.153.13
-    port: 3145
-    password: 76d630f2af6619c4a5de0ef953df3c6a
-    sni: www.nintendogames.net
-    skip-cert-verify: true
   - name: 未知 TROJAN-480 | free-nodes
     type: trojan
     server: 51.38.65.155
@@ -2872,6 +2968,13 @@ proxies:
     port: 22222
     password: telegram-id-directvpn
     sni: trj.rollingnext.co.uk
+    skip-cert-verify: false
+  - name: 未知 TROJAN-521 | free-nodes
+    type: trojan
+    server: 160.16.223.205
+    port: 4054
+    password: 76d630f2af6619c4a5de0ef953df3c6a
+    sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 未知 TROJAN-523 | free-nodes
     type: trojan
@@ -3013,6 +3116,13 @@ proxies:
     password: 7d223bae-e183-4bf6-89c3-e327b15df490
     sni: 183.236.51.2
     skip-cert-verify: false
+  - name: 未知 TROJAN-563 | free-nodes
+    type: trojan
+    server: 13.112.81.124
+    port: 3169
+    password: 76d630f2af6619c4a5de0ef953df3c6a
+    sni: www.nintendogames.net
+    skip-cert-verify: false
   - name: 未知 TROJAN-564 | free-nodes
     type: trojan
     server: official.taipeicitygovernment.com.ua
@@ -3040,6 +3150,13 @@ proxies:
     port: 22222
     password: telegram-id-privatevpns
     sni: trj.rollingnext.co.uk
+    skip-cert-verify: false
+  - name: 未知 TROJAN-572 | free-nodes
+    type: trojan
+    server: 120.232.81.194
+    port: 49213
+    password: 44db2c35-9eef-4f62-b444-813871ff69d7
+    sni: t.me/ripaojiedian
     skip-cert-verify: false
   - name: 未知 TROJAN-573 | free-nodes
     type: trojan
@@ -3783,6 +3900,13 @@ proxies:
     password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27
     sni: $$$$iplc.xiaohouzi.club
     skip-cert-verify: false
+  - name: 未知 TROJAN-848 | free-nodes
+    type: trojan
+    server: 52.197.139.174
+    port: 507
+    password: 76d630f2af6619c4a5de0ef953df3c6a
+    sni: www.nintendogames.net
+    skip-cert-verify: false
   - name: 未知 TROJAN-852 | free-nodes
     type: trojan
     server: hnm.xiaohouzi.club
@@ -3817,13 +3941,6 @@ proxies:
     port: 10824
     password: 7d223bae-e183-4bf6-89c3-e327b15df490
     sni: 183.236.51.2
-    skip-cert-verify: false
-  - name: 未知 TROJAN-859 | free-nodes
-    type: trojan
-    server: 160.16.236.32
-    port: 4054
-    password: 79314e99f0a473fe86efc7827942ad00
-    sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 未知 TROJAN-860 | free-nodes
     type: trojan
@@ -3901,6 +4018,13 @@ proxies:
     port: 443
     password: vip
     sni: heihu880.pages.dev
+    skip-cert-verify: false
+  - name: 未知 TROJAN-917 | free-nodes
+    type: trojan
+    server: 58.152.18.71
+    port: 443
+    password: 76d630f2af6619c4a5de0ef953df3c6a
+    sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 未知 TROJAN-920 | free-nodes
     type: trojan
@@ -4525,6 +4649,13 @@ proxies:
     password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
     sni: official.seoulcityhall.com.ua
     skip-cert-verify: false
+  - name: 未知 TROJAN-1286 | free-nodes
+    type: trojan
+    server: 52.197.139.174
+    port: 3145
+    password: 76d630f2af6619c4a5de0ef953df3c6a
+    sni: www.nintendogames.net
+    skip-cert-verify: false
   - name: 未知 TROJAN-1288 | free-nodes
     type: trojan
     server: official.seoulcityhall.com.ua
@@ -4756,6 +4887,13 @@ proxies:
     password: 750a29bf-0a40-437f-b120-38de74ae7eaf
     sni: 210.0.158.220
     skip-cert-verify: false
+  - name: 未知 TROJAN-1512 | free-nodes
+    type: trojan
+    server: 153.121.67.215
+    port: 1331
+    password: 76d630f2af6619c4a5de0ef953df3c6a
+    sni: www.nintendogames.net
+    skip-cert-verify: false
   - name: 未知 TROJAN-1525 | free-nodes
     type: trojan
     server: ahgjs-4-tr-0.hkg-01.o-two.xyz
@@ -4791,6 +4929,13 @@ proxies:
     password: trojan
     sni: qingming-b08.pages.dev
     skip-cert-verify: false
+  - name: 未知 TROJAN-1548 | free-nodes
+    type: trojan
+    server: 43.198.206.171
+    port: 4710
+    password: BxceQaOe
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
   - name: 未知 TROJAN-1557 | free-nodes
     type: trojan
     server: hn.xiaohouzi.club
@@ -5127,15 +5272,69 @@ proxies:
     password: 8aab51da-6b67-4bd2-b6e6-5ab3008cf53e
     sni: jp.iamnotagoodman.com
     skip-cert-verify: false
-  - name: 中国 V2CROSS.COM
+  - name: 南非豪登省约翰内斯堡 Cloudinnovation数据中心
     type: vmess
-    server: v30.hdacd.com
-    port: 30830
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    server: 156.245.232.15
+    port: 42640
+    uuid: 48a33a1b-a6fb-4d6a-94c5-c6808f1c4b1f
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
+  - name: 南非豪登省约翰内斯堡 Cloudinnovation数据中心 [1]
+    type: vmess
+    server: 156.245.232.15
+    port: 59504
+    uuid: 98ff2af8-bb3d-42c6-9bc4-3c6b65c6fb67
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
+  - name: 南非豪登省约翰内斯堡 Cloudinnovation数据中心 [2]
+    type: vmess
+    server: 156.245.232.15
+    port: 10234
+    uuid: 0e9a3ed8-64d3-4adc-aa30-f7ff8f4b69ae
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
+  - name: 南非豪登省约翰内斯堡 Cloudinnovation数据中心 [3]
+    type: vmess
+    server: 156.245.232.15
+    port: 56787
+    uuid: 88ad50a3-c0b8-48fd-dc39-708468c121c3
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
+  - name: 美国 NTT通信公司
+    type: vmess
+    server: 192.204.47.79
+    port: 42277
+    uuid: aee61b21-e85a-484b-f203-b245f1451cff
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
+  - name: 英国 V2CROSS.COM
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     alterId: 0
     cipher: auto
     tls: false
     network: tcp
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 216.238.86.158
+    port: 34460
+    uuid: 90be214d-048c-4ea2-a602-b8e4d4e51e36
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -5154,11 +5353,9 @@ proxy-groups:
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
       - 🇭🇰 香港|@ripaojiedian
-      - 香港2|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
-      - 🇹🇼 台湾|@ripaojiedian
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
@@ -5168,100 +5365,113 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - 美国4|@ripaojiedian
-      - IL_speednode_0006
-      - RU_speednode_0010
-      - RU_speednode_0011
-      - RU_speednode_0012
-      - RU VLESS-01 | free-nodes
-      - 未知 VLESS-05 | free-nodes
+      - AE_speednode_0001
+      - AE_speednode_0002
+      - AE_speednode_0003
+      - BG_speednode_0005
+      - CA_speednode_0006
+      - CH_speednode_0007
+      - DE_speednode_0008
+      - GB_speednode_0011
+      - GB_speednode_0012
+      - IL_speednode_0021
+      - IR_speednode_0022
+      - IR_speednode_0023
+      - IT_speednode_0024
+      - LB_speednode_0026
+      - LB_speednode_0027
+      - NL_speednode_0031
+      - RU_speednode_0033
+      - RU_speednode_0034
+      - RU_speednode_0035
+      - RU_speednode_0036
+      - RU_speednode_0037
+      - RU_speednode_0038
+      - RU_speednode_0040
+      - RU_speednode_0041
+      - US_speednode_0044
+      - US_speednode_0046
+      - US_speednode_0047
+      - US_speednode_0048
+      - RU VLESS-02 | free-nodes
       - 未知 VLESS-06 | free-nodes
-      - DE VLESS-07 | free-nodes
-      - RU VLESS-11 | free-nodes
-      - DE VLESS-12 | free-nodes
-      - DE VLESS-14 | free-nodes
-      - DE VLESS-19 | free-nodes
-      - 未知 VLESS-20 | free-nodes
-      - RU VLESS-22 | free-nodes
-      - CA VLESS-23 | free-nodes
-      - DE VLESS-24 | free-nodes
-      - 未知 VLESS-25 | free-nodes
-      - DE VLESS-26 | free-nodes
-      - 未知 VLESS-28 | free-nodes
-      - US VLESS-30 | free-nodes
-      - US VLESS-31 | free-nodes
-      - RU VLESS-35 | free-nodes
-      - DE VLESS-36 | free-nodes
-      - DE VLESS-37 | free-nodes
-      - 未知 VLESS-38 | free-nodes
+      - 未知 VLESS-07 | free-nodes
+      - DE VLESS-08 | free-nodes
+      - DE VLESS-15 | free-nodes
+      - 未知 VLESS-18 | free-nodes
+      - DE VLESS-20 | free-nodes
+      - 未知 VLESS-21 | free-nodes
+      - DE VLESS-22 | free-nodes
+      - US VLESS-25 | free-nodes
+      - US VLESS-26 | free-nodes
+      - DE VLESS-31 | free-nodes
+      - DE VLESS-32 | free-nodes
+      - 未知 VLESS-33 | free-nodes
+      - 未知 VLESS-35 | free-nodes
+      - 未知 VLESS-36 | free-nodes
+      - 未知 VLESS-37 | free-nodes
       - 未知 VLESS-40 | free-nodes
-      - 未知 VLESS-41 | free-nodes
-      - 未知 VLESS-42 | free-nodes
-      - TR VLESS-43 | free-nodes
-      - 未知 VLESS-45 | free-nodes
-      - DE VLESS-46 | free-nodes
-      - FR VLESS-48 | free-nodes
-      - HK TROJAN-49 | free-nodes
+      - DE VLESS-41 | free-nodes
+      - FR VLESS-43 | free-nodes
+      - HK TROJAN-44 | free-nodes
+      - RU VLESS-47 | free-nodes
+      - DE VLESS-48 | free-nodes
+      - 未知 VLESS-50 | free-nodes
       - RU VLESS-52 | free-nodes
-      - DE VLESS-53 | free-nodes
-      - 未知 VLESS-55 | free-nodes
-      - RU VLESS-57 | free-nodes
-      - DE VLESS-59 | free-nodes
-      - DE VLESS-60 | free-nodes
-      - GB VLESS-61 | free-nodes
+      - DE VLESS-54 | free-nodes
+      - DE VLESS-55 | free-nodes
+      - GB VLESS-56 | free-nodes
+      - 未知 VLESS-57 | free-nodes
+      - 未知 VLESS-58 | free-nodes
       - 未知 VLESS-62 | free-nodes
-      - 未知 VLESS-63 | free-nodes
+      - TR VLESS-65 | free-nodes
       - DE VLESS-66 | free-nodes
       - 未知 VLESS-67 | free-nodes
       - 未知 VLESS-68 | free-nodes
-      - DE VLESS-69 | free-nodes
-      - TR VLESS-70 | free-nodes
+      - GB VLESS-70 | free-nodes
       - DE VLESS-71 | free-nodes
       - 未知 VLESS-72 | free-nodes
-      - 未知 VLESS-73 | free-nodes
-      - 未知 VLESS-75 | free-nodes
-      - GB VLESS-76 | free-nodes
-      - DE VLESS-77 | free-nodes
+      - RU VLESS-73 | free-nodes
+      - SG VLESS-77 | free-nodes
       - 未知 VLESS-78 | free-nodes
-      - 未知 VLESS-79 | free-nodes
-      - RU VLESS-80 | free-nodes
-      - SG VLESS-84 | free-nodes
-      - 未知 VLESS-85 | free-nodes
+      - DE VLESS-79 | free-nodes
+      - DE VLESS-81 | free-nodes
+      - DE VLESS-82 | free-nodes
+      - DE VLESS-83 | free-nodes
+      - DE VLESS-84 | free-nodes
+      - DE VLESS-85 | free-nodes
       - DE VLESS-86 | free-nodes
       - 未知 VLESS-87 | free-nodes
       - DE VLESS-88 | free-nodes
-      - DE VLESS-89 | free-nodes
-      - DE VLESS-90 | free-nodes
-      - DE VLESS-91 | free-nodes
-      - DE VLESS-92 | free-nodes
-      - DE VLESS-93 | free-nodes
-      - 未知 VLESS-94 | free-nodes
-      - DE VLESS-95 | free-nodes
+      - 未知 VLESS-90 | free-nodes
+      - 未知 VLESS-91 | free-nodes
+      - 未知 VLESS-93 | free-nodes
       - 未知 VLESS-97 | free-nodes
-      - 未知 VLESS-98 | free-nodes
+      - JP VLESS-98 | free-nodes
+      - 未知 VLESS-99 | free-nodes
       - 未知 VLESS-100 | free-nodes
-      - 未知 VLESS-101 | free-nodes
-      - 未知 VLESS-104 | free-nodes
-      - JP VLESS-105 | free-nodes
-      - 未知 VLESS-106 | free-nodes
+      - GB VLESS-101 | free-nodes
+      - HK VLESS-103 | free-nodes
+      - 未知 VLESS-105 | free-nodes
       - 未知 VLESS-107 | free-nodes
-      - GB VLESS-108 | free-nodes
-      - HK VLESS-110 | free-nodes
-      - 未知 VLESS-112 | free-nodes
-      - 未知 VLESS-114 | free-nodes
-      - 未知 VLESS-115 | free-nodes
+      - 未知 VLESS-108 | free-nodes
+      - 未知 VLESS-109 | free-nodes
+      - SG TROJAN-112 | free-nodes
+      - US VLESS-113 | free-nodes
       - 未知 VLESS-116 | free-nodes
-      - SG TROJAN-119 | free-nodes
-      - US VLESS-120 | free-nodes
+      - GB VLESS-122 | free-nodes
       - 未知 VLESS-123 | free-nodes
-      - 未知 VLESS-127 | free-nodes
+      - HK TROJAN-125 | free-nodes
+      - DE VLESS-126 | free-nodes
+      - HK TROJAN-127 | free-nodes
+      - US TROJAN-128 | free-nodes
       - GB VLESS-129 | free-nodes
-      - 未知 VLESS-130 | free-nodes
-      - HK TROJAN-132 | free-nodes
-      - DE VLESS-133 | free-nodes
-      - HK TROJAN-134 | free-nodes
-      - US TROJAN-135 | free-nodes
-      - GB VLESS-136 | free-nodes
+      - US VLESS-133 | free-nodes
+      - 未知 VLESS-134 | free-nodes
+      - DE VLESS-135 | free-nodes
+      - SG TROJAN-136 | free-nodes
+      - HK TROJAN-137 | free-nodes
+      - 未知 VLESS-139 | free-nodes
       - 未知 TROJAN-140 | free-nodes
       - 未知 TROJAN-141 | free-nodes
       - 未知 TROJAN-142 | free-nodes
@@ -5375,6 +5585,7 @@ proxy-groups:
       - 未知 TROJAN-266 | free-nodes
       - 未知 TROJAN-267 | free-nodes
       - 未知 TROJAN-268 | free-nodes
+      - 未知 TROJAN-270 | free-nodes
       - 未知 TROJAN-271 | free-nodes
       - 未知 TROJAN-273 | free-nodes
       - 未知 TROJAN-274 | free-nodes
@@ -5450,11 +5661,11 @@ proxy-groups:
       - 未知 TROJAN-364 | free-nodes
       - 未知 TROJAN-365 | free-nodes
       - 未知 TROJAN-367 | free-nodes
-      - 未知 TROJAN-368 | free-nodes
       - 未知 TROJAN-369 | free-nodes
       - 未知 TROJAN-370 | free-nodes
       - 未知 TROJAN-372 | free-nodes
       - 未知 TROJAN-373 | free-nodes
+      - 未知 TROJAN-374 | free-nodes
       - 未知 TROJAN-375 | free-nodes
       - 未知 TROJAN-379 | free-nodes
       - 未知 TROJAN-381 | free-nodes
@@ -5473,6 +5684,7 @@ proxy-groups:
       - 未知 TROJAN-399 | free-nodes
       - 未知 TROJAN-400 | free-nodes
       - 未知 TROJAN-401 | free-nodes
+      - 未知 TROJAN-403 | free-nodes
       - 未知 TROJAN-404 | free-nodes
       - 未知 TROJAN-406 | free-nodes
       - 未知 TROJAN-409 | free-nodes
@@ -5514,7 +5726,6 @@ proxy-groups:
       - 未知 TROJAN-474 | free-nodes
       - 未知 TROJAN-475 | free-nodes
       - 未知 TROJAN-476 | free-nodes
-      - 未知 TROJAN-477 | free-nodes
       - 未知 TROJAN-480 | free-nodes
       - 未知 TROJAN-481 | free-nodes
       - 未知 TROJAN-482 | free-nodes
@@ -5535,6 +5746,7 @@ proxy-groups:
       - 未知 TROJAN-516 | free-nodes
       - 未知 TROJAN-517 | free-nodes
       - 未知 TROJAN-518 | free-nodes
+      - 未知 TROJAN-521 | free-nodes
       - 未知 TROJAN-523 | free-nodes
       - 未知 TROJAN-525 | free-nodes
       - 未知 TROJAN-526 | free-nodes
@@ -5555,10 +5767,12 @@ proxy-groups:
       - 未知 TROJAN-556 | free-nodes
       - 未知 TROJAN-561 | free-nodes
       - 未知 TROJAN-562 | free-nodes
+      - 未知 TROJAN-563 | free-nodes
       - 未知 TROJAN-564 | free-nodes
       - 未知 TROJAN-565 | free-nodes
       - 未知 TROJAN-566 | free-nodes
       - 未知 TROJAN-571 | free-nodes
+      - 未知 TROJAN-572 | free-nodes
       - 未知 TROJAN-573 | free-nodes
       - 未知 TROJAN-574 | free-nodes
       - 未知 TROJAN-577 | free-nodes
@@ -5665,12 +5879,12 @@ proxy-groups:
       - 未知 TROJAN-836 | free-nodes
       - 未知 TROJAN-837 | free-nodes
       - 未知 TROJAN-845 | free-nodes
+      - 未知 TROJAN-848 | free-nodes
       - 未知 TROJAN-852 | free-nodes
       - 未知 TROJAN-854 | free-nodes
       - 未知 TROJAN-855 | free-nodes
       - 未知 TROJAN-857 | free-nodes
       - 未知 TROJAN-858 | free-nodes
-      - 未知 TROJAN-859 | free-nodes
       - 未知 TROJAN-860 | free-nodes
       - 未知 TROJAN-863 | free-nodes
       - 未知 TROJAN-865 | free-nodes
@@ -5682,6 +5896,7 @@ proxy-groups:
       - 未知 TROJAN-894 | free-nodes
       - 未知 TROJAN-895 | free-nodes
       - 未知 TROJAN-900 | free-nodes
+      - 未知 TROJAN-917 | free-nodes
       - 未知 TROJAN-920 | free-nodes
       - 未知 TROJAN-922 | free-nodes
       - 未知 TROJAN-924 | free-nodes
@@ -5771,6 +5986,7 @@ proxy-groups:
       - 未知 TROJAN-1274 | free-nodes
       - 未知 TROJAN-1281 | free-nodes
       - 未知 TROJAN-1285 | free-nodes
+      - 未知 TROJAN-1286 | free-nodes
       - 未知 TROJAN-1288 | free-nodes
       - 未知 TROJAN-1289 | free-nodes
       - 未知 TROJAN-1293 | free-nodes
@@ -5804,11 +6020,13 @@ proxy-groups:
       - 未知 TROJAN-1492 | free-nodes
       - 未知 TROJAN-1494 | free-nodes
       - 未知 TROJAN-1498 | free-nodes
+      - 未知 TROJAN-1512 | free-nodes
       - 未知 TROJAN-1525 | free-nodes
       - 未知 TROJAN-1527 | free-nodes
       - 未知 TROJAN-1536 | free-nodes
       - 未知 TROJAN-1538 | free-nodes
       - 未知 TROJAN-1546 | free-nodes
+      - 未知 TROJAN-1548 | free-nodes
       - 未知 TROJAN-1557 | free-nodes
       - 未知 TROJAN-1570 | free-nodes
       - 未知 TROJAN-1577 | free-nodes
@@ -5857,7 +6075,13 @@ proxy-groups:
       - 未知 TROJAN-2022 | free-nodes
       - 未知 TROJAN-2043 | free-nodes
       - 未知 TROJAN-2046 | free-nodes
-      - 中国 V2CROSS.COM
+      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
+      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心 [1]
+      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心 [2]
+      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心 [3]
+      - 美国 NTT通信公司
+      - 英国 V2CROSS.COM
+      - 美国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -5872,11 +6096,9 @@ proxy-groups:
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
       - 🇭🇰 香港|@ripaojiedian
-      - 香港2|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
-      - 🇹🇼 台湾|@ripaojiedian
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
@@ -5886,100 +6108,113 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - 美国4|@ripaojiedian
-      - IL_speednode_0006
-      - RU_speednode_0010
-      - RU_speednode_0011
-      - RU_speednode_0012
-      - RU VLESS-01 | free-nodes
-      - 未知 VLESS-05 | free-nodes
+      - AE_speednode_0001
+      - AE_speednode_0002
+      - AE_speednode_0003
+      - BG_speednode_0005
+      - CA_speednode_0006
+      - CH_speednode_0007
+      - DE_speednode_0008
+      - GB_speednode_0011
+      - GB_speednode_0012
+      - IL_speednode_0021
+      - IR_speednode_0022
+      - IR_speednode_0023
+      - IT_speednode_0024
+      - LB_speednode_0026
+      - LB_speednode_0027
+      - NL_speednode_0031
+      - RU_speednode_0033
+      - RU_speednode_0034
+      - RU_speednode_0035
+      - RU_speednode_0036
+      - RU_speednode_0037
+      - RU_speednode_0038
+      - RU_speednode_0040
+      - RU_speednode_0041
+      - US_speednode_0044
+      - US_speednode_0046
+      - US_speednode_0047
+      - US_speednode_0048
+      - RU VLESS-02 | free-nodes
       - 未知 VLESS-06 | free-nodes
-      - DE VLESS-07 | free-nodes
-      - RU VLESS-11 | free-nodes
-      - DE VLESS-12 | free-nodes
-      - DE VLESS-14 | free-nodes
-      - DE VLESS-19 | free-nodes
-      - 未知 VLESS-20 | free-nodes
-      - RU VLESS-22 | free-nodes
-      - CA VLESS-23 | free-nodes
-      - DE VLESS-24 | free-nodes
-      - 未知 VLESS-25 | free-nodes
-      - DE VLESS-26 | free-nodes
-      - 未知 VLESS-28 | free-nodes
-      - US VLESS-30 | free-nodes
-      - US VLESS-31 | free-nodes
-      - RU VLESS-35 | free-nodes
-      - DE VLESS-36 | free-nodes
-      - DE VLESS-37 | free-nodes
-      - 未知 VLESS-38 | free-nodes
+      - 未知 VLESS-07 | free-nodes
+      - DE VLESS-08 | free-nodes
+      - DE VLESS-15 | free-nodes
+      - 未知 VLESS-18 | free-nodes
+      - DE VLESS-20 | free-nodes
+      - 未知 VLESS-21 | free-nodes
+      - DE VLESS-22 | free-nodes
+      - US VLESS-25 | free-nodes
+      - US VLESS-26 | free-nodes
+      - DE VLESS-31 | free-nodes
+      - DE VLESS-32 | free-nodes
+      - 未知 VLESS-33 | free-nodes
+      - 未知 VLESS-35 | free-nodes
+      - 未知 VLESS-36 | free-nodes
+      - 未知 VLESS-37 | free-nodes
       - 未知 VLESS-40 | free-nodes
-      - 未知 VLESS-41 | free-nodes
-      - 未知 VLESS-42 | free-nodes
-      - TR VLESS-43 | free-nodes
-      - 未知 VLESS-45 | free-nodes
-      - DE VLESS-46 | free-nodes
-      - FR VLESS-48 | free-nodes
-      - HK TROJAN-49 | free-nodes
+      - DE VLESS-41 | free-nodes
+      - FR VLESS-43 | free-nodes
+      - HK TROJAN-44 | free-nodes
+      - RU VLESS-47 | free-nodes
+      - DE VLESS-48 | free-nodes
+      - 未知 VLESS-50 | free-nodes
       - RU VLESS-52 | free-nodes
-      - DE VLESS-53 | free-nodes
-      - 未知 VLESS-55 | free-nodes
-      - RU VLESS-57 | free-nodes
-      - DE VLESS-59 | free-nodes
-      - DE VLESS-60 | free-nodes
-      - GB VLESS-61 | free-nodes
+      - DE VLESS-54 | free-nodes
+      - DE VLESS-55 | free-nodes
+      - GB VLESS-56 | free-nodes
+      - 未知 VLESS-57 | free-nodes
+      - 未知 VLESS-58 | free-nodes
       - 未知 VLESS-62 | free-nodes
-      - 未知 VLESS-63 | free-nodes
+      - TR VLESS-65 | free-nodes
       - DE VLESS-66 | free-nodes
       - 未知 VLESS-67 | free-nodes
       - 未知 VLESS-68 | free-nodes
-      - DE VLESS-69 | free-nodes
-      - TR VLESS-70 | free-nodes
+      - GB VLESS-70 | free-nodes
       - DE VLESS-71 | free-nodes
       - 未知 VLESS-72 | free-nodes
-      - 未知 VLESS-73 | free-nodes
-      - 未知 VLESS-75 | free-nodes
-      - GB VLESS-76 | free-nodes
-      - DE VLESS-77 | free-nodes
+      - RU VLESS-73 | free-nodes
+      - SG VLESS-77 | free-nodes
       - 未知 VLESS-78 | free-nodes
-      - 未知 VLESS-79 | free-nodes
-      - RU VLESS-80 | free-nodes
-      - SG VLESS-84 | free-nodes
-      - 未知 VLESS-85 | free-nodes
+      - DE VLESS-79 | free-nodes
+      - DE VLESS-81 | free-nodes
+      - DE VLESS-82 | free-nodes
+      - DE VLESS-83 | free-nodes
+      - DE VLESS-84 | free-nodes
+      - DE VLESS-85 | free-nodes
       - DE VLESS-86 | free-nodes
       - 未知 VLESS-87 | free-nodes
       - DE VLESS-88 | free-nodes
-      - DE VLESS-89 | free-nodes
-      - DE VLESS-90 | free-nodes
-      - DE VLESS-91 | free-nodes
-      - DE VLESS-92 | free-nodes
-      - DE VLESS-93 | free-nodes
-      - 未知 VLESS-94 | free-nodes
-      - DE VLESS-95 | free-nodes
+      - 未知 VLESS-90 | free-nodes
+      - 未知 VLESS-91 | free-nodes
+      - 未知 VLESS-93 | free-nodes
       - 未知 VLESS-97 | free-nodes
-      - 未知 VLESS-98 | free-nodes
+      - JP VLESS-98 | free-nodes
+      - 未知 VLESS-99 | free-nodes
       - 未知 VLESS-100 | free-nodes
-      - 未知 VLESS-101 | free-nodes
-      - 未知 VLESS-104 | free-nodes
-      - JP VLESS-105 | free-nodes
-      - 未知 VLESS-106 | free-nodes
+      - GB VLESS-101 | free-nodes
+      - HK VLESS-103 | free-nodes
+      - 未知 VLESS-105 | free-nodes
       - 未知 VLESS-107 | free-nodes
-      - GB VLESS-108 | free-nodes
-      - HK VLESS-110 | free-nodes
-      - 未知 VLESS-112 | free-nodes
-      - 未知 VLESS-114 | free-nodes
-      - 未知 VLESS-115 | free-nodes
+      - 未知 VLESS-108 | free-nodes
+      - 未知 VLESS-109 | free-nodes
+      - SG TROJAN-112 | free-nodes
+      - US VLESS-113 | free-nodes
       - 未知 VLESS-116 | free-nodes
-      - SG TROJAN-119 | free-nodes
-      - US VLESS-120 | free-nodes
+      - GB VLESS-122 | free-nodes
       - 未知 VLESS-123 | free-nodes
-      - 未知 VLESS-127 | free-nodes
+      - HK TROJAN-125 | free-nodes
+      - DE VLESS-126 | free-nodes
+      - HK TROJAN-127 | free-nodes
+      - US TROJAN-128 | free-nodes
       - GB VLESS-129 | free-nodes
-      - 未知 VLESS-130 | free-nodes
-      - HK TROJAN-132 | free-nodes
-      - DE VLESS-133 | free-nodes
-      - HK TROJAN-134 | free-nodes
-      - US TROJAN-135 | free-nodes
-      - GB VLESS-136 | free-nodes
+      - US VLESS-133 | free-nodes
+      - 未知 VLESS-134 | free-nodes
+      - DE VLESS-135 | free-nodes
+      - SG TROJAN-136 | free-nodes
+      - HK TROJAN-137 | free-nodes
+      - 未知 VLESS-139 | free-nodes
       - 未知 TROJAN-140 | free-nodes
       - 未知 TROJAN-141 | free-nodes
       - 未知 TROJAN-142 | free-nodes
@@ -6093,6 +6328,7 @@ proxy-groups:
       - 未知 TROJAN-266 | free-nodes
       - 未知 TROJAN-267 | free-nodes
       - 未知 TROJAN-268 | free-nodes
+      - 未知 TROJAN-270 | free-nodes
       - 未知 TROJAN-271 | free-nodes
       - 未知 TROJAN-273 | free-nodes
       - 未知 TROJAN-274 | free-nodes
@@ -6168,11 +6404,11 @@ proxy-groups:
       - 未知 TROJAN-364 | free-nodes
       - 未知 TROJAN-365 | free-nodes
       - 未知 TROJAN-367 | free-nodes
-      - 未知 TROJAN-368 | free-nodes
       - 未知 TROJAN-369 | free-nodes
       - 未知 TROJAN-370 | free-nodes
       - 未知 TROJAN-372 | free-nodes
       - 未知 TROJAN-373 | free-nodes
+      - 未知 TROJAN-374 | free-nodes
       - 未知 TROJAN-375 | free-nodes
       - 未知 TROJAN-379 | free-nodes
       - 未知 TROJAN-381 | free-nodes
@@ -6191,6 +6427,7 @@ proxy-groups:
       - 未知 TROJAN-399 | free-nodes
       - 未知 TROJAN-400 | free-nodes
       - 未知 TROJAN-401 | free-nodes
+      - 未知 TROJAN-403 | free-nodes
       - 未知 TROJAN-404 | free-nodes
       - 未知 TROJAN-406 | free-nodes
       - 未知 TROJAN-409 | free-nodes
@@ -6232,7 +6469,6 @@ proxy-groups:
       - 未知 TROJAN-474 | free-nodes
       - 未知 TROJAN-475 | free-nodes
       - 未知 TROJAN-476 | free-nodes
-      - 未知 TROJAN-477 | free-nodes
       - 未知 TROJAN-480 | free-nodes
       - 未知 TROJAN-481 | free-nodes
       - 未知 TROJAN-482 | free-nodes
@@ -6253,6 +6489,7 @@ proxy-groups:
       - 未知 TROJAN-516 | free-nodes
       - 未知 TROJAN-517 | free-nodes
       - 未知 TROJAN-518 | free-nodes
+      - 未知 TROJAN-521 | free-nodes
       - 未知 TROJAN-523 | free-nodes
       - 未知 TROJAN-525 | free-nodes
       - 未知 TROJAN-526 | free-nodes
@@ -6273,10 +6510,12 @@ proxy-groups:
       - 未知 TROJAN-556 | free-nodes
       - 未知 TROJAN-561 | free-nodes
       - 未知 TROJAN-562 | free-nodes
+      - 未知 TROJAN-563 | free-nodes
       - 未知 TROJAN-564 | free-nodes
       - 未知 TROJAN-565 | free-nodes
       - 未知 TROJAN-566 | free-nodes
       - 未知 TROJAN-571 | free-nodes
+      - 未知 TROJAN-572 | free-nodes
       - 未知 TROJAN-573 | free-nodes
       - 未知 TROJAN-574 | free-nodes
       - 未知 TROJAN-577 | free-nodes
@@ -6383,12 +6622,12 @@ proxy-groups:
       - 未知 TROJAN-836 | free-nodes
       - 未知 TROJAN-837 | free-nodes
       - 未知 TROJAN-845 | free-nodes
+      - 未知 TROJAN-848 | free-nodes
       - 未知 TROJAN-852 | free-nodes
       - 未知 TROJAN-854 | free-nodes
       - 未知 TROJAN-855 | free-nodes
       - 未知 TROJAN-857 | free-nodes
       - 未知 TROJAN-858 | free-nodes
-      - 未知 TROJAN-859 | free-nodes
       - 未知 TROJAN-860 | free-nodes
       - 未知 TROJAN-863 | free-nodes
       - 未知 TROJAN-865 | free-nodes
@@ -6400,6 +6639,7 @@ proxy-groups:
       - 未知 TROJAN-894 | free-nodes
       - 未知 TROJAN-895 | free-nodes
       - 未知 TROJAN-900 | free-nodes
+      - 未知 TROJAN-917 | free-nodes
       - 未知 TROJAN-920 | free-nodes
       - 未知 TROJAN-922 | free-nodes
       - 未知 TROJAN-924 | free-nodes
@@ -6489,6 +6729,7 @@ proxy-groups:
       - 未知 TROJAN-1274 | free-nodes
       - 未知 TROJAN-1281 | free-nodes
       - 未知 TROJAN-1285 | free-nodes
+      - 未知 TROJAN-1286 | free-nodes
       - 未知 TROJAN-1288 | free-nodes
       - 未知 TROJAN-1289 | free-nodes
       - 未知 TROJAN-1293 | free-nodes
@@ -6522,11 +6763,13 @@ proxy-groups:
       - 未知 TROJAN-1492 | free-nodes
       - 未知 TROJAN-1494 | free-nodes
       - 未知 TROJAN-1498 | free-nodes
+      - 未知 TROJAN-1512 | free-nodes
       - 未知 TROJAN-1525 | free-nodes
       - 未知 TROJAN-1527 | free-nodes
       - 未知 TROJAN-1536 | free-nodes
       - 未知 TROJAN-1538 | free-nodes
       - 未知 TROJAN-1546 | free-nodes
+      - 未知 TROJAN-1548 | free-nodes
       - 未知 TROJAN-1557 | free-nodes
       - 未知 TROJAN-1570 | free-nodes
       - 未知 TROJAN-1577 | free-nodes
@@ -6575,7 +6818,13 @@ proxy-groups:
       - 未知 TROJAN-2022 | free-nodes
       - 未知 TROJAN-2043 | free-nodes
       - 未知 TROJAN-2046 | free-nodes
-      - 中国 V2CROSS.COM
+      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
+      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心 [1]
+      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心 [2]
+      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心 [3]
+      - 美国 NTT通信公司
+      - 英国 V2CROSS.COM
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -6592,11 +6841,9 @@ proxy-groups:
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
       - 🇭🇰 香港|@ripaojiedian
-      - 香港2|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
-      - 🇹🇼 台湾|@ripaojiedian
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
@@ -6606,100 +6853,113 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - 美国4|@ripaojiedian
-      - IL_speednode_0006
-      - RU_speednode_0010
-      - RU_speednode_0011
-      - RU_speednode_0012
-      - RU VLESS-01 | free-nodes
-      - 未知 VLESS-05 | free-nodes
+      - AE_speednode_0001
+      - AE_speednode_0002
+      - AE_speednode_0003
+      - BG_speednode_0005
+      - CA_speednode_0006
+      - CH_speednode_0007
+      - DE_speednode_0008
+      - GB_speednode_0011
+      - GB_speednode_0012
+      - IL_speednode_0021
+      - IR_speednode_0022
+      - IR_speednode_0023
+      - IT_speednode_0024
+      - LB_speednode_0026
+      - LB_speednode_0027
+      - NL_speednode_0031
+      - RU_speednode_0033
+      - RU_speednode_0034
+      - RU_speednode_0035
+      - RU_speednode_0036
+      - RU_speednode_0037
+      - RU_speednode_0038
+      - RU_speednode_0040
+      - RU_speednode_0041
+      - US_speednode_0044
+      - US_speednode_0046
+      - US_speednode_0047
+      - US_speednode_0048
+      - RU VLESS-02 | free-nodes
       - 未知 VLESS-06 | free-nodes
-      - DE VLESS-07 | free-nodes
-      - RU VLESS-11 | free-nodes
-      - DE VLESS-12 | free-nodes
-      - DE VLESS-14 | free-nodes
-      - DE VLESS-19 | free-nodes
-      - 未知 VLESS-20 | free-nodes
-      - RU VLESS-22 | free-nodes
-      - CA VLESS-23 | free-nodes
-      - DE VLESS-24 | free-nodes
-      - 未知 VLESS-25 | free-nodes
-      - DE VLESS-26 | free-nodes
-      - 未知 VLESS-28 | free-nodes
-      - US VLESS-30 | free-nodes
-      - US VLESS-31 | free-nodes
-      - RU VLESS-35 | free-nodes
-      - DE VLESS-36 | free-nodes
-      - DE VLESS-37 | free-nodes
-      - 未知 VLESS-38 | free-nodes
+      - 未知 VLESS-07 | free-nodes
+      - DE VLESS-08 | free-nodes
+      - DE VLESS-15 | free-nodes
+      - 未知 VLESS-18 | free-nodes
+      - DE VLESS-20 | free-nodes
+      - 未知 VLESS-21 | free-nodes
+      - DE VLESS-22 | free-nodes
+      - US VLESS-25 | free-nodes
+      - US VLESS-26 | free-nodes
+      - DE VLESS-31 | free-nodes
+      - DE VLESS-32 | free-nodes
+      - 未知 VLESS-33 | free-nodes
+      - 未知 VLESS-35 | free-nodes
+      - 未知 VLESS-36 | free-nodes
+      - 未知 VLESS-37 | free-nodes
       - 未知 VLESS-40 | free-nodes
-      - 未知 VLESS-41 | free-nodes
-      - 未知 VLESS-42 | free-nodes
-      - TR VLESS-43 | free-nodes
-      - 未知 VLESS-45 | free-nodes
-      - DE VLESS-46 | free-nodes
-      - FR VLESS-48 | free-nodes
-      - HK TROJAN-49 | free-nodes
+      - DE VLESS-41 | free-nodes
+      - FR VLESS-43 | free-nodes
+      - HK TROJAN-44 | free-nodes
+      - RU VLESS-47 | free-nodes
+      - DE VLESS-48 | free-nodes
+      - 未知 VLESS-50 | free-nodes
       - RU VLESS-52 | free-nodes
-      - DE VLESS-53 | free-nodes
-      - 未知 VLESS-55 | free-nodes
-      - RU VLESS-57 | free-nodes
-      - DE VLESS-59 | free-nodes
-      - DE VLESS-60 | free-nodes
-      - GB VLESS-61 | free-nodes
+      - DE VLESS-54 | free-nodes
+      - DE VLESS-55 | free-nodes
+      - GB VLESS-56 | free-nodes
+      - 未知 VLESS-57 | free-nodes
+      - 未知 VLESS-58 | free-nodes
       - 未知 VLESS-62 | free-nodes
-      - 未知 VLESS-63 | free-nodes
+      - TR VLESS-65 | free-nodes
       - DE VLESS-66 | free-nodes
       - 未知 VLESS-67 | free-nodes
       - 未知 VLESS-68 | free-nodes
-      - DE VLESS-69 | free-nodes
-      - TR VLESS-70 | free-nodes
+      - GB VLESS-70 | free-nodes
       - DE VLESS-71 | free-nodes
       - 未知 VLESS-72 | free-nodes
-      - 未知 VLESS-73 | free-nodes
-      - 未知 VLESS-75 | free-nodes
-      - GB VLESS-76 | free-nodes
-      - DE VLESS-77 | free-nodes
+      - RU VLESS-73 | free-nodes
+      - SG VLESS-77 | free-nodes
       - 未知 VLESS-78 | free-nodes
-      - 未知 VLESS-79 | free-nodes
-      - RU VLESS-80 | free-nodes
-      - SG VLESS-84 | free-nodes
-      - 未知 VLESS-85 | free-nodes
+      - DE VLESS-79 | free-nodes
+      - DE VLESS-81 | free-nodes
+      - DE VLESS-82 | free-nodes
+      - DE VLESS-83 | free-nodes
+      - DE VLESS-84 | free-nodes
+      - DE VLESS-85 | free-nodes
       - DE VLESS-86 | free-nodes
       - 未知 VLESS-87 | free-nodes
       - DE VLESS-88 | free-nodes
-      - DE VLESS-89 | free-nodes
-      - DE VLESS-90 | free-nodes
-      - DE VLESS-91 | free-nodes
-      - DE VLESS-92 | free-nodes
-      - DE VLESS-93 | free-nodes
-      - 未知 VLESS-94 | free-nodes
-      - DE VLESS-95 | free-nodes
+      - 未知 VLESS-90 | free-nodes
+      - 未知 VLESS-91 | free-nodes
+      - 未知 VLESS-93 | free-nodes
       - 未知 VLESS-97 | free-nodes
-      - 未知 VLESS-98 | free-nodes
+      - JP VLESS-98 | free-nodes
+      - 未知 VLESS-99 | free-nodes
       - 未知 VLESS-100 | free-nodes
-      - 未知 VLESS-101 | free-nodes
-      - 未知 VLESS-104 | free-nodes
-      - JP VLESS-105 | free-nodes
-      - 未知 VLESS-106 | free-nodes
+      - GB VLESS-101 | free-nodes
+      - HK VLESS-103 | free-nodes
+      - 未知 VLESS-105 | free-nodes
       - 未知 VLESS-107 | free-nodes
-      - GB VLESS-108 | free-nodes
-      - HK VLESS-110 | free-nodes
-      - 未知 VLESS-112 | free-nodes
-      - 未知 VLESS-114 | free-nodes
-      - 未知 VLESS-115 | free-nodes
+      - 未知 VLESS-108 | free-nodes
+      - 未知 VLESS-109 | free-nodes
+      - SG TROJAN-112 | free-nodes
+      - US VLESS-113 | free-nodes
       - 未知 VLESS-116 | free-nodes
-      - SG TROJAN-119 | free-nodes
-      - US VLESS-120 | free-nodes
+      - GB VLESS-122 | free-nodes
       - 未知 VLESS-123 | free-nodes
-      - 未知 VLESS-127 | free-nodes
+      - HK TROJAN-125 | free-nodes
+      - DE VLESS-126 | free-nodes
+      - HK TROJAN-127 | free-nodes
+      - US TROJAN-128 | free-nodes
       - GB VLESS-129 | free-nodes
-      - 未知 VLESS-130 | free-nodes
-      - HK TROJAN-132 | free-nodes
-      - DE VLESS-133 | free-nodes
-      - HK TROJAN-134 | free-nodes
-      - US TROJAN-135 | free-nodes
-      - GB VLESS-136 | free-nodes
+      - US VLESS-133 | free-nodes
+      - 未知 VLESS-134 | free-nodes
+      - DE VLESS-135 | free-nodes
+      - SG TROJAN-136 | free-nodes
+      - HK TROJAN-137 | free-nodes
+      - 未知 VLESS-139 | free-nodes
       - 未知 TROJAN-140 | free-nodes
       - 未知 TROJAN-141 | free-nodes
       - 未知 TROJAN-142 | free-nodes
@@ -6813,6 +7073,7 @@ proxy-groups:
       - 未知 TROJAN-266 | free-nodes
       - 未知 TROJAN-267 | free-nodes
       - 未知 TROJAN-268 | free-nodes
+      - 未知 TROJAN-270 | free-nodes
       - 未知 TROJAN-271 | free-nodes
       - 未知 TROJAN-273 | free-nodes
       - 未知 TROJAN-274 | free-nodes
@@ -6888,11 +7149,11 @@ proxy-groups:
       - 未知 TROJAN-364 | free-nodes
       - 未知 TROJAN-365 | free-nodes
       - 未知 TROJAN-367 | free-nodes
-      - 未知 TROJAN-368 | free-nodes
       - 未知 TROJAN-369 | free-nodes
       - 未知 TROJAN-370 | free-nodes
       - 未知 TROJAN-372 | free-nodes
       - 未知 TROJAN-373 | free-nodes
+      - 未知 TROJAN-374 | free-nodes
       - 未知 TROJAN-375 | free-nodes
       - 未知 TROJAN-379 | free-nodes
       - 未知 TROJAN-381 | free-nodes
@@ -6911,6 +7172,7 @@ proxy-groups:
       - 未知 TROJAN-399 | free-nodes
       - 未知 TROJAN-400 | free-nodes
       - 未知 TROJAN-401 | free-nodes
+      - 未知 TROJAN-403 | free-nodes
       - 未知 TROJAN-404 | free-nodes
       - 未知 TROJAN-406 | free-nodes
       - 未知 TROJAN-409 | free-nodes
@@ -6952,7 +7214,6 @@ proxy-groups:
       - 未知 TROJAN-474 | free-nodes
       - 未知 TROJAN-475 | free-nodes
       - 未知 TROJAN-476 | free-nodes
-      - 未知 TROJAN-477 | free-nodes
       - 未知 TROJAN-480 | free-nodes
       - 未知 TROJAN-481 | free-nodes
       - 未知 TROJAN-482 | free-nodes
@@ -6973,6 +7234,7 @@ proxy-groups:
       - 未知 TROJAN-516 | free-nodes
       - 未知 TROJAN-517 | free-nodes
       - 未知 TROJAN-518 | free-nodes
+      - 未知 TROJAN-521 | free-nodes
       - 未知 TROJAN-523 | free-nodes
       - 未知 TROJAN-525 | free-nodes
       - 未知 TROJAN-526 | free-nodes
@@ -6993,10 +7255,12 @@ proxy-groups:
       - 未知 TROJAN-556 | free-nodes
       - 未知 TROJAN-561 | free-nodes
       - 未知 TROJAN-562 | free-nodes
+      - 未知 TROJAN-563 | free-nodes
       - 未知 TROJAN-564 | free-nodes
       - 未知 TROJAN-565 | free-nodes
       - 未知 TROJAN-566 | free-nodes
       - 未知 TROJAN-571 | free-nodes
+      - 未知 TROJAN-572 | free-nodes
       - 未知 TROJAN-573 | free-nodes
       - 未知 TROJAN-574 | free-nodes
       - 未知 TROJAN-577 | free-nodes
@@ -7103,12 +7367,12 @@ proxy-groups:
       - 未知 TROJAN-836 | free-nodes
       - 未知 TROJAN-837 | free-nodes
       - 未知 TROJAN-845 | free-nodes
+      - 未知 TROJAN-848 | free-nodes
       - 未知 TROJAN-852 | free-nodes
       - 未知 TROJAN-854 | free-nodes
       - 未知 TROJAN-855 | free-nodes
       - 未知 TROJAN-857 | free-nodes
       - 未知 TROJAN-858 | free-nodes
-      - 未知 TROJAN-859 | free-nodes
       - 未知 TROJAN-860 | free-nodes
       - 未知 TROJAN-863 | free-nodes
       - 未知 TROJAN-865 | free-nodes
@@ -7120,6 +7384,7 @@ proxy-groups:
       - 未知 TROJAN-894 | free-nodes
       - 未知 TROJAN-895 | free-nodes
       - 未知 TROJAN-900 | free-nodes
+      - 未知 TROJAN-917 | free-nodes
       - 未知 TROJAN-920 | free-nodes
       - 未知 TROJAN-922 | free-nodes
       - 未知 TROJAN-924 | free-nodes
@@ -7209,6 +7474,7 @@ proxy-groups:
       - 未知 TROJAN-1274 | free-nodes
       - 未知 TROJAN-1281 | free-nodes
       - 未知 TROJAN-1285 | free-nodes
+      - 未知 TROJAN-1286 | free-nodes
       - 未知 TROJAN-1288 | free-nodes
       - 未知 TROJAN-1289 | free-nodes
       - 未知 TROJAN-1293 | free-nodes
@@ -7242,11 +7508,13 @@ proxy-groups:
       - 未知 TROJAN-1492 | free-nodes
       - 未知 TROJAN-1494 | free-nodes
       - 未知 TROJAN-1498 | free-nodes
+      - 未知 TROJAN-1512 | free-nodes
       - 未知 TROJAN-1525 | free-nodes
       - 未知 TROJAN-1527 | free-nodes
       - 未知 TROJAN-1536 | free-nodes
       - 未知 TROJAN-1538 | free-nodes
       - 未知 TROJAN-1546 | free-nodes
+      - 未知 TROJAN-1548 | free-nodes
       - 未知 TROJAN-1557 | free-nodes
       - 未知 TROJAN-1570 | free-nodes
       - 未知 TROJAN-1577 | free-nodes
@@ -7295,7 +7563,13 @@ proxy-groups:
       - 未知 TROJAN-2022 | free-nodes
       - 未知 TROJAN-2043 | free-nodes
       - 未知 TROJAN-2046 | free-nodes
-      - 中国 V2CROSS.COM
+      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
+      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心 [1]
+      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心 [2]
+      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心 [3]
+      - 美国 NTT通信公司
+      - 英国 V2CROSS.COM
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
