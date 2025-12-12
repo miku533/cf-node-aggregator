@@ -5272,12 +5272,25 @@ proxies:
     password: 8aab51da-6b67-4bd2-b6e6-5ab3008cf53e
     sni: jp.iamnotagoodman.com
     skip-cert-verify: false
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: www.zhoubowen.vip
+    port: 443
+    uuid: 71b2655e-07d9-4dad-a770-a2b08275142b
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /biutefor.icu
+      headers:
+        Host: www.zhoubowen.vip
   - name: 香港+电讯盈科有限公司
     type: trojan
     server: 58.152.25.20
     port: 443
     password: BxceQaOe
-    sni: t.me%2Fripaojiedian
+    sni: t.me%252Fripaojiedian
     skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
@@ -6019,6 +6032,7 @@ proxy-groups:
       - 未知 TROJAN-2022 | free-nodes
       - 未知 TROJAN-2043 | free-nodes
       - 未知 TROJAN-2046 | free-nodes
+      - 美国 CloudFlare节点
       - 香港+电讯盈科有限公司
   - name: ♻️ 自动选择
     type: url-test
@@ -6756,6 +6770,7 @@ proxy-groups:
       - 未知 TROJAN-2022 | free-nodes
       - 未知 TROJAN-2043 | free-nodes
       - 未知 TROJAN-2046 | free-nodes
+      - 美国 CloudFlare节点
       - 香港+电讯盈科有限公司
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -7495,6 +7510,7 @@ proxy-groups:
       - 未知 TROJAN-2022 | free-nodes
       - 未知 TROJAN-2043 | free-nodes
       - 未知 TROJAN-2046 | free-nodes
+      - 美国 CloudFlare节点
       - 香港+电讯盈科有限公司
     url: http://www.gstatic.com/generate_204
     interval: 300
