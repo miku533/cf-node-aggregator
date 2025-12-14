@@ -377,36 +377,48 @@ proxies:
       path: /---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN?ed=8080fp=chrome
       headers:
         Host: golestan.hajalwi.ir.
-  - name: 卢森堡+V2CROSS.COM
+  - name: 香港+电讯盈科有限公司
     type: trojan
-    server: 5.188.108.13
-    port: 11790
-    password: .+QAJot50sDi6mvb
-    sni: runningshoes.purpletornado.click
+    server: 58.152.25.20
+    port: 443
+    password: BxceQaOe
+    sni: t.me%252Fripaojiedian
     skip-cert-verify: false
-  - name: 尼日利亚 V2CROSS.COM
+  - name: 台湾省 道法法律事务所
     type: vmess
-    server: 160.119.196.92
-    port: 36334
-    uuid: 575ac7a3-0127-4420-a9ea-5ff3f6c02ac7
+    server: 103.127.218.91
+    port: 54693
+    uuid: 1cef03ad-6343-408c-8121-cbd1fda2ee9d
     alterId: 0
     cipher: auto
     tls: false
-    network: none
-  - name: 香港+电讯盈科有限公司
+    network: ws
+    ws-opts:
+      path: /1cef03ad
+      headers: {}
+  - name: 香港+电讯盈科有限公司 [1]
+    type: trojan
+    server: 58.152.30.120
+    port: 443
+    password: BxceQaOe
+    sni: t.me/ripaojiedian
+    skip-cert-verify: false
+  - name: 英国 V2CROSS.COM
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 香港+电讯盈科有限公司 [2]
     type: trojan
     server: 58.152.25.242
     port: 443
     password: BxceQaOe
-    sni: t.me%2Fripaojiedian
-    skip-cert-verify: false
-  - name: 美国+华盛顿Cogent通信公司
-    type: trojan
-    server: 38.96.254.102
-    port: 18509
-    password: .ie4rghJuMkcf0oF
-    sni: shoppingmall.electricbanana.click
-    skip-cert-verify: false
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -461,10 +473,11 @@ proxy-groups:
       - RU_speednode_0008
       - RU_speednode_0009
       - US_speednode_0012
-      - 卢森堡+V2CROSS.COM
-      - 尼日利亚 V2CROSS.COM
       - 香港+电讯盈科有限公司
-      - 美国+华盛顿Cogent通信公司
+      - 台湾省 道法法律事务所
+      - 香港+电讯盈科有限公司 [1]
+      - 英国 V2CROSS.COM
+      - 香港+电讯盈科有限公司 [2]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -515,10 +528,11 @@ proxy-groups:
       - RU_speednode_0008
       - RU_speednode_0009
       - US_speednode_0012
-      - 卢森堡+V2CROSS.COM
-      - 尼日利亚 V2CROSS.COM
       - 香港+电讯盈科有限公司
-      - 美国+华盛顿Cogent通信公司
+      - 台湾省 道法法律事务所
+      - 香港+电讯盈科有限公司 [1]
+      - 英国 V2CROSS.COM
+      - 香港+电讯盈科有限公司 [2]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -571,10 +585,11 @@ proxy-groups:
       - RU_speednode_0008
       - RU_speednode_0009
       - US_speednode_0012
-      - 卢森堡+V2CROSS.COM
-      - 尼日利亚 V2CROSS.COM
       - 香港+电讯盈科有限公司
-      - 美国+华盛顿Cogent通信公司
+      - 台湾省 道法法律事务所
+      - 香港+电讯盈科有限公司 [1]
+      - 英国 V2CROSS.COM
+      - 香港+电讯盈科有限公司 [2]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
