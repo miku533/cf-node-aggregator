@@ -276,24 +276,6 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 英国 V2CROSS.COM
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 以色列 V2CROSS.COM
-    type: vmess
-    server: 149.88.95.217
-    port: 18937
-    uuid: ebaa1ae1-fa4d-40d8-958f-d4524d551218
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: none
   - name: 中国 V2CROSS.COM
     type: vmess
     server: v30.hdacd.com
@@ -343,8 +325,6 @@ proxy-groups:
       - US_speednode_0020
       - US_speednode_0022
       - US_speednode_0023
-      - 英国 V2CROSS.COM
-      - 以色列 V2CROSS.COM
       - 中国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
@@ -382,8 +362,6 @@ proxy-groups:
       - US_speednode_0020
       - US_speednode_0022
       - US_speednode_0023
-      - 英国 V2CROSS.COM
-      - 以色列 V2CROSS.COM
       - 中国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -423,8 +401,6 @@ proxy-groups:
       - US_speednode_0020
       - US_speednode_0022
       - US_speednode_0023
-      - 英国 V2CROSS.COM
-      - 以色列 V2CROSS.COM
       - 中国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
