@@ -118,73 +118,73 @@ proxies:
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
-  - name: HK_speednode_0009
+  - name: 香港5|@ripaojiedian
     type: trojan
-    server: 58.152.25.89
+    server: 58.152.30.31
     port: 443
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
   - name: 日本|@ripaojiedian
     type: trojan
-    server: 13.113.164.125
-    port: 5156
+    server: 18.179.13.93
+    port: 3760
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
   - name: 日本2|@ripaojiedian
     type: trojan
-    server: 153.121.45.139
+    server: 160.16.117.182
     port: 3093
     password: e2722c0fb503f8a592436c12bce0509a
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 日本3|@ripaojiedian
     type: trojan
-    server: 13.231.90.117
+    server: 160.16.117.182
     port: 3169
     password: e2722c0fb503f8a592436c12bce0509a
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 新加坡|@ripaojiedian
     type: trojan
-    server: 18.179.119.5
+    server: 160.16.153.13
     port: 3145
     password: e2722c0fb503f8a592436c12bce0509a
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 新加坡2|@ripaojiedian
     type: trojan
-    server: 160.16.196.59
+    server: 160.16.132.158
     port: 1507
     password: e2722c0fb503f8a592436c12bce0509a
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 新加坡3|@ripaojiedian
     type: trojan
-    server: 43.199.144.199
-    port: 381
+    server: 18.167.69.38
+    port: 1691
     password: BxceQaOe
     sni: t.me%2Fripaojiedian
     skip-cert-verify: true
   - name: 美国|@ripaojiedian
     type: trojan
-    server: 202.181.103.246
-    port: 4054
+    server: 160.16.89.176
+    port: 2890
     password: e2722c0fb503f8a592436c12bce0509a
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 美国2|@ripaojiedian
     type: trojan
-    server: 160.16.136.130
-    port: 2890
+    server: 160.16.138.24
+    port: 4054
     password: e2722c0fb503f8a592436c12bce0509a
     sni: www.nintendogames.net
     skip-cert-verify: true
   - name: 美国3|@ripaojiedian
     type: trojan
-    server: 16.163.143.132
-    port: 2173
+    server: 43.199.204.139
+    port: 4569
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
@@ -204,6 +204,13 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
+  - name: HK_speednode_0009
+    type: trojan
+    server: 58.152.25.89
+    port: 443
+    password: BxceQaOe
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
   - name: IL_speednode_0011
     type: vless
     server: 185.136.132.171
@@ -276,13 +283,15 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 美国+华盛顿Cogent通信公司
-    type: trojan
-    server: 38.96.254.102
-    port: 18509
-    password: .ie4rghJuMkcf0oF
-    sni: shoppingmall.electricbanana.click
-    skip-cert-verify: false
+  - name: 中国 阿里云
+    type: vmess
+    server: 8.218.116.26
+    port: 32228
+    uuid: e4767e9f-ed00-4f31-a984-a918bdd9b09c
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
   - name: 英国 V2CROSS.COM
     type: vmess
     server: 82.198.246.97
@@ -292,6 +301,13 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
+  - name: 加拿大多伦多+V2CROSS.COM
+    type: trojan
+    server: 198.57.27.27
+    port: 12990
+    password: 6pRjKQJ0CWyFtG.9
+    sni: 198.57.27.27
+    skip-cert-verify: false
   - name: 中国 V2CROSS.COM
     type: vmess
     server: v30.hdacd.com
@@ -301,6 +317,13 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
+  - name: 美国+华盛顿Cogent通信公司
+    type: trojan
+    server: 38.96.254.102
+    port: 18509
+    password: .ie4rghJuMkcf0oF
+    sni: shoppingmall.electricbanana.click
+    skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -321,7 +344,7 @@ proxy-groups:
       - 🇭🇰 香港|@ripaojiedian
       - HK_speednode_0010
       - HK_speednode_0005
-      - HK_speednode_0009
+      - 香港5|@ripaojiedian
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
@@ -333,6 +356,7 @@ proxy-groups:
       - 美国3|@ripaojiedian
       - DE_speednode_0001
       - HK_speednode_0008
+      - HK_speednode_0009
       - IL_speednode_0011
       - NN_speednode_0014
       - RU_speednode_0016
@@ -341,9 +365,11 @@ proxy-groups:
       - US_speednode_0020
       - US_speednode_0022
       - US_speednode_0023
-      - 美国+华盛顿Cogent通信公司
+      - 中国 阿里云
       - 英国 V2CROSS.COM
+      - 加拿大多伦多+V2CROSS.COM
       - 中国 V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -360,7 +386,7 @@ proxy-groups:
       - 🇭🇰 香港|@ripaojiedian
       - HK_speednode_0010
       - HK_speednode_0005
-      - HK_speednode_0009
+      - 香港5|@ripaojiedian
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
@@ -372,6 +398,7 @@ proxy-groups:
       - 美国3|@ripaojiedian
       - DE_speednode_0001
       - HK_speednode_0008
+      - HK_speednode_0009
       - IL_speednode_0011
       - NN_speednode_0014
       - RU_speednode_0016
@@ -380,9 +407,11 @@ proxy-groups:
       - US_speednode_0020
       - US_speednode_0022
       - US_speednode_0023
-      - 美国+华盛顿Cogent通信公司
+      - 中国 阿里云
       - 英国 V2CROSS.COM
+      - 加拿大多伦多+V2CROSS.COM
       - 中国 V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -401,7 +430,7 @@ proxy-groups:
       - 🇭🇰 香港|@ripaojiedian
       - HK_speednode_0010
       - HK_speednode_0005
-      - HK_speednode_0009
+      - 香港5|@ripaojiedian
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
@@ -413,6 +442,7 @@ proxy-groups:
       - 美国3|@ripaojiedian
       - DE_speednode_0001
       - HK_speednode_0008
+      - HK_speednode_0009
       - IL_speednode_0011
       - NN_speednode_0014
       - RU_speednode_0016
@@ -421,9 +451,11 @@ proxy-groups:
       - US_speednode_0020
       - US_speednode_0022
       - US_speednode_0023
-      - 美国+华盛顿Cogent通信公司
+      - 中国 阿里云
       - 英国 V2CROSS.COM
+      - 加拿大多伦多+V2CROSS.COM
       - 中国 V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
