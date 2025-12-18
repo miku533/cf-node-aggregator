@@ -118,7 +118,7 @@ proxies:
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
-  - name: HK_speednode_0012
+  - name: 香港5|@ripaojiedian
     type: trojan
     server: 58.152.30.31
     port: 443
@@ -197,71 +197,26 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: IR_speednode_0015
+  - name: NL_speednode_0013
     type: vless
-    server: 62.60.148.21
-    port: 443
-    uuid: 39e5cc2f-1294-4a42-bb58-306a8be785e1
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: IR_speednode_0016
-    type: vless
-    server: 94.182.137.12
-    port: 20532
-    uuid: 8496c102-4094-4dd3-ad63-7bb7a35cbaee
+    server: 103.90.75.252
+    port: 3001
+    uuid: 61757901-3818-46c7-8482-683fa7f6ba10
     tls: false
     network: tcp
-  - name: NL_speednode_0024
-    type: vless
-    server: nl.vpnpplvpn.top
-    port: 443
-    uuid: 16c0d635-5084-49fa-950a-0d6fc81cfc71
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: US_speednode_0028
-    type: vless
-    server: 104.21.15.212
-    port: 8080
-    uuid: 4c9541c7-5fa1-403c-84af-175e3b25a27f
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: 201.58vtg99l.workers.dev
-  - name: US_speednode_0029
-    type: vless
-    server: Www.speedtest.net
-    port: 8880
-    uuid: 6072c15c-99db-4880-99d0-1448a8d43da7
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: mx.mmadvip8563.ir
-  - name: US_speednode_0031
-    type: vless
-    server: 172.67.176.159
-    port: 80
-    uuid: 41398380-2073-4d85-878a-24194a6f04a3
-    tls: false
-    network: ws
-    ws-opts:
-      path: /Sy0HOf5sZffep0QQ?ed=2560
-      headers:
-        Host: 3.azadteam.workers.dev
-  - name: 香港 电讯盈科有限公司
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: v30.hdacd.com
-    port: 30830
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    server: cf.fovi.tk
+    port: 443
+    uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
     alterId: 0
     cipher: auto
-    tls: false
-    network: tcp
+    tls: true
+    network: ws
+    ws-opts:
+      path: /eisasqa
+      headers:
+        Host: foxpol.fovi.tk
   - name: 英国 V2CROSS.COM
     type: vmess
     server: 82.198.246.97
@@ -291,7 +246,7 @@ proxy-groups:
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
-      - HK_speednode_0012
+      - 香港5|@ripaojiedian
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
@@ -302,13 +257,8 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇮🇳 印度|@ripaojiedian
-      - IR_speednode_0015
-      - IR_speednode_0016
-      - NL_speednode_0024
-      - US_speednode_0028
-      - US_speednode_0029
-      - US_speednode_0031
-      - 香港 电讯盈科有限公司
+      - NL_speednode_0013
+      - 美国 CloudFlare节点
       - 英国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
@@ -326,7 +276,7 @@ proxy-groups:
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
-      - HK_speednode_0012
+      - 香港5|@ripaojiedian
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
@@ -337,13 +287,8 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇮🇳 印度|@ripaojiedian
-      - IR_speednode_0015
-      - IR_speednode_0016
-      - NL_speednode_0024
-      - US_speednode_0028
-      - US_speednode_0029
-      - US_speednode_0031
-      - 香港 电讯盈科有限公司
+      - NL_speednode_0013
+      - 美国 CloudFlare节点
       - 英国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -363,7 +308,7 @@ proxy-groups:
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
-      - HK_speednode_0012
+      - 香港5|@ripaojiedian
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
@@ -374,13 +319,8 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇮🇳 印度|@ripaojiedian
-      - IR_speednode_0015
-      - IR_speednode_0016
-      - NL_speednode_0024
-      - US_speednode_0028
-      - US_speednode_0029
-      - US_speednode_0031
-      - 香港 电讯盈科有限公司
+      - NL_speednode_0013
+      - 美国 CloudFlare节点
       - 英国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
