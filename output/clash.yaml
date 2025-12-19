@@ -127,28 +127,37 @@ proxies:
     skip-cert-verify: true
   - name: 日本|@ripaojiedian
     type: trojan
-    server: 52.192.101.12
-    port: 3760
+    server: 54.199.251.85
+    port: 4012
     password: BxceQaOe
     sni: t.me%2Fripaojiedian
     skip-cert-verify: true
   - name: 日本2|@ripaojiedian
     type: trojan
-    server: 160.16.229.223
+    server: 43.206.213.82
     port: 3169
     password: e2722c0fb503f8a592436c12bce0509a
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 日本3|@ripaojiedian
     type: trojan
-    server: 18.183.221.194
+    server: 153.121.38.213
     port: 3169
     password: e2722c0fb503f8a592436c12bce0509a
     sni: www.nintendogames.net
     skip-cert-verify: false
+  - name: 🇯🇵 日本4|@ripaojiedian
+    type: vmess
+    server: 183.236.97.42
+    port: 59515
+    uuid: 900bc795-d8be-4eed-ac47-d1b73dde62a7
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
   - name: 新加坡|@ripaojiedian
     type: trojan
-    server: 160.16.106.144
+    server: 160.16.124.55
     port: 2760
     password: e2722c0fb503f8a592436c12bce0509a
     sni: www.nintendogames.net
@@ -162,32 +171,41 @@ proxies:
     skip-cert-verify: false
   - name: 新加坡3|@ripaojiedian
     type: trojan
-    server: 13.113.37.246
+    server: 54.46.49.15
     port: 1196
     password: BxceQaOe
     sni: t.me%2Fripaojiedian
     skip-cert-verify: true
   - name: 美国|@ripaojiedian
     type: trojan
-    server: 160.16.106.144
+    server: 160.16.124.55
     port: 2890
     password: e2722c0fb503f8a592436c12bce0509a
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 美国2|@ripaojiedian
     type: trojan
-    server: 160.16.214.6
+    server: 160.16.223.205
     port: 4054
     password: e2722c0fb503f8a592436c12bce0509a
     sni: www.nintendogames.net
     skip-cert-verify: true
   - name: 美国3|@ripaojiedian
     type: trojan
-    server: 18.163.49.31
-    port: 968
+    server: 54.46.49.15
+    port: 1221
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
+  - name: 🇺🇸 美国4|@ripaojiedian
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
   - name: 🇮🇳 印度|@ripaojiedian
     type: vmess
     server: 103.97.203.220
@@ -204,28 +222,13 @@ proxies:
     uuid: 61757901-3818-46c7-8482-683fa7f6ba10
     tls: false
     network: tcp
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: cf.fovi.tk
-    port: 443
-    uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /eisasqa
-      headers:
-        Host: foxpol.fovi.tk
-  - name: 英国 V2CROSS.COM
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
+  - name: 美国+华盛顿Cogent通信公司
+    type: trojan
+    server: 38.96.254.102
+    port: 18509
+    password: .ie4rghJuMkcf0oF
+    sni: shoppingmall.electricbanana.click
+    skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -250,16 +253,17 @@ proxy-groups:
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
+      - 🇯🇵 日本4|@ripaojiedian
       - 新加坡|@ripaojiedian
       - 新加坡2|@ripaojiedian
       - 新加坡3|@ripaojiedian
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
+      - 🇺🇸 美国4|@ripaojiedian
       - 🇮🇳 印度|@ripaojiedian
       - NL_speednode_0013
-      - 美国 CloudFlare节点
-      - 英国 V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -280,16 +284,17 @@ proxy-groups:
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
+      - 🇯🇵 日本4|@ripaojiedian
       - 新加坡|@ripaojiedian
       - 新加坡2|@ripaojiedian
       - 新加坡3|@ripaojiedian
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
+      - 🇺🇸 美国4|@ripaojiedian
       - 🇮🇳 印度|@ripaojiedian
       - NL_speednode_0013
-      - 美国 CloudFlare节点
-      - 英国 V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -312,16 +317,17 @@ proxy-groups:
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
+      - 🇯🇵 日本4|@ripaojiedian
       - 新加坡|@ripaojiedian
       - 新加坡2|@ripaojiedian
       - 新加坡3|@ripaojiedian
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
+      - 🇺🇸 美国4|@ripaojiedian
       - 🇮🇳 印度|@ripaojiedian
       - NL_speednode_0013
-      - 美国 CloudFlare节点
-      - 英国 V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
