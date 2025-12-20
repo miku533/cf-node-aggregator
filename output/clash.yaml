@@ -204,11 +204,11 @@ proxies:
     uuid: 61757901-3818-46c7-8482-683fa7f6ba10
     tls: false
     network: tcp
-  - name: 台湾省台北市 V2CROSS.COM
+  - name: 香港 电讯盈科有限公司
     type: vmess
-    server: 46.3.47.250
-    port: 20002
-    uuid: e5ce425e-0b84-435c-aee5-9f9ecbe2cb16
+    server: v30.hdacd.com
+    port: 30830
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     alterId: 0
     cipher: auto
     tls: false
@@ -218,28 +218,6 @@ proxies:
     server: 82.198.246.97
     port: 180
     uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 104.18.14.55
-    port: 2052
-    uuid: e6447786-8c85-443c-8017-7feaa673ff45
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: in4.123417.xyz
-  - name: 香港 电讯盈科有限公司
-    type: vmess
-    server: v30.hdacd.com
-    port: 30830
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     alterId: 0
     cipher: auto
     tls: false
@@ -276,10 +254,8 @@ proxy-groups:
       - 美国3|@ripaojiedian
       - 🇲🇾 马来西亚|@ripaojiedian
       - NL_speednode_0013
-      - 台湾省台北市 V2CROSS.COM
-      - 英国 V2CROSS.COM
-      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
+      - 英国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -308,10 +284,8 @@ proxy-groups:
       - 美国3|@ripaojiedian
       - 🇲🇾 马来西亚|@ripaojiedian
       - NL_speednode_0013
-      - 台湾省台北市 V2CROSS.COM
-      - 英国 V2CROSS.COM
-      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
+      - 英国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -342,10 +316,8 @@ proxy-groups:
       - 美国3|@ripaojiedian
       - 🇲🇾 马来西亚|@ripaojiedian
       - NL_speednode_0013
-      - 台湾省台北市 V2CROSS.COM
-      - 英国 V2CROSS.COM
-      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
+      - 英国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
