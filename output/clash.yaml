@@ -204,20 +204,54 @@ proxies:
     uuid: 61757901-3818-46c7-8482-683fa7f6ba10
     tls: false
     network: tcp
-  - name: 香港 电讯盈科有限公司
+  - name: 台湾省台北市 V2CROSS.COM
     type: vmess
-    server: v30.hdacd.com
-    port: 30830
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    server: 46.3.47.250
+    port: 20004
+    uuid: e5ce425e-0b84-435c-aee5-9f9ecbe2cb16
     alterId: 0
     cipher: auto
     tls: false
     network: tcp
+  - name: 以色列 V2CROSS.COM
+    type: vmess
+    server: 149.88.95.217
+    port: 35760
+    uuid: 17e96792-d8c3-4741-9c34-e5d1c11d754f
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
+  - name: 以色列 V2CROSS.COM [1]
+    type: vmess
+    server: 149.88.95.94
+    port: 18937
+    uuid: ebaa1ae1-fa4d-40d8-958f-d4524d551218
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
   - name: 英国 V2CROSS.COM
     type: vmess
     server: 82.198.246.97
     port: 180
     uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 美国+华盛顿Cogent通信公司
+    type: trojan
+    server: 38.96.254.102
+    port: 18509
+    password: .ie4rghJuMkcf0oF
+    sni: shoppingmall.electricbanana.click
+    skip-cert-verify: false
+  - name: 香港 电讯盈科有限公司
+    type: vmess
+    server: v30.hdacd.com
+    port: 30830
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     alterId: 0
     cipher: auto
     tls: false
@@ -254,8 +288,12 @@ proxy-groups:
       - 美国3|@ripaojiedian
       - 🇲🇾 马来西亚|@ripaojiedian
       - NL_speednode_0013
-      - 香港 电讯盈科有限公司
+      - 台湾省台北市 V2CROSS.COM
+      - 以色列 V2CROSS.COM
+      - 以色列 V2CROSS.COM [1]
       - 英国 V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司
+      - 香港 电讯盈科有限公司
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -284,8 +322,12 @@ proxy-groups:
       - 美国3|@ripaojiedian
       - 🇲🇾 马来西亚|@ripaojiedian
       - NL_speednode_0013
-      - 香港 电讯盈科有限公司
+      - 台湾省台北市 V2CROSS.COM
+      - 以色列 V2CROSS.COM
+      - 以色列 V2CROSS.COM [1]
       - 英国 V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司
+      - 香港 电讯盈科有限公司
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -316,8 +358,12 @@ proxy-groups:
       - 美国3|@ripaojiedian
       - 🇲🇾 马来西亚|@ripaojiedian
       - NL_speednode_0013
-      - 香港 电讯盈科有限公司
+      - 台湾省台北市 V2CROSS.COM
+      - 以色列 V2CROSS.COM
+      - 以色列 V2CROSS.COM [1]
       - 英国 V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司
+      - 香港 电讯盈科有限公司
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
