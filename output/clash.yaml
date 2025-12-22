@@ -340,6 +340,56 @@ proxies:
     uuid: 9f721f50-e015-5ea3-8bb0-22428307e9c0
     tls: true
     network: tcp
+  - name: 台湾省台中市+中华电信
+    type: trojan
+    server: cdnfire.xiaomispeed.com
+    port: 23301
+    password: 81fc5581-06e0-4d7e-9220-205af32a54d5
+    sni: cdnfire.xiaomispeed.com
+    skip-cert-verify: false
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 154.29.157.189
+    port: 38152
+    uuid: b8ce19b1-4b15-41f9-a206-11957cc902d4
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
+  - name: 印度 V2CROSS.COM
+    type: vmess
+    server: 103.160.100.86
+    port: 44222
+    uuid: f703b128-2d32-4cdb-9608-f33c2d58abcc
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
+  - name: 台湾省台中市+中华电信 [1]
+    type: trojan
+    server: green2.cdntencentmusic.com
+    port: 33301
+    password: a5049baa-eadf-4523-bcac-33139e4a99ea
+    sni: green2.cdntencentmusic.com
+    skip-cert-verify: false
+  - name: 香港 电讯盈科有限公司
+    type: vmess
+    server: v30.hdacd.com
+    port: 30830
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 美国 科罗拉多州NTT(美国)通信公司
+    type: vmess
+    server: 216.167.107.61
+    port: 44805
+    uuid: f7d62526-9e06-455e-82bd-241d368002e8
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
   - name: 美国 CloudFlare节点
     type: vmess
     server: cf.fovi.tk
@@ -352,37 +402,7 @@ proxies:
     ws-opts:
       path: /eisasqa
       headers:
-        Host: foxpol.fovi.tk
-  - name: 美国 华盛顿Cogent通信公司
-    type: vmess
-    server: 38.14.99.179
-    port: 59807
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 台湾省台中市+中华电信
-    type: trojan
-    server: green2.cdntencentmusic.com
-    port: 31102
-    password: a213e1a5-3c5a-40f2-b70e-98ffa63ffc8e
-    sni: green2.cdntencentmusic.com
-    skip-cert-verify: false
-  - name: 美国+华盛顿Cogent通信公司
-    type: trojan
-    server: 38.96.254.102
-    port: 18509
-    password: .ie4rghJuMkcf0oF
-    sni: shoppingmall.electricbanana.click
-    skip-cert-verify: false
-  - name: 台湾省台中市+中华电信 [1]
-    type: trojan
-    server: green2.cdntencentmusic.com
-    port: 34411
-    password: 04a6a322-b08e-4635-99af-219c01ade7dd
-    sni: green2.cdntencentmusic.com
-    skip-cert-verify: false
+        Host: foxlux.fovi.tk
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -432,11 +452,13 @@ proxy-groups:
       - RU_speednode_0025
       - RU_speednode_0026
       - RU_speednode_0027
-      - 美国 CloudFlare节点
-      - 美国 华盛顿Cogent通信公司
       - 台湾省台中市+中华电信
-      - 美国+华盛顿Cogent通信公司
+      - 美国 V2CROSS.COM
+      - 印度 V2CROSS.COM
       - 台湾省台中市+中华电信 [1]
+      - 香港 电讯盈科有限公司
+      - 美国 科罗拉多州NTT(美国)通信公司
+      - 美国 CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -482,11 +504,13 @@ proxy-groups:
       - RU_speednode_0025
       - RU_speednode_0026
       - RU_speednode_0027
-      - 美国 CloudFlare节点
-      - 美国 华盛顿Cogent通信公司
       - 台湾省台中市+中华电信
-      - 美国+华盛顿Cogent通信公司
+      - 美国 V2CROSS.COM
+      - 印度 V2CROSS.COM
       - 台湾省台中市+中华电信 [1]
+      - 香港 电讯盈科有限公司
+      - 美国 科罗拉多州NTT(美国)通信公司
+      - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -534,11 +558,13 @@ proxy-groups:
       - RU_speednode_0025
       - RU_speednode_0026
       - RU_speednode_0027
-      - 美国 CloudFlare节点
-      - 美国 华盛顿Cogent通信公司
       - 台湾省台中市+中华电信
-      - 美国+华盛顿Cogent通信公司
+      - 美国 V2CROSS.COM
+      - 印度 V2CROSS.COM
       - 台湾省台中市+中华电信 [1]
+      - 香港 电讯盈科有限公司
+      - 美国 科罗拉多州NTT(美国)通信公司
+      - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
