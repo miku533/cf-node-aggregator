@@ -224,198 +224,38 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: CA_speednode_0001
+  - name: RU_speednode_0001
     type: vless
-    server: 167.17.70.16
+    server: 89.208.228.197
+    port: 443
+    uuid: 55556b1f-7b61-49ee-bfcc-10ed900f1b61
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: RU_speednode_0002
+    type: vless
+    server: 217.16.26.52
+    port: 443
+    uuid: 55556b1f-7b61-49ee-bfcc-10ed900f1b61
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: RU_speednode_0003
+    type: vless
+    server: 109.120.188.87
     port: 8443
-    uuid: 55975415-43c0-461c-8752-d5b8013364e3
+    uuid: 55556b1f-7b61-49ee-bfcc-10ed900f1b61
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: CH_speednode_0002
-    type: vless
-    server: ch3.tunnely.ru
-    port: 443
-    uuid: c42e4667-ca09-4769-b544-89a8da730daf
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: FR_speednode_0004
-    type: vless
-    server: 185.231.205.152
-    port: 443
-    uuid: 2b74e019-81b0-4c77-9f41-2f3aaf04132d
-    tls: false
-    network: ws
-    ws-opts:
-      path: /uefsanwssecurity=tls
-      headers:
-        Host: ads.x5.ru
-  - name: FR_speednode_0005
-    type: vless
-    server: 94.131.118.18
-    port: 443
-    uuid: 784ac0b2-3837-4889-8ad6-b58259dd1d0f
-    tls: false
-    network: ws
-    ws-opts:
-      path: /kmdznvwssecurity=tls
-      headers:
-        Host: ads.x5.ru
-  - name: GB_speednode_0006
-    type: vless
-    server: 185.138.164.228
-    port: 700
-    uuid: 00000000-0000-4000-8000-000000000000
-    tls: false
-    network: ws
-    ws-opts:
-      path: /@Marisa_kristisecurity=tls
-      headers:
-        Host: zybs.worker.ddns-ip.net
-  - name: GR_speednode_0007
-    type: vless
-    server: ru-nl01-vlr01.tcp-reset-club.net
-    port: 443
-    uuid: 8e2cc81d-7ac4-4352-a7b5-bbfcfa81e49e
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: HK_speednode_0008
-    type: vless
-    server: 1.36.189.217
-    port: 10122
-    uuid: 7f60f6e7-8419-4cff-9e1b-14179f677a5e
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: HK_speednode_0009
-    type: vless
-    server: verahk1.uspn.io
-    port: 8443
-    uuid: 45553a57-d94e-46bd-bea7-306eefab0d58
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: IR_speednode_0010
-    type: vless
-    server: 62.60.217.8
-    port: 28485
-    uuid: 1a053b22-2ca1-4689-b06a-5fa66e6f9975
-    tls: true
-    network: tcp
-  - name: JP_speednode_0011
-    type: vless
-    server: 188.253.16.31
-    port: 443
-    uuid: a8c099ce-04d8-43d2-8100-34e72f7beba4
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: NL_speednode_0013
-    type: vless
-    server: nl5.tunnely.ru
-    port: 443
-    uuid: c42e4667-ca09-4769-b544-89a8da730daf
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0014
-    type: vless
-    server: 158.160.197.118
-    port: 443
-    uuid: 4d7a559b-6379-41a7-9e51-41ef759846aa
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0015
-    type: vless
-    server: 51.250.75.158
-    port: 443
-    uuid: abff54b1-a5a6-46a6-a202-08452fd07ae7
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0016
-    type: vless
-    server: 158.160.191.241
-    port: 443
-    uuid: 4d7a559b-6379-41a7-9e51-41ef759846aa
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0017
-    type: vless
-    server: 51.250.65.209
-    port: 443
-    uuid: abff54b1-a5a6-46a6-a202-08452fd07ae7
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0018
-    type: trojan
-    server: cf.130519.xyz
-    port: 443
-    password: 5a2c16f9
-    sni: snippets.kkii.eu.org
-    skip-cert-verify: false
-  - name: RU_speednode_0019
-    type: vless
-    server: 51.250.10.228
-    port: 443
-    uuid: fd4b0117-d752-46fd-9a94-21a21e360fdb
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0020
+  - name: RU_speednode_0004
     type: trojan
     server: freeyx.cloudflare88.eu.org
     port: 443
     password: 5a2c16f9
     sni: snippets.kkii.eu.org
     skip-cert-verify: false
-  - name: RU_speednode_0021
-    type: vless
-    server: 89.169.137.193
-    port: 443
-    uuid: 2c8adcaa-e428-4cea-9c88-e88166651ab3
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: SE_speednode_0022
-    type: vless
-    server: 185.146.173.185
-    port: 2052
-    uuid: a2e3da23-4359-4d00-b6a3-0313113d3f5a
-    tls: false
-    network: ws
-    ws-opts:
-      path: /Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-
-      headers:
-        Host: fggvggvvvv.fggghbvhh-ghvghggg-fgvg-mahdi-net-irancel.BLOG
-  - name: TW_speednode_0023
-    type: trojan
-    server: green2.cdntencentmusic.com
-    port: 31102
-    password: 15299860-fadf-4a95-bb62-63666856822b
-    sni: green2.cdntencentmusic.com
-    skip-cert-verify: true
-  - name: TW_speednode_0024
-    type: trojan
-    server: green2.cdntencentmusic.com
-    port: 35501
-    password: adb3985f-f23b-42f9-9332-cac7604021fd
-    sni: green2.cdntencentmusic.com
-    skip-cert-verify: true
-  - name: US_speednode_0025
-    type: vless
-    server: 139.144.199.41
-    port: 33873
-    uuid: ffb5a850-edbc-4831-ad0b-e29483949ea8
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: US_speednode_0026
+  - name: US_speednode_0005
     type: vless
     server: ru2.tunnely.ru
     port: 443
@@ -423,32 +263,24 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: US_speednode_0027
-    type: vless
-    server: 159.89.87.21
-    port: 28190
-    uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: US_speednode_0028
-    type: trojan
-    server: 167.68.4.199
-    port: 2053
-    password: Aimer
-    sni: epge.muarua.filegear-sg.me
-    skip-cert-verify: false
-  - name: US_speednode_0029
+  - name: US_speednode_0006
     type: vless
     server: 172.234.130.82
     port: 10001
     uuid: 53cd8178-2ee6-43d9-a2a7-881f287fd408
     tls: true
     network: tcp
+  - name: 加拿大多伦多+V2CROSS.COM
+    type: trojan
+    server: 198.57.27.27
+    port: 12990
+    password: 6pRjKQJ0CWyFtG.9
+    sni: 198.57.27.27
+    skip-cert-verify: false
   - name: 美国 CloudFlare节点
     type: vmess
-    server: t1.620720.xyz
-    port: 8443
+    server: sy4.620720.xyz
+    port: 443
     uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
     alterId: 0
     cipher: auto
@@ -457,36 +289,32 @@ proxies:
     ws-opts:
       path: /
       headers:
-        Host: t1.620720.xyz
-  - name: 加拿大多伦多+V2CROSS.COM
-    type: trojan
-    server: 198.57.27.27
-    port: 12990
-    password: 6pRjKQJ0CWyFtG.9
-    sni: 198.57.27.27
-    skip-cert-verify: false
-  - name: 香港 阿里云
+        Host: sy4.620720.xyz
+  - name: 美国 CloudFlare节点 [1]
     type: vmess
-    server: n1761214911.74qxv.top
-    port: 443
-    uuid: 372c1939-299d-4946-9633-5ffa971f8b67
+    server: ccc.922922.shop
+    port: 80
+    uuid: bce0c7cb-08d1-46a7-b77b-7bff8b46252f
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /RkUUbqhA9GJZBROjL3Q5vTymr
+      headers:
+        Host: cCc.922922.ShOp
+  - name: 美国 CloudFlare节点 [2]
+    type: vmess
+    server: hgtrojan.zabc.net
+    port: 2083
+    uuid: e6395c20-4571-4b34-d6b1-55a5d36e49ea
     alterId: 0
     cipher: auto
     tls: true
     network: ws
     ws-opts:
-      path: /
-      headers:
-        Host: n1761214911.74qxv.top
-  - name: 俄罗斯 新西伯利亚justhost
-    type: vmess
-    server: 2.56.242.210
-    port: 34895
-    uuid: 6fe6b62a-dfbe-4753-d795-e02f2561edea
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: none
+      path: /e6395c20
+      headers: {}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -521,37 +349,16 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇺🇸 美国4|@ripaojiedian
-      - CA_speednode_0001
-      - CH_speednode_0002
-      - FR_speednode_0004
-      - FR_speednode_0005
-      - GB_speednode_0006
-      - GR_speednode_0007
-      - HK_speednode_0008
-      - HK_speednode_0009
-      - IR_speednode_0010
-      - JP_speednode_0011
-      - NL_speednode_0013
-      - RU_speednode_0014
-      - RU_speednode_0015
-      - RU_speednode_0016
-      - RU_speednode_0017
-      - RU_speednode_0018
-      - RU_speednode_0019
-      - RU_speednode_0020
-      - RU_speednode_0021
-      - SE_speednode_0022
-      - TW_speednode_0023
-      - TW_speednode_0024
-      - US_speednode_0025
-      - US_speednode_0026
-      - US_speednode_0027
-      - US_speednode_0028
-      - US_speednode_0029
-      - 美国 CloudFlare节点
+      - RU_speednode_0001
+      - RU_speednode_0002
+      - RU_speednode_0003
+      - RU_speednode_0004
+      - US_speednode_0005
+      - US_speednode_0006
       - 加拿大多伦多+V2CROSS.COM
-      - 香港 阿里云
-      - 俄罗斯 新西伯利亚justhost
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 [1]
+      - 美国 CloudFlare节点 [2]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -582,37 +389,16 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇺🇸 美国4|@ripaojiedian
-      - CA_speednode_0001
-      - CH_speednode_0002
-      - FR_speednode_0004
-      - FR_speednode_0005
-      - GB_speednode_0006
-      - GR_speednode_0007
-      - HK_speednode_0008
-      - HK_speednode_0009
-      - IR_speednode_0010
-      - JP_speednode_0011
-      - NL_speednode_0013
-      - RU_speednode_0014
-      - RU_speednode_0015
-      - RU_speednode_0016
-      - RU_speednode_0017
-      - RU_speednode_0018
-      - RU_speednode_0019
-      - RU_speednode_0020
-      - RU_speednode_0021
-      - SE_speednode_0022
-      - TW_speednode_0023
-      - TW_speednode_0024
-      - US_speednode_0025
-      - US_speednode_0026
-      - US_speednode_0027
-      - US_speednode_0028
-      - US_speednode_0029
-      - 美国 CloudFlare节点
+      - RU_speednode_0001
+      - RU_speednode_0002
+      - RU_speednode_0003
+      - RU_speednode_0004
+      - US_speednode_0005
+      - US_speednode_0006
       - 加拿大多伦多+V2CROSS.COM
-      - 香港 阿里云
-      - 俄罗斯 新西伯利亚justhost
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 [1]
+      - 美国 CloudFlare节点 [2]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -645,37 +431,16 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇺🇸 美国4|@ripaojiedian
-      - CA_speednode_0001
-      - CH_speednode_0002
-      - FR_speednode_0004
-      - FR_speednode_0005
-      - GB_speednode_0006
-      - GR_speednode_0007
-      - HK_speednode_0008
-      - HK_speednode_0009
-      - IR_speednode_0010
-      - JP_speednode_0011
-      - NL_speednode_0013
-      - RU_speednode_0014
-      - RU_speednode_0015
-      - RU_speednode_0016
-      - RU_speednode_0017
-      - RU_speednode_0018
-      - RU_speednode_0019
-      - RU_speednode_0020
-      - RU_speednode_0021
-      - SE_speednode_0022
-      - TW_speednode_0023
-      - TW_speednode_0024
-      - US_speednode_0025
-      - US_speednode_0026
-      - US_speednode_0027
-      - US_speednode_0028
-      - US_speednode_0029
-      - 美国 CloudFlare节点
+      - RU_speednode_0001
+      - RU_speednode_0002
+      - RU_speednode_0003
+      - RU_speednode_0004
+      - US_speednode_0005
+      - US_speednode_0006
       - 加拿大多伦多+V2CROSS.COM
-      - 香港 阿里云
-      - 俄罗斯 新西伯利亚justhost
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 [1]
+      - 美国 CloudFlare节点 [2]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
