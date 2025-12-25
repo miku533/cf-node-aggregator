@@ -312,35 +312,42 @@ proxies:
       path: /proxyip=sjc.o00o.ooosecurity=tls
       headers:
         Host: stall.saass.ccwu.cc
-  - name: 香港 电讯盈科有限公司
-    type: vmess
-    server: v30.hdacd.com
-    port: 30830
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
   - name: 台湾省台中市+中华电信
     type: trojan
     server: green2.cdntencentmusic.com
-    port: 31102
-    password: 9f6256ae-52e7-4954-9a17-445b106bdca7
+    port: 35501
+    password: adb3985f-f23b-42f9-9332-cac7604021fd
     sni: green2.cdntencentmusic.com
     skip-cert-verify: false
+  - name: 中国 阿里云
+    type: vmess
+    server: 8.217.90.175
+    port: 51000
+    uuid: 6c82a994-b6ba-48ca-f2ed-11288fe4913b
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
   - name: 美国 CloudFlare节点
     type: vmess
-    server: sy4.620720.xyz
+    server: cf.fovi.tk
     port: 443
-    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+    uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
     alterId: 0
     cipher: auto
     tls: true
     network: ws
     ws-opts:
-      path: /
+      path: /eisasqa
       headers:
-        Host: sy4.620720.xyz
+        Host: foxlux.fovi.tk
+  - name: 美国+华盛顿Cogent通信公司
+    type: trojan
+    server: 38.96.254.102
+    port: 18509
+    password: .ie4rghJuMkcf0oF
+    sni: shoppingmall.electricbanana.click
+    skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -385,9 +392,10 @@ proxy-groups:
       - US_speednode_0022
       - US_speednode_0023
       - US_speednode_0024
-      - 香港 电讯盈科有限公司
       - 台湾省台中市+中华电信
+      - 中国 阿里云
       - 美国 CloudFlare节点
+      - 美国+华盛顿Cogent通信公司
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -428,9 +436,10 @@ proxy-groups:
       - US_speednode_0022
       - US_speednode_0023
       - US_speednode_0024
-      - 香港 电讯盈科有限公司
       - 台湾省台中市+中华电信
+      - 中国 阿里云
       - 美国 CloudFlare节点
+      - 美国+华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -473,9 +482,10 @@ proxy-groups:
       - US_speednode_0022
       - US_speednode_0023
       - US_speednode_0024
-      - 香港 电讯盈科有限公司
       - 台湾省台中市+中华电信
+      - 中国 阿里云
       - 美国 CloudFlare节点
+      - 美国+华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
