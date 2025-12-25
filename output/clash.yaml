@@ -104,19 +104,6 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 香港2|@ripaojiedian
-    type: vmess
-    server: 154.38.116.8
-    port: 443
-    uuid: 4bf075f5-4d5e-4d39-f5ab-b32a86250f0e
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /aa
-      headers:
-        Host: hk.nbee.pp.ua
   - name: 香港3|@ripaojiedian
     type: trojan
     server: 112.118.116.8
@@ -145,13 +132,6 @@ proxies:
     password: cfdf8794-5365-41ac-9e59-573aab964b3e
     sni: green2.cdntencentmusic.com
     skip-cert-verify: false
-  - name: 🇹🇼 台湾|@ripaojiedian
-    type: trojan
-    server: one.cf.cdn.hyli.xyz
-    port: 443
-    password: 5a2c16f9
-    sni: snippets.kkii.eu.org
-    skip-cert-verify: false
   - name: 日本|@ripaojiedian
     type: trojan
     server: 54.65.145.17
@@ -161,28 +141,28 @@ proxies:
     skip-cert-verify: true
   - name: 日本2|@ripaojiedian
     type: trojan
-    server: 160.16.87.174
-    port: 3093
+    server: 153.121.53.187
+    port: 3169
     password: 44e660b0ee21cf3ac66aee2c08af85d2
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 日本3|@ripaojiedian
     type: trojan
-    server: 13.231.130.241
+    server: 160.16.117.182
     port: 3093
     password: 44e660b0ee21cf3ac66aee2c08af85d2
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 新加坡|@ripaojiedian
     type: trojan
-    server: 202.181.103.246
+    server: 160.16.132.158
     port: 2760
     password: 44e660b0ee21cf3ac66aee2c08af85d2
     sni: www.nintendogames.net
     skip-cert-verify: true
   - name: 新加坡2|@ripaojiedian
     type: trojan
-    server: 160.16.136.130
+    server: 160.16.138.24
     port: 2760
     password: 44e660b0ee21cf3ac66aee2c08af85d2
     sni: www.nintendogames.net
@@ -196,14 +176,14 @@ proxies:
     skip-cert-verify: true
   - name: 美国|@ripaojiedian
     type: trojan
-    server: 160.16.196.59
-    port: 2890
+    server: 160.16.89.176
+    port: 4054
     password: 44e660b0ee21cf3ac66aee2c08af85d2
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 美国2|@ripaojiedian
     type: trojan
-    server: 160.16.131.243
+    server: 160.16.132.158
     port: 4054
     password: 44e660b0ee21cf3ac66aee2c08af85d2
     sni: www.nintendogames.net
@@ -224,38 +204,86 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: RU_speednode_0001
+  - name: DE_speednode_0005
     type: vless
-    server: 89.208.228.197
-    port: 443
-    uuid: 55556b1f-7b61-49ee-bfcc-10ed900f1b61
+    server: 77.37.33.169
+    port: 80
+    uuid: 29187857-4a1f-4d1e-88eb-0016771e0dbb
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vless.hubp.de
+  - name: JP_speednode_0013
+    type: vless
+    server: 138.2.37.59
+    port: 34384
+    uuid: 8cd0d0b7-43f3-476e-bb0f-b45e5bba7ffc
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0002
+  - name: LB_speednode_0015
     type: vless
-    server: 217.16.26.52
+    server: 77.110.113.219
     port: 443
-    uuid: 55556b1f-7b61-49ee-bfcc-10ed900f1b61
+    uuid: d44e93de-4a8c-464f-81f2-eb0d384b1ab2
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0003
+  - name: MD_speednode_0016
     type: vless
-    server: 109.120.188.87
+    server: 185.235.241.95
+    port: 443
+    uuid: e615a5ba-fce3-4ffa-9c86-b0327a8a107a
+    tls: false
+    network: ws
+    ws-opts:
+      path: /hormozsecurity=tls
+      headers:
+        Host: web.max.ru
+  - name: RU_speednode_0017
+    type: vless
+    server: 158.160.201.80
+    port: 443
+    uuid: 3d4525a8-3345-4743-a1dd-0e6cca32b6e7
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: RU_speednode_0018
+    type: trojan
+    server: cf.130519.xyz
+    port: 443
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: false
+  - name: RU_speednode_0019
+    type: vless
+    server: 158.160.201.80
     port: 8443
-    uuid: 55556b1f-7b61-49ee-bfcc-10ed900f1b61
+    uuid: 3d4525a8-3345-4743-a1dd-0e6cca32b6e7
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0004
+  - name: RU_speednode_0020
     type: trojan
     server: freeyx.cloudflare88.eu.org
     port: 443
     password: 5a2c16f9
     sni: snippets.kkii.eu.org
     skip-cert-verify: false
-  - name: US_speednode_0005
+  - name: SG_speednode_0021
+    type: vless
+    server: 34.143.159.175
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    tls: false
+    network: ws
+    ws-opts:
+      path: /security=tls
+      headers:
+        Host: qqq-3t8.pages.dev
+  - name: US_speednode_0022
     type: vless
     server: ru2.tunnely.ru
     port: 443
@@ -263,57 +291,71 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: US_speednode_0006
+  - name: US_speednode_0023
     type: vless
-    server: 172.234.130.82
-    port: 10001
-    uuid: 53cd8178-2ee6-43d9-a2a7-881f287fd408
-    tls: true
-    network: tcp
-  - name: 香港 电讯盈科有限公司
-    type: vmess
-    server: v30.hdacd.com
-    port: 30830
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 0
-    cipher: auto
+    server: 144.31.5.179
+    port: 443
+    uuid: 98cb33a8-d6f7-41f0-8796-e4b471d65df8
     tls: false
-    network: tcp
-  - name: 美国 V2CROSS.COM
+    network: ws
+    ws-opts:
+      path: /
+      headers: {}
+  - name: US_speednode_0024
+    type: vless
+    server: oralb.com
+    port: 2053
+    uuid: 6949ea89-4825-1b47-3b03-113cede87254
+    tls: false
+    network: ws
+    ws-opts:
+      path: /proxyip=sjc.o00o.ooosecurity=tls
+      headers:
+        Host: stall.saass.ccwu.cc
+  - name: 中国 阿里云
     type: vmess
-    server: 45.136.12.37
-    port: 38141
-    uuid: fd291be6-b48d-43a1-da38-66c7f80e2f80
+    server: 8.217.90.175
+    port: 51000
+    uuid: 6c82a994-b6ba-48ca-f2ed-11288fe4913b
     alterId: 0
     cipher: auto
     tls: false
     network: none
-  - name: 美国+华盛顿Cogent通信公司
-    type: trojan
-    server: 38.96.254.102
-    port: 18509
-    password: .ie4rghJuMkcf0oF
-    sni: shoppingmall.electricbanana.click
-    skip-cert-verify: false
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: cf.fovi.tk
-    port: 443
-    uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /eisasqa
-      headers:
-        Host: foxlux.fovi.tk
   - name: 台湾省台中市+中华电信
     type: trojan
     server: green2.cdntencentmusic.com
     port: 31102
     password: 15299860-fadf-4a95-bb62-63666856822b
     sni: green2.cdntencentmusic.com
+    skip-cert-verify: false
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: c7.620720.xyz
+    port: 8443
+    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: c7.620720.xyz
+  - name: 俄罗斯 新西伯利亚justhost
+    type: vmess
+    server: 2.56.242.210
+    port: 34895
+    uuid: 6fe6b62a-dfbe-4753-d795-e02f2561edea
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
+  - name: 加拿大多伦多+V2CROSS.COM
+    type: trojan
+    server: 198.57.27.27
+    port: 12990
+    password: 6pRjKQJ0CWyFtG.9
+    sni: 198.57.27.27
     skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
@@ -333,12 +375,10 @@ proxy-groups:
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
       - 🇭🇰 香港|@ripaojiedian
-      - 香港2|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
       - 香港6|@ripaojiedian
-      - 🇹🇼 台湾|@ripaojiedian
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
@@ -349,17 +389,23 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇺🇸 美国4|@ripaojiedian
-      - RU_speednode_0001
-      - RU_speednode_0002
-      - RU_speednode_0003
-      - RU_speednode_0004
-      - US_speednode_0005
-      - US_speednode_0006
-      - 香港 电讯盈科有限公司
-      - 美国 V2CROSS.COM
-      - 美国+华盛顿Cogent通信公司
-      - 美国 CloudFlare节点
+      - DE_speednode_0005
+      - JP_speednode_0013
+      - LB_speednode_0015
+      - MD_speednode_0016
+      - RU_speednode_0017
+      - RU_speednode_0018
+      - RU_speednode_0019
+      - RU_speednode_0020
+      - SG_speednode_0021
+      - US_speednode_0022
+      - US_speednode_0023
+      - US_speednode_0024
+      - 中国 阿里云
       - 台湾省台中市+中华电信
+      - 美国 CloudFlare节点
+      - 俄罗斯 新西伯利亚justhost
+      - 加拿大多伦多+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -374,12 +420,10 @@ proxy-groups:
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
       - 🇭🇰 香港|@ripaojiedian
-      - 香港2|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
       - 香港6|@ripaojiedian
-      - 🇹🇼 台湾|@ripaojiedian
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
@@ -390,17 +434,23 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇺🇸 美国4|@ripaojiedian
-      - RU_speednode_0001
-      - RU_speednode_0002
-      - RU_speednode_0003
-      - RU_speednode_0004
-      - US_speednode_0005
-      - US_speednode_0006
-      - 香港 电讯盈科有限公司
-      - 美国 V2CROSS.COM
-      - 美国+华盛顿Cogent通信公司
-      - 美国 CloudFlare节点
+      - DE_speednode_0005
+      - JP_speednode_0013
+      - LB_speednode_0015
+      - MD_speednode_0016
+      - RU_speednode_0017
+      - RU_speednode_0018
+      - RU_speednode_0019
+      - RU_speednode_0020
+      - SG_speednode_0021
+      - US_speednode_0022
+      - US_speednode_0023
+      - US_speednode_0024
+      - 中国 阿里云
       - 台湾省台中市+中华电信
+      - 美国 CloudFlare节点
+      - 俄罗斯 新西伯利亚justhost
+      - 加拿大多伦多+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -417,12 +467,10 @@ proxy-groups:
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
       - 🇭🇰 香港|@ripaojiedian
-      - 香港2|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
       - 香港6|@ripaojiedian
-      - 🇹🇼 台湾|@ripaojiedian
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
@@ -433,17 +481,23 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇺🇸 美国4|@ripaojiedian
-      - RU_speednode_0001
-      - RU_speednode_0002
-      - RU_speednode_0003
-      - RU_speednode_0004
-      - US_speednode_0005
-      - US_speednode_0006
-      - 香港 电讯盈科有限公司
-      - 美国 V2CROSS.COM
-      - 美国+华盛顿Cogent通信公司
-      - 美国 CloudFlare节点
+      - DE_speednode_0005
+      - JP_speednode_0013
+      - LB_speednode_0015
+      - MD_speednode_0016
+      - RU_speednode_0017
+      - RU_speednode_0018
+      - RU_speednode_0019
+      - RU_speednode_0020
+      - SG_speednode_0021
+      - US_speednode_0022
+      - US_speednode_0023
+      - US_speednode_0024
+      - 中国 阿里云
       - 台湾省台中市+中华电信
+      - 美国 CloudFlare节点
+      - 俄罗斯 新西伯利亚justhost
+      - 加拿大多伦多+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
