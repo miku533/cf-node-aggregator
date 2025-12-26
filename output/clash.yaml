@@ -197,57 +197,7 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: CN_speednode_0001
-    type: trojan
-    server: lt-sin.ltdns.top
-    port: 27043
-    password: c930b945-d54a-4db2-9b39-7bcfd85dafa4
-    sni: www.ithome.com
-    skip-cert-verify: true
-  - name: CN_speednode_0002
-    type: trojan
-    server: lt-jpn.ltdns.top
-    port: 27033
-    password: c930b945-d54a-4db2-9b39-7bcfd85dafa4
-    sni: www.ithome.com
-    skip-cert-verify: true
-  - name: CN_speednode_0003
-    type: trojan
-    server: lt-jpn.ltdns.top
-    port: 27031
-    password: c930b945-d54a-4db2-9b39-7bcfd85dafa4
-    sni: www.ithome.com
-    skip-cert-verify: true
-  - name: CN_speednode_0004
-    type: trojan
-    server: lt-sin.ltdns.top
-    port: 27044
-    password: c930b945-d54a-4db2-9b39-7bcfd85dafa4
-    sni: www.ithome.com
-    skip-cert-verify: true
-  - name: CN_speednode_0005
-    type: trojan
-    server: lt-sin.ltdns.top
-    port: 27041
-    password: c930b945-d54a-4db2-9b39-7bcfd85dafa4
-    sni: www.ithome.com
-    skip-cert-verify: true
-  - name: CN_speednode_0006
-    type: trojan
-    server: lt-sin.ltdns.top
-    port: 27045
-    password: c930b945-d54a-4db2-9b39-7bcfd85dafa4
-    sni: www.ithome.com
-    skip-cert-verify: true
-  - name: HK_speednode_0007
-    type: vless
-    server: 1.36.189.217
-    port: 10122
-    uuid: 7f60f6e7-8419-4cff-9e1b-14179f677a5e
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: NN_speednode_0008
+  - name: NN_speednode_0003
     type: vless
     server: sakura.bunnywaffle.org
     port: 26978
@@ -255,27 +205,219 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0009
+  - name: RU_speednode_0004
     type: trojan
     server: freeyx.cloudflare88.eu.org
     port: 443
     password: 5a2c16f9
     sni: snippets.kkii.eu.org
     skip-cert-verify: false
-  - name: RU_speednode_0010
+  - name: RU_speednode_0005
+    type: vless
+    server: 89.169.137.193
+    port: 443
+    uuid: 2c8adcaa-e428-4cea-9c88-e88166651ab3
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: US_speednode_0007
+    type: trojan
+    server: 104.17.162.3
+    port: 443
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: false
+  - name: US_speednode_0008
+    type: vless
+    server: 104.17.202.10
+    port: 443
+    uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+    tls: true
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: snippets.kkii.eu.org
+  - name: US_speednode_0009
+    type: vless
+    server: 108.162.198.185
+    port: 443
+    uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+    tls: true
+    network: ws
+    ws-opts:
+      path: /fp=randomized
+      headers:
+        Host: snippets.kkii.eu.org
+  - name: US_speednode_0010
+    type: trojan
+    server: 104.17.167.134
+    port: 443
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: false
+  - name: US_speednode_0011
+    type: trojan
+    server: 104.19.220.22
+    port: 443
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: false
+  - name: US_speednode_0012
+    type: vless
+    server: 104.17.69.244
+    port: 443
+    uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+    tls: true
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: snippets.kkii.eu.org
+  - name: US_speednode_0013
+    type: vless
+    server: 104.19.220.22
+    port: 443
+    uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+    tls: true
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: snippets.kkii.eu.org
+  - name: US_speednode_0014
+    type: vless
+    server: 198.41.208.234
+    port: 443
+    uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+    tls: true
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: snippets.kkii.eu.org
+  - name: US_speednode_0015
+    type: vless
+    server: 104.16.65.1
+    port: 443
+    uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+    tls: true
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: snippets.kkii.eu.org
+  - name: US_speednode_0016
+    type: trojan
+    server: one.cf.cdn.hyli.xyz
+    port: 443
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: false
+  - name: US_speednode_0017
+    type: trojan
+    server: 104.16.246.188
+    port: 443
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: US_speednode_0018
+    type: vless
+    server: 172.64.148.110
+    port: 2087
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    tls: true
+    network: ws
+    ws-opts:
+      path: /?ed=2560fp=chrome
+      headers:
+        Host: jp-9de.pages.dev
+  - name: US_speednode_0019
+    type: vless
+    server: 104.19.212.207
+    port: 443
+    uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+    tls: false
+    network: ws
+    ws-opts:
+      path: /security=tls
+      headers:
+        Host: snippets.kkii.eu.org
+  - name: US_speednode_0020
+    type: trojan
+    server: 104.26.1.110
+    port: 443
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: false
+  - name: US_speednode_0021
     type: trojan
     server: cf.130519.xyz
     port: 443
     password: 5a2c16f9
     sni: snippets.kkii.eu.org
     skip-cert-verify: false
-  - name: 加拿大多伦多+V2CROSS.COM
+  - name: US_speednode_0022
     type: trojan
-    server: 198.57.27.27
-    port: 12990
-    password: 6pRjKQJ0CWyFtG.9
-    sni: 198.57.27.27
+    server: 172.64.229.169
+    port: 443
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: US_speednode_0023
+    type: trojan
+    server: 162.159.128.253
+    port: 443
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
     skip-cert-verify: false
+  - name: US_speednode_0024
+    type: vless
+    server: 172.64.53.226
+    port: 443
+    uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+    tls: true
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: snippets.kkii.eu.org
+  - name: US_speednode_0025
+    type: trojan
+    server: 172.64.229.2
+    port: 443
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: US_speednode_0026
+    type: trojan
+    server: 162.159.24.131
+    port: 443
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: false
+  - name: US_speednode_0027
+    type: vless
+    server: nrtcfdns.zone.id
+    port: 443
+    uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+    tls: true
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: snippets.kkii.eu.org
+  - name: US_speednode_0028
+    type: vless
+    server: cdn.204910.best
+    port: 443
+    uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+    tls: true
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: snippets.kkii.eu.org
   - name: 美国+华盛顿Cogent通信公司
     type: trojan
     server: 38.96.254.102
@@ -283,19 +425,28 @@ proxies:
     password: .ie4rghJuMkcf0oF
     sni: shoppingmall.electricbanana.click
     skip-cert-verify: false
-  - name: 美国 CloudFlare节点
+  - name: 中国 V2CROSS.COM
     type: vmess
-    server: bbbbbbbbb.222769.xyz
-    port: 80
-    uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7
+    server: v12.hdacd.com
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     alterId: 0
     cipher: auto
     tls: false
+    network: tcp
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 2237-4CE3-8698-Cfd1b622333A.457.pP.uA
+    port: 443
+    uuid: 0cd3c9d1-68e5-4917-8a0a-c62f1a52de56
+    alterId: 0
+    cipher: auto
+    tls: true
     network: ws
     ws-opts:
-      path: /f6taOMcOSZb9TPR
+      path: /kT5VHYcMrphesqROzSPoHrBo
       headers:
-        Host: bbbbbbbbb.222769.xyz
+        Host: 2237-4cE3-8698-cfd1b622333A.457.PP.UA
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -327,18 +478,33 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇺🇸 美国4|@ripaojiedian
-      - CN_speednode_0001
-      - CN_speednode_0002
-      - CN_speednode_0003
-      - CN_speednode_0004
-      - CN_speednode_0005
-      - CN_speednode_0006
-      - HK_speednode_0007
-      - NN_speednode_0008
-      - RU_speednode_0009
-      - RU_speednode_0010
-      - 加拿大多伦多+V2CROSS.COM
+      - NN_speednode_0003
+      - RU_speednode_0004
+      - RU_speednode_0005
+      - US_speednode_0007
+      - US_speednode_0008
+      - US_speednode_0009
+      - US_speednode_0010
+      - US_speednode_0011
+      - US_speednode_0012
+      - US_speednode_0013
+      - US_speednode_0014
+      - US_speednode_0015
+      - US_speednode_0016
+      - US_speednode_0017
+      - US_speednode_0018
+      - US_speednode_0019
+      - US_speednode_0020
+      - US_speednode_0021
+      - US_speednode_0022
+      - US_speednode_0023
+      - US_speednode_0024
+      - US_speednode_0025
+      - US_speednode_0026
+      - US_speednode_0027
+      - US_speednode_0028
       - 美国+华盛顿Cogent通信公司
+      - 中国 V2CROSS.COM
       - 美国 CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
@@ -367,18 +533,33 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇺🇸 美国4|@ripaojiedian
-      - CN_speednode_0001
-      - CN_speednode_0002
-      - CN_speednode_0003
-      - CN_speednode_0004
-      - CN_speednode_0005
-      - CN_speednode_0006
-      - HK_speednode_0007
-      - NN_speednode_0008
-      - RU_speednode_0009
-      - RU_speednode_0010
-      - 加拿大多伦多+V2CROSS.COM
+      - NN_speednode_0003
+      - RU_speednode_0004
+      - RU_speednode_0005
+      - US_speednode_0007
+      - US_speednode_0008
+      - US_speednode_0009
+      - US_speednode_0010
+      - US_speednode_0011
+      - US_speednode_0012
+      - US_speednode_0013
+      - US_speednode_0014
+      - US_speednode_0015
+      - US_speednode_0016
+      - US_speednode_0017
+      - US_speednode_0018
+      - US_speednode_0019
+      - US_speednode_0020
+      - US_speednode_0021
+      - US_speednode_0022
+      - US_speednode_0023
+      - US_speednode_0024
+      - US_speednode_0025
+      - US_speednode_0026
+      - US_speednode_0027
+      - US_speednode_0028
       - 美国+华盛顿Cogent通信公司
+      - 中国 V2CROSS.COM
       - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -409,18 +590,33 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇺🇸 美国4|@ripaojiedian
-      - CN_speednode_0001
-      - CN_speednode_0002
-      - CN_speednode_0003
-      - CN_speednode_0004
-      - CN_speednode_0005
-      - CN_speednode_0006
-      - HK_speednode_0007
-      - NN_speednode_0008
-      - RU_speednode_0009
-      - RU_speednode_0010
-      - 加拿大多伦多+V2CROSS.COM
+      - NN_speednode_0003
+      - RU_speednode_0004
+      - RU_speednode_0005
+      - US_speednode_0007
+      - US_speednode_0008
+      - US_speednode_0009
+      - US_speednode_0010
+      - US_speednode_0011
+      - US_speednode_0012
+      - US_speednode_0013
+      - US_speednode_0014
+      - US_speednode_0015
+      - US_speednode_0016
+      - US_speednode_0017
+      - US_speednode_0018
+      - US_speednode_0019
+      - US_speednode_0020
+      - US_speednode_0021
+      - US_speednode_0022
+      - US_speednode_0023
+      - US_speednode_0024
+      - US_speednode_0025
+      - US_speednode_0026
+      - US_speednode_0027
+      - US_speednode_0028
       - 美国+华盛顿Cogent通信公司
+      - 中国 V2CROSS.COM
       - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 300
