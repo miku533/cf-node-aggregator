@@ -418,6 +418,15 @@ proxies:
       path: /fp=chrome
       headers:
         Host: snippets.kkii.eu.org
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 216.238.87.47
+    port: 27502
+    uuid: b8155ce4-7e08-4c40-800f-8671312b7124
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
   - name: 美国+华盛顿Cogent通信公司
     type: trojan
     server: 38.96.254.102
@@ -425,28 +434,13 @@ proxies:
     password: .ie4rghJuMkcf0oF
     sni: shoppingmall.electricbanana.click
     skip-cert-verify: false
-  - name: 中国 V2CROSS.COM
-    type: vmess
-    server: v12.hdacd.com
-    port: 30812
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 2237-4CE3-8698-Cfd1b622333A.457.pP.uA
-    port: 443
-    uuid: 0cd3c9d1-68e5-4917-8a0a-c62f1a52de56
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /kT5VHYcMrphesqROzSPoHrBo
-      headers:
-        Host: 2237-4cE3-8698-cfd1b622333A.457.PP.UA
+  - name: 加拿大多伦多+V2CROSS.COM
+    type: trojan
+    server: 198.57.27.27
+    port: 12990
+    password: 6pRjKQJ0CWyFtG.9
+    sni: 198.57.27.27
+    skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -503,9 +497,9 @@ proxy-groups:
       - US_speednode_0026
       - US_speednode_0027
       - US_speednode_0028
+      - 美国 V2CROSS.COM
       - 美国+华盛顿Cogent通信公司
-      - 中国 V2CROSS.COM
-      - 美国 CloudFlare节点
+      - 加拿大多伦多+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -558,9 +552,9 @@ proxy-groups:
       - US_speednode_0026
       - US_speednode_0027
       - US_speednode_0028
+      - 美国 V2CROSS.COM
       - 美国+华盛顿Cogent通信公司
-      - 中国 V2CROSS.COM
-      - 美国 CloudFlare节点
+      - 加拿大多伦多+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -615,9 +609,9 @@ proxy-groups:
       - US_speednode_0026
       - US_speednode_0027
       - US_speednode_0028
+      - 美国 V2CROSS.COM
       - 美国+华盛顿Cogent通信公司
-      - 中国 V2CROSS.COM
-      - 美国 CloudFlare节点
+      - 加拿大多伦多+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
