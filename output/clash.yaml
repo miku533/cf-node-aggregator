@@ -243,32 +243,13 @@ proxies:
     password: kkzh2prsyr2ik47as615
     sni: 64.94.95.118
     skip-cert-verify: true
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: bBbbbbbBb.222769.XYZ
-    port: 80
-    uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /f6taOMcOSZb9TPR
-      headers:
-        Host: bbbbbbbbb.222769.xyz
-  - name: 美国 CloudFlare节点 [1]
-    type: vmess
-    server: ZzXxdE.922922.sHOp
-    port: 80
-    uuid: bce0c7cb-08d1-46a7-b77b-7bff8b46252f
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /RkUUbqhA9GJZBROjL3Q5vTymr
-      headers:
-        Host: ZzXxdE.922922.sHOp
+  - name: 加拿大多伦多+V2CROSS.COM
+    type: trojan
+    server: 198.57.27.27
+    port: 12990
+    password: 6pRjKQJ0CWyFtG.9
+    sni: 198.57.27.27
+    skip-cert-verify: false
   - name: 美国+华盛顿Cogent通信公司
     type: trojan
     server: 38.96.254.102
@@ -313,8 +294,7 @@ proxy-groups:
       - RU_speednode_0006
       - RU_speednode_0007
       - US_speednode_0009
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
+      - 加拿大多伦多+V2CROSS.COM
       - 美国+华盛顿Cogent通信公司
   - name: ♻️ 自动选择
     type: url-test
@@ -349,8 +329,7 @@ proxy-groups:
       - RU_speednode_0006
       - RU_speednode_0007
       - US_speednode_0009
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
+      - 加拿大多伦多+V2CROSS.COM
       - 美国+华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -387,8 +366,7 @@ proxy-groups:
       - RU_speednode_0006
       - RU_speednode_0007
       - US_speednode_0009
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
+      - 加拿大多伦多+V2CROSS.COM
       - 美国+华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 300
