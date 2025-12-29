@@ -250,22 +250,15 @@ proxies:
     password: kkzh2prsyr2ik47as615
     sni: 64.94.95.118
     skip-cert-verify: true
-  - name: 南非 V2CROSS.COM
+  - name: 香港 电讯盈科有限公司
     type: vmess
-    server: 45.207.157.29
-    port: 13852
-    uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
+    server: v12.hdacd.com
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     alterId: 0
     cipher: auto
     tls: false
-    network: none
-  - name: 加拿大多伦多+V2CROSS.COM
-    type: trojan
-    server: 198.57.27.27
-    port: 12990
-    password: 6pRjKQJ0CWyFtG.9
-    sni: 198.57.27.27
-    skip-cert-verify: false
+    network: tcp
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -304,8 +297,7 @@ proxy-groups:
       - RU_speednode_0006
       - RU_speednode_0007
       - US_speednode_0009
-      - 南非 V2CROSS.COM
-      - 加拿大多伦多+V2CROSS.COM
+      - 香港 电讯盈科有限公司
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -340,8 +332,7 @@ proxy-groups:
       - RU_speednode_0006
       - RU_speednode_0007
       - US_speednode_0009
-      - 南非 V2CROSS.COM
-      - 加拿大多伦多+V2CROSS.COM
+      - 香港 电讯盈科有限公司
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -378,8 +369,7 @@ proxy-groups:
       - RU_speednode_0006
       - RU_speednode_0007
       - US_speednode_0009
-      - 南非 V2CROSS.COM
-      - 加拿大多伦多+V2CROSS.COM
+      - 香港 电讯盈科有限公司
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
