@@ -424,24 +424,19 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 美国 阿里云
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 47.253.197.26
-    port: 12056
-    uuid: dd7be7f1-38ff-45e6-f1e5-b20c2190f527
+    server: c7.620720.xyz
+    port: 8443
+    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
     alterId: 0
     cipher: auto
-    tls: false
-    network: none
-  - name: 俄罗斯 新西伯利亚justhost
-    type: vmess
-    server: 2.56.242.210
-    port: 34895
-    uuid: 6fe6b62a-dfbe-4753-d795-e02f2561edea
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: none
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: c7.620720.xyz
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -503,8 +498,7 @@ proxy-groups:
       - US_speednode_0064
       - US_speednode_0066
       - 香港 电讯盈科有限公司
-      - 美国 阿里云
-      - 俄罗斯 新西伯利亚justhost
+      - 美国 CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -562,8 +556,7 @@ proxy-groups:
       - US_speednode_0064
       - US_speednode_0066
       - 香港 电讯盈科有限公司
-      - 美国 阿里云
-      - 俄罗斯 新西伯利亚justhost
+      - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -623,8 +616,7 @@ proxy-groups:
       - US_speednode_0064
       - US_speednode_0066
       - 香港 电讯盈科有限公司
-      - 美国 阿里云
-      - 俄罗斯 新西伯利亚justhost
+      - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
