@@ -243,11 +243,29 @@ proxies:
     uuid: 846c5d45-936c-42f6-9120-2d13830d5fa0
     tls: true
     network: tcp
-  - name: 美国加利福尼亚州洛杉矶 FREEBEST数据中心
+  - name: 香港 阿里云
     type: vmess
-    server: 156.233.232.192
-    port: 24004
-    uuid: 582fcb35-20a0-452c-e179-4c759c62c494
+    server: 8.210.248.133
+    port: 43425
+    uuid: aa10afb0-f913-4343-9c69-bc797fcba2db
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
+  - name: 日本 V2CROSS.COM
+    type: vmess
+    server: 43.100.97.40
+    port: 35714
+    uuid: 0d518906-fe60-4309-a84e-fe861cb0627d
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
+  - name: 美国 科罗拉多州NTT(美国)通信公司
+    type: vmess
+    server: 216.167.26.220
+    port: 34128
+    uuid: 4145ec2a-bc61-4d72-bfd5-f9ffbdf66c28
     alterId: 0
     cipher: auto
     tls: false
@@ -261,34 +279,7 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 日本 V2CROSS.COM
-    type: vmess
-    server: 43.100.97.40
-    port: 35714
-    uuid: 0d518906-fe60-4309-a84e-fe861cb0627d
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: none
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 206.119.191.9
-    port: 7100
-    uuid: 10853485-26e1-477b-d257-58a3f4873db3
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: none
-  - name: 美国加利福尼亚州洛杉矶 FREEBEST数据中心 [1]
-    type: vmess
-    server: 156.233.232.192
-    port: 44329
-    uuid: 1ba1fb56-e235-419e-c193-1c291adad4a7
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: none
-  - name: 美国加利福尼亚州洛杉矶 FREEBEST数据中心 [2]
+  - name: 美国加利福尼亚州洛杉矶 FREEBEST数据中心
     type: vmess
     server: 156.233.232.177
     port: 24004
@@ -297,22 +288,6 @@ proxies:
     cipher: auto
     tls: false
     network: none
-  - name: 俄罗斯 新西伯利亚justhost
-    type: vmess
-    server: 2.56.242.210
-    port: 34895
-    uuid: 6fe6b62a-dfbe-4753-d795-e02f2561edea
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: none
-  - name: 伊朗+V2CROSS.COM
-    type: trojan
-    server: 37.202.200.19
-    port: 25010
-    password: 09e71e3b-1f9f-44ab-9a10-02e0e10e2f05
-    sni: 37.202.200.19
-    skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -350,14 +325,11 @@ proxy-groups:
       - NN_speednode_0007
       - RU_speednode_0008
       - RU_speednode_0009
-      - 美国加利福尼亚州洛杉矶 FREEBEST数据中心
-      - 香港 电讯盈科有限公司
+      - 香港 阿里云
       - 日本 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 FREEBEST数据中心 [1]
-      - 美国加利福尼亚州洛杉矶 FREEBEST数据中心 [2]
-      - 俄罗斯 新西伯利亚justhost
-      - 伊朗+V2CROSS.COM
+      - 美国 科罗拉多州NTT(美国)通信公司
+      - 香港 电讯盈科有限公司
+      - 美国加利福尼亚州洛杉矶 FREEBEST数据中心
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -391,14 +363,11 @@ proxy-groups:
       - NN_speednode_0007
       - RU_speednode_0008
       - RU_speednode_0009
-      - 美国加利福尼亚州洛杉矶 FREEBEST数据中心
-      - 香港 电讯盈科有限公司
+      - 香港 阿里云
       - 日本 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 FREEBEST数据中心 [1]
-      - 美国加利福尼亚州洛杉矶 FREEBEST数据中心 [2]
-      - 俄罗斯 新西伯利亚justhost
-      - 伊朗+V2CROSS.COM
+      - 美国 科罗拉多州NTT(美国)通信公司
+      - 香港 电讯盈科有限公司
+      - 美国加利福尼亚州洛杉矶 FREEBEST数据中心
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -434,14 +403,11 @@ proxy-groups:
       - NN_speednode_0007
       - RU_speednode_0008
       - RU_speednode_0009
-      - 美国加利福尼亚州洛杉矶 FREEBEST数据中心
-      - 香港 电讯盈科有限公司
+      - 香港 阿里云
       - 日本 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 FREEBEST数据中心 [1]
-      - 美国加利福尼亚州洛杉矶 FREEBEST数据中心 [2]
-      - 俄罗斯 新西伯利亚justhost
-      - 伊朗+V2CROSS.COM
+      - 美国 科罗拉多州NTT(美国)通信公司
+      - 香港 电讯盈科有限公司
+      - 美国加利福尼亚州洛杉矶 FREEBEST数据中心
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
