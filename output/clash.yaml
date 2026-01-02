@@ -95,158 +95,62 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: '#031 JP3'
+  - name: '#001 US1'
     type: trojan
-    server: 37.202.200.19
-    port: 25010
-    password: 09e71e3b-1f9f-44ab-9a10-02e0e10e2f05
-    sni: 37.202.200.19
+    server: bestcdn4.868863.xyz
+    port: 2087
+    password: e57ea079-35ff-46f6-b3d2-7682b6bb4319
+    sni: 17673588945452.206355.xyz
     skip-cert-verify: true
-  - name: '#011 HK1'
+  - name: '#002 DE1'
+    type: trojan
+    server: bestcdn1.868863.xyz
+    port: 2096
+    password: e57ea079-35ff-46f6-b3d2-7682b6bb4319
+    sni: 17673588943109.796813.xyz
+    skip-cert-verify: true
+  - name: '#003 US2'
+    type: trojan
+    server: bestcdn1.868863.xyz
+    port: 2087
+    password: e57ea079-35ff-46f6-b3d2-7682b6bb4319
+    sni: 17673588943776.206355.xyz
+    skip-cert-verify: true
+  - name: '#004 US3'
+    type: trojan
+    server: bestcdn2.868863.xyz
+    port: 2083
+    password: e57ea079-35ff-46f6-b3d2-7682b6bb4319
+    sni: 17673588947548.796812.xyz
+    skip-cert-verify: true
+  - name: '#005 DE2'
+    type: trojan
+    server: bestcdn2.868863.xyz
+    port: 2087
+    password: e57ea079-35ff-46f6-b3d2-7682b6bb4319
+    sni: 17673588943211.796813.xyz
+    skip-cert-verify: true
+  - name: '#006 US4'
+    type: trojan
+    server: bestcdn2.868863.xyz
+    port: 2096
+    password: e57ea079-35ff-46f6-b3d2-7682b6bb4319
+    sni: 17673588947277.206355.xyz
+    skip-cert-verify: true
+  - name: '#075 HK31'
     type: trojan
     server: 58.152.46.60
     port: 443
     password: BxceQaOe
-    sni: |-
-      ������
-      [By DukeMehdi] trojan-HK 
+    sni: 58.152.46.60
     skip-cert-verify: true
-  - name: '#017 CN1'
-    type: vmess
-    server: 183.236.51.36
-    port: 59003
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: '#024 GB3 CF5'
+  - name: '#011 JP2 CF2'
     type: trojan
-    server: 5.144.182.188
-    port: 443
+    server: 203.137.166.120
+    port: 50090
     password: 5a2c16f9
     sni: snippets.kkii.eu.org
     skip-cert-verify: true
-  - name: '#022 GB2 CF4'
-    type: trojan
-    server: 57.129.137.55
-    port: 443
-    password: 5a2c16f9
-    sni: snippets.kkii.eu.org
-    skip-cert-verify: true
-  - name: '#039 KR4'
-    type: vmess
-    server: lv4.789900.xyz
-    port: 2087
-    uuid: 7dd16ab1-2a36-4b32-86fd-eb49fb039752
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /7dd16ab1-2a36-4b32-86fd-eb49fb039752-vm
-      headers:
-        Host: lv4.789900.xyz
-  - name: '#040 SG1'
-    type: vmess
-    server: v12.hdacd.com
-    port: 30812
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: '#081 US20 CF27'
-    type: trojan
-    server: 162.159.24.131
-    port: 443
-    password: 5a2c16f9
-    sni: snippets.kkii.eu.org
-    skip-cert-verify: true
-  - name: '#088 US25 CF33'
-    type: trojan
-    server: 104.26.1.110
-    port: 443
-    password: 5a2c16f9
-    sni: snippets.kkii.eu.org
-    skip-cert-verify: true
-  - name: '#100 HK35 CF42'
-    type: trojan
-    server: 104.19.220.22
-    port: 443
-    password: 5a2c16f9
-    sni: snippets.kkii.eu.org
-    skip-cert-verify: true
-  - name: '#121 HK43'
-    type: vmess
-    server: n1747624280.lie5d.cyou
-    port: 443
-    uuid: 49dcf4b4-81eb-4fe2-91d3-86dc2e27ced5
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: n1747624280.lie5d.cyou
-  - name: '#114 JP10'
-    type: vmess
-    server: n1753598451.74qxv.top
-    port: 443
-    uuid: 9798678f-5b8c-4ff1-bbdd-b9b5c1539de0
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: n1753598451.74qxv.top
-  - name: '#119 JP12'
-    type: vmess
-    server: n1753598448.74qxv.top
-    port: 443
-    uuid: 3cd6f849-078e-4da9-8080-a2791b51b766
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: n1753598448.74qxv.top
-  - name: '#120 US38'
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: '#122 HK44'
-    type: vmess
-    server: n1747624267.4u9ma.icu
-    port: 443
-    uuid: 8c5d150c-b046-4440-8230-e84506a065a3
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: n1747624267.4u9ma.icu
-  - name: 🇭🇰 香港|@ripaojiedian
-    type: vmess
-    server: v10.hdacd.com
-    port: 30807
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: tcp
   - name: 香港3|@ripaojiedian
     type: trojan
     server: 58.152.18.147
@@ -261,6 +165,169 @@ proxies:
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
+  - name: '#059 JP10 CF3'
+    type: trojan
+    server: 103.53.81.139
+    port: 443
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: '#088 DE4 CF4'
+    type: trojan
+    server: 162.55.187.121
+    port: 8443
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: '#089 GB2 CF5'
+    type: trojan
+    server: 57.128.183.248
+    port: 8443
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: '#091 GB3 CF7'
+    type: trojan
+    server: 57.129.137.239
+    port: 8443
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: '#092 GB4 CF8'
+    type: trojan
+    server: 57.128.178.232
+    port: 8443
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: '#093 KR3 CF9'
+    type: trojan
+    server: 59.6.239.208
+    port: 12203
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: '#094 KR4 CF10'
+    type: trojan
+    server: 144.24.87.69
+    port: 50001
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: '#095 KR5 CF11'
+    type: trojan
+    server: 132.145.88.82
+    port: 38066
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: '#096 GB5 CF12'
+    type: trojan
+    server: 57.128.181.125
+    port: 8443
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: '#097 JP12 CF13'
+    type: trojan
+    server: 138.2.59.96
+    port: 10129
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: '#098 GB6 CF14'
+    type: trojan
+    server: 57.129.137.60
+    port: 8443
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: '#099 GB7 CF15'
+    type: trojan
+    server: 57.128.181.26
+    port: 8443
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: '#100 US17 CF16'
+    type: trojan
+    server: 162.220.13.14
+    port: 8443
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: '#101 GB8 CF17'
+    type: trojan
+    server: 135.84.73.238
+    port: 2096
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: '#102 HK44 CF18'
+    type: trojan
+    server: 156.230.12.71
+    port: 443
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: '#103 DE5 CF19'
+    type: trojan
+    server: 51.195.102.49
+    port: 2053
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: '#104 US18 CF20'
+    type: trojan
+    server: 94.140.0.238
+    port: 2096
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: '#105 GB9 CF21'
+    type: trojan
+    server: 57.128.181.151
+    port: 443
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: '#106 GB10 CF22'
+    type: trojan
+    server: 57.129.137.49
+    port: 8443
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: '#158 US26 CF40'
+    type: trojan
+    server: 109.234.211.66
+    port: 2087
+    password: trojan
+    sni: store.timimi.dpdns.org
+    skip-cert-verify: true
+  - name: '#161 RU1'
+    type: trojan
+    server: 156.244.6.115
+    port: 443
+    password: af4b064a9c39472fb34ad8b113acdc6b
+    sni: 156.244.6.115
+    skip-cert-verify: true
+  - name: '#169 US30 CF42'
+    type: trojan
+    server: 109.234.211.66
+    port: 8443
+    password: trojan
+    sni: store.timimi.dpdns.org
+    skip-cert-verify: true
+  - name: 🇭🇰 香港|@ripaojiedian
+    type: vmess
+    server: v10.hdacd.com
+    port: 30807
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: tcp
   - name: 香港5|@ripaojiedian
     type: trojan
     server: 58.152.25.236
@@ -476,11 +543,42 @@ proxies:
     password: iwangjie
     sni: nodes.830901.xyz
     skip-cert-verify: false
-  - name: 尼日利亚 V2CROSS.COM
+  - name: 香港 电讯盈科有限公司
     type: vmess
-    server: 160.119.196.92
-    port: 36334
-    uuid: 575ac7a3-0127-4420-a9ea-5ff3f6c02ac7
+    server: v12.hdacd.com
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 英国 V2CROSS.COM
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: c7.620720.xyz
+    port: 8443
+    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: c7.620720.xyz
+  - name: 中国 阿里云
+    type: vmess
+    server: 8.217.90.175
+    port: 51000
+    uuid: 6c82a994-b6ba-48ca-f2ed-11288fe4913b
     alterId: 0
     cipher: auto
     tls: false
@@ -502,24 +600,39 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
-      - '#031 JP3'
-      - '#011 HK1'
-      - '#017 CN1'
-      - '#024 GB3 CF5'
-      - '#022 GB2 CF4'
-      - '#039 KR4'
-      - '#040 SG1'
-      - '#081 US20 CF27'
-      - '#088 US25 CF33'
-      - '#100 HK35 CF42'
-      - '#121 HK43'
-      - '#114 JP10'
-      - '#119 JP12'
-      - '#120 US38'
-      - '#122 HK44'
-      - 🇭🇰 香港|@ripaojiedian
+      - '#001 US1'
+      - '#002 DE1'
+      - '#003 US2'
+      - '#004 US3'
+      - '#005 DE2'
+      - '#006 US4'
+      - '#075 HK31'
+      - '#011 JP2 CF2'
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
+      - '#059 JP10 CF3'
+      - '#088 DE4 CF4'
+      - '#089 GB2 CF5'
+      - '#091 GB3 CF7'
+      - '#092 GB4 CF8'
+      - '#093 KR3 CF9'
+      - '#094 KR4 CF10'
+      - '#095 KR5 CF11'
+      - '#096 GB5 CF12'
+      - '#097 JP12 CF13'
+      - '#098 GB6 CF14'
+      - '#099 GB7 CF15'
+      - '#100 US17 CF16'
+      - '#101 GB8 CF17'
+      - '#102 HK44 CF18'
+      - '#103 DE5 CF19'
+      - '#104 US18 CF20'
+      - '#105 GB9 CF21'
+      - '#106 GB10 CF22'
+      - '#158 US26 CF40'
+      - '#161 RU1'
+      - '#169 US30 CF42'
+      - 🇭🇰 香港|@ripaojiedian
       - 香港5|@ripaojiedian
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
@@ -548,7 +661,10 @@ proxy-groups:
       - RU_speednode_0016
       - RU_speednode_0017
       - US_speednode_0018
-      - 尼日利亚 V2CROSS.COM
+      - 香港 电讯盈科有限公司
+      - 英国 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 中国 阿里云
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -562,24 +678,39 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
-      - '#031 JP3'
-      - '#011 HK1'
-      - '#017 CN1'
-      - '#024 GB3 CF5'
-      - '#022 GB2 CF4'
-      - '#039 KR4'
-      - '#040 SG1'
-      - '#081 US20 CF27'
-      - '#088 US25 CF33'
-      - '#100 HK35 CF42'
-      - '#121 HK43'
-      - '#114 JP10'
-      - '#119 JP12'
-      - '#120 US38'
-      - '#122 HK44'
-      - 🇭🇰 香港|@ripaojiedian
+      - '#001 US1'
+      - '#002 DE1'
+      - '#003 US2'
+      - '#004 US3'
+      - '#005 DE2'
+      - '#006 US4'
+      - '#075 HK31'
+      - '#011 JP2 CF2'
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
+      - '#059 JP10 CF3'
+      - '#088 DE4 CF4'
+      - '#089 GB2 CF5'
+      - '#091 GB3 CF7'
+      - '#092 GB4 CF8'
+      - '#093 KR3 CF9'
+      - '#094 KR4 CF10'
+      - '#095 KR5 CF11'
+      - '#096 GB5 CF12'
+      - '#097 JP12 CF13'
+      - '#098 GB6 CF14'
+      - '#099 GB7 CF15'
+      - '#100 US17 CF16'
+      - '#101 GB8 CF17'
+      - '#102 HK44 CF18'
+      - '#103 DE5 CF19'
+      - '#104 US18 CF20'
+      - '#105 GB9 CF21'
+      - '#106 GB10 CF22'
+      - '#158 US26 CF40'
+      - '#161 RU1'
+      - '#169 US30 CF42'
+      - 🇭🇰 香港|@ripaojiedian
       - 香港5|@ripaojiedian
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
@@ -608,7 +739,10 @@ proxy-groups:
       - RU_speednode_0016
       - RU_speednode_0017
       - US_speednode_0018
-      - 尼日利亚 V2CROSS.COM
+      - 香港 电讯盈科有限公司
+      - 英国 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 中国 阿里云
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -624,24 +758,39 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
-      - '#031 JP3'
-      - '#011 HK1'
-      - '#017 CN1'
-      - '#024 GB3 CF5'
-      - '#022 GB2 CF4'
-      - '#039 KR4'
-      - '#040 SG1'
-      - '#081 US20 CF27'
-      - '#088 US25 CF33'
-      - '#100 HK35 CF42'
-      - '#121 HK43'
-      - '#114 JP10'
-      - '#119 JP12'
-      - '#120 US38'
-      - '#122 HK44'
-      - 🇭🇰 香港|@ripaojiedian
+      - '#001 US1'
+      - '#002 DE1'
+      - '#003 US2'
+      - '#004 US3'
+      - '#005 DE2'
+      - '#006 US4'
+      - '#075 HK31'
+      - '#011 JP2 CF2'
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
+      - '#059 JP10 CF3'
+      - '#088 DE4 CF4'
+      - '#089 GB2 CF5'
+      - '#091 GB3 CF7'
+      - '#092 GB4 CF8'
+      - '#093 KR3 CF9'
+      - '#094 KR4 CF10'
+      - '#095 KR5 CF11'
+      - '#096 GB5 CF12'
+      - '#097 JP12 CF13'
+      - '#098 GB6 CF14'
+      - '#099 GB7 CF15'
+      - '#100 US17 CF16'
+      - '#101 GB8 CF17'
+      - '#102 HK44 CF18'
+      - '#103 DE5 CF19'
+      - '#104 US18 CF20'
+      - '#105 GB9 CF21'
+      - '#106 GB10 CF22'
+      - '#158 US26 CF40'
+      - '#161 RU1'
+      - '#169 US30 CF42'
+      - 🇭🇰 香港|@ripaojiedian
       - 香港5|@ripaojiedian
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
@@ -670,7 +819,10 @@ proxy-groups:
       - RU_speednode_0016
       - RU_speednode_0017
       - US_speednode_0018
-      - 尼日利亚 V2CROSS.COM
+      - 香港 电讯盈科有限公司
+      - 英国 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 中国 阿里云
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
