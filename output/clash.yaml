@@ -405,26 +405,7 @@ proxies:
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
-  - name: BE_speednode_0001
-    type: vless
-    server: vd3.outlinevpn.cc
-    port: 16931
-    uuid: 72a3aafa-281c-457b-bfd2-5a6428ea36dd
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: CA_speednode_0002
-    type: vless
-    server: 198.50.119.86
-    port: 8080
-    uuid: e2be0db4-4110-42eb-bca1-ba8df0897319
-    tls: false
-    network: ws
-    ws-opts:
-      path: /39427/Nextlife
-      headers:
-        Host: telewebion.com
-  - name: CN_speednode_0003
+  - name: CN_speednode_0002
     type: vless
     server: yg2g.jiedian242.com
     port: 29877
@@ -432,23 +413,38 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: CN_speednode_0004
+  - name: DE_speednode_0003
     type: vless
-    server: chengbai02.ascwt179.com
-    port: 25135
-    uuid: ab33d265-3a47-400e-b12b-8f6bf1bb3269
+    server: ooooooof.ir.fizikade.ir
+    port: 46942
+    uuid: 5c403d3e-81fb-29af-a76e-5a5ab279824b
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: LB_speednode_0005
+  - name: FI_speednode_0004
     type: vless
-    server: 213.165.60.36
+    server: 138.249.117.30
+    port: 4443
+    uuid: 526552b2-f67f-489c-9d0d-3e00e7d890d1
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: GB_speednode_0005
+    type: trojan
+    server: uk-1.fishchipsexpress.com
     port: 443
-    uuid: e9dbc178-3656-40f8-8833-5023f306ef1d
+    password: R8ufkVqwRZAgtwjyrA
+    sni: uk-1.fishchipsexpress.com
+    skip-cert-verify: true
+  - name: NL_speednode_0012
+    type: vless
+    server: 45.87.153.176
+    port: 4443
+    uuid: 526552b2-f67f-489c-9d0d-3e00e7d890d1
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0006
+  - name: RU_speednode_0013
     type: vless
     server: 51.250.65.209
     port: 443
@@ -456,110 +452,55 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0007
+  - name: RU_speednode_0014
+    type: vless
+    server: vkll.takovpn.ru
+    port: 443
+    uuid: 846c5d45-936c-42f6-9120-2d13830d5fa0
+    tls: true
+    network: tcp
+  - name: RU_speednode_0015
+    type: vless
+    server: s9.vless-balancer.ru
+    port: 4443
+    uuid: 96605f21-f706-45ae-8eeb-ec71efbca6a2
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: RU_speednode_0016
     type: vless
     server: 51.250.4.181
     port: 443
     uuid: 846c5d45-936c-42f6-9120-2d13830d5fa0
     tls: true
     network: tcp
-  - name: RU_speednode_0008
-    type: vless
-    server: 95.163.251.224
-    port: 443
-    uuid: e707c2aa-7858-403c-9113-c8eafa86c7ef
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0009
-    type: vless
-    server: 51.250.104.85
-    port: 1488
-    uuid: 5ba2e48a-d36c-40a5-a4a1-2819ed6efce5
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0010
-    type: vless
-    server: 51.250.98.101
-    port: 1488
-    uuid: 5ba2e48a-d36c-40a5-a4a1-2819ed6efce5
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0011
-    type: vless
-    server: 51.250.109.47
-    port: 1488
-    uuid: 5ba2e48a-d36c-40a5-a4a1-2819ed6efce5
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0012
-    type: vless
-    server: 51.250.28.8
-    port: 1488
-    uuid: 5ba2e48a-d36c-40a5-a4a1-2819ed6efce5
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0013
-    type: vless
-    server: 51.250.16.178
-    port: 1488
-    uuid: 5ba2e48a-d36c-40a5-a4a1-2819ed6efce5
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0014
-    type: vless
-    server: 78.159.247.136
-    port: 3443
-    uuid: 1e9fe9f0-0954-4d17-80c3-fe824b49f689
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0015
-    type: vless
-    server: 51.250.29.71
-    port: 1488
-    uuid: 5ba2e48a-d36c-40a5-a4a1-2819ed6efce5
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0016
-    type: vless
-    server: 51.250.24.245
-    port: 4249
-    uuid: 5ba2e48a-d36c-40a5-a4a1-2819ed6efce5
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
   - name: RU_speednode_0017
     type: vless
-    server: 51.250.98.83
-    port: 1488
-    uuid: 5ba2e48a-d36c-40a5-a4a1-2819ed6efce5
+    server: 89.169.137.193
+    port: 443
+    uuid: 2c8adcaa-e428-4cea-9c88-e88166651ab3
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: US_speednode_0018
+  - name: SG_speednode_0018
+    type: vless
+    server: 43.165.190.11
+    port: 42841
+    uuid: 00000000-0000-4000-8000-000000000000
+    tls: false
+    network: ws
+    ws-opts:
+      path: /@Marisa_kristisecurity=tls
+      headers:
+        Host: mot.morisi.ggff.net
+  - name: US_speednode_0019
     type: trojan
-    server: 158.101.11.204
-    port: 15805
-    password: iwangjie
-    sni: nodes.830901.xyz
+    server: 167.68.4.199
+    port: 2053
+    password: Aimer
+    sni: epge.muarua.filegear-sg.me
     skip-cert-verify: false
   - name: 香港 电讯盈科有限公司
-    type: vmess
-    server: 202.85.53.179
-    port: 30812
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 香港 电讯盈科有限公司 [1]
     type: vmess
     server: v12.hdacd.com
     port: 30812
@@ -568,6 +509,24 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
+  - name: 英国 V2CROSS.COM
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 尼日利亚 V2CROSS.COM
+    type: vmess
+    server: 160.119.196.92
+    port: 36334
+    uuid: 575ac7a3-0127-4420-a9ea-5ff3f6c02ac7
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -629,26 +588,21 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - BE_speednode_0001
-      - CA_speednode_0002
-      - CN_speednode_0003
-      - CN_speednode_0004
-      - LB_speednode_0005
-      - RU_speednode_0006
-      - RU_speednode_0007
-      - RU_speednode_0008
-      - RU_speednode_0009
-      - RU_speednode_0010
-      - RU_speednode_0011
-      - RU_speednode_0012
+      - CN_speednode_0002
+      - DE_speednode_0003
+      - FI_speednode_0004
+      - GB_speednode_0005
+      - NL_speednode_0012
       - RU_speednode_0013
       - RU_speednode_0014
       - RU_speednode_0015
       - RU_speednode_0016
       - RU_speednode_0017
-      - US_speednode_0018
+      - SG_speednode_0018
+      - US_speednode_0019
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 [1]
+      - 英国 V2CROSS.COM
+      - 尼日利亚 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -706,26 +660,21 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - BE_speednode_0001
-      - CA_speednode_0002
-      - CN_speednode_0003
-      - CN_speednode_0004
-      - LB_speednode_0005
-      - RU_speednode_0006
-      - RU_speednode_0007
-      - RU_speednode_0008
-      - RU_speednode_0009
-      - RU_speednode_0010
-      - RU_speednode_0011
-      - RU_speednode_0012
+      - CN_speednode_0002
+      - DE_speednode_0003
+      - FI_speednode_0004
+      - GB_speednode_0005
+      - NL_speednode_0012
       - RU_speednode_0013
       - RU_speednode_0014
       - RU_speednode_0015
       - RU_speednode_0016
       - RU_speednode_0017
-      - US_speednode_0018
+      - SG_speednode_0018
+      - US_speednode_0019
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 [1]
+      - 英国 V2CROSS.COM
+      - 尼日利亚 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -785,26 +734,21 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - BE_speednode_0001
-      - CA_speednode_0002
-      - CN_speednode_0003
-      - CN_speednode_0004
-      - LB_speednode_0005
-      - RU_speednode_0006
-      - RU_speednode_0007
-      - RU_speednode_0008
-      - RU_speednode_0009
-      - RU_speednode_0010
-      - RU_speednode_0011
-      - RU_speednode_0012
+      - CN_speednode_0002
+      - DE_speednode_0003
+      - FI_speednode_0004
+      - GB_speednode_0005
+      - NL_speednode_0012
       - RU_speednode_0013
       - RU_speednode_0014
       - RU_speednode_0015
       - RU_speednode_0016
       - RU_speednode_0017
-      - US_speednode_0018
+      - SG_speednode_0018
+      - US_speednode_0019
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 [1]
+      - 英国 V2CROSS.COM
+      - 尼日利亚 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
