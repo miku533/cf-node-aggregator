@@ -675,9 +675,22 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 🇭🇰 香港3|@ripaojiedian
+  - name: 香港2|@ripaojiedian
+    type: vmess
+    server: hkt.gotochinatown.net
+    port: 80
+    uuid: 2d8c38cc-fc12-11ef-94aa-f23c913c8d2b
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: hkt.gotochinatown.net
+  - name: HK_speednode_0008
     type: trojan
-    server: 58.152.18.48
+    server: 58.152.110.104
     port: 443
     password: 381f2e86233720eacda26d50e9aa26da
     sni: www.nintendogames.net
@@ -696,89 +709,6 @@ proxies:
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
-  - name: 🇯🇵 日本|@ripaojiedian
-    type: trojan
-    server: 54.199.47.127
-    port: 26378
-    password: BxceQaOe
-    sni: t.me%2Fripaojiedian
-    skip-cert-verify: true
-  - name: 🇯🇵 日本2|@ripaojiedian
-    type: trojan
-    server: 54.199.47.127
-    port: 4006
-    password: 381f2e86233720eacda26d50e9aa26da
-    sni: www.nintendogames.net
-    skip-cert-verify: false
-  - name: 🇯🇵 日本3|@ripaojiedian
-    type: trojan
-    server: 54.199.47.127
-    port: 1933
-    password: 381f2e86233720eacda26d50e9aa26da
-    sni: www.nintendogames.net
-    skip-cert-verify: false
-  - name: 🇸🇬 新加坡|@ripaojiedian
-    type: trojan
-    server: 52.198.241.226
-    port: 3901
-    password: 381f2e86233720eacda26d50e9aa26da
-    sni: www.nintendogames.net
-    skip-cert-verify: false
-  - name: 新加坡2|@ripaojiedian
-    type: trojan
-    server: 54.199.47.127
-    port: 3901
-    password: 381f2e86233720eacda26d50e9aa26da
-    sni: www.nintendogames.net
-    skip-cert-verify: true
-  - name: 🇸🇬 新加坡3|@ripaojiedian
-    type: trojan
-    server: 54.249.149.192
-    port: 3127
-    password: BxceQaOe
-    sni: t.me%2Fripaojiedian
-    skip-cert-verify: true
-  - name: 🇺🇸 美国|@ripaojiedian
-    type: trojan
-    server: 54.199.47.127
-    port: 1281
-    password: 381f2e86233720eacda26d50e9aa26da
-    sni: www.nintendogames.net
-    skip-cert-verify: false
-  - name: 美国2|@ripaojiedian
-    type: trojan
-    server: 153.121.44.99
-    port: 1281
-    password: 381f2e86233720eacda26d50e9aa26da
-    sni: www.nintendogames.net
-    skip-cert-verify: false
-  - name: 🇺🇸 美国3|@ripaojiedian
-    type: trojan
-    server: 18.181.195.198
-    port: 1112
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
-  - name: 香港2|@ripaojiedian
-    type: vmess
-    server: hkt.gotochinatown.net
-    port: 80
-    uuid: 2d8c38cc-fc12-11ef-94aa-f23c913c8d2b
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: hkt.gotochinatown.net
-  - name: 香港3|@ripaojiedian
-    type: trojan
-    server: 58.152.110.104
-    port: 443
-    password: 381f2e86233720eacda26d50e9aa26da
-    sni: www.nintendogames.net
-    skip-cert-verify: false
   - name: 日本|@ripaojiedian
     type: trojan
     server: 57.180.10.245
@@ -807,6 +737,13 @@ proxies:
     password: 381f2e86233720eacda26d50e9aa26da
     sni: www.nintendogames.net
     skip-cert-verify: false
+  - name: 新加坡2|@ripaojiedian
+    type: trojan
+    server: 54.199.47.127
+    port: 3901
+    password: 381f2e86233720eacda26d50e9aa26da
+    sni: www.nintendogames.net
+    skip-cert-verify: true
   - name: 新加坡3|@ripaojiedian
     type: trojan
     server: 18.163.28.248
@@ -817,6 +754,13 @@ proxies:
   - name: 美国|@ripaojiedian
     type: trojan
     server: 13.231.188.173
+    port: 1281
+    password: 381f2e86233720eacda26d50e9aa26da
+    sni: www.nintendogames.net
+    skip-cert-verify: false
+  - name: 美国2|@ripaojiedian
+    type: trojan
+    server: 153.121.44.99
     port: 1281
     password: 381f2e86233720eacda26d50e9aa26da
     sni: www.nintendogames.net
@@ -837,108 +781,226 @@ proxies:
     network: tcp
     flow: xtls-rprx-vision-udp443
   - name: DE_speednode_0003
-    type: vless
-    server: ooooooof.ir.fizikade.ir
-    port: 46942
-    uuid: 5c403d3e-81fb-29af-a76e-5a5ab279824b
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: FI_speednode_0004
-    type: vless
-    server: 138.249.117.30
-    port: 4443
-    uuid: 526552b2-f67f-489c-9d0d-3e00e7d890d1
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: GB_speednode_0005
     type: trojan
-    server: uk-1.fishchipsexpress.com
-    port: 443
-    password: R8ufkVqwRZAgtwjyrA
-    sni: uk-1.fishchipsexpress.com
+    server: 178.250.187.3
+    port: 8443
+    password: 554f139b-f31f-41c4-99f9-73d60647db26
+    sni: snippets.kkii.eu.org
     skip-cert-verify: true
-  - name: NL_speednode_0012
-    type: vless
-    server: 45.87.153.176
-    port: 4443
-    uuid: 526552b2-f67f-489c-9d0d-3e00e7d890d1
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0013
-    type: vless
-    server: 51.250.65.209
+  - name: DE_speednode_0004
+    type: trojan
+    server: 193.23.197.183
     port: 443
-    uuid: 4371ad14-b981-4699-bedf-83fb79bde3e6
+    password: 554f139b-f31f-41c4-99f9-73d60647db26
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: FI_speednode_0005
+    type: vless
+    server: 78.153.139.68
+    port: 8443
+    uuid: fd8972d7-cf5e-11f0-9970-45e1d80c4039
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0014
+  - name: GB_speednode_0007
     type: vless
-    server: vkll.takovpn.ru
-    port: 443
-    uuid: 846c5d45-936c-42f6-9120-2d13830d5fa0
-    tls: true
-    network: tcp
-  - name: RU_speednode_0015
-    type: vless
-    server: s9.vless-balancer.ru
-    port: 4443
-    uuid: 96605f21-f706-45ae-8eeb-ec71efbca6a2
+    server: 152.114.193.158
+    port: 47009
+    uuid: 1b07b61e-7c71-75fa-f97d-f4a82c66cfb5
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0016
+  - name: KR_speednode_0015
+    type: vless
+    server: 59.3.3.161
+    port: 8443
+    uuid: 3afad5df-e056-4301-846d-665b4ef51968
+    tls: true
+    network: ws
+    ws-opts:
+      path: /59.3.3.161:8443fp=chrome
+      headers:
+        Host: x.kkii.eu.org
+  - name: RU_speednode_0018
+    type: vless
+    server: 51.250.104.85
+    port: 1488
+    uuid: d2d79fd8-a3d4-4792-9766-e472e1fe8a5f
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: RU_speednode_0019
     type: vless
     server: 51.250.4.181
     port: 443
     uuid: 846c5d45-936c-42f6-9120-2d13830d5fa0
     tls: true
     network: tcp
-  - name: RU_speednode_0017
+  - name: RU_speednode_0020
     type: vless
-    server: 89.169.137.193
+    server: vkll.takovpn.ru
     port: 443
-    uuid: 2c8adcaa-e428-4cea-9c88-e88166651ab3
+    uuid: 846c5d45-936c-42f6-9120-2d13830d5fa0
+    tls: true
+    network: tcp
+  - name: RU_speednode_0021
+    type: trojan
+    server: 45.135.235.238
+    port: 2096
+    password: 554f139b-f31f-41c4-99f9-73d60647db26
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: RU_speednode_0023
+    type: vless
+    server: 51.250.28.232
+    port: 1488
+    uuid: d2d79fd8-a3d4-4792-9766-e472e1fe8a5f
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: SG_speednode_0018
+  - name: RU_speednode_0024
     type: vless
-    server: 43.165.190.11
-    port: 42841
-    uuid: 00000000-0000-4000-8000-000000000000
+    server: 185.218.204.203
+    port: 47009
+    uuid: 1b07b61e-7c71-75fa-f97d-f4a82c66cfb5
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: SG_speednode_0025
+    type: vless
+    server: 14.new.sahanwickramasinghevip.shop
+    port: 443
+    uuid: 4f39d0f5-d087-4983-b6da-e7ca82181f7b
+    tls: true
+    network: tcp
+  - name: US_speednode_0027
+    type: vless
+    server: 104.21.233.186
+    port: 2086
+    uuid: 636de463-b509-4631-adc6-400b21733278
     tls: false
     network: ws
     ws-opts:
-      path: /@Marisa_kristisecurity=tls
+      path: /vgn80ag4q5o0oxj5fp=chrome
       headers:
-        Host: mot.morisi.ggff.net
-  - name: US_speednode_0019
+        Host: index.harmony610.workers.dev
+  - name: US_speednode_0028
+    type: vless
+    server: 108.162.198.185
+    port: 443
+    uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+    tls: false
+    network: ws
+    ws-opts:
+      path: /security=tls
+      headers:
+        Host: snippets.kkii.eu.org
+  - name: US_speednode_0029
+    type: vless
+    server: 104.17.69.244
+    port: 443
+    uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+    tls: true
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: snippets.kkii.eu.org
+  - name: US_speednode_0030
     type: trojan
-    server: 167.68.4.199
+    server: 64.181.227.82
+    port: 443
+    password: ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: US_speednode_0031
+    type: vless
+    server: cfxr.eu.org
     port: 2053
-    password: Aimer
-    sni: epge.muarua.filegear-sg.me
-    skip-cert-verify: false
-  - name: 加拿大多伦多+V2CROSS.COM
+    uuid: 6958a4fa-d3de-cfe7-664a-5fc2d3ea190e
+    tls: true
+    network: ws
+    ws-opts:
+      path: /proxyip=sjc.o00o.ooofp=chrome
+      headers:
+        Host: sss.2026.loseyourip.com
+  - name: US_speednode_0032
     type: trojan
-    server: 198.57.27.27
-    port: 12990
-    password: 6pRjKQJ0CWyFtG.9
-    sni: 198.57.27.27
-    skip-cert-verify: false
-  - name: 英国 V2CROSS.COM
+    server: one.cf.cdn.hyli.xyz
+    port: 443
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: US_speednode_0033
+    type: trojan
+    server: 104.17.237.219
+    port: 443
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: US_speednode_0034
+    type: vless
+    server: v1.dabache.top
+    port: 443
+    uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+    tls: true
+    network: ws
+    ws-opts:
+      path: /fp=chromefp=chrome
+      headers:
+        Host: snippets.kkii.eu.org
+  - name: US_speednode_0035
+    type: trojan
+    server: 172.64.229.55
+    port: 443
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: US_speednode_0037
+    type: vless
+    server: convera.com
+    port: 2053
+    uuid: 6958a4fa-d3de-cfe7-664a-5fc2d3ea190e
+    tls: true
+    network: ws
+    ws-opts:
+      path: /proxyip=sjc.o00o.ooofp=chrome
+      headers:
+        Host: sss.2026.loseyourip.com
+  - name: US_speednode_0038
+    type: trojan
+    server: cf.130519.xyz
+    port: 443
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: US_speednode_0040
+    type: trojan
+    server: 199.119.137.77
+    port: 2053
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: US_speednode_0041
+    type: trojan
+    server: 172.64.229.65
+    port: 443
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    server: t1.620720.xyz
+    port: 8443
+    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
     alterId: 0
     cipher: auto
-    tls: false
-    network: tcp
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: t1.620720.xyz
   - name: 香港 电讯盈科有限公司
     type: vmess
     server: v12.hdacd.com
@@ -1045,41 +1107,46 @@ proxy-groups:
       - '#187 HK55'
       - '#188 HK56'
       - 🇭🇰 香港|@ripaojiedian
-      - 🇭🇰 香港3|@ripaojiedian
+      - 香港2|@ripaojiedian
+      - HK_speednode_0008
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 新加坡2|@ripaojiedian
-      - 🇸🇬 新加坡3|@ripaojiedian
-      - 🇺🇸 美国|@ripaojiedian
-      - 美国2|@ripaojiedian
-      - 🇺🇸 美国3|@ripaojiedian
-      - 香港2|@ripaojiedian
-      - 香港3|@ripaojiedian
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
       - 新加坡|@ripaojiedian
+      - 新加坡2|@ripaojiedian
       - 新加坡3|@ripaojiedian
       - 美国|@ripaojiedian
+      - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - CN_speednode_0002
       - DE_speednode_0003
-      - FI_speednode_0004
-      - GB_speednode_0005
-      - NL_speednode_0012
-      - RU_speednode_0013
-      - RU_speednode_0014
-      - RU_speednode_0015
-      - RU_speednode_0016
-      - RU_speednode_0017
-      - SG_speednode_0018
-      - US_speednode_0019
-      - 加拿大多伦多+V2CROSS.COM
-      - 英国 V2CROSS.COM
+      - DE_speednode_0004
+      - FI_speednode_0005
+      - GB_speednode_0007
+      - KR_speednode_0015
+      - RU_speednode_0018
+      - RU_speednode_0019
+      - RU_speednode_0020
+      - RU_speednode_0021
+      - RU_speednode_0023
+      - RU_speednode_0024
+      - SG_speednode_0025
+      - US_speednode_0027
+      - US_speednode_0028
+      - US_speednode_0029
+      - US_speednode_0030
+      - US_speednode_0031
+      - US_speednode_0032
+      - US_speednode_0033
+      - US_speednode_0034
+      - US_speednode_0035
+      - US_speednode_0037
+      - US_speednode_0038
+      - US_speednode_0040
+      - US_speednode_0041
+      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
   - name: ♻️ 自动选择
     type: url-test
@@ -1174,41 +1241,46 @@ proxy-groups:
       - '#187 HK55'
       - '#188 HK56'
       - 🇭🇰 香港|@ripaojiedian
-      - 🇭🇰 香港3|@ripaojiedian
+      - 香港2|@ripaojiedian
+      - HK_speednode_0008
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 新加坡2|@ripaojiedian
-      - 🇸🇬 新加坡3|@ripaojiedian
-      - 🇺🇸 美国|@ripaojiedian
-      - 美国2|@ripaojiedian
-      - 🇺🇸 美国3|@ripaojiedian
-      - 香港2|@ripaojiedian
-      - 香港3|@ripaojiedian
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
       - 新加坡|@ripaojiedian
+      - 新加坡2|@ripaojiedian
       - 新加坡3|@ripaojiedian
       - 美国|@ripaojiedian
+      - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - CN_speednode_0002
       - DE_speednode_0003
-      - FI_speednode_0004
-      - GB_speednode_0005
-      - NL_speednode_0012
-      - RU_speednode_0013
-      - RU_speednode_0014
-      - RU_speednode_0015
-      - RU_speednode_0016
-      - RU_speednode_0017
-      - SG_speednode_0018
-      - US_speednode_0019
-      - 加拿大多伦多+V2CROSS.COM
-      - 英国 V2CROSS.COM
+      - DE_speednode_0004
+      - FI_speednode_0005
+      - GB_speednode_0007
+      - KR_speednode_0015
+      - RU_speednode_0018
+      - RU_speednode_0019
+      - RU_speednode_0020
+      - RU_speednode_0021
+      - RU_speednode_0023
+      - RU_speednode_0024
+      - SG_speednode_0025
+      - US_speednode_0027
+      - US_speednode_0028
+      - US_speednode_0029
+      - US_speednode_0030
+      - US_speednode_0031
+      - US_speednode_0032
+      - US_speednode_0033
+      - US_speednode_0034
+      - US_speednode_0035
+      - US_speednode_0037
+      - US_speednode_0038
+      - US_speednode_0040
+      - US_speednode_0041
+      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -1305,41 +1377,46 @@ proxy-groups:
       - '#187 HK55'
       - '#188 HK56'
       - 🇭🇰 香港|@ripaojiedian
-      - 🇭🇰 香港3|@ripaojiedian
+      - 香港2|@ripaojiedian
+      - HK_speednode_0008
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 新加坡2|@ripaojiedian
-      - 🇸🇬 新加坡3|@ripaojiedian
-      - 🇺🇸 美国|@ripaojiedian
-      - 美国2|@ripaojiedian
-      - 🇺🇸 美国3|@ripaojiedian
-      - 香港2|@ripaojiedian
-      - 香港3|@ripaojiedian
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
       - 新加坡|@ripaojiedian
+      - 新加坡2|@ripaojiedian
       - 新加坡3|@ripaojiedian
       - 美国|@ripaojiedian
+      - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - CN_speednode_0002
       - DE_speednode_0003
-      - FI_speednode_0004
-      - GB_speednode_0005
-      - NL_speednode_0012
-      - RU_speednode_0013
-      - RU_speednode_0014
-      - RU_speednode_0015
-      - RU_speednode_0016
-      - RU_speednode_0017
-      - SG_speednode_0018
-      - US_speednode_0019
-      - 加拿大多伦多+V2CROSS.COM
-      - 英国 V2CROSS.COM
+      - DE_speednode_0004
+      - FI_speednode_0005
+      - GB_speednode_0007
+      - KR_speednode_0015
+      - RU_speednode_0018
+      - RU_speednode_0019
+      - RU_speednode_0020
+      - RU_speednode_0021
+      - RU_speednode_0023
+      - RU_speednode_0024
+      - SG_speednode_0025
+      - US_speednode_0027
+      - US_speednode_0028
+      - US_speednode_0029
+      - US_speednode_0030
+      - US_speednode_0031
+      - US_speednode_0032
+      - US_speednode_0033
+      - US_speednode_0034
+      - US_speednode_0035
+      - US_speednode_0037
+      - US_speednode_0038
+      - US_speednode_0040
+      - US_speednode_0041
+      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
     url: http://www.gstatic.com/generate_204
     interval: 300
