@@ -305,35 +305,38 @@ proxies:
     password: 5a2c16f9
     sni: snippets.kkii.eu.org
     skip-cert-verify: true
-  - name: 美国+华盛顿Cogent通信公司
+  - name: 台湾省台中市+中华电信
     type: trojan
-    server: 38.96.254.102
-    port: 18509
-    password: .ie4rghJuMkcf0oF
-    sni: shoppingmall.electricbanana.click
+    server: green2.cdntencentmusic.com
+    port: 31102
+    password: 6684ea42-8983-447a-bc76-2b894540cb11
+    sni: green2.cdntencentmusic.com
     skip-cert-verify: false
-  - name: 美国 V2CROSS.COM
+  - name: 香港 阿里云
     type: vmess
-    server: 206.119.191.9
-    port: 7100
-    uuid: 10853485-26e1-477b-d257-58a3f4873db3
+    server: 8.210.248.133
+    port: 43425
+    uuid: aa10afb0-f913-4343-9c69-bc797fcba2db
     alterId: 0
     cipher: auto
     tls: false
     network: none
-  - name: 美国科罗拉多州布隆菲尔德市 Level3
+  - name: 英国 V2CROSS.COM
     type: vmess
-    server: aflzzul.meiquankongjian.com
-    port: 52511
-    uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     alterId: 0
     cipher: auto
     tls: false
-    network: ws
-    ws-opts:
-      path: /564dfa20/
-      headers:
-        Host: aflzzul.meiquankongjian.com
+    network: tcp
+  - name: 香港+电讯盈科有限公司
+    type: trojan
+    server: 58.152.46.60
+    port: 443
+    password: BxceQaOe
+    sni: t.me%25252Fripaojiedian
+    skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -379,9 +382,10 @@ proxy-groups:
       - RU_speednode_0014
       - US_speednode_0015
       - US_speednode_0016
-      - 美国+华盛顿Cogent通信公司
-      - 美国 V2CROSS.COM
-      - 美国科罗拉多州布隆菲尔德市 Level3
+      - 台湾省台中市+中华电信
+      - 香港 阿里云
+      - 英国 V2CROSS.COM
+      - 香港+电讯盈科有限公司
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -423,9 +427,10 @@ proxy-groups:
       - RU_speednode_0014
       - US_speednode_0015
       - US_speednode_0016
-      - 美国+华盛顿Cogent通信公司
-      - 美国 V2CROSS.COM
-      - 美国科罗拉多州布隆菲尔德市 Level3
+      - 台湾省台中市+中华电信
+      - 香港 阿里云
+      - 英国 V2CROSS.COM
+      - 香港+电讯盈科有限公司
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -469,9 +474,10 @@ proxy-groups:
       - RU_speednode_0014
       - US_speednode_0015
       - US_speednode_0016
-      - 美国+华盛顿Cogent通信公司
-      - 美国 V2CROSS.COM
-      - 美国科罗拉多州布隆菲尔德市 Level3
+      - 台湾省台中市+中华电信
+      - 香港 阿里云
+      - 英国 V2CROSS.COM
+      - 香港+电讯盈科有限公司
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
