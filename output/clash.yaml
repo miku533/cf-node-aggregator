@@ -528,22 +528,15 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 北美地区 V2CROSS.COM
+  - name: 广东省湛江市 移动
     type: vmess
-    server: 23.138.148.47
-    port: 42507
-    uuid: 4db07b13-6524-49d2-b432-1f312c0e9c7c
+    server: tunnel2.qqa678.com
+    port: 47084
+    uuid: bde21c3b-7580-4286-a79c-5dc54cf297e0
     alterId: 0
     cipher: auto
     tls: false
-    network: none
-  - name: 美国+华盛顿Cogent通信公司
-    type: trojan
-    server: 38.96.254.102
-    port: 18509
-    password: .ie4rghJuMkcf0oF
-    sni: shoppingmall.electricbanana.click
-    skip-cert-verify: false
+    network: tcp
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -618,8 +611,7 @@ proxy-groups:
       - US_speednode_0014
       - US_speednode_0015
       - US_speednode_0016
-      - 北美地区 V2CROSS.COM
-      - 美国+华盛顿Cogent通信公司
+      - 广东省湛江市 移动
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -690,8 +682,7 @@ proxy-groups:
       - US_speednode_0014
       - US_speednode_0015
       - US_speednode_0016
-      - 北美地区 V2CROSS.COM
-      - 美国+华盛顿Cogent通信公司
+      - 广东省湛江市 移动
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -764,8 +755,7 @@ proxy-groups:
       - US_speednode_0014
       - US_speednode_0015
       - US_speednode_0016
-      - 北美地区 V2CROSS.COM
-      - 美国+华盛顿Cogent通信公司
+      - 广东省湛江市 移动
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
