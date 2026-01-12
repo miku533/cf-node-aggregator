@@ -339,19 +339,6 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 香港2|@ripaojiedian
-    type: vmess
-    server: hkt.gotochinatown.net
-    port: 80
-    uuid: 96c798f6-4645-11ee-b8a1-f23c9164ca5d
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: broadcastlv.chat.bilibili.com
   - name: 香港5|@ripaojiedian
     type: trojan
     server: 58.152.25.220
@@ -361,43 +348,43 @@ proxies:
     skip-cert-verify: true
   - name: 日本|@ripaojiedian
     type: trojan
-    server: 43.207.232.58
-    port: 2053
+    server: 57.181.26.116
+    port: 11945
     password: BxceQaOe
     sni: t.me%2Fripaojiedian
     skip-cert-verify: true
   - name: 日本2|@ripaojiedian
     type: trojan
-    server: 153.121.38.213
-    port: 1933
+    server: 153.121.39.240
+    port: 4006
     password: 61d8077bfb174e171b8283f155a555ad
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 日本3|@ripaojiedian
     type: trojan
-    server: 160.16.130.66
-    port: 1933
+    server: 160.16.57.238
+    port: 4006
     password: 61d8077bfb174e171b8283f155a555ad
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 新加坡|@ripaojiedian
     type: trojan
-    server: 153.121.38.213
+    server: 153.121.45.139
     port: 3901
     password: 61d8077bfb174e171b8283f155a555ad
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 新加坡2|@ripaojiedian
     type: trojan
-    server: 153.121.38.213
+    server: 153.121.45.139
     port: 3076
     password: 61d8077bfb174e171b8283f155a555ad
     sni: www.nintendogames.net
     skip-cert-verify: true
   - name: 新加坡3|@ripaojiedian
     type: trojan
-    server: 95.40.111.8
-    port: 2673
+    server: 54.95.61.147
+    port: 3579
     password: BxceQaOe
     sni: t.me%2Fripaojiedian
     skip-cert-verify: true
@@ -410,15 +397,15 @@ proxies:
     skip-cert-verify: false
   - name: 美国2|@ripaojiedian
     type: trojan
-    server: 153.121.38.213
-    port: 1281
+    server: 160.16.89.176
+    port: 5076
     password: 61d8077bfb174e171b8283f155a555ad
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 美国3|@ripaojiedian
     type: trojan
-    server: 43.198.151.117
-    port: 2173
+    server: 95.40.125.94
+    port: 1221
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
@@ -541,13 +528,15 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 台湾省台中市+中华电信
-    type: trojan
-    server: cdnfire.xiaomispeed.com
-    port: 21102
-    password: 90e57252-bb50-4cbc-b763-4e3c72362c3b
-    sni: cdnfire.xiaomispeed.com
-    skip-cert-verify: true
+  - name: 北美地区 V2CROSS.COM
+    type: vmess
+    server: 23.138.148.47
+    port: 42507
+    uuid: 4db07b13-6524-49d2-b432-1f312c0e9c7c
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
   - name: 美国+华盛顿Cogent通信公司
     type: trojan
     server: 38.96.254.102
@@ -604,7 +593,6 @@ proxy-groups:
       - SG6｜机房｜低风险
       - US102｜机房｜低风险
       - 🇭🇰 香港|@ripaojiedian
-      - 香港2|@ripaojiedian
       - 香港5|@ripaojiedian
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
@@ -630,7 +618,7 @@ proxy-groups:
       - US_speednode_0014
       - US_speednode_0015
       - US_speednode_0016
-      - 台湾省台中市+中华电信
+      - 北美地区 V2CROSS.COM
       - 美国+华盛顿Cogent通信公司
   - name: ♻️ 自动选择
     type: url-test
@@ -677,7 +665,6 @@ proxy-groups:
       - SG6｜机房｜低风险
       - US102｜机房｜低风险
       - 🇭🇰 香港|@ripaojiedian
-      - 香港2|@ripaojiedian
       - 香港5|@ripaojiedian
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
@@ -703,7 +690,7 @@ proxy-groups:
       - US_speednode_0014
       - US_speednode_0015
       - US_speednode_0016
-      - 台湾省台中市+中华电信
+      - 北美地区 V2CROSS.COM
       - 美国+华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -752,7 +739,6 @@ proxy-groups:
       - SG6｜机房｜低风险
       - US102｜机房｜低风险
       - 🇭🇰 香港|@ripaojiedian
-      - 香港2|@ripaojiedian
       - 香港5|@ripaojiedian
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
@@ -778,7 +764,7 @@ proxy-groups:
       - US_speednode_0014
       - US_speednode_0015
       - US_speednode_0016
-      - 台湾省台中市+中华电信
+      - 北美地区 V2CROSS.COM
       - 美国+华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 300
