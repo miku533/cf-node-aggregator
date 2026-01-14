@@ -688,22 +688,22 @@ proxies:
       path: /?ed=2560security=tls
       headers:
         Host: madcity.123123123.shop
-  - name: 台湾省台中市+中华电信
-    type: trojan
-    server: green2.cdntencentmusic.com
-    port: 31101
-    password: f7bac556-837a-4301-a50f-ae649bf06023
-    sni: green2.cdntencentmusic.com
-    skip-cert-verify: false
-  - name: 俄罗斯 V2CROSS.COM
+  - name: 美国 阿里云
     type: vmess
-    server: 92.246.87.170
-    port: 18355
-    uuid: caf921c7-ac63-40bc-faa1-cda097fd7e42
+    server: 47.253.197.26
+    port: 12056
+    uuid: dd7be7f1-38ff-45e6-f1e5-b20c2190f527
     alterId: 0
     cipher: auto
     tls: false
     network: none
+  - name: 香港+电讯盈科有限公司
+    type: trojan
+    server: 58.152.25.236
+    port: 443
+    password: BxceQaOe
+    sni: t.me%2Fripaojiedian
+    skip-cert-verify: false
   - name: 英国 V2CROSS.COM
     type: vmess
     server: 82.198.246.97
@@ -713,15 +713,6 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 206.119.191.9
-    port: 7100
-    uuid: 10853485-26e1-477b-d257-58a3f4873db3
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: none
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -810,10 +801,9 @@ proxy-groups:
       - US_speednode_0042
       - US_speednode_0043
       - US_speednode_0044
-      - 台湾省台中市+中华电信
-      - 俄罗斯 V2CROSS.COM
+      - 美国 阿里云
+      - 香港+电讯盈科有限公司
       - 英国 V2CROSS.COM
-      - 美国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -898,10 +888,9 @@ proxy-groups:
       - US_speednode_0042
       - US_speednode_0043
       - US_speednode_0044
-      - 台湾省台中市+中华电信
-      - 俄罗斯 V2CROSS.COM
+      - 美国 阿里云
+      - 香港+电讯盈科有限公司
       - 英国 V2CROSS.COM
-      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -988,10 +977,9 @@ proxy-groups:
       - US_speednode_0042
       - US_speednode_0043
       - US_speednode_0044
-      - 台湾省台中市+中华电信
-      - 俄罗斯 V2CROSS.COM
+      - 美国 阿里云
+      - 香港+电讯盈科有限公司
       - 英国 V2CROSS.COM
-      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
