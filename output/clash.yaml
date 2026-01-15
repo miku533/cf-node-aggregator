@@ -654,32 +654,15 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 澳大利亚 V2CROSS.COM
+  - name: 英国 V2CROSS.COM
     type: vmess
-    server: dv4.789900.xyz
-    port: 2096
-    uuid: 0c8f3e29-4ec9-4ba6-a6ef-4487873f5d05
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     alterId: 0
     cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /0c8f3e29-4ec9-4ba6-a6ef-4487873f5d05-vm
-      headers:
-        Host: dv4.789900.xyz
-  - name: 韩国 首尔Oracle云计算数据中心
-    type: vmess
-    server: lv4.789900.xyz
-    port: 2087
-    uuid: 7dd16ab1-2a36-4b32-86fd-eb49fb039752
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /7dd16ab1-2a36-4b32-86fd-eb49fb039752-vm
-      headers:
-        Host: lv4.789900.xyz
+    tls: false
+    network: tcp
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -766,8 +749,7 @@ proxy-groups:
       - US_speednode_0041
       - US_speednode_0042
       - US_speednode_0044
-      - 澳大利亚 V2CROSS.COM
-      - 韩国 首尔Oracle云计算数据中心
+      - 英国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -850,8 +832,7 @@ proxy-groups:
       - US_speednode_0041
       - US_speednode_0042
       - US_speednode_0044
-      - 澳大利亚 V2CROSS.COM
-      - 韩国 首尔Oracle云计算数据中心
+      - 英国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -936,8 +917,7 @@ proxy-groups:
       - US_speednode_0041
       - US_speednode_0042
       - US_speednode_0044
-      - 澳大利亚 V2CROSS.COM
-      - 韩国 首尔Oracle云计算数据中心
+      - 英国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
