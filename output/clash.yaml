@@ -95,77 +95,131 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: HK64｜机房｜低风险
-    type: vmess
-    server: tunnel2.qqa678.com
-    port: 47081
-    uuid: bde21c3b-7580-4286-a79c-5dc54cf297e0
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: HK151｜机房｜低风险
-    type: vmess
-    server: oss-4.qqa678.com
-    port: 47081
-    uuid: e49b8721-f124-4999-814a-fc777c0ae190
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
   - name: US1｜机房｜低风险
     type: trojan
-    server: 109.234.211.66
+    server: bestcdn0.868863.xyz
     port: 2087
-    password: trojan
-    sni: store.timimi.dpdns.org
+    password: 148f82fa-d43a-4e1c-9536-4109e8c022a5
+    sni: 17685523788254.206355.xyz
     skip-cert-verify: true
-  - name: US55｜原生/疑似家宽｜非常安全
-    type: vmess
-    server: sv2.wy888.us
-    port: 443
-    uuid: cda69512-ad1b-4f85-b547-b1d545e7cc90
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: sv2.wy888.us
-  - name: US29｜原生/疑似家宽｜非常安全
-    type: vmess
-    server: tunnel1.qqa678.com
-    port: 47084
-    uuid: 3fc3310d-fd84-4933-b370-8cb2d565fab9
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: US23｜原生/疑似家宽｜非常安全
-    type: vmess
-    server: tunnel2.qqa678.com
-    port: 47084
-    uuid: bde21c3b-7580-4286-a79c-5dc54cf297e0
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: US24｜原生/疑似家宽｜非常安全
-    type: vmess
-    server: 120.198.71.187
-    port: 47084
-    uuid: bde21c3b-7580-4286-a79c-5dc54cf297e0
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: HK4｜家宽｜高风险 (黑名单)
+  - name: US5｜机房｜低风险
     type: trojan
-    server: 58.152.46.60
-    port: 443
-    password: BxceQaOe
-    sni: '%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20127%20'
+    server: bestcdn0.868863.xyz
+    port: 2096
+    password: 148f82fa-d43a-4e1c-9536-4109e8c022a5
+    sni: 17685523788352.206355.xyz
+    skip-cert-verify: true
+  - name: US6｜机房｜低风险
+    type: trojan
+    server: bestcdn0.868863.xyz
+    port: 8443
+    password: 148f82fa-d43a-4e1c-9536-4109e8c022a5
+    sni: 17685523781994.206355.xyz
+    skip-cert-verify: true
+  - name: US8｜机房｜低风险
+    type: trojan
+    server: bestcdn0.868863.xyz
+    port: 2053
+    password: 148f82fa-d43a-4e1c-9536-4109e8c022a5
+    sni: 17685523788714.206355.xyz
+    skip-cert-verify: true
+  - name: US9｜机房｜低风险
+    type: trojan
+    server: bestcdn1.868863.xyz
+    port: 2053
+    password: 148f82fa-d43a-4e1c-9536-4109e8c022a5
+    sni: 17685523782218.206352.xyz
+    skip-cert-verify: true
+  - name: DE1｜机房｜低风险
+    type: trojan
+    server: bestcdn1.868863.xyz
+    port: 2096
+    password: 148f82fa-d43a-4e1c-9536-4109e8c022a5
+    sni: 17685523786268.206353.xyz
+    skip-cert-verify: true
+  - name: US10｜机房｜低风险
+    type: trojan
+    server: bestcdn1.868863.xyz
+    port: 2087
+    password: 148f82fa-d43a-4e1c-9536-4109e8c022a5
+    sni: 17685523787993.206355.xyz
+    skip-cert-verify: true
+  - name: US11｜机房｜低风险
+    type: trojan
+    server: bestcdn2.868863.xyz
+    port: 2083
+    password: 148f82fa-d43a-4e1c-9536-4109e8c022a5
+    sni: 17685523783386.206352.xyz
+    skip-cert-verify: true
+  - name: DE2｜机房｜低风险
+    type: trojan
+    server: bestcdn2.868863.xyz
+    port: 2087
+    password: 148f82fa-d43a-4e1c-9536-4109e8c022a5
+    sni: 17685523781530.206353.xyz
+    skip-cert-verify: true
+  - name: US12｜机房｜低风险
+    type: trojan
+    server: bestcdn2.868863.xyz
+    port: 2096
+    password: 148f82fa-d43a-4e1c-9536-4109e8c022a5
+    sni: 17685523788190.206355.xyz
+    skip-cert-verify: true
+  - name: US13｜机房｜低风险
+    type: trojan
+    server: bestcdn3.868863.xyz
+    port: 2087
+    password: 148f82fa-d43a-4e1c-9536-4109e8c022a5
+    sni: 17685523781113.206352.xyz
+    skip-cert-verify: true
+  - name: DE3｜机房｜低风险
+    type: trojan
+    server: bestcdn3.868863.xyz
+    port: 2083
+    password: 148f82fa-d43a-4e1c-9536-4109e8c022a5
+    sni: 17685523783946.206353.xyz
+    skip-cert-verify: true
+  - name: US14｜机房｜低风险
+    type: trojan
+    server: bestcdn3.868863.xyz
+    port: 2053
+    password: 148f82fa-d43a-4e1c-9536-4109e8c022a5
+    sni: 17685523786498.206355.xyz
+    skip-cert-verify: true
+  - name: US15｜机房｜低风险
+    type: trojan
+    server: bestcdn4.868863.xyz
+    port: 2096
+    password: 148f82fa-d43a-4e1c-9536-4109e8c022a5
+    sni: 17685523785425.206352.xyz
+    skip-cert-verify: true
+  - name: DE4｜机房｜低风险
+    type: trojan
+    server: bestcdn4.868863.xyz
+    port: 8443
+    password: 148f82fa-d43a-4e1c-9536-4109e8c022a5
+    sni: 17685523785050.206353.xyz
+    skip-cert-verify: true
+  - name: US16｜机房｜低风险
+    type: trojan
+    server: bestcdn4.868863.xyz
+    port: 2083
+    password: 148f82fa-d43a-4e1c-9536-4109e8c022a5
+    sni: 17685523787553.206355.xyz
+    skip-cert-verify: true
+  - name: US17｜机房｜低风险
+    type: trojan
+    server: bestcdn5.868863.xyz
+    port: 8443
+    password: 148f82fa-d43a-4e1c-9536-4109e8c022a5
+    sni: 17685523787635.206352.xyz
+    skip-cert-verify: true
+  - name: DE5｜机房｜低风险
+    type: trojan
+    server: bestcdn5.868863.xyz
+    port: 2053
+    password: 148f82fa-d43a-4e1c-9536-4109e8c022a5
+    sni: 17685523788018.206353.xyz
     skip-cert-verify: true
   - name: IN1｜家宽｜非常安全
     type: vmess
@@ -185,150 +239,419 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: KR7｜机房｜低风险
+  - name: US93｜原生/疑似家宽｜非常安全
     type: vmess
-    server: 152.70.92.69
-    port: 80
-    uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b
+    server: tunnel1.qqa678.com
+    port: 47084
+    uuid: 3fc3310d-fd84-4933-b370-8cb2d565fab9
     alterId: 0
     cipher: auto
     tls: false
     network: tcp
-  - name: JP4｜机房｜低风险
+  - name: HK12｜家宽｜非常安全
+    type: trojan
+    server: 58.152.53.219
+    port: 443
+    password: BxceQaOe
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
+  - name: TW3｜商宽｜非常安全
+    type: trojan
+    server: tuntro011.instconn.com
+    port: 40130
+    password: 30077070-596e-48ea-9400-14c8ed07bd97
+    sni: cntwbta.686911.xyz
+    skip-cert-verify: true
+  - name: JP29｜机房｜低风险
     type: trojan
     server: tuntro003.instconn.com
     port: 443
-    password: 469c8135-8aea-4c7f-8ec2-c5fdfa980b48
+    password: 30077070-596e-48ea-9400-14c8ed07bd97
     sni: login-staticjpc.jasmine-douyin.top
     skip-cert-verify: true
-  - name: HK174｜原生/疑似家宽｜非常安全
-    type: trojan
-    server: green2.cdntencentmusic.com
-    port: 31102
-    password: f3b55b53-43ca-46fd-b498-ed6cc394e179
-    sni: green2.cdntencentmusic.com
-    skip-cert-verify: true
-  - name: HK178｜原生/疑似家宽｜非常安全
-    type: trojan
-    server: 220.130.58.136
-    port: 31102
-    password: b7aa4e87-d990-4f2d-8880-73b206953efc
-    sni: green2.cdntencentmusic.com
-    skip-cert-verify: true
-  - name: US30｜机房｜低风险
-    type: trojan
-    server: bestcdn2.868863.xyz
-    port: 2083
-    password: af37ba63-6b2e-4e24-b17d-bd75a3160680
-    sni: 17683099002036.206352.xyz
-    skip-cert-verify: true
-  - name: DE63｜机房｜低风险
-    type: trojan
-    server: bestcdn2.868863.xyz
-    port: 2087
-    password: af37ba63-6b2e-4e24-b17d-bd75a3160680
-    sni: 17683099008736.206353.xyz
-    skip-cert-verify: true
-  - name: US31｜机房｜低风险
-    type: trojan
-    server: bestcdn2.868863.xyz
-    port: 2096
-    password: af37ba63-6b2e-4e24-b17d-bd75a3160680
-    sni: 17683099003341.206355.xyz
-    skip-cert-verify: true
-  - name: US32｜机房｜低风险
-    type: trojan
-    server: bestcdn3.868863.xyz
-    port: 2087
-    password: af37ba63-6b2e-4e24-b17d-bd75a3160680
-    sni: 17683099002516.206352.xyz
-    skip-cert-verify: true
-  - name: DE64｜机房｜低风险
-    type: trojan
-    server: bestcdn3.868863.xyz
-    port: 2083
-    password: af37ba63-6b2e-4e24-b17d-bd75a3160680
-    sni: 17683099006186.206353.xyz
-    skip-cert-verify: true
-  - name: US33｜机房｜低风险
-    type: trojan
-    server: bestcdn3.868863.xyz
-    port: 2053
-    password: af37ba63-6b2e-4e24-b17d-bd75a3160680
-    sni: 17683099002491.206355.xyz
-    skip-cert-verify: true
-  - name: US34｜机房｜低风险
-    type: trojan
-    server: bestcdn4.868863.xyz
-    port: 2096
-    password: af37ba63-6b2e-4e24-b17d-bd75a3160680
-    sni: 17683099008424.206352.xyz
-    skip-cert-verify: true
-  - name: DE65｜机房｜低风险
-    type: trojan
-    server: bestcdn4.868863.xyz
-    port: 8443
-    password: af37ba63-6b2e-4e24-b17d-bd75a3160680
-    sni: 17683099009008.206353.xyz
-    skip-cert-verify: true
-  - name: US35｜机房｜低风险
-    type: trojan
-    server: bestcdn4.868863.xyz
-    port: 2083
-    password: af37ba63-6b2e-4e24-b17d-bd75a3160680
-    sni: 17683099008366.206355.xyz
-    skip-cert-verify: true
-  - name: US36｜机房｜低风险
-    type: trojan
-    server: bestcdn5.868863.xyz
-    port: 8443
-    password: af37ba63-6b2e-4e24-b17d-bd75a3160680
-    sni: 17683099007958.206352.xyz
-    skip-cert-verify: true
-  - name: DE66｜机房｜低风险
-    type: trojan
-    server: bestcdn5.868863.xyz
-    port: 2053
-    password: af37ba63-6b2e-4e24-b17d-bd75a3160680
-    sni: 17683099002673.206353.xyz
-    skip-cert-verify: true
-  - name: US51｜家宽｜非常安全
-    type: trojan
-    server: green2.cdntencentmusic.com
-    port: 35502
-    password: 338ea804-ded7-478a-bdca-0ff7a8e75d51
-    sni: green2.cdntencentmusic.com
-    skip-cert-verify: true
-  - name: HK194｜家宽｜非常安全
-    type: trojan
-    server: 112.118.116.123
-    port: 443
-    password: 61d8077bfb174e171b8283f155a555ad
-    sni: www.nintendogames.net
-    skip-cert-verify: true
-  - name: HK180｜家宽｜非常安全
-    type: trojan
-    server: 58.152.25.130
-    port: 443
-    password: BxceQaOe
-    sni: 58.152.25.130
-    skip-cert-verify: true
-  - name: HK188｜原生/疑似家宽｜非常安全
-    type: trojan
-    server: green2.cdntencentmusic.com
-    port: 31103
-    password: 9f879bc7-3ac6-4ddd-8f7d-18d9f431f6a3
-    sni: green2.cdntencentmusic.com
-    skip-cert-verify: true
-  - name: HK201｜机房｜低风险
+  - name: JP3｜原生/疑似家宽｜非常安全
     type: vmess
-    server: 8.210.184.105
-    port: 40374
-    uuid: 36b76373-7a4f-4669-9113-7d247bcf2704
+    server: ffiw.owwoedu.com
+    port: 59503
+    uuid: 4880d915-5419-44a1-9a12-309e6bb2c89a
     alterId: 0
     cipher: auto
     tls: false
     network: tcp
+  - name: JP25｜原生/疑似家宽｜非常安全
+    type: vmess
+    server: cees.owwoedu.com
+    port: 49303
+    uuid: 6017576a-2c59-43ac-b963-fad117e3be44
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: US116｜原生/疑似家宽｜非常安全
+    type: vmess
+    server: 120.198.71.161
+    port: 47084
+    uuid: 3fc3310d-fd84-4933-b370-8cb2d565fab9
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: HK86｜机房｜低风险
+    type: trojan
+    server: tuntro000.instconn.com
+    port: 443
+    password: 30077070-596e-48ea-9400-14c8ed07bd97
+    sni: hkip5.686911.xyz
+    skip-cert-verify: true
+  - name: CN3｜家宽｜非常安全
+    type: vmess
+    server: 61.184.8.51
+    port: 80
+    uuid: 927d2b5e-a8ac-4e52-a9f6-0521c6e9af7e
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: tms.dingtalk.com
+  - name: CN4｜家宽｜非常安全
+    type: vmess
+    server: 60.215.152.142
+    port: 80
+    uuid: 927d2b5e-a8ac-4e52-a9f6-0521c6e9af7e
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: tms.dingtalk.com
+  - name: CN5｜家宽｜非常安全
+    type: vmess
+    server: 36.151.251.63
+    port: 80
+    uuid: 927d2b5e-a8ac-4e52-a9f6-0521c6e9af7e
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: tms.dingtalk.com
+  - name: HK18｜原生/疑似家宽｜非常安全
+    type: trojan
+    server: green2.cdntencentmusic.com
+    port: 31101
+    password: b8d7ae9d-9cba-4983-ac16-5b5f02ba2802
+    sni: green2.cdntencentmusic.com
+    skip-cert-verify: true
+  - name: HK20｜原生/疑似家宽｜非常安全
+    type: trojan
+    server: cdnfire.xiaomispeed.com
+    port: 21101
+    password: 16e368be-0ebb-416a-a5bc-4f66d89a2e41
+    sni: cdnfire.xiaomispeed.com
+    skip-cert-verify: true
+  - name: HK23｜原生/疑似家宽｜非常安全
+    type: trojan
+    server: green2.cdntencentmusic.com
+    port: 31102
+    password: 401a7257-66ad-4b7d-84b0-4745651f4701
+    sni: green2.cdntencentmusic.com
+    skip-cert-verify: true
+  - name: HK24｜原生/疑似家宽｜非常安全
+    type: trojan
+    server: green2.cdntencentmusic.com
+    port: 31103
+    password: c91410bb-b777-4daf-988b-d5445d143e6b
+    sni: green2.cdntencentmusic.com
+    skip-cert-verify: true
+  - name: US81｜家宽｜非常安全
+    type: trojan
+    server: green2.cdntencentmusic.com
+    port: 35501
+    password: 505ab478-a7c5-413b-ac56-7cef17584a7c
+    sni: green2.cdntencentmusic.com
+    skip-cert-verify: true
+  - name: US85｜家宽｜非常安全
+    type: trojan
+    server: cdnfire.xiaomispeed.com
+    port: 25501
+    password: 5dc3f09b-c217-4ceb-ba5f-5f69775c2fa1
+    sni: cdnfire.xiaomispeed.com
+    skip-cert-verify: true
+  - name: HK35｜原生/疑似家宽｜非常安全
+    type: trojan
+    server: cdnfire.xiaomispeed.com
+    port: 21103
+    password: 5dc3f09b-c217-4ceb-ba5f-5f69775c2fa1
+    sni: cdnfire.xiaomispeed.com
+    skip-cert-verify: true
+  - name: HK44｜原生/疑似家宽｜非常安全
+    type: trojan
+    server: cdnfire.xiaomispeed.com
+    port: 21102
+    password: 1e071e05-b6b4-4966-9a78-3a98e6c0e984
+    sni: cdnfire.xiaomispeed.com
+    skip-cert-verify: true
+  - name: US90｜家宽｜非常安全
+    type: trojan
+    server: cdnfire.xiaomispeed.com
+    port: 25502
+    password: 16e368be-0ebb-416a-a5bc-4f66d89a2e41
+    sni: cdnfire.xiaomispeed.com
+    skip-cert-verify: true
+  - name: HK50｜机房｜低风险
+    type: trojan
+    server: xiaozhu1.kkieo555.cn
+    port: 49213
+    password: 51fcd029-5735-4663-afb9-ed182aa4e282
+    sni: douyin.com
+    skip-cert-verify: true
+  - name: TW4｜机房｜低风险
+    type: trojan
+    server: xiaozhu1.kkieo555.cn
+    port: 41274
+    password: 37eb07c6-7ecb-4955-86dc-6284c5dc3b5c
+    sni: douyin.com
+    skip-cert-verify: true
+  - name: KR1｜机房｜低风险
+    type: trojan
+    server: xiaozhu1.kkieo555.cn
+    port: 49214
+    password: 9a3c3e80-6a71-4fb4-af58-317f87a02148
+    sni: douyin.com
+    skip-cert-verify: true
+  - name: HK93｜机房｜低风险
+    type: vmess
+    server: n1761214911.74qxv.top
+    port: 443
+    uuid: 372c1939-299d-4946-9633-5ffa971f8b67
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: n1761214911.74qxv.top
+  - name: HK77｜原生/疑似家宽｜非常安全
+    type: trojan
+    server: 220.130.58.136
+    port: 31101
+    password: a0194cb9-ee34-4f75-b620-6d4d72ab1cb0
+    sni: green2.cdntencentmusic.com
+    skip-cert-verify: true
+  - name: US112｜机房｜低风险
+    type: trojan
+    server: xiaozhu1.kkieo555.cn
+    port: 41275
+    password: 8b94a501-4cd8-4237-ae8f-6c6e7d971c01
+    sni: xiaozhu1.kkieo555.cn
+    skip-cert-verify: true
+  - name: 香港3|@ripaojiedian
+    type: trojan
+    server: 58.152.18.147
+    port: 443
+    password: 4843e94d205f3893f588255a591abe94
+    sni: www.nintendogames.net
+    skip-cert-verify: false
+  - name: DE151｜机房｜低风险
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: RU10｜商宽｜非常安全
+    type: trojan
+    server: ru2.nnvpn.io
+    port: 443
+    password: yUHNMwWvenoHBaN5CtqKPwt1CTzXgW
+    sni: ru2.nnvpn.io
+    skip-cert-verify: true
+  - name: MY1｜家宽｜非常安全
+    type: trojan
+    server: 210.187.176.154
+    port: 443
+    password: af4b064a9c39472fb34ad8b113acdc6b
+    sni: 210.187.176.154
+    skip-cert-verify: true
+  - name: HK94｜机房｜低风险
+    type: vmess
+    server: n1761214910.74qxv.top
+    port: 443
+    uuid: 011c4670-cdde-44fb-b9be-8a1e27af26c9
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: n1761214910.74qxv.top
+  - name: HK95｜原生/疑似家宽｜非常安全
+    type: vmess
+    server: gtm1.ktmwan.net
+    port: 12883
+    uuid: 4ff18004-8e47-4a8f-bc85-d317d888ed99
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: baidu.com
+  - name: SG11｜机房｜低风险
+    type: vmess
+    server: gtm1.ktmwan.net
+    port: 12901
+    uuid: 4ff18004-8e47-4a8f-bc85-d317d888ed99
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: baidu.com
+  - name: TW5｜机房｜低风险
+    type: vmess
+    server: gtm1.ktmwan.net
+    port: 12888
+    uuid: 4ff18004-8e47-4a8f-bc85-d317d888ed99
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: baidu.com
+  - name: AU1｜机房｜低风险
+    type: vmess
+    server: gtm1.ktmwan.net
+    port: 12889
+    uuid: 4ff18004-8e47-4a8f-bc85-d317d888ed99
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: baidu.com
+  - name: IN4｜机房｜低风险
+    type: vmess
+    server: gtm1.ktmwan.net
+    port: 12887
+    uuid: 4ff18004-8e47-4a8f-bc85-d317d888ed99
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: baidu.com
+  - name: VN1｜机房｜低风险
+    type: vmess
+    server: gtm1.ktmwan.net
+    port: 12891
+    uuid: 4ff18004-8e47-4a8f-bc85-d317d888ed99
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: baidu.com
+  - name: FR5｜机房｜低风险
+    type: vmess
+    server: gtm1.ktmwan.net
+    port: 12898
+    uuid: 4ff18004-8e47-4a8f-bc85-d317d888ed99
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: baidu.com
+  - name: FR6｜机房｜低风险
+    type: vmess
+    server: gtm1.ktmwan.net
+    port: 12886
+    uuid: 4ff18004-8e47-4a8f-bc85-d317d888ed99
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: baidu.com
+  - name: US118｜机房｜低风险
+    type: vmess
+    server: gtm1.ktmwan.net
+    port: 12885
+    uuid: 4ff18004-8e47-4a8f-bc85-d317d888ed99
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: baidu.com
+  - name: FR7｜机房｜低风险
+    type: vmess
+    server: gtm1.ktmwan.net
+    port: 12899
+    uuid: 4ff18004-8e47-4a8f-bc85-d317d888ed99
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: baidu.com
+  - name: CA1｜机房｜低风险
+    type: vmess
+    server: gtm1.ktmwan.net
+    port: 12897
+    uuid: 4ff18004-8e47-4a8f-bc85-d317d888ed99
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: baidu.com
+  - name: HK96｜机房｜低风险
+    type: vmess
+    server: gtm1.ktmwan.net
+    port: 12890
+    uuid: 4ff18004-8e47-4a8f-bc85-d317d888ed99
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: baidu.com
   - name: 🇭🇰 香港|@ripaojiedian
     type: vmess
     server: v10.hdacd.com
@@ -338,13 +661,6 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 香港3|@ripaojiedian
-    type: trojan
-    server: 58.152.18.147
-    port: 443
-    password: 4843e94d205f3893f588255a591abe94
-    sni: www.nintendogames.net
-    skip-cert-verify: false
   - name: 香港4|@ripaojiedian
     type: trojan
     server: 95.40.93.39
@@ -672,25 +988,6 @@ proxies:
     password: Aimer
     sni: epge.muarua.filegear-sg.me
     skip-cert-verify: false
-  - name: 香港+电讯盈科有限公司
-    type: trojan
-    server: 58.152.53.219
-    port: 443
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
-  - name: 德国 法兰克福Oracle云计算数据中心
-    type: vmess
-    server: frankfurt01.zgjok.com
-    port: 443
-    uuid: b71579b1-6593-426d-90ac-f002fa96ade1
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers: {}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -708,38 +1005,70 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
-      - HK64｜机房｜低风险
-      - HK151｜机房｜低风险
       - US1｜机房｜低风险
-      - US55｜原生/疑似家宽｜非常安全
-      - US29｜原生/疑似家宽｜非常安全
-      - US23｜原生/疑似家宽｜非常安全
-      - US24｜原生/疑似家宽｜非常安全
-      - HK4｜家宽｜高风险 (黑名单)
+      - US5｜机房｜低风险
+      - US6｜机房｜低风险
+      - US8｜机房｜低风险
+      - US9｜机房｜低风险
+      - DE1｜机房｜低风险
+      - US10｜机房｜低风险
+      - US11｜机房｜低风险
+      - DE2｜机房｜低风险
+      - US12｜机房｜低风险
+      - US13｜机房｜低风险
+      - DE3｜机房｜低风险
+      - US14｜机房｜低风险
+      - US15｜机房｜低风险
+      - DE4｜机房｜低风险
+      - US16｜机房｜低风险
+      - US17｜机房｜低风险
+      - DE5｜机房｜低风险
       - IN1｜家宽｜非常安全
       - CN2｜家宽｜非常安全
-      - KR7｜机房｜低风险
-      - JP4｜机房｜低风险
-      - HK174｜原生/疑似家宽｜非常安全
-      - HK178｜原生/疑似家宽｜非常安全
-      - US30｜机房｜低风险
-      - DE63｜机房｜低风险
-      - US31｜机房｜低风险
-      - US32｜机房｜低风险
-      - DE64｜机房｜低风险
-      - US33｜机房｜低风险
-      - US34｜机房｜低风险
-      - DE65｜机房｜低风险
-      - US35｜机房｜低风险
-      - US36｜机房｜低风险
-      - DE66｜机房｜低风险
-      - US51｜家宽｜非常安全
-      - HK194｜家宽｜非常安全
-      - HK180｜家宽｜非常安全
-      - HK188｜原生/疑似家宽｜非常安全
-      - HK201｜机房｜低风险
-      - 🇭🇰 香港|@ripaojiedian
+      - US93｜原生/疑似家宽｜非常安全
+      - HK12｜家宽｜非常安全
+      - TW3｜商宽｜非常安全
+      - JP29｜机房｜低风险
+      - JP3｜原生/疑似家宽｜非常安全
+      - JP25｜原生/疑似家宽｜非常安全
+      - US116｜原生/疑似家宽｜非常安全
+      - HK86｜机房｜低风险
+      - CN3｜家宽｜非常安全
+      - CN4｜家宽｜非常安全
+      - CN5｜家宽｜非常安全
+      - HK18｜原生/疑似家宽｜非常安全
+      - HK20｜原生/疑似家宽｜非常安全
+      - HK23｜原生/疑似家宽｜非常安全
+      - HK24｜原生/疑似家宽｜非常安全
+      - US81｜家宽｜非常安全
+      - US85｜家宽｜非常安全
+      - HK35｜原生/疑似家宽｜非常安全
+      - HK44｜原生/疑似家宽｜非常安全
+      - US90｜家宽｜非常安全
+      - HK50｜机房｜低风险
+      - TW4｜机房｜低风险
+      - KR1｜机房｜低风险
+      - HK93｜机房｜低风险
+      - HK77｜原生/疑似家宽｜非常安全
+      - US112｜机房｜低风险
       - 香港3|@ripaojiedian
+      - DE151｜机房｜低风险
+      - RU10｜商宽｜非常安全
+      - MY1｜家宽｜非常安全
+      - HK94｜机房｜低风险
+      - HK95｜原生/疑似家宽｜非常安全
+      - SG11｜机房｜低风险
+      - TW5｜机房｜低风险
+      - AU1｜机房｜低风险
+      - IN4｜机房｜低风险
+      - VN1｜机房｜低风险
+      - FR5｜机房｜低风险
+      - FR6｜机房｜低风险
+      - US118｜机房｜低风险
+      - FR7｜机房｜低风险
+      - CA1｜机房｜低风险
+      - HK96｜机房｜低风险
+      - 🇭🇰 香港|@ripaojiedian
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
       - 日本|@ripaojiedian
@@ -778,8 +1107,6 @@ proxy-groups:
       - US_speednode_0045
       - US_speednode_0046
       - US_speednode_0047
-      - 香港+电讯盈科有限公司
-      - 德国 法兰克福Oracle云计算数据中心
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -793,38 +1120,70 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
-      - HK64｜机房｜低风险
-      - HK151｜机房｜低风险
       - US1｜机房｜低风险
-      - US55｜原生/疑似家宽｜非常安全
-      - US29｜原生/疑似家宽｜非常安全
-      - US23｜原生/疑似家宽｜非常安全
-      - US24｜原生/疑似家宽｜非常安全
-      - HK4｜家宽｜高风险 (黑名单)
+      - US5｜机房｜低风险
+      - US6｜机房｜低风险
+      - US8｜机房｜低风险
+      - US9｜机房｜低风险
+      - DE1｜机房｜低风险
+      - US10｜机房｜低风险
+      - US11｜机房｜低风险
+      - DE2｜机房｜低风险
+      - US12｜机房｜低风险
+      - US13｜机房｜低风险
+      - DE3｜机房｜低风险
+      - US14｜机房｜低风险
+      - US15｜机房｜低风险
+      - DE4｜机房｜低风险
+      - US16｜机房｜低风险
+      - US17｜机房｜低风险
+      - DE5｜机房｜低风险
       - IN1｜家宽｜非常安全
       - CN2｜家宽｜非常安全
-      - KR7｜机房｜低风险
-      - JP4｜机房｜低风险
-      - HK174｜原生/疑似家宽｜非常安全
-      - HK178｜原生/疑似家宽｜非常安全
-      - US30｜机房｜低风险
-      - DE63｜机房｜低风险
-      - US31｜机房｜低风险
-      - US32｜机房｜低风险
-      - DE64｜机房｜低风险
-      - US33｜机房｜低风险
-      - US34｜机房｜低风险
-      - DE65｜机房｜低风险
-      - US35｜机房｜低风险
-      - US36｜机房｜低风险
-      - DE66｜机房｜低风险
-      - US51｜家宽｜非常安全
-      - HK194｜家宽｜非常安全
-      - HK180｜家宽｜非常安全
-      - HK188｜原生/疑似家宽｜非常安全
-      - HK201｜机房｜低风险
-      - 🇭🇰 香港|@ripaojiedian
+      - US93｜原生/疑似家宽｜非常安全
+      - HK12｜家宽｜非常安全
+      - TW3｜商宽｜非常安全
+      - JP29｜机房｜低风险
+      - JP3｜原生/疑似家宽｜非常安全
+      - JP25｜原生/疑似家宽｜非常安全
+      - US116｜原生/疑似家宽｜非常安全
+      - HK86｜机房｜低风险
+      - CN3｜家宽｜非常安全
+      - CN4｜家宽｜非常安全
+      - CN5｜家宽｜非常安全
+      - HK18｜原生/疑似家宽｜非常安全
+      - HK20｜原生/疑似家宽｜非常安全
+      - HK23｜原生/疑似家宽｜非常安全
+      - HK24｜原生/疑似家宽｜非常安全
+      - US81｜家宽｜非常安全
+      - US85｜家宽｜非常安全
+      - HK35｜原生/疑似家宽｜非常安全
+      - HK44｜原生/疑似家宽｜非常安全
+      - US90｜家宽｜非常安全
+      - HK50｜机房｜低风险
+      - TW4｜机房｜低风险
+      - KR1｜机房｜低风险
+      - HK93｜机房｜低风险
+      - HK77｜原生/疑似家宽｜非常安全
+      - US112｜机房｜低风险
       - 香港3|@ripaojiedian
+      - DE151｜机房｜低风险
+      - RU10｜商宽｜非常安全
+      - MY1｜家宽｜非常安全
+      - HK94｜机房｜低风险
+      - HK95｜原生/疑似家宽｜非常安全
+      - SG11｜机房｜低风险
+      - TW5｜机房｜低风险
+      - AU1｜机房｜低风险
+      - IN4｜机房｜低风险
+      - VN1｜机房｜低风险
+      - FR5｜机房｜低风险
+      - FR6｜机房｜低风险
+      - US118｜机房｜低风险
+      - FR7｜机房｜低风险
+      - CA1｜机房｜低风险
+      - HK96｜机房｜低风险
+      - 🇭🇰 香港|@ripaojiedian
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
       - 日本|@ripaojiedian
@@ -863,8 +1222,6 @@ proxy-groups:
       - US_speednode_0045
       - US_speednode_0046
       - US_speednode_0047
-      - 香港+电讯盈科有限公司
-      - 德国 法兰克福Oracle云计算数据中心
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -880,38 +1237,70 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
-      - HK64｜机房｜低风险
-      - HK151｜机房｜低风险
       - US1｜机房｜低风险
-      - US55｜原生/疑似家宽｜非常安全
-      - US29｜原生/疑似家宽｜非常安全
-      - US23｜原生/疑似家宽｜非常安全
-      - US24｜原生/疑似家宽｜非常安全
-      - HK4｜家宽｜高风险 (黑名单)
+      - US5｜机房｜低风险
+      - US6｜机房｜低风险
+      - US8｜机房｜低风险
+      - US9｜机房｜低风险
+      - DE1｜机房｜低风险
+      - US10｜机房｜低风险
+      - US11｜机房｜低风险
+      - DE2｜机房｜低风险
+      - US12｜机房｜低风险
+      - US13｜机房｜低风险
+      - DE3｜机房｜低风险
+      - US14｜机房｜低风险
+      - US15｜机房｜低风险
+      - DE4｜机房｜低风险
+      - US16｜机房｜低风险
+      - US17｜机房｜低风险
+      - DE5｜机房｜低风险
       - IN1｜家宽｜非常安全
       - CN2｜家宽｜非常安全
-      - KR7｜机房｜低风险
-      - JP4｜机房｜低风险
-      - HK174｜原生/疑似家宽｜非常安全
-      - HK178｜原生/疑似家宽｜非常安全
-      - US30｜机房｜低风险
-      - DE63｜机房｜低风险
-      - US31｜机房｜低风险
-      - US32｜机房｜低风险
-      - DE64｜机房｜低风险
-      - US33｜机房｜低风险
-      - US34｜机房｜低风险
-      - DE65｜机房｜低风险
-      - US35｜机房｜低风险
-      - US36｜机房｜低风险
-      - DE66｜机房｜低风险
-      - US51｜家宽｜非常安全
-      - HK194｜家宽｜非常安全
-      - HK180｜家宽｜非常安全
-      - HK188｜原生/疑似家宽｜非常安全
-      - HK201｜机房｜低风险
-      - 🇭🇰 香港|@ripaojiedian
+      - US93｜原生/疑似家宽｜非常安全
+      - HK12｜家宽｜非常安全
+      - TW3｜商宽｜非常安全
+      - JP29｜机房｜低风险
+      - JP3｜原生/疑似家宽｜非常安全
+      - JP25｜原生/疑似家宽｜非常安全
+      - US116｜原生/疑似家宽｜非常安全
+      - HK86｜机房｜低风险
+      - CN3｜家宽｜非常安全
+      - CN4｜家宽｜非常安全
+      - CN5｜家宽｜非常安全
+      - HK18｜原生/疑似家宽｜非常安全
+      - HK20｜原生/疑似家宽｜非常安全
+      - HK23｜原生/疑似家宽｜非常安全
+      - HK24｜原生/疑似家宽｜非常安全
+      - US81｜家宽｜非常安全
+      - US85｜家宽｜非常安全
+      - HK35｜原生/疑似家宽｜非常安全
+      - HK44｜原生/疑似家宽｜非常安全
+      - US90｜家宽｜非常安全
+      - HK50｜机房｜低风险
+      - TW4｜机房｜低风险
+      - KR1｜机房｜低风险
+      - HK93｜机房｜低风险
+      - HK77｜原生/疑似家宽｜非常安全
+      - US112｜机房｜低风险
       - 香港3|@ripaojiedian
+      - DE151｜机房｜低风险
+      - RU10｜商宽｜非常安全
+      - MY1｜家宽｜非常安全
+      - HK94｜机房｜低风险
+      - HK95｜原生/疑似家宽｜非常安全
+      - SG11｜机房｜低风险
+      - TW5｜机房｜低风险
+      - AU1｜机房｜低风险
+      - IN4｜机房｜低风险
+      - VN1｜机房｜低风险
+      - FR5｜机房｜低风险
+      - FR6｜机房｜低风险
+      - US118｜机房｜低风险
+      - FR7｜机房｜低风险
+      - CA1｜机房｜低风险
+      - HK96｜机房｜低风险
+      - 🇭🇰 香港|@ripaojiedian
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
       - 日本|@ripaojiedian
@@ -950,8 +1339,6 @@ proxy-groups:
       - US_speednode_0045
       - US_speednode_0046
       - US_speednode_0047
-      - 香港+电讯盈科有限公司
-      - 德国 法兰克福Oracle云计算数据中心
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
