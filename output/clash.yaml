@@ -843,18 +843,15 @@ proxies:
     uuid: 147ccf68-ca08-4ce9-a507-b0f0d5af119c
     tls: true
     network: tcp
-  - name: 香港 阿里云
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: n1761214908.wpg27.xyz
-    port: 443
-    uuid: 3514a93f-bb26-4442-8f99-971b2ff3388a
+    server: 216.238.86.158
+    port: 34460
+    uuid: 90be214d-048c-4ea2-a602-b8e4d4e51e36
     alterId: 0
     cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers: {}
+    tls: false
+    network: none
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -959,7 +956,7 @@ proxy-groups:
       - RU_speednode_0021
       - RU_speednode_0022
       - US_speednode_0023
-      - 香港 阿里云
+      - 美国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -1060,7 +1057,7 @@ proxy-groups:
       - RU_speednode_0021
       - RU_speednode_0022
       - US_speednode_0023
-      - 香港 阿里云
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -1163,7 +1160,7 @@ proxy-groups:
       - RU_speednode_0021
       - RU_speednode_0022
       - US_speednode_0023
-      - 香港 阿里云
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
