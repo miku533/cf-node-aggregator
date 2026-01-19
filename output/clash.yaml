@@ -612,22 +612,6 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 北美地区 V2CROSS.COM
-    type: vmess
-    server: 23.138.148.47
-    port: 42507
-    uuid: 4db07b13-6524-49d2-b432-1f312c0e9c7c
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: none
-  - name: 香港+电讯盈科有限公司
-    type: trojan
-    server: 58.152.46.246
-    port: 443
-    password: BxceQaOe
-    sni: t.me%252Fripaojiedian
-    skip-cert-verify: false
   - name: 英国 V2CROSS.COM
     type: vmess
     server: 82.198.246.97
@@ -637,13 +621,15 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 香港+电讯盈科有限公司 [1]
-    type: trojan
-    server: 58.152.53.219
-    port: 443
-    password: BxceQaOe
-    sni: t.me%252Fripaojiedian
-    skip-cert-verify: false
+  - name: 南非 V2CROSS.COM
+    type: vmess
+    server: 45.207.157.29
+    port: 13852
+    uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -717,10 +703,8 @@ proxy-groups:
       - US_speednode_0055
       - US_speednode_0056
       - US_speednode_0057
-      - 北美地区 V2CROSS.COM
-      - 香港+电讯盈科有限公司
       - 英国 V2CROSS.COM
-      - 香港+电讯盈科有限公司 [1]
+      - 南非 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -790,10 +774,8 @@ proxy-groups:
       - US_speednode_0055
       - US_speednode_0056
       - US_speednode_0057
-      - 北美地区 V2CROSS.COM
-      - 香港+电讯盈科有限公司
       - 英国 V2CROSS.COM
-      - 香港+电讯盈科有限公司 [1]
+      - 南非 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -865,10 +847,8 @@ proxy-groups:
       - US_speednode_0055
       - US_speednode_0056
       - US_speednode_0057
-      - 北美地区 V2CROSS.COM
-      - 香港+电讯盈科有限公司
       - 英国 V2CROSS.COM
-      - 香港+电讯盈科有限公司 [1]
+      - 南非 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
