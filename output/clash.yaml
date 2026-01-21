@@ -543,28 +543,26 @@ proxies:
     cipher: auto
     tls: false
     network: none
-  - name: 广东省湛江市 移动
-    type: vmess
-    server: tunnel2.qqa678.com
-    port: 47081
-    uuid: 940962e9-85c7-43fa-a9ca-d523b15a32a5
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: 167.17.185.228
+    port: 10889
+    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+    sni: web.max
+    skip-cert-verify: false
+  - name: 西班牙+V2CROSS.COM
+    type: trojan
+    server: 80.173.231.254
+    port: 12420
+    password: wp9IsiY82uQhcmgNC1eoBM
+    sni: www.semanticstaplegun.click
+    skip-cert-verify: true
   - name: 德国+黑森州法兰克福Choopa数据中心
     type: trojan
     server: 45.32.158.138
     port: 20994
     password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
     sni: ads.x5.ru
-    skip-cert-verify: false
-  - name: 俄罗斯+V2CROSS.COM
-    type: trojan
-    server: 212.193.18.144
-    port: 36158
-    password: ZblhWr0mqMakCPg.N
-    sni: ya.ru
     skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
@@ -641,9 +639,9 @@ proxy-groups:
       - UA_speednode_0019
       - US_speednode_0020
       - 美国 阿里云
-      - 广东省湛江市 移动
+      - 加拿大+V2CROSS.COM
+      - 西班牙+V2CROSS.COM
       - 德国+黑森州法兰克福Choopa数据中心
-      - 俄罗斯+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -715,9 +713,9 @@ proxy-groups:
       - UA_speednode_0019
       - US_speednode_0020
       - 美国 阿里云
-      - 广东省湛江市 移动
+      - 加拿大+V2CROSS.COM
+      - 西班牙+V2CROSS.COM
       - 德国+黑森州法兰克福Choopa数据中心
-      - 俄罗斯+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -791,9 +789,9 @@ proxy-groups:
       - UA_speednode_0019
       - US_speednode_0020
       - 美国 阿里云
-      - 广东省湛江市 移动
+      - 加拿大+V2CROSS.COM
+      - 西班牙+V2CROSS.COM
       - 德国+黑森州法兰克福Choopa数据中心
-      - 俄罗斯+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
