@@ -324,7 +324,7 @@ proxies:
     password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
     sni: blackshadow.dpdns.org
     skip-cert-verify: true
-  - name: 香港|@ripaojiedian
+  - name: 🇭🇰 香港|@ripaojiedian
     type: vmess
     server: v10.hdacd.com
     port: 30807
@@ -333,7 +333,7 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 香港2|@ripaojiedian
+  - name: 🇭🇰 香港2|@ripaojiedian
     type: vmess
     server: 47.242.192.233
     port: 34659
@@ -663,6 +663,19 @@ proxies:
     uuid: 02fb468f-21f2-460e-bfa1-ef52ae5e627f
     tls: true
     network: tcp
+  - name: 日本 V2CROSS.COM
+    type: vmess
+    server: seoul03.zgjok.com
+    port: 443
+    uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: seoul03.zgjok.com
   - name: 西班牙+V2CROSS.COM
     type: trojan
     server: 80.173.231.254
@@ -670,13 +683,32 @@ proxies:
     password: wp9IsiY82uQhcmgNC1eoBM
     sni: www.semanticstaplegun.click
     skip-cert-verify: true
-  - name: 台湾省台中市+中华电信
-    type: trojan
-    server: green2.cdntencentmusic.com
-    port: 31103
-    password: 808b5ae2-7b94-43e7-8632-c639c3f72415
-    sni: green2.cdntencentmusic.com
-    skip-cert-verify: true
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 104.18.32.47
+    port: 443
+    uuid: 52c7f779-2cbc-4ec9-d4eb-7f62964e4a4e
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /ABC
+      headers:
+        Host: dump.nootkasound7.com
+  - name: 美国 CloudFlare节点 [1]
+    type: vmess
+    server: t1.620720.xyz
+    port: 8443
+    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: t1.620720.xyz
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -725,8 +757,8 @@ proxy-groups:
       - KR8｜机房｜低风险
       - DE54｜机房｜低风险
       - US172｜机房｜高风险 (黑名单)
-      - 香港|@ripaojiedian
-      - 香港2|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港2|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
@@ -770,8 +802,10 @@ proxy-groups:
       - UA_speednode_0036
       - US_speednode_0037
       - US_speednode_0038
+      - 日本 V2CROSS.COM
       - 西班牙+V2CROSS.COM
-      - 台湾省台中市+中华电信
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 [1]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -816,8 +850,8 @@ proxy-groups:
       - KR8｜机房｜低风险
       - DE54｜机房｜低风险
       - US172｜机房｜高风险 (黑名单)
-      - 香港|@ripaojiedian
-      - 香港2|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港2|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
@@ -861,8 +895,10 @@ proxy-groups:
       - UA_speednode_0036
       - US_speednode_0037
       - US_speednode_0038
+      - 日本 V2CROSS.COM
       - 西班牙+V2CROSS.COM
-      - 台湾省台中市+中华电信
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -909,8 +945,8 @@ proxy-groups:
       - KR8｜机房｜低风险
       - DE54｜机房｜低风险
       - US172｜机房｜高风险 (黑名单)
-      - 香港|@ripaojiedian
-      - 香港2|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港2|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
@@ -954,8 +990,10 @@ proxy-groups:
       - UA_speednode_0036
       - US_speednode_0037
       - US_speednode_0038
+      - 日本 V2CROSS.COM
       - 西班牙+V2CROSS.COM
-      - 台湾省台中市+中华电信
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
