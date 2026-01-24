@@ -2216,18 +2216,6 @@ proxies:
       path: /?ed=2048fp=chrome
       headers:
         Host: sepah.systemgamingirani.ir
-  - name: 美国 得克萨斯州达拉斯Cloudflare Warp节点
-    type: vmess
-    server: 8.6.112.0
-    port: 2053
-    uuid: 8b23a6c9-0ca6-4134-83f2-39d42da0d648
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers: {}
   - name: 俄罗斯+V2CROSS.COM
     type: trojan
     server: 212.193.18.144
@@ -2235,53 +2223,13 @@ proxies:
     password: ZblhWr0mqMakCPg.N
     sni: ya.ru
     skip-cert-verify: false
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: t1.620720.xyz
-    port: 8443
-    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: t1.620720.xyz
   - name: 台湾省台中市+中华电信
     type: trojan
     server: green2.cdntencentmusic.com
-    port: 35501
+    port: 31102
     password: d8b3841a-ece7-4ce7-b2f9-30fc909cbeea
     sni: green2.cdntencentmusic.com
     skip-cert-verify: true
-  - name: 挪威+V2CROSS.COM
-    type: trojan
-    server: 83.143.87.9
-    port: 18581
-    password: RPyW62_b9aH.ztJKeArou
-    sni: 83.143.87.9
-    skip-cert-verify: false
-  - name: 西班牙+V2CROSS.COM
-    type: trojan
-    server: 80.173.230.196
-    port: 26279
-    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
-    sni: 80.173.230.196
-    skip-cert-verify: false
-  - name: 美国 CloudFlare节点 [1]
-    type: vmess
-    server: cf-proxy.202507.xyz
-    port: 443
-    uuid: fa8c811b-7bd3-4c04-b9dd-c701698f1efd
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: gb.202507.xyz
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -2516,13 +2464,8 @@ proxy-groups:
       - US_speednode_0196
       - US_speednode_0198
       - US_speednode_0199
-      - 美国 得克萨斯州达拉斯Cloudflare Warp节点
       - 俄罗斯+V2CROSS.COM
-      - 美国 CloudFlare节点
       - 台湾省台中市+中华电信
-      - 挪威+V2CROSS.COM
-      - 西班牙+V2CROSS.COM
-      - 美国 CloudFlare节点 [1]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -2753,13 +2696,8 @@ proxy-groups:
       - US_speednode_0196
       - US_speednode_0198
       - US_speednode_0199
-      - 美国 得克萨斯州达拉斯Cloudflare Warp节点
       - 俄罗斯+V2CROSS.COM
-      - 美国 CloudFlare节点
       - 台湾省台中市+中华电信
-      - 挪威+V2CROSS.COM
-      - 西班牙+V2CROSS.COM
-      - 美国 CloudFlare节点 [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -2992,13 +2930,8 @@ proxy-groups:
       - US_speednode_0196
       - US_speednode_0198
       - US_speednode_0199
-      - 美国 得克萨斯州达拉斯Cloudflare Warp节点
       - 俄罗斯+V2CROSS.COM
-      - 美国 CloudFlare节点
       - 台湾省台中市+中华电信
-      - 挪威+V2CROSS.COM
-      - 西班牙+V2CROSS.COM
-      - 美国 CloudFlare节点 [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
