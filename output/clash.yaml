@@ -2216,6 +2216,41 @@ proxies:
       path: /?ed=2048fp=chrome
       headers:
         Host: sepah.systemgamingirani.ir
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: 167.17.185.228
+    port: 10889
+    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+    sni: web.max
+    skip-cert-verify: true
+  - name: 台湾省台中市+中华电信
+    type: trojan
+    server: green2.cdntencentmusic.com
+    port: 31102
+    password: 5c762006-ed60-4b35-b8fe-4520adeac906
+    sni: green2.cdntencentmusic.com
+    skip-cert-verify: false
+  - name: 台湾省台中市+中华电信 [1]
+    type: trojan
+    server: green2.cdntencentmusic.com
+    port: 35501
+    password: 3d6feccc-ce86-4bf9-b943-207df9818ad5
+    sni: green2.cdntencentmusic.com
+    skip-cert-verify: false
+  - name: 加拿大+V2CROSS.COM [1]
+    type: trojan
+    server: 167.17.185.172
+    port: 10889
+    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+    sni: web.max.ru
+    skip-cert-verify: false
+  - name: 台湾省台中市+中华电信 [2]
+    type: trojan
+    server: green2.cdntencentmusic.com
+    port: 31101
+    password: 655a3e72-788e-41c1-8c23-6032490c64a0
+    sni: green2.cdntencentmusic.com
+    skip-cert-verify: true
   - name: 俄罗斯+V2CROSS.COM
     type: trojan
     server: 212.193.18.144
@@ -2223,13 +2258,6 @@ proxies:
     password: ZblhWr0mqMakCPg.N
     sni: ya.ru
     skip-cert-verify: false
-  - name: 台湾省台中市+中华电信
-    type: trojan
-    server: green2.cdntencentmusic.com
-    port: 31102
-    password: d8b3841a-ece7-4ce7-b2f9-30fc909cbeea
-    sni: green2.cdntencentmusic.com
-    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -2464,8 +2492,12 @@ proxy-groups:
       - US_speednode_0196
       - US_speednode_0198
       - US_speednode_0199
-      - 俄罗斯+V2CROSS.COM
+      - 加拿大+V2CROSS.COM
       - 台湾省台中市+中华电信
+      - 台湾省台中市+中华电信 [1]
+      - 加拿大+V2CROSS.COM [1]
+      - 台湾省台中市+中华电信 [2]
+      - 俄罗斯+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -2696,8 +2728,12 @@ proxy-groups:
       - US_speednode_0196
       - US_speednode_0198
       - US_speednode_0199
-      - 俄罗斯+V2CROSS.COM
+      - 加拿大+V2CROSS.COM
       - 台湾省台中市+中华电信
+      - 台湾省台中市+中华电信 [1]
+      - 加拿大+V2CROSS.COM [1]
+      - 台湾省台中市+中华电信 [2]
+      - 俄罗斯+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -2930,8 +2966,12 @@ proxy-groups:
       - US_speednode_0196
       - US_speednode_0198
       - US_speednode_0199
-      - 俄罗斯+V2CROSS.COM
+      - 加拿大+V2CROSS.COM
       - 台湾省台中市+中华电信
+      - 台湾省台中市+中华电信 [1]
+      - 加拿大+V2CROSS.COM [1]
+      - 台湾省台中市+中华电信 [2]
+      - 俄罗斯+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
