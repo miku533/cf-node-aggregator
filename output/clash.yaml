@@ -244,20 +244,20 @@ proxies:
     password: 30077070-596e-48ea-9400-14c8ed07bd97
     sni: torontorm1.686911.xyz
     skip-cert-verify: true
-  - name: 🇺🇸 美国2|@ripaojiedian
+  - name: US21｜机房｜低风险
     type: trojan
     server: 52.195.170.6
     port: 491
     password: 869e9086806483ca4744a4cb0f3d6e16
     sni: www.nintendogames.net
-    skip-cert-verify: false
-  - name: 🇸🇬 新加坡2|@ripaojiedian
+    skip-cert-verify: true
+  - name: SG7｜机房｜低风险
     type: trojan
     server: 160.16.87.174
     port: 3901
     password: 869e9086806483ca4744a4cb0f3d6e16
     sni: www.nintendogames.net
-    skip-cert-verify: false
+    skip-cert-verify: true
   - name: DE29｜机房｜高风险 (黑名单)
     type: vmess
     server: 82.198.246.97
@@ -294,41 +294,6 @@ proxies:
     type: trojan
     server: 58.152.110.210
     port: 443
-    password: 869e9086806483ca4744a4cb0f3d6e16
-    sni: www.nintendogames.net
-    skip-cert-verify: false
-  - name: 🇭🇰 香港5|@ripaojiedian
-    type: trojan
-    server: 18.179.118.202
-    port: 1867
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: false
-  - name: 🇯🇵 日本2|@ripaojiedian
-    type: trojan
-    server: 18.179.118.202
-    port: 1933
-    password: 869e9086806483ca4744a4cb0f3d6e16
-    sni: www.nintendogames.net
-    skip-cert-verify: false
-  - name: 🇯🇵 日本3|@ripaojiedian
-    type: trojan
-    server: 52.195.170.6
-    port: 1933
-    password: 869e9086806483ca4744a4cb0f3d6e16
-    sni: www.nintendogames.net
-    skip-cert-verify: false
-  - name: 🇸🇬 新加坡|@ripaojiedian
-    type: trojan
-    server: 160.16.70.180
-    port: 3901
-    password: 869e9086806483ca4744a4cb0f3d6e16
-    sni: www.nintendogames.net
-    skip-cert-verify: false
-  - name: 🇺🇸 美国|@ripaojiedian
-    type: trojan
-    server: 18.179.118.202
-    port: 5076
     password: 869e9086806483ca4744a4cb0f3d6e16
     sni: www.nintendogames.net
     skip-cert-verify: false
@@ -791,27 +756,34 @@ proxies:
       path: /x-aniu/?ed=2560security=tls
       headers:
         Host: l.ayovo.netlib.re
+  - name: 西班牙+V2CROSS.COM
+    type: trojan
+    server: 80.173.231.254
+    port: 12420
+    password: wp9IsiY82uQhcmgNC1eoBM
+    sni: www.semanticstaplegun.click
+    skip-cert-verify: false
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 140.82.35.244
+    port: 20994
+    password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
+    sni: ads.x5.ru
+    skip-cert-verify: false
+  - name: 俄罗斯+V2CROSS.COM
+    type: trojan
+    server: 212.193.18.144
+    port: 36158
+    password: ZblhWr0mqMakCPg.N
+    sni: ya.ru
+    skip-cert-verify: false
   - name: 挪威+V2CROSS.COM
     type: trojan
     server: 83.143.87.9
     port: 18581
     password: RPyW62_b9aH.ztJKeArou
     sni: 83.143.87.9
-    skip-cert-verify: false
-  - name: 台湾省台中市+中华电信
-    type: trojan
-    server: green2.cdntencentmusic.com
-    port: 31102
-    password: 49f42d5b-7c92-4f26-aeb6-89b9dd7fa0a5
-    sni: green2.cdntencentmusic.com
-    skip-cert-verify: false
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: 167.17.185.228
-    port: 10889
-    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: web.max
-    skip-cert-verify: false
+    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -848,18 +820,13 @@ proxy-groups:
       - JP5｜机房｜低风险
       - US13｜机房｜低风险
       - CA1｜机房｜低风险
-      - 🇺🇸 美国2|@ripaojiedian
-      - 🇸🇬 新加坡2|@ripaojiedian
+      - US21｜机房｜低风险
+      - SG7｜机房｜低风险
       - DE29｜机房｜高风险 (黑名单)
       - FR5｜机房｜高风险 (黑名单)
       - DE38｜机房｜低风险
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇺🇸 美国|@ripaojiedian
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
       - 日本|@ripaojiedian
@@ -911,9 +878,10 @@ proxy-groups:
       - US_speednode_0057
       - US_speednode_0058
       - US_speednode_0059
+      - 西班牙+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
       - 挪威+V2CROSS.COM
-      - 台湾省台中市+中华电信
-      - 加拿大+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -946,18 +914,13 @@ proxy-groups:
       - JP5｜机房｜低风险
       - US13｜机房｜低风险
       - CA1｜机房｜低风险
-      - 🇺🇸 美国2|@ripaojiedian
-      - 🇸🇬 新加坡2|@ripaojiedian
+      - US21｜机房｜低风险
+      - SG7｜机房｜低风险
       - DE29｜机房｜高风险 (黑名单)
       - FR5｜机房｜高风险 (黑名单)
       - DE38｜机房｜低风险
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇺🇸 美国|@ripaojiedian
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
       - 日本|@ripaojiedian
@@ -1009,9 +972,10 @@ proxy-groups:
       - US_speednode_0057
       - US_speednode_0058
       - US_speednode_0059
+      - 西班牙+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
       - 挪威+V2CROSS.COM
-      - 台湾省台中市+中华电信
-      - 加拿大+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -1046,18 +1010,13 @@ proxy-groups:
       - JP5｜机房｜低风险
       - US13｜机房｜低风险
       - CA1｜机房｜低风险
-      - 🇺🇸 美国2|@ripaojiedian
-      - 🇸🇬 新加坡2|@ripaojiedian
+      - US21｜机房｜低风险
+      - SG7｜机房｜低风险
       - DE29｜机房｜高风险 (黑名单)
       - FR5｜机房｜高风险 (黑名单)
       - DE38｜机房｜低风险
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇺🇸 美国|@ripaojiedian
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
       - 日本|@ripaojiedian
@@ -1109,9 +1068,10 @@ proxy-groups:
       - US_speednode_0057
       - US_speednode_0058
       - US_speednode_0059
+      - 西班牙+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
       - 挪威+V2CROSS.COM
-      - 台湾省台中市+中华电信
-      - 加拿大+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
