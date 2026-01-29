@@ -770,40 +770,12 @@ proxies:
       path: /x-aniu/?ed=2560security=tls
       headers:
         Host: l.ayovo.netlib.re
-  - name: 香港+电讯盈科有限公司
-    type: trojan
-    server: 58.152.53.45
-    port: 443
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: false
-  - name: 美国 阿里云
-    type: vmess
-    server: 47.253.197.26
-    port: 12056
-    uuid: dd7be7f1-38ff-45e6-f1e5-b20c2190f527
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: none
-  - name: 日本 东京阿里云
-    type: vmess
-    server: n1753598451.74qxv.top
-    port: 443
-    uuid: 9798678f-5b8c-4ff1-bbdd-b9b5c1539de0
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers: {}
   - name: 德国+黑森州法兰克福Choopa数据中心
     type: trojan
     server: 45.32.158.138
     port: 20994
     password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
-    sni: ads.x5.ru
+    sni: 45.32.158.138
     skip-cert-verify: false
   - name: 西班牙+V2CROSS.COM
     type: trojan
@@ -812,12 +784,39 @@ proxies:
     password: wp9IsiY82uQhcmgNC1eoBM
     sni: www.semanticstaplegun.click
     skip-cert-verify: false
-  - name: 香港+电讯盈科有限公司 [1]
+  - name: 加拿大+V2CROSS.COM
     type: trojan
-    server: 58.152.25.130
+    server: 167.17.185.172
+    port: 10889
+    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+    sni: web.max.ru
+    skip-cert-verify: false
+  - name: 香港+电讯盈科有限公司
+    type: trojan
+    server: 219.76.135.98
     port: 443
     password: BxceQaOe
-    sni: t.me%2Fripaojiedian
+    sni: t.me%252Fripaojiedian
+    skip-cert-verify: false
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 172.67.204.84
+    port: 8080
+    uuid: nasnet
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /nasnet/cdn
+      headers:
+        Host: nasnet-511952424.mcitel.co
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 140.82.35.244
+    port: 20994
+    password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
+    sni: ads.x5.ru
     skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
@@ -915,12 +914,12 @@ proxy-groups:
       - US_speednode_0057
       - US_speednode_0058
       - US_speednode_0059
-      - 香港+电讯盈科有限公司
-      - 美国 阿里云
-      - 日本 东京阿里云
       - 德国+黑森州法兰克福Choopa数据中心
       - 西班牙+V2CROSS.COM
-      - 香港+电讯盈科有限公司 [1]
+      - 加拿大+V2CROSS.COM
+      - 香港+电讯盈科有限公司
+      - 美国 CloudFlare节点
+      - 美国+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -1013,12 +1012,12 @@ proxy-groups:
       - US_speednode_0057
       - US_speednode_0058
       - US_speednode_0059
-      - 香港+电讯盈科有限公司
-      - 美国 阿里云
-      - 日本 东京阿里云
       - 德国+黑森州法兰克福Choopa数据中心
       - 西班牙+V2CROSS.COM
-      - 香港+电讯盈科有限公司 [1]
+      - 加拿大+V2CROSS.COM
+      - 香港+电讯盈科有限公司
+      - 美国 CloudFlare节点
+      - 美国+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -1113,12 +1112,12 @@ proxy-groups:
       - US_speednode_0057
       - US_speednode_0058
       - US_speednode_0059
-      - 香港+电讯盈科有限公司
-      - 美国 阿里云
-      - 日本 东京阿里云
       - 德国+黑森州法兰克福Choopa数据中心
       - 西班牙+V2CROSS.COM
-      - 香港+电讯盈科有限公司 [1]
+      - 加拿大+V2CROSS.COM
+      - 香港+电讯盈科有限公司
+      - 美国 CloudFlare节点
+      - 美国+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
