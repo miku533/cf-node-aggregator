@@ -787,33 +787,31 @@ proxies:
         Host: l.ayovo.netlib.re
   - name: 美国 CloudFlare节点
     type: vmess
-    server: ddDFHhj.922922.Shop
-    port: 80
-    uuid: bce0c7cb-08d1-46a7-b77b-7bff8b46252f
+    server: 4D41-b510-Fc35f2D7ECd7.664.qzz.io
+    port: 443
+    uuid: 0507fbcd-b983-43a7-8e1d-2c561960ad4f
     alterId: 0
     cipher: auto
-    tls: false
+    tls: true
     network: ws
     ws-opts:
-      path: /RkUUbqhA9GJZBROjL3Q5vTymr
+      path: /pyyY4ZVTyJV3vr9noOhn
       headers:
-        Host: ddDFHhj.922922.Shop
+        Host: 4D41-b510-fC35f2d7ecd7.664.qZz.io
   - name: 西班牙+V2CROSS.COM
     type: trojan
-    server: 80.173.230.196
-    port: 26279
-    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
-    sni: 80.173.230.196
+    server: 80.173.231.254
+    port: 12420
+    password: wp9IsiY82uQhcmgNC1eoBM
+    sni: www.semanticstaplegun.click
     skip-cert-verify: false
-  - name: 湖南省长沙市 移动
-    type: vmess
-    server: v30.hdacd.com
-    port: 30830
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
+  - name: 挪威+V2CROSS.COM
+    type: trojan
+    server: 83.143.87.9
+    port: 18581
+    password: RPyW62_b9aH.ztJKeArou
+    sni: 83.143.87.9
+    skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -914,7 +912,7 @@ proxy-groups:
       - US_speednode_0041
       - 美国 CloudFlare节点
       - 西班牙+V2CROSS.COM
-      - 湖南省长沙市 移动
+      - 挪威+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -1011,7 +1009,7 @@ proxy-groups:
       - US_speednode_0041
       - 美国 CloudFlare节点
       - 西班牙+V2CROSS.COM
-      - 湖南省长沙市 移动
+      - 挪威+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -1110,7 +1108,7 @@ proxy-groups:
       - US_speednode_0041
       - 美国 CloudFlare节点
       - 西班牙+V2CROSS.COM
-      - 湖南省长沙市 移动
+      - 挪威+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
