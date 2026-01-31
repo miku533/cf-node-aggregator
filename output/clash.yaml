@@ -563,13 +563,28 @@ proxies:
     uuid: fdf3bd07-b310-487e-ada8-538e19e835f5
     tls: true
     network: tcp
-  - name: 挪威+V2CROSS.COM
-    type: trojan
-    server: 83.143.87.9
-    port: 18581
-    password: RPyW62_b9aH.ztJKeArou
-    sni: 83.143.87.9
-    skip-cert-verify: false
+  - name: 广东省 移动
+    type: vmess
+    server: v30.hdacd.com
+    port: 30830
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: tgju.org
+    port: 8080
+    uuid: nasnet
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /nasnet/cdn?ed=2560
+      headers:
+        Host: nasnet-571296497.iranpress.co
   - name: 英国 V2CROSS.COM
     type: vmess
     server: 82.198.246.97
@@ -579,27 +594,46 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 西班牙+V2CROSS.COM
+  - name: 美国 CloudFlare节点 [1]
+    type: vmess
+    server: d-4beD-b726-2c53a82e4925.664.qZz.io
+    port: 443
+    uuid: 0507fbcd-b983-43a7-8e1d-2c561960ad4f
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /pyyY4ZVTyJV3vr9noOhn
+      headers:
+        Host: D-4bEd-b726-2c53A82E4925.664.qzZ.iO
+  - name: 挪威+V2CROSS.COM
     type: trojan
-    server: 80.173.230.196
-    port: 26279
-    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
-    sni: 80.173.230.196
-    skip-cert-verify: false
-  - name: 西班牙+V2CROSS.COM [1]
-    type: trojan
-    server: 80.173.231.254
-    port: 12420
-    password: wp9IsiY82uQhcmgNC1eoBM
-    sni: www.semanticstaplegun.click
+    server: 83.143.87.9
+    port: 18581
+    password: RPyW62_b9aH.ztJKeArou
+    sni: 83.143.87.9
     skip-cert-verify: false
   - name: 加拿大+V2CROSS.COM
     type: trojan
-    server: 167.17.185.228
+    server: 167.17.185.172
     port: 10889
     password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: web.max
+    sni: web.max.ru
     skip-cert-verify: false
+  - name: 美国 CloudFlare节点 [2]
+    type: vmess
+    server: 172.67.204.84
+    port: 8080
+    uuid: nasnet
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /nasnet/cdn
+      headers:
+        Host: nasnet-511952424.mcitel.co
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -676,11 +710,13 @@ proxy-groups:
       - US_speednode_0022
       - US_speednode_0023
       - US_speednode_0024
-      - 挪威+V2CROSS.COM
+      - 广东省 移动
+      - 美国 CloudFlare节点
       - 英国 V2CROSS.COM
-      - 西班牙+V2CROSS.COM
-      - 西班牙+V2CROSS.COM [1]
+      - 美国 CloudFlare节点 [1]
+      - 挪威+V2CROSS.COM
       - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点 [2]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -753,11 +789,13 @@ proxy-groups:
       - US_speednode_0022
       - US_speednode_0023
       - US_speednode_0024
-      - 挪威+V2CROSS.COM
+      - 广东省 移动
+      - 美国 CloudFlare节点
       - 英国 V2CROSS.COM
-      - 西班牙+V2CROSS.COM
-      - 西班牙+V2CROSS.COM [1]
+      - 美国 CloudFlare节点 [1]
+      - 挪威+V2CROSS.COM
       - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点 [2]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -832,11 +870,13 @@ proxy-groups:
       - US_speednode_0022
       - US_speednode_0023
       - US_speednode_0024
-      - 挪威+V2CROSS.COM
+      - 广东省 移动
+      - 美国 CloudFlare节点
       - 英国 V2CROSS.COM
-      - 西班牙+V2CROSS.COM
-      - 西班牙+V2CROSS.COM [1]
+      - 美国 CloudFlare节点 [1]
+      - 挪威+V2CROSS.COM
       - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点 [2]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
