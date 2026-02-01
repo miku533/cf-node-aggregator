@@ -288,101 +288,93 @@ proxies:
     network: tcp
   - name: 香港3|@ripaojiedian
     type: trojan
-    server: 58.152.110.210
+    server: 203.198.122.20
     port: 443
     password: c1d83c0c7d57cead4379ba14a82df69b
     sni: www.nintendogames.net
     skip-cert-verify: false
+  - name: 香港4|@ripaojiedian
+    type: trojan
+    server: 43.198.83.39
+    port: 2266
+    password: BxceQaOe
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
   - name: 香港5|@ripaojiedian
     type: trojan
-    server: 54.178.100.75
+    server: 43.207.103.252
     port: 1867
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
   - name: 日本|@ripaojiedian
     type: trojan
-    server: 54.178.100.75
-    port: 3760
+    server: 54.199.5.138
+    port: 26378
     password: BxceQaOe
     sni: t.me%2Fripaojiedian
     skip-cert-verify: true
   - name: 日本2|@ripaojiedian
     type: trojan
-    server: 160.16.68.250
-    port: 3423
+    server: 160.16.105.192
+    port: 1933
     password: c1d83c0c7d57cead4379ba14a82df69b
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 日本3|@ripaojiedian
     type: trojan
-    server: 153.121.38.213
-    port: 3423
+    server: 54.199.5.138
+    port: 1933
+    password: c1d83c0c7d57cead4379ba14a82df69b
+    sni: www.nintendogames.net
+    skip-cert-verify: false
+  - name: 新加坡|@ripaojiedian
+    type: trojan
+    server: 160.16.144.208
+    port: 3076
     password: c1d83c0c7d57cead4379ba14a82df69b
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 新加坡2|@ripaojiedian
     type: trojan
-    server: 153.121.65.107
+    server: 160.16.124.17
     port: 3076
     password: c1d83c0c7d57cead4379ba14a82df69b
     sni: www.nintendogames.net
     skip-cert-verify: true
   - name: 新加坡3|@ripaojiedian
     type: trojan
-    server: 95.40.115.216
-    port: 1691
+    server: 43.207.103.252
+    port: 2673
     password: BxceQaOe
     sni: t.me%2Fripaojiedian
     skip-cert-verify: true
   - name: 美国|@ripaojiedian
     type: trojan
-    server: 43.207.157.137
-    port: 491
+    server: 160.16.72.205
+    port: 5076
     password: c1d83c0c7d57cead4379ba14a82df69b
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 美国2|@ripaojiedian
     type: trojan
-    server: 57.180.246.207
+    server: 160.16.72.205
     port: 491
     password: c1d83c0c7d57cead4379ba14a82df69b
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 美国3|@ripaojiedian
     type: trojan
-    server: 95.40.115.216
+    server: 43.198.83.39
     port: 2173
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
-  - name: 香港2|@ripaojiedian
+  - name: 🇻🇳 越南|@ripaojiedian
     type: vmess
-    server: 6f5bbcfb-t8v340-ta7sek-1thts.hkt.gotochinatown.net
-    port: 80
-    uuid: cb96c846-fd6d-11ef-a910-f23c9164ca5d
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: broadcastlv.chat.bilibili.com
-  - name: 🇸🇬 新加坡4|@ripaojiedian
-    type: vmess
-    server: v45.hdacd.com
-    port: 30845
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 🇯🇵 日本4|@ripaojiedian
-    type: vmess
-    server: tunnel1.qqa678.com
-    port: 47083
-    uuid: 9f8c122d-5b86-4c19-af87-64f458a88223
+    server: 160.191.245.48
+    port: 58623
+    uuid: 8d74803e-aa74-47ef-e3ae-23eeaa96f89d
     alterId: 0
     cipher: auto
     tls: false
@@ -563,18 +555,43 @@ proxies:
     uuid: fdf3bd07-b310-487e-ada8-538e19e835f5
     tls: true
     network: tcp
-  - name: 广东省 移动
-    type: vmess
-    server: v30.hdacd.com
-    port: 30830
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 0
-    cipher: auto
+  - name: 西班牙+V2CROSS.COM
+    type: trojan
+    server: 80.173.230.196
+    port: 26279
+    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
+    sni: 80.173.230.196
+    skip-cert-verify: false
+  - name: 伊朗+V2CROSS.COM
+    type: vless
+    server: freeus.pishipishi.pro
+    port: 1313
+    uuid: 5fc41f2c-8e78-4c7d-a572-cae85cb9b063
     tls: false
     network: tcp
   - name: 美国 CloudFlare节点
     type: vmess
-    server: tgju.org
+    server: aio.unlimited.biz.id
+    port: 443
+    uuid: f282b878-8711-45a1-8c69-5564172123c1
+    alterId: 0
+    cipher: zero
+    tls: true
+    network: ws
+    ws-opts:
+      path: /aioproxybot/129.150.49.58-18650
+      headers:
+        Host: aio.unlimited.biz.id
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 140.82.35.244
+    port: 20994
+    password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
+    sni: ads.x5.ru
+    skip-cert-verify: false
+  - name: 美国 CloudFlare节点 [1]
+    type: vmess
+    server: 104.21.69.44
     port: 8080
     uuid: nasnet
     alterId: 0
@@ -582,45 +599,9 @@ proxies:
     tls: false
     network: ws
     ws-opts:
-      path: /nasnet/cdn?ed=2560
+      path: /nasnet/cdn
       headers:
-        Host: nasnet-571296497.iranpress.co
-  - name: 英国 V2CROSS.COM
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 美国 CloudFlare节点 [1]
-    type: vmess
-    server: d-4beD-b726-2c53a82e4925.664.qZz.io
-    port: 443
-    uuid: 0507fbcd-b983-43a7-8e1d-2c561960ad4f
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /pyyY4ZVTyJV3vr9noOhn
-      headers:
-        Host: D-4bEd-b726-2c53A82E4925.664.qzZ.iO
-  - name: 挪威+V2CROSS.COM
-    type: trojan
-    server: 83.143.87.9
-    port: 18581
-    password: RPyW62_b9aH.ztJKeArou
-    sni: 83.143.87.9
-    skip-cert-verify: false
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: 167.17.185.172
-    port: 10889
-    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: web.max.ru
-    skip-cert-verify: false
+        Host: nasnet-511952424.mcitel.co
   - name: 美国 CloudFlare节点 [2]
     type: vmess
     server: 172.67.204.84
@@ -634,6 +615,15 @@ proxies:
       path: /nasnet/cdn
       headers:
         Host: nasnet-511952424.mcitel.co
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 216.238.86.158
+    port: 34460
+    uuid: 90be214d-048c-4ea2-a602-b8e4d4e51e36
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -675,18 +665,18 @@ proxy-groups:
       - US21｜机房｜低风险
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
+      - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
+      - 新加坡|@ripaojiedian
       - 新加坡2|@ripaojiedian
       - 新加坡3|@ripaojiedian
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - 香港2|@ripaojiedian
-      - 🇸🇬 新加坡4|@ripaojiedian
-      - 🇯🇵 日本4|@ripaojiedian
+      - 🇻🇳 越南|@ripaojiedian
       - AU_speednode_0001
       - BG_speednode_0002
       - CN_speednode_0003
@@ -710,13 +700,13 @@ proxy-groups:
       - US_speednode_0022
       - US_speednode_0023
       - US_speednode_0024
-      - 广东省 移动
+      - 西班牙+V2CROSS.COM
+      - 伊朗+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 英国 V2CROSS.COM
+      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点 [1]
-      - 挪威+V2CROSS.COM
-      - 加拿大+V2CROSS.COM
       - 美国 CloudFlare节点 [2]
+      - 美国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -754,18 +744,18 @@ proxy-groups:
       - US21｜机房｜低风险
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
+      - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
+      - 新加坡|@ripaojiedian
       - 新加坡2|@ripaojiedian
       - 新加坡3|@ripaojiedian
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - 香港2|@ripaojiedian
-      - 🇸🇬 新加坡4|@ripaojiedian
-      - 🇯🇵 日本4|@ripaojiedian
+      - 🇻🇳 越南|@ripaojiedian
       - AU_speednode_0001
       - BG_speednode_0002
       - CN_speednode_0003
@@ -789,13 +779,13 @@ proxy-groups:
       - US_speednode_0022
       - US_speednode_0023
       - US_speednode_0024
-      - 广东省 移动
+      - 西班牙+V2CROSS.COM
+      - 伊朗+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 英国 V2CROSS.COM
+      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点 [1]
-      - 挪威+V2CROSS.COM
-      - 加拿大+V2CROSS.COM
       - 美国 CloudFlare节点 [2]
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -835,18 +825,18 @@ proxy-groups:
       - US21｜机房｜低风险
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
+      - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
       - 日本|@ripaojiedian
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
+      - 新加坡|@ripaojiedian
       - 新加坡2|@ripaojiedian
       - 新加坡3|@ripaojiedian
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - 香港2|@ripaojiedian
-      - 🇸🇬 新加坡4|@ripaojiedian
-      - 🇯🇵 日本4|@ripaojiedian
+      - 🇻🇳 越南|@ripaojiedian
       - AU_speednode_0001
       - BG_speednode_0002
       - CN_speednode_0003
@@ -870,13 +860,13 @@ proxy-groups:
       - US_speednode_0022
       - US_speednode_0023
       - US_speednode_0024
-      - 广东省 移动
+      - 西班牙+V2CROSS.COM
+      - 伊朗+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 英国 V2CROSS.COM
+      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点 [1]
-      - 挪威+V2CROSS.COM
-      - 加拿大+V2CROSS.COM
       - 美国 CloudFlare节点 [2]
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
