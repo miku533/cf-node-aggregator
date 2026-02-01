@@ -557,49 +557,6 @@ proxies:
     network: tcp
   - name: 美国 CloudFlare节点
     type: vmess
-    server: tgju.org
-    port: 8080
-    uuid: nasnet
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /nasnet/cdn?ed=2560
-      headers:
-        Host: nasnet-571296497.iranpress.co
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: 167.17.185.228
-    port: 10889
-    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: web.max
-    skip-cert-verify: false
-  - name: 中国 V2CROSS.COM
-    type: vmess
-    server: v30.hdacd.com
-    port: 30830
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 伊朗+V2CROSS.COM
-    type: vless
-    server: freeus.pishipishi.pro
-    port: 1313
-    uuid: 5fc41f2c-8e78-4c7d-a572-cae85cb9b063
-    tls: false
-    network: tcp
-  - name: 挪威+V2CROSS.COM
-    type: trojan
-    server: 83.143.87.9
-    port: 18581
-    password: RPyW62_b9aH.ztJKeArou
-    sni: 83.143.87.9
-    skip-cert-verify: false
-  - name: 美国 CloudFlare节点 [1]
-    type: vmess
     server: 104.21.69.44
     port: 8080
     uuid: nasnet
@@ -611,19 +568,13 @@ proxies:
       path: /nasnet/cdn
       headers:
         Host: nasnet-511952424.mcitel.co
-  - name: 伊朗 V2CROSS.COM
-    type: vmess
-    server: 95.81.123.15
-    port: 40956
-    uuid: 4f3cfda3-a255-40eb-8801-71f9fffb19d6
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
+  - name: 伊朗+V2CROSS.COM
+    type: vless
+    server: arya.zaravds.cfd
+    port: 1050
+    uuid: 4ef2801b-c828-4de9-bd8e-a9b516e05dd2
+    tls: false
+    network: tcp
   - name: 英国 V2CROSS.COM
     type: vmess
     server: 82.198.246.97
@@ -710,12 +661,7 @@ proxy-groups:
       - US_speednode_0023
       - US_speednode_0024
       - 美国 CloudFlare节点
-      - 加拿大+V2CROSS.COM
-      - 中国 V2CROSS.COM
       - 伊朗+V2CROSS.COM
-      - 挪威+V2CROSS.COM
-      - 美国 CloudFlare节点 [1]
-      - 伊朗 V2CROSS.COM
       - 英国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
@@ -790,12 +736,7 @@ proxy-groups:
       - US_speednode_0023
       - US_speednode_0024
       - 美国 CloudFlare节点
-      - 加拿大+V2CROSS.COM
-      - 中国 V2CROSS.COM
       - 伊朗+V2CROSS.COM
-      - 挪威+V2CROSS.COM
-      - 美国 CloudFlare节点 [1]
-      - 伊朗 V2CROSS.COM
       - 英国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -872,12 +813,7 @@ proxy-groups:
       - US_speednode_0023
       - US_speednode_0024
       - 美国 CloudFlare节点
-      - 加拿大+V2CROSS.COM
-      - 中国 V2CROSS.COM
       - 伊朗+V2CROSS.COM
-      - 挪威+V2CROSS.COM
-      - 美国 CloudFlare节点 [1]
-      - 伊朗 V2CROSS.COM
       - 英国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
