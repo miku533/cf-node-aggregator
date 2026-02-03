@@ -612,18 +612,11 @@ proxies:
       path: /fp=randomized
       headers:
         Host: cnm-fangbinxing-nmsl.cnm-fangbinxing-nmsl-wcnm.workers.dev
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 140.82.35.244
-    port: 20994
-    password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
-    sni: ads.x5.ru
-    skip-cert-verify: false
   - name: 美国 华盛顿Cogent通信公司
     type: vmess
     server: 38.180.190.4
-    port: 13097
-    uuid: b30bd103-83e6-4e3d-b8b2-41e6845c5b39
+    port: 27589
+    uuid: e7d6313b-90aa-4309-ee35-9b7cb9bcfbf4
     alterId: 0
     cipher: auto
     tls: false
@@ -631,98 +624,60 @@ proxies:
   - name: 美国 华盛顿Cogent通信公司 [1]
     type: vmess
     server: 38.180.190.4
-    port: 31323
-    uuid: 6c348161-daaa-48a9-e92d-de18086209e0
+    port: 20594
+    uuid: 2c47bb18-de80-4416-b493-2673355d37ab
     alterId: 0
     cipher: auto
     tls: false
     network: none
-  - name: 美国 华盛顿Cogent通信公司 [2]
+  - name: 冰岛+V2CROSS.COM
+    type: trojan
+    server: 37.235.49.209
+    port: 28099
+    password: qmBSKnAl6LYi9%3Dz23Rs.Z
+    sni: celestialcorset.crystalhamster.click
+    skip-cert-verify: true
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: 38.180.190.4
-    port: 18455
-    uuid: 93c56f7c-b809-4cc2-f3b3-0bb91076ab77
+    server: 68.167.181.220
+    port: 10010
+    uuid: b4f7c326-5c4f-4e19-83d5-bfa43b461002
     alterId: 0
     cipher: auto
     tls: false
     network: none
-  - name: 美国 CloudFlare节点
+  - name: 英国 V2CROSS.COM
     type: vmess
-    server: 162.159.152.4
-    port: 8443
-    uuid: 19e52bf4-1b7d-4bd4-ae66-6ca024436c17
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /gbt
-      headers: {}
-  - name: 美国 CloudFlare节点 [1]
-    type: vmess
-    server: 104.18.32.47
-    port: 443
-    uuid: 2502de49-9f51-40a4-8b1a-a41aa9e8d19d
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /3/device/
-      headers:
-        Host: vmess.lionandsunflag.com
-  - name: 台湾省台中市+中华电信
-    type: trojan
-    server: green2.cdntencentmusic.com
-    port: 31103
-    password: ce96eb24-8c47-40a6-a5d4-d840950b4caf
-    sni: green2.cdntencentmusic.com
-    skip-cert-verify: false
-  - name: 德国+黑森州法兰克福Choopa数据中心
-    type: trojan
-    server: 45.32.158.138
-    port: 20994
-    password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
-    sni: ads.x5.ru
-    skip-cert-verify: false
-  - name: 美国 华盛顿Cogent通信公司 [3]
-    type: vmess
-    server: 38.180.190.4
-    port: 27493
-    uuid: 3462f294-4731-4eb0-86a9-d09e91be420c
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     alterId: 0
     cipher: auto
     tls: false
-    network: none
-  - name: 美国 CloudFlare节点 [2]
-    type: vmess
-    server: 172.67.204.84
-    port: 8080
-    uuid: nasnet
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /nasnet/cdn
-      headers:
-        Host: nasnet-511952424.mcitel.co
-  - name: 加拿大+V2CROSS.COM
+    network: tcp
+  - name: 俄罗斯+V2CROSS.COM
     type: trojan
-    server: 167.17.185.228
-    port: 10889
-    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: web.max
+    server: 212.193.18.144
+    port: 36158
+    password: ZblhWr0mqMakCPg.N
+    sni: ya.ru
     skip-cert-verify: false
-  - name: 中国 V2CROSS.COM
+  - name: 广东省广州市 移动
     type: vmess
-    server: v30.hdacd.com
-    port: 30830
+    server: v12.hdacd.com
+    port: 30812
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     alterId: 0
     cipher: auto
     tls: false
     network: tcp
+  - name: 挪威+V2CROSS.COM
+    type: trojan
+    server: 83.143.87.9
+    port: 18581
+    password: RPyW62_b9aH.ztJKeArou
+    sni: 83.143.87.9
+    skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -803,18 +758,14 @@ proxy-groups:
       - US_speednode_0040
       - US_speednode_0041
       - US_speednode_0042
-      - 美国+V2CROSS.COM
       - 美国 华盛顿Cogent通信公司
       - 美国 华盛顿Cogent通信公司 [1]
-      - 美国 华盛顿Cogent通信公司 [2]
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
-      - 台湾省台中市+中华电信
-      - 德国+黑森州法兰克福Choopa数据中心
-      - 美国 华盛顿Cogent通信公司 [3]
-      - 美国 CloudFlare节点 [2]
-      - 加拿大+V2CROSS.COM
-      - 中国 V2CROSS.COM
+      - 冰岛+V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 英国 V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
+      - 广东省广州市 移动
+      - 挪威+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -891,18 +842,14 @@ proxy-groups:
       - US_speednode_0040
       - US_speednode_0041
       - US_speednode_0042
-      - 美国+V2CROSS.COM
       - 美国 华盛顿Cogent通信公司
       - 美国 华盛顿Cogent通信公司 [1]
-      - 美国 华盛顿Cogent通信公司 [2]
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
-      - 台湾省台中市+中华电信
-      - 德国+黑森州法兰克福Choopa数据中心
-      - 美国 华盛顿Cogent通信公司 [3]
-      - 美国 CloudFlare节点 [2]
-      - 加拿大+V2CROSS.COM
-      - 中国 V2CROSS.COM
+      - 冰岛+V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 英国 V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
+      - 广东省广州市 移动
+      - 挪威+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -981,18 +928,14 @@ proxy-groups:
       - US_speednode_0040
       - US_speednode_0041
       - US_speednode_0042
-      - 美国+V2CROSS.COM
       - 美国 华盛顿Cogent通信公司
       - 美国 华盛顿Cogent通信公司 [1]
-      - 美国 华盛顿Cogent通信公司 [2]
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
-      - 台湾省台中市+中华电信
-      - 德国+黑森州法兰克福Choopa数据中心
-      - 美国 华盛顿Cogent通信公司 [3]
-      - 美国 CloudFlare节点 [2]
-      - 加拿大+V2CROSS.COM
-      - 中国 V2CROSS.COM
+      - 冰岛+V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 英国 V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
+      - 广东省广州市 移动
+      - 挪威+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
