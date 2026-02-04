@@ -613,11 +613,56 @@ proxies:
         Host: cnm-fangbinxing-nmsl.cnm-fangbinxing-nmsl-wcnm.workers.dev
   - name: 西班牙+V2CROSS.COM
     type: trojan
-    server: 80.173.230.196
-    port: 26279
-    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
-    sni: 80.173.230.196
+    server: 80.173.231.254
+    port: 12420
+    password: wp9IsiY82uQhcmgNC1eoBM
+    sni: www.semanticstaplegun.click
     skip-cert-verify: false
+  - name: 台湾省台中市+中华电信
+    type: trojan
+    server: 220.130.58.136
+    port: 35501
+    password: 223c2f69-6b95-4555-9f68-14b14d72b7ea
+    sni: green2.cdntencentmusic.com
+    skip-cert-verify: false
+  - name: 日本 V2CROSS.COM
+    type: vmess
+    server: 160.191.245.48
+    port: 58623
+    uuid: 8d74803e-aa74-47ef-e3ae-23eeaa96f89d
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 英国 V2CROSS.COM
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 瑞典+V2CROSS.COM
+    type: vless
+    server: dd.openaccessnode.com
+    port: 50
+    uuid: 31701b5d-ca95-92f9-d684-dae3706161ea
+    tls: false
+    network: tcp
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: digitalocean.com
+    port: 8080
+    uuid: nasnet
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /NASNET/cdn?ed=2560
+      headers:
+        Host: nasnet-571299667.rahavard365.co
   - name: 巴西圣保罗 CloudFlare节点
     type: vmess
     server: 188.114.98.0
@@ -631,64 +676,6 @@ proxies:
       path: /nasnet/cdn?ed=2560/?TELEGRAM--KANAL--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN
       headers:
         Host: nasnet-162191099.sharghdaily.co
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: ZzXxdE.922922.sHOp
-    port: 80
-    uuid: bce0c7cb-08d1-46a7-b77b-7bff8b46252f
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /RkUUbqhA9GJZBROjL3Q5vTymr
-      headers:
-        Host: ZzXxdE.922922.sHOp
-  - name: 挪威+V2CROSS.COM
-    type: trojan
-    server: 83.143.87.9
-    port: 18581
-    password: RPyW62_b9aH.ztJKeArou
-    sni: 83.143.87.9
-    skip-cert-verify: false
-  - name: 英国 V2CROSS.COM
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: 167.17.185.172
-    port: 10889
-    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: web.max.ru
-    skip-cert-verify: false
-  - name: 美国 CloudFlare节点 [1]
-    type: vmess
-    server: 104.21.69.44
-    port: 8080
-    uuid: nasnet
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /nasnet/cdn
-      headers:
-        Host: nasnet-511952424.mcitel.co
-  - name: 美国 华盛顿Cogent通信公司
-    type: vmess
-    server: 38.180.190.4
-    port: 27493
-    uuid: 3462f294-4731-4eb0-86a9-d09e91be420c
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: none
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -769,13 +756,12 @@ proxy-groups:
       - US_speednode_0041
       - US_speednode_0042
       - 西班牙+V2CROSS.COM
-      - 巴西圣保罗 CloudFlare节点
-      - 美国 CloudFlare节点
-      - 挪威+V2CROSS.COM
+      - 台湾省台中市+中华电信
+      - 日本 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 加拿大+V2CROSS.COM
-      - 美国 CloudFlare节点 [1]
-      - 美国 华盛顿Cogent通信公司
+      - 瑞典+V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 巴西圣保罗 CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -852,13 +838,12 @@ proxy-groups:
       - US_speednode_0041
       - US_speednode_0042
       - 西班牙+V2CROSS.COM
-      - 巴西圣保罗 CloudFlare节点
-      - 美国 CloudFlare节点
-      - 挪威+V2CROSS.COM
+      - 台湾省台中市+中华电信
+      - 日本 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 加拿大+V2CROSS.COM
-      - 美国 CloudFlare节点 [1]
-      - 美国 华盛顿Cogent通信公司
+      - 瑞典+V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 巴西圣保罗 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -937,13 +922,12 @@ proxy-groups:
       - US_speednode_0041
       - US_speednode_0042
       - 西班牙+V2CROSS.COM
-      - 巴西圣保罗 CloudFlare节点
-      - 美国 CloudFlare节点
-      - 挪威+V2CROSS.COM
+      - 台湾省台中市+中华电信
+      - 日本 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 加拿大+V2CROSS.COM
-      - 美国 CloudFlare节点 [1]
-      - 美国 华盛顿Cogent通信公司
+      - 瑞典+V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 巴西圣保罗 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
