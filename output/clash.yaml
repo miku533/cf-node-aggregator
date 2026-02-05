@@ -612,11 +612,18 @@ proxies:
       path: /fp=randomized
       headers:
         Host: cnm-fangbinxing-nmsl.cnm-fangbinxing-nmsl-wcnm.workers.dev
-  - name: 中国 V2CROSS.COM
+  - name: 西班牙+V2CROSS.COM
+    type: trojan
+    server: 80.173.231.254
+    port: 12420
+    password: wp9IsiY82uQhcmgNC1eoBM
+    sni: www.semanticstaplegun.click
+    skip-cert-verify: false
+  - name: 日本 V2CROSS.COM
     type: vmess
-    server: v12.hdacd.com
-    port: 30812
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    server: 160.191.245.48
+    port: 58623
+    uuid: 8d74803e-aa74-47ef-e3ae-23eeaa96f89d
     alterId: 0
     cipher: auto
     tls: false
@@ -634,48 +641,19 @@ proxies:
       path: /eszjp4nTT8TxDHFepMpfNkCk8
       headers:
         Host: rrrgt.2030.pp.ua
-  - name: 俄罗斯+V2CROSS.COM
-    type: trojan
-    server: 212.193.18.144
-    port: 36158
-    password: ZblhWr0mqMakCPg.N
-    sni: ya.ru
-    skip-cert-verify: false
   - name: 美国 CloudFlare节点 [1]
     type: vmess
-    server: 172.64.152.23
-    port: 8443
-    uuid: 19e52bf4-1b7d-4bd4-ae66-6ca024436c17
+    server: jjjuu.191292.xyz
+    port: 443
+    uuid: b9bb332d-5e0d-41af-adac-49362dde8661
     alterId: 0
     cipher: auto
     tls: true
     network: ws
     ws-opts:
-      path: /gbt
+      path: /iqjxVCqiIAaLCt5Q2GkKGWRMg
       headers:
-        Host: frsys.fl-dl.com
-  - name: 美国 CloudFlare节点 [2]
-    type: vmess
-    server: CCCVFffF.191288.Xyz
-    port: 80
-    uuid: 4a7baca1-8048-4a91-8316-595b36657a54
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /TaBvkrUbsyvsvinsGGg
-      headers:
-        Host: cCCVfffF.191288.xyZ
-  - name: 日本 V2CROSS.COM
-    type: vmess
-    server: 160.191.245.48
-    port: 58623
-    uuid: 8d74803e-aa74-47ef-e3ae-23eeaa96f89d
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
+        Host: jjjuu.191292.xyz
   - name: 英国 V2CROSS.COM
     type: vmess
     server: 82.198.246.97
@@ -685,39 +663,45 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
+  - name: 美国 CloudFlare节点 [2]
+    type: vmess
+    server: llloooiu.191292.xyz
+    port: 443
+    uuid: b9bb332d-5e0d-41af-adac-49362dde8661
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /iqjxVCqiIAaLCt5Q2GkKGWRMg
+      headers:
+        Host: llloooiu.191292.xyz
   - name: 美国 CloudFlare节点 [3]
     type: vmess
-    server: bbgtr.7777198.xyz
-    port: 80
-    uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+    server: tgju.org
+    port: 8080
+    uuid: nasnet
     alterId: 0
     cipher: auto
     tls: false
     network: ws
     ws-opts:
-      path: /GgigazFGDLgFWDItkD5XgXAL
+      path: /nasnet/cdn?ed=2560
       headers:
-        Host: BBGTR.7777198.XYZ
-  - name: 美国 CloudFlare节点 [4]
+        Host: nasnet-571296497.iranpress.co
+  - name: 巴西圣保罗 CloudFlare节点
     type: vmess
-    server: HHhjki.TAIwaN2028.indEvS.in
-    port: 80
-    uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+    server: 188.114.98.0
+    port: 8080
+    uuid: nasnet
     alterId: 0
     cipher: auto
     tls: false
     network: ws
     ws-opts:
-      path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
+      path: /nasnet/cdn?ed=2560/?TELEGRAM--KANAL--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN
       headers:
-        Host: hHHJkI.taiwAn2028.iNDEVs.in
-  - name: 挪威+V2CROSS.COM
-    type: trojan
-    server: 83.143.87.9
-    port: 18581
-    password: RPyW62_b9aH.ztJKeArou
-    sni: 83.143.87.9
-    skip-cert-verify: false
+        Host: nasnet-162191099.sharghdaily.co
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -798,16 +782,14 @@ proxy-groups:
       - US_speednode_0040
       - US_speednode_0041
       - US_speednode_0042
-      - 中国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 俄罗斯+V2CROSS.COM
-      - 美国 CloudFlare节点 [1]
-      - 美国 CloudFlare节点 [2]
+      - 西班牙+V2CROSS.COM
       - 日本 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 [1]
       - 英国 V2CROSS.COM
+      - 美国 CloudFlare节点 [2]
       - 美国 CloudFlare节点 [3]
-      - 美国 CloudFlare节点 [4]
-      - 挪威+V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -884,16 +866,14 @@ proxy-groups:
       - US_speednode_0040
       - US_speednode_0041
       - US_speednode_0042
-      - 中国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 俄罗斯+V2CROSS.COM
-      - 美国 CloudFlare节点 [1]
-      - 美国 CloudFlare节点 [2]
+      - 西班牙+V2CROSS.COM
       - 日本 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 [1]
       - 英国 V2CROSS.COM
+      - 美国 CloudFlare节点 [2]
       - 美国 CloudFlare节点 [3]
-      - 美国 CloudFlare节点 [4]
-      - 挪威+V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -972,16 +952,14 @@ proxy-groups:
       - US_speednode_0040
       - US_speednode_0041
       - US_speednode_0042
-      - 中国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 俄罗斯+V2CROSS.COM
-      - 美国 CloudFlare节点 [1]
-      - 美国 CloudFlare节点 [2]
+      - 西班牙+V2CROSS.COM
       - 日本 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 [1]
       - 英国 V2CROSS.COM
+      - 美国 CloudFlare节点 [2]
       - 美国 CloudFlare节点 [3]
-      - 美国 CloudFlare节点 [4]
-      - 挪威+V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
