@@ -1453,26 +1453,19 @@ proxies:
     ws-opts:
       path: /
       headers: {}
-  - name: 冰岛+V2CROSS.COM
-    type: trojan
-    server: 37.235.49.209
-    port: 28099
-    password: qmBSKnAl6LYi9%3Dz23Rs.Z
-    sni: celestialcorset.crystalhamster.click
-    skip-cert-verify: false
   - name: 美国 CloudFlare节点
     type: vmess
-    server: tgju.org
-    port: 8080
-    uuid: nasnet
+    server: sy4.620720.xyz
+    port: 443
+    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
     alterId: 0
     cipher: auto
-    tls: false
+    tls: true
     network: ws
     ws-opts:
-      path: /nasnet/cdn?ed=2560
+      path: /
       headers:
-        Host: nasnet-571296497.iranpress.co
+        Host: sy4.620720.xyz
   - name: 美国 CloudFlare节点 [1]
     type: vmess
     server: turk1.net.net
@@ -1488,24 +1481,50 @@ proxies:
         Host: tr1-smart.adelping.com.
   - name: 美国 CloudFlare节点 [2]
     type: vmess
-    server: 6c00bf1f-a569-4d54-9f71-a13611801867.661.qzz.io
+    server: 172.64.149.182
+    port: 8080
+    uuid: nasnet
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /nasnet/cdn
+      headers:
+        Host: nasnet-5712964102.sharghdaily.co
+  - name: 巴西圣保罗 CloudFlare节点
+    type: vmess
+    server: 188.114.98.0
+    port: 8080
+    uuid: nasnet
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /nasnet/cdn?ed=2560
+      headers:
+        Host: nasnet-162191099.sharghdaily.co
+  - name: 美国 CloudFlare节点 [3]
+    type: vmess
+    server: jjjk.191268.xyz
     port: 443
-    uuid: 0c6b96bc-5e3a-4500-8497-6dead1965609
+    uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
     alterId: 0
     cipher: auto
     tls: true
     network: ws
     ws-opts:
-      path: /KHtPvNZl371C8NsbbZ1wwDhJ3
+      path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
       headers:
-        Host: 6c00bf1f-a569-4d54-9f71-a13611801867.661.qzz.io
-  - name: 瑞典+V2CROSS.COM
-    type: vless
-    server: dd.openaccessnode.com
-    port: 50
-    uuid: 31701b5d-ca95-92f9-d684-dae3706161ea
-    tls: false
-    network: tcp
+        Host: jjjk.191268.xyz
+  - name: 冰岛+V2CROSS.COM
+    type: trojan
+    server: 37.235.49.209
+    port: 28099
+    password: qmBSKnAl6LYi9%3Dz23Rs.Z
+    sni: celestialcorset.crystalhamster.click
+    skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1679,11 +1698,12 @@ proxy-groups:
       - US_speednode_0080
       - US_speednode_0081
       - VN_speednode_0083
-      - 冰岛+V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 [1]
       - 美国 CloudFlare节点 [2]
-      - 瑞典+V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
+      - 美国 CloudFlare节点 [3]
+      - 冰岛+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -1853,11 +1873,12 @@ proxy-groups:
       - US_speednode_0080
       - US_speednode_0081
       - VN_speednode_0083
-      - 冰岛+V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 [1]
       - 美国 CloudFlare节点 [2]
-      - 瑞典+V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
+      - 美国 CloudFlare节点 [3]
+      - 冰岛+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -2029,11 +2050,12 @@ proxy-groups:
       - US_speednode_0080
       - US_speednode_0081
       - VN_speednode_0083
-      - 冰岛+V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 [1]
       - 美国 CloudFlare节点 [2]
-      - 瑞典+V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
+      - 美国 CloudFlare节点 [3]
+      - 冰岛+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
