@@ -845,7 +845,20 @@ proxies:
         Host: mc2-1rw.pages.dev
   - name: 美国 CloudFlare节点
     type: vmess
-    server: digitalocean.com
+    server: turk1.net.net
+    port: 80
+    uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: tr1-smart.adelping.com.
+  - name: 美国 CloudFlare节点 [1]
+    type: vmess
+    server: 104.24.169.183
     port: 8080
     uuid: nasnet
     alterId: 0
@@ -853,10 +866,19 @@ proxies:
     tls: false
     network: ws
     ws-opts:
-      path: /NASNET/cdn?ed=2560
+      path: /NASNET/cdn#/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
       headers:
         Host: nasnet-571299667.rahavard365.co
-  - name: 美国 CloudFlare节点 [1]
+  - name: 伊朗 V2CROSS.COM
+    type: vmess
+    server: 217.60.247.108
+    port: 8080
+    uuid: 4ab0e496-3ef5-43fd-9886-12434541fa42
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 美国 CloudFlare节点 [2]
     type: vmess
     server: nju.bb4.indevs.in
     port: 80
@@ -869,9 +891,29 @@ proxies:
       path: /boWUVaU0sxrNtFSdOPjqSc7fzeJr
       headers:
         Host: nju.bb4.indevs.in
-  - name: 巴西圣保罗 CloudFlare节点
+  - name: 美国 CloudFlare节点 [3]
     type: vmess
-    server: 188.114.98.0
+    server: sy4.620720.xyz
+    port: 443
+    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: sy4.620720.xyz
+  - name: 俄罗斯+V2CROSS.COM
+    type: vless
+    server: Uk.igatly.com
+    port: 443
+    uuid: 5191c42c-764c-4787-af79-f5c3e42447dd
+    tls: false
+    network: tcp
+  - name: 美国 CloudFlare节点 [4]
+    type: vmess
+    server: 172.67.204.84
     port: 8080
     uuid: nasnet
     alterId: 0
@@ -881,41 +923,7 @@ proxies:
     ws-opts:
       path: /nasnet/cdn
       headers:
-        Host: nasnet-162191099.sharghdaily.co
-  - name: 香港+电讯盈科有限公司
-    type: trojan
-    server: 203.198.123.162
-    port: 443
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: false
-  - name: 俄罗斯+V2CROSS.COM
-    type: trojan
-    server: 212.193.18.144
-    port: 36158
-    password: ZblhWr0mqMakCPg.N
-    sni: ya.ru
-    skip-cert-verify: false
-  - name: 美国 CloudFlare节点 [2]
-    type: vmess
-    server: turk1.net.net
-    port: 80
-    uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
-      headers:
-        Host: tr1-smart.adelping.com.
-  - name: 西班牙+V2CROSS.COM
-    type: trojan
-    server: 80.173.230.196
-    port: 26279
-    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
-    sni: 80.173.230.196
-    skip-cert-verify: false
+        Host: nasnet-511952424.mcitel.co
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1025,11 +1033,11 @@ proxy-groups:
       - US_speednode_0057
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 [1]
-      - 巴西圣保罗 CloudFlare节点
-      - 香港+电讯盈科有限公司
-      - 俄罗斯+V2CROSS.COM
+      - 伊朗 V2CROSS.COM
       - 美国 CloudFlare节点 [2]
-      - 西班牙+V2CROSS.COM
+      - 美国 CloudFlare节点 [3]
+      - 俄罗斯+V2CROSS.COM
+      - 美国 CloudFlare节点 [4]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -1135,11 +1143,11 @@ proxy-groups:
       - US_speednode_0057
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 [1]
-      - 巴西圣保罗 CloudFlare节点
-      - 香港+电讯盈科有限公司
-      - 俄罗斯+V2CROSS.COM
+      - 伊朗 V2CROSS.COM
       - 美国 CloudFlare节点 [2]
-      - 西班牙+V2CROSS.COM
+      - 美国 CloudFlare节点 [3]
+      - 俄罗斯+V2CROSS.COM
+      - 美国 CloudFlare节点 [4]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -1247,11 +1255,11 @@ proxy-groups:
       - US_speednode_0057
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 [1]
-      - 巴西圣保罗 CloudFlare节点
-      - 香港+电讯盈科有限公司
-      - 俄罗斯+V2CROSS.COM
+      - 伊朗 V2CROSS.COM
       - 美国 CloudFlare节点 [2]
-      - 西班牙+V2CROSS.COM
+      - 美国 CloudFlare节点 [3]
+      - 俄罗斯+V2CROSS.COM
+      - 美国 CloudFlare节点 [4]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
