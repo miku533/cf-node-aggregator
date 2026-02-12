@@ -791,62 +791,42 @@ proxies:
       path: /proxyip=sjc.o00o.ooofp=chrome
       headers:
         Host: mc2-1rw.pages.dev
-  - name: 中国 V2CROSS.COM
+  - name: 巴西圣保罗 CloudFlare节点
     type: vmess
-    server: v12.hdacd.com
-    port: 30812
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    server: 188.114.98.0
+    port: 8080
+    uuid: nasnet
     alterId: 0
     cipher: auto
     tls: false
-    network: tcp
-  - name: 俄罗斯+V2CROSS.COM
-    type: trojan
-    server: 212.193.18.144
-    port: 36158
-    password: ZblhWr0mqMakCPg.N
-    sni: ya.ru
-    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /nasnet/cdn?ed=2560
+      headers:
+        Host: nasnet-162191099.sharghdaily.co
   - name: 美国 CloudFlare节点
     type: vmess
-    server: mk.tc0.ccwu.cc
-    port: 80
-    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+    server: 104.21.69.44
+    port: 8080
+    uuid: nasnet
     alterId: 0
     cipher: auto
     tls: false
     network: ws
     ws-opts:
-      path: /kFK9O5cl8ZycyrxcJWNVFC21
+      path: /nasnet/cdn
       headers:
-        Host: mk.tc0.ccwu.cc
+        Host: nasnet-511952424.mcitel.co
+  - name: 以色列 V2CROSS.COM
+    type: vmess
+    server: 149.88.95.94
+    port: 18937
+    uuid: ebaa1ae1-fa4d-40d8-958f-d4524d551218
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
   - name: 美国 CloudFlare节点 [1]
-    type: vmess
-    server: c7.620720.xyz
-    port: 8443
-    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: c7.620720.xyz
-  - name: 美国 CloudFlare节点 [2]
-    type: vmess
-    server: turk1.net.net
-    port: 80
-    uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
-      headers:
-        Host: tr1-smart.adelping.com.
-  - name: 美国 CloudFlare节点 [3]
     type: vmess
     server: mmkio.wc5.ccwu.cc
     port: 80
@@ -859,9 +839,9 @@ proxies:
       path: /kFK9O5cl8ZycyrxcJWNVFC21
       headers:
         Host: mmkio.wc5.ccwu.cc
-  - name: 美国 CloudFlare节点 [4]
+  - name: 美国 CloudFlare节点 [2]
     type: vmess
-    server: mmko.tt0.ccwu.cc
+    server: bbbnmki.kk7.ccwu.cc
     port: 80
     uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
     alterId: 0
@@ -871,49 +851,21 @@ proxies:
     ws-opts:
       path: /kFK9O5cl8ZycyrxcJWNVFC21
       headers:
-        Host: mmko.tt0.ccwu.cc
-  - name: 英国 伦敦Virgin Media
-    type: vmess
-    server: 82.21.80.224
-    port: 17310
-    uuid: 656920dc-ed05-4f41-8c49-bdff41e383a9
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: none
-  - name: 西班牙+V2CROSS.COM
+        Host: bbbnmki.kk7.ccwu.cc
+  - name: 俄罗斯+V2CROSS.COM
     type: trojan
-    server: 80.173.231.254
-    port: 12420
-    password: wp9IsiY82uQhcmgNC1eoBM
-    sni: www.semanticstaplegun.click
+    server: 212.193.18.144
+    port: 36158
+    password: ZblhWr0mqMakCPg.N
+    sni: ya.ru
     skip-cert-verify: false
-  - name: 美国 CloudFlare节点 [5]
-    type: vmess
-    server: 6c00bf1f-a569-4d54-9f71-a13611801867.661.qzz.io
-    port: 443
-    uuid: 0c6b96bc-5e3a-4500-8497-6dead1965609
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /KHtPvNZl371C8NsbbZ1wwDhJ3
-      headers:
-        Host: 6c00bf1f-a569-4d54-9f71-a13611801867.661.qzz.io
-  - name: 美国 CloudFlare节点 [6]
-    type: vmess
-    server: 104.24.169.183
-    port: 8080
-    uuid: nasnet
-    alterId: 0
-    cipher: auto
+  - name: 瑞典+V2CROSS.COM
+    type: vless
+    server: dd.openaccessnode.com
+    port: 50
+    uuid: 31701b5d-ca95-92f9-d684-dae3706161ea
     tls: false
-    network: ws
-    ws-opts:
-      path: /NASNET/cdn#/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-      headers:
-        Host: nasnet-571299667.rahavard365.co
+    network: tcp
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1015,17 +967,13 @@ proxy-groups:
       - US_speednode_0055
       - US_speednode_0056
       - US_speednode_0057
-      - 中国 V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
       - 美国 CloudFlare节点
+      - 以色列 V2CROSS.COM
       - 美国 CloudFlare节点 [1]
       - 美国 CloudFlare节点 [2]
-      - 美国 CloudFlare节点 [3]
-      - 美国 CloudFlare节点 [4]
-      - 英国 伦敦Virgin Media
-      - 西班牙+V2CROSS.COM
-      - 美国 CloudFlare节点 [5]
-      - 美国 CloudFlare节点 [6]
+      - 俄罗斯+V2CROSS.COM
+      - 瑞典+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -1123,17 +1071,13 @@ proxy-groups:
       - US_speednode_0055
       - US_speednode_0056
       - US_speednode_0057
-      - 中国 V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
       - 美国 CloudFlare节点
+      - 以色列 V2CROSS.COM
       - 美国 CloudFlare节点 [1]
       - 美国 CloudFlare节点 [2]
-      - 美国 CloudFlare节点 [3]
-      - 美国 CloudFlare节点 [4]
-      - 英国 伦敦Virgin Media
-      - 西班牙+V2CROSS.COM
-      - 美国 CloudFlare节点 [5]
-      - 美国 CloudFlare节点 [6]
+      - 俄罗斯+V2CROSS.COM
+      - 瑞典+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -1233,17 +1177,13 @@ proxy-groups:
       - US_speednode_0055
       - US_speednode_0056
       - US_speednode_0057
-      - 中国 V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
       - 美国 CloudFlare节点
+      - 以色列 V2CROSS.COM
       - 美国 CloudFlare节点 [1]
       - 美国 CloudFlare节点 [2]
-      - 美国 CloudFlare节点 [3]
-      - 美国 CloudFlare节点 [4]
-      - 英国 伦敦Virgin Media
-      - 西班牙+V2CROSS.COM
-      - 美国 CloudFlare节点 [5]
-      - 美国 CloudFlare节点 [6]
+      - 俄罗斯+V2CROSS.COM
+      - 瑞典+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
