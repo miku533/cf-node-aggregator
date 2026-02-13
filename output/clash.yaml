@@ -562,29 +562,16 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: 167.17.185.169
+    port: 10889
+    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+    sni: ya.ru
+    skip-cert-verify: false
   - name: 美国 CloudFlare节点
     type: vmess
-    server: nju.bb4.indevs.in
-    port: 80
-    uuid: b020865b-7404-4894-ba65-a7414b10cda3
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /boWUVaU0sxrNtFSdOPjqSc7fzeJr
-      headers:
-        Host: nju.bb4.indevs.in
-  - name: 瑞典+V2CROSS.COM
-    type: vless
-    server: dd.openaccessnode.com
-    port: 50
-    uuid: 31701b5d-ca95-92f9-d684-dae3706161ea
-    tls: false
-    network: tcp
-  - name: 巴西圣保罗 CloudFlare节点
-    type: vmess
-    server: 188.114.98.0
+    server: tgju.org
     port: 8080
     uuid: nasnet
     alterId: 0
@@ -592,39 +579,10 @@ proxies:
     tls: false
     network: ws
     ws-opts:
-      path: /nasnet/cdn?ed=2560/?TELEGRAM--KANAL--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN
+      path: /nasnet/cdn?ed=2560
       headers:
-        Host: nasnet-162191099.sharghdaily.co
-  - name: 英国 V2CROSS.COM
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 加拿大+温尼伯大学
-    type: vless
-    server: 142.132.140.143
-    port: 1003
-    uuid: 0e6cd6ca-fba2-4b86-923c-f0a021f7ad15
-    tls: false
-    network: tcp
+        Host: nasnet-571296497.iranpress.co
   - name: 美国 CloudFlare节点 [1]
-    type: vmess
-    server: mmkio.wc5.ccwu.cc
-    port: 80
-    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /kFK9O5cl8ZycyrxcJWNVFC21
-      headers:
-        Host: mmkio.wc5.ccwu.cc
-  - name: 美国 CloudFlare节点 [2]
     type: vmess
     server: 104.21.69.44
     port: 8080
@@ -637,9 +595,16 @@ proxies:
       path: /nasnet/cdn
       headers:
         Host: nasnet-511952424.mcitel.co
-  - name: 美国 CloudFlare节点 [3]
+  - name: 加拿大+V2CROSS.COM [1]
+    type: trojan
+    server: 167.17.185.228
+    port: 10889
+    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+    sni: web.max
+    skip-cert-verify: false
+  - name: 美国 CloudFlare节点 [2]
     type: vmess
-    server: bbbnmki.kk7.ccwu.cc
+    server: mmkio.wc5.ccwu.cc
     port: 80
     uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
     alterId: 0
@@ -649,20 +614,51 @@ proxies:
     ws-opts:
       path: /kFK9O5cl8ZycyrxcJWNVFC21
       headers:
-        Host: bbbnmki.kk7.ccwu.cc
-  - name: 美国 CloudFlare节点 [4]
+        Host: mmkio.wc5.ccwu.cc
+  - name: 中国 V2CROSS.COM
     type: vmess
-    server: 172.67.204.84
-    port: 8080
-    uuid: nasnet
+    server: v12.hdacd.com
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 美国 CloudFlare节点 [3]
+    type: vmess
+    server: mmkio.tc6.ccwu.cc
+    port: 80
+    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
     alterId: 0
     cipher: auto
     tls: false
     network: ws
     ws-opts:
-      path: /nasnet/cdn
+      path: /kFK9O5cl8ZycyrxcJWNVFC21
       headers:
-        Host: nasnet-511952424.mcitel.co
+        Host: mmkio.tc6.ccwu.cc
+  - name: 英国 V2CROSS.COM
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 美国 CloudFlare节点 [4]
+    type: vmess
+    server: turk1.net.net
+    port: 80
+    uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: tr1-smart.adelping.com.
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -739,14 +735,14 @@ proxy-groups:
       - US_speednode_0013
       - US_speednode_0014
       - US_speednode_0015
+      - 加拿大+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 瑞典+V2CROSS.COM
-      - 巴西圣保罗 CloudFlare节点
-      - 英国 V2CROSS.COM
-      - 加拿大+温尼伯大学
       - 美国 CloudFlare节点 [1]
+      - 加拿大+V2CROSS.COM [1]
       - 美国 CloudFlare节点 [2]
+      - 中国 V2CROSS.COM
       - 美国 CloudFlare节点 [3]
+      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点 [4]
   - name: ♻️ 自动选择
     type: url-test
@@ -820,14 +816,14 @@ proxy-groups:
       - US_speednode_0013
       - US_speednode_0014
       - US_speednode_0015
+      - 加拿大+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 瑞典+V2CROSS.COM
-      - 巴西圣保罗 CloudFlare节点
-      - 英国 V2CROSS.COM
-      - 加拿大+温尼伯大学
       - 美国 CloudFlare节点 [1]
+      - 加拿大+V2CROSS.COM [1]
       - 美国 CloudFlare节点 [2]
+      - 中国 V2CROSS.COM
       - 美国 CloudFlare节点 [3]
+      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点 [4]
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -903,14 +899,14 @@ proxy-groups:
       - US_speednode_0013
       - US_speednode_0014
       - US_speednode_0015
+      - 加拿大+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 瑞典+V2CROSS.COM
-      - 巴西圣保罗 CloudFlare节点
-      - 英国 V2CROSS.COM
-      - 加拿大+温尼伯大学
       - 美国 CloudFlare节点 [1]
+      - 加拿大+V2CROSS.COM [1]
       - 美国 CloudFlare节点 [2]
+      - 中国 V2CROSS.COM
       - 美国 CloudFlare节点 [3]
+      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点 [4]
     url: http://www.gstatic.com/generate_204
     interval: 300
