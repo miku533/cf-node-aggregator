@@ -526,9 +526,16 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
+  - name: 西班牙+V2CROSS.COM
+    type: trojan
+    server: 80.173.231.254
+    port: 12420
+    password: wp9IsiY82uQhcmgNC1eoBM
+    sni: www.semanticstaplegun.click
+    skip-cert-verify: false
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 172.67.204.84
+    server: 104.19.173.68
     port: 8080
     uuid: nasnet
     alterId: 0
@@ -536,12 +543,12 @@ proxies:
     tls: false
     network: ws
     ws-opts:
-      path: /nasnet/cdn
+      path: /NASNET/cdn?ed=2560
       headers:
-        Host: nasnet-511952424.mcitel.co
+        Host: nasnet-571299667.rahavard365.co
   - name: 美国 CloudFlare节点 [1]
     type: vmess
-    server: gt6.ae1.us.ci
+    server: nhju.ae1autumn.indevs.in
     port: 80
     uuid: 4c205c81-5694-43fe-a287-af563a2ebc05
     alterId: 0
@@ -551,24 +558,49 @@ proxies:
     ws-opts:
       path: /djA07iUsSp0K2Fo4gds7cXpDB5nO5
       headers:
-        Host: gt6.ae1.us.ci
+        Host: nhju.ae1autumn.indevs.in
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 192.200.160.173
+    port: 2053
+    uuid: 9585636a-54bc-419a-90a1-76c5c6ec74df
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers: {}
   - name: 美国 CloudFlare节点 [2]
     type: vmess
-    server: digitalocean.com
-    port: 8080
-    uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+    server: bbnj.wc9.ccwu.cc
+    port: 80
+    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
     alterId: 0
     cipher: auto
     tls: false
     network: ws
     ws-opts:
-      path: /NASNET/cdn
+      path: /kFK9O5cl8ZycyrxcJWNVFC21
       headers:
-        Host: nasnet-571299667.rahavard365.co
+        Host: bbnj.wc9.ccwu.cc
   - name: 美国 CloudFlare节点 [3]
     type: vmess
-    server: t1.620720.xyz
-    port: 8443
+    server: nnmk.tt7.ccwu.cc
+    port: 80
+    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /kFK9O5cl8ZycyrxcJWNVFC21
+      headers:
+        Host: nnmk.tt7.ccwu.cc
+  - name: 美国 CloudFlare节点 [4]
+    type: vmess
+    server: sy4.620720.xyz
+    port: 443
     uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
     alterId: 0
     cipher: auto
@@ -577,6 +609,78 @@ proxies:
     ws-opts:
       path: /
       headers: {}
+  - name: 美国 CloudFlare节点 [5]
+    type: vmess
+    server: 104.21.73.139
+    port: 80
+    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /kFK9O5cl8ZycyrxcJWNVFC21
+      headers:
+        Host: hnj.wc4.ccwu.cc
+  - name: 台湾省台中市+中华电信
+    type: trojan
+    server: 220.130.58.136
+    port: 31101
+    password: 04e5b584-1850-483d-a844-9ad624a4ca8e
+    sni: green2.cdntencentmusic.com
+    skip-cert-verify: false
+  - name: 美国 CloudFlare节点 [6]
+    type: vmess
+    server: jj90.ae1autumn.us.ci
+    port: 80
+    uuid: 4c205c81-5694-43fe-a287-af563a2ebc05
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /djA07iUsSp0K2Fo4gds7cXpDB5nO5
+      headers:
+        Host: jj90.ae1autumn.us.ci
+  - name: 美国 CloudFlare节点 [7]
+    type: vmess
+    server: 172.67.73.163
+    port: 8080
+    uuid: nasnet
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /nasnet/cdn?ed=2560
+      headers:
+        Host: nasnet-162191099.sharghdaily.co
+  - name: 美国 CloudFlare节点 [8]
+    type: vmess
+    server: mkirt.818185.xyz
+    port: 443
+    uuid: eed4a583-b20e-4787-bbdb-09018156e53f
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /cI9XtKvjiIyvZXFAbvQEN
+      headers:
+        Host: mkirt.818185.xyz
+  - name: 美国 CloudFlare节点 [9]
+    type: vmess
+    server: mmko.tt0.ccwu.cc
+    port: 80
+    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /kFK9O5cl8ZycyrxcJWNVFC21
+      headers:
+        Host: mmko.tt0.ccwu.cc
   - name: 巴西圣保罗 CloudFlare节点
     type: vmess
     server: 188.114.98.0
@@ -590,47 +694,33 @@ proxies:
       path: /nasnet/cdn?ed=2560/?TELEGRAM--KANAL--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN
       headers:
         Host: nasnet-162191099.sharghdaily.co
-  - name: 美国 CloudFlare节点 [4]
+  - name: 美国 CloudFlare节点 [10]
     type: vmess
-    server: mmko.tt0.ccwu.cc
+    server: 1qw.ae1autumn.cc.cd
     port: 80
-    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+    uuid: 13ad36e6-c091-43f2-8505-47d868dd544c
     alterId: 0
     cipher: auto
     tls: false
     network: ws
     ws-opts:
-      path: /kFK9O5cl8ZycyrxcJWNVFC21
+      path: /YsmRouA9ZbxgW4
       headers:
-        Host: mmko.tt0.ccwu.cc
-  - name: 美国 CloudFlare节点 [5]
+        Host: 1qw.ae1autumn.cc.cd
+  - name: 广东省东莞市 联通
     type: vmess
-    server: b6.dddct.us.ci
-    port: 443
-    uuid: 4ed4ac41-4b56-42c4-b31c-4d7bc36f74ce
+    server: aflzzul.meiquankongjian.com
+    port: 52513
+    uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
     alterId: 0
     cipher: auto
-    tls: true
+    tls: false
     network: ws
     ws-opts:
-      path: /E3MEctoKyZkI4BWzwNzcYz
+      path: /564dfa20/
       headers:
-        Host: b6.dddct.us.ci
-  - name: 西班牙+V2CROSS.COM
-    type: trojan
-    server: 80.173.230.196
-    port: 26279
-    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
-    sni: 80.173.230.196
-    skip-cert-verify: false
-  - name: 台湾省台中市+中华电信
-    type: trojan
-    server: 220.130.58.136
-    port: 31101
-    password: b2e15b49-6606-4c62-baff-7015390b3c6a
-    sni: green2.cdntencentmusic.com
-    skip-cert-verify: false
-  - name: 美国 CloudFlare节点 [6]
+        Host: aflzzul.meiquankongjian.com
+  - name: 美国 CloudFlare节点 [11]
     type: vmess
     server: nju.bb4.indevs.in
     port: 80
@@ -643,16 +733,7 @@ proxies:
       path: /boWUVaU0sxrNtFSdOPjqSc7fzeJr
       headers:
         Host: nju.bb4.indevs.in
-  - name: 中国 V2CROSS.COM
-    type: vmess
-    server: v30.hdacd.com
-    port: 30830
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 美国 CloudFlare节点 [7]
+  - name: 美国 CloudFlare节点 [12]
     type: vmess
     server: rgt.ae1autumn.dpdns.org
     port: 80
@@ -665,110 +746,6 @@ proxies:
       path: /YsmRouA9ZbxgW4
       headers:
         Host: rgt.ae1autumn.dpdns.org
-  - name: 美国 CloudFlare节点 [8]
-    type: vmess
-    server: jj90.ae1autumn.us.ci
-    port: 80
-    uuid: 4c205c81-5694-43fe-a287-af563a2ebc05
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /djA07iUsSp0K2Fo4gds7cXpDB5nO5
-      headers:
-        Host: jj90.ae1autumn.us.ci
-  - name: 美国 CloudFlare节点 [9]
-    type: vmess
-    server: ko0.ae1.us.ci
-    port: 80
-    uuid: 4c205c81-5694-43fe-a287-af563a2ebc05
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /djA07iUsSp0K2Fo4gds7cXpDB5nO5
-      headers:
-        Host: ko0.ae1.us.ci
-  - name: 美国 CloudFlare节点 [10]
-    type: vmess
-    server: njui.ae1autumn.indevs.in
-    port: 80
-    uuid: 4c205c81-5694-43fe-a287-af563a2ebc05
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /djA07iUsSp0K2Fo4gds7cXpDB5nO5
-      headers:
-        Host: njui.ae1autumn.indevs.in
-  - name: 美国 CloudFlare节点 [11]
-    type: vmess
-    server: bghy.ae1autumn.us.ci
-    port: 80
-    uuid: 4c205c81-5694-43fe-a287-af563a2ebc05
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /djA07iUsSp0K2Fo4gds7cXpDB5nO5
-      headers:
-        Host: bghy.ae1autumn.us.ci
-  - name: 美国 CloudFlare节点 [12]
-    type: vmess
-    server: ji9.ae1autumn.us.ci
-    port: 80
-    uuid: 4c205c81-5694-43fe-a287-af563a2ebc05
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /djA07iUsSp0K2Fo4gds7cXpDB5nO5
-      headers:
-        Host: ji9.ae1autumn.us.ci
-  - name: 美国 CloudFlare节点 [13]
-    type: vmess
-    server: u89.ae1autumn.us.ci
-    port: 80
-    uuid: 4c205c81-5694-43fe-a287-af563a2ebc05
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /djA07iUsSp0K2Fo4gds7cXpDB5nO5
-      headers:
-        Host: u89.ae1autumn.us.ci
-  - name: 美国 CloudFlare节点 [14]
-    type: vmess
-    server: 104.19.173.68
-    port: 8080
-    uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /NASNET/cdn
-      headers:
-        Host: nasnet-571299667.rahavard365.co
-  - name: 美国 CloudFlare节点 [15]
-    type: vmess
-    server: uu9.ae1.us.ci
-    port: 80
-    uuid: 4c205c81-5694-43fe-a287-af563a2ebc05
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /djA07iUsSp0K2Fo4gds7cXpDB5nO5
-      headers:
-        Host: uu9.ae1.us.ci
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -841,26 +818,24 @@ proxy-groups:
       - US_speednode_0013
       - US_speednode_0014
       - US_speednode_0015
+      - 西班牙+V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 [1]
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 [2]
       - 美国 CloudFlare节点 [3]
-      - 巴西圣保罗 CloudFlare节点
       - 美国 CloudFlare节点 [4]
       - 美国 CloudFlare节点 [5]
-      - 西班牙+V2CROSS.COM
       - 台湾省台中市+中华电信
       - 美国 CloudFlare节点 [6]
-      - 中国 V2CROSS.COM
       - 美国 CloudFlare节点 [7]
       - 美国 CloudFlare节点 [8]
       - 美国 CloudFlare节点 [9]
+      - 巴西圣保罗 CloudFlare节点
       - 美国 CloudFlare节点 [10]
+      - 广东省东莞市 联通
       - 美国 CloudFlare节点 [11]
       - 美国 CloudFlare节点 [12]
-      - 美国 CloudFlare节点 [13]
-      - 美国 CloudFlare节点 [14]
-      - 美国 CloudFlare节点 [15]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -929,26 +904,24 @@ proxy-groups:
       - US_speednode_0013
       - US_speednode_0014
       - US_speednode_0015
+      - 西班牙+V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 [1]
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 [2]
       - 美国 CloudFlare节点 [3]
-      - 巴西圣保罗 CloudFlare节点
       - 美国 CloudFlare节点 [4]
       - 美国 CloudFlare节点 [5]
-      - 西班牙+V2CROSS.COM
       - 台湾省台中市+中华电信
       - 美国 CloudFlare节点 [6]
-      - 中国 V2CROSS.COM
       - 美国 CloudFlare节点 [7]
       - 美国 CloudFlare节点 [8]
       - 美国 CloudFlare节点 [9]
+      - 巴西圣保罗 CloudFlare节点
       - 美国 CloudFlare节点 [10]
+      - 广东省东莞市 联通
       - 美国 CloudFlare节点 [11]
       - 美国 CloudFlare节点 [12]
-      - 美国 CloudFlare节点 [13]
-      - 美国 CloudFlare节点 [14]
-      - 美国 CloudFlare节点 [15]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -1019,26 +992,24 @@ proxy-groups:
       - US_speednode_0013
       - US_speednode_0014
       - US_speednode_0015
+      - 西班牙+V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 [1]
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 [2]
       - 美国 CloudFlare节点 [3]
-      - 巴西圣保罗 CloudFlare节点
       - 美国 CloudFlare节点 [4]
       - 美国 CloudFlare节点 [5]
-      - 西班牙+V2CROSS.COM
       - 台湾省台中市+中华电信
       - 美国 CloudFlare节点 [6]
-      - 中国 V2CROSS.COM
       - 美国 CloudFlare节点 [7]
       - 美国 CloudFlare节点 [8]
       - 美国 CloudFlare节点 [9]
+      - 巴西圣保罗 CloudFlare节点
       - 美国 CloudFlare节点 [10]
+      - 广东省东莞市 联通
       - 美国 CloudFlare节点 [11]
       - 美国 CloudFlare节点 [12]
-      - 美国 CloudFlare节点 [13]
-      - 美国 CloudFlare节点 [14]
-      - 美国 CloudFlare节点 [15]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
