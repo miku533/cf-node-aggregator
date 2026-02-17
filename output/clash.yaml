@@ -95,20 +95,7 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: HK5｜原生/疑似家宽｜非常安全
-    type: vmess
-    server: gtm1.ktmwan.net
-    port: 12883
-    uuid: 3ac9d436-f213-421d-9644-a94686ee9fba
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: gtm1.ktmwan.net
-  - name: US53｜机房｜低风险
+  - name: US25｜机房｜低风险
     type: vmess
     server: v24.hdacd.com
     port: 30824
@@ -126,7 +113,20 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: US4｜机房｜低风险
+  - name: HK5｜原生/疑似家宽｜高风险 (黑名单)
+    type: vmess
+    server: gtm1.ktmwan.net
+    port: 12883
+    uuid: 3ac9d436-f213-421d-9644-a94686ee9fba
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: gtm1.ktmwan.net
+  - name: US33｜机房｜低风险
     type: vmess
     server: v4.hdacd.com
     port: 30804
@@ -135,20 +135,7 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: SG1｜商宽｜非常安全
-    type: vmess
-    server: 36.50.90.241
-    port: 47790
-    uuid: a88a71fa-ed7c-48d3-89e0-74a00d605d88
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /a88a71fa-ed7c-48d3-89e0-74a00d605d88-vm
-      headers:
-        Host: sg.dalxy.eu.org
-  - name: FR2｜机房｜低风险
+  - name: FR5｜机房｜低风险
     type: vmess
     server: v35.hdacd.com
     port: 30835
@@ -157,171 +144,7 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: DE13｜机房｜高风险 (黑名单)
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: US13｜机房｜低风险
-    type: trojan
-    server: bestcdn0.868863.xyz
-    port: 2087
-    password: f0defe70-4c27-4d66-bada-0240e4f49880
-    sni: 17710527849699.682637.xyz
-    skip-cert-verify: true
-  - name: US17｜机房｜低风险
-    type: trojan
-    server: bestcdn0.868863.xyz
-    port: 2096
-    password: f0defe70-4c27-4d66-bada-0240e4f49880
-    sni: 17710527846017.682637.xyz
-    skip-cert-verify: true
-  - name: US18｜机房｜低风险
-    type: trojan
-    server: bestcdn0.868863.xyz
-    port: 8443
-    password: f0defe70-4c27-4d66-bada-0240e4f49880
-    sni: 17710527843409.682637.xyz
-    skip-cert-verify: true
-  - name: US20｜机房｜低风险
-    type: trojan
-    server: bestcdn0.868863.xyz
-    port: 2053
-    password: f0defe70-4c27-4d66-bada-0240e4f49880
-    sni: 17710527849743.682637.xyz
-    skip-cert-verify: true
-  - name: US21｜机房｜低风险
-    type: trojan
-    server: bestcdn1.868863.xyz
-    port: 2053
-    password: f0defe70-4c27-4d66-bada-0240e4f49880
-    sni: 17710527847400.206352.xyz
-    skip-cert-verify: true
-  - name: DE3｜机房｜低风险
-    type: trojan
-    server: bestcdn1.868863.xyz
-    port: 2096
-    password: f0defe70-4c27-4d66-bada-0240e4f49880
-    sni: 17710527843306.206353.xyz
-    skip-cert-verify: true
-  - name: US22｜机房｜低风险
-    type: trojan
-    server: bestcdn1.868863.xyz
-    port: 2087
-    password: f0defe70-4c27-4d66-bada-0240e4f49880
-    sni: 17710527847557.206355.xyz
-    skip-cert-verify: true
-  - name: US24｜机房｜低风险
-    type: trojan
-    server: bestcdn2.868863.xyz
-    port: 2083
-    password: f0defe70-4c27-4d66-bada-0240e4f49880
-    sni: 17710527845118.206352.xyz
-    skip-cert-verify: true
-  - name: DE4｜机房｜低风险
-    type: trojan
-    server: bestcdn2.868863.xyz
-    port: 2087
-    password: f0defe70-4c27-4d66-bada-0240e4f49880
-    sni: 17710527843673.206353.xyz
-    skip-cert-verify: true
-  - name: US25｜机房｜低风险
-    type: trojan
-    server: bestcdn2.868863.xyz
-    port: 2096
-    password: f0defe70-4c27-4d66-bada-0240e4f49880
-    sni: 17710527842165.206355.xyz
-    skip-cert-verify: true
-  - name: US27｜机房｜低风险
-    type: trojan
-    server: bestcdn3.868863.xyz
-    port: 2087
-    password: f0defe70-4c27-4d66-bada-0240e4f49880
-    sni: 17710527848447.206352.xyz
-    skip-cert-verify: true
-  - name: DE5｜机房｜低风险
-    type: trojan
-    server: bestcdn3.868863.xyz
-    port: 2083
-    password: f0defe70-4c27-4d66-bada-0240e4f49880
-    sni: 17710527846479.206353.xyz
-    skip-cert-verify: true
-  - name: US28｜机房｜低风险
-    type: trojan
-    server: bestcdn3.868863.xyz
-    port: 2053
-    password: f0defe70-4c27-4d66-bada-0240e4f49880
-    sni: 17710527844015.206355.xyz
-    skip-cert-verify: true
-  - name: US30｜机房｜低风险
-    type: trojan
-    server: bestcdn4.868863.xyz
-    port: 2096
-    password: f0defe70-4c27-4d66-bada-0240e4f49880
-    sni: 17710527846176.206352.xyz
-    skip-cert-verify: true
-  - name: DE6｜机房｜低风险
-    type: trojan
-    server: bestcdn4.868863.xyz
-    port: 8443
-    password: f0defe70-4c27-4d66-bada-0240e4f49880
-    sni: 17710527849389.206353.xyz
-    skip-cert-verify: true
-  - name: US31｜机房｜低风险
-    type: trojan
-    server: bestcdn4.868863.xyz
-    port: 2083
-    password: f0defe70-4c27-4d66-bada-0240e4f49880
-    sni: 17710527843363.206355.xyz
-    skip-cert-verify: true
-  - name: US33｜机房｜低风险
-    type: trojan
-    server: bestcdn5.868863.xyz
-    port: 8443
-    password: f0defe70-4c27-4d66-bada-0240e4f49880
-    sni: 17710527843210.206352.xyz
-    skip-cert-verify: true
-  - name: DE7｜机房｜低风险
-    type: trojan
-    server: bestcdn5.868863.xyz
-    port: 2053
-    password: f0defe70-4c27-4d66-bada-0240e4f49880
-    sni: 17710527849779.206353.xyz
-    skip-cert-verify: true
-  - name: HK11｜家宽｜非常安全
-    type: trojan
-    server: 58.152.25.208
-    port: 443
-    password: BxceQaOe
-    sni: 58.152.25.208
-    skip-cert-verify: true
-  - name: DE9｜机房｜低风险
-    type: vmess
-    server: 104.19.37.10
-    port: 8080
-    uuid: nasnet
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /NASNET/cdn?ed=2560
-      headers:
-        Host: nasnet-571299667.rahavard365.co
-  - name: DE11｜机房｜低风险
-    type: vmess
-    server: v33.hdacd.com
-    port: 30833
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: JP3｜机房｜低风险
+  - name: JP2｜机房｜低风险
     type: vmess
     server: v6.hdacd.com
     port: 30806
@@ -330,7 +153,7 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: US46｜机房｜低风险
+  - name: US22｜机房｜低风险
     type: vmess
     server: v9.hdacd.com
     port: 30809
@@ -339,6 +162,60 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
+  - name: DE5｜机房｜低风险
+    type: vmess
+    server: v33.hdacd.com
+    port: 30833
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: GB14｜机房｜低风险
+    type: vmess
+    server: v36.hdacd.com
+    port: 30836
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: NL6｜机房｜低风险
+    type: trojan
+    server: vip3.kaixincloud.top
+    port: 443
+    password: humanity
+    sni: www.multiplydose.com
+    skip-cert-verify: true
+  - name: SE1｜机房｜低风险
+    type: trojan
+    server: vip3.kaixincloud.top
+    port: 8443
+    password: T9BpZIVMNv
+    sni: sweden.vmaxpanel.com
+    skip-cert-verify: true
+  - name: NL9｜机房｜低风险
+    type: vmess
+    server: v30.hdacd.com
+    port: 30830
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: CN1｜商宽｜非常安全
+    type: vmess
+    server: hn.xn--wlqw1swrj04ju56d.com
+    port: 80
+    uuid: f9ddefc5-d121-486f-9e2f-0c2cd1a3decc
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: tms.dingtalk.com
   - name: 🇭🇰 香港|@ripaojiedian
     type: vmess
     server: v10.hdacd.com
@@ -528,79 +405,31 @@ proxies:
     flow: xtls-rprx-vision-udp443
   - name: 美国 CloudFlare节点
     type: vmess
-    server: bbnj.wc9.ccwu.cc
+    server: hju.ae1autumn.cc.cd
     port: 80
-    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+    uuid: 13ad36e6-c091-43f2-8505-47d868dd544c
     alterId: 0
     cipher: auto
     tls: false
     network: ws
     ws-opts:
-      path: /kFK9O5cl8ZycyrxcJWNVFC21
+      path: /YsmRouA9ZbxgW4
       headers:
-        Host: bbnj.wc9.ccwu.cc
+        Host: hju.ae1autumn.cc.cd
   - name: 美国 CloudFlare节点 [1]
     type: vmess
-    server: digitalocean.com
+    server: 172.64.149.182
     port: 8080
-    uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+    uuid: nasnet
     alterId: 0
     cipher: auto
     tls: false
     network: ws
     ws-opts:
-      path: /NASNET/cdn
+      path: /nasnet/cdn?ed=2560
       headers:
-        Host: nasnet-571299667.rahavard365.co
-  - name: 台湾省台中市+中华电信
-    type: trojan
-    server: 220.130.58.136
-    port: 31103
-    password: 852a0251-7fbd-4a07-a365-352695af950c
-    sni: green2.cdntencentmusic.com
-    skip-cert-verify: false
-  - name: 俄罗斯+V2CROSS.COM
-    type: trojan
-    server: 212.193.18.144
-    port: 36158
-    password: ZblhWr0mqMakCPg.N
-    sni: ya.ru
-    skip-cert-verify: false
+        Host: nasnet-5712964102.sharghdaily.co
   - name: 美国 CloudFlare节点 [2]
-    type: vmess
-    server: mmko.tt0.ccwu.cc
-    port: 80
-    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /kFK9O5cl8ZycyrxcJWNVFC21
-      headers:
-        Host: mmko.tt0.ccwu.cc
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: 167.17.185.228
-    port: 10889
-    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: web.max
-    skip-cert-verify: false
-  - name: 西班牙+V2CROSS.COM
-    type: trojan
-    server: 80.173.230.196
-    port: 26279
-    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
-    sni: 80.173.230.196
-    skip-cert-verify: false
-  - name: 冰岛+V2CROSS.COM
-    type: trojan
-    server: 37.235.49.209
-    port: 28099
-    password: qmBSKnAl6LYi9%3Dz23Rs.Z
-    sni: celestialcorset.crystalhamster.click
-    skip-cert-verify: false
-  - name: 美国 CloudFlare节点 [3]
     type: vmess
     server: turk1.net.net
     port: 80
@@ -613,19 +442,35 @@ proxies:
       path: /
       headers:
         Host: tr1-smart.adelping.com.
-  - name: 北美地区 V2CROSS.COM
+  - name: 巴西圣保罗 CloudFlare节点
     type: vmess
-    server: 198.62.62.199
-    port: 443
-    uuid: f08369d1-5ee7-4b16-d786-30bce12fc33c
+    server: 188.114.98.0
+    port: 8080
+    uuid: nasnet
     alterId: 0
     cipher: auto
-    tls: true
+    tls: false
     network: ws
     ws-opts:
-      path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
+      path: /nasnet/cdn?ed=2560/?TELEGRAM--KANAL--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN
       headers:
-        Host: ous3.dean52.top
+        Host: nasnet-162191099.sharghdaily.co
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: 167.17.185.228
+    port: 10889
+    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+    sni: web.max
+    skip-cert-verify: false
+  - name: 英国 V2CROSS.COM
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -643,36 +488,19 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
-      - HK5｜原生/疑似家宽｜非常安全
-      - US53｜机房｜低风险
-      - IN2｜家宽｜非常安全
-      - US4｜机房｜低风险
-      - SG1｜商宽｜非常安全
-      - FR2｜机房｜低风险
-      - DE13｜机房｜高风险 (黑名单)
-      - US13｜机房｜低风险
-      - US17｜机房｜低风险
-      - US18｜机房｜低风险
-      - US20｜机房｜低风险
-      - US21｜机房｜低风险
-      - DE3｜机房｜低风险
-      - US22｜机房｜低风险
-      - US24｜机房｜低风险
-      - DE4｜机房｜低风险
       - US25｜机房｜低风险
-      - US27｜机房｜低风险
-      - DE5｜机房｜低风险
-      - US28｜机房｜低风险
-      - US30｜机房｜低风险
-      - DE6｜机房｜低风险
-      - US31｜机房｜低风险
+      - IN2｜家宽｜非常安全
+      - HK5｜原生/疑似家宽｜高风险 (黑名单)
       - US33｜机房｜低风险
-      - DE7｜机房｜低风险
-      - HK11｜家宽｜非常安全
-      - DE9｜机房｜低风险
-      - DE11｜机房｜低风险
-      - JP3｜机房｜低风险
-      - US46｜机房｜低风险
+      - FR5｜机房｜低风险
+      - JP2｜机房｜低风险
+      - US22｜机房｜低风险
+      - DE5｜机房｜低风险
+      - GB14｜机房｜低风险
+      - NL6｜机房｜低风险
+      - SE1｜机房｜低风险
+      - NL9｜机房｜低风险
+      - CN1｜商宽｜非常安全
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
@@ -700,14 +528,10 @@ proxy-groups:
       - US_speednode_0015
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 [1]
-      - 台湾省台中市+中华电信
-      - 俄罗斯+V2CROSS.COM
       - 美国 CloudFlare节点 [2]
+      - 巴西圣保罗 CloudFlare节点
       - 加拿大+V2CROSS.COM
-      - 西班牙+V2CROSS.COM
-      - 冰岛+V2CROSS.COM
-      - 美国 CloudFlare节点 [3]
-      - 北美地区 V2CROSS.COM
+      - 英国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -721,36 +545,19 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
-      - HK5｜原生/疑似家宽｜非常安全
-      - US53｜机房｜低风险
-      - IN2｜家宽｜非常安全
-      - US4｜机房｜低风险
-      - SG1｜商宽｜非常安全
-      - FR2｜机房｜低风险
-      - DE13｜机房｜高风险 (黑名单)
-      - US13｜机房｜低风险
-      - US17｜机房｜低风险
-      - US18｜机房｜低风险
-      - US20｜机房｜低风险
-      - US21｜机房｜低风险
-      - DE3｜机房｜低风险
-      - US22｜机房｜低风险
-      - US24｜机房｜低风险
-      - DE4｜机房｜低风险
       - US25｜机房｜低风险
-      - US27｜机房｜低风险
-      - DE5｜机房｜低风险
-      - US28｜机房｜低风险
-      - US30｜机房｜低风险
-      - DE6｜机房｜低风险
-      - US31｜机房｜低风险
+      - IN2｜家宽｜非常安全
+      - HK5｜原生/疑似家宽｜高风险 (黑名单)
       - US33｜机房｜低风险
-      - DE7｜机房｜低风险
-      - HK11｜家宽｜非常安全
-      - DE9｜机房｜低风险
-      - DE11｜机房｜低风险
-      - JP3｜机房｜低风险
-      - US46｜机房｜低风险
+      - FR5｜机房｜低风险
+      - JP2｜机房｜低风险
+      - US22｜机房｜低风险
+      - DE5｜机房｜低风险
+      - GB14｜机房｜低风险
+      - NL6｜机房｜低风险
+      - SE1｜机房｜低风险
+      - NL9｜机房｜低风险
+      - CN1｜商宽｜非常安全
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
@@ -778,14 +585,10 @@ proxy-groups:
       - US_speednode_0015
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 [1]
-      - 台湾省台中市+中华电信
-      - 俄罗斯+V2CROSS.COM
       - 美国 CloudFlare节点 [2]
+      - 巴西圣保罗 CloudFlare节点
       - 加拿大+V2CROSS.COM
-      - 西班牙+V2CROSS.COM
-      - 冰岛+V2CROSS.COM
-      - 美国 CloudFlare节点 [3]
-      - 北美地区 V2CROSS.COM
+      - 英国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -801,36 +604,19 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
-      - HK5｜原生/疑似家宽｜非常安全
-      - US53｜机房｜低风险
-      - IN2｜家宽｜非常安全
-      - US4｜机房｜低风险
-      - SG1｜商宽｜非常安全
-      - FR2｜机房｜低风险
-      - DE13｜机房｜高风险 (黑名单)
-      - US13｜机房｜低风险
-      - US17｜机房｜低风险
-      - US18｜机房｜低风险
-      - US20｜机房｜低风险
-      - US21｜机房｜低风险
-      - DE3｜机房｜低风险
-      - US22｜机房｜低风险
-      - US24｜机房｜低风险
-      - DE4｜机房｜低风险
       - US25｜机房｜低风险
-      - US27｜机房｜低风险
-      - DE5｜机房｜低风险
-      - US28｜机房｜低风险
-      - US30｜机房｜低风险
-      - DE6｜机房｜低风险
-      - US31｜机房｜低风险
+      - IN2｜家宽｜非常安全
+      - HK5｜原生/疑似家宽｜高风险 (黑名单)
       - US33｜机房｜低风险
-      - DE7｜机房｜低风险
-      - HK11｜家宽｜非常安全
-      - DE9｜机房｜低风险
-      - DE11｜机房｜低风险
-      - JP3｜机房｜低风险
-      - US46｜机房｜低风险
+      - FR5｜机房｜低风险
+      - JP2｜机房｜低风险
+      - US22｜机房｜低风险
+      - DE5｜机房｜低风险
+      - GB14｜机房｜低风险
+      - NL6｜机房｜低风险
+      - SE1｜机房｜低风险
+      - NL9｜机房｜低风险
+      - CN1｜商宽｜非常安全
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
@@ -858,14 +644,10 @@ proxy-groups:
       - US_speednode_0015
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 [1]
-      - 台湾省台中市+中华电信
-      - 俄罗斯+V2CROSS.COM
       - 美国 CloudFlare节点 [2]
+      - 巴西圣保罗 CloudFlare节点
       - 加拿大+V2CROSS.COM
-      - 西班牙+V2CROSS.COM
-      - 冰岛+V2CROSS.COM
-      - 美国 CloudFlare节点 [3]
-      - 北美地区 V2CROSS.COM
+      - 英国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
