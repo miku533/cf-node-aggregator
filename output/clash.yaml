@@ -403,19 +403,55 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
+  - name: 台湾省台中市+中华电信
+    type: trojan
+    server: 220.130.58.136
+    port: 35502
+    password: 6f038cee-6ba1-4941-bce5-de1969f37405
+    sni: green2.cdntencentmusic.com
+    skip-cert-verify: false
+  - name: 伊朗 V2CROSS.COM
+    type: vmess
+    server: freedom.vipgsmteam.info
+    port: 17356
+    uuid: f95cb5ae-1b06-4a57-aba0-30afe12d23ed
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 俄罗斯+V2CROSS.COM
+    type: trojan
+    server: 212.193.18.144
+    port: 36158
+    password: ZblhWr0mqMakCPg.N
+    sni: ya.ru
+    skip-cert-verify: false
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: dll.avaaaal.ir
+    port: 8443
+    uuid: 725f5fcd-721d-40a0-ba6b-3c7477633110
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: cdge.avaaaal.ir
   - name: 美国 CloudFlare节点
     type: vmess
-    server: hju.ae1autumn.cc.cd
+    server: nnmk.tt7.ccwu.cc
     port: 80
-    uuid: 13ad36e6-c091-43f2-8505-47d868dd544c
+    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
     alterId: 0
     cipher: auto
     tls: false
     network: ws
     ws-opts:
-      path: /YsmRouA9ZbxgW4
+      path: /kFK9O5cl8ZycyrxcJWNVFC21
       headers:
-        Host: hju.ae1autumn.cc.cd
+        Host: nnmk.tt7.ccwu.cc
   - name: 美国 CloudFlare节点 [1]
     type: vmess
     server: 172.64.149.182
@@ -426,51 +462,16 @@ proxies:
     tls: false
     network: ws
     ws-opts:
-      path: /nasnet/cdn?ed=2560
+      path: /nasnet/cdn
       headers:
         Host: nasnet-5712964102.sharghdaily.co
-  - name: 美国 CloudFlare节点 [2]
-    type: vmess
-    server: turk1.net.net
-    port: 80
-    uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tr1-smart.adelping.com.
-  - name: 巴西圣保罗 CloudFlare节点
-    type: vmess
-    server: 188.114.98.0
-    port: 8080
-    uuid: nasnet
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /nasnet/cdn?ed=2560/?TELEGRAM--KANAL--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN
-      headers:
-        Host: nasnet-162191099.sharghdaily.co
   - name: 加拿大+V2CROSS.COM
     type: trojan
-    server: 167.17.185.228
+    server: 167.17.185.169
     port: 10889
     password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: web.max
+    sni: ya.ru
     skip-cert-verify: false
-  - name: 英国 V2CROSS.COM
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -526,12 +527,13 @@ proxy-groups:
       - US_speednode_0013
       - US_speednode_0014
       - US_speednode_0015
+      - 台湾省台中市+中华电信
+      - 伊朗 V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 [1]
-      - 美国 CloudFlare节点 [2]
-      - 巴西圣保罗 CloudFlare节点
       - 加拿大+V2CROSS.COM
-      - 英国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -583,12 +585,13 @@ proxy-groups:
       - US_speednode_0013
       - US_speednode_0014
       - US_speednode_0015
+      - 台湾省台中市+中华电信
+      - 伊朗 V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 [1]
-      - 美国 CloudFlare节点 [2]
-      - 巴西圣保罗 CloudFlare节点
       - 加拿大+V2CROSS.COM
-      - 英国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -642,12 +645,13 @@ proxy-groups:
       - US_speednode_0013
       - US_speednode_0014
       - US_speednode_0015
+      - 台湾省台中市+中华电信
+      - 伊朗 V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 [1]
-      - 美国 CloudFlare节点 [2]
-      - 巴西圣保罗 CloudFlare节点
       - 加拿大+V2CROSS.COM
-      - 英国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
