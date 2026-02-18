@@ -410,52 +410,60 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 俄罗斯+V2CROSS.COM
+  - name: 英国 V2CROSS.COM
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 中国 V2CROSS.COM
+    type: vmess
+    server: v12.hdacd.com
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 西班牙+V2CROSS.COM
     type: trojan
-    server: 212.193.18.144
-    port: 36158
-    password: ZblhWr0mqMakCPg.N
-    sni: ya.ru
+    server: 80.173.230.196
+    port: 26279
+    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
+    sni: 80.173.230.196
     skip-cert-verify: false
+  - name: 西班牙+V2CROSS.COM [1]
+    type: trojan
+    server: 80.173.231.254
+    port: 12420
+    password: wp9IsiY82uQhcmgNC1eoBM
+    sni: www.semanticstaplegun.click
+    skip-cert-verify: true
   - name: 美国 CloudFlare节点
     type: vmess
-    server: nmj.wc8.ccwu.cc
-    port: 80
-    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+    server: 104.26.14.85
+    port: 8080
+    uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
     alterId: 0
     cipher: auto
     tls: false
     network: ws
     ws-opts:
-      path: /kFK9O5cl8ZycyrxcJWNVFC21
+      path: /nasnet/cdn
       headers:
-        Host: nmj.wc8.ccwu.cc
-  - name: 美国 CloudFlare节点 [1]
+        Host: nasnet-162191099.sharghdaily.co
+  - name: 伊朗 V2CROSS.COM
     type: vmess
-    server: turk1.net.net
-    port: 80
-    uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+    server: freedom.vipgsmteam.info
+    port: 17356
+    uuid: f95cb5ae-1b06-4a57-aba0-30afe12d23ed
     alterId: 0
     cipher: auto
     tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tr1-smart.adelping.com.
-  - name: 美国 CloudFlare节点 [2]
-    type: vmess
-    server: cf.090227.xyz
-    port: 443
-    uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: sgal.dagrate.eu.org
+    network: tcp
   - name: 美国 V2CROSS.COM
     type: vmess
     server: dll.avaaaal.ir
@@ -469,33 +477,6 @@ proxies:
       path: /
       headers:
         Host: cdge.avaaaal.ir
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: 167.17.185.228
-    port: 10889
-    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: web.max
-    skip-cert-verify: false
-  - name: 美国 CloudFlare节点 [3]
-    type: vmess
-    server: 104.17.77.77
-    port: 8443
-    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-    alterId: 0
-    cipher: none
-    tls: true
-    network: ws
-    ws-opts:
-      path: /lMnsZUN4/
-      headers:
-        Host: v2ray1.dozapp.xyz
-  - name: 台湾省台中市+中华电信
-    type: trojan
-    server: 220.130.58.136
-    port: 35502
-    password: 6f038cee-6ba1-4941-bce5-de1969f37405
-    sni: green2.cdntencentmusic.com
-    skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -552,14 +533,13 @@ proxy-groups:
       - US_speednode_0013
       - US_speednode_0014
       - US_speednode_0015
-      - 俄罗斯+V2CROSS.COM
+      - 英国 V2CROSS.COM
+      - 中国 V2CROSS.COM
+      - 西班牙+V2CROSS.COM
+      - 西班牙+V2CROSS.COM [1]
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
-      - 美国 CloudFlare节点 [2]
+      - 伊朗 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 加拿大+V2CROSS.COM
-      - 美国 CloudFlare节点 [3]
-      - 台湾省台中市+中华电信
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -612,14 +592,13 @@ proxy-groups:
       - US_speednode_0013
       - US_speednode_0014
       - US_speednode_0015
-      - 俄罗斯+V2CROSS.COM
+      - 英国 V2CROSS.COM
+      - 中国 V2CROSS.COM
+      - 西班牙+V2CROSS.COM
+      - 西班牙+V2CROSS.COM [1]
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
-      - 美国 CloudFlare节点 [2]
+      - 伊朗 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 加拿大+V2CROSS.COM
-      - 美国 CloudFlare节点 [3]
-      - 台湾省台中市+中华电信
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -674,14 +653,13 @@ proxy-groups:
       - US_speednode_0013
       - US_speednode_0014
       - US_speednode_0015
-      - 俄罗斯+V2CROSS.COM
+      - 英国 V2CROSS.COM
+      - 中国 V2CROSS.COM
+      - 西班牙+V2CROSS.COM
+      - 西班牙+V2CROSS.COM [1]
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
-      - 美国 CloudFlare节点 [2]
+      - 伊朗 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 加拿大+V2CROSS.COM
-      - 美国 CloudFlare节点 [3]
-      - 台湾省台中市+中华电信
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
