@@ -421,45 +421,32 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 美国 CloudFlare节点
+  - name: 伊朗 V2CROSS.COM
     type: vmess
-    server: 104.21.82.39
-    port: 443
-    uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
-      headers:
-        Host: vvVBNhJ.191288.xyZ
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: 167.17.185.228
-    port: 10889
-    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: web.max
-    skip-cert-verify: false
-  - name: 中国 V2CROSS.COM
-    type: vmess
-    server: v30.hdacd.com
-    port: 30830
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    server: freedom.vipgsmteam.info
+    port: 17356
+    uuid: f95cb5ae-1b06-4a57-aba0-30afe12d23ed
     alterId: 0
     cipher: auto
     tls: false
     network: tcp
-  - name: 台湾省台中市+中华电信
+  - name: 俄罗斯+V2CROSS.COM
     type: trojan
-    server: 220.130.58.136
-    port: 31101
-    password: b2e15b49-6606-4c62-baff-7015390b3c6a
-    sni: green2.cdntencentmusic.com
+    server: 212.193.18.144
+    port: 36158
+    password: ZblhWr0mqMakCPg.N
+    sni: ya.ru
     skip-cert-verify: false
-  - name: 美国 CloudFlare节点 [1]
+  - name: 西班牙+V2CROSS.COM
+    type: trojan
+    server: 80.173.231.254
+    port: 12420
+    password: wp9IsiY82uQhcmgNC1eoBM
+    sni: www.semanticstaplegun.click
+    skip-cert-verify: true
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 172.64.149.182
+    server: 104.21.69.44
     port: 8080
     uuid: nasnet
     alterId: 0
@@ -469,33 +456,33 @@ proxies:
     ws-opts:
       path: /nasnet/cdn
       headers:
-        Host: nasnet-5712964102.sharghdaily.co
-  - name: 美国 CloudFlare节点 [2]
+        Host: nasnet-511952424.mcitel.co
+  - name: 美国 CloudFlare节点 [1]
     type: vmess
-    server: turk1.net.net
-    port: 80
-    uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+    server: 104.19.173.68
+    port: 8080
+    uuid: nasnet
     alterId: 0
     cipher: auto
     tls: false
     network: ws
     ws-opts:
-      path: /
+      path: /NASNET/cdn?ed=2560
       headers:
-        Host: tr1-smart.adelping.com.
-  - name: 美国 CloudFlare节点 [3]
+        Host: nasnet-571299667.rahavard365.co
+  - name: 美国 CloudFlare节点 [2]
     type: vmess
-    server: 172.67.197.47
-    port: 443
-    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+    server: 172.64.149.182
+    port: 8080
+    uuid: nasnet
     alterId: 0
     cipher: auto
-    tls: true
+    tls: false
     network: ws
     ws-opts:
-      path: /
+      path: /nasnet/cdn?ed=2560
       headers:
-        Host: sy4.620720.xyz
+        Host: nasnet-5712964102.sharghdaily.co
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -553,13 +540,12 @@ proxy-groups:
       - US_speednode_0013
       - US_speednode_0014
       - US_speednode_0015
+      - 伊朗 V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
+      - 西班牙+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 加拿大+V2CROSS.COM
-      - 中国 V2CROSS.COM
-      - 台湾省台中市+中华电信
       - 美国 CloudFlare节点 [1]
       - 美国 CloudFlare节点 [2]
-      - 美国 CloudFlare节点 [3]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -613,13 +599,12 @@ proxy-groups:
       - US_speednode_0013
       - US_speednode_0014
       - US_speednode_0015
+      - 伊朗 V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
+      - 西班牙+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 加拿大+V2CROSS.COM
-      - 中国 V2CROSS.COM
-      - 台湾省台中市+中华电信
       - 美国 CloudFlare节点 [1]
       - 美国 CloudFlare节点 [2]
-      - 美国 CloudFlare节点 [3]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -675,13 +660,12 @@ proxy-groups:
       - US_speednode_0013
       - US_speednode_0014
       - US_speednode_0015
+      - 伊朗 V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
+      - 西班牙+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 加拿大+V2CROSS.COM
-      - 中国 V2CROSS.COM
-      - 台湾省台中市+中华电信
       - 美国 CloudFlare节点 [1]
       - 美国 CloudFlare节点 [2]
-      - 美国 CloudFlare节点 [3]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
