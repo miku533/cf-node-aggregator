@@ -914,66 +914,54 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
+  - name: 俄罗斯+V2CROSS.COM
+    type: trojan
+    server: 212.193.18.144
+    port: 36158
+    password: ZblhWr0mqMakCPg.N
+    sni: ya.ru
+    skip-cert-verify: false
+  - name: 西班牙+V2CROSS.COM
+    type: trojan
+    server: 80.173.230.196
+    port: 26279
+    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
+    sni: 80.173.230.196
+    skip-cert-verify: false
   - name: 美国 CloudFlare节点
     type: vmess
-    server: t65.o1o.indevs.in
-    port: 80
-    uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+    server: sy4.620720.xyz
+    port: 443
+    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
     alterId: 0
     cipher: auto
-    tls: false
+    tls: true
     network: ws
     ws-opts:
-      path: /GgigazFGDLgFWDItkD5XgXAL
+      path: /
       headers:
-        Host: t65.O1o.InDEVS.in
+        Host: sy4.620720.xyz
   - name: 美国 CloudFlare节点 [1]
     type: vmess
-    server: 104.21.70.50
-    port: 443
-    uuid: 0c6b96bc-5e3a-4500-8497-6dead1965609
+    server: hgtrojan.zabc.net
+    port: 2083
+    uuid: e6395c20-4571-4b34-d6b1-55a5d36e49ea
     alterId: 0
     cipher: auto
     tls: true
     network: ws
     ws-opts:
-      path: /KHtPvNZl371C8NsbbZ1wwDhJ3
+      path: /e6395c20
       headers:
-        Host: 6c00bf1f-a569-4d54-9f71-a13611801867.661.qzz.io
-  - name: 美国 CloudFlare节点 [2]
-    type: vmess
-    server: tgju.org
-    port: 8080
-    uuid: nasnet
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /nasnet/cdn?ed=2560
-      headers:
-        Host: nasnet-162191099.sharghdaily.co
-  - name: 美国 CloudFlare节点 [3]
-    type: vmess
-    server: 104.21.82.39
-    port: 443
-    uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
-      headers:
-        Host: vvVBNhJ.191288.xyZ
-  - name: 台湾省台中市+中华电信
+        Host: hgtrojan.zabc.net
+  - name: 冰岛+V2CROSS.COM
     type: trojan
-    server: 220.130.58.136
-    port: 31102
-    password: 4250b3bb-d1ae-4e77-bf71-4069e0d2c383
-    sni: green2.cdntencentmusic.com
+    server: 37.235.49.209
+    port: 28099
+    password: qmBSKnAl6LYi9%3Dz23Rs.Z
+    sni: celestialcorset.crystalhamster.click
     skip-cert-verify: false
-  - name: 美国 CloudFlare节点 [4]
+  - name: 美国 CloudFlare节点 [2]
     type: vmess
     server: 172.64.149.182
     port: 8080
@@ -986,6 +974,32 @@ proxies:
       path: /nasnet/cdn
       headers:
         Host: nasnet-5712964102.sharghdaily.co
+  - name: 美国 CloudFlare节点 [3]
+    type: vmess
+    server: tgju.org
+    port: 8080
+    uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /nasnet/cdn
+      headers:
+        Host: nasnet-571296497.iranpress.co
+  - name: 美国 CloudFlare节点 [4]
+    type: vmess
+    server: 2.ae1.indevs.in
+    port: 80
+    uuid: 0c6b96bc-5e3a-4500-8497-6dead1965609
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /KHtPvNZl371C8NsbbZ1wwDhJ3
+      headers:
+        Host: 2.ae1.INdEvS.In
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1092,11 +1106,13 @@ proxy-groups:
       - US_speednode_0013
       - US_speednode_0014
       - US_speednode_0015
+      - 俄罗斯+V2CROSS.COM
+      - 西班牙+V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 [1]
+      - 冰岛+V2CROSS.COM
       - 美国 CloudFlare节点 [2]
       - 美国 CloudFlare节点 [3]
-      - 台湾省台中市+中华电信
       - 美国 CloudFlare节点 [4]
   - name: ♻️ 自动选择
     type: url-test
@@ -1200,11 +1216,13 @@ proxy-groups:
       - US_speednode_0013
       - US_speednode_0014
       - US_speednode_0015
+      - 俄罗斯+V2CROSS.COM
+      - 西班牙+V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 [1]
+      - 冰岛+V2CROSS.COM
       - 美国 CloudFlare节点 [2]
       - 美国 CloudFlare节点 [3]
-      - 台湾省台中市+中华电信
       - 美国 CloudFlare节点 [4]
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -1310,11 +1328,13 @@ proxy-groups:
       - US_speednode_0013
       - US_speednode_0014
       - US_speednode_0015
+      - 俄罗斯+V2CROSS.COM
+      - 西班牙+V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 [1]
+      - 冰岛+V2CROSS.COM
       - 美国 CloudFlare节点 [2]
       - 美国 CloudFlare节点 [3]
-      - 台湾省台中市+中华电信
       - 美国 CloudFlare节点 [4]
     url: http://www.gstatic.com/generate_204
     interval: 300
