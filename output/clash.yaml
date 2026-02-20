@@ -502,17 +502,43 @@ proxies:
     flow: xtls-rprx-vision-udp443
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 104.21.61.154
+    server: nmki.1yy.ccwu.cc
+    port: 80
+    uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /iSRWSKUJKNuXvVzsYHmsMrnO
+      headers:
+        Host: nmki.1yy.ccwu.cc
+  - name: 美国 CloudFlare节点 [1]
+    type: vmess
+    server: 104.19.173.68
+    port: 8080
+    uuid: nasnet
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /NASNET/cdn?ed=2560
+      headers:
+        Host: nasnet-571299667.rahavard365.co
+  - name: 美国 CloudFlare节点 [2]
+    type: vmess
+    server: yyhju.1x6.indevs.in
     port: 443
-    uuid: 2bfe58f7-da1d-45df-ab43-7c665b20ee29
+    uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
     alterId: 0
     cipher: auto
     tls: true
     network: ws
     ws-opts:
-      path: /t1UV4HSrzbWGmJtbBhmKb8nOkg
+      path: /iSRWSKUJKNuXvVzsYHmsMrnO
       headers:
-        Host: vvvbbnhj.191266.xyz
+        Host: yyhju.1x6.indevs.in
   - name: 冰岛+V2CROSS.COM
     type: trojan
     server: 37.235.49.209
@@ -520,42 +546,19 @@ proxies:
     password: qmBSKnAl6LYi9%3Dz23Rs.Z
     sni: celestialcorset.crystalhamster.click
     skip-cert-verify: false
-  - name: 台湾省台中市+中华电信
-    type: trojan
-    server: green2.cdntencentmusic.com
-    port: 35501
-    password: 5f6ded93-4ab8-4a99-9c84-b19b9993f27c
-    sni: green2.cdntencentmusic.com
-    skip-cert-verify: true
-  - name: 以色列 V2CROSS.COM
+  - name: 美国 CloudFlare节点 [3]
     type: vmess
-    server: 149.88.95.94
-    port: 35760
-    uuid: 17e96792-d8c3-4741-9c34-e5d1c11d754f
+    server: 104.21.32.229
+    port: 443
+    uuid: 795ef99b-3260-4d18-ac98-5130bba9f168
     alterId: 0
     cipher: auto
-    tls: false
-    network: none
-  - name: 美国 CloudFlare节点 [1]
-    type: vmess
-    server: turk1.net.net
-    port: 80
-    uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
-    alterId: 0
-    cipher: auto
-    tls: false
+    tls: true
     network: ws
     ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
+      path: /LtgDLBVt1BfWnGWI7hLRpJ1
       headers:
-        Host: tr1-smart.adelping.com.
-  - name: 台湾省台中市+中华电信 [1]
-    type: trojan
-    server: 220.130.58.136
-    port: 35501
-    password: 8595b855-e4c4-40cd-834d-d34bb65ec928
-    sni: green2.cdntencentmusic.com
-    skip-cert-verify: true
+        Host: ki9i.dddct.us.ci
   - name: 瑞典+V2CROSS.COM
     type: vless
     server: dd.openaccessnode.com
@@ -563,9 +566,16 @@ proxies:
     uuid: 75193bef-8d8f-e823-41e0-2dd083dc1399
     tls: false
     network: tcp
-  - name: 美国 CloudFlare节点 [2]
+  - name: 广东省+移动
+    type: trojan
+    server: a12.taipeicitygovernment.org.ua
+    port: 3462
+    password: 736cd94d-7b94-3e44-8106-3419f64eaf09
+    sni: 45.32.28.232
+    skip-cert-verify: false
+  - name: 美国 CloudFlare节点 [4]
     type: vmess
-    server: tgju.org
+    server: 172.64.149.182
     port: 8080
     uuid: nasnet
     alterId: 0
@@ -576,6 +586,20 @@ proxies:
       path: /nasnet/cdn?ed=2560
       headers:
         Host: nasnet-5712964102.sharghdaily.co
+  - name: 俄罗斯+V2CROSS.COM
+    type: trojan
+    server: 212.193.18.144
+    port: 36158
+    password: ZblhWr0mqMakCPg.N
+    sni: api.avito.ru
+    skip-cert-verify: true
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: 167.17.185.169
+    port: 10889
+    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+    sni: ya.ru
+    skip-cert-verify: false
   - name: 伊朗 V2CROSS.COM
     type: vmess
     server: freedom.vipgsmteam.info
@@ -585,6 +609,13 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
+  - name: 台湾省台中市+中华电信
+    type: trojan
+    server: 220.130.58.136
+    port: 35501
+    password: 66c62e1a-8037-4154-ad0b-7a0ec415f46c
+    sni: green2.cdntencentmusic.com
+    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -654,14 +685,17 @@ proxy-groups:
       - US_speednode_0014
       - US_speednode_0015
       - 美国 CloudFlare节点
-      - 冰岛+V2CROSS.COM
-      - 台湾省台中市+中华电信
-      - 以色列 V2CROSS.COM
       - 美国 CloudFlare节点 [1]
-      - 台湾省台中市+中华电信 [1]
-      - 瑞典+V2CROSS.COM
       - 美国 CloudFlare节点 [2]
+      - 冰岛+V2CROSS.COM
+      - 美国 CloudFlare节点 [3]
+      - 瑞典+V2CROSS.COM
+      - 广东省+移动
+      - 美国 CloudFlare节点 [4]
+      - 俄罗斯+V2CROSS.COM
+      - 加拿大+V2CROSS.COM
       - 伊朗 V2CROSS.COM
+      - 台湾省台中市+中华电信
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -727,14 +761,17 @@ proxy-groups:
       - US_speednode_0014
       - US_speednode_0015
       - 美国 CloudFlare节点
-      - 冰岛+V2CROSS.COM
-      - 台湾省台中市+中华电信
-      - 以色列 V2CROSS.COM
       - 美国 CloudFlare节点 [1]
-      - 台湾省台中市+中华电信 [1]
-      - 瑞典+V2CROSS.COM
       - 美国 CloudFlare节点 [2]
+      - 冰岛+V2CROSS.COM
+      - 美国 CloudFlare节点 [3]
+      - 瑞典+V2CROSS.COM
+      - 广东省+移动
+      - 美国 CloudFlare节点 [4]
+      - 俄罗斯+V2CROSS.COM
+      - 加拿大+V2CROSS.COM
       - 伊朗 V2CROSS.COM
+      - 台湾省台中市+中华电信
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -802,14 +839,17 @@ proxy-groups:
       - US_speednode_0014
       - US_speednode_0015
       - 美国 CloudFlare节点
-      - 冰岛+V2CROSS.COM
-      - 台湾省台中市+中华电信
-      - 以色列 V2CROSS.COM
       - 美国 CloudFlare节点 [1]
-      - 台湾省台中市+中华电信 [1]
-      - 瑞典+V2CROSS.COM
       - 美国 CloudFlare节点 [2]
+      - 冰岛+V2CROSS.COM
+      - 美国 CloudFlare节点 [3]
+      - 瑞典+V2CROSS.COM
+      - 广东省+移动
+      - 美国 CloudFlare节点 [4]
+      - 俄罗斯+V2CROSS.COM
+      - 加拿大+V2CROSS.COM
       - 伊朗 V2CROSS.COM
+      - 台湾省台中市+中华电信
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
