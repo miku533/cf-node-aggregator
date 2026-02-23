@@ -580,7 +580,54 @@ proxies:
       path: /
       headers:
         Host: bright-organizationauhuddhesz.sportland.company.
+  - name: 巴西圣保罗 CloudFlare节点
+    type: vmess
+    server: 188.114.98.0
+    port: 8080
+    uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /nasnet/cdn
+      headers:
+        Host: nasnet-162191099.sharghdaily.co
+  - name: 伊朗 V2CROSS.COM
+    type: vmess
+    server: freedom.vipgsmteam.info
+    port: 17356
+    uuid: f95cb5ae-1b06-4a57-aba0-30afe12d23ed
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
   - name: 美国 CloudFlare节点
+    type: vmess
+    server: nhj.1jj.ccwu.cc
+    port: 443
+    uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /iSRWSKUJKNuXvVzsYHmsMrnO
+      headers: {}
+  - name: 美国 CloudFlare节点 [1]
+    type: vmess
+    server: 172.67.211.136
+    port: 443
+    uuid: 2bfe58f7-da1d-45df-ab43-7c665b20ee29
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /t1UV4HSrzbWGmJtbBhmKb8nOkg
+      headers:
+        Host: vvvbbnhj.191266.xyz
+  - name: 美国 CloudFlare节点 [2]
     type: vmess
     server: 104.26.15.137
     port: 80
@@ -593,81 +640,38 @@ proxies:
       path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
       headers:
         Host: tr1-smart.adelping.com.
-  - name: 美国 CloudFlare节点 [1]
-    type: vmess
-    server: turk1.net.net
-    port: 80
-    uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tr1-smart.adelping.com.
-  - name: 美国 CloudFlare节点 [2]
-    type: vmess
-    server: 104.26.14.137
-    port: 80
-    uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
-      headers:
-        Host: tr1-smart.adelping.com.
+  - name: 伊朗+V2CROSS.COM
+    type: trojan
+    server: free-de-2.undef.network
+    port: 443
+    password: pYIoKUPGpWeTYXEx3HjR7s97B
+    sni: free-de-2.undef.network
+    skip-cert-verify: false
   - name: 美国 CloudFlare节点 [3]
     type: vmess
-    server: sy4.620720.xyz
+    server: hhnm.7777128.xyz
     port: 443
-    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+    uuid: dd39bb7d-2bea-41b5-be20-fa228a45f639
     alterId: 0
     cipher: auto
     tls: true
     network: ws
     ws-opts:
-      path: /
+      path: /vitRvGVofV7ia41dH
       headers:
-        Host: sy4.620720.xyz
-  - name: 西班牙+V2CROSS.COM
-    type: trojan
-    server: 80.173.231.254
-    port: 12420
-    password: wp9IsiY82uQhcmgNC1eoBM
-    sni: www.semanticstaplegun.click
-    skip-cert-verify: true
-  - name: 伊朗 V2CROSS.COM
-    type: vmess
-    server: 193.151.146.232
-    port: 17356
-    uuid: f95cb5ae-1b06-4a57-aba0-30afe12d23ed
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
+        Host: hhnm.7777128.xyz
   - name: 美国 CloudFlare节点 [4]
     type: vmess
-    server: tgh.iran2029.indevs.in
-    port: 443
-    uuid: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
+    server: 172.64.155.209
+    port: 8443
+    uuid: 19e52bf4-1b7d-4bd4-ae66-6ca024436c17
     alterId: 0
     cipher: auto
     tls: true
     network: ws
     ws-opts:
-      path: /LDTpW8UIEnTAiN9LMya
-      headers:
-        Host: tgh.iran2029.indevs.in
-  - name: 香港+特别行政区
-    type: vless
-    server: fredii.ichimokutrader.org
-    port: 2020
-    uuid: e4bd3863-ef9f-4e39-9478-2003575d3380
-    tls: false
-    network: tcp
+      path: /gbt
+      headers: {}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -747,14 +751,14 @@ proxy-groups:
       - SI_speednode_0014
       - US_speednode_0015
       - US_speednode_0016
+      - 巴西圣保罗 CloudFlare节点
+      - 伊朗 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 [1]
       - 美国 CloudFlare节点 [2]
+      - 伊朗+V2CROSS.COM
       - 美国 CloudFlare节点 [3]
-      - 西班牙+V2CROSS.COM
-      - 伊朗 V2CROSS.COM
       - 美国 CloudFlare节点 [4]
-      - 香港+特别行政区
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -830,14 +834,14 @@ proxy-groups:
       - SI_speednode_0014
       - US_speednode_0015
       - US_speednode_0016
+      - 巴西圣保罗 CloudFlare节点
+      - 伊朗 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 [1]
       - 美国 CloudFlare节点 [2]
+      - 伊朗+V2CROSS.COM
       - 美国 CloudFlare节点 [3]
-      - 西班牙+V2CROSS.COM
-      - 伊朗 V2CROSS.COM
       - 美国 CloudFlare节点 [4]
-      - 香港+特别行政区
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -915,14 +919,14 @@ proxy-groups:
       - SI_speednode_0014
       - US_speednode_0015
       - US_speednode_0016
+      - 巴西圣保罗 CloudFlare节点
+      - 伊朗 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 [1]
       - 美国 CloudFlare节点 [2]
+      - 伊朗+V2CROSS.COM
       - 美国 CloudFlare节点 [3]
-      - 西班牙+V2CROSS.COM
-      - 伊朗 V2CROSS.COM
       - 美国 CloudFlare节点 [4]
-      - 香港+特别行政区
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
