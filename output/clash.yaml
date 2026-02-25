@@ -382,101 +382,92 @@ proxies:
     network: tcp
   - name: 香港3|@ripaojiedian
     type: trojan
-    server: 54.199.253.251
+    server: 13.114.51.135
     port: 4856
-    password: 64a59181551b5773e390bd717a7b7c06
+    password: 262f1d150049457ac1d6e66b020fa980
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 香港4|@ripaojiedian
     type: trojan
-    server: 43.198.227.190
-    port: 54548
+    server: 16.162.118.238
+    port: 504
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
   - name: 香港5|@ripaojiedian
     type: trojan
-    server: 18.163.116.51
-    port: 504
+    server: 43.198.185.201
+    port: 3292
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
   - name: 日本|@ripaojiedian
     type: trojan
-    server: 54.250.16.92
+    server: 3.112.214.167
     port: 2595
     password: BxceQaOe
     sni: t.me%2Fripaojiedian
     skip-cert-verify: true
   - name: 日本2|@ripaojiedian
     type: trojan
-    server: 13.192.169.14
-    port: 3423
-    password: 64a59181551b5773e390bd717a7b7c06
+    server: 160.16.138.24
+    port: 193
+    password: 262f1d150049457ac1d6e66b020fa980
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 日本3|@ripaojiedian
     type: trojan
-    server: 153.121.45.139
+    server: 43.207.87.46
     port: 3423
-    password: 64a59181551b5773e390bd717a7b7c06
+    password: 262f1d150049457ac1d6e66b020fa980
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 新加坡|@ripaojiedian
     type: trojan
-    server: 52.197.219.10
+    server: 57.181.39.159
     port: 3901
-    password: 64a59181551b5773e390bd717a7b7c06
+    password: 262f1d150049457ac1d6e66b020fa980
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 新加坡2|@ripaojiedian
     type: trojan
-    server: 160.16.132.38
+    server: 160.16.85.33
     port: 3419
-    password: 64a59181551b5773e390bd717a7b7c06
+    password: 262f1d150049457ac1d6e66b020fa980
     sni: www.nintendogames.net
     skip-cert-verify: true
   - name: 新加坡3|@ripaojiedian
     type: trojan
-    server: 43.198.227.190
-    port: 15363
+    server: 43.198.17.4
+    port: 52951
     password: BxceQaOe
     sni: t.me%2Fripaojiedian
     skip-cert-verify: true
   - name: 美国|@ripaojiedian
     type: trojan
-    server: 54.150.231.83
-    port: 4920
-    password: 64a59181551b5773e390bd717a7b7c06
+    server: 160.16.68.250
+    port: 1281
+    password: 262f1d150049457ac1d6e66b020fa980
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 美国2|@ripaojiedian
     type: trojan
-    server: 54.238.209.205
-    port: 1281
-    password: 64a59181551b5773e390bd717a7b7c06
+    server: 13.231.123.180
+    port: 4920
+    password: 262f1d150049457ac1d6e66b020fa980
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 美国3|@ripaojiedian
     type: trojan
-    server: 43.198.227.190
-    port: 50446
+    server: 16.162.118.238
+    port: 45285
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
   - name: 🇮🇳 印度|@ripaojiedian
     type: vmess
-    server: board-04.ddnskunlun.com
-    port: 11973
-    uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 🇺🇸 美国4|@ripaojiedian
-    type: vmess
-    server: select-us.ddnskunlun.com
-    port: 9028
+    server: board-01.ddnskunlun.com
+    port: 11929
     uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
     alterId: 0
     cipher: auto
@@ -662,34 +653,73 @@ proxies:
     uuid: b1267991-59ff-4b67-b141-97e3ced4e7c8
     tls: true
     network: tcp
+  - name: 台湾省+中华电信(HiNet)数据中心
+    type: trojan
+    server: 60.250.152.209
+    port: 3462
+    password: 736cd94d-7b94-3e44-8106-3419f64eaf09
+    sni: 45.32.28.232
+    skip-cert-verify: false
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 104.26.15.137
+    port: 80
+    uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: tr1-smart.adelping.com.
+  - name: 俄罗斯+V2CROSS.COM
+    type: trojan
+    server: 212.193.18.144
+    port: 36158
+    password: ZblhWr0mqMakCPg.N
+    sni: ya.ru
+    skip-cert-verify: false
+  - name: 美国 CloudFlare节点 [1]
+    type: vmess
+    server: turk1.net.net
+    port: 80
+    uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?de=2560
+      headers:
+        Host: tr1-smart.adelping.com.
   - name: 台湾省台中市+中华电信
     type: trojan
-    server: 220.130.58.136
-    port: 35501
-    password: a1a00c82-5356-4a49-8944-1cd0f94168bb
-    sni: 220.130.58.136
-    skip-cert-verify: false
-  - name: 西班牙+V2CROSS.COM
-    type: trojan
-    server: 80.173.231.254
-    port: 12420
-    password: wp9IsiY82uQhcmgNC1eoBM
-    sni: www.semanticstaplegun.click
-    skip-cert-verify: false
-  - name: 台湾省台中市+中华电信 [1]
-    type: trojan
     server: green2.cdntencentmusic.com
-    port: 31102
-    password: fdd6c2d0-2eaf-4e95-bfaa-432beb680ca9
+    port: 31101
+    password: 26635779-8ce6-4c07-ae5d-f3769ec95ddd
     sni: green2.cdntencentmusic.com
-    skip-cert-verify: true
-  - name: 台湾省台中市+中华电信 [2]
-    type: trojan
-    server: 220.130.58.136
-    port: 31103
-    password: 0a169d7d-a30f-4d90-af1b-55f6ef6afcb7
-    sni: green2.cdntencentmusic.com
-    skip-cert-verify: true
+    skip-cert-verify: false
+  - name: 美国 CloudFlare节点 [2]
+    type: vmess
+    server: 104.26.14.137
+    port: 80
+    uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: tr1-smart.adelping.com.
+  - name: 伊朗+V2CROSS.COM
+    type: vless
+    server: 37.32.43.252
+    port: 15717
+    uuid: 665b51bb-b60b-4653-dab5-cc7fc3125380
+    tls: false
+    network: tcp
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -755,7 +785,6 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇮🇳 印度|@ripaojiedian
-      - 🇺🇸 美国4|@ripaojiedian
       - BY_speednode_0001
       - CH_speednode_0002
       - CH_speednode_0003
@@ -777,10 +806,13 @@ proxy-groups:
       - US_speednode_0021
       - US_speednode_0023
       - US_speednode_0024
+      - 台湾省+中华电信(HiNet)数据中心
+      - 美国 CloudFlare节点
+      - 俄罗斯+V2CROSS.COM
+      - 美国 CloudFlare节点 [1]
       - 台湾省台中市+中华电信
-      - 西班牙+V2CROSS.COM
-      - 台湾省台中市+中华电信 [1]
-      - 台湾省台中市+中华电信 [2]
+      - 美国 CloudFlare节点 [2]
+      - 伊朗+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -842,7 +874,6 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇮🇳 印度|@ripaojiedian
-      - 🇺🇸 美国4|@ripaojiedian
       - BY_speednode_0001
       - CH_speednode_0002
       - CH_speednode_0003
@@ -864,10 +895,13 @@ proxy-groups:
       - US_speednode_0021
       - US_speednode_0023
       - US_speednode_0024
+      - 台湾省+中华电信(HiNet)数据中心
+      - 美国 CloudFlare节点
+      - 俄罗斯+V2CROSS.COM
+      - 美国 CloudFlare节点 [1]
       - 台湾省台中市+中华电信
-      - 西班牙+V2CROSS.COM
-      - 台湾省台中市+中华电信 [1]
-      - 台湾省台中市+中华电信 [2]
+      - 美国 CloudFlare节点 [2]
+      - 伊朗+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -931,7 +965,6 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇮🇳 印度|@ripaojiedian
-      - 🇺🇸 美国4|@ripaojiedian
       - BY_speednode_0001
       - CH_speednode_0002
       - CH_speednode_0003
@@ -953,10 +986,13 @@ proxy-groups:
       - US_speednode_0021
       - US_speednode_0023
       - US_speednode_0024
+      - 台湾省+中华电信(HiNet)数据中心
+      - 美国 CloudFlare节点
+      - 俄罗斯+V2CROSS.COM
+      - 美国 CloudFlare节点 [1]
       - 台湾省台中市+中华电信
-      - 西班牙+V2CROSS.COM
-      - 台湾省台中市+中华电信 [1]
-      - 台湾省台中市+中华电信 [2]
+      - 美国 CloudFlare节点 [2]
+      - 伊朗+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
