@@ -95,192 +95,7 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: HK18｜家宽｜非常安全
-    type: vmess
-    server: 120.198.71.128
-    port: 39569
-    uuid: dcdcb14e-8c34-3c0f-9801-01457dcf25f5
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /04235e8c-cea8-4f16-8934-b704a89b40cb.live238.m3u8
-      headers:
-        Host: jike1-linode10.bilibili.com
-  - name: SG7｜机房｜低风险
-    type: trojan
-    server: sg05.stimaysmhy8.com
-    port: 45005
-    password: 984c7793-1447-4af5-9200-d514ad6fe329
-    sni: jsygouer.weixin-baidu-qq.com
-    skip-cert-verify: true
-  - name: SG10｜机房｜低风险
-    type: vmess
-    server: 120.198.71.128
-    port: 31873
-    uuid: dcdcb14e-8c34-3c0f-9801-01457dcf25f5
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /8858d045-66fe-441a-8d35-1507216fbb2f.live238.m3u8
-      headers:
-        Host: jike1-sgovh02.bilibili.com
-  - name: HK14｜家宽｜非常安全
-    type: trojan
-    server: bgp1.stimaysmhy8.com
-    port: 14011
-    password: 984c7793-1447-4af5-9200-d514ad6fe329
-    sni: jsygouer.weixin-baidu-qq.com
-    skip-cert-verify: true
-  - name: GB6｜机房｜低风险
-    type: vmess
-    server: v36.hdacd.com
-    port: 30836
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: DE7｜机房｜低风险
-    type: vmess
-    server: v33.hdacd.com
-    port: 30833
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: US149｜机房｜低风险
-    type: trojan
-    server: bestcdn0.868863.xyz
-    port: 2087
-    password: 45bdac08-8e04-4ed5-86bc-a092a745d459
-    sni: 17720802361875.682637.xyz
-    skip-cert-verify: true
-  - name: US153｜机房｜低风险
-    type: trojan
-    server: bestcdn0.868863.xyz
-    port: 2096
-    password: 45bdac08-8e04-4ed5-86bc-a092a745d459
-    sni: 17720802363365.682637.xyz
-    skip-cert-verify: true
-  - name: US154｜机房｜低风险
-    type: trojan
-    server: bestcdn0.868863.xyz
-    port: 8443
-    password: 45bdac08-8e04-4ed5-86bc-a092a745d459
-    sni: 17720802365453.682637.xyz
-    skip-cert-verify: true
-  - name: US156｜机房｜低风险
-    type: trojan
-    server: bestcdn0.868863.xyz
-    port: 2053
-    password: 45bdac08-8e04-4ed5-86bc-a092a745d459
-    sni: 17720802367389.682637.xyz
-    skip-cert-verify: true
-  - name: US157｜机房｜低风险
-    type: trojan
-    server: bestcdn1.868863.xyz
-    port: 2053
-    password: 45bdac08-8e04-4ed5-86bc-a092a745d459
-    sni: 17720802362598.206352.xyz
-    skip-cert-verify: true
-  - name: US158｜机房｜低风险
-    type: trojan
-    server: bestcdn1.868863.xyz
-    port: 2087
-    password: 45bdac08-8e04-4ed5-86bc-a092a745d459
-    sni: 17720802365620.206355.xyz
-    skip-cert-verify: true
-  - name: US161｜机房｜低风险
-    type: trojan
-    server: bestcdn2.868863.xyz
-    port: 2083
-    password: 45bdac08-8e04-4ed5-86bc-a092a745d459
-    sni: 17720802367311.206352.xyz
-    skip-cert-verify: true
-  - name: DE9｜机房｜低风险
-    type: trojan
-    server: bestcdn2.868863.xyz
-    port: 2087
-    password: 45bdac08-8e04-4ed5-86bc-a092a745d459
-    sni: 17720802365476.206353.xyz
-    skip-cert-verify: true
-  - name: US162｜机房｜低风险
-    type: trojan
-    server: bestcdn2.868863.xyz
-    port: 2096
-    password: 45bdac08-8e04-4ed5-86bc-a092a745d459
-    sni: 17720802368767.206355.xyz
-    skip-cert-verify: true
-  - name: US165｜机房｜低风险
-    type: trojan
-    server: bestcdn3.868863.xyz
-    port: 2087
-    password: 45bdac08-8e04-4ed5-86bc-a092a745d459
-    sni: 17720802369084.206352.xyz
-    skip-cert-verify: true
-  - name: DE10｜机房｜低风险
-    type: trojan
-    server: bestcdn3.868863.xyz
-    port: 2083
-    password: 45bdac08-8e04-4ed5-86bc-a092a745d459
-    sni: 17720802369353.206353.xyz
-    skip-cert-verify: true
-  - name: US166｜机房｜低风险
-    type: trojan
-    server: bestcdn3.868863.xyz
-    port: 2053
-    password: 45bdac08-8e04-4ed5-86bc-a092a745d459
-    sni: 17720802363787.206355.xyz
-    skip-cert-verify: true
-  - name: US169｜机房｜低风险
-    type: trojan
-    server: bestcdn4.868863.xyz
-    port: 2096
-    password: 45bdac08-8e04-4ed5-86bc-a092a745d459
-    sni: 17720802367837.206352.xyz
-    skip-cert-verify: true
-  - name: DE11｜机房｜低风险
-    type: trojan
-    server: bestcdn4.868863.xyz
-    port: 8443
-    password: 45bdac08-8e04-4ed5-86bc-a092a745d459
-    sni: 17720802363564.206353.xyz
-    skip-cert-verify: true
-  - name: US170｜机房｜低风险
-    type: trojan
-    server: bestcdn4.868863.xyz
-    port: 2083
-    password: 45bdac08-8e04-4ed5-86bc-a092a745d459
-    sni: 17720802368262.206355.xyz
-    skip-cert-verify: true
-  - name: HK17｜家宽｜非常安全
-    type: vmess
-    server: 120.198.71.128
-    port: 39571
-    uuid: dcdcb14e-8c34-3c0f-9801-01457dcf25f5
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /8858d045-66fe-441a-8d35-1507216fbb2f.live238.m3u8
-      headers:
-        Host: jike1-linode11.bilibili.com
-  - name: US190｜机房｜低风险
-    type: vmess
-    server: v4.hdacd.com
-    port: 30804
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: DE22｜机房｜高风险 (黑名单)
+  - name: DE26｜机房｜高风险 (黑名单)
     type: vmess
     server: 82.198.246.97
     port: 180
@@ -289,80 +104,269 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: US207｜机房｜低风险
-    type: trojan
-    server: bgt.1x2.indevs.in
-    port: 443
-    password: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-    sni: bgt.1x2.indevs.in
-    skip-cert-verify: true
-  - name: US208｜机房｜低风险
+  - name: US179｜机房｜低风险
     type: vmess
-    server: 199.34.230.199
-    port: 443
-    uuid: f08369d1-5ee7-4b16-d786-30bce12fc33c
-    alterId: 0
+    server: v24.hdacd.com
+    port: 30824
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
     cipher: auto
-    tls: true
+    tls: false
+    network: tcp
+  - name: GB4｜机房｜低风险
+    type: vmess
+    server: v36.hdacd.com
+    port: 30836
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: HK17｜家宽｜非常安全
+    type: trojan
+    server: bgp1.stimaysmhy8.com
+    port: 14011
+    password: 984c7793-1447-4af5-9200-d514ad6fe329
+    sni: jsygouer.weixin-baidu-qq.com
+    skip-cert-verify: true
+  - name: SG6｜机房｜低风险
+    type: trojan
+    server: sg05.stimaysmhy8.com
+    port: 45005
+    password: 984c7793-1447-4af5-9200-d514ad6fe329
+    sni: jsygouer.weixin-baidu-qq.com
+    skip-cert-verify: true
+  - name: HK9｜家宽｜非常安全
+    type: vmess
+    server: 8c0d4a37-tb89s0-tu0ezx-1m7l4.hkt.gotochinatown.net
+    port: 80
+    uuid: bd515574-3b10-11ee-ac14-f23c9164ca5d
+    alterId: 2
+    cipher: auto
+    tls: false
     network: ws
     ws-opts:
-      path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
+      path: /
       headers:
-        Host: ous3.dean52.top
-  - name: IN5｜机房｜低风险
+        Host: broadcastlv.chat.bilibili.com
+  - name: US37｜家宽｜非常安全
     type: trojan
-    server: tttyder.wsone.icu
+    server: us02.jsyjiedian8.com
+    port: 40393
+    password: 984c7793-1447-4af5-9200-d514ad6fe329
+    sni: jsygouer.weixin-baidu-qq.com
+    skip-cert-verify: true
+  - name: US177｜机房｜低风险
+    type: vmess
+    server: v4.hdacd.com
+    port: 30804
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: US140｜机房｜低风险
+    type: trojan
+    server: bestcdn0.868863.xyz
+    port: 2087
+    password: 0997a4f7-63ba-4f41-b210-83a7f18ea2c3
+    sni: 17721875628593.682637.xyz
+    skip-cert-verify: true
+  - name: US144｜机房｜低风险
+    type: trojan
+    server: bestcdn0.868863.xyz
+    port: 2096
+    password: 0997a4f7-63ba-4f41-b210-83a7f18ea2c3
+    sni: 17721875624593.682637.xyz
+    skip-cert-verify: true
+  - name: US145｜机房｜低风险
+    type: trojan
+    server: bestcdn0.868863.xyz
+    port: 8443
+    password: 0997a4f7-63ba-4f41-b210-83a7f18ea2c3
+    sni: 17721875628076.682637.xyz
+    skip-cert-verify: true
+  - name: US147｜机房｜低风险
+    type: trojan
+    server: bestcdn0.868863.xyz
+    port: 2053
+    password: 0997a4f7-63ba-4f41-b210-83a7f18ea2c3
+    sni: 17721875621917.682637.xyz
+    skip-cert-verify: true
+  - name: US148｜机房｜低风险
+    type: trojan
+    server: bestcdn1.868863.xyz
+    port: 2053
+    password: 0997a4f7-63ba-4f41-b210-83a7f18ea2c3
+    sni: 17721875626974.206352.xyz
+    skip-cert-verify: true
+  - name: DE7｜机房｜低风险
+    type: trojan
+    server: bestcdn1.868863.xyz
+    port: 2096
+    password: 0997a4f7-63ba-4f41-b210-83a7f18ea2c3
+    sni: 17721875627819.206353.xyz
+    skip-cert-verify: true
+  - name: US149｜机房｜低风险
+    type: trojan
+    server: bestcdn1.868863.xyz
+    port: 2087
+    password: 0997a4f7-63ba-4f41-b210-83a7f18ea2c3
+    sni: 17721875626875.206355.xyz
+    skip-cert-verify: true
+  - name: US152｜机房｜低风险
+    type: trojan
+    server: bestcdn2.868863.xyz
+    port: 2083
+    password: 0997a4f7-63ba-4f41-b210-83a7f18ea2c3
+    sni: 17721875629148.206352.xyz
+    skip-cert-verify: true
+  - name: DE8｜机房｜低风险
+    type: trojan
+    server: bestcdn2.868863.xyz
+    port: 2087
+    password: 0997a4f7-63ba-4f41-b210-83a7f18ea2c3
+    sni: 17721875625100.206353.xyz
+    skip-cert-verify: true
+  - name: US153｜机房｜低风险
+    type: trojan
+    server: bestcdn2.868863.xyz
+    port: 2096
+    password: 0997a4f7-63ba-4f41-b210-83a7f18ea2c3
+    sni: 17721875627540.206355.xyz
+    skip-cert-verify: true
+  - name: US156｜机房｜低风险
+    type: trojan
+    server: bestcdn3.868863.xyz
+    port: 2087
+    password: 0997a4f7-63ba-4f41-b210-83a7f18ea2c3
+    sni: 17721875626409.206352.xyz
+    skip-cert-verify: true
+  - name: DE9｜机房｜低风险
+    type: trojan
+    server: bestcdn3.868863.xyz
+    port: 2083
+    password: 0997a4f7-63ba-4f41-b210-83a7f18ea2c3
+    sni: 17721875622467.206353.xyz
+    skip-cert-verify: true
+  - name: US157｜机房｜低风险
+    type: trojan
+    server: bestcdn3.868863.xyz
+    port: 2053
+    password: 0997a4f7-63ba-4f41-b210-83a7f18ea2c3
+    sni: 17721875626396.206355.xyz
+    skip-cert-verify: true
+  - name: US160｜机房｜低风险
+    type: trojan
+    server: bestcdn4.868863.xyz
+    port: 2096
+    password: 0997a4f7-63ba-4f41-b210-83a7f18ea2c3
+    sni: 17721875623449.206352.xyz
+    skip-cert-verify: true
+  - name: DE10｜机房｜低风险
+    type: trojan
+    server: bestcdn4.868863.xyz
+    port: 8443
+    password: 0997a4f7-63ba-4f41-b210-83a7f18ea2c3
+    sni: 17721875625412.206353.xyz
+    skip-cert-verify: true
+  - name: US161｜机房｜低风险
+    type: trojan
+    server: bestcdn4.868863.xyz
+    port: 2083
+    password: 0997a4f7-63ba-4f41-b210-83a7f18ea2c3
+    sni: 17721875625320.206355.xyz
+    skip-cert-verify: true
+  - name: US164｜家宽｜非常安全
+    type: trojan
+    server: 220.130.58.136
+    port: 35502
+    password: c5355528-55a2-45df-b8fd-a48ce3c41413
+    sni: green2.cdntencentmusic.com
+    skip-cert-verify: true
+  - name: FR5｜机房｜低风险
+    type: vmess
+    server: v35.hdacd.com
+    port: 30835
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: US184｜机房｜低风险
+    type: vmess
+    server: bnhhy.1ll.ccwu.cc
+    port: 80
+    uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /iSRWSKUJKNuXvVzsYHmsMrnO
+      headers:
+        Host: bnhhy.1ll.ccwu.cc
+  - name: DE27｜机房｜低风险
+    type: trojan
+    server: 57.129.54.253
     port: 443
-    password: M7v%25w11Se%2A
-    sni: tttyder.wsone.icu
+    password: af4b064a9c39472fb34ad8b113acdc6b
+    sni: 57.129.54.253
     skip-cert-verify: true
-  - name: VN17｜商宽｜非常安全
+  - name: US187｜机房｜低风险
+    type: trojan
+    server: 38.54.27.117
+    port: 443
+    password: af4b064a9c39472fb34ad8b113acdc6b
+    sni: 38.54.27.117
+    skip-cert-verify: true
+  - name: TR1｜原生/疑似家宽｜非常安全
+    type: trojan
+    server: 194.87.39.228
+    port: 443
+    password: af4b064a9c39472fb34ad8b113acdc6b
+    sni: 194.87.39.228
+    skip-cert-verify: true
+  - name: HK25｜家宽｜非常安全
+    type: trojan
+    server: 183.179.43.253
+    port: 443
+    password: af4b064a9c39472fb34ad8b113acdc6b
+    sni: 183.179.43.253
+    skip-cert-verify: true
+  - name: US188｜机房｜低风险
+    type: trojan
+    server: 109.234.211.66
+    port: 2087
+    password: trojan
+    sni: store.timimi.dpdns.org
+    skip-cert-verify: true
+  - name: HK26｜家宽｜非常安全
     type: vmess
-    server: faq1.lieerr222.cn
-    port: 43528
-    uuid: e404a24f-cb43-4cec-abf1-7b7783ce8316
-    alterId: 0
+    server: 317e22e6-t94cg0-tcmken-19les.hkt.gotochinatown.net
+    port: 80
+    uuid: d095ecc6-7b69-11eb-b77b-f23c913c8d2b
+    alterId: 2
     cipher: auto
     tls: false
-    network: tcp
-  - name: TW10｜机房｜低风险
-    type: vmess
-    server: faq1.lieerr222.cn
-    port: 43527
-    uuid: 9616280a-4502-4601-8923-a0f46fb0df47
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: US217｜机房｜低风险
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - name: MX1｜机房｜低风险
     type: trojan
-    server: faq1.lieerr222.cn
-    port: 43533
-    password: 685343f2-49e1-41f8-a7fc-5d0993afb6c6
-    sni: faq1.lieerr222.cn
+    server: 154.205.152.109
+    port: 443
+    password: af4b064a9c39472fb34ad8b113acdc6b
+    sni: 154.205.152.109
     skip-cert-verify: true
-  - name: US216｜机房｜低风险
+  - name: US189｜机房｜低风险
     type: trojan
-    server: faq1.lieerr222.cn
-    port: 43534
-    password: 58ea18cc-9009-4835-ad5e-8e01c603d797
-    sni: faq1.lieerr222.cn
-    skip-cert-verify: true
-  - name: HK42｜机房｜低风险
-    type: vmess
-    server: faq1.lieerr222.cn
-    port: 43525
-    uuid: 7740455a-87d7-4749-b142-f6f5cc4ed4ea
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: US220｜机房｜低风险
-    type: trojan
-    server: faq1.lieerr222.cn
-    port: 43535
-    password: 23424d8c-4123-4307-be27-c7cadbd7980c
-    sni: faq1.lieerr222.cn
+    server: 38.54.15.140
+    port: 443
+    password: af4b064a9c39472fb34ad8b113acdc6b
+    sni: 38.54.15.140
     skip-cert-verify: true
   - name: 🇭🇰 香港|@ripaojiedian
     type: vmess
@@ -457,214 +461,147 @@ proxies:
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
-  - name: BY_speednode_0001
+  - name: AT_speednode_0001
     type: vless
-    server: by.cdn.titun.su
+    server: 195.133.88.238
+    port: 61809
+    uuid: 899251ca-be66-4d21-84d8-bd7fbf10150b
+    tls: true
+    network: tcp
+  - name: BG_speednode_0002
+    type: vless
+    server: 178.239.122.108
     port: 443
-    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    uuid: ec5796b3-678b-4b11-9c1d-a53171dfd897
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: FI_speednode_0004
+  - name: FR_speednode_0004
     type: vless
-    server: 78.153.139.68
-    port: 8443
-    uuid: fd8972d7-cf5e-11f0-9970-45e1d80c4039
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: FR_speednode_0005
-    type: vless
-    server: fran.scroogethebest.com
+    server: 185.171.202.58
     port: 443
     uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: GB_speednode_0007
+  - name: FR_speednode_0005
+    type: vless
+    server: 45.95.233.85
+    port: 61873
+    uuid: 8b8f4dfb-cd48-4dab-bb75-b304971176cd
+    tls: true
+    network: tcp
+  - name: GB_speednode_0006
     type: vless
     server: 217.154.38.156
     port: 443
     uuid: 2a8391ef-383c-4321-ac25-89b50973ab73
     tls: true
     network: tcp
+  - name: GB_speednode_0008
+    type: vless
+    server: 195.20.17.182
+    port: 443
+    uuid: ec5796b3-678b-4b11-9c1d-a53171dfd897
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
   - name: GR_speednode_0009
     type: vless
-    server: 185.234.57.207
+    server: 185.234.57.216
     port: 443
-    uuid: dd92c4f8-be88-4c61-84eb-d261f798071e
+    uuid: b824f264-8cc3-4669-9f60-47b51ed1aa11
     tls: true
     network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: IQ_speednode_0010
+  - name: IQ_speednode_0011
     type: vless
-    server: deu469.unboundworld.org
-    port: 443
-    uuid: cc9f7840-757a-430b-bddc-a73478bea434
+    server: 93.94.51.19
+    port: 56864
+    uuid: 87580984-c2ef-4f44-9c7e-0b216f99aa87
     tls: true
     network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0012
+  - name: LT_speednode_0012
     type: vless
-    server: 5.cdnconn.com
+    server: 7.cdnconn.com
     port: 23335
     uuid: e384913f-8863-47b4-8858-a84b68abb4a6
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0013
+  - name: NL_speednode_0013
     type: vless
-    server: us01-vlr01-gmn03.tcp-reset-club.net
-    port: 18443
+    server: nl04-vlr01.tcp-reset-club.net
+    port: 443
     uuid: 1c4aceb6-bff7-4737-8c5d-43afb3dc350b
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0015
+  - name: NL_speednode_0014
     type: vless
-    server: 51.250.4.119
+    server: nl02-vlr01.tcp-reset-club.net
     port: 443
-    uuid: 9a599b2e-5455-44d5-9a72-5c76f28e93e3
+    uuid: 1c4aceb6-bff7-4737-8c5d-43afb3dc350b
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
   - name: RU_speednode_0016
     type: vless
-    server: 51.250.83.255
+    server: 37.139.34.237
     port: 443
-    uuid: 9a599b2e-5455-44d5-9a72-5c76f28e93e3
+    uuid: 8409d5d2-ae02-4027-b5a5-c3cca340ca6c
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: SC_speednode_0017
+  - name: RU_speednode_0017
     type: vless
-    server: 80.253.251.122
-    port: 13686
-    uuid: 8f09e644-7208-4f38-ac2f-db6d23cc647f
+    server: 5.188.143.115
+    port: 6443
+    uuid: 8409d5d2-ae02-4027-b5a5-c3cca340ca6c
     tls: true
     network: tcp
-  - name: US_speednode_0019
+    flow: xtls-rprx-vision-udp443
+  - name: RU_speednode_0018
     type: vless
-    server: www.fbi.gov
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
+    server: 51.250.103.29
+    port: 443
+    uuid: 4b5fdaeb-518d-4411-b668-eaf4cb757ff2
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: RU_speednode_0019
+    type: vless
+    server: 51.250.95.176
+    port: 443
+    uuid: 72adc5b8-146a-4bfe-921b-5c9e1df016e0
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: RU_speednode_0020
+    type: vless
+    server: 212.192.14.250
+    port: 64527
+    uuid: b3203210-2e42-468a-ad7d-5da9b9a1bac4
+    tls: true
+    network: tcp
+  - name: SI_speednode_0021
+    type: vless
+    server: 109.172.55.220
+    port: 58198
+    uuid: d5d52c15-f963-42b8-971b-613fc9c5e7e3
+    tls: true
+    network: tcp
+  - name: TW_speednode_0022
+    type: vless
+    server: 114.34.106.124
+    port: 10443
+    uuid: 3e974f9e-f568-4c2a-a4db-e9b666b4ea9e
+    tls: true
     network: ws
     ws-opts:
-      path: /fp=randomized
+      path: /114.34.106.124:10443fp=chrome
       headers:
-        Host: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
-  - name: US_speednode_0020
-    type: vless
-    server: www.npmjs.com
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /fp=randomized
-      headers:
-        Host: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
-  - name: US_speednode_0021
-    type: vless
-    server: developers.cloudflare.com
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /fp=randomized
-      headers:
-        Host: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
-  - name: US_speednode_0022
-    type: vless
-    server: www.udemy.com
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /fp=randomized
-      headers:
-        Host: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
+        Host: 63.hhhhh.eu.org
   - name: US_speednode_0024
-    type: vless
-    server: cf.090227.xyz
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /fp=randomized
-      headers:
-        Host: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
-  - name: US_speednode_0025
-    type: vless
-    server: blog.cloudflare.com
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /fp=randomized
-      headers:
-        Host: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
-  - name: US_speednode_0026
-    type: vless
-    server: cloudflare-dns.com
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /fp=randomized
-      headers:
-        Host: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
-  - name: US_speednode_0027
-    type: vless
-    server: ns.cloudflare.com
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /fp=randomized
-      headers:
-        Host: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
-  - name: US_speednode_0028
-    type: vless
-    server: openai.com
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /fp=randomized
-      headers:
-        Host: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
-  - name: US_speednode_0029
-    type: vless
-    server: support.cloudflare.com
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /fp=randomized
-      headers:
-        Host: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
-  - name: US_speednode_0030
-    type: vless
-    server: www.epicgames.com
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /fp=randomized
-      headers:
-        Host: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
-  - name: US_speednode_0031
     type: vless
     server: 143.20.236.51
     port: 443
@@ -672,51 +609,14 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: US_speednode_0032
-    type: vless
-    server: zf.sg1000.eu.cc
-    port: 50000
-    uuid: 7473f95b-5a12-4972-b882-9fcd41ceff72
-    tls: true
-    network: tcp
-  - name: US_speednode_0034
-    type: vless
-    server: www.temu.com
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /fp=randomized
-      headers:
-        Host: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
-  - name: US_speednode_0035
-    type: vless
-    server: www.shopify.com
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /fp=randomized
-      headers:
-        Host: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
-  - name: US_speednode_0036
-    type: vless
-    server: 3.cdnconn.com
-    port: 23335
-    uuid: e384913f-8863-47b4-8858-a84b68abb4a6
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: US_speednode_0037
+  - name: US_speednode_0025
     type: vless
     server: 66.179.82.126
     port: 443
     uuid: b1267991-59ff-4b67-b141-97e3ced4e7c8
     tls: true
     network: tcp
-  - name: US_speednode_0038
+  - name: US_speednode_0026
     type: vless
     server: 198.62.62.248
     port: 443
@@ -727,19 +627,61 @@ proxies:
       path: /lovefp=chrome
       headers:
         Host: tar.alabama-tigr.info
+  - name: US_speednode_0028
+    type: vless
+    server: 132.226.85.167
+    port: 443
+    uuid: e43dd231-7c75-4606-80ec-50fbb8335ce7
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: US_speednode_0029
+    type: vless
+    server: 144.31.130.59
+    port: 23335
+    uuid: e384913f-8863-47b4-8858-a84b68abb4a6
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 俄罗斯+V2CROSS.COM
+    type: trojan
+    server: 212.193.18.144
+    port: 36158
+    password: ZblhWr0mqMakCPg.N
+    sni: ya.ru
+    skip-cert-verify: false
   - name: 美国 CloudFlare节点
     type: vmess
-    server: vfgty6.2nn.ccwu.cc
+    server: 162.159.152.4
+    port: 443
+    uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers: {}
+  - name: 西班牙+V2CROSS.COM
+    type: trojan
+    server: 80.173.231.254
+    port: 12420
+    password: wp9IsiY82uQhcmgNC1eoBM
+    sni: www.semanticstaplegun.click
+    skip-cert-verify: true
+  - name: 美国 CloudFlare节点 [1]
+    type: vmess
+    server: 104.26.15.137
     port: 80
-    uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+    uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
     alterId: 0
     cipher: auto
     tls: false
     network: ws
     ws-opts:
-      path: /iSRWSKUJKNuXvVzsYHmsMrnO
+      path: /
       headers:
-        Host: vfgty6.2nn.ccwu.cc
+        Host: tr1-smart.adelping.com.
   - name: 瑞典+V2CROSS.COM
     type: vless
     server: dd.openaccessnode.com
@@ -747,32 +689,6 @@ proxies:
     uuid: 75193bef-8d8f-e823-41e0-2dd083dc1399
     tls: false
     network: tcp
-  - name: 韩国 KT电信
-    type: vmess
-    server: aflzzul.meiquankongjian.com
-    port: 52513
-    uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /564dfa20/
-      headers:
-        Host: aflzzul.meiquankongjian.com
-  - name: 美国 CloudFlare节点 [1]
-    type: vmess
-    server: y7.dddc.us.ci
-    port: 443
-    uuid: 34778794-72e8-4862-b1e7-6e6c3ba894be
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /qlWiWOdPkCVqBXYWmzP5D1vsO
-      headers:
-        Host: y7.dddc.us.ci
   - name: 美国 CloudFlare节点 [2]
     type: vmess
     server: 104.26.14.137
@@ -783,41 +699,16 @@ proxies:
     tls: false
     network: ws
     ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
+      path: /
       headers:
         Host: tr1-smart.adelping.com.
-  - name: 台湾省台中市+中华电信
+  - name: 冰岛+V2CROSS.COM
     type: trojan
-    server: green2.cdntencentmusic.com
-    port: 31101
-    password: bef1e608-83df-4935-8169-8a345f5643e9
-    sni: green2.cdntencentmusic.com
+    server: 37.235.49.209
+    port: 28099
+    password: qmBSKnAl6LYi9%3Dz23Rs.Z
+    sni: celestialcorset.crystalhamster.click
     skip-cert-verify: false
-  - name: 美国 CloudFlare节点 [3]
-    type: vmess
-    server: turk1.net.net
-    port: 80
-    uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tr1-smart.adelping.com.
-  - name: 香港 阿里云
-    type: vmess
-    server: 47.243.95.187
-    port: 443
-    uuid: c28a6258-7baa-40fc-8a51-87f59c847cd7
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers: {}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -835,39 +726,41 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
-      - HK18｜家宽｜非常安全
-      - SG7｜机房｜低风险
-      - SG10｜机房｜低风险
-      - HK14｜家宽｜非常安全
-      - GB6｜机房｜低风险
+      - DE26｜机房｜高风险 (黑名单)
+      - US179｜机房｜低风险
+      - GB4｜机房｜低风险
+      - HK17｜家宽｜非常安全
+      - SG6｜机房｜低风险
+      - HK9｜家宽｜非常安全
+      - US37｜家宽｜非常安全
+      - US177｜机房｜低风险
+      - US140｜机房｜低风险
+      - US144｜机房｜低风险
+      - US145｜机房｜低风险
+      - US147｜机房｜低风险
+      - US148｜机房｜低风险
       - DE7｜机房｜低风险
       - US149｜机房｜低风险
+      - US152｜机房｜低风险
+      - DE8｜机房｜低风险
       - US153｜机房｜低风险
-      - US154｜机房｜低风险
       - US156｜机房｜低风险
-      - US157｜机房｜低风险
-      - US158｜机房｜低风险
-      - US161｜机房｜低风险
       - DE9｜机房｜低风险
-      - US162｜机房｜低风险
-      - US165｜机房｜低风险
+      - US157｜机房｜低风险
+      - US160｜机房｜低风险
       - DE10｜机房｜低风险
-      - US166｜机房｜低风险
-      - US169｜机房｜低风险
-      - DE11｜机房｜低风险
-      - US170｜机房｜低风险
-      - HK17｜家宽｜非常安全
-      - US190｜机房｜低风险
-      - DE22｜机房｜高风险 (黑名单)
-      - US207｜机房｜低风险
-      - US208｜机房｜低风险
-      - IN5｜机房｜低风险
-      - VN17｜商宽｜非常安全
-      - TW10｜机房｜低风险
-      - US217｜机房｜低风险
-      - US216｜机房｜低风险
-      - HK42｜机房｜低风险
-      - US220｜机房｜低风险
+      - US161｜机房｜低风险
+      - US164｜家宽｜非常安全
+      - FR5｜机房｜低风险
+      - US184｜机房｜低风险
+      - DE27｜机房｜低风险
+      - US187｜机房｜低风险
+      - TR1｜原生/疑似家宽｜非常安全
+      - HK25｜家宽｜非常安全
+      - US188｜机房｜低风险
+      - HK26｜家宽｜非常安全
+      - MX1｜机房｜低风险
+      - US189｜机房｜低风险
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
@@ -881,43 +774,36 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - BY_speednode_0001
-      - FI_speednode_0004
+      - AT_speednode_0001
+      - BG_speednode_0002
+      - FR_speednode_0004
       - FR_speednode_0005
-      - GB_speednode_0007
+      - GB_speednode_0006
+      - GB_speednode_0008
       - GR_speednode_0009
-      - IQ_speednode_0010
-      - RU_speednode_0012
-      - RU_speednode_0013
-      - RU_speednode_0015
+      - IQ_speednode_0011
+      - LT_speednode_0012
+      - NL_speednode_0013
+      - NL_speednode_0014
       - RU_speednode_0016
-      - SC_speednode_0017
-      - US_speednode_0019
-      - US_speednode_0020
-      - US_speednode_0021
-      - US_speednode_0022
+      - RU_speednode_0017
+      - RU_speednode_0018
+      - RU_speednode_0019
+      - RU_speednode_0020
+      - SI_speednode_0021
+      - TW_speednode_0022
       - US_speednode_0024
       - US_speednode_0025
       - US_speednode_0026
-      - US_speednode_0027
       - US_speednode_0028
       - US_speednode_0029
-      - US_speednode_0030
-      - US_speednode_0031
-      - US_speednode_0032
-      - US_speednode_0034
-      - US_speednode_0035
-      - US_speednode_0036
-      - US_speednode_0037
-      - US_speednode_0038
+      - 俄罗斯+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 瑞典+V2CROSS.COM
-      - 韩国 KT电信
+      - 西班牙+V2CROSS.COM
       - 美国 CloudFlare节点 [1]
+      - 瑞典+V2CROSS.COM
       - 美国 CloudFlare节点 [2]
-      - 台湾省台中市+中华电信
-      - 美国 CloudFlare节点 [3]
-      - 香港 阿里云
+      - 冰岛+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -931,39 +817,41 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
-      - HK18｜家宽｜非常安全
-      - SG7｜机房｜低风险
-      - SG10｜机房｜低风险
-      - HK14｜家宽｜非常安全
-      - GB6｜机房｜低风险
+      - DE26｜机房｜高风险 (黑名单)
+      - US179｜机房｜低风险
+      - GB4｜机房｜低风险
+      - HK17｜家宽｜非常安全
+      - SG6｜机房｜低风险
+      - HK9｜家宽｜非常安全
+      - US37｜家宽｜非常安全
+      - US177｜机房｜低风险
+      - US140｜机房｜低风险
+      - US144｜机房｜低风险
+      - US145｜机房｜低风险
+      - US147｜机房｜低风险
+      - US148｜机房｜低风险
       - DE7｜机房｜低风险
       - US149｜机房｜低风险
+      - US152｜机房｜低风险
+      - DE8｜机房｜低风险
       - US153｜机房｜低风险
-      - US154｜机房｜低风险
       - US156｜机房｜低风险
-      - US157｜机房｜低风险
-      - US158｜机房｜低风险
-      - US161｜机房｜低风险
       - DE9｜机房｜低风险
-      - US162｜机房｜低风险
-      - US165｜机房｜低风险
+      - US157｜机房｜低风险
+      - US160｜机房｜低风险
       - DE10｜机房｜低风险
-      - US166｜机房｜低风险
-      - US169｜机房｜低风险
-      - DE11｜机房｜低风险
-      - US170｜机房｜低风险
-      - HK17｜家宽｜非常安全
-      - US190｜机房｜低风险
-      - DE22｜机房｜高风险 (黑名单)
-      - US207｜机房｜低风险
-      - US208｜机房｜低风险
-      - IN5｜机房｜低风险
-      - VN17｜商宽｜非常安全
-      - TW10｜机房｜低风险
-      - US217｜机房｜低风险
-      - US216｜机房｜低风险
-      - HK42｜机房｜低风险
-      - US220｜机房｜低风险
+      - US161｜机房｜低风险
+      - US164｜家宽｜非常安全
+      - FR5｜机房｜低风险
+      - US184｜机房｜低风险
+      - DE27｜机房｜低风险
+      - US187｜机房｜低风险
+      - TR1｜原生/疑似家宽｜非常安全
+      - HK25｜家宽｜非常安全
+      - US188｜机房｜低风险
+      - HK26｜家宽｜非常安全
+      - MX1｜机房｜低风险
+      - US189｜机房｜低风险
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
@@ -977,43 +865,36 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - BY_speednode_0001
-      - FI_speednode_0004
+      - AT_speednode_0001
+      - BG_speednode_0002
+      - FR_speednode_0004
       - FR_speednode_0005
-      - GB_speednode_0007
+      - GB_speednode_0006
+      - GB_speednode_0008
       - GR_speednode_0009
-      - IQ_speednode_0010
-      - RU_speednode_0012
-      - RU_speednode_0013
-      - RU_speednode_0015
+      - IQ_speednode_0011
+      - LT_speednode_0012
+      - NL_speednode_0013
+      - NL_speednode_0014
       - RU_speednode_0016
-      - SC_speednode_0017
-      - US_speednode_0019
-      - US_speednode_0020
-      - US_speednode_0021
-      - US_speednode_0022
+      - RU_speednode_0017
+      - RU_speednode_0018
+      - RU_speednode_0019
+      - RU_speednode_0020
+      - SI_speednode_0021
+      - TW_speednode_0022
       - US_speednode_0024
       - US_speednode_0025
       - US_speednode_0026
-      - US_speednode_0027
       - US_speednode_0028
       - US_speednode_0029
-      - US_speednode_0030
-      - US_speednode_0031
-      - US_speednode_0032
-      - US_speednode_0034
-      - US_speednode_0035
-      - US_speednode_0036
-      - US_speednode_0037
-      - US_speednode_0038
+      - 俄罗斯+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 瑞典+V2CROSS.COM
-      - 韩国 KT电信
+      - 西班牙+V2CROSS.COM
       - 美国 CloudFlare节点 [1]
+      - 瑞典+V2CROSS.COM
       - 美国 CloudFlare节点 [2]
-      - 台湾省台中市+中华电信
-      - 美国 CloudFlare节点 [3]
-      - 香港 阿里云
+      - 冰岛+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -1029,39 +910,41 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
-      - HK18｜家宽｜非常安全
-      - SG7｜机房｜低风险
-      - SG10｜机房｜低风险
-      - HK14｜家宽｜非常安全
-      - GB6｜机房｜低风险
+      - DE26｜机房｜高风险 (黑名单)
+      - US179｜机房｜低风险
+      - GB4｜机房｜低风险
+      - HK17｜家宽｜非常安全
+      - SG6｜机房｜低风险
+      - HK9｜家宽｜非常安全
+      - US37｜家宽｜非常安全
+      - US177｜机房｜低风险
+      - US140｜机房｜低风险
+      - US144｜机房｜低风险
+      - US145｜机房｜低风险
+      - US147｜机房｜低风险
+      - US148｜机房｜低风险
       - DE7｜机房｜低风险
       - US149｜机房｜低风险
+      - US152｜机房｜低风险
+      - DE8｜机房｜低风险
       - US153｜机房｜低风险
-      - US154｜机房｜低风险
       - US156｜机房｜低风险
-      - US157｜机房｜低风险
-      - US158｜机房｜低风险
-      - US161｜机房｜低风险
       - DE9｜机房｜低风险
-      - US162｜机房｜低风险
-      - US165｜机房｜低风险
+      - US157｜机房｜低风险
+      - US160｜机房｜低风险
       - DE10｜机房｜低风险
-      - US166｜机房｜低风险
-      - US169｜机房｜低风险
-      - DE11｜机房｜低风险
-      - US170｜机房｜低风险
-      - HK17｜家宽｜非常安全
-      - US190｜机房｜低风险
-      - DE22｜机房｜高风险 (黑名单)
-      - US207｜机房｜低风险
-      - US208｜机房｜低风险
-      - IN5｜机房｜低风险
-      - VN17｜商宽｜非常安全
-      - TW10｜机房｜低风险
-      - US217｜机房｜低风险
-      - US216｜机房｜低风险
-      - HK42｜机房｜低风险
-      - US220｜机房｜低风险
+      - US161｜机房｜低风险
+      - US164｜家宽｜非常安全
+      - FR5｜机房｜低风险
+      - US184｜机房｜低风险
+      - DE27｜机房｜低风险
+      - US187｜机房｜低风险
+      - TR1｜原生/疑似家宽｜非常安全
+      - HK25｜家宽｜非常安全
+      - US188｜机房｜低风险
+      - HK26｜家宽｜非常安全
+      - MX1｜机房｜低风险
+      - US189｜机房｜低风险
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
@@ -1075,43 +958,36 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - BY_speednode_0001
-      - FI_speednode_0004
+      - AT_speednode_0001
+      - BG_speednode_0002
+      - FR_speednode_0004
       - FR_speednode_0005
-      - GB_speednode_0007
+      - GB_speednode_0006
+      - GB_speednode_0008
       - GR_speednode_0009
-      - IQ_speednode_0010
-      - RU_speednode_0012
-      - RU_speednode_0013
-      - RU_speednode_0015
+      - IQ_speednode_0011
+      - LT_speednode_0012
+      - NL_speednode_0013
+      - NL_speednode_0014
       - RU_speednode_0016
-      - SC_speednode_0017
-      - US_speednode_0019
-      - US_speednode_0020
-      - US_speednode_0021
-      - US_speednode_0022
+      - RU_speednode_0017
+      - RU_speednode_0018
+      - RU_speednode_0019
+      - RU_speednode_0020
+      - SI_speednode_0021
+      - TW_speednode_0022
       - US_speednode_0024
       - US_speednode_0025
       - US_speednode_0026
-      - US_speednode_0027
       - US_speednode_0028
       - US_speednode_0029
-      - US_speednode_0030
-      - US_speednode_0031
-      - US_speednode_0032
-      - US_speednode_0034
-      - US_speednode_0035
-      - US_speednode_0036
-      - US_speednode_0037
-      - US_speednode_0038
+      - 俄罗斯+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 瑞典+V2CROSS.COM
-      - 韩国 KT电信
+      - 西班牙+V2CROSS.COM
       - 美国 CloudFlare节点 [1]
+      - 瑞典+V2CROSS.COM
       - 美国 CloudFlare节点 [2]
-      - 台湾省台中市+中华电信
-      - 美国 CloudFlare节点 [3]
-      - 香港 阿里云
+      - 冰岛+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
