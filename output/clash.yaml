@@ -643,33 +643,60 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 俄罗斯+V2CROSS.COM
-    type: trojan
-    server: 212.193.18.144
-    port: 36158
-    password: ZblhWr0mqMakCPg.N
-    sni: ya.ru
-    skip-cert-verify: false
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 162.159.152.4
+    server: mghnnbj.1yy.ccwu.cc
+    port: 80
+    uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /iSRWSKUJKNuXvVzsYHmsMrnO
+      headers:
+        Host: mghnnbj.1yy.ccwu.cc
+  - name: 美国 CloudFlare节点 [1]
+    type: vmess
+    server: turk1.net.net
+    port: 80
+    uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: tr1-smart.adelping.com.
+  - name: 台湾省台中市+中华电信
+    type: trojan
+    server: green2.cdntencentmusic.com
+    port: 31101
+    password: 6790a94c-4ea8-4a1e-979e-31716839427a
+    sni: green2.cdntencentmusic.com
+    skip-cert-verify: false
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: 167.17.185.169
+    port: 10889
+    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+    sni: ya.ru
+    skip-cert-verify: false
+  - name: 印度尼西亚 V2CROSS.COM
+    type: vmess
+    server: neva.azlan.biz.id
     port: 443
-    uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+    uuid: 8072298f-cd28-4a61-8e05-5879c84b9100
     alterId: 0
     cipher: auto
     tls: true
     network: ws
     ws-opts:
-      path: /vmessws
-      headers: {}
-  - name: 西班牙+V2CROSS.COM
-    type: trojan
-    server: 80.173.231.254
-    port: 12420
-    password: wp9IsiY82uQhcmgNC1eoBM
-    sni: www.semanticstaplegun.click
-    skip-cert-verify: true
-  - name: 美国 CloudFlare节点 [1]
+      path: /vmess
+      headers:
+        Host: neva.azlan.biz.id
+  - name: 美国 CloudFlare节点 [2]
     type: vmess
     server: 104.26.15.137
     port: 80
@@ -682,33 +709,6 @@ proxies:
       path: /
       headers:
         Host: tr1-smart.adelping.com.
-  - name: 瑞典+V2CROSS.COM
-    type: vless
-    server: dd.openaccessnode.com
-    port: 50
-    uuid: 75193bef-8d8f-e823-41e0-2dd083dc1399
-    tls: false
-    network: tcp
-  - name: 美国 CloudFlare节点 [2]
-    type: vmess
-    server: 104.26.14.137
-    port: 80
-    uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tr1-smart.adelping.com.
-  - name: 冰岛+V2CROSS.COM
-    type: trojan
-    server: 37.235.49.209
-    port: 28099
-    password: qmBSKnAl6LYi9%3Dz23Rs.Z
-    sni: celestialcorset.crystalhamster.click
-    skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -797,13 +797,12 @@ proxy-groups:
       - US_speednode_0026
       - US_speednode_0028
       - US_speednode_0029
-      - 俄罗斯+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 西班牙+V2CROSS.COM
       - 美国 CloudFlare节点 [1]
-      - 瑞典+V2CROSS.COM
+      - 台湾省台中市+中华电信
+      - 加拿大+V2CROSS.COM
+      - 印度尼西亚 V2CROSS.COM
       - 美国 CloudFlare节点 [2]
-      - 冰岛+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -888,13 +887,12 @@ proxy-groups:
       - US_speednode_0026
       - US_speednode_0028
       - US_speednode_0029
-      - 俄罗斯+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 西班牙+V2CROSS.COM
       - 美国 CloudFlare节点 [1]
-      - 瑞典+V2CROSS.COM
+      - 台湾省台中市+中华电信
+      - 加拿大+V2CROSS.COM
+      - 印度尼西亚 V2CROSS.COM
       - 美国 CloudFlare节点 [2]
-      - 冰岛+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -981,13 +979,12 @@ proxy-groups:
       - US_speednode_0026
       - US_speednode_0028
       - US_speednode_0029
-      - 俄罗斯+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 西班牙+V2CROSS.COM
       - 美国 CloudFlare节点 [1]
-      - 瑞典+V2CROSS.COM
+      - 台湾省台中市+中华电信
+      - 加拿大+V2CROSS.COM
+      - 印度尼西亚 V2CROSS.COM
       - 美国 CloudFlare节点 [2]
-      - 冰岛+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
