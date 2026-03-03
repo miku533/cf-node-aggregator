@@ -604,85 +604,85 @@ proxies:
     network: tcp
   - name: 香港3|@ripaojiedian
     type: trojan
-    server: 160.16.72.205
+    server: 18.183.167.108
     port: 331
-    password: 262f1d150049457ac1d6e66b020fa980
+    password: f7dbed8b1ca85124e793ba6c0bcfd0db
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 香港4|@ripaojiedian
     type: trojan
-    server: 18.166.31.170
-    port: 54548
+    server: 18.183.175.225
+    port: 388
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
   - name: 香港5|@ripaojiedian
     type: trojan
-    server: 95.40.63.159
-    port: 504
+    server: 54.46.49.176
+    port: 2826
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
   - name: 日本|@ripaojiedian
     type: trojan
-    server: 54.249.220.183
-    port: 3022
+    server: 54.95.23.13
+    port: 21508
     password: BxceQaOe
     sni: t.me%2Fripaojiedian
     skip-cert-verify: true
   - name: 日本2|@ripaojiedian
     type: trojan
-    server: 160.16.72.205
-    port: 2001
-    password: 262f1d150049457ac1d6e66b020fa980
+    server: 52.68.27.2
+    port: 34818
+    password: f7dbed8b1ca85124e793ba6c0bcfd0db
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 日本3|@ripaojiedian
     type: trojan
-    server: 160.16.106.99
+    server: 160.16.214.104
     port: 2001
-    password: 262f1d150049457ac1d6e66b020fa980
+    password: f7dbed8b1ca85124e793ba6c0bcfd0db
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 新加坡|@ripaojiedian
     type: trojan
-    server: 54.65.39.157
+    server: 52.68.27.2
     port: 3419
-    password: 262f1d150049457ac1d6e66b020fa980
+    password: f7dbed8b1ca85124e793ba6c0bcfd0db
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 新加坡2|@ripaojiedian
     type: trojan
-    server: 52.196.93.35
+    server: 57.180.36.84
     port: 3419
-    password: 262f1d150049457ac1d6e66b020fa980
+    password: f7dbed8b1ca85124e793ba6c0bcfd0db
     sni: www.nintendogames.net
     skip-cert-verify: true
   - name: 新加坡3|@ripaojiedian
     type: trojan
-    server: 43.198.151.38
-    port: 29666
+    server: 18.162.41.211
+    port: 25343
     password: BxceQaOe
     sni: t.me%2Fripaojiedian
     skip-cert-verify: true
   - name: 美国|@ripaojiedian
     type: trojan
-    server: 160.16.106.99
+    server: 52.68.27.2
     port: 4920
-    password: 262f1d150049457ac1d6e66b020fa980
+    password: f7dbed8b1ca85124e793ba6c0bcfd0db
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 美国2|@ripaojiedian
     type: trojan
-    server: 54.65.39.157
+    server: 13.115.210.7
     port: 4920
-    password: 262f1d150049457ac1d6e66b020fa980
+    password: f7dbed8b1ca85124e793ba6c0bcfd0db
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 美国3|@ripaojiedian
     type: trojan
-    server: 18.166.31.170
-    port: 14636
+    server: 18.162.42.52
+    port: 45947
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
@@ -757,19 +757,6 @@ proxies:
     flow: xtls-rprx-vision-udp443
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 104.26.14.137
-    port: 80
-    uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tr1-smart.adelping.com.
-  - name: 美国 CloudFlare节点 [1]
-    type: vmess
     server: sy4.620720.xyz
     port: 443
     uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
@@ -779,59 +766,21 @@ proxies:
     network: ws
     ws-opts:
       path: /
-      headers: {}
-  - name: 瑞典+V2CROSS.COM
-    type: vless
-    server: dd.openaccessnode.com
-    port: 50
-    uuid: 75193bef-8d8f-e823-41e0-2dd083dc1399
-    tls: false
-    network: tcp
+      headers:
+        Host: sy4.620720.xyz
   - name: 加拿大+V2CROSS.COM
     type: trojan
-    server: 167.17.185.228
+    server: 167.17.185.152
     port: 10889
     password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: web.max
-    skip-cert-verify: false
-  - name: 北美地区 V2CROSS.COM
-    type: vmess
-    server: 198.62.62.199
-    port: 443
-    uuid: f08369d1-5ee7-4b16-d786-30bce12fc33c
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
-      headers:
-        Host: ous3.dean52.top
-  - name: 美国 CloudFlare节点 [2]
-    type: vmess
-    server: t1.620720.xyz
-    port: 8443
-    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers: {}
-  - name: 台湾省台中市+中华电信
-    type: trojan
-    server: 220.130.58.136
-    port: 35501
-    password: a1a00c82-5356-4a49-8944-1cd0f94168bb
-    sni: green2.cdntencentmusic.com
+    sni: ozon.ru
     skip-cert-verify: false
   - name: 西班牙+V2CROSS.COM
     type: trojan
-    server: 80.173.231.254
-    port: 12420
-    password: wp9IsiY82uQhcmgNC1eoBM
-    sni: www.semanticstaplegun.click
+    server: 80.173.230.196
+    port: 26279
+    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
+    sni: io.ozone.ru
     skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
@@ -925,12 +874,7 @@ proxy-groups:
       - US_speednode_0014
       - US_speednode_0015
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
-      - 瑞典+V2CROSS.COM
       - 加拿大+V2CROSS.COM
-      - 北美地区 V2CROSS.COM
-      - 美国 CloudFlare节点 [2]
-      - 台湾省台中市+中华电信
       - 西班牙+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
@@ -1020,12 +964,7 @@ proxy-groups:
       - US_speednode_0014
       - US_speednode_0015
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
-      - 瑞典+V2CROSS.COM
       - 加拿大+V2CROSS.COM
-      - 北美地区 V2CROSS.COM
-      - 美国 CloudFlare节点 [2]
-      - 台湾省台中市+中华电信
       - 西班牙+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -1117,12 +1056,7 @@ proxy-groups:
       - US_speednode_0014
       - US_speednode_0015
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
-      - 瑞典+V2CROSS.COM
       - 加拿大+V2CROSS.COM
-      - 北美地区 V2CROSS.COM
-      - 美国 CloudFlare节点 [2]
-      - 台湾省台中市+中华电信
       - 西班牙+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
