@@ -755,44 +755,64 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
+  - name: 北美地区 V2CROSS.COM
+    type: vmess
+    server: 198.62.62.199
+    port: 443
+    uuid: f08369d1-5ee7-4b16-d786-30bce12fc33c
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
+      headers:
+        Host: ous3.dean52.top
   - name: 美国 CloudFlare节点
     type: vmess
-    server: sy4.620720.xyz
+    server: vbnj8.0yo.ccwu.cc
     port: 443
-    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+    uuid: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
     alterId: 0
     cipher: auto
     tls: true
     network: ws
     ws-opts:
-      path: /
-      headers: {}
-  - name: 台湾省台中市+中华电信
-    type: trojan
-    server: 220.130.58.136
-    port: 35501
-    password: f976ac58-b52a-4a54-9c8e-3d49fd365232
-    sni: 220.130.58.136
-    skip-cert-verify: false
+      path: /y3ME81hpTJWwd4RJBAQ5Ah
+      headers:
+        Host: vbnj8.0yo.ccwu.cc
   - name: 美国 CloudFlare节点 [1]
     type: vmess
-    server: t1.620720.xyz
-    port: 8443
-    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+    server: nnmkgh.6hh.ccwu.cc
+    port: 443
+    uuid: 5f6c3f92-7220-4275-b34d-57c04db3f967
     alterId: 0
     cipher: auto
     tls: true
     network: ws
     ws-opts:
-      path: /
+      path: /KnuT4XBUucXkOSONBms
       headers:
-        Host: t1.620720.xyz
-  - name: 西班牙+V2CROSS.COM
+        Host: nnmkgh.6hh.ccwu.cc
+  - name: 美国 CloudFlare节点 [2]
+    type: vmess
+    server: gbnhju.7no.ccwu.cc
+    port: 80
+    uuid: 9f9b2ba3-77c1-400f-9b72-76b9b0829e51
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5PVvw26jj0Fy6bojk
+      headers:
+        Host: gbnhju.7no.ccwu.cc
+  - name: 冰岛+V2CROSS.COM
     type: trojan
-    server: 80.173.231.254
-    port: 12420
-    password: wp9IsiY82uQhcmgNC1eoBM
-    sni: www.semanticstaplegun.click
+    server: 37.235.49.209
+    port: 28099
+    password: qmBSKnAl6LYi9%3Dz23Rs.Z
+    sni: celestialcorset.crystalhamster.click
     skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
@@ -885,10 +905,11 @@ proxy-groups:
       - TR_speednode_0013
       - US_speednode_0014
       - US_speednode_0015
+      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 台湾省台中市+中华电信
       - 美国 CloudFlare节点 [1]
-      - 西班牙+V2CROSS.COM
+      - 美国 CloudFlare节点 [2]
+      - 冰岛+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -976,10 +997,11 @@ proxy-groups:
       - TR_speednode_0013
       - US_speednode_0014
       - US_speednode_0015
+      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 台湾省台中市+中华电信
       - 美国 CloudFlare节点 [1]
-      - 西班牙+V2CROSS.COM
+      - 美国 CloudFlare节点 [2]
+      - 冰岛+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -1069,10 +1091,11 @@ proxy-groups:
       - TR_speednode_0013
       - US_speednode_0014
       - US_speednode_0015
+      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 台湾省台中市+中华电信
       - 美国 CloudFlare节点 [1]
-      - 西班牙+V2CROSS.COM
+      - 美国 CloudFlare节点 [2]
+      - 冰岛+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
