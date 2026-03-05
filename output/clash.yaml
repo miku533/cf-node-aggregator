@@ -95,95 +95,6 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: DE28｜机房｜高风险 (黑名单)
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: US76｜机房｜低风险
-    type: vmess
-    server: v4.hdacd.com
-    port: 30804
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: GB25｜机房｜低风险
-    type: vmess
-    server: v36.hdacd.com
-    port: 30836
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: FR5｜机房｜低风险
-    type: vmess
-    server: v35.hdacd.com
-    port: 30835
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: SG30｜机房｜低风险
-    type: vmess
-    server: v12.hdacd.com
-    port: 30812
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: US88｜机房｜低风险
-    type: vmess
-    server: v24.hdacd.com
-    port: 30824
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: US87｜机房｜低风险
-    type: vmess
-    server: v29.hdacd.com
-    port: 30829
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: JP16｜机房｜低风险
-    type: vmess
-    server: t1.620720.xyz
-    port: 8443
-    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: t1.620720.xyz
-  - name: CN1｜商宽｜非常安全
-    type: vmess
-    server: hn.xn--wlqw1swrj04ju56d.com
-    port: 80
-    uuid: f9ddefc5-d121-486f-9e2f-0c2cd1a3decc
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tms.dingtalk.com
   - name: 🇭🇰 香港|@ripaojiedian
     type: vmess
     server: v10.hdacd.com
@@ -379,20 +290,15 @@ proxies:
       path: /danfengfp=random
       headers:
         Host: lirpeuijr.chinav.indevs.in
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: 167.17.185.172
-    port: 10889
-    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: web.max.ru
-    skip-cert-verify: false
-  - name: 加拿大+V2CROSS.COM [1]
-    type: trojan
-    server: 167.17.185.152
-    port: 10889
-    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: ozon.ru
-    skip-cert-verify: false
+  - name: 中国 V2CROSS.COM
+    type: vmess
+    server: v30.hdacd.com
+    port: 30830
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
   - name: 美国 CloudFlare节点
     type: vmess
     server: c7.620720.xyz
@@ -407,8 +313,8 @@ proxies:
       headers: {}
   - name: 美国 CloudFlare节点 [1]
     type: vmess
-    server: sy4.620720.xyz
-    port: 443
+    server: t1.620720.xyz
+    port: 8443
     uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
     alterId: 0
     cipher: auto
@@ -416,16 +322,38 @@ proxies:
     network: ws
     ws-opts:
       path: /
-      headers:
-        Host: sy4.620720.xyz
-  - name: 加拿大+V2CROSS.COM [2]
+      headers: {}
+  - name: 台湾省台中市+中华电信
     type: trojan
-    server: 167.17.185.228
+    server: green2.cdntencentmusic.com
+    port: 31103
+    password: 4250b3bb-d1ae-4e77-bf71-4069e0d2c383
+    sni: green2.cdntencentmusic.com
+    skip-cert-verify: false
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: 167.17.185.169
     port: 10889
     password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: web.max
+    sni: ya.ru
     skip-cert-verify: false
-  - name: 台湾省台中市+中华电信
+  - name: 台湾省台中市+中华电信 [1]
+    type: trojan
+    server: 220.130.58.136
+    port: 31103
+    password: 20a3d819-ca7f-48a6-ba20-f7021e8dbbbe
+    sni: green2.cdntencentmusic.com
+    skip-cert-verify: false
+  - name: 以色列 V2CROSS.COM
+    type: vmess
+    server: 149.88.95.217
+    port: 35760
+    uuid: 17e96792-d8c3-4741-9c34-e5d1c11d754f
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: none
+  - name: 台湾省台中市+中华电信 [2]
     type: trojan
     server: 220.130.58.136
     port: 35502
@@ -449,15 +377,6 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
-      - DE28｜机房｜高风险 (黑名单)
-      - US76｜机房｜低风险
-      - GB25｜机房｜低风险
-      - FR5｜机房｜低风险
-      - SG30｜机房｜低风险
-      - US88｜机房｜低风险
-      - US87｜机房｜低风险
-      - JP16｜机房｜低风险
-      - CN1｜商宽｜非常安全
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
@@ -483,12 +402,14 @@ proxy-groups:
       - RU_speednode_0015
       - US_speednode_0017
       - US_speednode_0018
-      - 加拿大+V2CROSS.COM
-      - 加拿大+V2CROSS.COM [1]
+      - 中国 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 [1]
-      - 加拿大+V2CROSS.COM [2]
       - 台湾省台中市+中华电信
+      - 加拿大+V2CROSS.COM
+      - 台湾省台中市+中华电信 [1]
+      - 以色列 V2CROSS.COM
+      - 台湾省台中市+中华电信 [2]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -502,15 +423,6 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
-      - DE28｜机房｜高风险 (黑名单)
-      - US76｜机房｜低风险
-      - GB25｜机房｜低风险
-      - FR5｜机房｜低风险
-      - SG30｜机房｜低风险
-      - US88｜机房｜低风险
-      - US87｜机房｜低风险
-      - JP16｜机房｜低风险
-      - CN1｜商宽｜非常安全
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
@@ -536,12 +448,14 @@ proxy-groups:
       - RU_speednode_0015
       - US_speednode_0017
       - US_speednode_0018
-      - 加拿大+V2CROSS.COM
-      - 加拿大+V2CROSS.COM [1]
+      - 中国 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 [1]
-      - 加拿大+V2CROSS.COM [2]
       - 台湾省台中市+中华电信
+      - 加拿大+V2CROSS.COM
+      - 台湾省台中市+中华电信 [1]
+      - 以色列 V2CROSS.COM
+      - 台湾省台中市+中华电信 [2]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -557,15 +471,6 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
-      - DE28｜机房｜高风险 (黑名单)
-      - US76｜机房｜低风险
-      - GB25｜机房｜低风险
-      - FR5｜机房｜低风险
-      - SG30｜机房｜低风险
-      - US88｜机房｜低风险
-      - US87｜机房｜低风险
-      - JP16｜机房｜低风险
-      - CN1｜商宽｜非常安全
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
@@ -591,12 +496,14 @@ proxy-groups:
       - RU_speednode_0015
       - US_speednode_0017
       - US_speednode_0018
-      - 加拿大+V2CROSS.COM
-      - 加拿大+V2CROSS.COM [1]
+      - 中国 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 [1]
-      - 加拿大+V2CROSS.COM [2]
       - 台湾省台中市+中华电信
+      - 加拿大+V2CROSS.COM
+      - 台湾省台中市+中华电信 [1]
+      - 以色列 V2CROSS.COM
+      - 台湾省台中市+中华电信 [2]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
