@@ -379,28 +379,33 @@ proxies:
       path: /danfengfp=random
       headers:
         Host: lirpeuijr.chinav.indevs.in
-  - name: 俄罗斯+V2CROSS.COM
-    type: trojan
-    server: 212.193.18.144
-    port: 36158
-    password: ZblhWr0mqMakCPg.N
-    sni: ya.ru
-    skip-cert-verify: false
-  - name: 台湾省台中市+中华电信
-    type: trojan
-    server: green2.cdntencentmusic.com
-    port: 35501
-    password: 11cfbea5-eae4-4654-8aa9-a9481f38dc42
-    sni: green2.cdntencentmusic.com
-    skip-cert-verify: false
   - name: 加拿大+V2CROSS.COM
     type: trojan
-    server: 167.17.185.169
+    server: 167.17.185.172
     port: 10889
     password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: ya.ru
+    sni: web.max.ru
+    skip-cert-verify: false
+  - name: 加拿大+V2CROSS.COM [1]
+    type: trojan
+    server: 167.17.185.152
+    port: 10889
+    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+    sni: ozon.ru
     skip-cert-verify: false
   - name: 美国 CloudFlare节点
+    type: vmess
+    server: c7.620720.xyz
+    port: 8443
+    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers: {}
+  - name: 美国 CloudFlare节点 [1]
     type: vmess
     server: sy4.620720.xyz
     port: 443
@@ -411,28 +416,22 @@ proxies:
     network: ws
     ws-opts:
       path: /
-      headers: {}
-  - name: 以色列 V2CROSS.COM
-    type: vmess
-    server: 149.88.95.217
-    port: 40741
-    uuid: 1b8a751b-4909-4fec-f019-907d92e6c47f
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: none
-  - name: 美国 CloudFlare节点 [1]
-    type: vmess
-    server: gbnhju.7no.ccwu.cc
-    port: 80
-    uuid: 9f9b2ba3-77c1-400f-9b72-76b9b0829e51
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /5PVvw26jj0Fy6bojk
-      headers: {}
+      headers:
+        Host: sy4.620720.xyz
+  - name: 加拿大+V2CROSS.COM [2]
+    type: trojan
+    server: 167.17.185.228
+    port: 10889
+    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+    sni: web.max
+    skip-cert-verify: false
+  - name: 台湾省台中市+中华电信
+    type: trojan
+    server: 220.130.58.136
+    port: 35502
+    password: 6f038cee-6ba1-4941-bce5-de1969f37405
+    sni: green2.cdntencentmusic.com
+    skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -484,12 +483,12 @@ proxy-groups:
       - RU_speednode_0015
       - US_speednode_0017
       - US_speednode_0018
-      - 俄罗斯+V2CROSS.COM
-      - 台湾省台中市+中华电信
       - 加拿大+V2CROSS.COM
+      - 加拿大+V2CROSS.COM [1]
       - 美国 CloudFlare节点
-      - 以色列 V2CROSS.COM
       - 美国 CloudFlare节点 [1]
+      - 加拿大+V2CROSS.COM [2]
+      - 台湾省台中市+中华电信
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -537,12 +536,12 @@ proxy-groups:
       - RU_speednode_0015
       - US_speednode_0017
       - US_speednode_0018
-      - 俄罗斯+V2CROSS.COM
-      - 台湾省台中市+中华电信
       - 加拿大+V2CROSS.COM
+      - 加拿大+V2CROSS.COM [1]
       - 美国 CloudFlare节点
-      - 以色列 V2CROSS.COM
       - 美国 CloudFlare节点 [1]
+      - 加拿大+V2CROSS.COM [2]
+      - 台湾省台中市+中华电信
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -592,12 +591,12 @@ proxy-groups:
       - RU_speednode_0015
       - US_speednode_0017
       - US_speednode_0018
-      - 俄罗斯+V2CROSS.COM
-      - 台湾省台中市+中华电信
       - 加拿大+V2CROSS.COM
+      - 加拿大+V2CROSS.COM [1]
       - 美国 CloudFlare节点
-      - 以色列 V2CROSS.COM
       - 美国 CloudFlare节点 [1]
+      - 加拿大+V2CROSS.COM [2]
+      - 台湾省台中市+中华电信
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
