@@ -95,7 +95,7 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 香港|@ripaojiedian
+  - name: 🇭🇰 香港|@ripaojiedian
     type: vmess
     server: v10.hdacd.com
     port: 30807
@@ -295,57 +295,7 @@ proxies:
       path: /?ed=2560security=tls
       headers:
         Host: sni.111000.dynv6.net
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: 167.17.185.152
-    port: 10889
-    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: ozon.ru
-    skip-cert-verify: false
-  - name: 加拿大+V2CROSS.COM [1]
-    type: trojan
-    server: 167.17.185.228
-    port: 10889
-    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: web.max
-    skip-cert-verify: false
-  - name: 俄罗斯+V2CROSS.COM
-    type: trojan
-    server: 212.193.18.144
-    port: 36158
-    password: ZblhWr0mqMakCPg.N
-    sni: ya.ru
-    skip-cert-verify: false
-  - name: 西班牙+V2CROSS.COM
-    type: trojan
-    server: 80.173.231.254
-    port: 12420
-    password: wp9IsiY82uQhcmgNC1eoBM
-    sni: www.semanticstaplegun.click
-    skip-cert-verify: false
-  - name: 英国 V2CROSS.COM
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
   - name: 美国 CloudFlare节点
-    type: vmess
-    server: gbnhju.7no.ccwu.cc
-    port: 80
-    uuid: 9f9b2ba3-77c1-400f-9b72-76b9b0829e51
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /5PVvw26jj0Fy6bojk
-      headers:
-        Host: gbnhju.7no.ccwu.cc
-  - name: 美国 CloudFlare节点 [1]
     type: vmess
     server: sy4.620720.xyz
     port: 443
@@ -358,6 +308,56 @@ proxies:
       path: /
       headers:
         Host: sy4.620720.xyz
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: 167.17.185.172
+    port: 10889
+    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+    sni: web.max.ru
+    skip-cert-verify: false
+  - name: 西班牙+V2CROSS.COM
+    type: trojan
+    server: 80.173.231.254
+    port: 12420
+    password: wp9IsiY82uQhcmgNC1eoBM
+    sni: www.semanticstaplegun.click
+    skip-cert-verify: false
+  - name: 中国 V2CROSS.COM
+    type: vmess
+    server: v30.hdacd.com
+    port: 30830
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 加拿大+V2CROSS.COM [1]
+    type: trojan
+    server: 167.17.185.152
+    port: 10889
+    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+    sni: ozon.ru
+    skip-cert-verify: false
+  - name: 加拿大+V2CROSS.COM [2]
+    type: trojan
+    server: 167.17.185.169
+    port: 10889
+    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+    sni: ya.ru
+    skip-cert-verify: false
+  - name: 美国 CloudFlare节点 [1]
+    type: vmess
+    server: gbnhju.7no.ccwu.cc
+    port: 80
+    uuid: 9f9b2ba3-77c1-400f-9b72-76b9b0829e51
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5PVvw26jj0Fy6bojk
+      headers:
+        Host: gbnhju.7no.ccwu.cc
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -375,7 +375,7 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
-      - 香港|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
@@ -399,12 +399,12 @@ proxy-groups:
       - US_speednode_0018
       - US_speednode_0019
       - US_speednode_0020
-      - 加拿大+V2CROSS.COM
-      - 加拿大+V2CROSS.COM [1]
-      - 俄罗斯+V2CROSS.COM
-      - 西班牙+V2CROSS.COM
-      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 加拿大+V2CROSS.COM
+      - 西班牙+V2CROSS.COM
+      - 中国 V2CROSS.COM
+      - 加拿大+V2CROSS.COM [1]
+      - 加拿大+V2CROSS.COM [2]
       - 美国 CloudFlare节点 [1]
   - name: ♻️ 自动选择
     type: url-test
@@ -419,7 +419,7 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
-      - 香港|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
@@ -443,12 +443,12 @@ proxy-groups:
       - US_speednode_0018
       - US_speednode_0019
       - US_speednode_0020
-      - 加拿大+V2CROSS.COM
-      - 加拿大+V2CROSS.COM [1]
-      - 俄罗斯+V2CROSS.COM
-      - 西班牙+V2CROSS.COM
-      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 加拿大+V2CROSS.COM
+      - 西班牙+V2CROSS.COM
+      - 中国 V2CROSS.COM
+      - 加拿大+V2CROSS.COM [1]
+      - 加拿大+V2CROSS.COM [2]
       - 美国 CloudFlare节点 [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -465,7 +465,7 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
-      - 香港|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
@@ -489,12 +489,12 @@ proxy-groups:
       - US_speednode_0018
       - US_speednode_0019
       - US_speednode_0020
-      - 加拿大+V2CROSS.COM
-      - 加拿大+V2CROSS.COM [1]
-      - 俄罗斯+V2CROSS.COM
-      - 西班牙+V2CROSS.COM
-      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 加拿大+V2CROSS.COM
+      - 西班牙+V2CROSS.COM
+      - 中国 V2CROSS.COM
+      - 加拿大+V2CROSS.COM [1]
+      - 加拿大+V2CROSS.COM [2]
       - 美国 CloudFlare节点 [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
