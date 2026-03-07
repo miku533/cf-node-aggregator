@@ -95,6 +95,118 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
+  - name: SG15｜机房｜低风险
+    type: vmess
+    server: v12.hdacd.com
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: DE8｜机房｜高风险 (黑名单)
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: US56｜机房｜低风险
+    type: vmess
+    server: v4.hdacd.com
+    port: 30804
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: HK29｜家宽｜非常安全
+    type: vmess
+    server: d7d6992d-t5bb40-tdvaex-1ixuf.hkt.gotochinatown.net
+    port: 80
+    uuid: dcbaee4d-2204-11ed-b659-f23c91cfbbc9
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - name: HK41｜家宽｜非常安全
+    type: vmess
+    server: hk02.653ebeeb-5f60-4be5-958d-7bf4839cdccd.ef6616fd-5b06-482f-9d64-183745659cbf.byteprivatelink.com
+    port: 443
+    uuid: d5359b9e-4f4f-49e4-ab8b-f6a0d19bce28
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: grpc
+  - name: JP3｜家宽｜非常安全
+    type: vmess
+    server: 31.58.223.134
+    port: 8443
+    uuid: 78cdc6b7-8b14-47d6-bf09-3167bc5124fb
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: US58｜机房｜低风险
+    type: vmess
+    server: v24.hdacd.com
+    port: 30824
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: US59｜家宽｜非常安全
+    type: trojan
+    server: green2.cdntencentmusic.com
+    port: 35502
+    password: adf2550f-8b87-4ea1-aa80-e7fc8f65a68a
+    sni: green2.cdntencentmusic.com
+    skip-cert-verify: true
+  - name: US60｜机房｜低风险
+    type: vmess
+    server: gbnh.1oo.ccwu.cc
+    port: 443
+    uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /iSRWSKUJKNuXvVzsYHmsMrnO
+      headers:
+        Host: gbnh.1oo.ccwu.cc
+  - name: US61｜机房｜低风险
+    type: trojan
+    server: mjki.1nn.ccwu.cc
+    port: 443
+    password: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+    sni: mjki.1nn.ccwu.cc
+    skip-cert-verify: true
+  - name: DE9｜机房｜低风险
+    type: vmess
+    server: v33.hdacd.com
+    port: 30833
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: NL2｜机房｜低风险
+    type: vmess
+    server: v30.hdacd.com
+    port: 30830
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
   - name: 🇭🇰 香港|@ripaojiedian
     type: vmess
     server: v10.hdacd.com
@@ -872,51 +984,6 @@ proxies:
       path: /security=tls
       headers:
         Host: 8pa3.y23.edukg.dpdns.org
-  - name: 中国 V2CROSS.COM
-    type: vmess
-    server: v30.hdacd.com
-    port: 30830
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: 167.17.185.169
-    port: 10889
-    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: ya.ru
-    skip-cert-verify: false
-  - name: 巴西圣保罗 CloudFlare节点
-    type: vmess
-    server: 188.114.96.3
-    port: 443
-    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: sy4.620720.xyz
-  - name: 台湾省台中市+中华电信
-    type: trojan
-    server: green2.cdntencentmusic.com
-    port: 35501
-    password: 04e5b584-1850-483d-a844-9ad624a4ca8e
-    sni: green2.cdntencentmusic.com
-    skip-cert-verify: false
-  - name: 亚太地区 V2CROSS.COM
-    type: vmess
-    server: 103.181.164.237
-    port: 34114
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    tls: false
-    network: tcp
   - name: 美国 CloudFlare节点
     type: vmess
     server: c7.620720.xyz
@@ -932,8 +999,43 @@ proxies:
         Host: c7.620720.xyz
   - name: 美国 CloudFlare节点 [1]
     type: vmess
-    server: t1.620720.xyz
-    port: 8443
+    server: 104.21.7.101
+    port: 80
+    uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /iSRWSKUJKNuXvVzsYHmsMrnO
+      headers:
+        Host: gbnh.0nn.ccwu.cc
+  - name: 美国 CloudFlare节点 [2]
+    type: vmess
+    server: hjk.6no.ccwu.cc
+    port: 443
+    uuid: 5f6c3f92-7220-4275-b34d-57c04db3f967
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /KnuT4XBUucXkOSONBms
+      headers:
+        Host: hjk.6no.ccwu.cc
+  - name: 瑞士 V2CROSS.COM
+    type: vmess
+    server: 89.31.120.192
+    port: 443
+    uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 美国 CloudFlare节点 [3]
+    type: vmess
+    server: sy4.620720.xyz
+    port: 443
     uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
     alterId: 0
     cipher: auto
@@ -942,7 +1044,14 @@ proxies:
     ws-opts:
       path: /
       headers:
-        Host: t1.620720.xyz
+        Host: sy4.620720.xyz
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: 167.17.185.228
+    port: 10889
+    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+    sni: web.max
+    skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -960,6 +1069,18 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
+      - SG15｜机房｜低风险
+      - DE8｜机房｜高风险 (黑名单)
+      - US56｜机房｜低风险
+      - HK29｜家宽｜非常安全
+      - HK41｜家宽｜非常安全
+      - JP3｜家宽｜非常安全
+      - US58｜机房｜低风险
+      - US59｜家宽｜非常安全
+      - US60｜机房｜低风险
+      - US61｜机房｜低风险
+      - DE9｜机房｜低风险
+      - NL2｜机房｜低风险
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
@@ -1038,13 +1159,12 @@ proxy-groups:
       - US_speednode_0069
       - US_speednode_0070
       - US_speednode_0071
-      - 中国 V2CROSS.COM
-      - 加拿大+V2CROSS.COM
-      - 巴西圣保罗 CloudFlare节点
-      - 台湾省台中市+中华电信
-      - 亚太地区 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 [1]
+      - 美国 CloudFlare节点 [2]
+      - 瑞士 V2CROSS.COM
+      - 美国 CloudFlare节点 [3]
+      - 加拿大+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -1058,6 +1178,18 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
+      - SG15｜机房｜低风险
+      - DE8｜机房｜高风险 (黑名单)
+      - US56｜机房｜低风险
+      - HK29｜家宽｜非常安全
+      - HK41｜家宽｜非常安全
+      - JP3｜家宽｜非常安全
+      - US58｜机房｜低风险
+      - US59｜家宽｜非常安全
+      - US60｜机房｜低风险
+      - US61｜机房｜低风险
+      - DE9｜机房｜低风险
+      - NL2｜机房｜低风险
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
@@ -1136,13 +1268,12 @@ proxy-groups:
       - US_speednode_0069
       - US_speednode_0070
       - US_speednode_0071
-      - 中国 V2CROSS.COM
-      - 加拿大+V2CROSS.COM
-      - 巴西圣保罗 CloudFlare节点
-      - 台湾省台中市+中华电信
-      - 亚太地区 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 [1]
+      - 美国 CloudFlare节点 [2]
+      - 瑞士 V2CROSS.COM
+      - 美国 CloudFlare节点 [3]
+      - 加拿大+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -1158,6 +1289,18 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
+      - SG15｜机房｜低风险
+      - DE8｜机房｜高风险 (黑名单)
+      - US56｜机房｜低风险
+      - HK29｜家宽｜非常安全
+      - HK41｜家宽｜非常安全
+      - JP3｜家宽｜非常安全
+      - US58｜机房｜低风险
+      - US59｜家宽｜非常安全
+      - US60｜机房｜低风险
+      - US61｜机房｜低风险
+      - DE9｜机房｜低风险
+      - NL2｜机房｜低风险
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
@@ -1236,13 +1379,12 @@ proxy-groups:
       - US_speednode_0069
       - US_speednode_0070
       - US_speednode_0071
-      - 中国 V2CROSS.COM
-      - 加拿大+V2CROSS.COM
-      - 巴西圣保罗 CloudFlare节点
-      - 台湾省台中市+中华电信
-      - 亚太地区 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 [1]
+      - 美国 CloudFlare节点 [2]
+      - 瑞士 V2CROSS.COM
+      - 美国 CloudFlare节点 [3]
+      - 加拿大+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
