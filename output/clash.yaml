@@ -332,10 +332,10 @@ proxies:
     flow: xtls-rprx-vision-udp443
   - name: 加拿大+V2CROSS.COM
     type: trojan
-    server: 167.17.185.228
+    server: 167.17.185.172
     port: 10889
     password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: web.max
+    sni: web.max.ru
     skip-cert-verify: false
   - name: 俄罗斯+V2CROSS.COM
     type: trojan
@@ -344,17 +344,37 @@ proxies:
     password: ZblhWr0mqMakCPg.N
     sni: ya.ru
     skip-cert-verify: false
-  - name: 加拿大+V2CROSS.COM [1]
+  - name: 美国+加州
     type: trojan
-    server: 167.17.185.169
-    port: 10889
-    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: ya.ru
+    server: 64.94.95.118
+    port: 57142
+    password: kkzh2prsyr2ik47as615
+    sni: 64.94.95.118
     skip-cert-verify: false
   - name: 美国 CloudFlare节点
     type: vmess
-    server: c7.620720.xyz
+    server: kwtgm.cmvvb.online
     port: 8443
+    uuid: 9fc9b94d-6b44-4029-bc41-09e4ac92e508
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: kwtgm.cmvvb.online
+  - name: 西班牙+V2CROSS.COM
+    type: trojan
+    server: 80.173.231.254
+    port: 12420
+    password: wp9IsiY82uQhcmgNC1eoBM
+    sni: www.semanticstaplegun.click
+    skip-cert-verify: false
+  - name: 美国 CloudFlare节点 [1]
+    type: vmess
+    server: sy4.620720.xyz
+    port: 443
     uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
     alterId: 0
     cipher: auto
@@ -363,7 +383,16 @@ proxies:
     ws-opts:
       path: /
       headers:
-        Host: c7.620720.xyz
+        Host: sy4.620720.xyz
+  - name: 亚太地区 V2CROSS.COM
+    type: vmess
+    server: 103.181.164.237
+    port: 34114
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: false
+    network: tcp
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -412,8 +441,11 @@ proxy-groups:
       - US_speednode_0005
       - 加拿大+V2CROSS.COM
       - 俄罗斯+V2CROSS.COM
-      - 加拿大+V2CROSS.COM [1]
+      - 美国+加州
       - 美国 CloudFlare节点
+      - 西班牙+V2CROSS.COM
+      - 美国 CloudFlare节点 [1]
+      - 亚太地区 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -458,8 +490,11 @@ proxy-groups:
       - US_speednode_0005
       - 加拿大+V2CROSS.COM
       - 俄罗斯+V2CROSS.COM
-      - 加拿大+V2CROSS.COM [1]
+      - 美国+加州
       - 美国 CloudFlare节点
+      - 西班牙+V2CROSS.COM
+      - 美国 CloudFlare节点 [1]
+      - 亚太地区 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -506,8 +541,11 @@ proxy-groups:
       - US_speednode_0005
       - 加拿大+V2CROSS.COM
       - 俄罗斯+V2CROSS.COM
-      - 加拿大+V2CROSS.COM [1]
+      - 美国+加州
       - 美国 CloudFlare节点
+      - 西班牙+V2CROSS.COM
+      - 美国 CloudFlare节点 [1]
+      - 亚太地区 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
