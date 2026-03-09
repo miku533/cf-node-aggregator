@@ -95,16 +95,7 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: SG10｜机房｜低风险
-    type: vmess
-    server: v12.hdacd.com
-    port: 30812
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: DE3｜机房｜高风险 (黑名单)
+  - name: DE23｜机房｜高风险 (黑名单)
     type: vmess
     server: 82.198.246.97
     port: 180
@@ -113,24 +104,138 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: HK55｜机房｜低风险
+  - name: SG7｜机房｜低风险
     type: vmess
-    server: v9.hdacd.com
-    port: 30809
+    server: v12.hdacd.com
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: FR3｜机房｜低风险
+    type: vmess
+    server: v35.hdacd.com
+    port: 30835
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     alterId: 2
     cipher: auto
     tls: false
     network: tcp
-  - name: JP9｜机房｜低风险
+  - name: US49｜机房｜低风险
     type: vmess
-    server: v6.hdacd.com
-    port: 30806
+    server: 103.181.164.237
+    port: 34114
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: SE2｜机房｜低风险
+    type: trojan
+    server: 45.145.154.8
+    port: 443
+    password: af4b064a9c39472fb34ad8b113acdc6b
+    sni: 45.145.154.8
+    skip-cert-verify: true
+  - name: US50｜机房｜低风险
+    type: vmess
+    server: v29.hdacd.com
+    port: 30829
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     alterId: 2
     cipher: auto
     tls: false
     network: tcp
+  - name: US56｜机房｜低风险
+    type: vmess
+    server: v24.hdacd.com
+    port: 30824
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: HK39｜机房｜低风险
+    type: trojan
+    server: 108.162.198.247
+    port: 443
+    password: 823cbccd-3a71-4248-ac3c-3c460de1552d
+    sni: snll100.pages.dev
+    skip-cert-verify: true
+  - name: NL8｜机房｜低风险
+    type: vmess
+    server: v30.hdacd.com
+    port: 30830
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: US54｜机房｜低风险
+    type: vmess
+    server: v8.hdacd.com
+    port: 30808
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: ID4｜家宽｜非常安全
+    type: vmess
+    server: 68.64.179.210
+    port: 443
+    uuid: 462d9694-62b5-4781-a287-61a422b920e8
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        Host: mn1ray.jagoanvip.xyz
+  - name: AU1｜机房｜低风险
+    type: vmess
+    server: sy4.620720.xyz
+    port: 443
+    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: sy4.620720.xyz
+  - name: AU4｜机房｜低风险
+    type: vmess
+    server: 85.211.242.85
+    port: 12889
+    uuid: 37c67a5e-2b2a-49b2-a197-889e80b28bee
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: baidu.com
+  - name: SG8｜机房｜低风险
+    type: vmess
+    server: v45.hdacd.com
+    port: 30845
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: HK40｜机房｜低风险
+    type: trojan
+    server: v1.dabache.top
+    port: 443
+    password: bpb-trojan
+    sni: mashdt.pages.dev
+    skip-cert-verify: true
   - name: 🇭🇰 香港|@ripaojiedian
     type: vmess
     server: v10.hdacd.com
@@ -226,43 +331,65 @@ proxies:
     skip-cert-verify: true
   - name: BG_speednode_0001
     type: vless
-    server: 31.13.208.89
+    server: 93.123.39.225
+    port: 443
+    uuid: 3130fccb-e72e-468d-b2ce-0721bb3058c8
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: CH_speednode_0002
+    type: vless
+    server: estonia.scroogethebest.com
+    port: 443
+    uuid: e2e1ddaa-1acf-4c4c-a211-92284f6440ed
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: CN_speednode_0004
+    type: vless
+    server: 106.54.236.100
+    port: 18000
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /danfengfp=random
+      headers:
+        Host: snippet.fgfw.ye.gs
+  - name: DE_speednode_0006
+    type: vless
+    server: 78.47.172.250
+    port: 433
+    uuid: c8181481-8544-49da-b4dd-46a3ddb27cae
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: DE_speednode_0007
+    type: vless
+    server: 91.149.232.164
+    port: 39738
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /danfengfp=random
+      headers:
+        Host: snippet.gfw.nn.kg
+  - name: ES_speednode_0008
+    type: vless
+    server: madrid-meow.nethcloud.top
     port: 8443
-    uuid: 30c04389-bbcb-431f-9d47-a8ad24406bd4
+    uuid: d6415904-ebd7-43da-a4a0-26a627aa20fb
     tls: true
     network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: DE_speednode_0004
-    type: vless
-    server: 5.254.85.151
+  - name: HK_speednode_0015
+    type: trojan
+    server: 58.152.25.253
     port: 443
-    uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: DE_speednode_0005
-    type: vless
-    server: 45.145.42.170
-    port: 8005
-    uuid: 00000000-0000-4000-8000-000000000000
-    tls: false
-    network: ws
-    ws-opts:
-      path: /security=tls
-      headers:
-        Host: sub.mot.ip-ddns.com
-  - name: HK_speednode_0007
-    type: vless
-    server: 83.229.123.173
-    port: 443
-    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-    tls: false
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳@WangCai2security=tls
-      headers:
-        Host: ylnhh.cc.cd
-  - name: IQ_speednode_0008
+    password: BxceQaOe
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
+  - name: IQ_speednode_0017
     type: vless
     server: scvad1tel-ru.golden-cards.me
     port: 443
@@ -270,28 +397,10 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: KR_speednode_0009
-    type: trojan
-    server: 114.207.99.233
-    port: 11434
-    password: trojan
-    sni: jflsjlaf.pages.dev
-    skip-cert-verify: true
-  - name: KR_speednode_0010
+  - name: KR_speednode_0018
     type: vless
-    server: 121.157.190.209
-    port: 11717
-    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-    tls: false
-    network: ws
-    ws-opts:
-      path: /TelegramU0001F1E8U0001F1F3@WangCai2security=tls
-      headers:
-        Host: ylnhh.cc.cd
-  - name: KR_speednode_0011
-    type: vless
-    server: 175.212.45.195
-    port: 12053
+    server: 112.167.47.83
+    port: 23297
     uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
     tls: false
     network: ws
@@ -299,18 +408,7 @@ proxies:
       path: /Telegram🇨🇳@WangCai2security=tls
       headers:
         Host: ylnhh.cc.cd
-  - name: KR_speednode_0012
-    type: vless
-    server: 121.128.104.37
-    port: 12202
-    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-    tls: false
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳@WangCai2security=tls
-      headers:
-        Host: ylnhh.cc.cd
-  - name: KR_speednode_0014
+  - name: KR_speednode_0019
     type: vless
     server: 211.238.83.146
     port: 32641
@@ -321,65 +419,10 @@ proxies:
       path: /Telegram🇨🇳@WangCai2security=tls
       headers:
         Host: ylnhh.cc.cd
-  - name: KR_speednode_0015
-    type: vless
-    server: 121.140.226.21
-    port: 13382
-    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-    tls: false
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳@WangCai2security=tls
-      headers:
-        Host: ylnhh.cc.cd
-  - name: KR_speednode_0016
-    type: vless
-    server: 220.71.102.124
-    port: 16691
-    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-    tls: false
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳@WangCai2security=tls
-      headers:
-        Host: ylnhh.cc.cd
-  - name: KR_speednode_0017
-    type: vless
-    server: 211.238.83.146
-    port: 26373
-    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-    tls: false
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳@WangCai2security=tls
-      headers:
-        Host: ylnhh.cc.cd
-  - name: KR_speednode_0018
-    type: vless
-    server: 121.140.226.21
-    port: 10428
-    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-    tls: false
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳@WangCai2security=tls
-      headers:
-        Host: ylnhh.cc.cd
-  - name: KR_speednode_0019
-    type: vless
-    server: 222.110.16.126
-    port: 10405
-    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-    tls: false
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳@WangCai2security=tls
-      headers:
-        Host: ylnhh.cc.cd
   - name: KR_speednode_0020
     type: vless
-    server: 220.124.144.20
-    port: 27453
+    server: 210.105.224.42
+    port: 10840
     uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
     tls: false
     network: ws
@@ -388,6 +431,28 @@ proxies:
       headers:
         Host: ylnhh.cc.cd
   - name: KR_speednode_0021
+    type: vless
+    server: 119.192.158.53
+    port: 25095
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    tls: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2security=tls
+      headers:
+        Host: ylnhh.cc.cd
+  - name: KR_speednode_0022
+    type: vless
+    server: 121.157.190.209
+    port: 11717
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    tls: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2security=tls
+      headers:
+        Host: ylnhh.cc.cd
+  - name: KR_speednode_0023
     type: vless
     server: 121.168.144.41
     port: 12511
@@ -398,32 +463,10 @@ proxies:
       path: /Telegram🇨🇳@WangCai2security=tls
       headers:
         Host: ylnhh.cc.cd
-  - name: KR_speednode_0022
-    type: vless
-    server: 125.129.129.66
-    port: 27876
-    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-    tls: false
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳@WangCai2security=tls
-      headers:
-        Host: ylnhh.cc.cd
-  - name: KR_speednode_0023
-    type: vless
-    server: 125.129.129.66
-    port: 19024
-    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-    tls: false
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳@WangCai2security=tls
-      headers:
-        Host: ylnhh.cc.cd
   - name: KR_speednode_0024
     type: vless
-    server: 121.140.226.21
-    port: 10006
+    server: 211.48.77.114
+    port: 11265
     uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
     tls: false
     network: ws
@@ -433,8 +476,8 @@ proxies:
         Host: ylnhh.cc.cd
   - name: KR_speednode_0025
     type: vless
-    server: 211.238.83.146
-    port: 23792
+    server: 220.71.102.124
+    port: 16691
     uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
     tls: false
     network: ws
@@ -443,6 +486,17 @@ proxies:
       headers:
         Host: ylnhh.cc.cd
   - name: KR_speednode_0026
+    type: vless
+    server: 119.192.158.53
+    port: 16628
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    tls: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2security=tls
+      headers:
+        Host: ylnhh.cc.cd
+  - name: KR_speednode_0027
     type: vless
     server: 121.158.68.235
     port: 12025
@@ -453,21 +507,10 @@ proxies:
       path: /Telegram🇨🇳@WangCai2security=tls
       headers:
         Host: ylnhh.cc.cd
-  - name: KR_speednode_0027
-    type: vless
-    server: 221.159.114.102
-    port: 23130
-    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-    tls: false
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳@WangCai2security=tls
-      headers:
-        Host: ylnhh.cc.cd
   - name: KR_speednode_0028
     type: vless
-    server: 121.161.114.201
-    port: 11213
+    server: 59.29.89.197
+    port: 18765
     uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
     tls: false
     network: ws
@@ -477,8 +520,8 @@ proxies:
         Host: ylnhh.cc.cd
   - name: KR_speednode_0029
     type: vless
-    server: 223.222.195.84
-    port: 11654
+    server: 119.195.168.105
+    port: 12417
     uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
     tls: false
     network: ws
@@ -488,8 +531,8 @@ proxies:
         Host: ylnhh.cc.cd
   - name: KR_speednode_0030
     type: vless
-    server: 116.93.199.28
-    port: 21510
+    server: 220.94.94.109
+    port: 10177
     uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
     tls: false
     network: ws
@@ -498,20 +541,49 @@ proxies:
       headers:
         Host: ylnhh.cc.cd
   - name: KR_speednode_0031
-    type: vless
-    server: 220.124.144.20
-    port: 19300
-    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-    tls: false
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳@WangCai2security=tls
-      headers:
-        Host: ylnhh.cc.cd
+    type: trojan
+    server: 121.131.136.208
+    port: 11001
+    password: trojan
+    sni: jflsjlaf.pages.dev
+    skip-cert-verify: true
   - name: KR_speednode_0032
     type: vless
-    server: 121.161.114.201
-    port: 10054
+    server: 203.170.125.48
+    port: 32920
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /danfengfp=random
+      headers:
+        Host: snippet.gfw.nn.kg
+  - name: KR_speednode_0033
+    type: vless
+    server: 125.143.88.47
+    port: 10243
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /danfengfp=random
+      headers:
+        Host: snippet.gfw.nn.kg
+  - name: KR_speednode_0034
+    type: vless
+    server: 211.105.16.79
+    port: 20201
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /danfengsecurity=tls
+      headers:
+        Host: snippet.fgfw.indevs.in
+  - name: KR_speednode_0035
+    type: vless
+    server: 183.97.71.221
+    port: 12125
     uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
     tls: false
     network: ws
@@ -519,37 +591,145 @@ proxies:
       path: /Telegram🇨🇳@WangCai2security=tls
       headers:
         Host: ylnhh.cc.cd
-  - name: LB_speednode_0033
+  - name: KR_speednode_0036
     type: vless
-    server: finland.tortvpnbot.world
-    port: 8080
-    uuid: a001c9c4-ece2-4dc1-9658-cbad90fcd2e0
+    server: 222.114.88.230
+    port: 10769
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    tls: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2security=tls
+      headers:
+        Host: ylnhh.cc.cd
+  - name: KR_speednode_0037
+    type: vless
+    server: 121.166.253.13
+    port: 30038
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    tls: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2security=tls
+      headers:
+        Host: ylnhh.cc.cd
+  - name: KR_speednode_0038
+    type: vless
+    server: 59.29.89.197
+    port: 20114
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    tls: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2security=tls
+      headers:
+        Host: ylnhh.cc.cd
+  - name: KR_speednode_0039
+    type: vless
+    server: 118.42.204.220
+    port: 12281
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    tls: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2security=tls
+      headers:
+        Host: ylnhh.cc.cd
+  - name: KR_speednode_0040
+    type: vless
+    server: 121.187.96.157
+    port: 20201
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /danfengsecurity=tls
+      headers:
+        Host: snippet.gfw.nn.kg
+  - name: KR_speednode_0041
+    type: vless
+    server: 211.198.215.67
+    port: 16034
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    tls: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2security=tls
+      headers:
+        Host: ylnhh.cc.cd
+  - name: KR_speednode_0042
+    type: vless
+    server: 211.245.79.29
+    port: 19318
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    tls: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2security=tls
+      headers:
+        Host: ylnhh.cc.cd
+  - name: KR_speednode_0043
+    type: vless
+    server: 218.154.216.119
+    port: 12616
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
     tls: true
-    network: tcp
-  - name: RU_speednode_0034
+    network: ws
+    ws-opts:
+      path: /TelegramU0001F1E8U0001F1F3@WangCai2fp=chrome
+      headers:
+        Host: ylnhh.cc.cd
+  - name: KR_speednode_0046
     type: vless
-    server: 51.250.94.162
+    server: 220.78.129.86
+    port: 11937
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    tls: true
+    network: ws
+    ws-opts:
+      path: /TelegramU0001F1E8U0001F1F3@WangCai2fp=chrome
+      headers:
+        Host: ylnhh.cc.cd
+  - name: NL_speednode_0048
+    type: vless
+    server: routewhitenl.subv.ru
     port: 443
-    uuid: 8d1a65d6-9709-4c61-8f15-67bcf6d82fff
+    uuid: c67f81df-34e8-4cb3-ab43-599585775fa9
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0035
+  - name: NL_speednode_0049
     type: vless
-    server: 51.250.77.87
-    port: 12443
-    uuid: a774f61d-a518-4c61-902f-807797da6caf
+    server: nll.scroogethebest.com
+    port: 443
+    uuid: e2e1ddaa-1acf-4c4c-a211-92284f6440ed
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: SC_speednode_0036
+  - name: RU_speednode_0050
+    type: vless
+    server: 51.250.119.248
+    port: 16409
+    uuid: 1537344c-663d-45d7-aeee-0c89e3430fff
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: RU_speednode_0051
+    type: vless
+    server: 146.185.240.171
+    port: 52006
+    uuid: b3da836c-d6d8-03e8-ba4a-0a7a54491924
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: SC_speednode_0052
     type: trojan
     server: 8443.golden-cards.me
     port: 443
     password: q2GRUM1-odJBWq_KV6xv2fuNvu8ed-
     sni: 8443.golden-cards.me
     skip-cert-verify: true
-  - name: US_speednode_0037
+  - name: US_speednode_0053
     type: vless
     server: 143.20.236.51
     port: 443
@@ -557,7 +737,7 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: US_speednode_0038
+  - name: US_speednode_0054
     type: vless
     server: 198.62.62.248
     port: 443
@@ -568,62 +748,15 @@ proxies:
       path: /lovefp=chrome
       headers:
         Host: tar.alabama-tigr.info
-  - name: US_speednode_0039
+  - name: US_speednode_0055
     type: vless
-    server: 45.12.145.80
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed=2560security=tls
-      headers:
-        Host: sni.111000.indevs.in
-  - name: US_speednode_0040
-    type: vless
-    server: 157.254.223.44
-    port: 18959
-    uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
-    tls: true
-    network: tcp
-  - name: US_speednode_0041
-    type: trojan
-    server: 154.17.234.78
-    port: 7071
-    password: trojan
-    sni: jflsjlaf.pages.dev
-    skip-cert-verify: true
-  - name: US_speednode_0042
-    type: vless
-    server: 144.31.63.7
-    port: 443
-    uuid: 716a8171-09d1-4b5c-b816-34e6537b60ae
+    server: 204.197.163.238
+    port: 43643
+    uuid: ff111801-768c-4d23-8f46-e90ef677c80d
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: US_speednode_0043
-    type: vless
-    server: 68.64.179.243
-    port: 443
-    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-    tls: false
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳@WangCai2security=tls
-      headers:
-        Host: ylnhh.cc.cd
-  - name: US_speednode_0044
-    type: vless
-    server: 68.64.179.250
-    port: 443
-    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-    tls: false
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳@WangCai2security=tls
-      headers:
-        Host: ylnhh.cc.cd
-  - name: US_speednode_0045
+  - name: US_speednode_0056
     type: vless
     server: 68.64.179.96
     port: 443
@@ -634,26 +767,31 @@ proxies:
       path: /Telegram🇨🇳@WangCai2security=tls
       headers:
         Host: ylnhh.cc.cd
-  - name: 巴西圣保罗 CloudFlare节点
-    type: vmess
-    server: 188.114.96.3
+  - name: US_speednode_0057
+    type: vless
+    server: 68.64.179.243
     port: 443
-    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-    alterId: 0
-    cipher: auto
-    tls: true
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    tls: false
     network: ws
     ws-opts:
-      path: /
+      path: /Telegram🇨🇳@WangCai2security=tls
       headers:
-        Host: sy4.620720.xyz
-  - name: 香港+电讯盈科有限公司
-    type: trojan
-    server: 58.152.25.253
-    port: 443
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
+        Host: ylnhh.cc.cd
+  - name: US_speednode_0058
+    type: vless
+    server: 64.188.64.63
+    port: 8081
+    uuid: b8e03ade-a2a1-4cbb-b002-5e1148049735
+    tls: true
+    network: tcp
+  - name: US_speednode_0059
+    type: vless
+    server: gfm.vpnhub.shop
+    port: 8081
+    uuid: b8e03ade-a2a1-4cbb-b002-5e1148049735
+    tls: true
+    network: tcp
   - name: 美国 CloudFlare节点
     type: vmess
     server: c7.620720.xyz
@@ -667,38 +805,40 @@ proxies:
       path: /
       headers:
         Host: c7.620720.xyz
+  - name: 西班牙+V2CROSS.COM
+    type: trojan
+    server: 80.173.230.196
+    port: 26279
+    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
+    sni: io.ozone.ru
+    skip-cert-verify: false
+  - name: 俄罗斯+V2CROSS.COM
+    type: trojan
+    server: 212.193.18.144
+    port: 36158
+    password: ZblhWr0mqMakCPg.N
+    sni: ya.ru
+    skip-cert-verify: false
   - name: 加拿大+V2CROSS.COM
     type: trojan
-    server: 167.17.185.172
+    server: 167.17.185.152
     port: 10889
     password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: web.max.ru
+    sni: ozon.ru
     skip-cert-verify: false
-  - name: 加拿大+V2CROSS.COM [1]
-    type: trojan
-    server: 167.17.185.228
-    port: 10889
-    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: web.max
-    skip-cert-verify: false
-  - name: 亚太地区 V2CROSS.COM
+  - name: 美国 CloudFlare节点 [1]
     type: vmess
-    server: 103.181.164.237
-    port: 34114
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 中国 V2CROSS.COM
-    type: vmess
-    server: v30.hdacd.com
-    port: 30830
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    server: udtzy.cmvvb.online
+    port: 443
+    uuid: 847e9159-9716-4213-97a9-50d5db3fd74a
     alterId: 0
     cipher: auto
-    tls: false
-    network: tcp
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: udtzy.cmvvb.online
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -716,10 +856,21 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
-      - SG10｜机房｜低风险
-      - DE3｜机房｜高风险 (黑名单)
-      - HK55｜机房｜低风险
-      - JP9｜机房｜低风险
+      - DE23｜机房｜高风险 (黑名单)
+      - SG7｜机房｜低风险
+      - FR3｜机房｜低风险
+      - US49｜机房｜低风险
+      - SE2｜机房｜低风险
+      - US50｜机房｜低风险
+      - US56｜机房｜低风险
+      - HK39｜机房｜低风险
+      - NL8｜机房｜低风险
+      - US54｜机房｜低风险
+      - ID4｜家宽｜非常安全
+      - AU1｜机房｜低风险
+      - AU4｜机房｜低风险
+      - SG8｜机房｜低风险
+      - HK40｜机房｜低风险
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
@@ -734,18 +885,13 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - BG_speednode_0001
-      - DE_speednode_0004
-      - DE_speednode_0005
-      - HK_speednode_0007
-      - IQ_speednode_0008
-      - KR_speednode_0009
-      - KR_speednode_0010
-      - KR_speednode_0011
-      - KR_speednode_0012
-      - KR_speednode_0014
-      - KR_speednode_0015
-      - KR_speednode_0016
-      - KR_speednode_0017
+      - CH_speednode_0002
+      - CN_speednode_0004
+      - DE_speednode_0006
+      - DE_speednode_0007
+      - ES_speednode_0008
+      - HK_speednode_0015
+      - IQ_speednode_0017
       - KR_speednode_0018
       - KR_speednode_0019
       - KR_speednode_0020
@@ -761,26 +907,35 @@ proxy-groups:
       - KR_speednode_0030
       - KR_speednode_0031
       - KR_speednode_0032
-      - LB_speednode_0033
-      - RU_speednode_0034
-      - RU_speednode_0035
-      - SC_speednode_0036
-      - US_speednode_0037
-      - US_speednode_0038
-      - US_speednode_0039
-      - US_speednode_0040
-      - US_speednode_0041
-      - US_speednode_0042
-      - US_speednode_0043
-      - US_speednode_0044
-      - US_speednode_0045
-      - 巴西圣保罗 CloudFlare节点
-      - 香港+电讯盈科有限公司
+      - KR_speednode_0033
+      - KR_speednode_0034
+      - KR_speednode_0035
+      - KR_speednode_0036
+      - KR_speednode_0037
+      - KR_speednode_0038
+      - KR_speednode_0039
+      - KR_speednode_0040
+      - KR_speednode_0041
+      - KR_speednode_0042
+      - KR_speednode_0043
+      - KR_speednode_0046
+      - NL_speednode_0048
+      - NL_speednode_0049
+      - RU_speednode_0050
+      - RU_speednode_0051
+      - SC_speednode_0052
+      - US_speednode_0053
+      - US_speednode_0054
+      - US_speednode_0055
+      - US_speednode_0056
+      - US_speednode_0057
+      - US_speednode_0058
+      - US_speednode_0059
       - 美国 CloudFlare节点
+      - 西班牙+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
       - 加拿大+V2CROSS.COM
-      - 加拿大+V2CROSS.COM [1]
-      - 亚太地区 V2CROSS.COM
-      - 中国 V2CROSS.COM
+      - 美国 CloudFlare节点 [1]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -794,10 +949,21 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
-      - SG10｜机房｜低风险
-      - DE3｜机房｜高风险 (黑名单)
-      - HK55｜机房｜低风险
-      - JP9｜机房｜低风险
+      - DE23｜机房｜高风险 (黑名单)
+      - SG7｜机房｜低风险
+      - FR3｜机房｜低风险
+      - US49｜机房｜低风险
+      - SE2｜机房｜低风险
+      - US50｜机房｜低风险
+      - US56｜机房｜低风险
+      - HK39｜机房｜低风险
+      - NL8｜机房｜低风险
+      - US54｜机房｜低风险
+      - ID4｜家宽｜非常安全
+      - AU1｜机房｜低风险
+      - AU4｜机房｜低风险
+      - SG8｜机房｜低风险
+      - HK40｜机房｜低风险
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
@@ -812,18 +978,13 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - BG_speednode_0001
-      - DE_speednode_0004
-      - DE_speednode_0005
-      - HK_speednode_0007
-      - IQ_speednode_0008
-      - KR_speednode_0009
-      - KR_speednode_0010
-      - KR_speednode_0011
-      - KR_speednode_0012
-      - KR_speednode_0014
-      - KR_speednode_0015
-      - KR_speednode_0016
-      - KR_speednode_0017
+      - CH_speednode_0002
+      - CN_speednode_0004
+      - DE_speednode_0006
+      - DE_speednode_0007
+      - ES_speednode_0008
+      - HK_speednode_0015
+      - IQ_speednode_0017
       - KR_speednode_0018
       - KR_speednode_0019
       - KR_speednode_0020
@@ -839,26 +1000,35 @@ proxy-groups:
       - KR_speednode_0030
       - KR_speednode_0031
       - KR_speednode_0032
-      - LB_speednode_0033
-      - RU_speednode_0034
-      - RU_speednode_0035
-      - SC_speednode_0036
-      - US_speednode_0037
-      - US_speednode_0038
-      - US_speednode_0039
-      - US_speednode_0040
-      - US_speednode_0041
-      - US_speednode_0042
-      - US_speednode_0043
-      - US_speednode_0044
-      - US_speednode_0045
-      - 巴西圣保罗 CloudFlare节点
-      - 香港+电讯盈科有限公司
+      - KR_speednode_0033
+      - KR_speednode_0034
+      - KR_speednode_0035
+      - KR_speednode_0036
+      - KR_speednode_0037
+      - KR_speednode_0038
+      - KR_speednode_0039
+      - KR_speednode_0040
+      - KR_speednode_0041
+      - KR_speednode_0042
+      - KR_speednode_0043
+      - KR_speednode_0046
+      - NL_speednode_0048
+      - NL_speednode_0049
+      - RU_speednode_0050
+      - RU_speednode_0051
+      - SC_speednode_0052
+      - US_speednode_0053
+      - US_speednode_0054
+      - US_speednode_0055
+      - US_speednode_0056
+      - US_speednode_0057
+      - US_speednode_0058
+      - US_speednode_0059
       - 美国 CloudFlare节点
+      - 西班牙+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
       - 加拿大+V2CROSS.COM
-      - 加拿大+V2CROSS.COM [1]
-      - 亚太地区 V2CROSS.COM
-      - 中国 V2CROSS.COM
+      - 美国 CloudFlare节点 [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -874,10 +1044,21 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
-      - SG10｜机房｜低风险
-      - DE3｜机房｜高风险 (黑名单)
-      - HK55｜机房｜低风险
-      - JP9｜机房｜低风险
+      - DE23｜机房｜高风险 (黑名单)
+      - SG7｜机房｜低风险
+      - FR3｜机房｜低风险
+      - US49｜机房｜低风险
+      - SE2｜机房｜低风险
+      - US50｜机房｜低风险
+      - US56｜机房｜低风险
+      - HK39｜机房｜低风险
+      - NL8｜机房｜低风险
+      - US54｜机房｜低风险
+      - ID4｜家宽｜非常安全
+      - AU1｜机房｜低风险
+      - AU4｜机房｜低风险
+      - SG8｜机房｜低风险
+      - HK40｜机房｜低风险
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
@@ -892,18 +1073,13 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - BG_speednode_0001
-      - DE_speednode_0004
-      - DE_speednode_0005
-      - HK_speednode_0007
-      - IQ_speednode_0008
-      - KR_speednode_0009
-      - KR_speednode_0010
-      - KR_speednode_0011
-      - KR_speednode_0012
-      - KR_speednode_0014
-      - KR_speednode_0015
-      - KR_speednode_0016
-      - KR_speednode_0017
+      - CH_speednode_0002
+      - CN_speednode_0004
+      - DE_speednode_0006
+      - DE_speednode_0007
+      - ES_speednode_0008
+      - HK_speednode_0015
+      - IQ_speednode_0017
       - KR_speednode_0018
       - KR_speednode_0019
       - KR_speednode_0020
@@ -919,26 +1095,35 @@ proxy-groups:
       - KR_speednode_0030
       - KR_speednode_0031
       - KR_speednode_0032
-      - LB_speednode_0033
-      - RU_speednode_0034
-      - RU_speednode_0035
-      - SC_speednode_0036
-      - US_speednode_0037
-      - US_speednode_0038
-      - US_speednode_0039
-      - US_speednode_0040
-      - US_speednode_0041
-      - US_speednode_0042
-      - US_speednode_0043
-      - US_speednode_0044
-      - US_speednode_0045
-      - 巴西圣保罗 CloudFlare节点
-      - 香港+电讯盈科有限公司
+      - KR_speednode_0033
+      - KR_speednode_0034
+      - KR_speednode_0035
+      - KR_speednode_0036
+      - KR_speednode_0037
+      - KR_speednode_0038
+      - KR_speednode_0039
+      - KR_speednode_0040
+      - KR_speednode_0041
+      - KR_speednode_0042
+      - KR_speednode_0043
+      - KR_speednode_0046
+      - NL_speednode_0048
+      - NL_speednode_0049
+      - RU_speednode_0050
+      - RU_speednode_0051
+      - SC_speednode_0052
+      - US_speednode_0053
+      - US_speednode_0054
+      - US_speednode_0055
+      - US_speednode_0056
+      - US_speednode_0057
+      - US_speednode_0058
+      - US_speednode_0059
       - 美国 CloudFlare节点
+      - 西班牙+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
       - 加拿大+V2CROSS.COM
-      - 加拿大+V2CROSS.COM [1]
-      - 亚太地区 V2CROSS.COM
-      - 中国 V2CROSS.COM
+      - 美国 CloudFlare节点 [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
