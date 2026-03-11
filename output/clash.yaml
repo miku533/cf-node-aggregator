@@ -718,13 +718,19 @@ proxies:
     uuid: b8e03ade-a2a1-4cbb-b002-5e1148049735
     tls: true
     network: tcp
-  - name: 西班牙+V2CROSS.COM
-    type: trojan
-    server: 80.173.230.196
-    port: 26279
-    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
-    sni: io.ozone.ru
-    skip-cert-verify: false
+  - name: 北美地区 V2CROSS.COM
+    type: vmess
+    server: 198.62.62.199
+    port: 443
+    uuid: f08369d1-5ee7-4b16-d786-30bce12fc33c
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
+      headers:
+        Host: ous3.dean52.top
   - name: 加拿大+V2CROSS.COM
     type: trojan
     server: 167.17.185.172
@@ -732,26 +738,22 @@ proxies:
     password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
     sni: web.max.ru
     skip-cert-verify: false
+  - name: 亚太地区 V2CROSS.COM
+    type: vmess
+    server: 103.181.164.237
+    port: 34114
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: false
+    network: tcp
   - name: 加拿大+V2CROSS.COM [1]
     type: trojan
-    server: 167.17.185.169
+    server: 167.17.185.152
     port: 10889
     password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: ya.ru
+    sni: ozon.ru
     skip-cert-verify: false
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: hwtqcp.uhomdex.shop
-    port: 8443
-    uuid: b6182347-f6df-47e3-9ac8-d40a792f319e
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: hwtqcp.uhomdex.shop
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -836,10 +838,10 @@ proxy-groups:
       - US_speednode_0057
       - US_speednode_0058
       - US_speednode_0059
-      - 西班牙+V2CROSS.COM
+      - 北美地区 V2CROSS.COM
       - 加拿大+V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
       - 加拿大+V2CROSS.COM [1]
-      - 美国 CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -920,10 +922,10 @@ proxy-groups:
       - US_speednode_0057
       - US_speednode_0058
       - US_speednode_0059
-      - 西班牙+V2CROSS.COM
+      - 北美地区 V2CROSS.COM
       - 加拿大+V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
       - 加拿大+V2CROSS.COM [1]
-      - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -1006,10 +1008,10 @@ proxy-groups:
       - US_speednode_0057
       - US_speednode_0058
       - US_speednode_0059
-      - 西班牙+V2CROSS.COM
+      - 北美地区 V2CROSS.COM
       - 加拿大+V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
       - 加拿大+V2CROSS.COM [1]
-      - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
