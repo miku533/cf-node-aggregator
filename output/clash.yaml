@@ -464,40 +464,11 @@ proxies:
         Host: snippet.fgfw.indevs.in
   - name: 加拿大+V2CROSS.COM
     type: trojan
-    server: 167.17.185.169
+    server: 167.17.185.172
     port: 10889
     password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: ya.ru
+    sni: web.max.ru
     skip-cert-verify: false
-  - name: 亚太地区 V2CROSS.COM
-    type: vmess
-    server: 103.181.164.237
-    port: 52283
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 俄罗斯+V2CROSS.COM
-    type: trojan
-    server: 212.193.18.144
-    port: 36158
-    password: ZblhWr0mqMakCPg.N
-    sni: ya.ru
-    skip-cert-verify: false
-  - name: 英国 V2CROSS.COM
-    type: vmess
-    server: gtm1.ktmwan.net
-    port: 12885
-    uuid: bbd785de-9793-4453-be40-6a3fdc418203
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: baidu.com
   - name: 西班牙+V2CROSS.COM
     type: trojan
     server: 80.173.231.254
@@ -505,6 +476,13 @@ proxies:
     password: wp9IsiY82uQhcmgNC1eoBM
     sni: www.semanticstaplegun.click
     skip-cert-verify: false
+  - name: 保加利亚+V2CROSS.COM
+    type: trojan
+    server: 78.159.131.12
+    port: 28259
+    password: MeaDiUmPlkWbZJ2BON8tz
+    sni: ads.x5.ru
+    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -564,10 +542,8 @@ proxy-groups:
       - US_speednode_0029
       - US_speednode_0031
       - 加拿大+V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 英国 V2CROSS.COM
       - 西班牙+V2CROSS.COM
+      - 保加利亚+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -623,10 +599,8 @@ proxy-groups:
       - US_speednode_0029
       - US_speednode_0031
       - 加拿大+V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 英国 V2CROSS.COM
       - 西班牙+V2CROSS.COM
+      - 保加利亚+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -684,10 +658,8 @@ proxy-groups:
       - US_speednode_0029
       - US_speednode_0031
       - 加拿大+V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 英国 V2CROSS.COM
       - 西班牙+V2CROSS.COM
+      - 保加利亚+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
