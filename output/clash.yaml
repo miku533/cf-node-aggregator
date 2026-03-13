@@ -592,28 +592,14 @@ proxies:
       path: /danfengsecurity=tls
       headers:
         Host: snippet.fgfw.indevs.in
-  - name: 广东省广州市+移动
-    type: trojan
-    server: jp05.stimaysmhy8.com
-    port: 35203
-    password: d5fa43f9-1ace-4b8f-b865-627e67b1fe37
-    sni: jsygouer.weixin-baidu-qq.com
-    skip-cert-verify: false
-  - name: 西班牙+V2CROSS.COM
-    type: trojan
-    server: 80.173.230.196
-    port: 26279
-    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
-    sni: io.ozone.ru
-    skip-cert-verify: false
-  - name: 广东省广州市 电信
+  - name: 法国 V2CROSS.COM
     type: vmess
-    server: pub.ap20260228.com
-    port: 64018
-    uuid: a739e782-1682-38a5-9153-aad09d779ae9
+    server: 141.11.21.219
+    port: 50521
+    uuid: 7b4c6795-3be5-4a4e-b234-07a46f580c45
     alterId: 0
     cipher: auto
-    tls: false
+    tls: true
     network: tcp
   - name: 亚太地区 V2CROSS.COM
     type: vmess
@@ -624,20 +610,26 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 广东省江门市+移动
+  - name: 加拿大+V2CROSS.COM
     type: trojan
-    server: tw05.stimaysmhy8.com
-    port: 31500
-    password: d5fa43f9-1ace-4b8f-b865-627e67b1fe37
-    sni: jsygouer.weixin-baidu-qq.com
+    server: 167.17.185.228
+    port: 10889
+    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+    sni: web.max
     skip-cert-verify: false
-  - name: 四川省广元市+移动
-    type: trojan
-    server: my01.jsylianjie6.com
-    port: 45720
-    password: d5fa43f9-1ace-4b8f-b865-627e67b1fe37
-    sni: jsygouer.weixin-baidu-qq.com
-    skip-cert-verify: false
+  - name: 英国 V2CROSS.COM
+    type: vmess
+    server: gtm1.ktmwan.net
+    port: 12901
+    uuid: bbd785de-9793-4453-be40-6a3fdc418203
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: baidu.com
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -708,12 +700,10 @@ proxy-groups:
       - US_speednode_0028
       - US_speednode_0029
       - US_speednode_0031
-      - 广东省广州市+移动
-      - 西班牙+V2CROSS.COM
-      - 广东省广州市 电信
+      - 法国 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
-      - 广东省江门市+移动
-      - 四川省广元市+移动
+      - 加拿大+V2CROSS.COM
+      - 英国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -780,12 +770,10 @@ proxy-groups:
       - US_speednode_0028
       - US_speednode_0029
       - US_speednode_0031
-      - 广东省广州市+移动
-      - 西班牙+V2CROSS.COM
-      - 广东省广州市 电信
+      - 法国 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
-      - 广东省江门市+移动
-      - 四川省广元市+移动
+      - 加拿大+V2CROSS.COM
+      - 英国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -854,12 +842,10 @@ proxy-groups:
       - US_speednode_0028
       - US_speednode_0029
       - US_speednode_0031
-      - 广东省广州市+移动
-      - 西班牙+V2CROSS.COM
-      - 广东省广州市 电信
+      - 法国 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
-      - 广东省江门市+移动
-      - 四川省广元市+移动
+      - 加拿大+V2CROSS.COM
+      - 英国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
