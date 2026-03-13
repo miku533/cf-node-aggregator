@@ -95,7 +95,7 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: DE29｜机房｜高风险 (黑名单)
+  - name: DE41｜机房｜高风险 (黑名单)
     type: vmess
     server: 82.198.246.97
     port: 180
@@ -104,71 +104,201 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: AU3｜机房｜低风险
+  - name: US74｜机房｜低风险
     type: vmess
-    server: 85.211.242.85
-    port: 12889
-    uuid: 37c67a5e-2b2a-49b2-a197-889e80b28bee
-    alterId: 0
+    server: 103.181.164.237
+    port: 34114
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     tls: false
+    network: tcp
+  - name: US80｜机房｜低风险
+    type: trojan
+    server: 172.64.53.190
+    port: 443
+    password: 823cbccd-3a71-4248-ac3c-3c460de1552d
+    sni: snll667.pages.dev
+    skip-cert-verify: true
+  - name: TW3｜机房｜低风险
+    type: trojan
+    server: 203.69.248.40
+    port: 14147
+    password: 823cbccd-3a71-4248-ac3c-3c460de1552d
+    sni: snll667.pages.dev
+    skip-cert-verify: true
+  - name: ID5｜家宽｜非常安全
+    type: vmess
+    server: 8.223.63.150
+    port: 443
+    uuid: 462d9694-62b5-4781-a287-61a422b920e8
+    alterId: 0
+    cipher: auto
+    tls: true
     network: ws
     ws-opts:
-      path: /
+      path: /vvip
       headers:
-        Host: baidu.com
-  - name: SG13｜机房｜低风险
+        Host: mn1ray.jagoanvip.xyz
+  - name: ID6｜家宽｜非常安全
     type: vmess
-    server: v12.hdacd.com
-    port: 30812
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    server: 34.143.159.175
+    port: 443
+    uuid: 462d9694-62b5-4781-a287-61a422b920e8
     alterId: 0
     cipher: auto
-    tls: false
-    network: tcp
-  - name: JP4｜机房｜低风险
-    type: vmess
-    server: v6.hdacd.com
-    port: 30806
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: US70｜机房｜低风险
-    type: vmess
-    server: v29.hdacd.com
-    port: 30829
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: HK21｜机房｜低风险
-    type: vmess
-    server: v9.hdacd.com
-    port: 30809
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: HK23｜家宽｜非常安全
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        Host: mn1ray.jagoanvip.xyz
+  - name: PE2｜机房｜低风险
     type: trojan
-    server: 183.179.43.254
+    server: 38.180.173.150
     port: 443
     password: af4b064a9c39472fb34ad8b113acdc6b
-    sni: 183.179.43.254
+    sni: 38.180.173.150
     skip-cert-verify: true
-  - name: US76｜机房｜低风险
+  - name: HK67｜机房｜低风险
+    type: trojan
+    server: cf.877774.xyz
+    port: 443
+    password: 823cbccd-3a71-4248-ac3c-3c460de1552d
+    sni: snll667.pages.dev
+    skip-cert-verify: true
+  - name: HK68｜机房｜低风险
+    type: trojan
+    server: 95.40.61.115
+    port: 443
+    password: 823cbccd-3a71-4248-ac3c-3c460de1552d
+    sni: snll667.pages.dev
+    skip-cert-verify: true
+  - name: ID17｜家宽｜非常安全
     type: vmess
-    server: v8.hdacd.com
-    port: 30808
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
+    server: 83.229.121.113
+    port: 443
+    uuid: 462d9694-62b5-4781-a287-61a422b920e8
+    alterId: 0
     cipher: auto
-    tls: false
-    network: tcp
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        Host: mn1ray.jagoanvip.xyz
+  - name: ID24｜家宽｜非常安全
+    type: vmess
+    server: 47.76.218.163
+    port: 443
+    uuid: 462d9694-62b5-4781-a287-61a422b920e8
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        Host: mn1ray.jagoanvip.xyz
+  - name: ID10｜家宽｜非常安全
+    type: vmess
+    server: 103.224.80.7
+    port: 2087
+    uuid: 462d9694-62b5-4781-a287-61a422b920e8
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        Host: mn1ray.jagoanvip.xyz
+  - name: ID16｜家宽｜非常安全
+    type: vmess
+    server: 38.55.194.138
+    port: 443
+    uuid: 462d9694-62b5-4781-a287-61a422b920e8
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        Host: mn1ray.jagoanvip.xyz
+  - name: ID21｜家宽｜非常安全
+    type: vmess
+    server: 149.104.31.55
+    port: 443
+    uuid: 462d9694-62b5-4781-a287-61a422b920e8
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        Host: mn1ray.jagoanvip.xyz
+  - name: ID22｜家宽｜非常安全
+    type: vmess
+    server: 38.55.193.19
+    port: 443
+    uuid: 462d9694-62b5-4781-a287-61a422b920e8
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        Host: mn1ray.jagoanvip.xyz
+  - name: ID25｜家宽｜非常安全
+    type: vmess
+    server: 43.134.87.15
+    port: 443
+    uuid: 462d9694-62b5-4781-a287-61a422b920e8
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        Host: mn1ray.jagoanvip.xyz
+  - name: ID23｜家宽｜非常安全
+    type: vmess
+    server: 38.55.193.78
+    port: 443
+    uuid: 462d9694-62b5-4781-a287-61a422b920e8
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        Host: mn1ray.jagoanvip.xyz
+  - name: IN1｜机房｜低风险
+    type: trojan
+    server: 139.84.133.199
+    port: 443
+    password: af4b064a9c39472fb34ad8b113acdc6b
+    sni: 139.84.133.199
+    skip-cert-verify: true
+  - name: US146｜机房｜低风险
+    type: trojan
+    server: 194.33.45.157
+    port: 443
+    password: af4b064a9c39472fb34ad8b113acdc6b
+    sni: 194.33.45.157
+    skip-cert-verify: true
+  - name: SG6｜机房｜高风险 (黑名单)
+    type: trojan
+    server: 5.180.78.22
+    port: 443
+    password: af4b064a9c39472fb34ad8b113acdc6b
+    sni: 5.180.78.22
+    skip-cert-verify: true
   - name: 🇭🇰 香港|@ripaojiedian
     type: vmess
     server: v10.hdacd.com
@@ -462,27 +592,52 @@ proxies:
       path: /danfengsecurity=tls
       headers:
         Host: snippet.fgfw.indevs.in
-  - name: 加拿大+V2CROSS.COM
+  - name: 广东省广州市+移动
     type: trojan
-    server: 167.17.185.172
-    port: 10889
-    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: web.max.ru
+    server: jp05.stimaysmhy8.com
+    port: 35203
+    password: d5fa43f9-1ace-4b8f-b865-627e67b1fe37
+    sni: jsygouer.weixin-baidu-qq.com
     skip-cert-verify: false
   - name: 西班牙+V2CROSS.COM
     type: trojan
-    server: 80.173.231.254
-    port: 12420
-    password: wp9IsiY82uQhcmgNC1eoBM
-    sni: www.semanticstaplegun.click
+    server: 80.173.230.196
+    port: 26279
+    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
+    sni: io.ozone.ru
     skip-cert-verify: false
-  - name: 保加利亚+V2CROSS.COM
+  - name: 广东省广州市 电信
+    type: vmess
+    server: pub.ap20260228.com
+    port: 64018
+    uuid: a739e782-1682-38a5-9153-aad09d779ae9
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 亚太地区 V2CROSS.COM
+    type: vmess
+    server: 103.181.164.237
+    port: 52283
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 广东省江门市+移动
     type: trojan
-    server: 78.159.131.12
-    port: 28259
-    password: MeaDiUmPlkWbZJ2BON8tz
-    sni: ads.x5.ru
-    skip-cert-verify: true
+    server: tw05.stimaysmhy8.com
+    port: 31500
+    password: d5fa43f9-1ace-4b8f-b865-627e67b1fe37
+    sni: jsygouer.weixin-baidu-qq.com
+    skip-cert-verify: false
+  - name: 四川省广元市+移动
+    type: trojan
+    server: my01.jsylianjie6.com
+    port: 45720
+    password: d5fa43f9-1ace-4b8f-b865-627e67b1fe37
+    sni: jsygouer.weixin-baidu-qq.com
+    skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -500,14 +655,26 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
-      - DE29｜机房｜高风险 (黑名单)
-      - AU3｜机房｜低风险
-      - SG13｜机房｜低风险
-      - JP4｜机房｜低风险
-      - US70｜机房｜低风险
-      - HK21｜机房｜低风险
-      - HK23｜家宽｜非常安全
-      - US76｜机房｜低风险
+      - DE41｜机房｜高风险 (黑名单)
+      - US74｜机房｜低风险
+      - US80｜机房｜低风险
+      - TW3｜机房｜低风险
+      - ID5｜家宽｜非常安全
+      - ID6｜家宽｜非常安全
+      - PE2｜机房｜低风险
+      - HK67｜机房｜低风险
+      - HK68｜机房｜低风险
+      - ID17｜家宽｜非常安全
+      - ID24｜家宽｜非常安全
+      - ID10｜家宽｜非常安全
+      - ID16｜家宽｜非常安全
+      - ID21｜家宽｜非常安全
+      - ID22｜家宽｜非常安全
+      - ID25｜家宽｜非常安全
+      - ID23｜家宽｜非常安全
+      - IN1｜机房｜低风险
+      - US146｜机房｜低风险
+      - SG6｜机房｜高风险 (黑名单)
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
@@ -541,9 +708,12 @@ proxy-groups:
       - US_speednode_0028
       - US_speednode_0029
       - US_speednode_0031
-      - 加拿大+V2CROSS.COM
+      - 广东省广州市+移动
       - 西班牙+V2CROSS.COM
-      - 保加利亚+V2CROSS.COM
+      - 广东省广州市 电信
+      - 亚太地区 V2CROSS.COM
+      - 广东省江门市+移动
+      - 四川省广元市+移动
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -557,14 +727,26 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
-      - DE29｜机房｜高风险 (黑名单)
-      - AU3｜机房｜低风险
-      - SG13｜机房｜低风险
-      - JP4｜机房｜低风险
-      - US70｜机房｜低风险
-      - HK21｜机房｜低风险
-      - HK23｜家宽｜非常安全
-      - US76｜机房｜低风险
+      - DE41｜机房｜高风险 (黑名单)
+      - US74｜机房｜低风险
+      - US80｜机房｜低风险
+      - TW3｜机房｜低风险
+      - ID5｜家宽｜非常安全
+      - ID6｜家宽｜非常安全
+      - PE2｜机房｜低风险
+      - HK67｜机房｜低风险
+      - HK68｜机房｜低风险
+      - ID17｜家宽｜非常安全
+      - ID24｜家宽｜非常安全
+      - ID10｜家宽｜非常安全
+      - ID16｜家宽｜非常安全
+      - ID21｜家宽｜非常安全
+      - ID22｜家宽｜非常安全
+      - ID25｜家宽｜非常安全
+      - ID23｜家宽｜非常安全
+      - IN1｜机房｜低风险
+      - US146｜机房｜低风险
+      - SG6｜机房｜高风险 (黑名单)
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
@@ -598,9 +780,12 @@ proxy-groups:
       - US_speednode_0028
       - US_speednode_0029
       - US_speednode_0031
-      - 加拿大+V2CROSS.COM
+      - 广东省广州市+移动
       - 西班牙+V2CROSS.COM
-      - 保加利亚+V2CROSS.COM
+      - 广东省广州市 电信
+      - 亚太地区 V2CROSS.COM
+      - 广东省江门市+移动
+      - 四川省广元市+移动
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -616,14 +801,26 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
-      - DE29｜机房｜高风险 (黑名单)
-      - AU3｜机房｜低风险
-      - SG13｜机房｜低风险
-      - JP4｜机房｜低风险
-      - US70｜机房｜低风险
-      - HK21｜机房｜低风险
-      - HK23｜家宽｜非常安全
-      - US76｜机房｜低风险
+      - DE41｜机房｜高风险 (黑名单)
+      - US74｜机房｜低风险
+      - US80｜机房｜低风险
+      - TW3｜机房｜低风险
+      - ID5｜家宽｜非常安全
+      - ID6｜家宽｜非常安全
+      - PE2｜机房｜低风险
+      - HK67｜机房｜低风险
+      - HK68｜机房｜低风险
+      - ID17｜家宽｜非常安全
+      - ID24｜家宽｜非常安全
+      - ID10｜家宽｜非常安全
+      - ID16｜家宽｜非常安全
+      - ID21｜家宽｜非常安全
+      - ID22｜家宽｜非常安全
+      - ID25｜家宽｜非常安全
+      - ID23｜家宽｜非常安全
+      - IN1｜机房｜低风险
+      - US146｜机房｜低风险
+      - SG6｜机房｜高风险 (黑名单)
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
@@ -657,9 +854,12 @@ proxy-groups:
       - US_speednode_0028
       - US_speednode_0029
       - US_speednode_0031
-      - 加拿大+V2CROSS.COM
+      - 广东省广州市+移动
       - 西班牙+V2CROSS.COM
-      - 保加利亚+V2CROSS.COM
+      - 广东省广州市 电信
+      - 亚太地区 V2CROSS.COM
+      - 广东省江门市+移动
+      - 四川省广元市+移动
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
