@@ -310,85 +310,85 @@ proxies:
     network: tcp
   - name: 香港3|@ripaojiedian
     type: trojan
-    server: 54.238.23.69
+    server: 54.249.53.157
     port: 921
     password: f389ed926e512e15f382dc3804029474
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 香港4|@ripaojiedian
     type: trojan
-    server: 119.237.128.216
-    port: 443
+    server: 16.163.150.32
+    port: 5823
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
   - name: 香港5|@ripaojiedian
     type: trojan
-    server: 13.231.91.242
-    port: 6313
+    server: 52.194.190.150
+    port: 5823
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
   - name: 日本|@ripaojiedian
     type: trojan
-    server: 3.112.213.24
-    port: 4945
+    server: 52.196.224.76
+    port: 3022
     password: BxceQaOe
     sni: t.me%2Fripaojiedian
     skip-cert-verify: true
   - name: 日本2|@ripaojiedian
     type: trojan
-    server: 153.121.38.213
-    port: 34818
+    server: 52.68.61.114
+    port: 4937
     password: f389ed926e512e15f382dc3804029474
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 日本3|@ripaojiedian
     type: trojan
-    server: 160.16.85.33
+    server: 160.16.132.38
     port: 4937
     password: f389ed926e512e15f382dc3804029474
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 新加坡|@ripaojiedian
     type: trojan
-    server: 160.16.85.33
-    port: 3419
+    server: 160.16.132.38
+    port: 4674
     password: f7dbed8b1ca85124e793ba6c0bcfd0db
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 新加坡2|@ripaojiedian
     type: trojan
-    server: 160.16.85.33
-    port: 4674
+    server: 160.16.132.38
+    port: 3419
     password: f389ed926e512e15f382dc3804029474
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 新加坡3|@ripaojiedian
     type: trojan
-    server: 13.231.110.103
-    port: 52951
+    server: 43.199.43.18
+    port: 29666
     password: BxceQaOe
     sni: t.me%2Fripaojiedian
     skip-cert-verify: true
   - name: 美国|@ripaojiedian
     type: trojan
-    server: 54.238.23.69
-    port: 4920
+    server: 52.68.61.114
+    port: 4019
     password: f389ed926e512e15f382dc3804029474
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 美国2|@ripaojiedian
     type: trojan
-    server: 54.248.177.86
+    server: 18.181.152.121
     port: 4920
     password: f389ed926e512e15f382dc3804029474
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 美国3|@ripaojiedian
     type: trojan
-    server: 16.163.105.149
-    port: 5390
+    server: 95.40.28.8
+    port: 45947
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
@@ -592,44 +592,34 @@ proxies:
       path: /danfengsecurity=tls
       headers:
         Host: snippet.fgfw.indevs.in
-  - name: 法国 V2CROSS.COM
-    type: vmess
-    server: 141.11.21.219
-    port: 50521
-    uuid: 7b4c6795-3be5-4a4e-b234-07a46f580c45
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: tcp
-  - name: 亚太地区 V2CROSS.COM
-    type: vmess
-    server: 103.181.164.237
-    port: 52283
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    tls: false
-    network: tcp
   - name: 加拿大+V2CROSS.COM
     type: trojan
-    server: 167.17.185.228
+    server: 167.17.185.172
     port: 10889
     password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: web.max
+    sni: web.max.ru
     skip-cert-verify: false
-  - name: 英国 V2CROSS.COM
-    type: vmess
-    server: gtm1.ktmwan.net
-    port: 12901
-    uuid: bbd785de-9793-4453-be40-6a3fdc418203
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: baidu.com
+  - name: 香港+电讯盈科有限公司
+    type: trojan
+    server: 58.152.25.253
+    port: 443
+    password: BxceQaOe
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
+  - name: 西班牙+V2CROSS.COM
+    type: trojan
+    server: 80.173.231.254
+    port: 12420
+    password: wp9IsiY82uQhcmgNC1eoBM
+    sni: www.semanticstaplegun.click
+    skip-cert-verify: false
+  - name: 加拿大+V2CROSS.COM [1]
+    type: trojan
+    server: 167.17.185.169
+    port: 10889
+    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+    sni: ya.ru
+    skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -700,10 +690,10 @@ proxy-groups:
       - US_speednode_0028
       - US_speednode_0029
       - US_speednode_0031
-      - 法国 V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
       - 加拿大+V2CROSS.COM
-      - 英国 V2CROSS.COM
+      - 香港+电讯盈科有限公司
+      - 西班牙+V2CROSS.COM
+      - 加拿大+V2CROSS.COM [1]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -770,10 +760,10 @@ proxy-groups:
       - US_speednode_0028
       - US_speednode_0029
       - US_speednode_0031
-      - 法国 V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
       - 加拿大+V2CROSS.COM
-      - 英国 V2CROSS.COM
+      - 香港+电讯盈科有限公司
+      - 西班牙+V2CROSS.COM
+      - 加拿大+V2CROSS.COM [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -842,10 +832,10 @@ proxy-groups:
       - US_speednode_0028
       - US_speednode_0029
       - US_speednode_0031
-      - 法国 V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
       - 加拿大+V2CROSS.COM
-      - 英国 V2CROSS.COM
+      - 香港+电讯盈科有限公司
+      - 西班牙+V2CROSS.COM
+      - 加拿大+V2CROSS.COM [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
