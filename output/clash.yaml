@@ -592,13 +592,26 @@ proxies:
       path: /danfengsecurity=tls
       headers:
         Host: snippet.fgfw.indevs.in
-  - name: 西班牙+V2CROSS.COM
+  - name: 加拿大+V2CROSS.COM
     type: trojan
-    server: 80.173.230.196
-    port: 26279
-    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
-    sni: io.ozone.ru
+    server: 167.17.185.172
+    port: 10889
+    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+    sni: web.max.ru
     skip-cert-verify: false
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: hwtqcp.uhomdex.shop
+    port: 8443
+    uuid: b6182347-f6df-47e3-9ac8-d40a792f319e
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: hwtqcp.uhomdex.shop
   - name: 俄罗斯+V2CROSS.COM
     type: trojan
     server: 212.193.18.144
@@ -606,15 +619,13 @@ proxies:
     password: ZblhWr0mqMakCPg.N
     sni: ya.ru
     skip-cert-verify: false
-  - name: 亚太地区 V2CROSS.COM
-    type: vmess
-    server: 103.181.164.237
-    port: 52283
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    tls: false
-    network: tcp
+  - name: 加拿大+V2CROSS.COM [1]
+    type: trojan
+    server: 167.17.185.228
+    port: 10889
+    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+    sni: web.max
+    skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -685,9 +696,10 @@ proxy-groups:
       - US_speednode_0028
       - US_speednode_0029
       - US_speednode_0031
-      - 西班牙+V2CROSS.COM
+      - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 俄罗斯+V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
+      - 加拿大+V2CROSS.COM [1]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -754,9 +766,10 @@ proxy-groups:
       - US_speednode_0028
       - US_speednode_0029
       - US_speednode_0031
-      - 西班牙+V2CROSS.COM
+      - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 俄罗斯+V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
+      - 加拿大+V2CROSS.COM [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -825,9 +838,10 @@ proxy-groups:
       - US_speednode_0028
       - US_speednode_0029
       - US_speednode_0031
-      - 西班牙+V2CROSS.COM
+      - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 俄罗斯+V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
+      - 加拿大+V2CROSS.COM [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
