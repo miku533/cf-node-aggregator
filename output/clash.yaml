@@ -592,34 +592,29 @@ proxies:
       path: /danfengsecurity=tls
       headers:
         Host: snippet.fgfw.indevs.in
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: 167.17.185.172
-    port: 10889
-    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: web.max.ru
-    skip-cert-verify: false
-  - name: 香港+电讯盈科有限公司
-    type: trojan
-    server: 58.152.25.253
-    port: 443
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
   - name: 西班牙+V2CROSS.COM
     type: trojan
-    server: 80.173.231.254
-    port: 12420
-    password: wp9IsiY82uQhcmgNC1eoBM
-    sni: www.semanticstaplegun.click
+    server: 80.173.230.196
+    port: 26279
+    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
+    sni: io.ozone.ru
     skip-cert-verify: false
-  - name: 加拿大+V2CROSS.COM [1]
+  - name: 俄罗斯+V2CROSS.COM
     type: trojan
-    server: 167.17.185.169
-    port: 10889
-    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+    server: 212.193.18.144
+    port: 36158
+    password: ZblhWr0mqMakCPg.N
     sni: ya.ru
     skip-cert-verify: false
+  - name: 亚太地区 V2CROSS.COM
+    type: vmess
+    server: 103.181.164.237
+    port: 52283
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: false
+    network: tcp
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -690,10 +685,9 @@ proxy-groups:
       - US_speednode_0028
       - US_speednode_0029
       - US_speednode_0031
-      - 加拿大+V2CROSS.COM
-      - 香港+电讯盈科有限公司
       - 西班牙+V2CROSS.COM
-      - 加拿大+V2CROSS.COM [1]
+      - 俄罗斯+V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -760,10 +754,9 @@ proxy-groups:
       - US_speednode_0028
       - US_speednode_0029
       - US_speednode_0031
-      - 加拿大+V2CROSS.COM
-      - 香港+电讯盈科有限公司
       - 西班牙+V2CROSS.COM
-      - 加拿大+V2CROSS.COM [1]
+      - 俄罗斯+V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -832,10 +825,9 @@ proxy-groups:
       - US_speednode_0028
       - US_speednode_0029
       - US_speednode_0031
-      - 加拿大+V2CROSS.COM
-      - 香港+电讯盈科有限公司
       - 西班牙+V2CROSS.COM
-      - 加拿大+V2CROSS.COM [1]
+      - 俄罗斯+V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
