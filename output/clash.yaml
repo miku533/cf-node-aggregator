@@ -594,16 +594,23 @@ proxies:
         Host: snippet.fgfw.indevs.in
   - name: 加拿大+V2CROSS.COM
     type: trojan
-    server: 167.17.185.172
+    server: 167.17.185.228
     port: 10889
     password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: web.max.ru
+    sni: web.max
+    skip-cert-verify: false
+  - name: 西班牙+V2CROSS.COM
+    type: trojan
+    server: 80.173.230.196
+    port: 26279
+    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
+    sni: io.ozone.ru
     skip-cert-verify: false
   - name: 美国 CloudFlare节点
     type: vmess
-    server: hwtqcp.uhomdex.shop
-    port: 8443
-    uuid: b6182347-f6df-47e3-9ac8-d40a792f319e
+    server: udtzy.cmvvb.online
+    port: 443
+    uuid: 847e9159-9716-4213-97a9-50d5db3fd74a
     alterId: 0
     cipher: auto
     tls: true
@@ -611,21 +618,7 @@ proxies:
     ws-opts:
       path: /
       headers:
-        Host: hwtqcp.uhomdex.shop
-  - name: 俄罗斯+V2CROSS.COM
-    type: trojan
-    server: 212.193.18.144
-    port: 36158
-    password: ZblhWr0mqMakCPg.N
-    sni: ya.ru
-    skip-cert-verify: false
-  - name: 加拿大+V2CROSS.COM [1]
-    type: trojan
-    server: 167.17.185.228
-    port: 10889
-    password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-    sni: web.max
-    skip-cert-verify: false
+        Host: udtzy.cmvvb.online
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -697,9 +690,8 @@ proxy-groups:
       - US_speednode_0029
       - US_speednode_0031
       - 加拿大+V2CROSS.COM
+      - 西班牙+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 俄罗斯+V2CROSS.COM
-      - 加拿大+V2CROSS.COM [1]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -767,9 +759,8 @@ proxy-groups:
       - US_speednode_0029
       - US_speednode_0031
       - 加拿大+V2CROSS.COM
+      - 西班牙+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 俄罗斯+V2CROSS.COM
-      - 加拿大+V2CROSS.COM [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -839,9 +830,8 @@ proxy-groups:
       - US_speednode_0029
       - US_speednode_0031
       - 加拿大+V2CROSS.COM
+      - 西班牙+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 俄罗斯+V2CROSS.COM
-      - 加拿大+V2CROSS.COM [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
