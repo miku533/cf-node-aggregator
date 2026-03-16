@@ -592,7 +592,7 @@ proxies:
   - name: 广东省东莞市 电信IDC机房
     type: vmess
     server: cn02.365cloud5878.com
-    port: 6028
+    port: 6030
     uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
     alterId: 0
     cipher: auto
@@ -601,7 +601,7 @@ proxies:
   - name: 广东省东莞市 电信IDC机房 [1]
     type: vmess
     server: cn02.365cloud5878.com
-    port: 6041
+    port: 6028
     uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
     alterId: 0
     cipher: auto
@@ -610,7 +610,7 @@ proxies:
   - name: 广东省东莞市 电信IDC机房 [2]
     type: vmess
     server: cn02.365cloud5878.com
-    port: 6027
+    port: 6039
     uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
     alterId: 0
     cipher: auto
@@ -619,47 +619,41 @@ proxies:
   - name: 广东省东莞市 电信IDC机房 [3]
     type: vmess
     server: cn02.365cloud5878.com
-    port: 6001
+    port: 6032
     uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
     alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 亚太地区 V2CROSS.COM
-    type: vmess
-    server: 103.181.164.237
-    port: 34114
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
     cipher: auto
     tls: false
     network: tcp
   - name: 广东省东莞市 电信IDC机房 [4]
     type: vmess
     server: cn02.365cloud5878.com
-    port: 6024
+    port: 6005
     uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
     alterId: 0
     cipher: auto
     tls: false
     network: tcp
-  - name: 美国 CloudFlare节点
+  - name: 西班牙+V2CROSS.COM
+    type: trojan
+    server: 80.173.231.254
+    port: 12420
+    password: wp9IsiY82uQhcmgNC1eoBM
+    sni: www.semanticstaplegun.click
+    skip-cert-verify: false
+  - name: 中国 V2CROSS.COM
     type: vmess
-    server: cf.090227.xyz
-    port: 443
-    uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
+    server: v12.hdacd.com
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     alterId: 0
     cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: sgal.dagrate.eu.org
+    tls: false
+    network: tcp
   - name: 广东省东莞市 电信IDC机房 [5]
     type: vmess
     server: cn02.365cloud5878.com
-    port: 6004
+    port: 6031
     uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
     alterId: 0
     cipher: auto
@@ -668,16 +662,25 @@ proxies:
   - name: 广东省东莞市 电信IDC机房 [6]
     type: vmess
     server: cn02.365cloud5878.com
-    port: 6007
+    port: 6021
     uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
     alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 亚太地区 V2CROSS.COM
+    type: vmess
+    server: 103.181.164.237
+    port: 52283
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     tls: false
     network: tcp
   - name: 广东省东莞市 电信IDC机房 [7]
     type: vmess
     server: cn02.365cloud5878.com
-    port: 6029
+    port: 6043
     uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
     alterId: 0
     cipher: auto
@@ -686,52 +689,12 @@ proxies:
   - name: 广东省东莞市 电信IDC机房 [8]
     type: vmess
     server: cn02.365cloud5878.com
-    port: 6049
+    port: 6004
     uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
     alterId: 0
     cipher: auto
     tls: false
     network: tcp
-  - name: 广东省东莞市 电信IDC机房 [9]
-    type: vmess
-    server: cn02.365cloud5878.com
-    port: 6030
-    uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 广东省东莞市 电信IDC机房 [10]
-    type: vmess
-    server: cn02.365cloud5878.com
-    port: 6012
-    uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 亚太地区 V2CROSS.COM [1]
-    type: vmess
-    server: 103.181.164.145
-    port: 54022
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 美国 CloudFlare节点 [1]
-    type: vmess
-    server: tg.apocalypse.cc.cd
-    port: 80
-    uuid: 13ad36e6-c091-43f2-8505-47d868dd544c
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /YsmRouA9ZbxgW4
-      headers:
-        Host: tg.apocalypse.cc.cd
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -807,17 +770,14 @@ proxy-groups:
       - 广东省东莞市 电信IDC机房 [1]
       - 广东省东莞市 电信IDC机房 [2]
       - 广东省东莞市 电信IDC机房 [3]
-      - 亚太地区 V2CROSS.COM
       - 广东省东莞市 电信IDC机房 [4]
-      - 美国 CloudFlare节点
+      - 西班牙+V2CROSS.COM
+      - 中国 V2CROSS.COM
       - 广东省东莞市 电信IDC机房 [5]
       - 广东省东莞市 电信IDC机房 [6]
+      - 亚太地区 V2CROSS.COM
       - 广东省东莞市 电信IDC机房 [7]
       - 广东省东莞市 电信IDC机房 [8]
-      - 广东省东莞市 电信IDC机房 [9]
-      - 广东省东莞市 电信IDC机房 [10]
-      - 亚太地区 V2CROSS.COM [1]
-      - 美国 CloudFlare节点 [1]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -889,17 +849,14 @@ proxy-groups:
       - 广东省东莞市 电信IDC机房 [1]
       - 广东省东莞市 电信IDC机房 [2]
       - 广东省东莞市 电信IDC机房 [3]
-      - 亚太地区 V2CROSS.COM
       - 广东省东莞市 电信IDC机房 [4]
-      - 美国 CloudFlare节点
+      - 西班牙+V2CROSS.COM
+      - 中国 V2CROSS.COM
       - 广东省东莞市 电信IDC机房 [5]
       - 广东省东莞市 电信IDC机房 [6]
+      - 亚太地区 V2CROSS.COM
       - 广东省东莞市 电信IDC机房 [7]
       - 广东省东莞市 电信IDC机房 [8]
-      - 广东省东莞市 电信IDC机房 [9]
-      - 广东省东莞市 电信IDC机房 [10]
-      - 亚太地区 V2CROSS.COM [1]
-      - 美国 CloudFlare节点 [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -973,17 +930,14 @@ proxy-groups:
       - 广东省东莞市 电信IDC机房 [1]
       - 广东省东莞市 电信IDC机房 [2]
       - 广东省东莞市 电信IDC机房 [3]
-      - 亚太地区 V2CROSS.COM
       - 广东省东莞市 电信IDC机房 [4]
-      - 美国 CloudFlare节点
+      - 西班牙+V2CROSS.COM
+      - 中国 V2CROSS.COM
       - 广东省东莞市 电信IDC机房 [5]
       - 广东省东莞市 电信IDC机房 [6]
+      - 亚太地区 V2CROSS.COM
       - 广东省东莞市 电信IDC机房 [7]
       - 广东省东莞市 电信IDC机房 [8]
-      - 广东省东莞市 电信IDC机房 [9]
-      - 广东省东莞市 电信IDC机房 [10]
-      - 亚太地区 V2CROSS.COM [1]
-      - 美国 CloudFlare节点 [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
