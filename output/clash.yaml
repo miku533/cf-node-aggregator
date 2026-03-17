@@ -104,90 +104,6 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 🇭🇰 香港3|@ripaojiedian
-    type: trojan
-    server: 18.182.10.16
-    port: 921
-    password: f389ed926e512e15f382dc3804029474
-    sni: www.nintendogames.net
-    skip-cert-verify: false
-  - name: 🇭🇰 香港4|@ripaojiedian
-    type: trojan
-    server: 95.40.9.23
-    port: 18503
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
-  - name: 🇭🇰 香港5|@ripaojiedian
-    type: trojan
-    server: 95.40.9.23
-    port: 38837
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
-  - name: 🇯🇵 日本|@ripaojiedian
-    type: trojan
-    server: 13.115.145.176
-    port: 4945
-    password: BxceQaOe
-    sni: t.me%2Fripaojiedian
-    skip-cert-verify: true
-  - name: 🇯🇵 日本2|@ripaojiedian
-    type: trojan
-    server: 57.180.28.65
-    port: 2001
-    password: f389ed926e512e15f382dc3804029474
-    sni: www.nintendogames.net
-    skip-cert-verify: false
-  - name: 🇯🇵 日本3|@ripaojiedian
-    type: trojan
-    server: 160.16.124.17
-    port: 34818
-    password: f389ed926e512e15f382dc3804029474
-    sni: www.nintendogames.net
-    skip-cert-verify: false
-  - name: 🇸🇬 新加坡|@ripaojiedian
-    type: trojan
-    server: 160.16.72.33
-    port: 4674
-    password: f7dbed8b1ca85124e793ba6c0bcfd0db
-    sni: www.nintendogames.net
-    skip-cert-verify: false
-  - name: 🇸🇬 新加坡2|@ripaojiedian
-    type: trojan
-    server: 54.238.113.186
-    port: 3419
-    password: f389ed926e512e15f382dc3804029474
-    sni: www.nintendogames.net
-    skip-cert-verify: false
-  - name: 🇸🇬 新加坡3|@ripaojiedian
-    type: trojan
-    server: 95.40.9.23
-    port: 29666
-    password: BxceQaOe
-    sni: t.me%2Fripaojiedian
-    skip-cert-verify: true
-  - name: 🇺🇸 美国|@ripaojiedian
-    type: trojan
-    server: 13.113.193.32
-    port: 4920
-    password: f389ed926e512e15f382dc3804029474
-    sni: www.nintendogames.net
-    skip-cert-verify: false
-  - name: 🇺🇸 美国2|@ripaojiedian
-    type: trojan
-    server: 13.115.145.176
-    port: 4920
-    password: f389ed926e512e15f382dc3804029474
-    sni: www.nintendogames.net
-    skip-cert-verify: false
-  - name: 🇺🇸 美国3|@ripaojiedian
-    type: trojan
-    server: 95.40.46.74
-    port: 50446
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
   - name: 香港3|@ripaojiedian
     type: trojan
     server: 13.112.59.34
@@ -233,6 +149,13 @@ proxies:
   - name: 新加坡|@ripaojiedian
     type: trojan
     server: 18.183.223.166
+    port: 4674
+    password: 86e150eb21c6faee48e81d496d7f61c2
+    sni: www.nintendogames.net
+    skip-cert-verify: false
+  - name: 新加坡2|@ripaojiedian
+    type: trojan
+    server: 160.16.72.33
     port: 4674
     password: 86e150eb21c6faee48e81d496d7f61c2
     sni: www.nintendogames.net
@@ -666,38 +589,34 @@ proxies:
       path: /danfeng?ed=2560security=tls
       headers:
         Host: snippet.danfeng.theworkpc.com
-  - name: 美国 CloudFlare节点
+  - name: 广东省 移动
     type: vmess
-    server: bbbbnhhju.0og.ccwu.cc
-    port: 443
-    uuid: 2bfded8d-6a7c-4c18-aaa5-fc65b955d50c
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /tV7lLkdyUphJ3dX414bl
-      headers:
-        Host: bbbbnhhju.0og.ccwu.cc
-  - name: 英国 V2CROSS.COM
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    server: cn02.365cloud5878.com
+    port: 6033
+    uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
     alterId: 0
     cipher: auto
     tls: false
     network: tcp
-  - name: 中国 V2CROSS.COM
+  - name: 广东省 移动 [1]
     type: vmess
-    server: v12.hdacd.com
-    port: 30812
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    server: cn02.365cloud5878.com
+    port: 6052
+    uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
     alterId: 0
     cipher: auto
     tls: false
     network: tcp
-  - name: 广东省东莞市 电信IDC机房
+  - name: 广东省 移动 [2]
+    type: vmess
+    server: cn02.365cloud5878.com
+    port: 6045
+    uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 广东省 移动 [3]
     type: vmess
     server: cn02.365cloud5878.com
     port: 6029
@@ -706,80 +625,89 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 广东省东莞市 电信IDC机房 [1]
+  - name: 广东省 移动 [4]
     type: vmess
     server: cn02.365cloud5878.com
-    port: 6042
+    port: 6010
     uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
     alterId: 0
     cipher: auto
     tls: false
     network: tcp
-  - name: 广东省东莞市 电信IDC机房 [2]
+  - name: 广东省 移动 [5]
     type: vmess
     server: cn02.365cloud5878.com
-    port: 6046
+    port: 6031
     uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
     alterId: 0
     cipher: auto
     tls: false
     network: tcp
-  - name: 俄罗斯+V2CROSS.COM
+  - name: 广东省 移动 [6]
+    type: vmess
+    server: cn02.365cloud5878.com
+    port: 6032
+    uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 广东省 移动 [7]
+    type: vmess
+    server: cn02.365cloud5878.com
+    port: 6035
+    uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 广东省 移动 [8]
+    type: vmess
+    server: cn02.365cloud5878.com
+    port: 6044
+    uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 广东省 移动 [9]
+    type: vmess
+    server: cn02.365cloud5878.com
+    port: 6001
+    uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 广东省 移动 [10]
+    type: vmess
+    server: cn02.365cloud5878.com
+    port: 6034
+    uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 冰岛+V2CROSS.COM
     type: trojan
-    server: 212.193.18.144
-    port: 36158
-    password: ZblhWr0mqMakCPg.N
-    sni: ya.ru
-    skip-cert-verify: false
-  - name: 广东省东莞市 电信IDC机房 [3]
-    type: vmess
-    server: cn02.365cloud5878.com
-    port: 6007
-    uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 广东省东莞市 电信IDC机房 [4]
-    type: vmess
-    server: cn02.365cloud5878.com
-    port: 6027
-    uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 广东省东莞市 电信IDC机房 [5]
-    type: vmess
-    server: cn02.365cloud5878.com
-    port: 6009
-    uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 广东省东莞市 电信IDC机房 [6]
-    type: vmess
-    server: cn02.365cloud5878.com
-    port: 6050
-    uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 广东省东莞市 电信IDC机房 [7]
-    type: vmess
-    server: cn02.365cloud5878.com
-    port: 6019
-    uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 广东省东莞市 电信IDC机房 [8]
+    server: 37.235.49.209
+    port: 28099
+    password: qmBSKnAl6LYi9%3Dz23Rs.Z
+    sni: celestialcorset.crystalhamster.click
+    skip-cert-verify: true
+  - name: 广东省 移动 [11]
     type: vmess
     server: cn02.365cloud5878.com
     port: 6017
+    uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 广东省 移动 [12]
+    type: vmess
+    server: cn02.365cloud5878.com
+    port: 6043
     uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
     alterId: 0
     cipher: auto
@@ -803,18 +731,6 @@ proxy-groups:
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
       - 🇭🇰 香港|@ripaojiedian
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇸🇬 新加坡2|@ripaojiedian
-      - 🇸🇬 新加坡3|@ripaojiedian
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇺🇸 美国2|@ripaojiedian
-      - 🇺🇸 美国3|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
@@ -822,6 +738,7 @@ proxy-groups:
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
       - 新加坡|@ripaojiedian
+      - 新加坡2|@ripaojiedian
       - 新加坡3|@ripaojiedian
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
@@ -867,19 +784,20 @@ proxy-groups:
       - US_speednode_0057
       - US_speednode_0058
       - US_speednode_0059
-      - 美国 CloudFlare节点
-      - 英国 V2CROSS.COM
-      - 中国 V2CROSS.COM
-      - 广东省东莞市 电信IDC机房
-      - 广东省东莞市 电信IDC机房 [1]
-      - 广东省东莞市 电信IDC机房 [2]
-      - 俄罗斯+V2CROSS.COM
-      - 广东省东莞市 电信IDC机房 [3]
-      - 广东省东莞市 电信IDC机房 [4]
-      - 广东省东莞市 电信IDC机房 [5]
-      - 广东省东莞市 电信IDC机房 [6]
-      - 广东省东莞市 电信IDC机房 [7]
-      - 广东省东莞市 电信IDC机房 [8]
+      - 广东省 移动
+      - 广东省 移动 [1]
+      - 广东省 移动 [2]
+      - 广东省 移动 [3]
+      - 广东省 移动 [4]
+      - 广东省 移动 [5]
+      - 广东省 移动 [6]
+      - 广东省 移动 [7]
+      - 广东省 移动 [8]
+      - 广东省 移动 [9]
+      - 广东省 移动 [10]
+      - 冰岛+V2CROSS.COM
+      - 广东省 移动 [11]
+      - 广东省 移动 [12]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -894,18 +812,6 @@ proxy-groups:
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
       - 🇭🇰 香港|@ripaojiedian
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇸🇬 新加坡2|@ripaojiedian
-      - 🇸🇬 新加坡3|@ripaojiedian
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇺🇸 美国2|@ripaojiedian
-      - 🇺🇸 美国3|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
@@ -913,6 +819,7 @@ proxy-groups:
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
       - 新加坡|@ripaojiedian
+      - 新加坡2|@ripaojiedian
       - 新加坡3|@ripaojiedian
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
@@ -958,19 +865,20 @@ proxy-groups:
       - US_speednode_0057
       - US_speednode_0058
       - US_speednode_0059
-      - 美国 CloudFlare节点
-      - 英国 V2CROSS.COM
-      - 中国 V2CROSS.COM
-      - 广东省东莞市 电信IDC机房
-      - 广东省东莞市 电信IDC机房 [1]
-      - 广东省东莞市 电信IDC机房 [2]
-      - 俄罗斯+V2CROSS.COM
-      - 广东省东莞市 电信IDC机房 [3]
-      - 广东省东莞市 电信IDC机房 [4]
-      - 广东省东莞市 电信IDC机房 [5]
-      - 广东省东莞市 电信IDC机房 [6]
-      - 广东省东莞市 电信IDC机房 [7]
-      - 广东省东莞市 电信IDC机房 [8]
+      - 广东省 移动
+      - 广东省 移动 [1]
+      - 广东省 移动 [2]
+      - 广东省 移动 [3]
+      - 广东省 移动 [4]
+      - 广东省 移动 [5]
+      - 广东省 移动 [6]
+      - 广东省 移动 [7]
+      - 广东省 移动 [8]
+      - 广东省 移动 [9]
+      - 广东省 移动 [10]
+      - 冰岛+V2CROSS.COM
+      - 广东省 移动 [11]
+      - 广东省 移动 [12]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -987,18 +895,6 @@ proxy-groups:
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
       - 🇭🇰 香港|@ripaojiedian
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇸🇬 新加坡2|@ripaojiedian
-      - 🇸🇬 新加坡3|@ripaojiedian
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇺🇸 美国2|@ripaojiedian
-      - 🇺🇸 美国3|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
@@ -1006,6 +902,7 @@ proxy-groups:
       - 日本2|@ripaojiedian
       - 日本3|@ripaojiedian
       - 新加坡|@ripaojiedian
+      - 新加坡2|@ripaojiedian
       - 新加坡3|@ripaojiedian
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
@@ -1051,19 +948,20 @@ proxy-groups:
       - US_speednode_0057
       - US_speednode_0058
       - US_speednode_0059
-      - 美国 CloudFlare节点
-      - 英国 V2CROSS.COM
-      - 中国 V2CROSS.COM
-      - 广东省东莞市 电信IDC机房
-      - 广东省东莞市 电信IDC机房 [1]
-      - 广东省东莞市 电信IDC机房 [2]
-      - 俄罗斯+V2CROSS.COM
-      - 广东省东莞市 电信IDC机房 [3]
-      - 广东省东莞市 电信IDC机房 [4]
-      - 广东省东莞市 电信IDC机房 [5]
-      - 广东省东莞市 电信IDC机房 [6]
-      - 广东省东莞市 电信IDC机房 [7]
-      - 广东省东莞市 电信IDC机房 [8]
+      - 广东省 移动
+      - 广东省 移动 [1]
+      - 广东省 移动 [2]
+      - 广东省 移动 [3]
+      - 广东省 移动 [4]
+      - 广东省 移动 [5]
+      - 广东省 移动 [6]
+      - 广东省 移动 [7]
+      - 广东省 移动 [8]
+      - 广东省 移动 [9]
+      - 广东省 移动 [10]
+      - 冰岛+V2CROSS.COM
+      - 广东省 移动 [11]
+      - 广东省 移动 [12]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
