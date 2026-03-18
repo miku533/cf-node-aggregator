@@ -416,44 +416,39 @@ proxies:
       path: /danfeng?ed=2560security=tls
       headers:
         Host: snippet.danfeng.kozow.com
-  - name: 中国 V2CROSS.COM
-    type: vmess
-    server: v30.hdacd.com
-    port: 30830
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 英国 V2CROSS.COM
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 冰岛+V2CROSS.COM
+  - name: 香港+电讯盈科有限公司
     type: trojan
-    server: 37.235.49.209
-    port: 28099
-    password: qmBSKnAl6LYi9%3Dz23Rs.Z
-    sni: celestialcorset.crystalhamster.click
-    skip-cert-verify: true
-  - name: 中国 V2CROSS.COM [1]
+    server: 58.152.25.253
+    port: 443
+    password: BxceQaOe
+    sni: t.me/ripaojiedian
+    skip-cert-verify: false
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: v12.hdacd.com
-    port: 30812
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    server: nmju.1jj.ccwu.cc
+    port: 80
+    uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
     alterId: 0
     cipher: auto
     tls: false
-    network: tcp
+    network: ws
+    ws-opts:
+      path: /iSRWSKUJKNuXvVzsYHmsMrnO
+      headers:
+        Host: nmju.1jj.ccwu.cc
   - name: 亚太地区 V2CROSS.COM
     type: vmess
     server: 103.181.164.237
     port: 34114
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 亚太地区 V2CROSS.COM [1]
+    type: vmess
+    server: 103.181.164.145
+    port: 54022
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -513,11 +508,10 @@ proxy-groups:
       - US_speednode_0027
       - US_speednode_0028
       - US_speednode_0029
-      - 中国 V2CROSS.COM
-      - 英国 V2CROSS.COM
-      - 冰岛+V2CROSS.COM
-      - 中国 V2CROSS.COM [1]
+      - 香港+电讯盈科有限公司
+      - 美国 CloudFlare节点
       - 亚太地区 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM [1]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -568,11 +562,10 @@ proxy-groups:
       - US_speednode_0027
       - US_speednode_0028
       - US_speednode_0029
-      - 中国 V2CROSS.COM
-      - 英国 V2CROSS.COM
-      - 冰岛+V2CROSS.COM
-      - 中国 V2CROSS.COM [1]
+      - 香港+电讯盈科有限公司
+      - 美国 CloudFlare节点
       - 亚太地区 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -625,11 +618,10 @@ proxy-groups:
       - US_speednode_0027
       - US_speednode_0028
       - US_speednode_0029
-      - 中国 V2CROSS.COM
-      - 英国 V2CROSS.COM
-      - 冰岛+V2CROSS.COM
-      - 中国 V2CROSS.COM [1]
+      - 香港+电讯盈科有限公司
+      - 美国 CloudFlare节点
       - 亚太地区 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
