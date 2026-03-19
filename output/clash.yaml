@@ -222,41 +222,13 @@ proxies:
       path: /?ed=2560security=tls
       headers:
         Host: r.icy.de5.net
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: zdqbk.cmvvb.online
-    port: 8443
-    uuid: a2852e93-7255-4aae-9412-38273fdacd31
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: zdqbk.cmvvb.online
-  - name: 美国 CloudFlare节点 [1]
-    type: vmess
-    server: cdfr.ae1autumn.dpdns.org
-    port: 443
-    uuid: 13ad36e6-c091-43f2-8505-47d868dd544c
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /YsmRouA9ZbxgW4
-      headers:
-        Host: cdfr.ae1autumn.dpdns.org
-  - name: 亚太地区 V2CROSS.COM
-    type: vmess
-    server: 103.181.164.145
-    port: 51556
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
+  - name: 保加利亚+V2CROSS.COM
+    type: trojan
+    server: 78.159.131.12
+    port: 28259
+    password: MeaDiUmPlkWbZJ2BON8tz
+    sni: ads.x5.ru
+    skip-cert-verify: false
   - name: 香港+电讯盈科有限公司
     type: trojan
     server: 58.152.25.253
@@ -264,6 +236,41 @@ proxies:
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: false
+  - name: 亚太地区 V2CROSS.COM
+    type: vmess
+    server: 103.181.164.145
+    port: 54022
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 广东省+移动
+    type: vless
+    server: 183.240.252.165
+    port: 8654
+    uuid: f6ddddaf-dfd6-4134-9dae-03b93b03d145
+    tls: false
+    network: tcp
+  - name: 冰岛+V2CROSS.COM
+    type: trojan
+    server: 37.235.49.209
+    port: 28099
+    password: qmBSKnAl6LYi9%3Dz23Rs.Z
+    sni: celestialcorset.crystalhamster.click
+    skip-cert-verify: true
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 104.17.77.77
+    port: 8443
+    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /lMnsZUN4/
+      headers: {}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -298,10 +305,12 @@ proxy-groups:
       - GB_speednode_0004
       - LU_speednode_0006
       - US_speednode_0011
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
-      - 亚太地区 V2CROSS.COM
+      - 保加利亚+V2CROSS.COM
       - 香港+电讯盈科有限公司
+      - 亚太地区 V2CROSS.COM
+      - 广东省+移动
+      - 冰岛+V2CROSS.COM
+      - 美国 CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -332,10 +341,12 @@ proxy-groups:
       - GB_speednode_0004
       - LU_speednode_0006
       - US_speednode_0011
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
-      - 亚太地区 V2CROSS.COM
+      - 保加利亚+V2CROSS.COM
       - 香港+电讯盈科有限公司
+      - 亚太地区 V2CROSS.COM
+      - 广东省+移动
+      - 冰岛+V2CROSS.COM
+      - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -368,10 +379,12 @@ proxy-groups:
       - GB_speednode_0004
       - LU_speednode_0006
       - US_speednode_0011
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
-      - 亚太地区 V2CROSS.COM
+      - 保加利亚+V2CROSS.COM
       - 香港+电讯盈科有限公司
+      - 亚太地区 V2CROSS.COM
+      - 广东省+移动
+      - 冰岛+V2CROSS.COM
+      - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
