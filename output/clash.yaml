@@ -627,6 +627,13 @@ proxies:
       path: /socks5=4b2c7676:6f0f4cbba5bb@38.111.30.111:26433fp=random
       headers:
         Host: b86bf7fa.mfree.ccwu.cc
+  - name: 香港+电讯盈科有限公司
+    type: trojan
+    server: 58.152.25.253
+    port: 443
+    password: BxceQaOe
+    sni: t.me/ripaojiedian
+    skip-cert-verify: false
   - name: 英国 V2CROSS.COM
     type: vmess
     server: 82.198.246.97
@@ -636,34 +643,30 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 保加利亚+V2CROSS.COM
-    type: trojan
-    server: 78.159.131.12
-    port: 28259
-    password: MeaDiUmPlkWbZJ2BON8tz
-    sni: ads.x5.ru
-    skip-cert-verify: false
-  - name: 西班牙+V2CROSS.COM
-    type: trojan
-    server: 80.173.230.196
-    port: 26279
-    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
-    sni: io.ozone.ru
-    skip-cert-verify: false
-  - name: 日本 东京阿里云
+  - name: 中国 V2CROSS.COM
     type: vmess
-    server: n1753598451.74qxv.top
-    port: 443
-    uuid: 9798678f-5b8c-4ff1-bbdd-b9b5c1539de0
+    server: v12.hdacd.com
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     alterId: 0
     cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: n1753598451.74qxv.top
-  - name: 西班牙+V2CROSS.COM [1]
+    tls: false
+    network: tcp
+  - name: 冰岛+V2CROSS.COM
+    type: trojan
+    server: 37.235.49.209
+    port: 28099
+    password: qmBSKnAl6LYi9%3Dz23Rs.Z
+    sni: celestialcorset.crystalhamster.click
+    skip-cert-verify: false
+  - name: 俄罗斯+V2CROSS.COM
+    type: trojan
+    server: 212.193.18.144
+    port: 36158
+    password: ZblhWr0mqMakCPg.N
+    sni: ya.ru
+    skip-cert-verify: false
+  - name: 西班牙+V2CROSS.COM
     type: trojan
     server: 80.173.231.254
     port: 12420
@@ -742,11 +745,12 @@ proxy-groups:
       - US_speednode_0060
       - US_speednode_0061
       - US_speednode_0063
+      - 香港+电讯盈科有限公司
       - 英国 V2CROSS.COM
-      - 保加利亚+V2CROSS.COM
+      - 中国 V2CROSS.COM
+      - 冰岛+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
       - 西班牙+V2CROSS.COM
-      - 日本 东京阿里云
-      - 西班牙+V2CROSS.COM [1]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -815,11 +819,12 @@ proxy-groups:
       - US_speednode_0060
       - US_speednode_0061
       - US_speednode_0063
+      - 香港+电讯盈科有限公司
       - 英国 V2CROSS.COM
-      - 保加利亚+V2CROSS.COM
+      - 中国 V2CROSS.COM
+      - 冰岛+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
       - 西班牙+V2CROSS.COM
-      - 日本 东京阿里云
-      - 西班牙+V2CROSS.COM [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -890,11 +895,12 @@ proxy-groups:
       - US_speednode_0060
       - US_speednode_0061
       - US_speednode_0063
+      - 香港+电讯盈科有限公司
       - 英国 V2CROSS.COM
-      - 保加利亚+V2CROSS.COM
+      - 中国 V2CROSS.COM
+      - 冰岛+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
       - 西班牙+V2CROSS.COM
-      - 日本 东京阿里云
-      - 西班牙+V2CROSS.COM [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
