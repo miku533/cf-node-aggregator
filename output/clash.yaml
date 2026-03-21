@@ -627,13 +627,6 @@ proxies:
       path: /socks5=4b2c7676:6f0f4cbba5bb@38.111.30.111:26433fp=random
       headers:
         Host: b86bf7fa.mfree.ccwu.cc
-  - name: 保加利亚+V2CROSS.COM
-    type: trojan
-    server: 78.159.131.12
-    port: 28259
-    password: MeaDiUmPlkWbZJ2BON8tz
-    sni: ads.x5.ru
-    skip-cert-verify: false
   - name: 西班牙+V2CROSS.COM
     type: trojan
     server: 80.173.231.254
@@ -641,6 +634,19 @@ proxies:
     password: wp9IsiY82uQhcmgNC1eoBM
     sni: www.semanticstaplegun.click
     skip-cert-verify: false
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: t1.620720.xyz
+    port: 8443
+    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: t1.620720.xyz
   - name: 冰岛+V2CROSS.COM
     type: trojan
     server: 37.235.49.209
@@ -657,11 +663,11 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 美国 CloudFlare节点
+  - name: 美国 CloudFlare节点 [1]
     type: vmess
-    server: sy4.620720.xyz
-    port: 443
-    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+    server: zzrt.uhomdex.shop
+    port: 8443
+    uuid: edb3e961-0b28-4e52-8446-399f3ef03c08
     alterId: 0
     cipher: auto
     tls: true
@@ -669,7 +675,7 @@ proxies:
     ws-opts:
       path: /
       headers:
-        Host: sy4.620720.xyz
+        Host: zzrt.uhomdex.shop
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -742,11 +748,11 @@ proxy-groups:
       - US_speednode_0060
       - US_speednode_0061
       - US_speednode_0063
-      - 保加利亚+V2CROSS.COM
       - 西班牙+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 冰岛+V2CROSS.COM
       - 中国 V2CROSS.COM
-      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 [1]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -815,11 +821,11 @@ proxy-groups:
       - US_speednode_0060
       - US_speednode_0061
       - US_speednode_0063
-      - 保加利亚+V2CROSS.COM
       - 西班牙+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 冰岛+V2CROSS.COM
       - 中国 V2CROSS.COM
-      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -890,11 +896,11 @@ proxy-groups:
       - US_speednode_0060
       - US_speednode_0061
       - US_speednode_0063
-      - 保加利亚+V2CROSS.COM
       - 西班牙+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 冰岛+V2CROSS.COM
       - 中国 V2CROSS.COM
-      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
