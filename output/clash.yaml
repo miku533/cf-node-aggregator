@@ -766,6 +766,29 @@ proxies:
       path: /njvqoews?ed=2560security=tls
       headers:
         Host: 639073677243791121.camry-perma.info
+  - name: 西班牙+V2CROSS.COM
+    type: trojan
+    server: 80.173.230.196
+    port: 26279
+    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
+    sni: 80.173.230.196
+    skip-cert-verify: false
+  - name: 英国 V2CROSS.COM
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 香港+电讯盈科有限公司
+    type: trojan
+    server: 58.152.25.253
+    port: 443
+    password: BxceQaOe
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
   - name: 美国 CloudFlare节点
     type: vmess
     server: sy4.620720.xyz
@@ -779,43 +802,13 @@ proxies:
       path: /
       headers:
         Host: sy4.620720.xyz
-  - name: 香港+电讯盈科有限公司
+  - name: 荷兰阿姆斯特丹+xTom/AS3214
     type: trojan
-    server: 58.152.25.253
+    server: nl-4.tr202512.com
     port: 443
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: false
-  - name: 保加利亚+V2CROSS.COM
-    type: trojan
-    server: 78.159.131.12
-    port: 28259
-    password: MeaDiUmPlkWbZJ2BON8tz
-    sni: ads.x5.ru
-    skip-cert-verify: false
-  - name: 西班牙+V2CROSS.COM
-    type: trojan
-    server: 80.173.230.196
-    port: 26279
-    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
-    sni: 80.173.230.196
-    skip-cert-verify: false
-  - name: 西班牙+V2CROSS.COM [1]
-    type: trojan
-    server: 80.173.231.254
-    port: 12420
-    password: wp9IsiY82uQhcmgNC1eoBM
-    sni: www.semanticstaplegun.click
+    password: M08tvzYWtUEJNtbpHp
+    sni: nl-4.tr202512.com
     skip-cert-verify: true
-  - name: 中国 V2CROSS.COM
-    type: vmess
-    server: v12.hdacd.com
-    port: 30812
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -906,12 +899,11 @@ proxy-groups:
       - US_speednode_0068
       - US_speednode_0069
       - US_speednode_0070
-      - 美国 CloudFlare节点
-      - 香港+电讯盈科有限公司
-      - 保加利亚+V2CROSS.COM
       - 西班牙+V2CROSS.COM
-      - 西班牙+V2CROSS.COM [1]
-      - 中国 V2CROSS.COM
+      - 英国 V2CROSS.COM
+      - 香港+电讯盈科有限公司
+      - 美国 CloudFlare节点
+      - 荷兰阿姆斯特丹+xTom/AS3214
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -998,12 +990,11 @@ proxy-groups:
       - US_speednode_0068
       - US_speednode_0069
       - US_speednode_0070
-      - 美国 CloudFlare节点
-      - 香港+电讯盈科有限公司
-      - 保加利亚+V2CROSS.COM
       - 西班牙+V2CROSS.COM
-      - 西班牙+V2CROSS.COM [1]
-      - 中国 V2CROSS.COM
+      - 英国 V2CROSS.COM
+      - 香港+电讯盈科有限公司
+      - 美国 CloudFlare节点
+      - 荷兰阿姆斯特丹+xTom/AS3214
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -1092,12 +1083,11 @@ proxy-groups:
       - US_speednode_0068
       - US_speednode_0069
       - US_speednode_0070
-      - 美国 CloudFlare节点
-      - 香港+电讯盈科有限公司
-      - 保加利亚+V2CROSS.COM
       - 西班牙+V2CROSS.COM
-      - 西班牙+V2CROSS.COM [1]
-      - 中国 V2CROSS.COM
+      - 英国 V2CROSS.COM
+      - 香港+电讯盈科有限公司
+      - 美国 CloudFlare节点
+      - 荷兰阿姆斯特丹+xTom/AS3214
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
