@@ -766,20 +766,19 @@ proxies:
       path: /njvqoews?ed=2560security=tls
       headers:
         Host: 639073677243791121.camry-perma.info
-  - name: 西班牙+V2CROSS.COM
-    type: trojan
-    server: 80.173.230.196
-    port: 26279
-    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
-    sni: io.ozone.ru
-    skip-cert-verify: false
-  - name: 俄罗斯+V2CROSS.COM
-    type: trojan
-    server: 212.193.18.144
-    port: 36158
-    password: ZblhWr0mqMakCPg.N
-    sni: ya.ru
-    skip-cert-verify: false
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: t1.620720.xyz
+    port: 8443
+    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: t1.620720.xyz
   - name: 英国 V2CROSS.COM
     type: vmess
     server: 82.198.246.97
@@ -789,11 +788,11 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 美国 CloudFlare节点
+  - name: 美国 CloudFlare节点 [1]
     type: vmess
-    server: cf.090227.xyz
+    server: sy4.620720.xyz
     port: 443
-    uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
+    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
     alterId: 0
     cipher: auto
     tls: true
@@ -801,7 +800,20 @@ proxies:
     ws-opts:
       path: /
       headers:
-        Host: sgal.dagrate.eu.org
+        Host: sy4.620720.xyz
+  - name: 美国 CloudFlare节点 [2]
+    type: vmess
+    server: c7.620720.xyz
+    port: 8443
+    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: c7.620720.xyz
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -892,10 +904,10 @@ proxy-groups:
       - US_speednode_0068
       - US_speednode_0069
       - US_speednode_0070
-      - 西班牙+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 英国 V2CROSS.COM
+      - 美国 CloudFlare节点 [1]
+      - 美国 CloudFlare节点 [2]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -982,10 +994,10 @@ proxy-groups:
       - US_speednode_0068
       - US_speednode_0069
       - US_speednode_0070
-      - 西班牙+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 英国 V2CROSS.COM
+      - 美国 CloudFlare节点 [1]
+      - 美国 CloudFlare节点 [2]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -1074,10 +1086,10 @@ proxy-groups:
       - US_speednode_0068
       - US_speednode_0069
       - US_speednode_0070
-      - 西班牙+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 英国 V2CROSS.COM
+      - 美国 CloudFlare节点 [1]
+      - 美国 CloudFlare节点 [2]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
