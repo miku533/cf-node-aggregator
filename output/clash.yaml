@@ -775,20 +775,14 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
+  - name: 西班牙+V2CROSS.COM
+    type: trojan
+    server: 80.173.230.196
+    port: 26279
+    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
+    sni: 80.173.230.196
+    skip-cert-verify: false
   - name: 美国 CloudFlare节点
-    type: vmess
-    server: cf.090227.xyz
-    port: 443
-    uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: sgal.dagrate.eu.org
-  - name: 美国 CloudFlare节点 [1]
     type: vmess
     server: c7.620720.xyz
     port: 8443
@@ -801,20 +795,6 @@ proxies:
       path: /
       headers:
         Host: c7.620720.xyz
-  - name: 西班牙+V2CROSS.COM
-    type: trojan
-    server: 80.173.231.254
-    port: 12420
-    password: wp9IsiY82uQhcmgNC1eoBM
-    sni: www.semanticstaplegun.click
-    skip-cert-verify: false
-  - name: 香港+电讯盈科有限公司
-    type: trojan
-    server: 58.152.25.253
-    port: 443
-    password: BxceQaOe
-    sni: 58.152.25.253
-    skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -906,10 +886,8 @@ proxy-groups:
       - US_speednode_0069
       - US_speednode_0070
       - 英国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
       - 西班牙+V2CROSS.COM
-      - 香港+电讯盈科有限公司
+      - 美国 CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -997,10 +975,8 @@ proxy-groups:
       - US_speednode_0069
       - US_speednode_0070
       - 英国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
       - 西班牙+V2CROSS.COM
-      - 香港+电讯盈科有限公司
+      - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -1090,10 +1066,8 @@ proxy-groups:
       - US_speednode_0069
       - US_speednode_0070
       - 英国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
       - 西班牙+V2CROSS.COM
-      - 香港+电讯盈科有限公司
+      - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
