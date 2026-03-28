@@ -766,30 +766,41 @@ proxies:
       path: /njvqoews?ed=2560security=tls
       headers:
         Host: 639073677243791121.camry-perma.info
-  - name: 英国 V2CROSS.COM
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
+  - name: 俄罗斯+V2CROSS.COM
+    type: trojan
+    server: 212.193.18.144
+    port: 36158
+    password: ZblhWr0mqMakCPg.N
+    sni: ya.ru
+    skip-cert-verify: false
   - name: 伊朗 V2CROSS.COM
     type: vmess
-    server: v30.hdacd.com
-    port: 30830
+    server: v12.hdacd.com
+    port: 30812
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     alterId: 0
     cipher: auto
     tls: false
     network: tcp
-  - name: 保加利亚+V2CROSS.COM
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: t1.620720.xyz
+    port: 8443
+    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: t1.620720.xyz
+  - name: 香港+电讯盈科有限公司
     type: trojan
-    server: 78.159.131.12
-    port: 28259
-    password: MeaDiUmPlkWbZJ2BON8tz
-    sni: ads.x5.ru
+    server: 58.152.25.253
+    port: 443
+    password: BxceQaOe
+    sni: t.me/ripaojiedian
     skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
@@ -881,9 +892,10 @@ proxy-groups:
       - US_speednode_0068
       - US_speednode_0069
       - US_speednode_0070
-      - 英国 V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
       - 伊朗 V2CROSS.COM
-      - 保加利亚+V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 香港+电讯盈科有限公司
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -970,9 +982,10 @@ proxy-groups:
       - US_speednode_0068
       - US_speednode_0069
       - US_speednode_0070
-      - 英国 V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
       - 伊朗 V2CROSS.COM
-      - 保加利亚+V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 香港+电讯盈科有限公司
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -1061,9 +1074,10 @@ proxy-groups:
       - US_speednode_0068
       - US_speednode_0069
       - US_speednode_0070
-      - 英国 V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
       - 伊朗 V2CROSS.COM
-      - 保加利亚+V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 香港+电讯盈科有限公司
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
