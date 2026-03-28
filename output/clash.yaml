@@ -766,6 +766,24 @@ proxies:
       path: /njvqoews?ed=2560security=tls
       headers:
         Host: 639073677243791121.camry-perma.info
+  - name: 伊朗 V2CROSS.COM
+    type: vmess
+    server: v12.hdacd.com
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 英国 V2CROSS.COM
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
   - name: 美国 CloudFlare节点
     type: vmess
     server: t1.620720.xyz
@@ -779,31 +797,13 @@ proxies:
       path: /
       headers:
         Host: t1.620720.xyz
-  - name: 伊朗 V2CROSS.COM
-    type: vmess
-    server: v12.hdacd.com
-    port: 30812
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 伊朗 V2CROSS.COM [1]
-    type: vmess
-    server: v30.hdacd.com
-    port: 30830
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
   - name: 西班牙+V2CROSS.COM
     type: trojan
-    server: 80.173.230.196
-    port: 26279
-    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
-    sni: 80.173.230.196
-    skip-cert-verify: false
+    server: 80.173.231.254
+    port: 12420
+    password: wp9IsiY82uQhcmgNC1eoBM
+    sni: www.semanticstaplegun.click
+    skip-cert-verify: true
   - name: 美国 CloudFlare节点 [1]
     type: vmess
     server: c7.620720.xyz
@@ -907,9 +907,9 @@ proxy-groups:
       - US_speednode_0068
       - US_speednode_0069
       - US_speednode_0070
-      - 美国 CloudFlare节点
       - 伊朗 V2CROSS.COM
-      - 伊朗 V2CROSS.COM [1]
+      - 英国 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 西班牙+V2CROSS.COM
       - 美国 CloudFlare节点 [1]
   - name: ♻️ 自动选择
@@ -998,9 +998,9 @@ proxy-groups:
       - US_speednode_0068
       - US_speednode_0069
       - US_speednode_0070
-      - 美国 CloudFlare节点
       - 伊朗 V2CROSS.COM
-      - 伊朗 V2CROSS.COM [1]
+      - 英国 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 西班牙+V2CROSS.COM
       - 美国 CloudFlare节点 [1]
     url: http://www.gstatic.com/generate_204
@@ -1091,9 +1091,9 @@ proxy-groups:
       - US_speednode_0068
       - US_speednode_0069
       - US_speednode_0070
-      - 美国 CloudFlare节点
       - 伊朗 V2CROSS.COM
-      - 伊朗 V2CROSS.COM [1]
+      - 英国 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 西班牙+V2CROSS.COM
       - 美国 CloudFlare节点 [1]
     url: http://www.gstatic.com/generate_204
