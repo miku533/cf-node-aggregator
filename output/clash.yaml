@@ -349,45 +349,10 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: c7.620720.xyz
-    port: 8443
-    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: c7.620720.xyz
-  - name: 美国 CloudFlare节点 [1]
-    type: vmess
-    server: sy4.620720.xyz
-    port: 443
-    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: sy4.620720.xyz
   - name: 伊朗 V2CROSS.COM
     type: vmess
     server: v12.hdacd.com
     port: 30812
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 伊朗 V2CROSS.COM [1]
-    type: vmess
-    server: v30.hdacd.com
-    port: 30830
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     alterId: 0
     cipher: auto
@@ -442,10 +407,7 @@ proxy-groups:
       - US_speednode_0026
       - US_speednode_0027
       - US_speednode_0028
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
       - 伊朗 V2CROSS.COM
-      - 伊朗 V2CROSS.COM [1]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -491,10 +453,7 @@ proxy-groups:
       - US_speednode_0026
       - US_speednode_0027
       - US_speednode_0028
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
       - 伊朗 V2CROSS.COM
-      - 伊朗 V2CROSS.COM [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -542,10 +501,7 @@ proxy-groups:
       - US_speednode_0026
       - US_speednode_0027
       - US_speednode_0028
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 [1]
       - 伊朗 V2CROSS.COM
-      - 伊朗 V2CROSS.COM [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
