@@ -349,41 +349,48 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
+  - name: 西班牙+V2CROSS.COM
+    type: trojan
+    server: 80.173.230.196
+    port: 26279
+    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
+    sni: 80.173.230.196
+    skip-cert-verify: false
+  - name: 亚太地区 V2CROSS.COM
+    type: vmess
+    server: 103.181.164.145
+    port: 51556
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 104.17.77.77
+    port: 8443
+    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /lMnsZUN4/
+      headers: {}
+  - name: 亚太地区 V2CROSS.COM [1]
+    type: vmess
+    server: 103.181.164.145
+    port: 54022
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
   - name: 英国 V2CROSS.COM
     type: vmess
     server: 82.198.246.97
     port: 180
     uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 西班牙+V2CROSS.COM
-    type: trojan
-    server: 80.173.231.254
-    port: 12420
-    password: wp9IsiY82uQhcmgNC1eoBM
-    sni: www.semanticstaplegun.click
-    skip-cert-verify: false
-  - name: 俄罗斯+V2CROSS.COM
-    type: trojan
-    server: 212.193.18.144
-    port: 36158
-    password: ZblhWr0mqMakCPg.N
-    sni: ya.ru
-    skip-cert-verify: false
-  - name: 香港+电讯盈科有限公司
-    type: trojan
-    server: 58.152.25.253
-    port: 443
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: false
-  - name: 亚太地区 V2CROSS.COM
-    type: vmess
-    server: 103.181.164.145
-    port: 54022
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 0
     cipher: auto
     tls: false
@@ -437,11 +444,11 @@ proxy-groups:
       - US_speednode_0026
       - US_speednode_0027
       - US_speednode_0028
-      - 英国 V2CROSS.COM
       - 西班牙+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 香港+电讯盈科有限公司
       - 亚太地区 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 亚太地区 V2CROSS.COM [1]
+      - 英国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -487,11 +494,11 @@ proxy-groups:
       - US_speednode_0026
       - US_speednode_0027
       - US_speednode_0028
-      - 英国 V2CROSS.COM
       - 西班牙+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 香港+电讯盈科有限公司
       - 亚太地区 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 亚太地区 V2CROSS.COM [1]
+      - 英国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -539,11 +546,11 @@ proxy-groups:
       - US_speednode_0026
       - US_speednode_0027
       - US_speednode_0028
-      - 英国 V2CROSS.COM
       - 西班牙+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 香港+电讯盈科有限公司
       - 亚太地区 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 亚太地区 V2CROSS.COM [1]
+      - 英国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
