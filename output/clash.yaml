@@ -106,50 +106,50 @@ proxies:
     network: tcp
   - name: 香港3|@ripaojiedian
     type: trojan
-    server: 54.168.243.160
-    port: 21413
+    server: 54.249.168.132
+    port: 921
     password: 6d29eb2f74293cb01a19b32cf08ad2e9
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 香港4|@ripaojiedian
     type: trojan
-    server: 18.163.28.243
+    server: 95.40.61.187
     port: 921
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
   - name: 香港5|@ripaojiedian
     type: trojan
-    server: 18.162.154.71
+    server: 16.162.47.158
     port: 921
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
   - name: 日本|@ripaojiedian
     type: trojan
-    server: 43.207.1.64
-    port: 3278
+    server: 18.182.41.25
+    port: 3122
     password: BxceQaOe
     sni: t.me%2Fripaojiedian
     skip-cert-verify: true
   - name: 日本2|@ripaojiedian
     type: trojan
-    server: 153.121.38.213
-    port: 4937
+    server: 18.182.41.25
+    port: 4380
     password: 6d29eb2f74293cb01a19b32cf08ad2e9
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 日本3|@ripaojiedian
     type: trojan
-    server: 43.207.1.64
-    port: 9201
+    server: 153.121.45.139
+    port: 34818
     password: 6d29eb2f74293cb01a19b32cf08ad2e9
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 新加坡|@ripaojiedian
     type: trojan
-    server: 153.121.45.139
-    port: 1524
+    server: 160.16.130.21
+    port: 4674
     password: 6d29eb2f74293cb01a19b32cf08ad2e9
     sni: www.nintendogames.net
     skip-cert-verify: false
@@ -162,28 +162,28 @@ proxies:
     skip-cert-verify: false
   - name: 新加坡3|@ripaojiedian
     type: trojan
-    server: 18.162.154.71
-    port: 30726
+    server: 95.40.39.213
+    port: 12070
     password: BxceQaOe
     sni: t.me%2Fripaojiedian
     skip-cert-verify: true
   - name: 美国|@ripaojiedian
     type: trojan
-    server: 13.192.233.204
-    port: 3057
+    server: 3.112.241.30
+    port: 29370
     password: 6d29eb2f74293cb01a19b32cf08ad2e9
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 美国2|@ripaojiedian
     type: trojan
-    server: 43.207.1.64
-    port: 29370
+    server: 13.230.185.120
+    port: 3057
     password: 6d29eb2f74293cb01a19b32cf08ad2e9
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 美国3|@ripaojiedian
     type: trojan
-    server: 3.112.191.104
+    server: 95.40.107.15
     port: 14919
     password: BxceQaOe
     sni: t.me/ripaojiedian
@@ -349,6 +349,15 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
+  - name: 英国 V2CROSS.COM
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
   - name: 广东省东莞市 联通
     type: vmess
     server: aflzzul.meiquankongjian.com
@@ -362,47 +371,20 @@ proxies:
       path: /564dfa20/
       headers:
         Host: aflzzul.meiquankongjian.com
-  - name: 广东省东莞市 联通 [1]
-    type: vmess
-    server: aflzzul.meiquankongjian.com
-    port: 52511
-    uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /564dfa20/
-      headers:
-        Host: aflzzul.meiquankongjian.com
-  - name: 西班牙+V2CROSS.COM
-    type: trojan
-    server: 80.173.230.196
-    port: 26279
-    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
-    sni: 80.173.230.196
-    skip-cert-verify: false
-  - name: 英国 V2CROSS.COM
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 香港+电讯盈科有限公司
-    type: trojan
-    server: 58.152.25.253
-    port: 443
-    password: BxceQaOe
-    sni: 58.152.25.253
-    skip-cert-verify: false
   - name: 伊朗 V2CROSS.COM
     type: vmess
     server: v12.hdacd.com
     port: 30812
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 亚太地区 V2CROSS.COM
+    type: vmess
+    server: 103.181.164.145
+    port: 54022
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 0
     cipher: auto
     tls: false
@@ -456,12 +438,10 @@ proxy-groups:
       - US_speednode_0026
       - US_speednode_0027
       - US_speednode_0028
-      - 广东省东莞市 联通
-      - 广东省东莞市 联通 [1]
-      - 西班牙+V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 香港+电讯盈科有限公司
+      - 广东省东莞市 联通
       - 伊朗 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -507,12 +487,10 @@ proxy-groups:
       - US_speednode_0026
       - US_speednode_0027
       - US_speednode_0028
-      - 广东省东莞市 联通
-      - 广东省东莞市 联通 [1]
-      - 西班牙+V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 香港+电讯盈科有限公司
+      - 广东省东莞市 联通
       - 伊朗 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -560,12 +538,10 @@ proxy-groups:
       - US_speednode_0026
       - US_speednode_0027
       - US_speednode_0028
-      - 广东省东莞市 联通
-      - 广东省东莞市 联通 [1]
-      - 西班牙+V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 香港+电讯盈科有限公司
+      - 广东省东莞市 联通
       - 伊朗 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
