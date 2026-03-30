@@ -358,28 +358,27 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 广东省东莞市 联通
-    type: vmess
-    server: aflzzul.meiquankongjian.com
-    port: 52513
-    uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /564dfa20/
-      headers:
-        Host: aflzzul.meiquankongjian.com
-  - name: 伊朗 V2CROSS.COM
-    type: vmess
-    server: v12.hdacd.com
-    port: 30812
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
+  - name: 西班牙+V2CROSS.COM
+    type: trojan
+    server: 80.173.231.254
+    port: 12420
+    password: wp9IsiY82uQhcmgNC1eoBM
+    sni: www.semanticstaplegun.click
+    skip-cert-verify: false
+  - name: 俄罗斯+V2CROSS.COM
+    type: trojan
+    server: 212.193.18.144
+    port: 36158
+    password: ZblhWr0mqMakCPg.N
+    sni: ya.ru
+    skip-cert-verify: false
+  - name: 香港+电讯盈科有限公司
+    type: trojan
+    server: 58.152.25.253
+    port: 443
+    password: BxceQaOe
+    sni: t.me/ripaojiedian
+    skip-cert-verify: false
   - name: 亚太地区 V2CROSS.COM
     type: vmess
     server: 103.181.164.145
@@ -439,8 +438,9 @@ proxy-groups:
       - US_speednode_0027
       - US_speednode_0028
       - 英国 V2CROSS.COM
-      - 广东省东莞市 联通
-      - 伊朗 V2CROSS.COM
+      - 西班牙+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
+      - 香港+电讯盈科有限公司
       - 亚太地区 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
@@ -488,8 +488,9 @@ proxy-groups:
       - US_speednode_0027
       - US_speednode_0028
       - 英国 V2CROSS.COM
-      - 广东省东莞市 联通
-      - 伊朗 V2CROSS.COM
+      - 西班牙+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
+      - 香港+电讯盈科有限公司
       - 亚太地区 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -539,8 +540,9 @@ proxy-groups:
       - US_speednode_0027
       - US_speednode_0028
       - 英国 V2CROSS.COM
-      - 广东省东莞市 联通
-      - 伊朗 V2CROSS.COM
+      - 西班牙+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
+      - 香港+电讯盈科有限公司
       - 亚太地区 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
