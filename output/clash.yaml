@@ -493,25 +493,41 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
+  - name: 美国+Choopa公司数据中心
+    type: trojan
+    server: 104.238.162.6
+    port: 13109
+    password: WwipNOSqUh49CEapMmIrv6m6AZLf-EC0+T
+    sni: ord2.edge-command.click
+    skip-cert-verify: false
   - name: 瑞士+V2CROSS.COM
     type: trojan
-    server: 81.29.149.240
+    server: 81.29.149.201
     port: 18390
     password: hCjWaBe5vTkewfiljOL%3D9FS9DYg0c09c.t
-    sni: osl9.solidly.click
-    skip-cert-verify: false
-  - name: 英国+伦敦Virgin+Media
-    type: trojan
-    server: 82.26.155.199
-    port: 10369
-    password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-    sni: fra4.chasem2026sud.com
+    sni: osl7.solidly.click
     skip-cert-verify: false
   - name: 英国 V2CROSS.COM
     type: vmess
     server: 82.198.246.97
     port: 180
     uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 英国+伦敦Virgin+Media
+    type: trojan
+    server: 82.26.155.3
+    port: 10369
+    password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
+    sni: fra34.chasem2026sud.com
+    skip-cert-verify: false
+  - name: 伊朗 V2CROSS.COM
+    type: vmess
+    server: v12.hdacd.com
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     alterId: 0
     cipher: auto
     tls: false
@@ -523,35 +539,19 @@ proxies:
     password: BvzUvt45hON9We5X9wM6I9ZrxHRcYd46QK
     sni: sao2.cdn-graph.click
     skip-cert-verify: false
-  - name: 英国+伦敦Virgin+Media [1]
+  - name: 美国+V2CROSS.COM [1]
     type: trojan
-    server: 82.26.155.20
-    port: 10369
-    password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-    sni: fra35.chasem2026sud.com
+    server: 166.88.197.60
+    port: 26650
+    password: UNWA6USASAb6%3DuAAZeZMFd+2uKB4.d5KOm
+    sni: sea9.firewallcontract.click
     skip-cert-verify: false
-  - name: 亚太地区 V2CROSS.COM
-    type: vmess
-    server: 103.181.164.145
-    port: 54022
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    tls: false
-    network: tcp
   - name: 瑞士+V2CROSS.COM [1]
     type: trojan
-    server: 81.29.149.201
+    server: 81.29.149.212
     port: 18390
     password: hCjWaBe5vTkewfiljOL%3D9FS9DYg0c09c.t
-    sni: osl7.solidly.click
-    skip-cert-verify: false
-  - name: 俄罗斯+V2CROSS.COM
-    type: trojan
-    server: 194.87.10.31
-    port: 23357
-    password: fQmMJwOLMlqHednu2SVED8gi-+H-db9kbg
-    sni: sgp9.node-resource.click
+    sni: osl8.solidly.click
     skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
@@ -613,14 +613,14 @@ proxy-groups:
       - TR_speednode_0064
       - US_speednode_0066
       - US_speednode_0072
+      - 美国+Choopa公司数据中心
       - 瑞士+V2CROSS.COM
-      - 英国+伦敦Virgin+Media
       - 英国 V2CROSS.COM
+      - 英国+伦敦Virgin+Media
+      - 伊朗 V2CROSS.COM
       - 美国+V2CROSS.COM
-      - 英国+伦敦Virgin+Media [1]
-      - 亚太地区 V2CROSS.COM
+      - 美国+V2CROSS.COM [1]
       - 瑞士+V2CROSS.COM [1]
-      - 俄罗斯+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -677,14 +677,14 @@ proxy-groups:
       - TR_speednode_0064
       - US_speednode_0066
       - US_speednode_0072
+      - 美国+Choopa公司数据中心
       - 瑞士+V2CROSS.COM
-      - 英国+伦敦Virgin+Media
       - 英国 V2CROSS.COM
+      - 英国+伦敦Virgin+Media
+      - 伊朗 V2CROSS.COM
       - 美国+V2CROSS.COM
-      - 英国+伦敦Virgin+Media [1]
-      - 亚太地区 V2CROSS.COM
+      - 美国+V2CROSS.COM [1]
       - 瑞士+V2CROSS.COM [1]
-      - 俄罗斯+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -743,14 +743,14 @@ proxy-groups:
       - TR_speednode_0064
       - US_speednode_0066
       - US_speednode_0072
+      - 美国+Choopa公司数据中心
       - 瑞士+V2CROSS.COM
-      - 英国+伦敦Virgin+Media
       - 英国 V2CROSS.COM
+      - 英国+伦敦Virgin+Media
+      - 伊朗 V2CROSS.COM
       - 美国+V2CROSS.COM
-      - 英国+伦敦Virgin+Media [1]
-      - 亚太地区 V2CROSS.COM
+      - 美国+V2CROSS.COM [1]
       - 瑞士+V2CROSS.COM [1]
-      - 俄罗斯+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
