@@ -500,55 +500,51 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 伊朗 V2CROSS.COM
-    type: vmess
-    server: v12.hdacd.com
-    port: 30812
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 香港+电讯盈科有限公司
+  - name: 瑞士+V2CROSS.COM
     type: trojan
-    server: 58.152.25.253
-    port: 443
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
+    server: 81.29.149.201
+    port: 18390
+    password: hCjWaBe5vTkewfiljOL%3D9FS9DYg0c09c.t
+    sni: osl7.solidly.click
     skip-cert-verify: false
   - name: 英国+伦敦Virgin+Media
     type: trojan
-    server: 82.26.155.3
+    server: 82.26.155.199
     port: 10369
     password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-    sni: fra34.chasem2026sud.com
-    skip-cert-verify: false
-  - name: 英国 V2CROSS.COM
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 西班牙+V2CROSS.COM
-    type: trojan
-    server: 80.173.230.196
-    port: 26279
-    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
-    sni: 80.173.230.196
+    sni: fra4.chasem2026sud.com
     skip-cert-verify: false
   - name: 亚太地区 V2CROSS.COM
     type: vmess
     server: 103.181.164.145
-    port: 51556
+    port: 54022
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
+    alterId: 64
     cipher: auto
     tls: false
     network: tcp
-  - name: 英国 V2CROSS.COM [1]
+  - name: 保加利亚+V2CROSS.COM
+    type: trojan
+    server: 78.159.131.12
+    port: 28259
+    password: MeaDiUmPlkWbZJ2BON8tz
+    sni: ads.x5.ru
+    skip-cert-verify: false
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 166.88.197.60
+    port: 26650
+    password: UNWA6USASAb6%3DuAAZeZMFd+2uKB4.d5KOm
+    sni: sea9.firewallcontract.click
+    skip-cert-verify: false
+  - name: 美国+V2CROSS.COM [1]
+    type: trojan
+    server: 216.238.102.254
+    port: 26593
+    password: BvzUvt45hON9We5X9wM6I9ZrxHRcYd46QK
+    sni: sao2.cdn-graph.click
+    skip-cert-verify: false
+  - name: 英国 V2CROSS.COM
     type: vmess
     server: 82.198.246.250
     port: 180
@@ -557,22 +553,13 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 瑞士+V2CROSS.COM
+  - name: 美国+Choopa公司数据中心
     type: trojan
-    server: 81.29.149.201
-    port: 18390
-    password: hCjWaBe5vTkewfiljOL%3D9FS9DYg0c09c.t
-    sni: osl7.solidly.click
+    server: 104.238.162.6
+    port: 13109
+    password: WwipNOSqUh49CEapMmIrv6m6AZLf-EC0+T
+    sni: ord2.edge-command.click
     skip-cert-verify: false
-  - name: 伊朗 V2CROSS.COM [1]
-    type: vmess
-    server: v30.hdacd.com
-    port: 30830
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -634,15 +621,14 @@ proxy-groups:
       - TR_speednode_0064
       - US_speednode_0066
       - US_speednode_0072
-      - 伊朗 V2CROSS.COM
-      - 香港+电讯盈科有限公司
-      - 英国+伦敦Virgin+Media
-      - 英国 V2CROSS.COM
-      - 西班牙+V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
-      - 英国 V2CROSS.COM [1]
       - 瑞士+V2CROSS.COM
-      - 伊朗 V2CROSS.COM [1]
+      - 英国+伦敦Virgin+Media
+      - 亚太地区 V2CROSS.COM
+      - 保加利亚+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 美国+V2CROSS.COM [1]
+      - 英国 V2CROSS.COM
+      - 美国+Choopa公司数据中心
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -700,15 +686,14 @@ proxy-groups:
       - TR_speednode_0064
       - US_speednode_0066
       - US_speednode_0072
-      - 伊朗 V2CROSS.COM
-      - 香港+电讯盈科有限公司
-      - 英国+伦敦Virgin+Media
-      - 英国 V2CROSS.COM
-      - 西班牙+V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
-      - 英国 V2CROSS.COM [1]
       - 瑞士+V2CROSS.COM
-      - 伊朗 V2CROSS.COM [1]
+      - 英国+伦敦Virgin+Media
+      - 亚太地区 V2CROSS.COM
+      - 保加利亚+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 美国+V2CROSS.COM [1]
+      - 英国 V2CROSS.COM
+      - 美国+Choopa公司数据中心
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -768,15 +753,14 @@ proxy-groups:
       - TR_speednode_0064
       - US_speednode_0066
       - US_speednode_0072
-      - 伊朗 V2CROSS.COM
-      - 香港+电讯盈科有限公司
-      - 英国+伦敦Virgin+Media
-      - 英国 V2CROSS.COM
-      - 西班牙+V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
-      - 英国 V2CROSS.COM [1]
       - 瑞士+V2CROSS.COM
-      - 伊朗 V2CROSS.COM [1]
+      - 英国+伦敦Virgin+Media
+      - 亚太地区 V2CROSS.COM
+      - 保加利亚+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 美国+V2CROSS.COM [1]
+      - 英国 V2CROSS.COM
+      - 美国+Choopa公司数据中心
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
