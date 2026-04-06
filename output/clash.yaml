@@ -500,13 +500,15 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 瑞士+V2CROSS.COM
-    type: trojan
-    server: 81.29.149.240
-    port: 18390
-    password: hCjWaBe5vTkewfiljOL%3D9FS9DYg0c09c.t
-    sni: osl9.solidly.click
-    skip-cert-verify: false
+  - name: 伊朗 V2CROSS.COM
+    type: vmess
+    server: v30.hdacd.com
+    port: 30830
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
   - name: 亚太地区 V2CROSS.COM
     type: vmess
     server: 103.181.164.145
@@ -523,12 +525,30 @@ proxies:
     password: BvzUvt45hON9We5X9wM6I9ZrxHRcYd46QK
     sni: sao2.cdn-graph.click
     skip-cert-verify: false
-  - name: 瑞士+V2CROSS.COM [1]
+  - name: 伊朗 V2CROSS.COM [1]
+    type: vmess
+    server: v12.hdacd.com
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 伊朗 V2CROSS.COM [2]
+    type: vmess
+    server: 151.242.180.91
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 保加利亚+V2CROSS.COM
     type: trojan
-    server: 81.29.149.212
-    port: 18390
-    password: hCjWaBe5vTkewfiljOL%3D9FS9DYg0c09c.t
-    sni: osl8.solidly.click
+    server: 78.159.131.12
+    port: 28259
+    password: MeaDiUmPlkWbZJ2BON8tz
+    sni: ads.x5.ru
     skip-cert-verify: false
   - name: 广东省广州市 移动
     type: vmess
@@ -543,31 +563,6 @@ proxies:
       path: /564dfa20/
       headers:
         Host: aflzzul.meiquankongjian.com
-  - name: 西班牙+V2CROSS.COM
-    type: trojan
-    server: 80.173.231.254
-    port: 12420
-    password: wp9IsiY82uQhcmgNC1eoBM
-    sni: www.semanticstaplegun.click
-    skip-cert-verify: false
-  - name: 伊朗 V2CROSS.COM
-    type: vmess
-    server: 151.242.180.91
-    port: 30812
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 英国 V2CROSS.COM
-    type: vmess
-    server: 82.198.246.46
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -629,14 +624,13 @@ proxy-groups:
       - TR_speednode_0064
       - US_speednode_0066
       - US_speednode_0072
-      - 瑞士+V2CROSS.COM
+      - 伊朗 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
       - 美国+V2CROSS.COM
-      - 瑞士+V2CROSS.COM [1]
+      - 伊朗 V2CROSS.COM [1]
+      - 伊朗 V2CROSS.COM [2]
+      - 保加利亚+V2CROSS.COM
       - 广东省广州市 移动
-      - 西班牙+V2CROSS.COM
-      - 伊朗 V2CROSS.COM
-      - 英国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -694,14 +688,13 @@ proxy-groups:
       - TR_speednode_0064
       - US_speednode_0066
       - US_speednode_0072
-      - 瑞士+V2CROSS.COM
+      - 伊朗 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
       - 美国+V2CROSS.COM
-      - 瑞士+V2CROSS.COM [1]
+      - 伊朗 V2CROSS.COM [1]
+      - 伊朗 V2CROSS.COM [2]
+      - 保加利亚+V2CROSS.COM
       - 广东省广州市 移动
-      - 西班牙+V2CROSS.COM
-      - 伊朗 V2CROSS.COM
-      - 英国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -761,14 +754,13 @@ proxy-groups:
       - TR_speednode_0064
       - US_speednode_0066
       - US_speednode_0072
-      - 瑞士+V2CROSS.COM
+      - 伊朗 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
       - 美国+V2CROSS.COM
-      - 瑞士+V2CROSS.COM [1]
+      - 伊朗 V2CROSS.COM [1]
+      - 伊朗 V2CROSS.COM [2]
+      - 保加利亚+V2CROSS.COM
       - 广东省广州市 移动
-      - 西班牙+V2CROSS.COM
-      - 伊朗 V2CROSS.COM
-      - 英国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
