@@ -188,372 +188,197 @@ proxies:
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
-  - name: AT_speednode_0001
-    type: trojan
-    server: 152.53.45.251
-    port: 8888
-    password: trojan
-    sni: jflsjlaf.pages.dev
-    skip-cert-verify: false
-  - name: BR_speednode_0002
+  - name: FR_speednode_0001
     type: vless
-    server: 152.233.28.198
+    server: 188.130.207.158
+    port: 2053
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2560security=tls
+      headers:
+        Host: sni.111000.v6.navy
+  - name: FR_speednode_0002
+    type: vless
+    server: 188.130.207.92
     port: 8443
-    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-    tls: true
-    network: tcp
-  - name: BR_speednode_0003
-    type: vless
-    server: uk1.fromblancwithlove.com
-    port: 8443
-    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-    tls: true
-    network: tcp
-  - name: CH_speednode_0004
-    type: vless
-    server: 138.226.240.199
-    port: 4433
-    uuid: 00000000-0000-4000-8000-000000000000
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
     tls: false
     network: ws
     ws-opts:
-      path: /security=tls
+      path: /?ed=2560security=tls
       headers:
-        Host: sub.mot.ip-ddns.com
-  - name: DE_speednode_0032
+        Host: sni.111000.v6.navy
+  - name: GB_speednode_0003
     type: vless
-    server: 185.94.29.156
-    port: 4001
-    uuid: 00000000-0000-4000-8000-000000000000
-    tls: false
-    network: ws
-    ws-opts:
-      path: /security=tls
-      headers:
-        Host: sub.mot.ip-ddns.com
-  - name: DE_speednode_0033
-    type: vless
-    server: 37.114.50.157
-    port: 4002
-    uuid: 00000000-0000-4000-8000-000000000000
-    tls: false
-    network: ws
-    ws-opts:
-      path: /security=tls
-      headers:
-        Host: sub.mot.ip-ddns.com
-  - name: HK_speednode_0039
-    type: vless
-    server: 222.167.202.52
-    port: 7443
-    uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-    tls: false
-    network: ws
-    ws-opts:
-      path: /222.167.202.52:7443security=tls
-      headers:
-        Host: 2026.hhhhh.eu.org
-  - name: HK_speednode_0040
-    type: vless
-    server: 222.167.202.23
-    port: 7443
-    uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-    tls: false
-    network: ws
-    ws-opts:
-      path: /222.167.202.23:7443security=tls
-      headers:
-        Host: 2026.hhhhh.eu.org
-  - name: HK_speednode_0041
-    type: vless
-    server: 222.167.202.21
-    port: 7443
-    uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-    tls: false
-    network: ws
-    ws-opts:
-      path: /222.167.202.21:7443security=tls
-      headers:
-        Host: 2026.hhhhh.eu.org
-  - name: HK_speednode_0042
-    type: vless
-    server: 222.167.202.16
-    port: 7443
-    uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-    tls: false
-    network: ws
-    ws-opts:
-      path: /222.167.202.16:7443security=tls
-      headers:
-        Host: 2026.hhhhh.eu.org
-  - name: HK_speednode_0043
-    type: vless
-    server: 222.167.202.6
-    port: 7443
-    uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-    tls: false
-    network: ws
-    ws-opts:
-      path: /222.167.202.6:7443security=tls
-      headers:
-        Host: 2026.hhhhh.eu.org
-  - name: HK_speednode_0044
-    type: vless
-    server: 222.167.202.14
-    port: 7443
-    uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-    tls: false
-    network: ws
-    ws-opts:
-      path: /222.167.202.14:7443security=tls
-      headers:
-        Host: 2026.hhhhh.eu.org
-  - name: HK_speednode_0045
-    type: vless
-    server: 222.167.202.2
-    port: 7443
-    uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-    tls: false
-    network: ws
-    ws-opts:
-      path: /222.167.202.2:7443security=tls
-      headers:
-        Host: 2026.hhhhh.eu.org
-  - name: HK_speednode_0046
-    type: vless
-    server: 222.167.202.45
-    port: 7443
-    uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-    tls: false
-    network: ws
-    ws-opts:
-      path: /222.167.202.45:7443security=tls
-      headers:
-        Host: 2026.hhhhh.eu.org
-  - name: HK_speednode_0047
-    type: vless
-    server: 222.167.202.70
-    port: 7443
-    uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-    tls: false
-    network: ws
-    ws-opts:
-      path: /222.167.202.70:7443security=tls
-      headers:
-        Host: 2026.hhhhh.eu.org
-  - name: HK_speednode_0048
-    type: vless
-    server: 222.167.202.47
-    port: 7443
-    uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-    tls: false
-    network: ws
-    ws-opts:
-      path: /222.167.202.47:7443security=tls
-      headers:
-        Host: 2026.hhhhh.eu.org
-  - name: HK_speednode_0049
-    type: vless
-    server: 222.167.202.31
-    port: 7443
-    uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-    tls: false
-    network: ws
-    ws-opts:
-      path: /222.167.202.31:7443security=tls
-      headers:
-        Host: 2026.hhhhh.eu.org
-  - name: HK_speednode_0050
-    type: vless
-    server: 222.167.202.32
-    port: 7443
-    uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-    tls: false
-    network: ws
-    ws-opts:
-      path: /222.167.202.32:7443security=tls
-      headers:
-        Host: 2026.hhhhh.eu.org
-  - name: HK_speednode_0051
-    type: vless
-    server: 222.167.202.35
-    port: 7443
-    uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-    tls: false
-    network: ws
-    ws-opts:
-      path: /222.167.202.35:7443security=tls
-      headers:
-        Host: 2026.hhhhh.eu.org
-  - name: HK_speednode_0052
-    type: vless
-    server: 222.167.202.33
-    port: 7443
-    uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-    tls: false
-    network: ws
-    ws-opts:
-      path: /222.167.202.33:7443security=tls
-      headers:
-        Host: 2026.hhhhh.eu.org
-  - name: HK_speednode_0053
-    type: vless
-    server: 222.167.202.10
-    port: 7443
-    uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-    tls: false
-    network: ws
-    ws-opts:
-      path: /222.167.202.10:7443security=tls
-      headers:
-        Host: 2026.hhhhh.eu.org
-  - name: HK_speednode_0054
-    type: vless
-    server: 222.167.202.4
-    port: 7443
-    uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-    tls: false
-    network: ws
-    ws-opts:
-      path: /222.167.202.4:7443security=tls
-      headers:
-        Host: 2026.hhhhh.eu.org
-  - name: HK_speednode_0055
-    type: vless
-    server: 222.167.202.22
-    port: 7443
-    uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-    tls: false
-    network: ws
-    ws-opts:
-      path: /222.167.202.22:7443security=tls
-      headers:
-        Host: 2026.hhhhh.eu.org
-  - name: HK_speednode_0056
-    type: vless
-    server: 222.167.202.60
-    port: 7443
-    uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-    tls: false
-    network: ws
-    ws-opts:
-      path: /222.167.202.60:7443security=tls
-      headers:
-        Host: 2026.hhhhh.eu.org
-  - name: HK_speednode_0057
-    type: vless
-    server: 222.167.202.50
-    port: 7443
-    uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-    tls: false
-    network: ws
-    ws-opts:
-      path: /222.167.202.50:7443security=tls
-      headers:
-        Host: 2026.hhhhh.eu.org
-  - name: IN_speednode_0058
-    type: trojan
-    server: tttyder.wsone.icu
+    server: 138.124.186.202
     port: 443
-    password: M7v%25w11Se%2A
-    sni: tttyder.wsone.icu
-    skip-cert-verify: true
-  - name: NL_speednode_0061
+    uuid: e346f220-4ca4-4f69-a66b-52e992b3b625
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: HK_speednode_0004
+    type: vless
+    server: 203.168.131.110
+    port: 3389
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /danfengfp=random
+      headers:
+        Host: snippet.chinav.eu.cc
+  - name: KR_speednode_0007
+    type: vless
+    server: 106.251.70.75
+    port: 10162
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /danfengfp=random
+      headers:
+        Host: snippet.chinav.eu.cc
+  - name: KR_speednode_0008
+    type: vless
+    server: 211.194.9.159
+    port: 20244
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /danfeng?ed=2560fp=chrome
+      headers:
+        Host: snippet.danfeng.theworkpc.com
+  - name: NL_speednode_0009
     type: trojan
     server: 94.131.105.125
     port: 4443
     password: strong-secret-pass-777
     sni: 94.131.105.125
     skip-cert-verify: true
-  - name: RU_speednode_0063
+  - name: NL_speednode_0010
     type: vless
-    server: 217.114.11.246
+    server: 103.97.88.133
     port: 443
-    uuid: 9768f14f-a790-4c78-b1d9-60cc0e9d99a0
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: TR_speednode_0064
-    type: vless
-    server: 188.132.184.148
-    port: 8443
-    uuid: d6cbf3e4-b7ca-a4b2-0b04-eacbdc28bc5a
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: US_speednode_0066
-    type: vless
-    server: 192.200.160.20
-    port: 443
-    uuid: e9254fe9-dd7e-4f90-ab06-4c96c5cd7362
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
     tls: false
     network: ws
     ws-opts:
-      path: /qszxrsws?ed=2560security=tls
+      path: /?ed=2560security=tls
       headers:
-        Host: 639073677243704890.camry-perma.info
-  - name: US_speednode_0072
+        Host: sni.111000.v6.navy
+  - name: US_speednode_0011
+    type: trojan
+    server: 54.46.72.234
+    port: 8025
+    password: trojan
+    sni: jflsjlaf.pages.dev
+    skip-cert-verify: true
+  - name: US_speednode_0012
     type: vless
-    server: vleesvpn-app-nl01.gw-vpn.click
+    server: 192.0.54.131
     port: 443
-    uuid: b605b776-b676-430e-8957-00f1e0166bee
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /danfeng?ed=2560security=tls
+      headers:
+        Host: snippet.danfeng.kozow.com
+  - name: US_speednode_0013
+    type: vless
+    server: 192.0.63.230
+    port: 443
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /danfeng?ed=2560security=tls
+      headers:
+        Host: snippet.danfeng.kozow.com
+  - name: US_speednode_0014
+    type: vless
+    server: 192.0.63.56
+    port: 443
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /danfeng?ed=2560security=tls
+      headers:
+        Host: snippet.danfeng.kozow.com
+  - name: US_speednode_0016
+    type: vless
+    server: 192.0.63.49
+    port: 443
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /danfeng?ed=2560security=tls
+      headers:
+        Host: snippet.danfeng.theworkpc.com
+  - name: US_speednode_0017
+    type: vless
+    server: 64.23.143.23
+    port: 34045
+    uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
     tls: true
     network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: 伊朗 V2CROSS.COM
+  - name: 俄罗斯+V2CROSS.COM
+    type: trojan
+    server: 194.87.10.31
+    port: 23357
+    password: fQmMJwOLMlqHednu2SVED8gi-+H-db9kbg
+    sni: sgp9.node-resource.click
+    skip-cert-verify: false
+  - name: 英国 V2CROSS.COM
     type: vmess
-    server: v30.hdacd.com
-    port: 30830
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    server: 82.198.246.46
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     alterId: 0
     cipher: auto
     tls: false
     network: tcp
+  - name: 瑞士+V2CROSS.COM
+    type: trojan
+    server: 81.29.149.212
+    port: 18390
+    password: hCjWaBe5vTkewfiljOL%3D9FS9DYg0c09c.t
+    sni: osl8.solidly.click
+    skip-cert-verify: false
   - name: 亚太地区 V2CROSS.COM
     type: vmess
     server: 103.181.164.145
-    port: 54022
+    port: 51556
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 216.238.102.254
-    port: 26593
-    password: BvzUvt45hON9We5X9wM6I9ZrxHRcYd46QK
-    sni: sao2.cdn-graph.click
-    skip-cert-verify: false
-  - name: 伊朗 V2CROSS.COM [1]
-    type: vmess
-    server: v12.hdacd.com
-    port: 30812
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     alterId: 0
     cipher: auto
     tls: false
     network: tcp
-  - name: 伊朗 V2CROSS.COM [2]
+  - name: 英国 V2CROSS.COM [1]
     type: vmess
-    server: 151.242.180.91
-    port: 30812
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     alterId: 0
     cipher: auto
     tls: false
     network: tcp
-  - name: 保加利亚+V2CROSS.COM
+  - name: 美国+Choopa公司数据中心
     type: trojan
-    server: 78.159.131.12
-    port: 28259
-    password: MeaDiUmPlkWbZJ2BON8tz
-    sni: ads.x5.ru
+    server: 104.238.162.6
+    port: 13109
+    password: WwipNOSqUh49CEapMmIrv6m6AZLf-EC0+T
+    sni: ord2.edge-command.click
     skip-cert-verify: false
-  - name: 广东省广州市 移动
+  - name: 亚太地区 V2CROSS.COM [1]
     type: vmess
     server: aflzzul.meiquankongjian.com
-    port: 52512
+    port: 52511
     uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
     alterId: 0
     cipher: auto
@@ -563,6 +388,15 @@ proxies:
       path: /564dfa20/
       headers:
         Host: aflzzul.meiquankongjian.com
+  - name: 伊朗 V2CROSS.COM
+    type: vmess
+    server: 151.242.180.91
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -593,44 +427,28 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - AT_speednode_0001
-      - BR_speednode_0002
-      - BR_speednode_0003
-      - CH_speednode_0004
-      - DE_speednode_0032
-      - DE_speednode_0033
-      - HK_speednode_0039
-      - HK_speednode_0040
-      - HK_speednode_0041
-      - HK_speednode_0042
-      - HK_speednode_0043
-      - HK_speednode_0044
-      - HK_speednode_0045
-      - HK_speednode_0046
-      - HK_speednode_0047
-      - HK_speednode_0048
-      - HK_speednode_0049
-      - HK_speednode_0050
-      - HK_speednode_0051
-      - HK_speednode_0052
-      - HK_speednode_0053
-      - HK_speednode_0054
-      - HK_speednode_0055
-      - HK_speednode_0056
-      - HK_speednode_0057
-      - IN_speednode_0058
-      - NL_speednode_0061
-      - RU_speednode_0063
-      - TR_speednode_0064
-      - US_speednode_0066
-      - US_speednode_0072
-      - 伊朗 V2CROSS.COM
+      - FR_speednode_0001
+      - FR_speednode_0002
+      - GB_speednode_0003
+      - HK_speednode_0004
+      - KR_speednode_0007
+      - KR_speednode_0008
+      - NL_speednode_0009
+      - NL_speednode_0010
+      - US_speednode_0011
+      - US_speednode_0012
+      - US_speednode_0013
+      - US_speednode_0014
+      - US_speednode_0016
+      - US_speednode_0017
+      - 俄罗斯+V2CROSS.COM
+      - 英国 V2CROSS.COM
+      - 瑞士+V2CROSS.COM
       - 亚太地区 V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 伊朗 V2CROSS.COM [1]
-      - 伊朗 V2CROSS.COM [2]
-      - 保加利亚+V2CROSS.COM
-      - 广东省广州市 移动
+      - 英国 V2CROSS.COM [1]
+      - 美国+Choopa公司数据中心
+      - 亚太地区 V2CROSS.COM [1]
+      - 伊朗 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -657,44 +475,28 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - AT_speednode_0001
-      - BR_speednode_0002
-      - BR_speednode_0003
-      - CH_speednode_0004
-      - DE_speednode_0032
-      - DE_speednode_0033
-      - HK_speednode_0039
-      - HK_speednode_0040
-      - HK_speednode_0041
-      - HK_speednode_0042
-      - HK_speednode_0043
-      - HK_speednode_0044
-      - HK_speednode_0045
-      - HK_speednode_0046
-      - HK_speednode_0047
-      - HK_speednode_0048
-      - HK_speednode_0049
-      - HK_speednode_0050
-      - HK_speednode_0051
-      - HK_speednode_0052
-      - HK_speednode_0053
-      - HK_speednode_0054
-      - HK_speednode_0055
-      - HK_speednode_0056
-      - HK_speednode_0057
-      - IN_speednode_0058
-      - NL_speednode_0061
-      - RU_speednode_0063
-      - TR_speednode_0064
-      - US_speednode_0066
-      - US_speednode_0072
-      - 伊朗 V2CROSS.COM
+      - FR_speednode_0001
+      - FR_speednode_0002
+      - GB_speednode_0003
+      - HK_speednode_0004
+      - KR_speednode_0007
+      - KR_speednode_0008
+      - NL_speednode_0009
+      - NL_speednode_0010
+      - US_speednode_0011
+      - US_speednode_0012
+      - US_speednode_0013
+      - US_speednode_0014
+      - US_speednode_0016
+      - US_speednode_0017
+      - 俄罗斯+V2CROSS.COM
+      - 英国 V2CROSS.COM
+      - 瑞士+V2CROSS.COM
       - 亚太地区 V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 伊朗 V2CROSS.COM [1]
-      - 伊朗 V2CROSS.COM [2]
-      - 保加利亚+V2CROSS.COM
-      - 广东省广州市 移动
+      - 英国 V2CROSS.COM [1]
+      - 美国+Choopa公司数据中心
+      - 亚太地区 V2CROSS.COM [1]
+      - 伊朗 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -723,44 +525,28 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - AT_speednode_0001
-      - BR_speednode_0002
-      - BR_speednode_0003
-      - CH_speednode_0004
-      - DE_speednode_0032
-      - DE_speednode_0033
-      - HK_speednode_0039
-      - HK_speednode_0040
-      - HK_speednode_0041
-      - HK_speednode_0042
-      - HK_speednode_0043
-      - HK_speednode_0044
-      - HK_speednode_0045
-      - HK_speednode_0046
-      - HK_speednode_0047
-      - HK_speednode_0048
-      - HK_speednode_0049
-      - HK_speednode_0050
-      - HK_speednode_0051
-      - HK_speednode_0052
-      - HK_speednode_0053
-      - HK_speednode_0054
-      - HK_speednode_0055
-      - HK_speednode_0056
-      - HK_speednode_0057
-      - IN_speednode_0058
-      - NL_speednode_0061
-      - RU_speednode_0063
-      - TR_speednode_0064
-      - US_speednode_0066
-      - US_speednode_0072
-      - 伊朗 V2CROSS.COM
+      - FR_speednode_0001
+      - FR_speednode_0002
+      - GB_speednode_0003
+      - HK_speednode_0004
+      - KR_speednode_0007
+      - KR_speednode_0008
+      - NL_speednode_0009
+      - NL_speednode_0010
+      - US_speednode_0011
+      - US_speednode_0012
+      - US_speednode_0013
+      - US_speednode_0014
+      - US_speednode_0016
+      - US_speednode_0017
+      - 俄罗斯+V2CROSS.COM
+      - 英国 V2CROSS.COM
+      - 瑞士+V2CROSS.COM
       - 亚太地区 V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 伊朗 V2CROSS.COM [1]
-      - 伊朗 V2CROSS.COM [2]
-      - 保加利亚+V2CROSS.COM
-      - 广东省广州市 移动
+      - 英国 V2CROSS.COM [1]
+      - 美国+Choopa公司数据中心
+      - 亚太地区 V2CROSS.COM [1]
+      - 伊朗 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
