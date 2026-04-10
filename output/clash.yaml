@@ -348,74 +348,30 @@ proxies:
       path: /?ed=2560security=tls
       headers:
         Host: sni.111000.v6.navy
-  - name: 俄罗斯+V2CROSS.COM
-    type: trojan
-    server: 194.87.10.31
-    port: 23357
-    password: fQmMJwOLMlqHednu2SVED8gi-+H-db9kbg
-    sni: sgp9.node-resource.click
-    skip-cert-verify: false
-  - name: 美国 CloudFlare节点
+  - name: 亚太地区 V2CROSS.COM
     type: vmess
-    server: 104.17.77.77
-    port: 8443
-    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-    alterId: 0
+    server: 103.181.164.145
+    port: 54022
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /lMnsZUN4/
-      headers: {}
+    tls: false
+    network: tcp
+  - name: 保加利亚+V2CROSS.COM
+    type: trojan
+    server: 78.159.131.12
+    port: 28259
+    password: MeaDiUmPlkWbZJ2BON8tz
+    sni: ads.x5.ru
+    skip-cert-verify: false
   - name: 英国+伦敦Virgin+Media
     type: trojan
-    server: 82.26.155.199
+    server: 82.26.155.237
     port: 10369
     password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-    sni: fra4.chasem2026sud.com
-    skip-cert-verify: false
-  - name: 香港+电讯盈科有限公司
-    type: trojan
-    server: 58.152.25.253
-    port: 443
-    password: BxceQaOe
-    sni: 58.152.25.253
+    sni: fra5.chasem2026sud.com
     skip-cert-verify: false
   - name: 英国 V2CROSS.COM
-    type: vmess
-    server: 82.198.246.46
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 216.238.102.254
-    port: 26593
-    password: BvzUvt45hON9We5X9wM6I9ZrxHRcYd46QK
-    sni: sao2.cdn-graph.click
-    skip-cert-verify: false
-  - name: 伊朗 V2CROSS.COM
-    type: vmess
-    server: v30.hdacd.com
-    port: 30830
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 伊朗 V2CROSS.COM [1]
-    type: vmess
-    server: 151.242.180.91
-    port: 30812
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 英国 V2CROSS.COM [1]
     type: vmess
     server: 82.198.246.250
     port: 180
@@ -424,6 +380,49 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
+  - name: 英国 V2CROSS.COM [1]
+    type: vmess
+    server: m.cnmjin.net
+    port: 16616
+    uuid: b688ce0f-9201-4e8e-a67a-f3be2c6aa201
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: 7a297964a2b31dafd3529ef4d14574b9.mobgslb.tbcache.com
+  - name: 英国+伦敦Virgin+Media [1]
+    type: trojan
+    server: 82.26.155.199
+    port: 10369
+    password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
+    sni: fra4.chasem2026sud.com
+    skip-cert-verify: true
+  - name: 伊朗 V2CROSS.COM
+    type: vmess
+    server: v12.hdacd.com
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 英国+伦敦Virgin+Media [2]
+    type: trojan
+    server: 82.26.155.3
+    port: 10369
+    password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
+    sni: fra34.chasem2026sud.com
+    skip-cert-verify: false
+  - name: 英国+V2CROSS.COM
+    type: trojan
+    server: 85.211.192.237
+    port: 13388
+    password: 413fdb10-a596-4e7c-b081-54243d252894
+    sni: www.baidu.com
+    skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -471,15 +470,15 @@ proxy-groups:
       - RU_speednode_0041
       - US_speednode_0043
       - US_speednode_0044
-      - 俄罗斯+V2CROSS.COM
-      - 美国 CloudFlare节点
+      - 亚太地区 V2CROSS.COM
+      - 保加利亚+V2CROSS.COM
       - 英国+伦敦Virgin+Media
-      - 香港+电讯盈科有限公司
       - 英国 V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 伊朗 V2CROSS.COM
-      - 伊朗 V2CROSS.COM [1]
       - 英国 V2CROSS.COM [1]
+      - 英国+伦敦Virgin+Media [1]
+      - 伊朗 V2CROSS.COM
+      - 英国+伦敦Virgin+Media [2]
+      - 英国+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -523,15 +522,15 @@ proxy-groups:
       - RU_speednode_0041
       - US_speednode_0043
       - US_speednode_0044
-      - 俄罗斯+V2CROSS.COM
-      - 美国 CloudFlare节点
+      - 亚太地区 V2CROSS.COM
+      - 保加利亚+V2CROSS.COM
       - 英国+伦敦Virgin+Media
-      - 香港+电讯盈科有限公司
       - 英国 V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 伊朗 V2CROSS.COM
-      - 伊朗 V2CROSS.COM [1]
       - 英国 V2CROSS.COM [1]
+      - 英国+伦敦Virgin+Media [1]
+      - 伊朗 V2CROSS.COM
+      - 英国+伦敦Virgin+Media [2]
+      - 英国+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -577,15 +576,15 @@ proxy-groups:
       - RU_speednode_0041
       - US_speednode_0043
       - US_speednode_0044
-      - 俄罗斯+V2CROSS.COM
-      - 美国 CloudFlare节点
+      - 亚太地区 V2CROSS.COM
+      - 保加利亚+V2CROSS.COM
       - 英国+伦敦Virgin+Media
-      - 香港+电讯盈科有限公司
       - 英国 V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 伊朗 V2CROSS.COM
-      - 伊朗 V2CROSS.COM [1]
       - 英国 V2CROSS.COM [1]
+      - 英国+伦敦Virgin+Media [1]
+      - 伊朗 V2CROSS.COM
+      - 英国+伦敦Virgin+Media [2]
+      - 英国+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
