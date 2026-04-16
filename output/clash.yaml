@@ -309,13 +309,6 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 荷兰阿姆斯特丹+xTom/AS3214
-    type: trojan
-    server: nl-4.tr202512.com
-    port: 443
-    password: M08tvzYWtUEJNtbpHp
-    sni: nl-4.tr202512.com
-    skip-cert-verify: false
   - name: 英国 V2CROSS.COM
     type: vmess
     server: 82.198.246.46
@@ -327,6 +320,31 @@ proxies:
     network: tcp
   - name: 英国 V2CROSS.COM [1]
     type: vmess
+    server: 82.198.246.250
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 166.88.197.60
+    port: 26650
+    password: UNWA6USASAb6%3DuAAZeZMFd+2uKB4.d5KOm
+    sni: sea9.firewallcontract.click
+    skip-cert-verify: false
+  - name: 美国 纽约(Prudential)
+    type: vmess
+    server: v12.hdacd.com
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 英国 V2CROSS.COM [2]
+    type: vmess
     server: 82.198.246.97
     port: 180
     uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
@@ -334,30 +352,7 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 香港 电讯盈科有限公司
-    type: vmess
-    server: efan.dnsefan04881.com
-    port: 7754
-    uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 英国+伦敦Virgin+Media
-    type: trojan
-    server: 82.26.155.105
-    port: 10369
-    password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-    sni: fra32.chasem2026sud.com
-    skip-cert-verify: false
-  - name: 英国+伦敦Virgin+Media [1]
-    type: trojan
-    server: 82.26.155.20
-    port: 10369
-    password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-    sni: fra35.chasem2026sud.com
-    skip-cert-verify: false
-  - name: 美国 东北部七州电讯网
+  - name: 伊朗 V2CROSS.COM
     type: vmess
     server: v30.hdacd.com
     port: 30830
@@ -366,19 +361,12 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 保加利亚+V2CROSS.COM
+  - name: 英国+伦敦Virgin+Media
     type: trojan
-    server: 78.159.131.12
-    port: 28259
-    password: MeaDiUmPlkWbZJ2BON8tz
-    sni: ads.x5.ru
-    skip-cert-verify: false
-  - name: 英国+伦敦Virgin+Media [2]
-    type: trojan
-    server: 82.26.155.237
+    server: 82.26.155.199
     port: 10369
     password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-    sni: fra5.chasem2026sud.com
+    sni: fra4.chasem2026sud.com
     skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
@@ -423,15 +411,13 @@ proxy-groups:
       - US_speednode_0015
       - US_speednode_0021
       - US_speednode_0022
-      - 荷兰阿姆斯特丹+xTom/AS3214
       - 英国 V2CROSS.COM
       - 英国 V2CROSS.COM [1]
-      - 香港 电讯盈科有限公司
+      - 美国+V2CROSS.COM
+      - 美国 纽约(Prudential)
+      - 英国 V2CROSS.COM [2]
+      - 伊朗 V2CROSS.COM
       - 英国+伦敦Virgin+Media
-      - 英国+伦敦Virgin+Media [1]
-      - 美国 东北部七州电讯网
-      - 保加利亚+V2CROSS.COM
-      - 英国+伦敦Virgin+Media [2]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -471,15 +457,13 @@ proxy-groups:
       - US_speednode_0015
       - US_speednode_0021
       - US_speednode_0022
-      - 荷兰阿姆斯特丹+xTom/AS3214
       - 英国 V2CROSS.COM
       - 英国 V2CROSS.COM [1]
-      - 香港 电讯盈科有限公司
+      - 美国+V2CROSS.COM
+      - 美国 纽约(Prudential)
+      - 英国 V2CROSS.COM [2]
+      - 伊朗 V2CROSS.COM
       - 英国+伦敦Virgin+Media
-      - 英国+伦敦Virgin+Media [1]
-      - 美国 东北部七州电讯网
-      - 保加利亚+V2CROSS.COM
-      - 英国+伦敦Virgin+Media [2]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -521,15 +505,13 @@ proxy-groups:
       - US_speednode_0015
       - US_speednode_0021
       - US_speednode_0022
-      - 荷兰阿姆斯特丹+xTom/AS3214
       - 英国 V2CROSS.COM
       - 英国 V2CROSS.COM [1]
-      - 香港 电讯盈科有限公司
+      - 美国+V2CROSS.COM
+      - 美国 纽约(Prudential)
+      - 英国 V2CROSS.COM [2]
+      - 伊朗 V2CROSS.COM
       - 英国+伦敦Virgin+Media
-      - 英国+伦敦Virgin+Media [1]
-      - 美国 东北部七州电讯网
-      - 保加利亚+V2CROSS.COM
-      - 英国+伦敦Virgin+Media [2]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
