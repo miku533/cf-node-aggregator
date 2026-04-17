@@ -195,72 +195,45 @@ proxies:
     password: trojan
     sni: jflsjlaf.pages.dev
     skip-cert-verify: false
-  - name: AT_speednode_0002
-    type: trojan
-    server: 152.53.200.167
-    port: 8444
-    password: trojan
-    sni: jflsjlaf.pages.dev
-    skip-cert-verify: false
-  - name: DE_speednode_0003
+  - name: DK_speednode_0004
     type: vless
-    server: 130.162.220.137
+    server: 159.195.82.187
+    port: 9443
+    uuid: 4649d681-7f26-4959-a3f2-02eb8866230f
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: GB_speednode_0006
+    type: vless
+    server: 212.135.36.241
     port: 443
-    uuid: fadab0a4-861d-4ebf-89ac-c9b34aef631a
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
     tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: DE_speednode_0004
-    type: vless
-    server: 92.119.166.90
-    port: 7443
-    uuid: 72eb4de8-5eca-420d-8876-173ef58d82e8
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: GB_speednode_0008
-    type: vless
-    server: 86.54.82.239
-    port: 443
-    uuid: 43488128-319e-f480-64ea-0acdc712e2a8
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: GB_speednode_0009
-    type: vless
-    server: 2.26.91.111
-    port: 443
-    uuid: d5f95f47-9399-49c6-a76b-aa6b289609ba
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: GB_speednode_0010
-    type: vless
-    server: 2.26.91.110
-    port: 443
-    uuid: d5f95f47-9399-49c6-a76b-aa6b289609ba
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: HK_speednode_0012
-    type: vless
-    server: 222.167.202.2
-    port: 7443
-    uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-    tls: false
     network: ws
     ws-opts:
-      path: /222.167.202.2:7443security=tls
+      path: /danfengfp=chrome
       headers:
-        Host: 2026.hhhhh.eu.org
-  - name: NL_speednode_0013
+        Host: s3vz.user-service.chinav.indevs.in
+  - name: KR_speednode_0009
     type: vless
-    server: 93.185.166.211
-    port: 443
-    uuid: 69a2af58-d74a-44ca-864a-e09b493f4274
+    server: 218.144.49.230
+    port: 18889
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /danfengfp=chrome
+      headers:
+        Host: s3vz.user-service.chinav.indevs.in
+  - name: KR_speednode_0010
+    type: vless
+    server: 144.24.74.102
+    port: 50911
+    uuid: 820409af-997a-41c4-9e51-46f373951a39
     tls: true
     network: tcp
-  - name: RO_speednode_0014
+    flow: xtls-rprx-vision-udp443
+  - name: RO_speednode_0011
     type: vless
     server: 91.199.50.37
     port: 443
@@ -268,39 +241,22 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: SG_speednode_0015
+  - name: RU_speednode_0013
     type: vless
-    server: 146.235.18.248
-    port: 45137
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    tls: false
-    network: ws
-    ws-opts:
-      path: /danfengsecurity=tls
-      headers:
-        Host: snippet.danfeng.rr.kg
-  - name: US_speednode_0016
+    server: 171.22.181.107
+    port: 443
+    uuid: 913c6074-a747-492b-a7e9-5abfcad6369d
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: SC_speednode_0014
     type: vless
-    server: developers.cloudflare.com
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /fp=randomized
-      headers:
-        Host: cnmfangbinxing.fangbinxingnmsl-nmsl.workers.dev
-  - name: US_speednode_0017
-    type: vless
-    server: cf.090227.xyz
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /fp=randomized
-      headers:
-        Host: cnmfangbinxing.fangbinxingnmsl-nmsl.workers.dev
+    server: 195.66.27.165
+    port: 7443
+    uuid: caa3af29-3b04-4099-9772-c64a1b7cca34
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
   - name: US_speednode_0018
     type: vless
     server: 18.245.54.3
@@ -312,62 +268,7 @@ proxies:
       path: /fp=chrome
       headers:
         Host: d2241b25w3zftf.cloudfront.net
-  - name: US_speednode_0019
-    type: vless
-    server: itarmy.com.ua
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /fp=randomized
-      headers:
-        Host: cnmfangbinxing.fangbinxingnmsl-nmsl.workers.dev
   - name: US_speednode_0020
-    type: vless
-    server: docs.cloudflare.com
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /fp=randomized
-      headers:
-        Host: cnmfangbinxing.fangbinxingnmsl-nmsl.workers.dev
-  - name: US_speednode_0021
-    type: vless
-    server: cdnjs.com
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /fp=randomized
-      headers:
-        Host: cnmfangbinxing.fangbinxingnmsl-nmsl.workers.dev
-  - name: US_speednode_0022
-    type: vless
-    server: www.temu.com
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /fp=randomized
-      headers:
-        Host: cnmfangbinxing.fangbinxingnmsl-nmsl.workers.dev
-  - name: US_speednode_0024
-    type: vless
-    server: www.udemy.com
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /fp=randomized
-      headers:
-        Host: cnmfangbinxing.fangbinxingnmsl-nmsl.workers.dev
-  - name: US_speednode_0028
     type: vless
     server: 144.31.127.61
     port: 443
@@ -375,79 +276,46 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: US_speednode_0029
+  - name: US_speednode_0022
     type: vless
     server: 216.57.105.74
     port: 443
     uuid: 73c0a723-c0ab-4ad8-8f25-799b9bd54e36
     tls: true
     network: tcp
-  - name: US_speednode_0030
-    type: vless
-    server: sqt.gtimg.cn.e791.com
-    port: 443
-    uuid: f10367b9-5b67-40fa-a4aa-675eee3e0530
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: US_speednode_0031
-    type: vless
-    server: 129.153.71.226
-    port: 443
-    uuid: d46056cf-da4e-4426-a3e4-39fcbfefa112
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: 巴西圣保罗 CloudFlare节点
-    type: vmess
-    server: 188.114.96.3
-    port: 8443
-    uuid: 19e52bf4-1b7d-4bd4-ae66-6ca024436c17
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /gbt
-      headers: {}
   - name: 英国+伦敦Virgin+Media
     type: trojan
-    server: 82.26.155.105
+    server: 82.26.155.3
     port: 10369
     password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-    sni: fra32.chasem2026sud.com
+    sni: fra34.chasem2026sud.com
     skip-cert-verify: false
-  - name: 英国+伦敦Virgin+Media [1]
-    type: trojan
-    server: 82.26.155.199
-    port: 10369
-    password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-    sni: fra4.chasem2026sud.com
-    skip-cert-verify: false
-  - name: 香港 电讯盈科有限公司
+  - name: 英国 V2CROSS.COM
     type: vmess
-    server: efan.dnsefan04881.com
-    port: 7754
-    uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     alterId: 0
     cipher: auto
     tls: false
     network: tcp
-  - name: 保加利亚+V2CROSS.COM
+  - name: 美国 纽约(Prudential)
+    type: vmess
+    server: v30.hdacd.com
+    port: 30830
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 英国+伦敦Virgin+Media [1]
     type: trojan
-    server: 78.159.131.12
-    port: 28259
-    password: MeaDiUmPlkWbZJ2BON8tz
-    sni: ads.x5.ru
-    skip-cert-verify: false
-  - name: 英国+伦敦Virgin+Media [2]
-    type: trojan
-    server: 82.26.155.121
+    server: 82.26.155.237
     port: 10369
     password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-    sni: fra33.chasem2026sud.com
+    sni: fra5.chasem2026sud.com
     skip-cert-verify: false
-  - name: 英国 V2CROSS.COM
+  - name: 英国 V2CROSS.COM [1]
     type: vmess
     server: 82.198.246.250
     port: 180
@@ -456,6 +324,27 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 166.88.197.60
+    port: 26650
+    password: UNWA6USASAb6%3DuAAZeZMFd+2uKB4.d5KOm
+    sni: sea9.firewallcontract.click
+    skip-cert-verify: false
+  - name: 西班牙+V2CROSS.COM
+    type: trojan
+    server: 80.173.230.196
+    port: 26279
+    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
+    sni: 80.173.230.196
+    skip-cert-verify: true
+  - name: 俄罗斯+V2CROSS.COM
+    type: trojan
+    server: 194.87.10.31
+    port: 23357
+    password: fQmMJwOLMlqHednu2SVED8gi-+H-db9kbg
+    sni: sgp9.node-resource.click
+    skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -487,35 +376,24 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - AT_speednode_0001
-      - AT_speednode_0002
-      - DE_speednode_0003
-      - DE_speednode_0004
-      - GB_speednode_0008
-      - GB_speednode_0009
-      - GB_speednode_0010
-      - HK_speednode_0012
-      - NL_speednode_0013
-      - RO_speednode_0014
-      - SG_speednode_0015
-      - US_speednode_0016
-      - US_speednode_0017
+      - DK_speednode_0004
+      - GB_speednode_0006
+      - KR_speednode_0009
+      - KR_speednode_0010
+      - RO_speednode_0011
+      - RU_speednode_0013
+      - SC_speednode_0014
       - US_speednode_0018
-      - US_speednode_0019
       - US_speednode_0020
-      - US_speednode_0021
       - US_speednode_0022
-      - US_speednode_0024
-      - US_speednode_0028
-      - US_speednode_0029
-      - US_speednode_0030
-      - US_speednode_0031
-      - 巴西圣保罗 CloudFlare节点
       - 英国+伦敦Virgin+Media
-      - 英国+伦敦Virgin+Media [1]
-      - 香港 电讯盈科有限公司
-      - 保加利亚+V2CROSS.COM
-      - 英国+伦敦Virgin+Media [2]
       - 英国 V2CROSS.COM
+      - 美国 纽约(Prudential)
+      - 英国+伦敦Virgin+Media [1]
+      - 英国 V2CROSS.COM [1]
+      - 美国+V2CROSS.COM
+      - 西班牙+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -543,35 +421,24 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - AT_speednode_0001
-      - AT_speednode_0002
-      - DE_speednode_0003
-      - DE_speednode_0004
-      - GB_speednode_0008
-      - GB_speednode_0009
-      - GB_speednode_0010
-      - HK_speednode_0012
-      - NL_speednode_0013
-      - RO_speednode_0014
-      - SG_speednode_0015
-      - US_speednode_0016
-      - US_speednode_0017
+      - DK_speednode_0004
+      - GB_speednode_0006
+      - KR_speednode_0009
+      - KR_speednode_0010
+      - RO_speednode_0011
+      - RU_speednode_0013
+      - SC_speednode_0014
       - US_speednode_0018
-      - US_speednode_0019
       - US_speednode_0020
-      - US_speednode_0021
       - US_speednode_0022
-      - US_speednode_0024
-      - US_speednode_0028
-      - US_speednode_0029
-      - US_speednode_0030
-      - US_speednode_0031
-      - 巴西圣保罗 CloudFlare节点
       - 英国+伦敦Virgin+Media
-      - 英国+伦敦Virgin+Media [1]
-      - 香港 电讯盈科有限公司
-      - 保加利亚+V2CROSS.COM
-      - 英国+伦敦Virgin+Media [2]
       - 英国 V2CROSS.COM
+      - 美国 纽约(Prudential)
+      - 英国+伦敦Virgin+Media [1]
+      - 英国 V2CROSS.COM [1]
+      - 美国+V2CROSS.COM
+      - 西班牙+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -601,35 +468,24 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - AT_speednode_0001
-      - AT_speednode_0002
-      - DE_speednode_0003
-      - DE_speednode_0004
-      - GB_speednode_0008
-      - GB_speednode_0009
-      - GB_speednode_0010
-      - HK_speednode_0012
-      - NL_speednode_0013
-      - RO_speednode_0014
-      - SG_speednode_0015
-      - US_speednode_0016
-      - US_speednode_0017
+      - DK_speednode_0004
+      - GB_speednode_0006
+      - KR_speednode_0009
+      - KR_speednode_0010
+      - RO_speednode_0011
+      - RU_speednode_0013
+      - SC_speednode_0014
       - US_speednode_0018
-      - US_speednode_0019
       - US_speednode_0020
-      - US_speednode_0021
       - US_speednode_0022
-      - US_speednode_0024
-      - US_speednode_0028
-      - US_speednode_0029
-      - US_speednode_0030
-      - US_speednode_0031
-      - 巴西圣保罗 CloudFlare节点
       - 英国+伦敦Virgin+Media
-      - 英国+伦敦Virgin+Media [1]
-      - 香港 电讯盈科有限公司
-      - 保加利亚+V2CROSS.COM
-      - 英国+伦敦Virgin+Media [2]
       - 英国 V2CROSS.COM
+      - 美国 纽约(Prudential)
+      - 英国+伦敦Virgin+Media [1]
+      - 英国 V2CROSS.COM [1]
+      - 美国+V2CROSS.COM
+      - 西班牙+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
