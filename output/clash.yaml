@@ -398,6 +398,13 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
+  - name: 保加利亚+V2CROSS.COM
+    type: trojan
+    server: 78.159.131.12
+    port: 28259
+    password: MeaDiUmPlkWbZJ2BON8tz
+    sni: ads.x5.ru
+    skip-cert-verify: false
   - name: 香港 电讯盈科有限公司
     type: vmess
     server: efan.dnsefan04881.com
@@ -407,50 +414,24 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 英国+伦敦Virgin+Media
-    type: trojan
-    server: 82.26.155.237
-    port: 10369
-    password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-    sni: fra5.chasem2026sud.com
-    skip-cert-verify: false
-  - name: 英国+伦敦Virgin+Media [1]
-    type: trojan
-    server: 82.26.155.105
-    port: 10369
-    password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-    sni: fra32.chasem2026sud.com
-    skip-cert-verify: true
-  - name: 俄罗斯+V2CROSS.COM
-    type: trojan
-    server: 194.87.10.31
-    port: 23357
-    password: fQmMJwOLMlqHednu2SVED8gi-+H-db9kbg
-    sni: sgp9.node-resource.click
-    skip-cert-verify: false
-  - name: 香港+电讯盈科有限公司
-    type: trojan
-    server: 58.152.25.253
-    port: 443
-    password: BxceQaOe
-    sni: 58.152.25.253
-    skip-cert-verify: false
-  - name: 英国 V2CROSS.COM
+  - name: 亚太地区 V2CROSS.COM
     type: vmess
-    server: 82.198.246.46
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    server: 103.181.164.145
+    port: 51556
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 0
     cipher: auto
     tls: false
     network: tcp
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 166.88.197.60
-    port: 26650
-    password: UNWA6USASAb6%3DuAAZeZMFd+2uKB4.d5KOm
-    sni: sea9.firewallcontract.click
-    skip-cert-verify: false
+  - name: 英国 V2CROSS.COM
+    type: vmess
+    server: v30.hdacd.com
+    port: 30830
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -504,13 +485,10 @@ proxy-groups:
       - US_speednode_0029
       - US_speednode_0030
       - US_speednode_0031
+      - 保加利亚+V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 英国+伦敦Virgin+Media
-      - 英国+伦敦Virgin+Media [1]
-      - 俄罗斯+V2CROSS.COM
-      - 香港+电讯盈科有限公司
+      - 亚太地区 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 美国+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -560,13 +538,10 @@ proxy-groups:
       - US_speednode_0029
       - US_speednode_0030
       - US_speednode_0031
+      - 保加利亚+V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 英国+伦敦Virgin+Media
-      - 英国+伦敦Virgin+Media [1]
-      - 俄罗斯+V2CROSS.COM
-      - 香港+电讯盈科有限公司
+      - 亚太地区 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 美国+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -618,13 +593,10 @@ proxy-groups:
       - US_speednode_0029
       - US_speednode_0030
       - US_speednode_0031
+      - 保加利亚+V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 英国+伦敦Virgin+Media
-      - 英国+伦敦Virgin+Media [1]
-      - 俄罗斯+V2CROSS.COM
-      - 香港+电讯盈科有限公司
+      - 亚太地区 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 美国+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
