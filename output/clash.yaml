@@ -388,29 +388,13 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 亚太地区 V2CROSS.COM
-    type: vmess
-    server: 103.181.164.145
-    port: 51556
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 英国+伦敦Virgin+Media
+  - name: 西班牙+V2CROSS.COM
     type: trojan
-    server: 82.26.155.105
-    port: 10369
-    password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-    sni: fra32.chasem2026sud.com
-    skip-cert-verify: false
-  - name: 英国+伦敦Virgin+Media [1]
-    type: trojan
-    server: 82.26.155.3
-    port: 10369
-    password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-    sni: fra34.chasem2026sud.com
-    skip-cert-verify: false
+    server: 80.173.230.196
+    port: 26279
+    password: a5inYFE%3DJGV89+hjxIqgDp1tcWBd6
+    sni: 80.173.230.196
+    skip-cert-verify: true
   - name: 英国 V2CROSS.COM
     type: vmess
     server: 82.198.246.9
@@ -420,54 +404,31 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 香港 电讯盈科有限公司
-    type: vmess
-    server: efan.dnsefan04881.com
-    port: 7754
-    uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 英国+伦敦Virgin+Media [2]
+  - name: 保加利亚+V2CROSS.COM
     type: trojan
-    server: 82.26.155.237
-    port: 10369
-    password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-    sni: fra5.chasem2026sud.com
-    skip-cert-verify: false
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 166.88.197.60
-    port: 26650
-    password: UNWA6USASAb6%3DuAAZeZMFd+2uKB4.d5KOm
-    sni: sea9.firewallcontract.click
+    server: 78.159.131.12
+    port: 28259
+    password: MeaDiUmPlkWbZJ2BON8tz
+    sni: ads.x5.ru
     skip-cert-verify: false
   - name: 英国 V2CROSS.COM [1]
     type: vmess
-    server: 82.198.246.214
+    server: 82.198.246.97
     port: 180
     uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     alterId: 0
     cipher: auto
     tls: false
     network: tcp
-  - name: 英国 V2CROSS.COM [2]
+  - name: 亚太地区 V2CROSS.COM
     type: vmess
-    server: 82.198.246.37
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    server: 103.181.164.145
+    port: 51556
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 0
     cipher: auto
     tls: false
     network: tcp
-  - name: 俄罗斯+V2CROSS.COM
-    type: trojan
-    server: 194.87.10.31
-    port: 23357
-    password: fQmMJwOLMlqHednu2SVED8gi-+H-db9kbg
-    sni: sgp9.node-resource.click
-    skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -522,16 +483,11 @@ proxy-groups:
       - US_speednode_0027
       - US_speednode_0028
       - US_speednode_0029
-      - 亚太地区 V2CROSS.COM
-      - 英国+伦敦Virgin+Media
-      - 英国+伦敦Virgin+Media [1]
+      - 西班牙+V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
-      - 英国+伦敦Virgin+Media [2]
-      - 美国+V2CROSS.COM
+      - 保加利亚+V2CROSS.COM
       - 英国 V2CROSS.COM [1]
-      - 英国 V2CROSS.COM [2]
-      - 俄罗斯+V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -582,16 +538,11 @@ proxy-groups:
       - US_speednode_0027
       - US_speednode_0028
       - US_speednode_0029
-      - 亚太地区 V2CROSS.COM
-      - 英国+伦敦Virgin+Media
-      - 英国+伦敦Virgin+Media [1]
+      - 西班牙+V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
-      - 英国+伦敦Virgin+Media [2]
-      - 美国+V2CROSS.COM
+      - 保加利亚+V2CROSS.COM
       - 英国 V2CROSS.COM [1]
-      - 英国 V2CROSS.COM [2]
-      - 俄罗斯+V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -644,16 +595,11 @@ proxy-groups:
       - US_speednode_0027
       - US_speednode_0028
       - US_speednode_0029
-      - 亚太地区 V2CROSS.COM
-      - 英国+伦敦Virgin+Media
-      - 英国+伦敦Virgin+Media [1]
+      - 西班牙+V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
-      - 英国+伦敦Virgin+Media [2]
-      - 美国+V2CROSS.COM
+      - 保加利亚+V2CROSS.COM
       - 英国 V2CROSS.COM [1]
-      - 英国 V2CROSS.COM [2]
-      - 俄罗斯+V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
