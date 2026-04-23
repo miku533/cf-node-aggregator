@@ -106,85 +106,85 @@ proxies:
     network: tcp
   - name: 香港3|@ripaojiedian
     type: trojan
-    server: 43.199.66.73
+    server: 3.112.254.212
     port: 52687
     password: 1774240c00db2b77d5a99f6540c47b69
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 香港4|@ripaojiedian
     type: trojan
-    server: 95.40.58.97
-    port: 50612
+    server: 43.206.194.205
+    port: 54708
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
   - name: 香港5|@ripaojiedian
     type: trojan
-    server: 3.113.21.102
-    port: 3685
+    server: 43.199.32.10
+    port: 50612
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
   - name: 日本|@ripaojiedian
     type: trojan
-    server: 52.192.67.190
-    port: 1951
+    server: 54.249.58.71
+    port: 3278
     password: BxceQaOe
     sni: t.me%2Fripaojiedian
     skip-cert-verify: true
   - name: 日本2|@ripaojiedian
     type: trojan
-    server: 35.77.96.23
-    port: 4380
+    server: 54.249.58.71
+    port: 2001
     password: 1774240c00db2b77d5a99f6540c47b69
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 日本3|@ripaojiedian
     type: trojan
-    server: 52.192.67.190
+    server: 43.199.32.10
     port: 4380
     password: 1774240c00db2b77d5a99f6540c47b69
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 新加坡|@ripaojiedian
     type: trojan
-    server: 160.16.124.17
-    port: 32876
+    server: 54.249.58.71
+    port: 5594
     password: 1774240c00db2b77d5a99f6540c47b69
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 新加坡2|@ripaojiedian
     type: trojan
-    server: 52.192.67.190
-    port: 5594
+    server: 54.249.58.71
+    port: 32876
     password: 1774240c00db2b77d5a99f6540c47b69
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 新加坡3|@ripaojiedian
     type: trojan
-    server: 43.199.253.236
-    port: 2204
+    server: 43.199.253.7
+    port: 30726
     password: BxceQaOe
     sni: t.me%2Fripaojiedian
     skip-cert-verify: true
   - name: 美国|@ripaojiedian
     type: trojan
-    server: 160.16.124.17
+    server: 13.231.43.53
     port: 4019
     password: 1774240c00db2b77d5a99f6540c47b69
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 美国2|@ripaojiedian
     type: trojan
-    server: 95.40.58.97
-    port: 4019
+    server: 43.199.32.10
+    port: 3057
     password: 1774240c00db2b77d5a99f6540c47b69
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: 美国3|@ripaojiedian
     type: trojan
-    server: 54.46.121.89
-    port: 17871
+    server: 52.195.168.226
+    port: 14919
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
@@ -388,25 +388,9 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 俄罗斯+V2CROSS.COM
-    type: trojan
-    server: 194.87.10.31
-    port: 23357
-    password: fQmMJwOLMlqHednu2SVED8gi-+H-db9kbg
-    sni: sgp9.node-resource.click
-    skip-cert-verify: false
   - name: 英国 V2CROSS.COM
     type: vmess
-    server: 82.198.246.250
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 英国 V2CROSS.COM [1]
-    type: vmess
-    server: 82.198.246.37
+    server: 82.198.246.9
     port: 180
     uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     alterId: 0
@@ -415,20 +399,53 @@ proxies:
     network: tcp
   - name: 英国+伦敦Virgin+Media
     type: trojan
-    server: 82.26.155.3
+    server: 82.26.155.20
     port: 10369
     password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-    sni: fra34.chasem2026sud.com
+    sni: fra35.chasem2026sud.com
     skip-cert-verify: false
-  - name: 英国 V2CROSS.COM [2]
+  - name: 日本 Gaditek数据中心
     type: vmess
-    server: 82.198.246.233
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    server: 172.111.146.64
+    port: 80
+    uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /vmess/
+      headers: {}
+  - name: 俄罗斯+V2CROSS.COM
+    type: trojan
+    server: 194.87.10.31
+    port: 23357
+    password: fQmMJwOLMlqHednu2SVED8gi-+H-db9kbg
+    sni: sgp9.node-resource.click
+    skip-cert-verify: false
+  - name: 亚太地区 V2CROSS.COM
+    type: vmess
+    server: 103.181.164.145
+    port: 51556
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 0
     cipher: auto
     tls: false
     network: tcp
+  - name: 英国+伦敦Virgin+Media [1]
+    type: trojan
+    server: 82.26.155.3
+    port: 10369
+    password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
+    sni: fra34.chasem2026sud.com
+    skip-cert-verify: true
+  - name: 英国+伦敦Virgin+Media [2]
+    type: trojan
+    server: 82.26.155.237
+    port: 10369
+    password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
+    sni: fra5.chasem2026sud.com
+    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -483,11 +500,13 @@ proxy-groups:
       - US_speednode_0027
       - US_speednode_0028
       - US_speednode_0029
-      - 俄罗斯+V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 英国 V2CROSS.COM [1]
       - 英国+伦敦Virgin+Media
-      - 英国 V2CROSS.COM [2]
+      - 日本 Gaditek数据中心
+      - 俄罗斯+V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
+      - 英国+伦敦Virgin+Media [1]
+      - 英国+伦敦Virgin+Media [2]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -538,11 +557,13 @@ proxy-groups:
       - US_speednode_0027
       - US_speednode_0028
       - US_speednode_0029
-      - 俄罗斯+V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 英国 V2CROSS.COM [1]
       - 英国+伦敦Virgin+Media
-      - 英国 V2CROSS.COM [2]
+      - 日本 Gaditek数据中心
+      - 俄罗斯+V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
+      - 英国+伦敦Virgin+Media [1]
+      - 英国+伦敦Virgin+Media [2]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -595,11 +616,13 @@ proxy-groups:
       - US_speednode_0027
       - US_speednode_0028
       - US_speednode_0029
-      - 俄罗斯+V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 英国 V2CROSS.COM [1]
       - 英国+伦敦Virgin+Media
-      - 英国 V2CROSS.COM [2]
+      - 日本 Gaditek数据中心
+      - 俄罗斯+V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
+      - 英国+伦敦Virgin+Media [1]
+      - 英国+伦敦Virgin+Media [2]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
