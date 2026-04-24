@@ -1671,9 +1671,18 @@ proxies:
       path: /?ed=2560security=tls
       headers:
         Host: sni.111000.v6.rocks
+  - name: 亚太地区 V2CROSS.COM
+    type: vmess
+    server: 103.181.164.145
+    port: 51556
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
   - name: 英国 V2CROSS.COM
     type: vmess
-    server: 82.198.246.250
+    server: 82.198.246.9
     port: 180
     uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     alterId: 0
@@ -1682,9 +1691,27 @@ proxies:
     network: tcp
   - name: 英国 V2CROSS.COM [1]
     type: vmess
-    server: 82.198.246.9
+    server: 82.198.246.214
     port: 180
     uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 香港 电讯盈科有限公司
+    type: vmess
+    server: vm51544542.dns8656815.com
+    port: 7754
+    uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 亚太地区 V2CROSS.COM [1]
+    type: vmess
+    server: 103.181.164.145
+    port: 54022
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 0
     cipher: auto
     tls: false
@@ -1700,45 +1727,11 @@ proxies:
     network: tcp
   - name: 英国+伦敦Virgin+Media
     type: trojan
-    server: 82.26.155.105
+    server: 82.26.155.199
     port: 10369
     password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-    sni: fra32.chasem2026sud.com
-    skip-cert-verify: true
-  - name: 英国 V2CROSS.COM [3]
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 保加利亚+V2CROSS.COM
-    type: trojan
-    server: 78.159.131.12
-    port: 28259
-    password: MeaDiUmPlkWbZJ2BON8tz
-    sni: ads.x5.ru
+    sni: fra4.chasem2026sud.com
     skip-cert-verify: false
-  - name: 亚太地区 V2CROSS.COM
-    type: vmess
-    server: 103.181.164.145
-    port: 54022
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 英国 V2CROSS.COM [4]
-    type: vmess
-    server: 82.198.246.214
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1923,14 +1916,13 @@ proxy-groups:
       - VG_speednode_0169
       - VG_speednode_0170
       - VG_speednode_0171
+      - 亚太地区 V2CROSS.COM
       - 英国 V2CROSS.COM
       - 英国 V2CROSS.COM [1]
+      - 香港 电讯盈科有限公司
+      - 亚太地区 V2CROSS.COM [1]
       - 英国 V2CROSS.COM [2]
       - 英国+伦敦Virgin+Media
-      - 英国 V2CROSS.COM [3]
-      - 保加利亚+V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
-      - 英国 V2CROSS.COM [4]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -2111,14 +2103,13 @@ proxy-groups:
       - VG_speednode_0169
       - VG_speednode_0170
       - VG_speednode_0171
+      - 亚太地区 V2CROSS.COM
       - 英国 V2CROSS.COM
       - 英国 V2CROSS.COM [1]
+      - 香港 电讯盈科有限公司
+      - 亚太地区 V2CROSS.COM [1]
       - 英国 V2CROSS.COM [2]
       - 英国+伦敦Virgin+Media
-      - 英国 V2CROSS.COM [3]
-      - 保加利亚+V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
-      - 英国 V2CROSS.COM [4]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -2301,14 +2292,13 @@ proxy-groups:
       - VG_speednode_0169
       - VG_speednode_0170
       - VG_speednode_0171
+      - 亚太地区 V2CROSS.COM
       - 英国 V2CROSS.COM
       - 英国 V2CROSS.COM [1]
+      - 香港 电讯盈科有限公司
+      - 亚太地区 V2CROSS.COM [1]
       - 英国 V2CROSS.COM [2]
       - 英国+伦敦Virgin+Media
-      - 英国 V2CROSS.COM [3]
-      - 保加利亚+V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
-      - 英国 V2CROSS.COM [4]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
