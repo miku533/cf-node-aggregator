@@ -1680,41 +1680,14 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 英国 V2CROSS.COM [1]
-    type: vmess
-    server: 82.198.246.233
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
   - name: 英国+伦敦Virgin+Media
     type: trojan
-    server: 82.26.155.105
+    server: 82.26.155.121
     port: 10369
     password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-    sni: fra32.chasem2026sud.com
-    skip-cert-verify: true
-  - name: 香港 电讯盈科有限公司
-    type: vmess
-    server: efan.dnsefan04881.com
-    port: 7754
-    uuid: 7cd96dbe-ecec-4937-9e05-87ab70af2f30
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 亚太地区 V2CROSS.COM
-    type: vmess
-    server: 103.181.164.145
-    port: 51556
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 英国 V2CROSS.COM [2]
+    sni: fra33.chasem2026sud.com
+    skip-cert-verify: false
+  - name: 英国 V2CROSS.COM [1]
     type: vmess
     server: 82.198.246.37
     port: 180
@@ -1723,9 +1696,16 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 英国 V2CROSS.COM [3]
+  - name: 英国+伦敦Virgin+Media [1]
+    type: trojan
+    server: 82.26.155.3
+    port: 10369
+    password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
+    sni: fra34.chasem2026sud.com
+    skip-cert-verify: false
+  - name: 英国 V2CROSS.COM [2]
     type: vmess
-    server: 82.198.246.97
+    server: 82.198.246.233
     port: 180
     uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     alterId: 0
@@ -1917,12 +1897,10 @@ proxy-groups:
       - VG_speednode_0170
       - VG_speednode_0171
       - 英国 V2CROSS.COM
-      - 英国 V2CROSS.COM [1]
       - 英国+伦敦Virgin+Media
-      - 香港 电讯盈科有限公司
-      - 亚太地区 V2CROSS.COM
+      - 英国 V2CROSS.COM [1]
+      - 英国+伦敦Virgin+Media [1]
       - 英国 V2CROSS.COM [2]
-      - 英国 V2CROSS.COM [3]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -2104,12 +2082,10 @@ proxy-groups:
       - VG_speednode_0170
       - VG_speednode_0171
       - 英国 V2CROSS.COM
-      - 英国 V2CROSS.COM [1]
       - 英国+伦敦Virgin+Media
-      - 香港 电讯盈科有限公司
-      - 亚太地区 V2CROSS.COM
+      - 英国 V2CROSS.COM [1]
+      - 英国+伦敦Virgin+Media [1]
       - 英国 V2CROSS.COM [2]
-      - 英国 V2CROSS.COM [3]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -2293,12 +2269,10 @@ proxy-groups:
       - VG_speednode_0170
       - VG_speednode_0171
       - 英国 V2CROSS.COM
-      - 英国 V2CROSS.COM [1]
       - 英国+伦敦Virgin+Media
-      - 香港 电讯盈科有限公司
-      - 亚太地区 V2CROSS.COM
+      - 英国 V2CROSS.COM [1]
+      - 英国+伦敦Virgin+Media [1]
       - 英国 V2CROSS.COM [2]
-      - 英国 V2CROSS.COM [3]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
