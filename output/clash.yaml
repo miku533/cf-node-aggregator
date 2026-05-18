@@ -102,70 +102,81 @@ proxies:
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: false
-  - name: 🇭🇰HK_3|2.0MB/s
+  - name: 'A - 🇭🇰 HK 02 TG: @nodpai'
+    type: trojan
+    server: 47.76.218.163
+    port: 443
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: false
+  - name: 'B - 🇭🇰 HK 03 TG: @nodpai'
+    type: vless
+    server: 83.229.121.78
+    port: 8443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2560security=tls
+      headers:
+        Host: sni.111000.v6.rocks
+  - name: 'B - 🇭🇰 HK 04 TG: @nodpai'
     type: trojan
     server: 8.223.63.150
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 'B - 🇭🇰 HK 03 TG: @nodpai'
+    skip-cert-verify: false
+  - name: 'B - 🇭🇰 HK 05 TG: @nodpai'
     type: trojan
     server: 213.176.92.138
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 'B - 🇭🇰 HK 04 TG: @nodpai'
+    skip-cert-verify: false
+  - name: 'B - 🇭🇰 HK 06 TG: @nodpai'
     type: trojan
     server: 154.92.9.253
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
-  - name: 'B - 🇭🇰 HK 06 TG: @nodpai'
-    type: vmess
-    server: board-02.ddnskunlun.com
-    port: 11976
-    uuid: 4d6a19fd-ba4f-36c5-89ad-97224cca5484
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
   - name: 'B - 🇭🇰 HK 07 TG: @nodpai'
     type: trojan
-    server: 219.76.13.180
-    port: 443
+    server: 23.175.201.2
+    port: 8443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
+    skip-cert-verify: false
   - name: 'B - 🇭🇰 HK 08 TG: @nodpai'
+    type: trojan
+    server: 149.129.91.58
+    port: 23779
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: false
+  - name: 'B - 🇭🇰 HK 09 TG: @nodpai'
     type: trojan
     server: 2.56.91.49
     port: 2053
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 'C - 🇭🇰 HK 09 TG: @nodpai'
-    type: vmess
-    server: board-02.ddnskunlun.com
-    port: 11966
-    uuid: 4d6a19fd-ba4f-36c5-89ad-97224cca5484
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
+    skip-cert-verify: false
   - name: 'C - 🇭🇰 HK 10 TG: @nodpai'
-    type: vless
-    server: 219.76.13.183
+    type: trojan
+    server: 219.76.13.167
     port: 443
-    uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: true
+  - name: 'C - 🇭🇰 HK 11 TG: @nodpai'
+    type: vless
+    server: sgvless.yydzx.xyz
+    port: 16056
+    uuid: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
     tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: sn1.skylee5.cloudns.ch
+    network: tcp
+    flow: xtls-rprx-vision-udp443-udp443
   - name: 'A - 🇹🇼 TW 01 TG: @nodpai'
     type: trojan
     server: tvhinet.lajichang.xyz
@@ -173,29 +184,14 @@ proxies:
     password: e5c22f63-e473-496a-beff-fdc5655008c1
     sni: bing.com
     skip-cert-verify: true
-  - name: 'A - 🇯🇵 JP 01 TG: @nodpai'
-    type: vless
-    server: 142.248.151.249
-    port: 52675
-    uuid: 00000000-0000-4000-8000-000000000000
-    tls: true
-    network: ws
-    ws-opts:
-      path: /@Marisa_kristifp=chrome
-      headers:
-        Host: vfn-6o8h-kht7rpd.zipgd3vx91o.ddns-ip.net
-  - name: 'A - 🇯🇵 JP 03 TG: @nodpai'
-    type: vless
-    server: 165.246.171.218
-    port: 10891
-    uuid: 00000000-0000-4000-8000-000000000000
-    tls: false
-    network: ws
-    ws-opts:
-      path: /@Marisa_kristifp=chromesecurity=tls
-      headers:
-        Host: 9cvs-zyn4r9-6gzdtuo0w.mikuru.ip-ddns.com
-  - name: 'B - 🇯🇵 JP 04 TG: @nodpai'
+  - name: 'B - 🇯🇵 JP 02 TG: @nodpai'
+    type: trojan
+    server: 219.103.68.164
+    port: 20770
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: true
+  - name: 'B - 🇯🇵 JP 03 TG: @nodpai'
     type: vmess
     server: 103.127.243.55
     port: 58051
@@ -204,805 +200,909 @@ proxies:
     cipher: auto
     tls: false
     network: h2
+  - name: 'B - 🇯🇵 JP 04 TG: @nodpai'
+    type: vmess
+    server: v6.hdacd.com
+    port: 30806
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: tcp
   - name: 'B - 🇯🇵 JP 05 TG: @nodpai'
     type: trojan
-    server: 154.197.88.253
+    server: 154.197.80.253
     port: 443
     password: 8r%253C%255B9%2527l6hAO%25238ZQi
     sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
+    skip-cert-verify: true
   - name: 'B - 🇯🇵 JP 06 TG: @nodpai'
     type: trojan
-    server: 140.238.50.134
+    server: 138.2.59.112
     port: 443
-    password: 8r%253C%255B9%2527l6hAO%25238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
-  - name: 'B - 🇯🇵 JP 07 TG: @nodpai'
-    type: trojan
-    server: 154.197.108.253
-    port: 443
-    password: 8r%253C%255B9%2527l6hAO%25238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
-  - name: 'B - 🇯🇵 JP 08 TG: @nodpai'
-    type: trojan
-    server: 155.248.168.35
-    port: 18122
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
+  - name: 'B - 🇯🇵 JP 07 TG: @nodpai'
+    type: trojan
+    server: 31.57.172.187
+    port: 443
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: true
+  - name: 'B - 🇯🇵 JP 08 TG: @nodpai'
+    type: trojan
+    server: 64.110.104.30
+    port: 443
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: false
   - name: 'B - 🇯🇵 JP 09 TG: @nodpai'
+    type: trojan
+    server: 64.176.36.61
+    port: 443
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: false
+  - name: 'B - 🇯🇵 JP 10 TG: @nodpai'
     type: trojan
     server: 88.214.22.165
     port: 10563
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
-  - name: 'B - 🇯🇵 JP 10 TG: @nodpai'
-    type: trojan
-    server: 45.11.1.118
-    port: 44004
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
   - name: 'B - 🇯🇵 JP 11 TG: @nodpai'
-    type: trojan
-    server: 45.32.51.200
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 'B - 🇯🇵 JP 12 TG: @nodpai'
-    type: vless
-    server: 152.53.178.240
-    port: 8445
-    uuid: 00000000-0000-4000-8000-000000000000
-    tls: false
-    network: ws
-    ws-opts:
-      path: /@Marisa_kristifp=chromesecurity=tls
-      headers:
-        Host: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
-  - name: 'B - 🇯🇵 JP 13 TG: @nodpai'
     type: trojan
     server: 103.125.216.22
     port: 8443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
+    skip-cert-verify: false
   - name: 'A - 🇸🇬 SG 01 TG: @nodpai'
-    type: trojan
-    server: 8.219.195.31
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 'B - 🇸🇬 SG 02 TG: @nodpai'
     type: vless
-    server: 104.26.1.83
-    port: 443
-    uuid: ae0dd58e-e222-40bf-84ae-365a97532737
+    server: 118.37.125.204
+    port: 32771
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /danfeng?ed=2560fp=firefox
+      headers:
+        Host: jbp7i.data-edge.chinav.indevs.in
+  - name: 'A - 🇸🇬 SG 02 TG: @nodpai'
+    type: vless
+    server: 103.122.244.22
+    port: 10001
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /danfeng?ed=2560fp=firefox
+      headers:
+        Host: jbp7i.data-edge.chinav.indevs.in
+  - name: 'A - 🇸🇬 SG 03 TG: @nodpai'
+    type: vless
+    server: cf5.danfeng.eu.org
+    port: 8443
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
     tls: false
-    network: tcp
-  - name: 'B - 🇸🇬 SG 03 TG: @nodpai'
+    network: ws
+    ws-opts:
+      path: /danfeng?ed=2560fp=firefoxsecurity=tls
+      headers:
+        Host: shkiau5c.api-node-a1.chinam.indevs.in
+  - name: 'A - 🇸🇬 SG 04 TG: @nodpai'
+    type: vless
+    server: 161.33.212.44
+    port: 1443
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /danfeng?ed=2560fp=firefox
+      headers:
+        Host: jbp7i.data-edge.chinav.indevs.in
+  - name: 'A - 🇸🇬 SG 05 TG: @nodpai'
+    type: vless
+    server: 154.44.17.63
+    port: 39738
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /danfeng?ed=2560fp=firefox
+      headers:
+        Host: jbp7i.data-edge.chinav.indevs.in
+  - name: 'A - 🇸🇬 SG 06 TG: @nodpai'
+    type: vless
+    server: cf.danfeng.eu.org
+    port: 8443
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /danfeng?ed=2560fp=firefoxsecurity=tls
+      headers:
+        Host: yn80.api-backend.fgfw.qzz.io
+  - name: 'B - 🇸🇬 SG 07 TG: @nodpai'
+    type: vless
+    server: cf8.danfeng.eu.org
+    port: 8443
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /danfeng?ed=2560fp=firefoxsecurity=tls
+      headers:
+        Host: shkiau5c.api-node-a1.chinam.indevs.in
+  - name: 'B - 🇸🇬 SG 08 TG: @nodpai'
+    type: vless
+    server: 38.244.5.157
+    port: 39738
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /danfeng?ed=2560fp=firefox
+      headers:
+        Host: jbp7i.data-edge.chinav.indevs.in
+  - name: 'B - 🇸🇬 SG 09 TG: @nodpai'
+    type: vless
+    server: 38.180.194.222
+    port: 2053
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /danfeng?ed=2560fp=firefox
+      headers:
+        Host: jbp7i.data-edge.chinav.indevs.in
+  - name: 'B - 🇸🇬 SG 10 TG: @nodpai'
     type: trojan
     server: 47.84.54.115
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
-  - name: 'B - 🇸🇬 SG 04 TG: @nodpai'
-    type: trojan
-    server: 43.160.195.223
-    port: 443
-    password: 8r%253C%255B9%2527l6hAO%25238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
-  - name: 'B - 🇸🇬 SG 05 TG: @nodpai'
-    type: trojan
-    server: 139.180.220.7
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 'B - 🇸🇬 SG 06 TG: @nodpai'
-    type: trojan
-    server: 92.243.75.253
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 'B - 🇸🇬 SG 07 TG: @nodpai'
-    type: trojan
-    server: 188.239.21.47
-    port: 8443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 'B - 🇸🇬 SG 08 TG: @nodpai'
-    type: trojan
-    server: 8.222.195.24
-    port: 14706
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 'B - 🇸🇬 SG 09 TG: @nodpai'
-    type: trojan
-    server: 92.243.74.253
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 'B - 🇸🇬 SG 10 TG: @nodpai'
-    type: trojan
-    server: 47.82.155.79
-    port: 8443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
   - name: 'B - 🇸🇬 SG 11 TG: @nodpai'
-    type: trojan
-    server: 207.148.125.245
-    port: 8443
-    password: 8r%253C%255B9%2527l6hAO%25238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
+    type: vless
+    server: 83.147.253.187
+    port: 443
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /danfeng?ed=2560fp=firefox
+      headers:
+        Host: jbp7i.data-edge.chinav.indevs.in
   - name: 'B - 🇸🇬 SG 12 TG: @nodpai'
-    type: trojan
-    server: 43.160.207.175
-    port: 443
-    password: 8r%253C%255B9%2527l6hAO%25238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
+    type: vless
+    server: 59.21.203.65
+    port: 29015
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /danfeng?ed=2560security=tls
+      headers:
+        Host: iuh1.auth-proxy.chinat.indevs.in
   - name: 'B - 🇸🇬 SG 13 TG: @nodpai'
-    type: trojan
-    server: 47.82.155.79
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
+    type: vless
+    server: cf6.danfeng.eu.org
+    port: 8443
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /danfeng?ed=2560fp=firefoxsecurity=tls
+      headers:
+        Host: igvdi.edge-node-sg.fgfw.indevs.in
   - name: 'B - 🇸🇬 SG 14 TG: @nodpai'
-    type: trojan
-    server: 140.245.62.90
-    port: 2096
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
+    type: vless
+    server: 95.85.27.49
+    port: 443
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /danfeng?ed=2560fp=firefox
+      headers:
+        Host: jbp7i.data-edge.chinav.indevs.in
   - name: 'B - 🇸🇬 SG 15 TG: @nodpai'
     type: trojan
-    server: 43.133.61.219
+    server: 138.2.87.237
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
   - name: 'B - 🇸🇬 SG 16 TG: @nodpai'
-    type: trojan
-    server: 209.97.170.177
+    type: vless
+    server: 80.253.251.30
     port: 443
-    password: 8r%253C%255B9%2527l6hAO%25238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /danfeng?ed=2560fp=chromesecurity=tls
+      headers:
+        Host: zto7d05.api-relay.sh21.eu.org
   - name: 'B - 🇸🇬 SG 17 TG: @nodpai'
-    type: trojan
-    server: 139.99.124.165
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
+    type: vless
+    server: 83.229.126.127
+    port: 32237
+    uuid: 73bcd72f-9545-4cb8-8daf-7d004501880d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2560fp=chromesecurity=tls
+      headers:
+        Host: dcsrzh.ccwu.cc
   - name: 'B - 🇸🇬 SG 18 TG: @nodpai'
+    type: vless
+    server: 118.36.233.194
+    port: 11300
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /danfeng?ed=2560fp=firefoxsecurity=tls
+      headers:
+        Host: pl4oj.mirror.fgfw.indevs.in
+  - name: 'B - 🇸🇬 SG 19 TG: @nodpai'
+    type: vless
+    server: cf4.danfeng.eu.org
+    port: 8443
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /danfengfp=firefoxsecurity=tls
+      headers:
+        Host: yn80.api-backend.fgfw.qzz.io
+  - name: 'B - 🇸🇬 SG 20 TG: @nodpai'
+    type: vless
+    server: 185.28.119.26
+    port: 443
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /danfeng?ed=2560fp=firefox
+      headers:
+        Host: jbp7i.data-edge.chinav.indevs.in
+  - name: 'B - 🇸🇬 SG 21 TG: @nodpai'
+    type: vless
+    server: 104.253.175.136
+    port: 443
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /danfeng?ed=2560fp=firefox
+      headers:
+        Host: jbp7i.data-edge.chinav.indevs.in
+  - name: 'B - 🇸🇬 SG 22 TG: @nodpai'
     type: trojan
-    server: 146.190.102.51
+    server: 140.245.59.102
+    port: 8443
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: true
+  - name: 'B - 🇸🇬 SG 23 TG: @nodpai'
+    type: vless
+    server: 185.156.72.199
+    port: 4433
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /danfeng?ed=2560fp=firefox
+      headers:
+        Host: jbp7i.data-edge.chinav.indevs.in
+  - name: 'B - 🇸🇬 SG 24 TG: @nodpai'
+    type: trojan
+    server: 5.34.176.71
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
-  - name: 'B - 🇸🇬 SG 19 TG: @nodpai'
+  - name: 'B - 🇸🇬 SG 25 TG: @nodpai'
     type: trojan
-    server: 159.89.205.195
+    server: 159.89.207.154
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: false
-  - name: 'B - 🇸🇬 SG 20 TG: @nodpai'
-    type: trojan
-    server: 157.245.159.88
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 'B - 🇸🇬 SG 21 TG: @nodpai'
-    type: trojan
-    server: 143.198.213.40
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 'B - 🇸🇬 SG 22 TG: @nodpai'
+  - name: 'B - 🇸🇬 SG 26 TG: @nodpai'
     type: trojan
     server: 157.245.56.32
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
-  - name: 'B - 🇸🇬 SG 23 TG: @nodpai'
-    type: trojan
-    server: 194.87.10.77
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 'B - 🇸🇬 SG 24 TG: @nodpai'
-    type: trojan
-    server: 159.223.93.80
-    port: 443
-    password: 8r%253C%255B9%2527l6hAO%25238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 'B - 🇸🇬 SG 25 TG: @nodpai'
+  - name: 'B - 🇸🇬 SG 27 TG: @nodpai'
     type: trojan
     server: 159.223.79.119
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
-  - name: 'B - 🇸🇬 SG 26 TG: @nodpai'
+  - name: 'C - 🇸🇬 SG 28 TG: @nodpai'
+    type: vless
+    server: 173.232.146.99
+    port: 2053
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /danfeng?ed=2560fp=firefox
+      headers:
+        Host: jbp7i.data-edge.chinav.indevs.in
+  - name: 'C - 🇸🇬 SG 29 TG: @nodpai'
+    type: vless
+    server: 185.92.182.197
+    port: 2053
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /danfengsecurity=tls
+      headers:
+        Host: g4y4886.mail-relay.chinam.indevs.in
+  - name: 'C - 🇸🇬 SG 30 TG: @nodpai'
+    type: vless
+    server: 151.242.164.46
+    port: 11965
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /danfeng?ed=2560fp=chrome
+      headers:
+        Host: pchlzn.cdn-a.gfw.hidns.co
+  - name: 'A - 🇺🇸 US 01 TG: @nodpai'
     type: trojan
-    server: 174.138.20.108
+    server: 68.64.182.39
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
-  - name: 'B - 🇸🇬 SG 27 TG: @nodpai'
-    type: trojan
-    server: 152.42.169.132
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
-  - name: 'B - 🇸🇬 SG 28 TG: @nodpai'
-    type: trojan
-    server: 164.52.2.98
-    port: 443
-    password: 8r%253C%255B9%2527l6hAO%25238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
   - name: 'B - 🇺🇸 US 02 TG: @nodpai'
     type: trojan
-    server: 116.44.53.251
-    port: 12126
+    server: 107.161.24.195
+    port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
   - name: 'B - 🇺🇸 US 03 TG: @nodpai'
     type: trojan
-    server: 31.57.47.225
+    server: 45.40.150.253
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
   - name: 'B - 🇺🇸 US 04 TG: @nodpai'
     type: trojan
-    server: 141.193.27.253
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 'B - 🇺🇸 US 05 TG: @nodpai'
-    type: trojan
-    server: 107.174.198.228
-    port: 8443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 'B - 🇺🇸 US 06 TG: @nodpai'
-    type: trojan
-    server: 107.151.188.120
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 'B - 🇺🇸 US 07 TG: @nodpai'
-    type: trojan
-    server: 192.241.210.208
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 'B - 🇺🇸 US 08 TG: @nodpai'
-    type: trojan
-    server: 77.110.109.7
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 'B - 🇺🇸 US 09 TG: @nodpai'
-    type: trojan
-    server: 166.62.111.253
+    server: 8.34.146.253
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: false
-  - name: 'B - 🇺🇸 US 10 TG: @nodpai'
+  - name: 'B - 🇺🇸 US 05 TG: @nodpai'
     type: trojan
-    server: 173.249.198.100
+    server: 165.232.148.158
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
-  - name: 'B - 🇺🇸 US 11 TG: @nodpai'
-    type: trojan
-    server: 159.242.242.253
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 'B - 🇺🇸 US 12 TG: @nodpai'
-    type: trojan
-    server: 192.169.223.253
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 'B - 🇺🇸 US 13 TG: @nodpai'
-    type: trojan
-    server: 50.62.91.253
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 'B - 🇺🇸 US 14 TG: @nodpai'
+  - name: 'B - 🇺🇸 US 06 TG: @nodpai'
     type: trojan
     server: 63.141.128.253
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
-  - name: 'B - 🇺🇸 US 15 TG: @nodpai'
+  - name: 'B - 🇺🇸 US 07 TG: @nodpai'
     type: trojan
     server: 31.58.50.114
     port: 8443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: false
-  - name: 'B - 🇺🇸 US 16 TG: @nodpai'
+  - name: 'B - 🇺🇸 US 08 TG: @nodpai'
     type: trojan
-    server: 199.34.230.253
-    port: 443
+    server: 165.232.54.102
+    port: 8443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: false
-  - name: 'B - 🇺🇸 US 17 TG: @nodpai'
+  - name: 'B - 🇺🇸 US 09 TG: @nodpai'
     type: trojan
-    server: 104.129.59.249
-    port: 443
-    password: 8r%253C%255B9%2527l6hAO%25238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
-  - name: 'B - 🇺🇸 US 18 TG: @nodpai'
-    type: trojan
-    server: 50.62.90.253
+    server: 31.59.136.20
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
-  - name: 'B - 🇺🇸 US 19 TG: @nodpai'
+  - name: 'B - 🇺🇸 US 10 TG: @nodpai'
     type: trojan
-    server: 199.34.229.253
+    server: 66.235.200.253
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
-  - name: 'B - 🇺🇸 US 20 TG: @nodpai'
+  - name: 'B - 🇺🇸 US 11 TG: @nodpai'
+    type: trojan
+    server: 192.200.160.253
+    port: 443
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: true
+  - name: 'B - 🇺🇸 US 12 TG: @nodpai'
     type: trojan
     server: 31.58.226.196
     port: 8443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: false
+  - name: 'B - 🇺🇸 US 13 TG: @nodpai'
+    type: trojan
+    server: 199.34.230.253
+    port: 443
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: true
+  - name: 'B - 🇺🇸 US 14 TG: @nodpai'
+    type: trojan
+    server: 103.133.1.253
+    port: 443
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: true
+  - name: 'B - 🇺🇸 US 15 TG: @nodpai'
+    type: trojan
+    server: 107.151.188.115
+    port: 443
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: true
+  - name: 'B - 🇺🇸 US 16 TG: @nodpai'
+    type: trojan
+    server: 198.71.232.253
+    port: 443
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: true
+  - name: 'B - 🇺🇸 US 17 TG: @nodpai'
+    type: trojan
+    server: 166.62.110.253
+    port: 443
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: true
+  - name: 'B - 🇺🇸 US 18 TG: @nodpai'
+    type: trojan
+    server: 172.66.42.200
+    port: 2083
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: true
+  - name: 'B - 🇺🇸 US 19 TG: @nodpai'
+    type: trojan
+    server: 142.252.220.13
+    port: 443
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: true
+  - name: 'B - 🇺🇸 US 20 TG: @nodpai'
+    type: trojan
+    server: 31.58.50.23
+    port: 2053
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: false
   - name: 'B - 🇺🇸 US 21 TG: @nodpai'
     type: trojan
-    server: 45.40.148.253
-    port: 443
+    server: 57.154.33.195
+    port: 8443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
   - name: 'B - 🇺🇸 US 22 TG: @nodpai'
     type: trojan
-    server: 178.128.70.6
+    server: 31.57.63.63
     port: 8443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: false
   - name: 'B - 🇺🇸 US 23 TG: @nodpai'
     type: trojan
-    server: 157.230.140.153
+    server: 198.13.159.199
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
   - name: 'B - 🇺🇸 US 24 TG: @nodpai'
     type: trojan
-    server: 50.62.195.253
+    server: 142.171.118.101
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
   - name: 'B - 🇺🇸 US 25 TG: @nodpai'
     type: trojan
-    server: 165.227.26.242
-    port: 8443
+    server: 134.195.211.13
+    port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
+    skip-cert-verify: true
   - name: 'B - 🇺🇸 US 26 TG: @nodpai'
     type: trojan
-    server: 31.57.63.63
-    port: 2053
+    server: 192.241.207.118
+    port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: false
   - name: 'B - 🇺🇸 US 27 TG: @nodpai'
     type: trojan
-    server: 14.102.228.253
-    port: 443
-    password: 8r%253C%255B9%2527l6hAO%25238ZQi
+    server: 31.58.226.196
+    port: 2053
+    password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: false
   - name: 'B - 🇺🇸 US 28 TG: @nodpai'
     type: trojan
-    server: 45.40.154.253
-    port: 443
+    server: 5.78.79.91
+    port: 2096
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
+    skip-cert-verify: false
   - name: 'B - 🇺🇸 US 29 TG: @nodpai'
     type: trojan
-    server: 38.107.232.53
+    server: 31.58.50.23
     port: 8443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
+    skip-cert-verify: false
   - name: 'B - 🇺🇸 US 30 TG: @nodpai'
     type: trojan
-    server: 198.13.159.199
-    port: 443
+    server: 216.126.237.69
+    port: 8443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
+    skip-cert-verify: false
   - name: 'B - 🇺🇸 US 31 TG: @nodpai'
     type: trojan
-    server: 72.167.25.253
+    server: 20.106.211.232
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
   - name: 'B - 🇺🇸 US 32 TG: @nodpai'
     type: trojan
-    server: 85.209.195.61
-    port: 2053
+    server: 150.136.254.79
+    port: 443
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: true
+  - name: 'B - 🇺🇸 US 33 TG: @nodpai'
+    type: trojan
+    server: 148.135.95.114
+    port: 8443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: false
-  - name: 'B - 🇺🇸 US 33 TG: @nodpai'
-    type: trojan
-    server: 107.175.232.157
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
   - name: 'B - 🇺🇸 US 34 TG: @nodpai'
     type: trojan
-    server: 193.23.211.202
+    server: 64.188.125.46
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
+    skip-cert-verify: false
   - name: 'B - 🇺🇸 US 35 TG: @nodpai'
     type: trojan
-    server: 20.121.115.188
-    port: 443
-    password: 8r%253C%255B9%2527l6hAO%25238ZQi
+    server: 66.103.204.102
+    port: 8443
+    password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: false
   - name: 'B - 🇺🇸 US 36 TG: @nodpai'
     type: trojan
-    server: 185.52.0.84
+    server: 83.242.100.138
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
   - name: 'B - 🇺🇸 US 37 TG: @nodpai'
     type: trojan
-    server: 150.136.254.79
+    server: 74.48.140.167
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
   - name: 'B - 🇺🇸 US 38 TG: @nodpai'
     type: trojan
-    server: 129.159.119.161
+    server: 77.110.114.254
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
   - name: 'B - 🇺🇸 US 39 TG: @nodpai'
     type: trojan
-    server: 37.46.19.79
-    port: 8443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
-  - name: 'B - 🇺🇸 US 40 TG: @nodpai'
-    type: trojan
-    server: 104.129.165.253
+    server: 23.168.72.23
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
+  - name: 'B - 🇺🇸 US 40 TG: @nodpai'
+    type: trojan
+    server: 72.56.66.160
+    port: 8443
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: false
   - name: 'B - 🇺🇸 US 41 TG: @nodpai'
     type: trojan
-    server: 146.185.137.228
+    server: 144.31.66.40
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
   - name: 'B - 🇺🇸 US 42 TG: @nodpai'
     type: trojan
-    server: 172.245.93.26
-    port: 8443
+    server: 107.173.15.138
+    port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
+    skip-cert-verify: true
   - name: 'B - 🇺🇸 US 43 TG: @nodpai'
-    type: trojan
-    server: 72.56.70.107
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 'B - 🇺🇸 US 44 TG: @nodpai'
-    type: trojan
-    server: 150.136.243.175
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 'B - 🇺🇸 US 45 TG: @nodpai'
     type: trojan
     server: 192.3.216.76
     port: 8443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
-  - name: 'B - 🇺🇸 US 46 TG: @nodpai'
+  - name: 'B - 🇺🇸 US 44 TG: @nodpai'
     type: trojan
-    server: 72.56.115.44
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
-  - name: 'B - 🇺🇸 US 47 TG: @nodpai'
-    type: trojan
-    server: 107.172.201.15
-    port: 2053
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
-  - name: 'B - 🇺🇸 US 48 TG: @nodpai'
-    type: trojan
-    server: 104.234.50.215
-    port: 2053
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
-  - name: 'B - 🇺🇸 US 49 TG: @nodpai'
-    type: trojan
-    server: 72.56.111.177
+    server: 150.241.105.243
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
+  - name: 'B - 🇺🇸 US 45 TG: @nodpai'
+    type: trojan
+    server: 45.150.65.251
+    port: 443
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: true
+  - name: 'B - 🇺🇸 US 46 TG: @nodpai'
+    type: trojan
+    server: 150.241.105.29
+    port: 443
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: true
+  - name: 'B - 🇺🇸 US 47 TG: @nodpai'
+    type: trojan
+    server: 128.1.190.67
+    port: 443
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: true
+  - name: 'B - 🇺🇸 US 48 TG: @nodpai'
+    type: trojan
+    server: 72.56.70.107
+    port: 443
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: true
+  - name: 'B - 🇺🇸 US 49 TG: @nodpai'
+    type: trojan
+    server: 172.245.156.126
+    port: 2053
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: false
   - name: 'B - 🇺🇸 US 50 TG: @nodpai'
     type: trojan
-    server: 144.31.79.168
+    server: 43.153.105.7
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
   - name: 'B - 🇺🇸 US 51 TG: @nodpai'
     type: trojan
-    server: 34.136.112.104
-    port: 443
+    server: 199.119.137.41
+    port: 2053
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
   - name: 'B - 🇺🇸 US 52 TG: @nodpai'
     type: trojan
-    server: 64.188.89.181
+    server: 173.230.151.159
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
   - name: 'B - 🇺🇸 US 53 TG: @nodpai'
     type: trojan
-    server: 64.188.126.166
-    port: 443
+    server: 144.31.246.245
+    port: 8443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
   - name: 'B - 🇺🇸 US 54 TG: @nodpai'
     type: trojan
-    server: 16.145.218.182
+    server: 184.169.181.217
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
   - name: 'B - 🇺🇸 US 55 TG: @nodpai'
     type: trojan
-    server: 50.228.203.26
-    port: 443
+    server: 45.137.213.149
+    port: 2053
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
   - name: 'B - 🇺🇸 US 56 TG: @nodpai'
     type: trojan
-    server: 72.56.70.26
+    server: 144.31.82.35
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
   - name: 'B - 🇺🇸 US 57 TG: @nodpai'
     type: trojan
-    server: 72.56.74.52
+    server: 64.188.89.181
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
   - name: 'B - 🇺🇸 US 58 TG: @nodpai'
     type: trojan
-    server: 15.204.173.154
-    port: 8443
+    server: 72.56.110.162
+    port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: false
   - name: 'B - 🇺🇸 US 59 TG: @nodpai'
-    type: trojan
-    server: 23.165.104.123
-    port: 8443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
-  - name: 'B - 🇺🇸 US 60 TG: @nodpai'
-    type: trojan
-    server: 74.48.140.167
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 'B - 🇺🇸 US 61 TG: @nodpai'
     type: trojan
     server: 150.241.74.98
     port: 8443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
-  - name: 'B - 🇺🇸 US 62 TG: @nodpai'
+  - name: 'B - 🇺🇸 US 60 TG: @nodpai'
     type: trojan
-    server: 216.180.125.171
+    server: 34.16.97.144
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
-  - name: 'B - 🇺🇸 US 63 TG: @nodpai'
+  - name: 'B - 🇺🇸 US 61 TG: @nodpai'
     type: trojan
-    server: 74.50.11.24
-    port: 443
+    server: 172.245.156.126
+    port: 8443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: false
+  - name: 'B - 🇺🇸 US 62 TG: @nodpai'
+    type: trojan
+    server: 172.245.148.211
+    port: 443
+    password: 8r%253C%255B9%2527l6hAO%25238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: false
+  - name: 'B - 🇺🇸 US 63 TG: @nodpai'
+    type: trojan
+    server: 150.241.105.10
+    port: 443
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: true
   - name: 'B - 🇺🇸 US 64 TG: @nodpai'
     type: trojan
-    server: 83.147.253.187
+    server: 96.44.158.249
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
   - name: 'B - 🇺🇸 US 65 TG: @nodpai'
-    type: trojan
-    server: 150.241.105.125
+    type: vless
+    server: cloudflare-ech.com
     port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
+    uuid: 25284107-7424-40a5-8396-cdd0623f4f05
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ip=ProxyIP.CMLiussss.netsecurity=tls
+      headers:
+        Host: hscraft.top
   - name: 'B - 🇺🇸 US 66 TG: @nodpai'
     type: trojan
-    server: 150.241.108.2
+    server: 46.8.237.3
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
   - name: 'B - 🇺🇸 US 67 TG: @nodpai'
     type: trojan
-    server: 184.174.97.38
+    server: 66.135.5.63
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
+    skip-cert-verify: false
   - name: 'B - 🇺🇸 US 68 TG: @nodpai'
     type: trojan
-    server: 34.58.136.79
+    server: 104.168.56.73
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
   - name: 'B - 🇺🇸 US 69 TG: @nodpai'
     type: trojan
-    server: 64.188.98.29
-    port: 443
-    password: 8r%253C%255B9%2527l6hAO%25238ZQi
+    server: 72.56.107.167
+    port: 8443
+    password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: false
   - name: 'B - 🇺🇸 US 70 TG: @nodpai'
     type: trojan
-    server: 83.147.253.124
+    server: 34.58.136.79
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
   - name: 'B - 🇺🇸 US 71 TG: @nodpai'
     type: trojan
-    server: 45.150.65.54
-    port: 2053
+    server: 194.116.217.189
+    port: 8443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: false
   - name: 'B - 🇺🇸 US 72 TG: @nodpai'
-    type: trojan
-    server: 165.140.117.193
+    type: vless
+    server: 199.34.228.69
     port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers: {}
   - name: 'B - 🇺🇸 US 73 TG: @nodpai'
-    type: trojan
-    server: 198.46.174.212
-    port: 8443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
+    type: vless
+    server: www.visa.com.hk
+    port: 443
+    uuid: ae0dd58e-e222-40bf-84ae-365a97532737
+    tls: true
+    network: ws
+    ws-opts:
+      path: /cp/dramafp=chrome
+      headers:
+        Host: pagescm.freen22.cc.cd
   - name: 'B - 🇺🇸 US 74 TG: @nodpai'
     type: trojan
-    server: 83.147.255.3
-    port: 8443
+    server: 69.28.83.244
+    port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
   - name: 'B - 🇺🇸 US 75 TG: @nodpai'
     type: trojan
-    server: 144.31.82.175
-    port: 8443
+    server: 155.138.209.175
+    port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
-  - name: 'B - 🇺🇸 US 76 TG: @nodpai'
+    skip-cert-verify: true
+  - name: 'C - 🇺🇸 US 76 TG: @nodpai'
     type: trojan
-    server: 83.147.255.67
-    port: 8443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
-  - name: 'C - 🇺🇸 US 77 TG: @nodpai'
-    type: vless
     server: www.digitalocean.com
-    port: 2053
-    uuid: d37a75db-76b6-4db8-b213-0d5b044d138d
-    tls: false
-    network: ws
-    ws-opts:
-      path: /fastsecurity=tls
-      headers:
-        Host: hio-awx.pages.dev
+    port: 443
+    password: d0298536-d670-4045-bbb1-ddd5ea68683e
+    sni: azadnet-5vk.pages.dev
+    skip-cert-verify: false
   - name: 🇭🇰 香港|@ripaojiedian
     type: vmess
     server: v10.hdacd.com
@@ -1114,217 +1214,27 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 🇳🇱NL_1|1.8MB/s
+  - name: 🇨🇭CH_1|1.0MB/s
     type: vless
-    server: 171.22.133.58
-    port: 443
-    uuid: 538dfc60-7b9f-4e09-8ef0-1d7d079222f5
-    tls: true
+    server: 172.65.111.43
+    port: 22
+    uuid: monacoVPN
+    tls: false
     network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: 🇩🇪DE_1|1.7MB/s
+  - name: 🇺🇸US_2|1.9MB/s
     type: trojan
-    server: 85.239.39.144
-    port: 8443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 🇯🇵JP_1|1.7MB/s
-    type: vless
-    server: dx.mmhh.eu.cc
-    port: 443
-    uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-    tls: true
-    network: ws
-    ws-opts:
-      path: /fp=random
-      headers:
-        Host: hhlfy.twiladaphne.ndjp.net
-  - name: 🇯🇵JP_2|1.0MB/s
-    type: vless
-    server: yd.mmhh.eu.cc
-    port: 443
-    uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-    tls: true
-    network: ws
-    ws-opts:
-      path: /fp=random
-      headers:
-        Host: hhlfy.twiladaphne.ndjp.net
-  - name: 🇯🇵JP_3|1.5MB/s
-    type: trojan
-    server: 43.207.197.79
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 🇭🇰HK_1|1.1MB/s
-    type: trojan
-    server: 43.168.16.112
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 🇭🇰HK_2|1.5MB/s
-    type: trojan
-    server: 149.104.26.24
-    port: 21123
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 🇩🇪DE_2|1.1MB/s
-    type: trojan
-    server: 104.20.6.134
-    port: 2096
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 🇳🇱NL_2|1.2MB/s
-    type: trojan
-    server: 109.71.241.236
-    port: 8443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
-  - name: 🇳🇱NL_3|1.1MB/s
-    type: trojan
-    server: 72.56.110.162
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 🇬🇧GB_1|1.5MB/s
-    type: trojan
-    server: 51.89.226.75
-    port: 2083
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
-  - name: 🇬🇧GB_2|1.8MB/s
-    type: trojan
-    server: 57.128.165.222
-    port: 8443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
-  - name: 🇩🇪DE_3|1.3MB/s
-    type: trojan
-    server: 46.225.31.235
-    port: 8443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
-  - name: 🇩🇪DE_4|1.5MB/s
-    type: trojan
-    server: 51.195.44.182
-    port: 8443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
-  - name: 🇩🇪DE_5|1.1MB/s
-    type: trojan
-    server: 23.88.97.94
-    port: 8443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
-  - name: 🇩🇪DE_6|1.5MB/s
-    type: trojan
-    server: 91.107.147.214
-    port: 8443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
-  - name: 🇩🇪DE_7|1.4MB/s
-    type: trojan
-    server: 51.195.47.23
-    port: 2087
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
-  - name: 🇩🇪DE_8|1.1MB/s
-    type: trojan
-    server: 138.201.190.15
-    port: 8443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
-  - name: 🇳🇱NL_4|1.5MB/s
-    type: trojan
-    server: 192.145.31.58
-    port: 2083
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
-  - name: 🇳🇱NL_5|1.1MB/s
-    type: trojan
-    server: 212.34.153.206
-    port: 8443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
-  - name: 🇸🇪SE_1|1.2MB/s
-    type: trojan
-    server: 94.183.191.71
+    server: 154.17.8.126
     port: 2053
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: false
-  - name: 🇵🇱PL_1|1.7MB/s
+  - name: 🇩🇪DE_1|1.2MB/s
     type: trojan
-    server: 31.133.0.159
+    server: 194.76.173.184
     port: 2053
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: false
-  - name: 🇺🇸US_4|2.2MB/s
-    type: vless
-    server: 89.116.46.50
-    port: 8880
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed
-      headers:
-        Host: vms.lifetime07.workers.dev
-  - name: 🇺🇸US_6|3.1MB/s
-    type: vless
-    server: 198.71.232.30
-    port: 8880
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: vms.lifetime07.workers.dev
-  - name: 🇩🇪DE_9|1.3MB/s
-    type: vless
-    server: 194.58.41.60
-    port: 8443
-    uuid: 26e4d8b5-ee98-4a8d-88c9-7f81b7be3379
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: 🇰🇷KR_7|1001KB/s
-    type: vless
-    server: 14.52.210.173
-    port: 12312
-    uuid: bafacd98-136a-4530-838d-4e5c51838dac
-    tls: true
-    network: ws
-    ws-opts:
-      path: /fp=firefox
-      headers:
-        Host: juzi8186.qea.ccwu.cc
-  - name: 🇵🇱PL_2|1.1MB/s
-    type: vless
-    server: pl2-node.vpnspacev.com
-    port: 443
-    uuid: 66036ae7-f4b4-4dd9-b72f-88b571c6ba26
-    tls: true
-    network: tcp
   - name: AU_speednode_0001
     type: vless
     server: 54.252.231.115
@@ -1479,9 +1389,34 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 欧盟+V2CROSS.COM
+  - name: 美国+CloudFlare节点
     type: vless
-    server: 45.85.119.191
+    server: ciallo-egb.pages.dev
+    port: 443
+    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: CiaLLO-egb.PAGeS.dEV
+  - name: 美国+纽约DigitalOcean数据中心
+    type: trojan
+    server: 167.99.49.60
+    port: 443
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: false
+  - name: 波兰+V2CROSS.COM
+    type: trojan
+    server: 91.149.239.206
+    port: 443
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: true
+  - name: 俄罗斯+V2CROSS.COM
+    type: vless
+    server: 176.124.223.138
     port: 2096
     uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
     tls: true
@@ -1489,49 +1424,10 @@ proxies:
     ws-opts:
       path: /
       headers:
-        Host: sni.my111000.tech
-  - name: 美国+V2CROSS.COM
+        Host: sni.111000.indevs.in
+  - name: 日本+软银宽带
     type: vless
-    server: 135.84.67.72
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.111000.v6.navy
-  - name: 美国+亚利桑那州凤凰城Oracle云计算数据中心
-    type: trojan
-    server: 129.146.46.164
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 加拿大+Bell
-    type: trojan
-    server: 142.171.21.164
-    port: 8443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: false
-  - name: 美国+亚利桑那州斯科茨代尔市Go+Daddy集团公司
-    type: trojan
-    server: 72.167.230.253
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 美国+V2CROSS.COM [1]
-    type: trojan
-    server: 155.248.181.189
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 美国+CloudFlare节点
-    type: vless
-    server: mfa.gov.ua
+    server: 126.220.82.161
     port: 443
     uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
     tls: true
@@ -1539,36 +1435,75 @@ proxies:
     ws-opts:
       path: /
       headers:
-        Host: 3-7gj.pages.dev
-  - name: 美国+亚利桑那州斯科茨代尔市Go+Daddy集团公司 [1]
+        Host: gsgsdgreyrehjsrteargsfhtrhsrwrhtruiekghmg.pages.dev
+  - name: 美国+V2CROSS.COM
     type: trojan
-    server: 198.71.189.253
+    server: 129.159.37.136
     port: 443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: true
-  - name: 美国+CloudFlare节点 [1]
+  - name: 韩国+KT电信
     type: trojan
-    server: www.calmlunch.com
-    port: 443
-    password: humanity
-    sni: www.calmlunch.com
-    skip-cert-verify: true
-  - name: 英国+社会保险安全部
-    type: vless
-    server: 51.91.101.216
+    server: 112.166.213.102
+    port: 16993
+    password: GKHWMe2R4qwNcNxu6l3KMkdd
+    sni: vpn1.rnmcnm.com
+    skip-cert-verify: false
+  - name: 美国+加利福尼亚州洛杉矶DigitalOcean数据中心
+    type: trojan
+    server: 178.128.70.6
     port: 8443
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: false
+  - name: 美国+CloudFlare节点 [1]
+    type: vless
+    server: 104.20.6.134
+    port: 8443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /?Telegram @v2rayngzendegimamad
+      headers:
+        Host: sni.111000.dynv6.net
+  - name: 新加坡+DigitalOcean数据中心
+    type: trojan
+    server: 174.138.20.108
+    port: 443
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: true
+  - name: 香港+电讯盈科有限公司
+    type: trojan
+    server: 219.76.13.177
+    port: 443
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: true
+  - name: 美国+V2CROSS.COM [1]
+    type: vless
+    server: 155.46.167.138
+    port: 2096
     uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
     tls: true
     network: ws
     ws-opts:
       path: /
       headers:
-        Host: sni.111000.v6.navy
-  - name: 美国+亚利桑那州斯科茨代尔市Go+Daddy集团公司 [2]
+        Host: sni.111000.indevs.in
+  - name: 香港+数掘科技gfvps.cn数据中心
     type: trojan
-    server: 166.62.112.253
+    server: 27.50.49.253
     port: 443
+    password: 8r%3C%5B9%27l6hAO%238ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: true
+  - name: 香港+阿里云
+    type: trojan
+    server: 47.82.155.79
+    port: 8443
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
     skip-cert-verify: false
@@ -1578,60 +1513,6 @@ proxies:
     port: 2053
     password: 8r%3C%5B9%27l6hAO%238ZQi
     sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: 192.131.142.161
-    port: 46639
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 卢森堡+V2CROSS.COM
-    type: vless
-    server: fi.gryaz-vpn.com
-    port: 34572
-    uuid: abcd6b4c-2d85-4de5-be7f-62791b0f5085
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 拉脱维亚+V2CROSS.COM
-    type: trojan
-    server: 195.123.209.189
-    port: 8443
-    password: '162534'
-    sni: cchh2.pages.dev
-    skip-cert-verify: true
-  - name: 美国+V2CROSS.COM [2]
-    type: trojan
-    server: 198.12.145.253
-    port: 443
-    password: 8r%3C%5B9%27l6hAO%238ZQi
-    sni: Koma-YT.PAGeS.Dev
-    skip-cert-verify: true
-  - name: 美国+CloudFlare节点 [2]
-    type: trojan
-    server: 104.18.12.149
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: false
-  - name: 美国+Vegasnap公司
-    type: vless
-    server: 104.129.166.138
-    port: 2096
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.111000.indevs.in
-  - name: 美国+CloudFlare节点 [3]
-    type: trojan
-    server: v1.dabache.top
-    port: 443
-    password: humanity
-    sni: www.multiplydose.com
     skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
@@ -1651,17 +1532,19 @@ proxy-groups:
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
       - 'A - 🇭🇰 HK 01 TG: @nodpai'
-      - 🇭🇰HK_3|2.0MB/s
+      - 'A - 🇭🇰 HK 02 TG: @nodpai'
       - 'B - 🇭🇰 HK 03 TG: @nodpai'
       - 'B - 🇭🇰 HK 04 TG: @nodpai'
+      - 'B - 🇭🇰 HK 05 TG: @nodpai'
       - 'B - 🇭🇰 HK 06 TG: @nodpai'
       - 'B - 🇭🇰 HK 07 TG: @nodpai'
       - 'B - 🇭🇰 HK 08 TG: @nodpai'
-      - 'C - 🇭🇰 HK 09 TG: @nodpai'
+      - 'B - 🇭🇰 HK 09 TG: @nodpai'
       - 'C - 🇭🇰 HK 10 TG: @nodpai'
+      - 'C - 🇭🇰 HK 11 TG: @nodpai'
       - 'A - 🇹🇼 TW 01 TG: @nodpai'
-      - 'A - 🇯🇵 JP 01 TG: @nodpai'
-      - 'A - 🇯🇵 JP 03 TG: @nodpai'
+      - 'B - 🇯🇵 JP 02 TG: @nodpai'
+      - 'B - 🇯🇵 JP 03 TG: @nodpai'
       - 'B - 🇯🇵 JP 04 TG: @nodpai'
       - 'B - 🇯🇵 JP 05 TG: @nodpai'
       - 'B - 🇯🇵 JP 06 TG: @nodpai'
@@ -1670,14 +1553,12 @@ proxy-groups:
       - 'B - 🇯🇵 JP 09 TG: @nodpai'
       - 'B - 🇯🇵 JP 10 TG: @nodpai'
       - 'B - 🇯🇵 JP 11 TG: @nodpai'
-      - 'B - 🇯🇵 JP 12 TG: @nodpai'
-      - 'B - 🇯🇵 JP 13 TG: @nodpai'
       - 'A - 🇸🇬 SG 01 TG: @nodpai'
-      - 'B - 🇸🇬 SG 02 TG: @nodpai'
-      - 'B - 🇸🇬 SG 03 TG: @nodpai'
-      - 'B - 🇸🇬 SG 04 TG: @nodpai'
-      - 'B - 🇸🇬 SG 05 TG: @nodpai'
-      - 'B - 🇸🇬 SG 06 TG: @nodpai'
+      - 'A - 🇸🇬 SG 02 TG: @nodpai'
+      - 'A - 🇸🇬 SG 03 TG: @nodpai'
+      - 'A - 🇸🇬 SG 04 TG: @nodpai'
+      - 'A - 🇸🇬 SG 05 TG: @nodpai'
+      - 'A - 🇸🇬 SG 06 TG: @nodpai'
       - 'B - 🇸🇬 SG 07 TG: @nodpai'
       - 'B - 🇸🇬 SG 08 TG: @nodpai'
       - 'B - 🇸🇬 SG 09 TG: @nodpai'
@@ -1699,7 +1580,10 @@ proxy-groups:
       - 'B - 🇸🇬 SG 25 TG: @nodpai'
       - 'B - 🇸🇬 SG 26 TG: @nodpai'
       - 'B - 🇸🇬 SG 27 TG: @nodpai'
-      - 'B - 🇸🇬 SG 28 TG: @nodpai'
+      - 'C - 🇸🇬 SG 28 TG: @nodpai'
+      - 'C - 🇸🇬 SG 29 TG: @nodpai'
+      - 'C - 🇸🇬 SG 30 TG: @nodpai'
+      - 'A - 🇺🇸 US 01 TG: @nodpai'
       - 'B - 🇺🇸 US 02 TG: @nodpai'
       - 'B - 🇺🇸 US 03 TG: @nodpai'
       - 'B - 🇺🇸 US 04 TG: @nodpai'
@@ -1774,8 +1658,7 @@ proxy-groups:
       - 'B - 🇺🇸 US 73 TG: @nodpai'
       - 'B - 🇺🇸 US 74 TG: @nodpai'
       - 'B - 🇺🇸 US 75 TG: @nodpai'
-      - 'B - 🇺🇸 US 76 TG: @nodpai'
-      - 'C - 🇺🇸 US 77 TG: @nodpai'
+      - 'C - 🇺🇸 US 76 TG: @nodpai'
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
@@ -1791,33 +1674,9 @@ proxy-groups:
       - 美国3|@ripaojiedian
       - 🇺🇸 美国4|@ripaojiedian
       - 🇺🇸 美国5|@ripaojiedian
-      - 🇳🇱NL_1|1.8MB/s
-      - 🇩🇪DE_1|1.7MB/s
-      - 🇯🇵JP_1|1.7MB/s
-      - 🇯🇵JP_2|1.0MB/s
-      - 🇯🇵JP_3|1.5MB/s
-      - 🇭🇰HK_1|1.1MB/s
-      - 🇭🇰HK_2|1.5MB/s
-      - 🇩🇪DE_2|1.1MB/s
-      - 🇳🇱NL_2|1.2MB/s
-      - 🇳🇱NL_3|1.1MB/s
-      - 🇬🇧GB_1|1.5MB/s
-      - 🇬🇧GB_2|1.8MB/s
-      - 🇩🇪DE_3|1.3MB/s
-      - 🇩🇪DE_4|1.5MB/s
-      - 🇩🇪DE_5|1.1MB/s
-      - 🇩🇪DE_6|1.5MB/s
-      - 🇩🇪DE_7|1.4MB/s
-      - 🇩🇪DE_8|1.1MB/s
-      - 🇳🇱NL_4|1.5MB/s
-      - 🇳🇱NL_5|1.1MB/s
-      - 🇸🇪SE_1|1.2MB/s
-      - 🇵🇱PL_1|1.7MB/s
-      - 🇺🇸US_4|2.2MB/s
-      - 🇺🇸US_6|3.1MB/s
-      - 🇩🇪DE_9|1.3MB/s
-      - 🇰🇷KR_7|1001KB/s
-      - 🇵🇱PL_2|1.1MB/s
+      - 🇨🇭CH_1|1.0MB/s
+      - 🇺🇸US_2|1.9MB/s
+      - 🇩🇪DE_1|1.2MB/s
       - AU_speednode_0001
       - AU_speednode_0002
       - BG_speednode_0003
@@ -1837,25 +1696,21 @@ proxy-groups:
       - US_speednode_0038
       - US_speednode_0039
       - US_speednode_0040
-      - 欧盟+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 美国+亚利桑那州凤凰城Oracle云计算数据中心
-      - 加拿大+Bell
-      - 美国+亚利桑那州斯科茨代尔市Go+Daddy集团公司
-      - 美国+V2CROSS.COM [1]
       - 美国+CloudFlare节点
-      - 美国+亚利桑那州斯科茨代尔市Go+Daddy集团公司 [1]
+      - 美国+纽约DigitalOcean数据中心
+      - 波兰+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
+      - 日本+软银宽带
+      - 美国+V2CROSS.COM
+      - 韩国+KT电信
+      - 美国+加利福尼亚州洛杉矶DigitalOcean数据中心
       - 美国+CloudFlare节点 [1]
-      - 英国+社会保险安全部
-      - 美国+亚利桑那州斯科茨代尔市Go+Daddy集团公司 [2]
+      - 新加坡+DigitalOcean数据中心
+      - 香港+电讯盈科有限公司
+      - 美国+V2CROSS.COM [1]
+      - 香港+数掘科技gfvps.cn数据中心
+      - 香港+阿里云
       - 奥地利+V2CROSS.COM
-      - 加拿大+V2CROSS.COM
-      - 卢森堡+V2CROSS.COM
-      - 拉脱维亚+V2CROSS.COM
-      - 美国+V2CROSS.COM [2]
-      - 美国+CloudFlare节点 [2]
-      - 美国+Vegasnap公司
-      - 美国+CloudFlare节点 [3]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -1870,17 +1725,19 @@ proxy-groups:
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
       - 'A - 🇭🇰 HK 01 TG: @nodpai'
-      - 🇭🇰HK_3|2.0MB/s
+      - 'A - 🇭🇰 HK 02 TG: @nodpai'
       - 'B - 🇭🇰 HK 03 TG: @nodpai'
       - 'B - 🇭🇰 HK 04 TG: @nodpai'
+      - 'B - 🇭🇰 HK 05 TG: @nodpai'
       - 'B - 🇭🇰 HK 06 TG: @nodpai'
       - 'B - 🇭🇰 HK 07 TG: @nodpai'
       - 'B - 🇭🇰 HK 08 TG: @nodpai'
-      - 'C - 🇭🇰 HK 09 TG: @nodpai'
+      - 'B - 🇭🇰 HK 09 TG: @nodpai'
       - 'C - 🇭🇰 HK 10 TG: @nodpai'
+      - 'C - 🇭🇰 HK 11 TG: @nodpai'
       - 'A - 🇹🇼 TW 01 TG: @nodpai'
-      - 'A - 🇯🇵 JP 01 TG: @nodpai'
-      - 'A - 🇯🇵 JP 03 TG: @nodpai'
+      - 'B - 🇯🇵 JP 02 TG: @nodpai'
+      - 'B - 🇯🇵 JP 03 TG: @nodpai'
       - 'B - 🇯🇵 JP 04 TG: @nodpai'
       - 'B - 🇯🇵 JP 05 TG: @nodpai'
       - 'B - 🇯🇵 JP 06 TG: @nodpai'
@@ -1889,14 +1746,12 @@ proxy-groups:
       - 'B - 🇯🇵 JP 09 TG: @nodpai'
       - 'B - 🇯🇵 JP 10 TG: @nodpai'
       - 'B - 🇯🇵 JP 11 TG: @nodpai'
-      - 'B - 🇯🇵 JP 12 TG: @nodpai'
-      - 'B - 🇯🇵 JP 13 TG: @nodpai'
       - 'A - 🇸🇬 SG 01 TG: @nodpai'
-      - 'B - 🇸🇬 SG 02 TG: @nodpai'
-      - 'B - 🇸🇬 SG 03 TG: @nodpai'
-      - 'B - 🇸🇬 SG 04 TG: @nodpai'
-      - 'B - 🇸🇬 SG 05 TG: @nodpai'
-      - 'B - 🇸🇬 SG 06 TG: @nodpai'
+      - 'A - 🇸🇬 SG 02 TG: @nodpai'
+      - 'A - 🇸🇬 SG 03 TG: @nodpai'
+      - 'A - 🇸🇬 SG 04 TG: @nodpai'
+      - 'A - 🇸🇬 SG 05 TG: @nodpai'
+      - 'A - 🇸🇬 SG 06 TG: @nodpai'
       - 'B - 🇸🇬 SG 07 TG: @nodpai'
       - 'B - 🇸🇬 SG 08 TG: @nodpai'
       - 'B - 🇸🇬 SG 09 TG: @nodpai'
@@ -1918,7 +1773,10 @@ proxy-groups:
       - 'B - 🇸🇬 SG 25 TG: @nodpai'
       - 'B - 🇸🇬 SG 26 TG: @nodpai'
       - 'B - 🇸🇬 SG 27 TG: @nodpai'
-      - 'B - 🇸🇬 SG 28 TG: @nodpai'
+      - 'C - 🇸🇬 SG 28 TG: @nodpai'
+      - 'C - 🇸🇬 SG 29 TG: @nodpai'
+      - 'C - 🇸🇬 SG 30 TG: @nodpai'
+      - 'A - 🇺🇸 US 01 TG: @nodpai'
       - 'B - 🇺🇸 US 02 TG: @nodpai'
       - 'B - 🇺🇸 US 03 TG: @nodpai'
       - 'B - 🇺🇸 US 04 TG: @nodpai'
@@ -1993,8 +1851,7 @@ proxy-groups:
       - 'B - 🇺🇸 US 73 TG: @nodpai'
       - 'B - 🇺🇸 US 74 TG: @nodpai'
       - 'B - 🇺🇸 US 75 TG: @nodpai'
-      - 'B - 🇺🇸 US 76 TG: @nodpai'
-      - 'C - 🇺🇸 US 77 TG: @nodpai'
+      - 'C - 🇺🇸 US 76 TG: @nodpai'
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
@@ -2010,33 +1867,9 @@ proxy-groups:
       - 美国3|@ripaojiedian
       - 🇺🇸 美国4|@ripaojiedian
       - 🇺🇸 美国5|@ripaojiedian
-      - 🇳🇱NL_1|1.8MB/s
-      - 🇩🇪DE_1|1.7MB/s
-      - 🇯🇵JP_1|1.7MB/s
-      - 🇯🇵JP_2|1.0MB/s
-      - 🇯🇵JP_3|1.5MB/s
-      - 🇭🇰HK_1|1.1MB/s
-      - 🇭🇰HK_2|1.5MB/s
-      - 🇩🇪DE_2|1.1MB/s
-      - 🇳🇱NL_2|1.2MB/s
-      - 🇳🇱NL_3|1.1MB/s
-      - 🇬🇧GB_1|1.5MB/s
-      - 🇬🇧GB_2|1.8MB/s
-      - 🇩🇪DE_3|1.3MB/s
-      - 🇩🇪DE_4|1.5MB/s
-      - 🇩🇪DE_5|1.1MB/s
-      - 🇩🇪DE_6|1.5MB/s
-      - 🇩🇪DE_7|1.4MB/s
-      - 🇩🇪DE_8|1.1MB/s
-      - 🇳🇱NL_4|1.5MB/s
-      - 🇳🇱NL_5|1.1MB/s
-      - 🇸🇪SE_1|1.2MB/s
-      - 🇵🇱PL_1|1.7MB/s
-      - 🇺🇸US_4|2.2MB/s
-      - 🇺🇸US_6|3.1MB/s
-      - 🇩🇪DE_9|1.3MB/s
-      - 🇰🇷KR_7|1001KB/s
-      - 🇵🇱PL_2|1.1MB/s
+      - 🇨🇭CH_1|1.0MB/s
+      - 🇺🇸US_2|1.9MB/s
+      - 🇩🇪DE_1|1.2MB/s
       - AU_speednode_0001
       - AU_speednode_0002
       - BG_speednode_0003
@@ -2056,25 +1889,21 @@ proxy-groups:
       - US_speednode_0038
       - US_speednode_0039
       - US_speednode_0040
-      - 欧盟+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 美国+亚利桑那州凤凰城Oracle云计算数据中心
-      - 加拿大+Bell
-      - 美国+亚利桑那州斯科茨代尔市Go+Daddy集团公司
-      - 美国+V2CROSS.COM [1]
       - 美国+CloudFlare节点
-      - 美国+亚利桑那州斯科茨代尔市Go+Daddy集团公司 [1]
+      - 美国+纽约DigitalOcean数据中心
+      - 波兰+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
+      - 日本+软银宽带
+      - 美国+V2CROSS.COM
+      - 韩国+KT电信
+      - 美国+加利福尼亚州洛杉矶DigitalOcean数据中心
       - 美国+CloudFlare节点 [1]
-      - 英国+社会保险安全部
-      - 美国+亚利桑那州斯科茨代尔市Go+Daddy集团公司 [2]
+      - 新加坡+DigitalOcean数据中心
+      - 香港+电讯盈科有限公司
+      - 美国+V2CROSS.COM [1]
+      - 香港+数掘科技gfvps.cn数据中心
+      - 香港+阿里云
       - 奥地利+V2CROSS.COM
-      - 加拿大+V2CROSS.COM
-      - 卢森堡+V2CROSS.COM
-      - 拉脱维亚+V2CROSS.COM
-      - 美国+V2CROSS.COM [2]
-      - 美国+CloudFlare节点 [2]
-      - 美国+Vegasnap公司
-      - 美国+CloudFlare节点 [3]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -2091,17 +1920,19 @@ proxy-groups:
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
       - 'A - 🇭🇰 HK 01 TG: @nodpai'
-      - 🇭🇰HK_3|2.0MB/s
+      - 'A - 🇭🇰 HK 02 TG: @nodpai'
       - 'B - 🇭🇰 HK 03 TG: @nodpai'
       - 'B - 🇭🇰 HK 04 TG: @nodpai'
+      - 'B - 🇭🇰 HK 05 TG: @nodpai'
       - 'B - 🇭🇰 HK 06 TG: @nodpai'
       - 'B - 🇭🇰 HK 07 TG: @nodpai'
       - 'B - 🇭🇰 HK 08 TG: @nodpai'
-      - 'C - 🇭🇰 HK 09 TG: @nodpai'
+      - 'B - 🇭🇰 HK 09 TG: @nodpai'
       - 'C - 🇭🇰 HK 10 TG: @nodpai'
+      - 'C - 🇭🇰 HK 11 TG: @nodpai'
       - 'A - 🇹🇼 TW 01 TG: @nodpai'
-      - 'A - 🇯🇵 JP 01 TG: @nodpai'
-      - 'A - 🇯🇵 JP 03 TG: @nodpai'
+      - 'B - 🇯🇵 JP 02 TG: @nodpai'
+      - 'B - 🇯🇵 JP 03 TG: @nodpai'
       - 'B - 🇯🇵 JP 04 TG: @nodpai'
       - 'B - 🇯🇵 JP 05 TG: @nodpai'
       - 'B - 🇯🇵 JP 06 TG: @nodpai'
@@ -2110,14 +1941,12 @@ proxy-groups:
       - 'B - 🇯🇵 JP 09 TG: @nodpai'
       - 'B - 🇯🇵 JP 10 TG: @nodpai'
       - 'B - 🇯🇵 JP 11 TG: @nodpai'
-      - 'B - 🇯🇵 JP 12 TG: @nodpai'
-      - 'B - 🇯🇵 JP 13 TG: @nodpai'
       - 'A - 🇸🇬 SG 01 TG: @nodpai'
-      - 'B - 🇸🇬 SG 02 TG: @nodpai'
-      - 'B - 🇸🇬 SG 03 TG: @nodpai'
-      - 'B - 🇸🇬 SG 04 TG: @nodpai'
-      - 'B - 🇸🇬 SG 05 TG: @nodpai'
-      - 'B - 🇸🇬 SG 06 TG: @nodpai'
+      - 'A - 🇸🇬 SG 02 TG: @nodpai'
+      - 'A - 🇸🇬 SG 03 TG: @nodpai'
+      - 'A - 🇸🇬 SG 04 TG: @nodpai'
+      - 'A - 🇸🇬 SG 05 TG: @nodpai'
+      - 'A - 🇸🇬 SG 06 TG: @nodpai'
       - 'B - 🇸🇬 SG 07 TG: @nodpai'
       - 'B - 🇸🇬 SG 08 TG: @nodpai'
       - 'B - 🇸🇬 SG 09 TG: @nodpai'
@@ -2139,7 +1968,10 @@ proxy-groups:
       - 'B - 🇸🇬 SG 25 TG: @nodpai'
       - 'B - 🇸🇬 SG 26 TG: @nodpai'
       - 'B - 🇸🇬 SG 27 TG: @nodpai'
-      - 'B - 🇸🇬 SG 28 TG: @nodpai'
+      - 'C - 🇸🇬 SG 28 TG: @nodpai'
+      - 'C - 🇸🇬 SG 29 TG: @nodpai'
+      - 'C - 🇸🇬 SG 30 TG: @nodpai'
+      - 'A - 🇺🇸 US 01 TG: @nodpai'
       - 'B - 🇺🇸 US 02 TG: @nodpai'
       - 'B - 🇺🇸 US 03 TG: @nodpai'
       - 'B - 🇺🇸 US 04 TG: @nodpai'
@@ -2214,8 +2046,7 @@ proxy-groups:
       - 'B - 🇺🇸 US 73 TG: @nodpai'
       - 'B - 🇺🇸 US 74 TG: @nodpai'
       - 'B - 🇺🇸 US 75 TG: @nodpai'
-      - 'B - 🇺🇸 US 76 TG: @nodpai'
-      - 'C - 🇺🇸 US 77 TG: @nodpai'
+      - 'C - 🇺🇸 US 76 TG: @nodpai'
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
@@ -2231,33 +2062,9 @@ proxy-groups:
       - 美国3|@ripaojiedian
       - 🇺🇸 美国4|@ripaojiedian
       - 🇺🇸 美国5|@ripaojiedian
-      - 🇳🇱NL_1|1.8MB/s
-      - 🇩🇪DE_1|1.7MB/s
-      - 🇯🇵JP_1|1.7MB/s
-      - 🇯🇵JP_2|1.0MB/s
-      - 🇯🇵JP_3|1.5MB/s
-      - 🇭🇰HK_1|1.1MB/s
-      - 🇭🇰HK_2|1.5MB/s
-      - 🇩🇪DE_2|1.1MB/s
-      - 🇳🇱NL_2|1.2MB/s
-      - 🇳🇱NL_3|1.1MB/s
-      - 🇬🇧GB_1|1.5MB/s
-      - 🇬🇧GB_2|1.8MB/s
-      - 🇩🇪DE_3|1.3MB/s
-      - 🇩🇪DE_4|1.5MB/s
-      - 🇩🇪DE_5|1.1MB/s
-      - 🇩🇪DE_6|1.5MB/s
-      - 🇩🇪DE_7|1.4MB/s
-      - 🇩🇪DE_8|1.1MB/s
-      - 🇳🇱NL_4|1.5MB/s
-      - 🇳🇱NL_5|1.1MB/s
-      - 🇸🇪SE_1|1.2MB/s
-      - 🇵🇱PL_1|1.7MB/s
-      - 🇺🇸US_4|2.2MB/s
-      - 🇺🇸US_6|3.1MB/s
-      - 🇩🇪DE_9|1.3MB/s
-      - 🇰🇷KR_7|1001KB/s
-      - 🇵🇱PL_2|1.1MB/s
+      - 🇨🇭CH_1|1.0MB/s
+      - 🇺🇸US_2|1.9MB/s
+      - 🇩🇪DE_1|1.2MB/s
       - AU_speednode_0001
       - AU_speednode_0002
       - BG_speednode_0003
@@ -2277,25 +2084,21 @@ proxy-groups:
       - US_speednode_0038
       - US_speednode_0039
       - US_speednode_0040
-      - 欧盟+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 美国+亚利桑那州凤凰城Oracle云计算数据中心
-      - 加拿大+Bell
-      - 美国+亚利桑那州斯科茨代尔市Go+Daddy集团公司
-      - 美国+V2CROSS.COM [1]
       - 美国+CloudFlare节点
-      - 美国+亚利桑那州斯科茨代尔市Go+Daddy集团公司 [1]
+      - 美国+纽约DigitalOcean数据中心
+      - 波兰+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
+      - 日本+软银宽带
+      - 美国+V2CROSS.COM
+      - 韩国+KT电信
+      - 美国+加利福尼亚州洛杉矶DigitalOcean数据中心
       - 美国+CloudFlare节点 [1]
-      - 英国+社会保险安全部
-      - 美国+亚利桑那州斯科茨代尔市Go+Daddy集团公司 [2]
+      - 新加坡+DigitalOcean数据中心
+      - 香港+电讯盈科有限公司
+      - 美国+V2CROSS.COM [1]
+      - 香港+数掘科技gfvps.cn数据中心
+      - 香港+阿里云
       - 奥地利+V2CROSS.COM
-      - 加拿大+V2CROSS.COM
-      - 卢森堡+V2CROSS.COM
-      - 拉脱维亚+V2CROSS.COM
-      - 美国+V2CROSS.COM [2]
-      - 美国+CloudFlare节点 [2]
-      - 美国+Vegasnap公司
-      - 美国+CloudFlare节点 [3]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
