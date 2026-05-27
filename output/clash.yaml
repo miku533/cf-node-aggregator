@@ -1420,31 +1420,49 @@ proxies:
     uuid: 301a4309-0f4d-42bf-a057-7d60c7a73259
     tls: true
     network: tcp
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 167.68.4.199
+    port: 2053
+    password: Aimer
+    sni: epge.muarua.filegear-sg.me
+    skip-cert-verify: false
+  - name: 南非+V2CROSS.COM
+    type: vless
+    server: 102.177.189.30
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime29.workers.dev
+  - name: 荷兰+V2CROSS.COM
+    type: vless
+    server: 188.164.248.30
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?https://t.me/YouTube@小青科学网🇨🇳
+      headers:
+        Host: vms.lifetime26.workers.dev
   - name: 美国+CloudFlare节点
     type: vless
     server: 104.20.5.134
-    port: 2086
+    port: 2052
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     tls: false
     network: ws
     ws-opts:
-      path: /PdgTMW8NBNZYo6L23v
+      path: /assets
       headers:
-        Host: index.0x15.workers.dev
-  - name: 美国+CloudFlare节点 [1]
+        Host: index.0x14.workers.dev
+  - name: 美国+V2CROSS.COM [1]
     type: vless
-    server: 104.26.5.134
-    port: 2096
-    uuid: 7f50ec42-4673-41e2-94be-ae6253909def
-    tls: true
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: joey.freen1.de5.net
-  - name: 美国+CloudFlare节点 [2]
-    type: vless
-    server: 104.20.6.134
+    server: 45.131.211.138
     port: 2096
     uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
     tls: true
@@ -1453,109 +1471,7 @@ proxies:
       path: /
       headers:
         Host: sni.111000.indevs.in
-  - name: 美国+CloudFlare节点 [3]
-    type: vless
-    server: www.epicgames.com
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: cnmfangbinxing-nmsl.cnmfangbinxing-0.workers.dev
-  - name: 欧盟+V2CROSS.COM
-    type: vless
-    server: 45.85.119.191
-    port: 2096
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.my111000.tech
-  - name: 英国+V2CROSS.COM
-    type: vless
-    server: swe-8t.freeonline.pro
-    port: 443
-    uuid: 980231fb-4372-5c81-b696-20aa34d33af0
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 丹麦+V2CROSS.COM
-    type: vless
-    server: 195.85.59.30
-    port: 8880
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: vms.lifetime58.workers.dev
-  - name: 德国+V2CROSS.COM
-    type: vless
-    server: 77.37.33.40
-    port: 8880
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: vms.lifetime57.workers.dev
-  - name: 亚太地区 V2CROSS.COM
-    type: vmess
-    server: 103.181.164.145
-    port: 54022
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 丹麦+V2CROSS.COM [1]
-    type: vless
-    server: 195.85.59.50
-    port: 8880
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: vms.lifetime58.workers.dev
-  - name: 美国+V2CROSS.COM
-    type: vless
-    server: 135.84.74.44
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    tls: true
-    network: ws
-    ws-opts:
-      path: /?Telegram🇨🇳 @WangCai2=
-      headers:
-        Host: sni.111000.v6.navy
-  - name: 保加利亚+V2CROSS.COM
-    type: vless
-    server: 87.120.219.103
-    port: 443
-    uuid: 5e6242ef-7e51-4f8a-8441-bdd3381b7000
-    tls: false
-    network: raw
-    flow: xtls-rprx-vision
-  - name: 美国+CloudFlare节点 [4]
-    type: vless
-    server: ciallo-egb.pages.dev
-    port: 2096
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: CIALlO-EgB.pAGES.dEV
-  - name: 美国+CloudFlare节点 [5]
+  - name: 美国+CloudFlare节点 [1]
     type: vless
     server: 104.20.6.134
     port: 80
@@ -1566,17 +1482,25 @@ proxies:
       path: / @ProxyVPN11
       headers:
         Host: vip.yaml7.ggff.net
-  - name: 美国+CloudFlare节点 [6]
+  - name: 英国+V2CROSS.COM
     type: vless
-    server: cf9.danfeng.eu.org
+    server: swe-8t.freeonline.pro
+    port: 443
+    uuid: 980231fb-4372-5c81-b696-20aa34d33af0
+    tls: false
+    network: tcp
+    flow: xtls-rprx-vision
+  - name: 美国+V2CROSS.COM [2]
+    type: vless
+    server: 155.46.167.138
     port: 2096
-    uuid: bafacd98-136a-4530-838d-4e5c51838dac
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
     tls: true
     network: ws
     ws-opts:
-      path: /lib/soft/payment/juzibaipiao?ed=2560
+      path: /
       headers:
-        Host: juzi8186.qea.ccwu.cc
+        Host: sni.111000.indevs.in
   - name: 美国+Microsoft数据中心
     type: vless
     server: 20.16.105.244
@@ -1588,6 +1512,14 @@ proxies:
       path: /hot/juzibaipiao
       headers:
         Host: juzi8186.qea.ccwu.cc
+  - name: 美国+V2CROSS.COM [3]
+    type: vless
+    server: 45.141.234.170
+    port: 8443
+    uuid: 10e82fcc-94ec-4d09-8855-579bb55b77e4
+    tls: false
+    network: tcp
+    flow: xtls-rprx-vision
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1757,22 +1689,16 @@ proxy-groups:
       - RU_speednode_0029
       - US_speednode_0035
       - US_speednode_0036
-      - 美国+CloudFlare节点
-      - 美国+CloudFlare节点 [1]
-      - 美国+CloudFlare节点 [2]
-      - 美国+CloudFlare节点 [3]
-      - 欧盟+V2CROSS.COM
-      - 英国+V2CROSS.COM
-      - 丹麦+V2CROSS.COM
-      - 德国+V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
-      - 丹麦+V2CROSS.COM [1]
       - 美国+V2CROSS.COM
-      - 保加利亚+V2CROSS.COM
-      - 美国+CloudFlare节点 [4]
-      - 美国+CloudFlare节点 [5]
-      - 美国+CloudFlare节点 [6]
+      - 南非+V2CROSS.COM
+      - 荷兰+V2CROSS.COM
+      - 美国+CloudFlare节点
+      - 美国+V2CROSS.COM [1]
+      - 美国+CloudFlare节点 [1]
+      - 英国+V2CROSS.COM
+      - 美国+V2CROSS.COM [2]
       - 美国+Microsoft数据中心
+      - 美国+V2CROSS.COM [3]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -1938,22 +1864,16 @@ proxy-groups:
       - RU_speednode_0029
       - US_speednode_0035
       - US_speednode_0036
-      - 美国+CloudFlare节点
-      - 美国+CloudFlare节点 [1]
-      - 美国+CloudFlare节点 [2]
-      - 美国+CloudFlare节点 [3]
-      - 欧盟+V2CROSS.COM
-      - 英国+V2CROSS.COM
-      - 丹麦+V2CROSS.COM
-      - 德国+V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
-      - 丹麦+V2CROSS.COM [1]
       - 美国+V2CROSS.COM
-      - 保加利亚+V2CROSS.COM
-      - 美国+CloudFlare节点 [4]
-      - 美国+CloudFlare节点 [5]
-      - 美国+CloudFlare节点 [6]
+      - 南非+V2CROSS.COM
+      - 荷兰+V2CROSS.COM
+      - 美国+CloudFlare节点
+      - 美国+V2CROSS.COM [1]
+      - 美国+CloudFlare节点 [1]
+      - 英国+V2CROSS.COM
+      - 美国+V2CROSS.COM [2]
       - 美国+Microsoft数据中心
+      - 美国+V2CROSS.COM [3]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -2121,22 +2041,16 @@ proxy-groups:
       - RU_speednode_0029
       - US_speednode_0035
       - US_speednode_0036
-      - 美国+CloudFlare节点
-      - 美国+CloudFlare节点 [1]
-      - 美国+CloudFlare节点 [2]
-      - 美国+CloudFlare节点 [3]
-      - 欧盟+V2CROSS.COM
-      - 英国+V2CROSS.COM
-      - 丹麦+V2CROSS.COM
-      - 德国+V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
-      - 丹麦+V2CROSS.COM [1]
       - 美国+V2CROSS.COM
-      - 保加利亚+V2CROSS.COM
-      - 美国+CloudFlare节点 [4]
-      - 美国+CloudFlare节点 [5]
-      - 美国+CloudFlare节点 [6]
+      - 南非+V2CROSS.COM
+      - 荷兰+V2CROSS.COM
+      - 美国+CloudFlare节点
+      - 美国+V2CROSS.COM [1]
+      - 美国+CloudFlare节点 [1]
+      - 英国+V2CROSS.COM
+      - 美国+V2CROSS.COM [2]
       - 美国+Microsoft数据中心
+      - 美国+V2CROSS.COM [3]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
