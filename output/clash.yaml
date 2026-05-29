@@ -95,7 +95,7 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 'B - 🇭🇰 HK 01 TG: @nodpai'
+  - name: 'A - 🇭🇰 HK 01 TG: @nodpai'
     type: vmess
     server: gtm-sg-cc54q7d1q01.365cloud0285.com
     port: 6001
@@ -105,198 +105,19 @@ proxies:
     tls: false
     network: tcp
   - name: 'B - 🇭🇰 HK 02 TG: @nodpai'
-    type: vless
-    server: 103.123.162.50
-    port: 10011
-    uuid: 17011a43-97e2-44b0-b0da-a2ea151ad75c
+    type: vmess
+    server: cu7.ainivp.com
+    port: 33414
+    uuid: 9204afcd-026e-781f-1abc-c03efabd1344
+    alterId: 0
+    cipher: auto
     tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
+    network: ws
+    ws-opts:
+      path: /ray
+      headers:
+        Host: cu7.ainivp.com
   - name: 'B - 🇭🇰 HK 03 TG: @nodpai'
-    type: vmess
-    server: dotu-krv1.kunlun03dns.com
-    port: 11143
-    uuid: 6b989fce-172e-37a6-b324-3922008b17f9
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 'C - 🇭🇰 HK 04 TG: @nodpai'
-    type: vmess
-    server: v9.hdacd.com
-    port: 30809
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 'C - 🇭🇰 HK 05 TG: @nodpai'
-    type: vmess
-    server: 103.181.164.145
-    port: 51556
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 'C - 🇭🇰 HK 06 TG: @nodpai'
-    type: vmess
-    server: 103.181.164.145
-    port: 54022
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 'B - 🇹🇼 TW 01 TG: @nodpai'
-    type: vmess
-    server: v11.zgtfqs.click
-    port: 30811
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 'B - 🇹🇼 TW 02 TG: @nodpai'
-    type: vmess
-    server: dotu-twv1.kunlun03dns.com
-    port: 11111
-    uuid: 6b989fce-172e-37a6-b324-3922008b17f9
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 'B - 🇹🇼 TW 03 TG: @nodpai'
-    type: vmess
-    server: dotu-twv1.kunlun03dns.com
-    port: 11112
-    uuid: 6b989fce-172e-37a6-b324-3922008b17f9
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 'B - 🇹🇼 TW 05 TG: @nodpai'
-    type: trojan
-    server: jpbgp.netvigor.cc
-    port: 19128
-    password: gcuCpQfaiVeDBdWG
-    sni: yazhou10.dynu.net
-    skip-cert-verify: false
-  - name: 'B - 🇯🇵 JP 01 TG: @nodpai'
-    type: vmess
-    server: gtm-sg-cc54q7d1q01.365cloud0285.com
-    port: 6003
-    uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 'B - 🇯🇵 JP 02 TG: @nodpai'
-    type: vmess
-    server: dotu-jpv1.kunlun03dns.com
-    port: 11122
-    uuid: 6b989fce-172e-37a6-b324-3922008b17f9
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 'B - 🇯🇵 JP 03 TG: @nodpai'
-    type: vmess
-    server: v6.hdacd.com
-    port: 30806
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 'B - 🇯🇵 JP 04 TG: @nodpai'
-    type: vmess
-    server: dotu-jpv1.kunlun03dns.com
-    port: 11119
-    uuid: 6b989fce-172e-37a6-b324-3922008b17f9
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 'B - 🇯🇵 JP 05 TG: @nodpai'
-    type: vmess
-    server: 109.61.109.204
-    port: 38404
-    uuid: e1cc26b3-df0b-477b-afb0-53659a25e978
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 'B - 🇯🇵 JP 06 TG: @nodpai'
-    type: vmess
-    server: cu3.ainivp.com
-    port: 33103
-    uuid: 9204afcd-026e-781f-1abc-c03efabd1344
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /ray
-      headers:
-        Host: cu3.ainivp.com
-  - name: 'B - 🇯🇵 JP 07 TG: @nodpai'
-    type: vmess
-    server: 109.61.109.204
-    port: 63171
-    uuid: e3cb685e-7840-45cb-9d64-b2028d9b635e
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 'B - 🇯🇵 JP 08 TG: @nodpai'
-    type: vmess
-    server: cu3.ainivp.com
-    port: 33108
-    uuid: 9204afcd-026e-781f-1abc-c03efabd1344
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /ray
-      headers:
-        Host: cu3.ainivp.com
-  - name: 'B - 🇯🇵 JP 09 TG: @nodpai'
-    type: vmess
-    server: 109.61.109.204
-    port: 19241
-    uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 'B - 🇯🇵 JP 10 TG: @nodpai'
-    type: vmess
-    server: 109.61.109.204
-    port: 64329
-    uuid: 3b475934-cb2a-4d96-b260-5e50cca5d430
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 'B - 🇯🇵 JP 11 TG: @nodpai'
     type: vmess
     server: dotu-jpv1.kunlun03dns.com
     port: 11121
@@ -305,24 +126,236 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
+  - name: 'B - 🇭🇰 HK 04 TG: @nodpai'
+    type: vless
+    server: 103.123.162.50
+    port: 10011
+    uuid: 17011a43-97e2-44b0-b0da-a2ea151ad75c
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443-udp443-udp443
+  - name: 'B - 🇭🇰 HK 05 TG: @nodpai'
+    type: vmess
+    server: dotu-krv1.kunlun03dns.com
+    port: 11143
+    uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 'B - 🇭🇰 HK 06 TG: @nodpai'
+    type: vmess
+    server: dotu-sgv1.kunlun03dns.com
+    port: 11138
+    uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 'B - 🇭🇰 HK 07 TG: @nodpai'
+    type: vmess
+    server: yd3.ainivp.com
+    port: 33407
+    uuid: 9204afcd-026e-781f-1abc-c03efabd1344
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /ray
+      headers:
+        Host: yd3.ainivp.com
+  - name: 'B - 🇭🇰 HK 08 TG: @nodpai'
+    type: vmess
+    server: dotu-sgv1.kunlun03dns.com
+    port: 11136
+    uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 'B - 🇭🇰 HK 09 TG: @nodpai'
+    type: vmess
+    server: dotu-sgv1.kunlun03dns.com
+    port: 11137
+    uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 'C - 🇭🇰 HK 10 TG: @nodpai'
+    type: vmess
+    server: 103.181.164.145
+    port: 51556
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 'C - 🇭🇰 HK 11 TG: @nodpai'
+    type: vmess
+    server: 103.181.164.145
+    port: 54022
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 'B - 🇹🇼 TW 02 TG: @nodpai'
+    type: vmess
+    server: dotu-twv1.kunlun03dns.com
+    port: 11112
+    uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 'B - 🇹🇼 TW 03 TG: @nodpai'
+    type: trojan
+    server: 211.76.176.98
+    port: 19128
+    password: gcuCpQfaiVeDBdWG
+    sni: yazhou10.dynu.net
+    skip-cert-verify: false
+  - name: 'A - 🇯🇵 JP 01 TG: @nodpai'
+    type: vless
+    server: 45.12.89.124
+    port: 51055
+    uuid: 00000000-0000-4000-8000-000000000000
+    tls: true
+    network: ws
+    ws-opts:
+      path: /@Marisa_kristifp=chrome
+      headers: {}
+  - name: 'A - 🇯🇵 JP 02 TG: @nodpai'
+    type: vless
+    server: zzjp1.ainivp.com
+    port: 13102
+    uuid: 9204afcd-026e-781f-1abc-c03efabd1344
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 'A - 🇯🇵 JP 03 TG: @nodpai'
+    type: vless
+    server: 167.179.110.68
+    port: 8443
+    uuid: Telegram%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525A8%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525B3%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252540WangCai2
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cf.afrcloudnet1.dpdns.org
+  - name: 'A - 🇯🇵 JP 04 TG: @nodpai'
+    type: vless
+    server: 104.234.239.30
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime46.workers.dev
+  - name: 'A - 🇯🇵 JP 05 TG: @nodpai'
+    type: vless
+    server: 114.204.40.185
+    port: 30006
+    uuid: 00000000-0000-4000-8000-000000000000
+    tls: false
+    network: ws
+    ws-opts:
+      path: /@Marisa_kristifp=chromefp=chromesecurity=tls
+      headers:
+        Host: 9cvs-zyn4r9-6gzdtuo0w.mikuru.ip-ddns.com
+  - name: 'A - 🇯🇵 JP 06 TG: @nodpai'
+    type: vless
+    server: 190.93.247.30
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime34.workers.dev
+  - name: 'B - 🇯🇵 JP 07 TG: @nodpai'
+    type: vless
+    server: 165.246.171.218
+    port: 11019
+    uuid: 00000000-0000-4000-8000-000000000000
+    tls: false
+    network: ws
+    ws-opts:
+      path: /@Marisa_kristifp=chromesecurity=tls
+      headers:
+        Host: 49ax00d7kmg3ijp3vbkua090bws.majusti.dpdns.org
+  - name: 'B - 🇯🇵 JP 08 TG: @nodpai'
+    type: vless
+    server: 185.159.247.30
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime59.workers.dev
+  - name: 'B - 🇯🇵 JP 09 TG: @nodpai'
+    type: vless
+    server: 198.71.232.30
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers: {}
+  - name: 'B - 🇯🇵 JP 10 TG: @nodpai'
+    type: vmess
+    server: dotu-jpv1.kunlun03dns.com
+    port: 11119
+    uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 'B - 🇯🇵 JP 11 TG: @nodpai'
+    type: vmess
+    server: dotu-jpv1.kunlun03dns.com
+    port: 11120
+    uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
   - name: 'B - 🇯🇵 JP 12 TG: @nodpai'
-    type: vmess
-    server: 109.61.109.204
-    port: 13473
-    uuid: 4f3cfda3-a255-40eb-8801-71f9fffb19d6
-    alterId: 0
-    cipher: auto
-    tls: true
+    type: vless
+    server: 83.147.216.223
+    port: 4433
+    uuid: 00000000-0000-4000-8000-000000000000
+    tls: false
     network: ws
     ws-opts:
-      path: /speedtest
+      path: /@Marisa_kristifp=chromefp=chromesecurity=tls
       headers:
-        Host: imafake.locker
+        Host: oia8or7k8rs5.zrf.xx.kg
   - name: 'B - 🇯🇵 JP 13 TG: @nodpai'
+    type: vless
+    server: 83.147.254.4
+    port: 36089
+    uuid: 00000000-0000-4000-8000-000000000000
+    tls: false
+    network: ws
+    ws-opts:
+      path: /@Marisa_kristifp=chromesecurity=tls
+      headers:
+        Host: 9cvs-zyn4r9-6gzdtuo0w.mikuru.ip-ddns.com
+  - name: 'B - 🇯🇵 JP 14 TG: @nodpai'
     type: vmess
     server: 109.61.109.204
-    port: 29030
-    uuid: c09f13ce-2cca-49b6-ad1e-597566cc89c6
+    port: 45228
+    uuid: d0e97ee2-c6de-48f8-bd4a-8e63a9cd9e89
     alterId: 0
     cipher: auto
     tls: true
@@ -331,7 +364,39 @@ proxies:
       path: /speedtest
       headers:
         Host: imafake.locker
-  - name: 'B - 🇯🇵 JP 14 TG: @nodpai'
+  - name: 'B - 🇯🇵 JP 15 TG: @nodpai'
+    type: vless
+    server: 116.80.58.239
+    port: 39975
+    uuid: 15b84012-d261-4b4c-807a-061bb4a901fd
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 'B - 🇯🇵 JP 16 TG: @nodpai'
+    type: vless
+    server: 210.152.246.146
+    port: 49397
+    uuid: 00000000-0000-4000-8000-000000000000
+    tls: false
+    network: ws
+    ws-opts:
+      path: /@Marisa_kristifp=chromesecurity=tls
+      headers:
+        Host: 49ax00d7kmg3ijp3vbkua090bws.majusti.dpdns.org
+  - name: 'B - 🇯🇵 JP 17 TG: @nodpai'
+    type: vmess
+    server: 109.61.109.204
+    port: 36587
+    uuid: 254551f6-ec28-4938-ad0e-0aa4aa1965ec
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /speedtest
+      headers:
+        Host: imafake.locker
+  - name: 'B - 🇯🇵 JP 18 TG: @nodpai'
     type: vmess
     server: cu2.ainivp.com
     port: 33203
@@ -344,61 +409,11 @@ proxies:
       path: /ray
       headers:
         Host: cu2.ainivp.com
-  - name: 'B - 🇯🇵 JP 15 TG: @nodpai'
-    type: vmess
-    server: 109.61.109.204
-    port: 53452
-    uuid: b01d1e26-2f84-48da-88a1-1d06a77857f3
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 'B - 🇯🇵 JP 16 TG: @nodpai'
-    type: vless
-    server: 160.16.91.248
-    port: 8443
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    tls: false
-    network: ws
-    ws-opts:
-      path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefoxsecurity=tls
-      headers:
-        Host: i8dxb.media-cdn-us.chinav.indevs.in
-  - name: 'B - 🇯🇵 JP 17 TG: @nodpai'
-    type: vmess
-    server: 109.61.109.204
-    port: 11167
-    uuid: c50f9480-2e1d-40db-9458-630e79636663
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 'C - 🇯🇵 JP 18 TG: @nodpai'
-    type: vmess
-    server: 109.61.109.204
-    port: 49865
-    uuid: 54a0bf6d-f2b5-4b2a-942c-798fb129527e
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
   - name: 'C - 🇯🇵 JP 19 TG: @nodpai'
     type: vmess
     server: 109.61.109.204
-    port: 65440
-    uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
+    port: 31182
+    uuid: d0e97ee2-c6de-48f8-bd4a-8e63a9cd9e89
     alterId: 0
     cipher: auto
     tls: true
@@ -410,8 +425,8 @@ proxies:
   - name: 'C - 🇯🇵 JP 20 TG: @nodpai'
     type: vmess
     server: 109.61.109.204
-    port: 35298
-    uuid: 35f332d0-0b05-4cc6-91cb-ec0d4465055f
+    port: 33680
+    uuid: d0e97ee2-c6de-48f8-bd4a-8e63a9cd9e89
     alterId: 0
     cipher: auto
     tls: true
@@ -423,8 +438,8 @@ proxies:
   - name: 'C - 🇯🇵 JP 21 TG: @nodpai'
     type: vmess
     server: 109.61.109.204
-    port: 29913
-    uuid: 54a0bf6d-f2b5-4b2a-942c-798fb129527e
+    port: 57967
+    uuid: d0e97ee2-c6de-48f8-bd4a-8e63a9cd9e89
     alterId: 0
     cipher: auto
     tls: true
@@ -436,47 +451,8 @@ proxies:
   - name: 'C - 🇯🇵 JP 22 TG: @nodpai'
     type: vmess
     server: 109.61.109.204
-    port: 32818
-    uuid: 254551f6-ec28-4938-ad0e-0aa4aa1965ec
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 'C - 🇯🇵 JP 23 TG: @nodpai'
-    type: vmess
-    server: 109.61.109.204
-    port: 20291
-    uuid: 6d600864-32da-49fd-baf4-7df051762454
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 'C - 🇯🇵 JP 24 TG: @nodpai'
-    type: vmess
-    server: 109.61.109.204
-    port: 35240
-    uuid: 35f332d0-0b05-4cc6-91cb-ec0d4465055f
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 'C - 🇯🇵 JP 25 TG: @nodpai'
-    type: vmess
-    server: 109.61.109.204
-    port: 33991
-    uuid: b01d1e26-2f84-48da-88a1-1d06a77857f3
+    port: 55885
+    uuid: d0e97ee2-c6de-48f8-bd4a-8e63a9cd9e89
     alterId: 0
     cipher: auto
     tls: true
@@ -487,8 +463,8 @@ proxies:
         Host: imafake.locker
   - name: 'A - 🇸🇬 SG 01 TG: @nodpai'
     type: vless
-    server: 52.69.80.161
-    port: 443
+    server: 23.141.52.105
+    port: 8443
     uuid: 26524cce-d514-4014-a426-365fb266a14d
     tls: false
     network: ws
@@ -498,8 +474,8 @@ proxies:
         Host: i8dxb.media-cdn-us.chinav.indevs.in
   - name: 'A - 🇸🇬 SG 02 TG: @nodpai'
     type: vless
-    server: 222.96.225.202
-    port: 20201
+    server: 59.11.33.164
+    port: 10162
     uuid: 26524cce-d514-4014-a426-365fb266a14d
     tls: false
     network: ws
@@ -509,8 +485,8 @@ proxies:
         Host: i8dxb.media-cdn-us.chinav.indevs.in
   - name: 'A - 🇸🇬 SG 03 TG: @nodpai'
     type: vless
-    server: 183.108.251.226
-    port: 13720
+    server: 221.156.190.19
+    port: 10443
     uuid: 26524cce-d514-4014-a426-365fb266a14d
     tls: false
     network: ws
@@ -520,8 +496,8 @@ proxies:
         Host: i8dxb.media-cdn-us.chinav.indevs.in
   - name: 'A - 🇸🇬 SG 04 TG: @nodpai'
     type: vless
-    server: 45.77.241.64
-    port: 443
+    server: 222.105.100.2
+    port: 20005
     uuid: 26524cce-d514-4014-a426-365fb266a14d
     tls: false
     network: ws
@@ -531,19 +507,19 @@ proxies:
         Host: i8dxb.media-cdn-us.chinav.indevs.in
   - name: 'A - 🇸🇬 SG 05 TG: @nodpai'
     type: vless
-    server: 175.193.109.205
-    port: 11235
+    server: 125.190.136.186
+    port: 18790
     uuid: 26524cce-d514-4014-a426-365fb266a14d
-    tls: false
+    tls: true
     network: ws
     ws-opts:
-      path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefoxsecurity=tls
+      path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefox
       headers:
         Host: i8dxb.media-cdn-us.chinav.indevs.in
   - name: 'A - 🇸🇬 SG 06 TG: @nodpai'
     type: vless
-    server: 220.79.9.247
-    port: 33338
+    server: 119.195.168.105
+    port: 13720
     uuid: 26524cce-d514-4014-a426-365fb266a14d
     tls: false
     network: ws
@@ -553,24 +529,80 @@ proxies:
         Host: i8dxb.media-cdn-us.chinav.indevs.in
   - name: 'A - 🇸🇬 SG 07 TG: @nodpai'
     type: vless
-    server: zzjp1.ainivp.com
-    port: 13402
-    uuid: 9204afcd-026e-781f-1abc-c03efabd1344
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: 'A - 🇸🇬 SG 08 TG: @nodpai'
-    type: vless
-    server: 104.25.242.61
-    port: 443
-    uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+    server: 1.252.158.129
+    port: 10909
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
     tls: false
     network: ws
     ws-opts:
-      path: /security=tls
+      path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefoxsecurity=tls
       headers:
-        Host: juzi.qea.ccwu.cc
+        Host: i8dxb.media-cdn-us.chinav.indevs.in
+  - name: 'A - 🇸🇬 SG 08 TG: @nodpai'
+    type: vless
+    server: 27.100.148.98
+    port: 11235
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefox
+      headers:
+        Host: i8dxb.media-cdn-us.chinav.indevs.in
   - name: 'A - 🇸🇬 SG 09 TG: @nodpai'
+    type: vless
+    server: 104.19.47.96
+    port: 80
+    uuid: d8bc8425-5e80-4c26-bd93-af634c033e2d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: purnet.gmijcp.workers.dev
+  - name: 'A - 🇸🇬 SG 10 TG: @nodpai'
+    type: vless
+    server: 104.17.220.242
+    port: 80
+    uuid: d8bc8425-5e80-4c26-bd93-af634c033e2d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: purnet.gmijcp.workers.dev
+  - name: 'A - 🇸🇬 SG 11 TG: @nodpai'
+    type: vless
+    server: 104.17.176.228
+    port: 80
+    uuid: d8bc8425-5e80-4c26-bd93-af634c033e2d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: purnet.gmijcp.workers.dev
+  - name: 'A - 🇸🇬 SG 12 TG: @nodpai'
+    type: vless
+    server: 134.185.84.201
+    port: 8443
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefoxsecurity=tls
+      headers:
+        Host: i8dxb.media-cdn-us.chinav.indevs.in
+  - name: 'A - 🇸🇬 SG 13 TG: @nodpai'
+    type: vmess
+    server: gtm-sg-cc54q7d1q01.365cloud0285.com
+    port: 6004
+    uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 'A - 🇸🇬 SG 14 TG: @nodpai'
     type: vless
     server: 116.93.196.117
     port: 13579
@@ -581,9 +613,63 @@ proxies:
       path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefoxsecurity=tls
       headers:
         Host: i8dxb.media-cdn-us.chinav.indevs.in
-  - name: 'A - 🇸🇬 SG 10 TG: @nodpai'
+  - name: 'A - 🇸🇬 SG 15 TG: @nodpai'
     type: vless
-    server: 185.148.14.174
+    server: 104.17.129.186
+    port: 80
+    uuid: df301b32-1152-4526-9a63-beedd93d3156
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: vl.dalazhi.cloudns.biz
+  - name: 'A - 🇸🇬 SG 16 TG: @nodpai'
+    type: vless
+    server: 108.162.195.200
+    port: 80
+    uuid: df301b32-1152-4526-9a63-beedd93d3156
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: vl.dalazhi.cloudns.biz
+  - name: 'A - 🇸🇬 SG 17 TG: @nodpai'
+    type: vless
+    server: vl.dalazhi.cloudns.biz
+    port: 80
+    uuid: df301b32-1152-4526-9a63-beedd93d3156
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: vl.dalazhi.cloudns.biz
+  - name: 'A - 🇸🇬 SG 18 TG: @nodpai'
+    type: vless
+    server: 104.16.27.134
+    port: 80
+    uuid: df301b32-1152-4526-9a63-beedd93d3156
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: vl.dalazhi.cloudns.biz
+  - name: 'B - 🇸🇬 SG 19 TG: @nodpai'
+    type: vless
+    server: 158.101.89.113
+    port: 50443
+    uuid: 00000000-0000-4000-8000-000000000000
+    tls: true
+    network: ws
+    ws-opts:
+      path: /@Marisa_kristifp=chromefp=chrome
+      headers: {}
+  - name: 'B - 🇸🇬 SG 20 TG: @nodpai'
+    type: vless
+    server: 64.176.36.17
     port: 443
     uuid: 26524cce-d514-4014-a426-365fb266a14d
     tls: false
@@ -592,41 +678,72 @@ proxies:
       path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefoxsecurity=tls
       headers:
         Host: i8dxb.media-cdn-us.chinav.indevs.in
-  - name: 'B - 🇸🇬 SG 12 TG: @nodpai'
+  - name: 'B - 🇸🇬 SG 21 TG: @nodpai'
     type: vless
-    server: 59.15.13.58
-    port: 29876
+    server: 154.17.11.108
+    port: 443
     uuid: 26524cce-d514-4014-a426-365fb266a14d
-    tls: false
+    tls: true
     network: ws
     ws-opts:
-      path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefoxsecurity=tls
+      path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefox
       headers:
         Host: i8dxb.media-cdn-us.chinav.indevs.in
-  - name: 'B - 🇸🇬 SG 13 TG: @nodpai'
-    type: vmess
-    server: gtm-sg-cc54q7d1q01.365cloud0285.com
-    port: 6004
-    uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: US_speednode_0049
+  - name: 'B - 🇸🇬 SG 22 TG: @nodpai'
     type: trojan
-    server: 104.18.20.213
-    port: 443
-    password: mitivpn
-    sni: www.app-cloud.ir
-    skip-cert-verify: false
-  - name: SC_speednode_0041
+    server: 104.17.121.71
+    port: 2053
+    password: Mitivpn
+    sni: dash.hitgram.ir
+    skip-cert-verify: true
+  - name: 'B - 🇸🇬 SG 23 TG: @nodpai'
+    type: vless
+    server: 104.16.38.185
+    port: 80
+    uuid: df301b32-1152-4526-9a63-beedd93d3156
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: vl.dalazhi.cloudns.biz
+  - name: 'B - 🇸🇬 SG 24 TG: @nodpai'
     type: trojan
     server: 45.130.125.76
+    port: 2053
+    password: Mitivpn
+    sni: dash.hitgram.ir
+    skip-cert-verify: false
+  - name: 'B - 🇸🇬 SG 25 TG: @nodpai'
+    type: vless
+    server: 104.18.46.69
+    port: 80
+    uuid: df301b32-1152-4526-9a63-beedd93d3156
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: vl.dalazhi.cloudns.biz
+  - name: 'B - 🇸🇬 SG 26 TG: @nodpai'
+    type: vless
+    server: 69.84.182.30
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime48.workers.dev
+  - name: 'B - 🇸🇬 SG 27 TG: @nodpai'
+    type: trojan
+    server: 104.17.121.71
     port: 443
-    password: mitivpn
-    sni: www.app-cloud.ir
+    password: Mitivpn
+    sni: cdn.hitgram.ir
     skip-cert-verify: true
-  - name: 'B - 🇸🇬 SG 16 TG: @nodpai'
+  - name: 'B - 🇸🇬 SG 28 TG: @nodpai'
     type: vmess
     server: yd3.ainivp.com
     port: 33402
@@ -639,21 +756,10 @@ proxies:
       path: /ray
       headers:
         Host: yd3.ainivp.com
-  - name: 'B - 🇸🇬 SG 17 TG: @nodpai'
+  - name: 'B - 🇸🇬 SG 29 TG: @nodpai'
     type: vless
-    server: payload.xyz-my.eu.org
-    port: 80
-    uuid: 067140d7-5665-4131-844b-45d2b509a5e5
-    tls: false
-    network: ws
-    ws-opts:
-      path: /vless
-      headers:
-        Host: payload.xyz-my.eu.org
-  - name: 'B - 🇸🇬 SG 18 TG: @nodpai'
-    type: vless
-    server: 38.244.5.40
-    port: 39738
+    server: 222.96.225.202
+    port: 20201
     uuid: 26524cce-d514-4014-a426-365fb266a14d
     tls: false
     network: ws
@@ -661,10 +767,10 @@ proxies:
       path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefoxsecurity=tls
       headers:
         Host: i8dxb.media-cdn-us.chinav.indevs.in
-  - name: 'B - 🇸🇬 SG 19 TG: @nodpai'
+  - name: 'B - 🇸🇬 SG 30 TG: @nodpai'
     type: vless
-    server: 202.81.229.40
-    port: 30011
+    server: 138.68.1.18
+    port: 2087
     uuid: 26524cce-d514-4014-a426-365fb266a14d
     tls: false
     network: ws
@@ -672,10 +778,21 @@ proxies:
       path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefoxsecurity=tls
       headers:
         Host: i8dxb.media-cdn-us.chinav.indevs.in
-  - name: 'B - 🇸🇬 SG 21 TG: @nodpai'
+  - name: 'B - 🇸🇬 SG 31 TG: @nodpai'
     type: vless
-    server: 188.166.171.1
-    port: 20202
+    server: 154.92.9.126
+    port: 2083
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefox
+      headers:
+        Host: i8dxb.media-cdn-us.chinav.indevs.in
+  - name: 'B - 🇸🇬 SG 32 TG: @nodpai'
+    type: vless
+    server: 211.206.53.72
+    port: 26470
     uuid: 26524cce-d514-4014-a426-365fb266a14d
     tls: false
     network: ws
@@ -683,16 +800,73 @@ proxies:
       path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefoxsecurity=tls
       headers:
         Host: i8dxb.media-cdn-us.chinav.indevs.in
-  - name: 'B - 🇸🇬 SG 22 TG: @nodpai'
-    type: vmess
-    server: dotu-sgv1.kunlun03dns.com
-    port: 11137
-    uuid: 6b989fce-172e-37a6-b324-3922008b17f9
-    alterId: 0
-    cipher: auto
+  - name: 'B - 🇸🇬 SG 33 TG: @nodpai'
+    type: vless
+    server: support.zoom.us.cyylr.eu.cc
+    port: 443
+    uuid: cc752a3e-1537-4e86-bb50-1b897bf7b33c
     tls: false
-    network: tcp
-  - name: 'B - 🇸🇬 SG 23 TG: @nodpai'
+    network: ws
+    ws-opts:
+      path: /sg-melbifp=chromesecurity=tls
+      headers:
+        Host: support.zoom.us.cyylr.eu.cc
+  - name: 'B - 🇸🇬 SG 34 TG: @nodpai'
+    type: vless
+    server: www.visakorea.com
+    port: 443
+    uuid: ae0dd58e-e222-40bf-84ae-365a97532737
+    tls: false
+    network: ws
+    ws-opts:
+      path: /moviefp=chromesecurity=tls
+      headers:
+        Host: pagescm.freen4.cc.cd
+  - name: 'B - 🇸🇬 SG 35 TG: @nodpai'
+    type: vless
+    server: 51.21.59.130
+    port: 8080
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefoxsecurity=tls
+      headers:
+        Host: i8dxb.media-cdn-us.chinav.indevs.in
+  - name: 'B - 🇸🇬 SG 36 TG: @nodpai'
+    type: vless
+    server: 188.166.86.241
+    port: 2096
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefox
+      headers:
+        Host: i8dxb.media-cdn-us.chinav.indevs.in
+  - name: 'B - 🇸🇬 SG 37 TG: @nodpai'
+    type: vless
+    server: 45.91.201.97
+    port: 443
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefoxsecurity=tls
+      headers:
+        Host: i8dxb.media-cdn-us.chinav.indevs.in
+  - name: 'B - 🇸🇬 SG 38 TG: @nodpai'
+    type: vless
+    server: 23.27.126.32
+    port: 587
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefoxsecurity=tls
+      headers:
+        Host: i8dxb.media-cdn-us.chinav.indevs.in
+  - name: 'B - 🇸🇬 SG 39 TG: @nodpai'
     type: vless
     server: 142.248.218.229
     port: 2053
@@ -703,88 +877,350 @@ proxies:
       path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefoxsecurity=tls
       headers:
         Host: i8dxb.media-cdn-us.chinav.indevs.in
-  - name: 'B - 🇸🇬 SG 24 TG: @nodpai'
+  - name: 'B - 🇸🇬 SG 40 TG: @nodpai'
     type: vless
-    server: 43.247.135.211
-    port: 8443
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    tls: false
-    network: ws
-    ws-opts:
-      path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefoxsecurity=tls
-      headers:
-        Host: i8dxb.media-cdn-us.chinav.indevs.in
-  - name: 'B - 🇸🇬 SG 25 TG: @nodpai'
-    type: vless
-    server: 209.97.134.215
+    server: 202.144.195.27
     port: 443
     uuid: 26524cce-d514-4014-a426-365fb266a14d
-    tls: false
+    tls: true
     network: ws
     ws-opts:
-      path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefoxsecurity=tls
+      path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefox
       headers:
         Host: i8dxb.media-cdn-us.chinav.indevs.in
-  - name: 'B - 🇸🇬 SG 26 TG: @nodpai'
+  - name: 'C - 🇸🇬 SG 41 TG: @nodpai'
     type: vless
-    server: 38.244.5.118
-    port: 39738
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    tls: false
-    network: ws
-    ws-opts:
-      path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefoxsecurity=tls
-      headers:
-        Host: i8dxb.media-cdn-us.chinav.indevs.in
-  - name: 'B - 🇸🇬 SG 27 TG: @nodpai'
-    type: vless
-    server: 188.166.69.138
-    port: 2087
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    tls: false
-    network: ws
-    ws-opts:
-      path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefoxsecurity=tls
-      headers:
-        Host: i8dxb.media-cdn-us.chinav.indevs.in
-  - name: 'B - 🇸🇬 SG 28 TG: @nodpai'
-    type: vless
-    server: 146.185.149.123
-    port: 20202
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    tls: false
-    network: ws
-    ws-opts:
-      path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefoxsecurity=tls
-      headers:
-        Host: i8dxb.media-cdn-us.chinav.indevs.in
-  - name: 'B - 🇸🇬 SG 31 TG: @nodpai'
-    type: vless
-    server: 138.68.131.25
-    port: 2053
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
-    tls: false
-    network: ws
-    ws-opts:
-      path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefoxsecurity=tls
-      headers:
-        Host: i8dxb.media-cdn-us.chinav.indevs.in
-  - name: 'B - 🇸🇬 SG 32 TG: @nodpai'
-    type: vless
-    server: 91.84.111.217
+    server: 164.52.2.98
     port: 443
-    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    uuid: Telegram%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525A8%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525B3%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252540WangCai2
     tls: false
     network: ws
     ws-opts:
-      path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefoxsecurity=tls
+      path: /?ed=2560
       headers:
-        Host: i8dxb.media-cdn-us.chinav.indevs.in
+        Host: cf.afrcloudnet1.dpdns.org
+  - name: 'C - 🇸🇬 SG 42 TG: @nodpai'
+    type: vless
+    server: 43.156.116.194
+    port: 443
+    uuid: Telegram%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525A8%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525B3%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252540WangCai2
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cf.afrcloudnet1.dpdns.org
   - name: 'A - 🇺🇸 US 01 TG: @nodpai'
+    type: vless
+    server: www.speedtest.net
+    port: 80
+    uuid: 20c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: cvsoidswg.k3ckfz151a.workers.dev
+  - name: 'A - 🇺🇸 US 02 TG: @nodpai'
+    type: vless
+    server: 198.12.144.50
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2560fp=chrome
+      headers: {}
+  - name: 'A - 🇺🇸 US 03 TG: @nodpai'
+    type: vless
+    server: 104.16.239.205
+    port: 80
+    uuid: 69d38faa-21a1-4d18-82cb-796a942c181b
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: sfsl.ardomains1.dpdns.org
+  - name: 'A - 🇺🇸 US 04 TG: @nodpai'
+    type: vless
+    server: 104.19.238.22
+    port: 80
+    uuid: 69d38faa-21a1-4d18-82cb-796a942c181b
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: sfsl.ardomains1.dpdns.org
+  - name: 'A - 🇺🇸 US 05 TG: @nodpai'
+    type: vless
+    server: 208.103.161.55
+    port: 2096
+    uuid: Telegram%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525A8%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525B3%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252540WangCai2
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cf.afrcloudnet1.dpdns.org
+  - name: 'A - 🇺🇸 US 06 TG: @nodpai'
+    type: vless
+    server: 208.103.161.143
+    port: 2096
+    uuid: Telegram%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525A8%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525B3%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252540WangCai2
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cf.afrcloudnet1.dpdns.org
+  - name: 'A - 🇺🇸 US 07 TG: @nodpai'
+    type: vless
+    server: 208.103.161.18
+    port: 2096
+    uuid: Telegram%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525A8%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525B3%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252540WangCai2
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cf.afrcloudnet1.dpdns.org
+  - name: 'A - 🇺🇸 US 08 TG: @nodpai'
+    type: vless
+    server: 208.103.161.255
+    port: 2096
+    uuid: Telegram%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525A8%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525B3%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252540WangCai2
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cf.afrcloudnet1.dpdns.org
+  - name: 'A - 🇺🇸 US 09 TG: @nodpai'
+    type: vless
+    server: 208.103.161.205
+    port: 2096
+    uuid: Telegram%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525A8%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525B3%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252540WangCai2
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cf.afrcloudnet1.dpdns.org
+  - name: 'A - 🇺🇸 US 10 TG: @nodpai'
+    type: vless
+    server: 208.103.161.142
+    port: 2096
+    uuid: Telegram%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525A8%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525B3%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252540WangCai2
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cf.afrcloudnet1.dpdns.org
+  - name: 'A - 🇺🇸 US 11 TG: @nodpai'
+    type: vless
+    server: 208.103.161.59
+    port: 2096
+    uuid: Telegram%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525A8%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525B3%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252540WangCai2
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cf.afrcloudnet1.dpdns.org
+  - name: 'A - 🇺🇸 US 12 TG: @nodpai'
+    type: vless
+    server: 208.103.161.240
+    port: 2096
+    uuid: Telegram%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525A8%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525B3%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252540WangCai2
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cf.afrcloudnet1.dpdns.org
+  - name: 'A - 🇺🇸 US 13 TG: @nodpai'
+    type: vless
+    server: 208.103.161.1
+    port: 2096
+    uuid: Telegram%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525A8%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525B3%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252540WangCai2
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cf.afrcloudnet1.dpdns.org
+  - name: 'A - 🇺🇸 US 14 TG: @nodpai'
+    type: vless
+    server: 208.103.161.209
+    port: 2096
+    uuid: Telegram%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525A8%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525B3%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252540WangCai2
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cf.afrcloudnet1.dpdns.org
+  - name: 'A - 🇺🇸 US 15 TG: @nodpai'
+    type: vless
+    server: 72.56.59.177
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443-udp443-udp443
+  - name: 'A - 🇺🇸 US 16 TG: @nodpai'
+    type: vless
+    server: 208.103.161.0
+    port: 2096
+    uuid: Telegram%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525A8%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525B3%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252540WangCai2
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cf.afrcloudnet1.dpdns.org
+  - name: 'A - 🇺🇸 US 17 TG: @nodpai'
+    type: vless
+    server: 208.103.161.141
+    port: 2096
+    uuid: Telegram%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525A8%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525B3%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252540WangCai2
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cf.afrcloudnet1.dpdns.org
+  - name: 'A - 🇺🇸 US 18 TG: @nodpai'
+    type: vless
+    server: 208.103.161.82
+    port: 2096
+    uuid: Telegram%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525A8%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525B3%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252540WangCai2
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cf.afrcloudnet1.dpdns.org
+  - name: 'A - 🇺🇸 US 19 TG: @nodpai'
+    type: vless
+    server: 208.103.161.76
+    port: 2096
+    uuid: Telegram%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525A8%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525B3%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252540WangCai2
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cf.afrcloudnet1.dpdns.org
+  - name: 'A - 🇺🇸 US 20 TG: @nodpai'
+    type: vless
+    server: 104.18.237.216
+    port: 80
+    uuid: 69d38faa-21a1-4d18-82cb-796a942c181b
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: sfsl.ardomains1.dpdns.org
+  - name: 'A - 🇺🇸 US 23 TG: @nodpai'
+    type: vless
+    server: 104.18.189.112
+    port: 80
+    uuid: f929cc78-e2a1-4ce3-8051-3e9538405144
+    tls: false
+    network: ws
+    ws-opts:
+      path: /@WireXnet?ed=2048fp=chrome
+      headers:
+        Host: us.xydcqd.workers.dev
+  - name: 'A - 🇺🇸 US 24 TG: @nodpai'
     type: vless
     server: zzjp1.ainivp.com
     port: 13403
     uuid: 9204afcd-026e-781f-1abc-c03efabd1344
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443-udp443
+  - name: 'A - 🇺🇸 US 25 TG: @nodpai'
+    type: vless
+    server: 173.245.49.30
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime36.workers.dev
+  - name: 'B - 🇺🇸 US 26 TG: @nodpai'
+    type: vless
+    server: 104.27.30.20
+    port: 443
+    uuid: 69d38faa-21a1-4d18-82cb-796a942c181b
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048security=tlssecurity=tls
+      headers:
+        Host: sfsl.ardomains1.dpdns.org
+  - name: 'B - 🇺🇸 US 27 TG: @nodpai'
+    type: vless
+    server: 72.56.59.223
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443-udp443
+  - name: 'B - 🇺🇸 US 28 TG: @nodpai'
+    type: vless
+    server: 104.238.71.30
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime51.workers.dev
+  - name: RU_speednode_0038
+    type: vless
+    server: 85.234.114.53
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 'B - 🇺🇸 US 30 TG: @nodpai'
+    type: vless
+    server: 8.35.211.87
+    port: 2096
+    uuid: 56e4896e-90a9-4fe0-8480-90d3d68b9928
+    tls: true
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: go.iranfree.de5.net
+  - name: 'B - 🇺🇸 US 32 TG: @nodpai'
+    type: vless
+    server: 103.133.1.30
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime36.workers.dev
+  - name: US_speednode_0044
+    type: vless
+    server: 89.117.94.111
+    port: 54495
+    uuid: 2042c7c4-f0c8-48ec-926b-65112b064e2c
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
@@ -796,68 +1232,70 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443-udp443
-  - name: 'B - 🇺🇸 US 03 TG: @nodpai'
+  - name: 'B - 🇺🇸 US 35 TG: @nodpai'
     type: vless
-    server: 216.167.8.253
-    port: 64394
-    uuid: 2ca2f309-1ba9-4d23-a1d4-9645dfc4a882
+    server: 104.27.30.20
+    port: 80
+    uuid: 69d38faa-21a1-4d18-82cb-796a942c181b
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: sfsl.ardomains1.dpdns.org
+  - name: 'B - 🇺🇸 US 36 TG: @nodpai'
+    type: vless
+    server: 104.17.46.112
+    port: 443
+    uuid: 69d38faa-21a1-4d18-82cb-796a942c181b
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048security=tls
+      headers:
+        Host: sfsl.ardomains1.dpdns.org
+  - name: 'B - 🇺🇸 US 37 TG: @nodpai'
+    type: vless
+    server: de-on-demand.not-a-projects.xyz
+    port: 47518
+    uuid: 25263c14-6cb5-499b-b462-dd498deecfe7
+    tls: false
+    network: tcp
+  - name: 'B - 🇺🇸 US 38 TG: @nodpai'
+    type: vless
+    server: 64.188.124.119
+    port: 8443
+    uuid: 96fec558-76d9-40f5-8589-fe01afb6eaf6
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: RU_speednode_0038
+  - name: 'B - 🇺🇸 US 39 TG: @nodpai'
     type: vless
-    server: 85.234.114.53
-    port: 22231
-    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    server: 8.35.211.43
+    port: 2053
+    uuid: 56e4896e-90a9-4fe0-8480-90d3d68b9928
     tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: 'B - 🇺🇸 US 05 TG: @nodpai'
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: go.iranfree.de5.net
+  - name: 'B - 🇺🇸 US 40 TG: @nodpai'
     type: vless
-    server: 216.167.8.6
-    port: 29114
-    uuid: 036f593f-98ea-4534-96b6-9e810982b9d2
+    server: 8.35.211.101
+    port: 2083
+    uuid: 56e4896e-90a9-4fe0-8480-90d3d68b9928
     tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: 'B - 🇺🇸 US 06 TG: @nodpai'
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: go.iranfree.de5.net
+  - name: 🇺🇸 美国4|@ripaojiedian
     type: vmess
-    server: 82.198.246.214
+    server: 82.198.246.250
     port: 180
     uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 'B - 🇺🇸 US 09 TG: @nodpai'
-    type: vless
-    server: 193.233.202.1
-    port: 443
-    uuid: 838e036b-f229-480b-b0ef-86b1dc711add
-    tls: true
-    network: tcp
-  - name: US_speednode_0044
-    type: vless
-    server: 89.117.94.111
-    port: 54495
-    uuid: 2042c7c4-f0c8-48ec-926b-65112b064e2c
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: 'B - 🇺🇸 US 12 TG: @nodpai'
-    type: vmess
-    server: dotu-usv1.kunlun03dns.com
-    port: 11127
-    uuid: 6b989fce-172e-37a6-b324-3922008b17f9
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 'B - 🇺🇸 US 13 TG: @nodpai'
-    type: vmess
-    server: dotu-usv1.kunlun03dns.com
-    port: 11128
-    uuid: 6b989fce-172e-37a6-b324-3922008b17f9
     alterId: 0
     cipher: auto
     tls: false
@@ -870,214 +1308,75 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 'B - 🇺🇸 US 15 TG: @nodpai'
-    type: trojan
-    server: 121.191.33.84
-    port: 30303
-    password: 433e785b-2077-47f7-a43d-985f63dd18d1
-    sni: vpn.rnmcnm.com
-    skip-cert-verify: false
-  - name: 🇺🇸US_3|2.5MB/s
-    type: vless
-    server: 31.58.87.71
-    port: 12443
-    uuid: ea484535-0170-4ec8-bb3c-a9dbaa7412d7
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: 'B - 🇺🇸 US 17 TG: @nodpai'
+  - name: 'B - 🇺🇸 US 44 TG: @nodpai'
     type: vmess
-    server: dotu-jpv1.kunlun03dns.com
-    port: 11120
+    server: dotu-usv1.kunlun03dns.com
+    port: 11127
     uuid: 6b989fce-172e-37a6-b324-3922008b17f9
     alterId: 0
     cipher: auto
     tls: false
     network: tcp
-  - name: 'B - 🇺🇸 US 18 TG: @nodpai'
+  - name: 'B - 🇺🇸 US 45 TG: @nodpai'
     type: vless
-    server: up2-df6.pages.dev
+    server: 135.84.74.86
     port: 443
-    uuid: ce69190e-935a-4394-9e5e-2ab2872ba242
-    tls: true
-    network: ws
-    ws-opts:
-      path: /uTZSXPBI2IfoxF86fp=chrome
-      headers:
-        Host: up2-df6.pages.dev
-  - name: 'C - 🇺🇸 US 20 TG: @nodpai'
-    type: vless
-    server: 104.16.213.194
-    port: 443
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: saiWAi6.Pages.dev
-  - name: 'C - 🇺🇸 US 21 TG: @nodpai'
-    type: vmess
-    server: v29.hdacd.com
-    port: 30829
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 'C - 🇺🇸 US 22 TG: @nodpai'
-    type: vmess
-    server: planb.mojcn.com
-    port: 16648
-    uuid: 24e37e6e-7e01-4f68-afea-28fb14a47aef
-    alterId: 0
-    cipher: auto
+    uuid: Telegram%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525A8%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525F0%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525259F%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252587%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525B3%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252540WangCai2
     tls: false
     network: ws
     ws-opts:
-      path: /
+      path: /?ed=2560
       headers:
-        Host: 08071ec6f38bfb263ee89b1bb0c3ca1b.mobgslb.tbcache.com
-  - name: 'C - 🇺🇸 US 23 TG: @nodpai'
+        Host: cf.afrcloudnet1.dpdns.org
+  - name: 'B - 🇺🇸 US 46 TG: @nodpai'
     type: vless
-    server: de-on-demand.not-a-projects.xyz
-    port: 47518
-    uuid: 25263c14-6cb5-499b-b462-dd498deecfe7
-    tls: false
-    network: tcp
-  - name: 🇰🇷KR_2|1.1MB/s
-    type: vmess
-    server: yd4.ainivp.com
-    port: 33204
-    uuid: 9204afcd-026e-781f-1abc-c03efabd1344
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /ray
-      headers:
-        Host: yd4.ainivp.com
-  - name: 'A - 🇩🇪 DE 01 TG: @nodpai'
-    type: vless
-    server: 87.120.93.131
+    server: 5.178.101.149
     port: 443
     uuid: 91e120bc-159a-4390-b4e1-197b19602ea0
     tls: true
     network: tcp
-    flow: xtls-rprx-vision-udp443-udp443
-  - name: 'B - 🇩🇪 DE 02 TG: @nodpai'
+    flow: xtls-rprx-vision-udp443
+  - name: 'B - 🇺🇸 US 47 TG: @nodpai'
     type: vless
-    server: 104.18.32.47
-    port: 2096
-    uuid: 5154b274-cbfa-44f6-8b64-22f169d66cc5
-    tls: true
-    network: grpc
-  - name: 'B - 🇩🇪 DE 09 TG: @nodpai'
-    type: vless
-    server: 194.59.183.234
-    port: 666
-    uuid: '%40IR_NETLIFY'
-    tls: false
-    network: tcp
-  - name: 'B - 🇫🇷 FR 02 TG: @nodpai'
-    type: vless
-    server: 213.176.73.37
+    server: 38.46.218.19
     port: 443
-    uuid: 3f3db75c-e362-4047-9452-1c307351ab02
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: 'B - 🇫🇷 FR 03 TG: @nodpai'
-    type: vless
-    server: 62.210.91.2
-    port: 23576
-    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: 'B - 🇨🇦 CA 01 TG: @nodpai'
-    type: vmess
-    server: 158.69.208.120
-    port: 80
-    uuid: bed62ee5-2b42-41b0-aeae-e95d043da869
-    alterId: 0
-    cipher: auto
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
     tls: false
     network: ws
     ws-opts:
-      path: /api/v1
-      headers: {}
-  - name: 'B - 🇳🇱 NL 02 TG: @nodpai'
+      path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefoxsecurity=tls
+      headers:
+        Host: i8dxb.media-cdn-us.chinav.indevs.in
+  - name: 'C - 🇺🇸 US 48 TG: @nodpai'
     type: vless
-    server: 144.31.30.131
-    port: 8443
-    uuid: 301a4309-0f4d-42bf-a057-7d60c7a73259
-    tls: true
-    network: tcp
-  - name: 'B - 🇸🇪 SE 02 TG: @nodpai'
-    type: vless
-    server: 194.238.57.104
+    server: cdn9.cloud-vk.com
     port: 443
-    uuid: 8046e3a1-83a7-4155-86e4-374153fe66f3
+    uuid: 4accc4fb-9ec3-41ae-ac3e-cc5d3dabe156
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 'B - 🇨🇭 CH 01 TG: @nodpai'
+  - name: 'C - 🇺🇸 US 50 TG: @nodpai'
     type: vless
-    server: 138.124.244.248
+    server: 8.35.211.185
     port: 443
-    uuid: 476caa1d-7c04-48ab-8de5-2c1af0d13a66
+    uuid: 56e4896e-90a9-4fe0-8480-90d3d68b9928
     tls: true
-    network: tcp
-  - name: GB_speednode_0026
-    type: vless
-    server: 2.26.160.79
-    port: 443
-    uuid: 729d3d1e-ee1a-4c42-84bc-2ff331518221
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: 'B - 🇪🇪 EE 01 TG: @nodpai'
-    type: vless
-    server: 194.156.101.115
-    port: 443
-    uuid: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
-    tls: true
-    network: grpc
-  - name: 'B - 🇲🇩 MD 01 TG: @nodpai'
-    type: vless
-    server: pl.prostosetup.org
-    port: 443
-    uuid: 1b43419a-b711-40d4-a0ee-eb5c73e60c92
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: 🇲🇩MD_1|2.4MB/s
-    type: vless
-    server: 91.225.217.94
-    port: 443
-    uuid: 69a2af58-d74a-44ca-864a-e09b493f4274
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: 'B - 🇲🇩 MD 03 TG: @nodpai'
-    type: vless
-    server: 91.225.217.28
-    port: 443
-    uuid: 296bbba2-b100-4d91-b8df-3fe03cc863c4
-    tls: true
-    network: tcp
-  - name: 'B - 🇸🇨 SC 01 TG: @nodpai'
-    type: vless
-    server: srv154.towersflowerss.com
-    port: 64534
-    uuid: 58f2d0b3-71c1-4b25-a723-155ec1e13725
-    tls: false
     network: ws
     ws-opts:
-      path: /
-      headers: {}
+      path: /fp=chrome
+      headers:
+        Host: go.iranfree.de5.net
+  - name: 'C - 🇺🇸 US 51 TG: @nodpai'
+    type: vless
+    server: cdn.7zz.cn
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    tls: true
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: 3-93f.pages.dev
   - name: 🇭🇰 香港|@ripaojiedian
     type: vmess
     server: v10.hdacd.com
@@ -1171,15 +1470,6 @@ proxies:
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
-  - name: 🇺🇸 美国4|@ripaojiedian
-    type: vmess
-    server: 82.198.246.250
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
   - name: 🇺🇸 美国5|@ripaojiedian
     type: vmess
     server: 82.198.246.233
@@ -1189,6 +1479,26 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
+  - name: 🇰🇷KR_2|1.1MB/s
+    type: vmess
+    server: yd4.ainivp.com
+    port: 33204
+    uuid: 9204afcd-026e-781f-1abc-c03efabd1344
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /ray
+      headers:
+        Host: yd4.ainivp.com
+  - name: 🇩🇪DE_1|3.3MB/s
+    type: vless
+    server: 104.18.32.47
+    port: 2096
+    uuid: 629325d2-7e7b-47e8-a503-301677a59589
+    tls: true
+    network: grpc
   - name: 🇸🇬SG_1|2.1MB/s
     type: trojan
     server: 104.18.32.47
@@ -1217,6 +1527,14 @@ proxies:
     uuid: 5e8c894b-1efa-48d4-85ee-9daf5d574c16
     tls: true
     network: grpc
+  - name: 🇲🇩MD_1|2.4MB/s
+    type: vless
+    server: 91.225.217.94
+    port: 443
+    uuid: 69a2af58-d74a-44ca-864a-e09b493f4274
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
   - name: 🇲🇩MD_2|2.4MB/s
     type: vless
     server: api.chat.video.cdn.vles.space
@@ -1270,17 +1588,6 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 🇩🇪DE_7|2.5MB/s
-    type: vless
-    server: support.zoom.us.cyylr.eu.cc
-    port: 443
-    uuid: cc752a3e-1537-4e86-bb50-1b897bf7b33c
-    tls: true
-    network: ws
-    ws-opts:
-      path: /sg-melbifp=chrome
-      headers:
-        Host: support.zoom.us.cyylr.eu.cc
   - name: 🇩🇪DE_8|2.6MB/s
     type: vless
     server: 104.17.150.76
@@ -1292,6 +1599,14 @@ proxies:
       path: /
       headers:
         Host: war2.unlimiteddev-service2881.ir
+  - name: 🇺🇸US_3|2.5MB/s
+    type: vless
+    server: 31.58.87.71
+    port: 12443
+    uuid: ea484535-0170-4ec8-bb3c-a9dbaa7412d7
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
   - name: 🇨🇾CY_1|2.5MB/s
     type: vmess
     server: 45.128.72.44
@@ -1352,6 +1667,14 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
+  - name: GB_speednode_0026
+    type: vless
+    server: 2.26.160.79
+    port: 443
+    uuid: 729d3d1e-ee1a-4c42-84bc-2ff331518221
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
   - name: NL_speednode_0027
     type: vless
     server: g1.steptofreedom.one
@@ -1383,6 +1706,20 @@ proxies:
     uuid: 4706d9c3-eec0-4666-9d84-e608a200e872
     tls: true
     network: tcp
+  - name: SC_speednode_0040
+    type: trojan
+    server: 45.130.125.76
+    port: 443
+    password: mitivpn
+    sni: www.app-cloud.ir
+    skip-cert-verify: true
+  - name: US_speednode_0045
+    type: trojan
+    server: 104.18.20.213
+    port: 443
+    password: mitivpn
+    sni: www.app-cloud.ir
+    skip-cert-verify: false
   - name: US_speednode_0046
     type: trojan
     server: 14.102.228.76
@@ -1408,57 +1745,115 @@ proxies:
       path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefox
       headers:
         Host: i8dxb.media-cdn-us.chinav.indevs.in
+  - name: 江苏省镇江市 移动
+    type: vmess
+    server: yd2.ainivp.com
+    port: 33201
+    uuid: 9204afcd-026e-781f-1abc-c03efabd1344
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /ray
+      headers:
+        Host: yd2.ainivp.com
+  - name: 美国+V2CROSS.COM
+    type: vless
+    server: 154.21.95.162
+    port: 443
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefox
+      headers:
+        Host: i8dxb.media-cdn-us.chinav.indevs.in
+  - name: 俄罗斯+V2CROSS.COM
+    type: vless
+    server: 90.156.254.164
+    port: 19562
+    uuid: 5b96be74-656d-4bb7-85c2-d2d8a3b7c2f3
+    tls: false
+    network: tcp
+  - name: 日本+东京SAKURA数据中心
+    type: vless
+    server: 153.121.67.199
+    port: 8443
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvlfp=firefox
+      headers:
+        Host: i8dxb.media-cdn-us.chinav.indevs.in
   - name: 亚太地区 V2CROSS.COM
     type: vmess
-    server: dotu-twv1.kunlun03dns.com
-    port: 11113
+    server: dotu-usv1.kunlun03dns.com
+    port: 11130
     uuid: 6b989fce-172e-37a6-b324-3922008b17f9
     alterId: 0
     cipher: auto
     tls: false
     network: tcp
+  - name: 英国+South+Cheshire+College
+    type: vless
+    server: 194.238.57.104
+    port: 443
+    uuid: 8046e3a1-83a7-4155-86e4-374153fe66f3
+    tls: false
+    network: tcp
+    flow: xtls-rprx-vision
+  - name: 美国+佛罗里达州迈阿密市
+    type: vless
+    server: 72.56.59.254
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision
+  - name: 瑞士+V2CROSS.COM
+    type: vless
+    server: 81.29.156.195
+    port: 443
+    uuid: 731d5e57-4511-4abe-ab01-ec66eb52d6e9
+    tls: false
+    network: tcp
+    flow: xtls-rprx-vision
   - name: 韩国+KT电信
     type: trojan
-    server: 121.154.249.1
-    port: 16010
-    password: 433e785b-2077-47f7-a43d-985f63dd18d1
-    sni: vpn.rnmcnm.com
+    server: 121.180.171.43
+    port: 11310
+    password: GKHWMe2R4qwNcNxu6l3KMkdd
+    sni: vpn1.rnmcnm.com
     skip-cert-verify: false
-  - name: 巴西圣保罗+CloudFlare节点
+  - name: 英国+V2CROSS.COM
     type: vless
-    server: fx3033.game2lizard.com
-    port: 2083
-    uuid: 41f37ced-2021-4111-93a8-82d57ff2eb5b
+    server: 194.33.34.167
+    port: 443
+    uuid: 391ff971-a901-415e-b0f1-e0c0047e7a24
+    tls: false
+    network: tcp
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 45.130.125.76
+    port: 2087
+    uuid: 78e64117-fb24-4e32-adaa-788ab7876cd3
+    alterId: 0
+    cipher: auto
     tls: true
     network: ws
     ws-opts:
-      path: /?ed=2560
-      headers: {}
-  - name: 美国+CloudFlare节点
-    type: vless
-    server: 172.65.111.43
-    port: 22
-    uuid: monacoVPN
-    tls: false
-    network: tcp
-  - name: 乌克兰+V2CROSS.COM
-    type: vless
-    server: 178.215.238.148
-    port: 8443
-    uuid: 21c1132b-068c-46fb-880e-3268f6a30e7f
-    tls: false
-    network: tcp
-  - name: 美国+V2CROSS.COM
-    type: vless
-    server: 199.232.57.91
-    port: 80
-    uuid: 3cbd560c-8063-4671-835b-47ba18a0f05f
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed=80
+      path: /@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia
       headers:
-        Host: jookeji.global.ssl.fastly.net
+        Host: wIn.CcNnx.IR
+  - name: 台湾省+V2CROSS.COM
+    type: trojan
+    server: jpbgp.netvigor.cc
+    port: 19128
+    password: gcuCpQfaiVeDBdWG
+    sni: yazhou10.dynu.net
+    skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1476,22 +1871,25 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
-      - 'B - 🇭🇰 HK 01 TG: @nodpai'
+      - 'A - 🇭🇰 HK 01 TG: @nodpai'
       - 'B - 🇭🇰 HK 02 TG: @nodpai'
       - 'B - 🇭🇰 HK 03 TG: @nodpai'
-      - 'C - 🇭🇰 HK 04 TG: @nodpai'
-      - 'C - 🇭🇰 HK 05 TG: @nodpai'
-      - 'C - 🇭🇰 HK 06 TG: @nodpai'
-      - 'B - 🇹🇼 TW 01 TG: @nodpai'
+      - 'B - 🇭🇰 HK 04 TG: @nodpai'
+      - 'B - 🇭🇰 HK 05 TG: @nodpai'
+      - 'B - 🇭🇰 HK 06 TG: @nodpai'
+      - 'B - 🇭🇰 HK 07 TG: @nodpai'
+      - 'B - 🇭🇰 HK 08 TG: @nodpai'
+      - 'B - 🇭🇰 HK 09 TG: @nodpai'
+      - 'C - 🇭🇰 HK 10 TG: @nodpai'
+      - 'C - 🇭🇰 HK 11 TG: @nodpai'
       - 'B - 🇹🇼 TW 02 TG: @nodpai'
       - 'B - 🇹🇼 TW 03 TG: @nodpai'
-      - 'B - 🇹🇼 TW 05 TG: @nodpai'
-      - 'B - 🇯🇵 JP 01 TG: @nodpai'
-      - 'B - 🇯🇵 JP 02 TG: @nodpai'
-      - 'B - 🇯🇵 JP 03 TG: @nodpai'
-      - 'B - 🇯🇵 JP 04 TG: @nodpai'
-      - 'B - 🇯🇵 JP 05 TG: @nodpai'
-      - 'B - 🇯🇵 JP 06 TG: @nodpai'
+      - 'A - 🇯🇵 JP 01 TG: @nodpai'
+      - 'A - 🇯🇵 JP 02 TG: @nodpai'
+      - 'A - 🇯🇵 JP 03 TG: @nodpai'
+      - 'A - 🇯🇵 JP 04 TG: @nodpai'
+      - 'A - 🇯🇵 JP 05 TG: @nodpai'
+      - 'A - 🇯🇵 JP 06 TG: @nodpai'
       - 'B - 🇯🇵 JP 07 TG: @nodpai'
       - 'B - 🇯🇵 JP 08 TG: @nodpai'
       - 'B - 🇯🇵 JP 09 TG: @nodpai'
@@ -1503,14 +1901,11 @@ proxy-groups:
       - 'B - 🇯🇵 JP 15 TG: @nodpai'
       - 'B - 🇯🇵 JP 16 TG: @nodpai'
       - 'B - 🇯🇵 JP 17 TG: @nodpai'
-      - 'C - 🇯🇵 JP 18 TG: @nodpai'
+      - 'B - 🇯🇵 JP 18 TG: @nodpai'
       - 'C - 🇯🇵 JP 19 TG: @nodpai'
       - 'C - 🇯🇵 JP 20 TG: @nodpai'
       - 'C - 🇯🇵 JP 21 TG: @nodpai'
       - 'C - 🇯🇵 JP 22 TG: @nodpai'
-      - 'C - 🇯🇵 JP 23 TG: @nodpai'
-      - 'C - 🇯🇵 JP 24 TG: @nodpai'
-      - 'C - 🇯🇵 JP 25 TG: @nodpai'
       - 'A - 🇸🇬 SG 01 TG: @nodpai'
       - 'A - 🇸🇬 SG 02 TG: @nodpai'
       - 'A - 🇸🇬 SG 03 TG: @nodpai'
@@ -1521,14 +1916,16 @@ proxy-groups:
       - 'A - 🇸🇬 SG 08 TG: @nodpai'
       - 'A - 🇸🇬 SG 09 TG: @nodpai'
       - 'A - 🇸🇬 SG 10 TG: @nodpai'
-      - 'B - 🇸🇬 SG 12 TG: @nodpai'
-      - 'B - 🇸🇬 SG 13 TG: @nodpai'
-      - US_speednode_0049
-      - SC_speednode_0041
-      - 'B - 🇸🇬 SG 16 TG: @nodpai'
-      - 'B - 🇸🇬 SG 17 TG: @nodpai'
-      - 'B - 🇸🇬 SG 18 TG: @nodpai'
+      - 'A - 🇸🇬 SG 11 TG: @nodpai'
+      - 'A - 🇸🇬 SG 12 TG: @nodpai'
+      - 'A - 🇸🇬 SG 13 TG: @nodpai'
+      - 'A - 🇸🇬 SG 14 TG: @nodpai'
+      - 'A - 🇸🇬 SG 15 TG: @nodpai'
+      - 'A - 🇸🇬 SG 16 TG: @nodpai'
+      - 'A - 🇸🇬 SG 17 TG: @nodpai'
+      - 'A - 🇸🇬 SG 18 TG: @nodpai'
       - 'B - 🇸🇬 SG 19 TG: @nodpai'
+      - 'B - 🇸🇬 SG 20 TG: @nodpai'
       - 'B - 🇸🇬 SG 21 TG: @nodpai'
       - 'B - 🇸🇬 SG 22 TG: @nodpai'
       - 'B - 🇸🇬 SG 23 TG: @nodpai'
@@ -1537,43 +1934,66 @@ proxy-groups:
       - 'B - 🇸🇬 SG 26 TG: @nodpai'
       - 'B - 🇸🇬 SG 27 TG: @nodpai'
       - 'B - 🇸🇬 SG 28 TG: @nodpai'
+      - 'B - 🇸🇬 SG 29 TG: @nodpai'
+      - 'B - 🇸🇬 SG 30 TG: @nodpai'
       - 'B - 🇸🇬 SG 31 TG: @nodpai'
       - 'B - 🇸🇬 SG 32 TG: @nodpai'
+      - 'B - 🇸🇬 SG 33 TG: @nodpai'
+      - 'B - 🇸🇬 SG 34 TG: @nodpai'
+      - 'B - 🇸🇬 SG 35 TG: @nodpai'
+      - 'B - 🇸🇬 SG 36 TG: @nodpai'
+      - 'B - 🇸🇬 SG 37 TG: @nodpai'
+      - 'B - 🇸🇬 SG 38 TG: @nodpai'
+      - 'B - 🇸🇬 SG 39 TG: @nodpai'
+      - 'B - 🇸🇬 SG 40 TG: @nodpai'
+      - 'C - 🇸🇬 SG 41 TG: @nodpai'
+      - 'C - 🇸🇬 SG 42 TG: @nodpai'
       - 'A - 🇺🇸 US 01 TG: @nodpai'
-      - RU_speednode_0036
-      - 'B - 🇺🇸 US 03 TG: @nodpai'
+      - 'A - 🇺🇸 US 02 TG: @nodpai'
+      - 'A - 🇺🇸 US 03 TG: @nodpai'
+      - 'A - 🇺🇸 US 04 TG: @nodpai'
+      - 'A - 🇺🇸 US 05 TG: @nodpai'
+      - 'A - 🇺🇸 US 06 TG: @nodpai'
+      - 'A - 🇺🇸 US 07 TG: @nodpai'
+      - 'A - 🇺🇸 US 08 TG: @nodpai'
+      - 'A - 🇺🇸 US 09 TG: @nodpai'
+      - 'A - 🇺🇸 US 10 TG: @nodpai'
+      - 'A - 🇺🇸 US 11 TG: @nodpai'
+      - 'A - 🇺🇸 US 12 TG: @nodpai'
+      - 'A - 🇺🇸 US 13 TG: @nodpai'
+      - 'A - 🇺🇸 US 14 TG: @nodpai'
+      - 'A - 🇺🇸 US 15 TG: @nodpai'
+      - 'A - 🇺🇸 US 16 TG: @nodpai'
+      - 'A - 🇺🇸 US 17 TG: @nodpai'
+      - 'A - 🇺🇸 US 18 TG: @nodpai'
+      - 'A - 🇺🇸 US 19 TG: @nodpai'
+      - 'A - 🇺🇸 US 20 TG: @nodpai'
+      - 'A - 🇺🇸 US 23 TG: @nodpai'
+      - 'A - 🇺🇸 US 24 TG: @nodpai'
+      - 'A - 🇺🇸 US 25 TG: @nodpai'
+      - 'B - 🇺🇸 US 26 TG: @nodpai'
+      - 'B - 🇺🇸 US 27 TG: @nodpai'
+      - 'B - 🇺🇸 US 28 TG: @nodpai'
       - RU_speednode_0038
-      - 'B - 🇺🇸 US 05 TG: @nodpai'
-      - 'B - 🇺🇸 US 06 TG: @nodpai'
-      - 'B - 🇺🇸 US 09 TG: @nodpai'
+      - 'B - 🇺🇸 US 30 TG: @nodpai'
+      - 'B - 🇺🇸 US 32 TG: @nodpai'
       - US_speednode_0044
-      - 'B - 🇺🇸 US 12 TG: @nodpai'
-      - 'B - 🇺🇸 US 13 TG: @nodpai'
+      - RU_speednode_0036
+      - 'B - 🇺🇸 US 35 TG: @nodpai'
+      - 'B - 🇺🇸 US 36 TG: @nodpai'
+      - 'B - 🇺🇸 US 37 TG: @nodpai'
+      - 'B - 🇺🇸 US 38 TG: @nodpai'
+      - 'B - 🇺🇸 US 39 TG: @nodpai'
+      - 'B - 🇺🇸 US 40 TG: @nodpai'
+      - 🇺🇸 美国4|@ripaojiedian
       - RU_speednode_0037
-      - 'B - 🇺🇸 US 15 TG: @nodpai'
-      - 🇺🇸US_3|2.5MB/s
-      - 'B - 🇺🇸 US 17 TG: @nodpai'
-      - 'B - 🇺🇸 US 18 TG: @nodpai'
-      - 'C - 🇺🇸 US 20 TG: @nodpai'
-      - 'C - 🇺🇸 US 21 TG: @nodpai'
-      - 'C - 🇺🇸 US 22 TG: @nodpai'
-      - 'C - 🇺🇸 US 23 TG: @nodpai'
-      - 🇰🇷KR_2|1.1MB/s
-      - 'A - 🇩🇪 DE 01 TG: @nodpai'
-      - 'B - 🇩🇪 DE 02 TG: @nodpai'
-      - 'B - 🇩🇪 DE 09 TG: @nodpai'
-      - 'B - 🇫🇷 FR 02 TG: @nodpai'
-      - 'B - 🇫🇷 FR 03 TG: @nodpai'
-      - 'B - 🇨🇦 CA 01 TG: @nodpai'
-      - 'B - 🇳🇱 NL 02 TG: @nodpai'
-      - 'B - 🇸🇪 SE 02 TG: @nodpai'
-      - 'B - 🇨🇭 CH 01 TG: @nodpai'
-      - GB_speednode_0026
-      - 'B - 🇪🇪 EE 01 TG: @nodpai'
-      - 'B - 🇲🇩 MD 01 TG: @nodpai'
-      - 🇲🇩MD_1|2.4MB/s
-      - 'B - 🇲🇩 MD 03 TG: @nodpai'
-      - 'B - 🇸🇨 SC 01 TG: @nodpai'
+      - 'B - 🇺🇸 US 44 TG: @nodpai'
+      - 'B - 🇺🇸 US 45 TG: @nodpai'
+      - 'B - 🇺🇸 US 46 TG: @nodpai'
+      - 'B - 🇺🇸 US 47 TG: @nodpai'
+      - 'C - 🇺🇸 US 48 TG: @nodpai'
+      - 'C - 🇺🇸 US 50 TG: @nodpai'
+      - 'C - 🇺🇸 US 51 TG: @nodpai'
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
@@ -1587,12 +2007,14 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - 🇺🇸 美国4|@ripaojiedian
       - 🇺🇸 美国5|@ripaojiedian
+      - 🇰🇷KR_2|1.1MB/s
+      - 🇩🇪DE_1|3.3MB/s
       - 🇸🇬SG_1|2.1MB/s
       - 🇸🇬SG_2|2.8MB/s
       - 🇳🇱NL_1|2.5MB/s
       - 🇩🇪DE_4|3.2MB/s
+      - 🇲🇩MD_1|2.4MB/s
       - 🇲🇩MD_2|2.4MB/s
       - 🇺🇸US_1|1.5MB/s
       - 🇩🇪DE_5|1.6MB/s
@@ -1600,8 +2022,8 @@ proxy-groups:
       - CZ_speednode_0016
       - 🇳🇱NL_3|2.4MB/s
       - 🇫🇷FR_1|2.1MB/s
-      - 🇩🇪DE_7|2.5MB/s
       - 🇩🇪DE_8|2.6MB/s
+      - 🇺🇸US_3|2.5MB/s
       - 🇨🇾CY_1|2.5MB/s
       - 🇯🇵JP_1|2.5MB/s
       - 🇯🇵JP_2|1.9MB/s
@@ -1609,19 +2031,28 @@ proxy-groups:
       - GB_speednode_0020
       - GB_speednode_0024
       - GB_speednode_0025
+      - GB_speednode_0026
       - NL_speednode_0027
       - NL_speednode_0029
       - RO_speednode_0032
       - RU_speednode_0039
+      - SC_speednode_0040
+      - US_speednode_0045
       - US_speednode_0046
       - US_speednode_0047
       - US_speednode_0050
-      - 亚太地区 V2CROSS.COM
-      - 韩国+KT电信
-      - 巴西圣保罗+CloudFlare节点
-      - 美国+CloudFlare节点
-      - 乌克兰+V2CROSS.COM
+      - 江苏省镇江市 移动
       - 美国+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
+      - 日本+东京SAKURA数据中心
+      - 亚太地区 V2CROSS.COM
+      - 英国+South+Cheshire+College
+      - 美国+佛罗里达州迈阿密市
+      - 瑞士+V2CROSS.COM
+      - 韩国+KT电信
+      - 英国+V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 台湾省+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -1635,22 +2066,25 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
-      - 'B - 🇭🇰 HK 01 TG: @nodpai'
+      - 'A - 🇭🇰 HK 01 TG: @nodpai'
       - 'B - 🇭🇰 HK 02 TG: @nodpai'
       - 'B - 🇭🇰 HK 03 TG: @nodpai'
-      - 'C - 🇭🇰 HK 04 TG: @nodpai'
-      - 'C - 🇭🇰 HK 05 TG: @nodpai'
-      - 'C - 🇭🇰 HK 06 TG: @nodpai'
-      - 'B - 🇹🇼 TW 01 TG: @nodpai'
+      - 'B - 🇭🇰 HK 04 TG: @nodpai'
+      - 'B - 🇭🇰 HK 05 TG: @nodpai'
+      - 'B - 🇭🇰 HK 06 TG: @nodpai'
+      - 'B - 🇭🇰 HK 07 TG: @nodpai'
+      - 'B - 🇭🇰 HK 08 TG: @nodpai'
+      - 'B - 🇭🇰 HK 09 TG: @nodpai'
+      - 'C - 🇭🇰 HK 10 TG: @nodpai'
+      - 'C - 🇭🇰 HK 11 TG: @nodpai'
       - 'B - 🇹🇼 TW 02 TG: @nodpai'
       - 'B - 🇹🇼 TW 03 TG: @nodpai'
-      - 'B - 🇹🇼 TW 05 TG: @nodpai'
-      - 'B - 🇯🇵 JP 01 TG: @nodpai'
-      - 'B - 🇯🇵 JP 02 TG: @nodpai'
-      - 'B - 🇯🇵 JP 03 TG: @nodpai'
-      - 'B - 🇯🇵 JP 04 TG: @nodpai'
-      - 'B - 🇯🇵 JP 05 TG: @nodpai'
-      - 'B - 🇯🇵 JP 06 TG: @nodpai'
+      - 'A - 🇯🇵 JP 01 TG: @nodpai'
+      - 'A - 🇯🇵 JP 02 TG: @nodpai'
+      - 'A - 🇯🇵 JP 03 TG: @nodpai'
+      - 'A - 🇯🇵 JP 04 TG: @nodpai'
+      - 'A - 🇯🇵 JP 05 TG: @nodpai'
+      - 'A - 🇯🇵 JP 06 TG: @nodpai'
       - 'B - 🇯🇵 JP 07 TG: @nodpai'
       - 'B - 🇯🇵 JP 08 TG: @nodpai'
       - 'B - 🇯🇵 JP 09 TG: @nodpai'
@@ -1662,14 +2096,11 @@ proxy-groups:
       - 'B - 🇯🇵 JP 15 TG: @nodpai'
       - 'B - 🇯🇵 JP 16 TG: @nodpai'
       - 'B - 🇯🇵 JP 17 TG: @nodpai'
-      - 'C - 🇯🇵 JP 18 TG: @nodpai'
+      - 'B - 🇯🇵 JP 18 TG: @nodpai'
       - 'C - 🇯🇵 JP 19 TG: @nodpai'
       - 'C - 🇯🇵 JP 20 TG: @nodpai'
       - 'C - 🇯🇵 JP 21 TG: @nodpai'
       - 'C - 🇯🇵 JP 22 TG: @nodpai'
-      - 'C - 🇯🇵 JP 23 TG: @nodpai'
-      - 'C - 🇯🇵 JP 24 TG: @nodpai'
-      - 'C - 🇯🇵 JP 25 TG: @nodpai'
       - 'A - 🇸🇬 SG 01 TG: @nodpai'
       - 'A - 🇸🇬 SG 02 TG: @nodpai'
       - 'A - 🇸🇬 SG 03 TG: @nodpai'
@@ -1680,14 +2111,16 @@ proxy-groups:
       - 'A - 🇸🇬 SG 08 TG: @nodpai'
       - 'A - 🇸🇬 SG 09 TG: @nodpai'
       - 'A - 🇸🇬 SG 10 TG: @nodpai'
-      - 'B - 🇸🇬 SG 12 TG: @nodpai'
-      - 'B - 🇸🇬 SG 13 TG: @nodpai'
-      - US_speednode_0049
-      - SC_speednode_0041
-      - 'B - 🇸🇬 SG 16 TG: @nodpai'
-      - 'B - 🇸🇬 SG 17 TG: @nodpai'
-      - 'B - 🇸🇬 SG 18 TG: @nodpai'
+      - 'A - 🇸🇬 SG 11 TG: @nodpai'
+      - 'A - 🇸🇬 SG 12 TG: @nodpai'
+      - 'A - 🇸🇬 SG 13 TG: @nodpai'
+      - 'A - 🇸🇬 SG 14 TG: @nodpai'
+      - 'A - 🇸🇬 SG 15 TG: @nodpai'
+      - 'A - 🇸🇬 SG 16 TG: @nodpai'
+      - 'A - 🇸🇬 SG 17 TG: @nodpai'
+      - 'A - 🇸🇬 SG 18 TG: @nodpai'
       - 'B - 🇸🇬 SG 19 TG: @nodpai'
+      - 'B - 🇸🇬 SG 20 TG: @nodpai'
       - 'B - 🇸🇬 SG 21 TG: @nodpai'
       - 'B - 🇸🇬 SG 22 TG: @nodpai'
       - 'B - 🇸🇬 SG 23 TG: @nodpai'
@@ -1696,43 +2129,66 @@ proxy-groups:
       - 'B - 🇸🇬 SG 26 TG: @nodpai'
       - 'B - 🇸🇬 SG 27 TG: @nodpai'
       - 'B - 🇸🇬 SG 28 TG: @nodpai'
+      - 'B - 🇸🇬 SG 29 TG: @nodpai'
+      - 'B - 🇸🇬 SG 30 TG: @nodpai'
       - 'B - 🇸🇬 SG 31 TG: @nodpai'
       - 'B - 🇸🇬 SG 32 TG: @nodpai'
+      - 'B - 🇸🇬 SG 33 TG: @nodpai'
+      - 'B - 🇸🇬 SG 34 TG: @nodpai'
+      - 'B - 🇸🇬 SG 35 TG: @nodpai'
+      - 'B - 🇸🇬 SG 36 TG: @nodpai'
+      - 'B - 🇸🇬 SG 37 TG: @nodpai'
+      - 'B - 🇸🇬 SG 38 TG: @nodpai'
+      - 'B - 🇸🇬 SG 39 TG: @nodpai'
+      - 'B - 🇸🇬 SG 40 TG: @nodpai'
+      - 'C - 🇸🇬 SG 41 TG: @nodpai'
+      - 'C - 🇸🇬 SG 42 TG: @nodpai'
       - 'A - 🇺🇸 US 01 TG: @nodpai'
-      - RU_speednode_0036
-      - 'B - 🇺🇸 US 03 TG: @nodpai'
+      - 'A - 🇺🇸 US 02 TG: @nodpai'
+      - 'A - 🇺🇸 US 03 TG: @nodpai'
+      - 'A - 🇺🇸 US 04 TG: @nodpai'
+      - 'A - 🇺🇸 US 05 TG: @nodpai'
+      - 'A - 🇺🇸 US 06 TG: @nodpai'
+      - 'A - 🇺🇸 US 07 TG: @nodpai'
+      - 'A - 🇺🇸 US 08 TG: @nodpai'
+      - 'A - 🇺🇸 US 09 TG: @nodpai'
+      - 'A - 🇺🇸 US 10 TG: @nodpai'
+      - 'A - 🇺🇸 US 11 TG: @nodpai'
+      - 'A - 🇺🇸 US 12 TG: @nodpai'
+      - 'A - 🇺🇸 US 13 TG: @nodpai'
+      - 'A - 🇺🇸 US 14 TG: @nodpai'
+      - 'A - 🇺🇸 US 15 TG: @nodpai'
+      - 'A - 🇺🇸 US 16 TG: @nodpai'
+      - 'A - 🇺🇸 US 17 TG: @nodpai'
+      - 'A - 🇺🇸 US 18 TG: @nodpai'
+      - 'A - 🇺🇸 US 19 TG: @nodpai'
+      - 'A - 🇺🇸 US 20 TG: @nodpai'
+      - 'A - 🇺🇸 US 23 TG: @nodpai'
+      - 'A - 🇺🇸 US 24 TG: @nodpai'
+      - 'A - 🇺🇸 US 25 TG: @nodpai'
+      - 'B - 🇺🇸 US 26 TG: @nodpai'
+      - 'B - 🇺🇸 US 27 TG: @nodpai'
+      - 'B - 🇺🇸 US 28 TG: @nodpai'
       - RU_speednode_0038
-      - 'B - 🇺🇸 US 05 TG: @nodpai'
-      - 'B - 🇺🇸 US 06 TG: @nodpai'
-      - 'B - 🇺🇸 US 09 TG: @nodpai'
+      - 'B - 🇺🇸 US 30 TG: @nodpai'
+      - 'B - 🇺🇸 US 32 TG: @nodpai'
       - US_speednode_0044
-      - 'B - 🇺🇸 US 12 TG: @nodpai'
-      - 'B - 🇺🇸 US 13 TG: @nodpai'
+      - RU_speednode_0036
+      - 'B - 🇺🇸 US 35 TG: @nodpai'
+      - 'B - 🇺🇸 US 36 TG: @nodpai'
+      - 'B - 🇺🇸 US 37 TG: @nodpai'
+      - 'B - 🇺🇸 US 38 TG: @nodpai'
+      - 'B - 🇺🇸 US 39 TG: @nodpai'
+      - 'B - 🇺🇸 US 40 TG: @nodpai'
+      - 🇺🇸 美国4|@ripaojiedian
       - RU_speednode_0037
-      - 'B - 🇺🇸 US 15 TG: @nodpai'
-      - 🇺🇸US_3|2.5MB/s
-      - 'B - 🇺🇸 US 17 TG: @nodpai'
-      - 'B - 🇺🇸 US 18 TG: @nodpai'
-      - 'C - 🇺🇸 US 20 TG: @nodpai'
-      - 'C - 🇺🇸 US 21 TG: @nodpai'
-      - 'C - 🇺🇸 US 22 TG: @nodpai'
-      - 'C - 🇺🇸 US 23 TG: @nodpai'
-      - 🇰🇷KR_2|1.1MB/s
-      - 'A - 🇩🇪 DE 01 TG: @nodpai'
-      - 'B - 🇩🇪 DE 02 TG: @nodpai'
-      - 'B - 🇩🇪 DE 09 TG: @nodpai'
-      - 'B - 🇫🇷 FR 02 TG: @nodpai'
-      - 'B - 🇫🇷 FR 03 TG: @nodpai'
-      - 'B - 🇨🇦 CA 01 TG: @nodpai'
-      - 'B - 🇳🇱 NL 02 TG: @nodpai'
-      - 'B - 🇸🇪 SE 02 TG: @nodpai'
-      - 'B - 🇨🇭 CH 01 TG: @nodpai'
-      - GB_speednode_0026
-      - 'B - 🇪🇪 EE 01 TG: @nodpai'
-      - 'B - 🇲🇩 MD 01 TG: @nodpai'
-      - 🇲🇩MD_1|2.4MB/s
-      - 'B - 🇲🇩 MD 03 TG: @nodpai'
-      - 'B - 🇸🇨 SC 01 TG: @nodpai'
+      - 'B - 🇺🇸 US 44 TG: @nodpai'
+      - 'B - 🇺🇸 US 45 TG: @nodpai'
+      - 'B - 🇺🇸 US 46 TG: @nodpai'
+      - 'B - 🇺🇸 US 47 TG: @nodpai'
+      - 'C - 🇺🇸 US 48 TG: @nodpai'
+      - 'C - 🇺🇸 US 50 TG: @nodpai'
+      - 'C - 🇺🇸 US 51 TG: @nodpai'
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
@@ -1746,12 +2202,14 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - 🇺🇸 美国4|@ripaojiedian
       - 🇺🇸 美国5|@ripaojiedian
+      - 🇰🇷KR_2|1.1MB/s
+      - 🇩🇪DE_1|3.3MB/s
       - 🇸🇬SG_1|2.1MB/s
       - 🇸🇬SG_2|2.8MB/s
       - 🇳🇱NL_1|2.5MB/s
       - 🇩🇪DE_4|3.2MB/s
+      - 🇲🇩MD_1|2.4MB/s
       - 🇲🇩MD_2|2.4MB/s
       - 🇺🇸US_1|1.5MB/s
       - 🇩🇪DE_5|1.6MB/s
@@ -1759,8 +2217,8 @@ proxy-groups:
       - CZ_speednode_0016
       - 🇳🇱NL_3|2.4MB/s
       - 🇫🇷FR_1|2.1MB/s
-      - 🇩🇪DE_7|2.5MB/s
       - 🇩🇪DE_8|2.6MB/s
+      - 🇺🇸US_3|2.5MB/s
       - 🇨🇾CY_1|2.5MB/s
       - 🇯🇵JP_1|2.5MB/s
       - 🇯🇵JP_2|1.9MB/s
@@ -1768,19 +2226,28 @@ proxy-groups:
       - GB_speednode_0020
       - GB_speednode_0024
       - GB_speednode_0025
+      - GB_speednode_0026
       - NL_speednode_0027
       - NL_speednode_0029
       - RO_speednode_0032
       - RU_speednode_0039
+      - SC_speednode_0040
+      - US_speednode_0045
       - US_speednode_0046
       - US_speednode_0047
       - US_speednode_0050
-      - 亚太地区 V2CROSS.COM
-      - 韩国+KT电信
-      - 巴西圣保罗+CloudFlare节点
-      - 美国+CloudFlare节点
-      - 乌克兰+V2CROSS.COM
+      - 江苏省镇江市 移动
       - 美国+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
+      - 日本+东京SAKURA数据中心
+      - 亚太地区 V2CROSS.COM
+      - 英国+South+Cheshire+College
+      - 美国+佛罗里达州迈阿密市
+      - 瑞士+V2CROSS.COM
+      - 韩国+KT电信
+      - 英国+V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 台湾省+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -1796,22 +2263,25 @@ proxy-groups:
       - '防范境外势力渗透 #7'
       - '防范境外势力渗透 #8'
       - '防范境外势力渗透 #9'
-      - 'B - 🇭🇰 HK 01 TG: @nodpai'
+      - 'A - 🇭🇰 HK 01 TG: @nodpai'
       - 'B - 🇭🇰 HK 02 TG: @nodpai'
       - 'B - 🇭🇰 HK 03 TG: @nodpai'
-      - 'C - 🇭🇰 HK 04 TG: @nodpai'
-      - 'C - 🇭🇰 HK 05 TG: @nodpai'
-      - 'C - 🇭🇰 HK 06 TG: @nodpai'
-      - 'B - 🇹🇼 TW 01 TG: @nodpai'
+      - 'B - 🇭🇰 HK 04 TG: @nodpai'
+      - 'B - 🇭🇰 HK 05 TG: @nodpai'
+      - 'B - 🇭🇰 HK 06 TG: @nodpai'
+      - 'B - 🇭🇰 HK 07 TG: @nodpai'
+      - 'B - 🇭🇰 HK 08 TG: @nodpai'
+      - 'B - 🇭🇰 HK 09 TG: @nodpai'
+      - 'C - 🇭🇰 HK 10 TG: @nodpai'
+      - 'C - 🇭🇰 HK 11 TG: @nodpai'
       - 'B - 🇹🇼 TW 02 TG: @nodpai'
       - 'B - 🇹🇼 TW 03 TG: @nodpai'
-      - 'B - 🇹🇼 TW 05 TG: @nodpai'
-      - 'B - 🇯🇵 JP 01 TG: @nodpai'
-      - 'B - 🇯🇵 JP 02 TG: @nodpai'
-      - 'B - 🇯🇵 JP 03 TG: @nodpai'
-      - 'B - 🇯🇵 JP 04 TG: @nodpai'
-      - 'B - 🇯🇵 JP 05 TG: @nodpai'
-      - 'B - 🇯🇵 JP 06 TG: @nodpai'
+      - 'A - 🇯🇵 JP 01 TG: @nodpai'
+      - 'A - 🇯🇵 JP 02 TG: @nodpai'
+      - 'A - 🇯🇵 JP 03 TG: @nodpai'
+      - 'A - 🇯🇵 JP 04 TG: @nodpai'
+      - 'A - 🇯🇵 JP 05 TG: @nodpai'
+      - 'A - 🇯🇵 JP 06 TG: @nodpai'
       - 'B - 🇯🇵 JP 07 TG: @nodpai'
       - 'B - 🇯🇵 JP 08 TG: @nodpai'
       - 'B - 🇯🇵 JP 09 TG: @nodpai'
@@ -1823,14 +2293,11 @@ proxy-groups:
       - 'B - 🇯🇵 JP 15 TG: @nodpai'
       - 'B - 🇯🇵 JP 16 TG: @nodpai'
       - 'B - 🇯🇵 JP 17 TG: @nodpai'
-      - 'C - 🇯🇵 JP 18 TG: @nodpai'
+      - 'B - 🇯🇵 JP 18 TG: @nodpai'
       - 'C - 🇯🇵 JP 19 TG: @nodpai'
       - 'C - 🇯🇵 JP 20 TG: @nodpai'
       - 'C - 🇯🇵 JP 21 TG: @nodpai'
       - 'C - 🇯🇵 JP 22 TG: @nodpai'
-      - 'C - 🇯🇵 JP 23 TG: @nodpai'
-      - 'C - 🇯🇵 JP 24 TG: @nodpai'
-      - 'C - 🇯🇵 JP 25 TG: @nodpai'
       - 'A - 🇸🇬 SG 01 TG: @nodpai'
       - 'A - 🇸🇬 SG 02 TG: @nodpai'
       - 'A - 🇸🇬 SG 03 TG: @nodpai'
@@ -1841,14 +2308,16 @@ proxy-groups:
       - 'A - 🇸🇬 SG 08 TG: @nodpai'
       - 'A - 🇸🇬 SG 09 TG: @nodpai'
       - 'A - 🇸🇬 SG 10 TG: @nodpai'
-      - 'B - 🇸🇬 SG 12 TG: @nodpai'
-      - 'B - 🇸🇬 SG 13 TG: @nodpai'
-      - US_speednode_0049
-      - SC_speednode_0041
-      - 'B - 🇸🇬 SG 16 TG: @nodpai'
-      - 'B - 🇸🇬 SG 17 TG: @nodpai'
-      - 'B - 🇸🇬 SG 18 TG: @nodpai'
+      - 'A - 🇸🇬 SG 11 TG: @nodpai'
+      - 'A - 🇸🇬 SG 12 TG: @nodpai'
+      - 'A - 🇸🇬 SG 13 TG: @nodpai'
+      - 'A - 🇸🇬 SG 14 TG: @nodpai'
+      - 'A - 🇸🇬 SG 15 TG: @nodpai'
+      - 'A - 🇸🇬 SG 16 TG: @nodpai'
+      - 'A - 🇸🇬 SG 17 TG: @nodpai'
+      - 'A - 🇸🇬 SG 18 TG: @nodpai'
       - 'B - 🇸🇬 SG 19 TG: @nodpai'
+      - 'B - 🇸🇬 SG 20 TG: @nodpai'
       - 'B - 🇸🇬 SG 21 TG: @nodpai'
       - 'B - 🇸🇬 SG 22 TG: @nodpai'
       - 'B - 🇸🇬 SG 23 TG: @nodpai'
@@ -1857,43 +2326,66 @@ proxy-groups:
       - 'B - 🇸🇬 SG 26 TG: @nodpai'
       - 'B - 🇸🇬 SG 27 TG: @nodpai'
       - 'B - 🇸🇬 SG 28 TG: @nodpai'
+      - 'B - 🇸🇬 SG 29 TG: @nodpai'
+      - 'B - 🇸🇬 SG 30 TG: @nodpai'
       - 'B - 🇸🇬 SG 31 TG: @nodpai'
       - 'B - 🇸🇬 SG 32 TG: @nodpai'
+      - 'B - 🇸🇬 SG 33 TG: @nodpai'
+      - 'B - 🇸🇬 SG 34 TG: @nodpai'
+      - 'B - 🇸🇬 SG 35 TG: @nodpai'
+      - 'B - 🇸🇬 SG 36 TG: @nodpai'
+      - 'B - 🇸🇬 SG 37 TG: @nodpai'
+      - 'B - 🇸🇬 SG 38 TG: @nodpai'
+      - 'B - 🇸🇬 SG 39 TG: @nodpai'
+      - 'B - 🇸🇬 SG 40 TG: @nodpai'
+      - 'C - 🇸🇬 SG 41 TG: @nodpai'
+      - 'C - 🇸🇬 SG 42 TG: @nodpai'
       - 'A - 🇺🇸 US 01 TG: @nodpai'
-      - RU_speednode_0036
-      - 'B - 🇺🇸 US 03 TG: @nodpai'
+      - 'A - 🇺🇸 US 02 TG: @nodpai'
+      - 'A - 🇺🇸 US 03 TG: @nodpai'
+      - 'A - 🇺🇸 US 04 TG: @nodpai'
+      - 'A - 🇺🇸 US 05 TG: @nodpai'
+      - 'A - 🇺🇸 US 06 TG: @nodpai'
+      - 'A - 🇺🇸 US 07 TG: @nodpai'
+      - 'A - 🇺🇸 US 08 TG: @nodpai'
+      - 'A - 🇺🇸 US 09 TG: @nodpai'
+      - 'A - 🇺🇸 US 10 TG: @nodpai'
+      - 'A - 🇺🇸 US 11 TG: @nodpai'
+      - 'A - 🇺🇸 US 12 TG: @nodpai'
+      - 'A - 🇺🇸 US 13 TG: @nodpai'
+      - 'A - 🇺🇸 US 14 TG: @nodpai'
+      - 'A - 🇺🇸 US 15 TG: @nodpai'
+      - 'A - 🇺🇸 US 16 TG: @nodpai'
+      - 'A - 🇺🇸 US 17 TG: @nodpai'
+      - 'A - 🇺🇸 US 18 TG: @nodpai'
+      - 'A - 🇺🇸 US 19 TG: @nodpai'
+      - 'A - 🇺🇸 US 20 TG: @nodpai'
+      - 'A - 🇺🇸 US 23 TG: @nodpai'
+      - 'A - 🇺🇸 US 24 TG: @nodpai'
+      - 'A - 🇺🇸 US 25 TG: @nodpai'
+      - 'B - 🇺🇸 US 26 TG: @nodpai'
+      - 'B - 🇺🇸 US 27 TG: @nodpai'
+      - 'B - 🇺🇸 US 28 TG: @nodpai'
       - RU_speednode_0038
-      - 'B - 🇺🇸 US 05 TG: @nodpai'
-      - 'B - 🇺🇸 US 06 TG: @nodpai'
-      - 'B - 🇺🇸 US 09 TG: @nodpai'
+      - 'B - 🇺🇸 US 30 TG: @nodpai'
+      - 'B - 🇺🇸 US 32 TG: @nodpai'
       - US_speednode_0044
-      - 'B - 🇺🇸 US 12 TG: @nodpai'
-      - 'B - 🇺🇸 US 13 TG: @nodpai'
+      - RU_speednode_0036
+      - 'B - 🇺🇸 US 35 TG: @nodpai'
+      - 'B - 🇺🇸 US 36 TG: @nodpai'
+      - 'B - 🇺🇸 US 37 TG: @nodpai'
+      - 'B - 🇺🇸 US 38 TG: @nodpai'
+      - 'B - 🇺🇸 US 39 TG: @nodpai'
+      - 'B - 🇺🇸 US 40 TG: @nodpai'
+      - 🇺🇸 美国4|@ripaojiedian
       - RU_speednode_0037
-      - 'B - 🇺🇸 US 15 TG: @nodpai'
-      - 🇺🇸US_3|2.5MB/s
-      - 'B - 🇺🇸 US 17 TG: @nodpai'
-      - 'B - 🇺🇸 US 18 TG: @nodpai'
-      - 'C - 🇺🇸 US 20 TG: @nodpai'
-      - 'C - 🇺🇸 US 21 TG: @nodpai'
-      - 'C - 🇺🇸 US 22 TG: @nodpai'
-      - 'C - 🇺🇸 US 23 TG: @nodpai'
-      - 🇰🇷KR_2|1.1MB/s
-      - 'A - 🇩🇪 DE 01 TG: @nodpai'
-      - 'B - 🇩🇪 DE 02 TG: @nodpai'
-      - 'B - 🇩🇪 DE 09 TG: @nodpai'
-      - 'B - 🇫🇷 FR 02 TG: @nodpai'
-      - 'B - 🇫🇷 FR 03 TG: @nodpai'
-      - 'B - 🇨🇦 CA 01 TG: @nodpai'
-      - 'B - 🇳🇱 NL 02 TG: @nodpai'
-      - 'B - 🇸🇪 SE 02 TG: @nodpai'
-      - 'B - 🇨🇭 CH 01 TG: @nodpai'
-      - GB_speednode_0026
-      - 'B - 🇪🇪 EE 01 TG: @nodpai'
-      - 'B - 🇲🇩 MD 01 TG: @nodpai'
-      - 🇲🇩MD_1|2.4MB/s
-      - 'B - 🇲🇩 MD 03 TG: @nodpai'
-      - 'B - 🇸🇨 SC 01 TG: @nodpai'
+      - 'B - 🇺🇸 US 44 TG: @nodpai'
+      - 'B - 🇺🇸 US 45 TG: @nodpai'
+      - 'B - 🇺🇸 US 46 TG: @nodpai'
+      - 'B - 🇺🇸 US 47 TG: @nodpai'
+      - 'C - 🇺🇸 US 48 TG: @nodpai'
+      - 'C - 🇺🇸 US 50 TG: @nodpai'
+      - 'C - 🇺🇸 US 51 TG: @nodpai'
       - 🇭🇰 香港|@ripaojiedian
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
@@ -1907,12 +2399,14 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - 🇺🇸 美国4|@ripaojiedian
       - 🇺🇸 美国5|@ripaojiedian
+      - 🇰🇷KR_2|1.1MB/s
+      - 🇩🇪DE_1|3.3MB/s
       - 🇸🇬SG_1|2.1MB/s
       - 🇸🇬SG_2|2.8MB/s
       - 🇳🇱NL_1|2.5MB/s
       - 🇩🇪DE_4|3.2MB/s
+      - 🇲🇩MD_1|2.4MB/s
       - 🇲🇩MD_2|2.4MB/s
       - 🇺🇸US_1|1.5MB/s
       - 🇩🇪DE_5|1.6MB/s
@@ -1920,8 +2414,8 @@ proxy-groups:
       - CZ_speednode_0016
       - 🇳🇱NL_3|2.4MB/s
       - 🇫🇷FR_1|2.1MB/s
-      - 🇩🇪DE_7|2.5MB/s
       - 🇩🇪DE_8|2.6MB/s
+      - 🇺🇸US_3|2.5MB/s
       - 🇨🇾CY_1|2.5MB/s
       - 🇯🇵JP_1|2.5MB/s
       - 🇯🇵JP_2|1.9MB/s
@@ -1929,19 +2423,28 @@ proxy-groups:
       - GB_speednode_0020
       - GB_speednode_0024
       - GB_speednode_0025
+      - GB_speednode_0026
       - NL_speednode_0027
       - NL_speednode_0029
       - RO_speednode_0032
       - RU_speednode_0039
+      - SC_speednode_0040
+      - US_speednode_0045
       - US_speednode_0046
       - US_speednode_0047
       - US_speednode_0050
-      - 亚太地区 V2CROSS.COM
-      - 韩国+KT电信
-      - 巴西圣保罗+CloudFlare节点
-      - 美国+CloudFlare节点
-      - 乌克兰+V2CROSS.COM
+      - 江苏省镇江市 移动
       - 美国+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
+      - 日本+东京SAKURA数据中心
+      - 亚太地区 V2CROSS.COM
+      - 英国+South+Cheshire+College
+      - 美国+佛罗里达州迈阿密市
+      - 瑞士+V2CROSS.COM
+      - 韩国+KT电信
+      - 英国+V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 台湾省+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
