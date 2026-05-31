@@ -222,7 +222,7 @@ proxies:
     cipher: aes-128-gcm
     tls: false
     network: tcp
-  - name: 🇨🇭CH_1|2.5MB/s
+  - name: CH_speednode_0002
     type: vless
     server: mzonede.3cloudhost.com
     port: 443
@@ -230,14 +230,14 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 🇺🇸US_3|2.7MB/s
+  - name: RU_speednode_0021
     type: vless
     server: r1.mizulina.top
     port: 22231
     uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
     tls: true
     network: tcp
-    flow: xtls-rprx-vision-udp443-udp443
+    flow: xtls-rprx-vision-udp443
   - name: 🇨🇭CH_2|2.1MB/s
     type: vless
     server: 172.65.111.43
@@ -245,7 +245,7 @@ proxies:
     uuid: monacoVPN
     tls: false
     network: tcp
-  - name: 🇺🇸US_4|2.0MB/s
+  - name: RU_speednode_0025
     type: vless
     server: 85.234.114.53
     port: 22231
@@ -290,7 +290,7 @@ proxies:
       path: /graphqlfp=chrome
       headers:
         Host: 69565ce3109804e7813f98ee.mmdbay.blog
-  - name: 🇺🇸US_6|3.0MB/s
+  - name: RU_speednode_0022
     type: vless
     server: 85.234.114.53
     port: 443
@@ -374,7 +374,7 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 🇪🇸ES_1|1.1MB/s
+  - name: ES_speednode_0005
     type: vless
     server: 195.96.132.125
     port: 443
@@ -441,7 +441,7 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 🇳🇱NL_4|3.1MB/s
+  - name: NL_speednode_0013
     type: vless
     server: g3.steptofsvo.com
     port: 443
@@ -471,253 +471,119 @@ proxies:
     uuid: 2e7062e5-260b-4139-b221-21f2ae7dce21
     tls: true
     network: tcp
-  - name: BG_speednode_0001
-    type: vless
-    server: 178.215.238.148
-    port: 8443
-    uuid: 21c1132b-068c-46fb-880e-3268f6a30e7f
-    tls: true
-    network: tcp
-  - name: CH_speednode_0003
+  - name: CH_speednode_0001
     type: vless
     server: 138.124.244.248
     port: 443
     uuid: 476caa1d-7c04-48ab-8de5-2c1af0d13a66
     tls: true
     network: tcp
-  - name: GB_speednode_0006
-    type: vless
-    server: 194.238.57.104
+  - name: HK_speednode_0007
+    type: trojan
+    server: au-4.tr202605.com
     port: 443
-    uuid: 8046e3a1-83a7-4155-86e4-374153fe66f3
+    password: 65fQmPHHbPcBCfvSHt
+    sni: au-4.tr202605.com
+    skip-cert-verify: false
+  - name: MD_speednode_0010
+    type: vless
+    server: 94.103.0.230
+    port: 443
+    uuid: 1b43419a-b711-40d4-a0ee-eb5c73e60c92
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: GB_speednode_0010
-    type: vless
-    server: 217.179.6.84
-    port: 443
-    uuid: d78c12c4-6927-40b8-8550-ed9be00334da
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: MD_speednode_0014
+  - name: MD_speednode_0011
     type: vless
     server: 91.225.217.28
     port: 443
     uuid: 296bbba2-b100-4d91-b8df-3fe03cc863c4
     tls: true
     network: tcp
-  - name: NL_speednode_0015
-    type: vless
-    server: 45.66.161.10
-    port: 8443
-    uuid: 69a2af58-d74a-44ca-864a-e09b493f4274
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: NZ_speednode_0017
-    type: vless
-    server: 202.37.33.81
-    port: 443
-    uuid: 3b01a777-55e7-49f6-8637-d94ee69607c6
-    tls: true
-    network: ws
-    ws-opts:
-      path: /id-tksifp=chrome
-      headers:
-        Host: m.udemy.com.cyylr.eu.cc
-  - name: SG_speednode_0021
-    type: vless
-    server: cdn.irandoc.info
-    port: 80
-    uuid: fb206250-709c-44d7-b887-08f66dd7a974
-    tls: false
-    network: ws
-    ws-opts:
-      path: /16475/mci
-      headers:
-        Host: cdn.irandoc.info
-  - name: US_speednode_0024
-    type: vless
-    server: 47.80.14.130
-    port: 443
-    uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-    tls: true
-    network: tcp
-  - name: US_speednode_0025
-    type: vless
-    server: r1uvt3.sgvless.yydzx.xyz
-    port: 443
-    uuid: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: US_speednode_0026
-    type: vless
-    server: b2ob8r.sgvless.yydzx.xyz
-    port: 443
-    uuid: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: US_speednode_0027
-    type: vless
-    server: www.fbi.gov
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /fp=randomized
-      headers:
-        Host: cnmfangbinxing.cnmfangbinxing.workers.dev
-  - name: US_speednode_0028
-    type: vless
-    server: docs.cloudflare.com
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /fp=randomized
-      headers:
-        Host: cnmfangbinxing.cnmfangbinxing.workers.dev
-  - name: US_speednode_0029
-    type: vless
-    server: www.shopify.com
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /fp=randomized
-      headers:
-        Host: cnmfangbinxing.cnmfangbinxing.workers.dev
-  - name: US_speednode_0030
-    type: vless
-    server: itarmy.com.ua
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /fp=randomized
-      headers:
-        Host: cnmfangbinxing.cnmfangbinxing.workers.dev
-  - name: US_speednode_0031
-    type: vless
-    server: developers.cloudflare.com
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /fp=randomized
-      headers:
-        Host: cnmfangbinxing.cnmfangbinxing.workers.dev
-  - name: US_speednode_0032
-    type: vless
-    server: cdnjs.com
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /fp=randomized
-      headers:
-        Host: cnmfangbinxing.cnmfangbinxing.workers.dev
-  - name: US_speednode_0033
-    type: vless
-    server: 155.117.127.137
-    port: 443
-    uuid: 5a20b5d0-3a98-4792-9559-95f4e24277ec
-    tls: false
-    network: tcp
-  - name: US_speednode_0034
-    type: vless
-    server: 162.159.141.236
-    port: 443
-    uuid: 44a59812-43ff-46ff-8acc-c7fe4dfc4e46
-    tls: true
-    network: ws
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: newspeedbypass.wt4p2ppro.me
-  - name: 美国+CloudFlare节点
-    type: trojan
-    server: 22b.net
-    port: 2087
-    password: trojan
-    sni: store.timimi.dpdns.org
-    skip-cert-verify: false
-  - name: 德国+黑森州法兰克福Linode数据中心
-    type: trojan
-    server: 172.104.237.100
-    port: 443
-    password: VPTFm%3DoZ++SuNT+jMRqGZqrAnWq-r8KJyY
-    sni: 172.104.237.100
-    skip-cert-verify: true
-  - name: 美国+Akamai科技公司CDN网络节点
-    type: trojan
-    server: 172.236.220.10
-    port: 443
-    password: s_WEN9lMmufG+qDIsn-4C7JOVAnDdbS3Ui
-    sni: 172.236.220.10
-    skip-cert-verify: false
-  - name: 巴西圣保罗+CloudFlare节点
-    type: trojan
-    server: 188.114.96.3
-    port: 443
-    password: humanity
-    sni: www.calmlunch.com
-    skip-cert-verify: false
-  - name: 美国+Akamai科技公司CDN网络节点 [1]
-    type: trojan
-    server: 172.238.120.124
-    port: 443
-    password: r-_YbwF.j0TtHVewoFIppramjAnmSfqYzJ
-    sni: 172.238.120.124
-    skip-cert-verify: false
-  - name: 摩尔多瓦+V2CROSS.COM
+  - name: MD_speednode_0012
     type: vless
     server: pl.prostosetup.org
     port: 443
     uuid: 1b43419a-b711-40d4-a0ee-eb5c73e60c92
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: RU_speednode_0019
+    type: vless
+    server: 194.226.169.36
+    port: 443
+    uuid: fae3277c-0541-4ae9-bbbb-8247453ea652
+    tls: true
+    network: tcp
+  - name: US_speednode_0028
+    type: vless
+    server: 132.243.231.122
+    port: 8443
+    uuid: 7625adbb-52f7-4ff4-95f8-677471071a77
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 法国+巴黎Choopa数据中心
+    type: trojan
+    server: 217.69.2.107
+    port: 443
+    password: YGWIMlg.W1wRWQkRDcKfjZY7sng09aC%3DYh
+    sni: www.weavenet.click
+    skip-cert-verify: false
+  - name: 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+    type: trojan
+    server: 130.94.107.171
+    port: 443
+    password: s.wRSE4ANZp4%3D4h.%3DB_9Qbetw6XUc0V1SV
+    sni: www.logger-guard.click
+    skip-cert-verify: false
+  - name: 台湾省+V2CROSS.COM
+    type: trojan
+    server: jpbgp.netvigor.cc
+    port: 19128
+    password: gcuCpQfaiVeDBdWG
+    sni: yazhou10.dynu.net
+    skip-cert-verify: false
+  - name: 法国+巴黎Online+S.A.S
+    type: vless
+    server: 51.158.206.86
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
     tls: false
     network: tcp
     flow: xtls-rprx-vision
-  - name: 美国+Versaweb
-    type: trojan
-    server: 104.143.0.117
-    port: 8443
-    password: 433e785b-2077-47f7-a43d-985f63dd18d1
-    sni: vpn.rnmcnm.com
-    skip-cert-verify: true
-  - name: 北美地区+V2CROSS.COM
-    type: trojan
-    server: 23.227.193.173
-    port: 443
-    password: AZWY%3DWAZk5TeVYmMUudr2xmeb00I3ymeMQ
-    sni: www.dataset-logger.click
-    skip-cert-verify: true
-  - name: 亚太地区 V2CROSS.COM
-    type: vmess
-    server: 103.181.164.145
-    port: 54022
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
   - name: 俄罗斯+V2CROSS.COM
     type: vless
     server: 90.156.254.164
     port: 19562
     uuid: 5b96be74-656d-4bb7-85c2-d2d8a3b7c2f3
     tls: false
-    network: tcp
+    network: raw
+  - name: 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司 [1]
+    type: trojan
+    server: 130.94.65.52
+    port: 443
+    password: IbezlLAYfrLRwFn9.mHn5FDwk1asLi599U
+    sni: www.static-cast.click
+    skip-cert-verify: true
+  - name: 亚太地区+V2CROSS.COM
+    type: trojan
+    server: 103.45.245.208
+    port: 2053
+    password: rYuChHcwQZskq9E0zdoR
+    sni: vpn5.rnmcnm.com
+    skip-cert-verify: false
+  - name: 美国+CloudFlare节点
+    type: vless
+    server: cf.9999669.xyz
+    port: 2087
+    uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: fgnix832fx.fx6hsv0.ccwu.cc
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -752,15 +618,15 @@ proxy-groups:
       - 🇺🇸 美国5|@ripaojiedian
       - 🇷🇺RU_1|1.5MB/s
       - 🇺🇸US_2|1016KB/s
-      - 🇨🇭CH_1|2.5MB/s
-      - 🇺🇸US_3|2.7MB/s
+      - CH_speednode_0002
+      - RU_speednode_0021
       - 🇨🇭CH_2|2.1MB/s
-      - 🇺🇸US_4|2.0MB/s
+      - RU_speednode_0025
       - 🇹🇷TR_1|2.3MB/s
       - 🇳🇱NL_2|2.0MB/s
       - 🇦🇺AU_2|3.2MB/s
       - 🇫🇮FI_1|2.0MB/s
-      - 🇺🇸US_6|3.0MB/s
+      - RU_speednode_0022
       - 🇺🇸US_7|2.2MB/s
       - 🇺🇸US_8|2.5MB/s
       - 🇫🇷FR_1|3.3MB/s
@@ -770,7 +636,7 @@ proxy-groups:
       - 🇸🇨SC_1|1.6MB/s
       - 🇯🇵JP_1|1.0MB/s
       - 🇨🇦CA_1|1.5MB/s
-      - 🇪🇸ES_1|1.1MB/s
+      - ES_speednode_0005
       - 🇫🇷FR_2|1.1MB/s
       - 🇩🇪DE_3|3.1MB/s
       - 🇷🇺RU_2|1.8MB/s
@@ -778,39 +644,25 @@ proxy-groups:
       - 🇸🇬SG_3|3.8MB/s
       - 🇩🇪DE_4|2.5MB/s
       - 🇦🇺AU_3|2.6MB/s
-      - 🇳🇱NL_4|3.1MB/s
+      - NL_speednode_0013
       - 🇬🇧GB_1|1.8MB/s
       - 🇫🇮FI_2|1.8MB/s
       - 🇬🇧GB_2|2.2MB/s
-      - BG_speednode_0001
-      - CH_speednode_0003
-      - GB_speednode_0006
-      - GB_speednode_0010
-      - MD_speednode_0014
-      - NL_speednode_0015
-      - NZ_speednode_0017
-      - SG_speednode_0021
-      - US_speednode_0024
-      - US_speednode_0025
-      - US_speednode_0026
-      - US_speednode_0027
+      - CH_speednode_0001
+      - HK_speednode_0007
+      - MD_speednode_0010
+      - MD_speednode_0011
+      - MD_speednode_0012
+      - RU_speednode_0019
       - US_speednode_0028
-      - US_speednode_0029
-      - US_speednode_0030
-      - US_speednode_0031
-      - US_speednode_0032
-      - US_speednode_0033
-      - US_speednode_0034
-      - 美国+CloudFlare节点
-      - 德国+黑森州法兰克福Linode数据中心
-      - 美国+Akamai科技公司CDN网络节点
-      - 巴西圣保罗+CloudFlare节点
-      - 美国+Akamai科技公司CDN网络节点 [1]
-      - 摩尔多瓦+V2CROSS.COM
-      - 美国+Versaweb
-      - 北美地区+V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
+      - 法国+巴黎Choopa数据中心
+      - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+      - 台湾省+V2CROSS.COM
+      - 法国+巴黎Online+S.A.S
       - 俄罗斯+V2CROSS.COM
+      - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司 [1]
+      - 亚太地区+V2CROSS.COM
+      - 美国+CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -841,15 +693,15 @@ proxy-groups:
       - 🇺🇸 美国5|@ripaojiedian
       - 🇷🇺RU_1|1.5MB/s
       - 🇺🇸US_2|1016KB/s
-      - 🇨🇭CH_1|2.5MB/s
-      - 🇺🇸US_3|2.7MB/s
+      - CH_speednode_0002
+      - RU_speednode_0021
       - 🇨🇭CH_2|2.1MB/s
-      - 🇺🇸US_4|2.0MB/s
+      - RU_speednode_0025
       - 🇹🇷TR_1|2.3MB/s
       - 🇳🇱NL_2|2.0MB/s
       - 🇦🇺AU_2|3.2MB/s
       - 🇫🇮FI_1|2.0MB/s
-      - 🇺🇸US_6|3.0MB/s
+      - RU_speednode_0022
       - 🇺🇸US_7|2.2MB/s
       - 🇺🇸US_8|2.5MB/s
       - 🇫🇷FR_1|3.3MB/s
@@ -859,7 +711,7 @@ proxy-groups:
       - 🇸🇨SC_1|1.6MB/s
       - 🇯🇵JP_1|1.0MB/s
       - 🇨🇦CA_1|1.5MB/s
-      - 🇪🇸ES_1|1.1MB/s
+      - ES_speednode_0005
       - 🇫🇷FR_2|1.1MB/s
       - 🇩🇪DE_3|3.1MB/s
       - 🇷🇺RU_2|1.8MB/s
@@ -867,39 +719,25 @@ proxy-groups:
       - 🇸🇬SG_3|3.8MB/s
       - 🇩🇪DE_4|2.5MB/s
       - 🇦🇺AU_3|2.6MB/s
-      - 🇳🇱NL_4|3.1MB/s
+      - NL_speednode_0013
       - 🇬🇧GB_1|1.8MB/s
       - 🇫🇮FI_2|1.8MB/s
       - 🇬🇧GB_2|2.2MB/s
-      - BG_speednode_0001
-      - CH_speednode_0003
-      - GB_speednode_0006
-      - GB_speednode_0010
-      - MD_speednode_0014
-      - NL_speednode_0015
-      - NZ_speednode_0017
-      - SG_speednode_0021
-      - US_speednode_0024
-      - US_speednode_0025
-      - US_speednode_0026
-      - US_speednode_0027
+      - CH_speednode_0001
+      - HK_speednode_0007
+      - MD_speednode_0010
+      - MD_speednode_0011
+      - MD_speednode_0012
+      - RU_speednode_0019
       - US_speednode_0028
-      - US_speednode_0029
-      - US_speednode_0030
-      - US_speednode_0031
-      - US_speednode_0032
-      - US_speednode_0033
-      - US_speednode_0034
-      - 美国+CloudFlare节点
-      - 德国+黑森州法兰克福Linode数据中心
-      - 美国+Akamai科技公司CDN网络节点
-      - 巴西圣保罗+CloudFlare节点
-      - 美国+Akamai科技公司CDN网络节点 [1]
-      - 摩尔多瓦+V2CROSS.COM
-      - 美国+Versaweb
-      - 北美地区+V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
+      - 法国+巴黎Choopa数据中心
+      - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+      - 台湾省+V2CROSS.COM
+      - 法国+巴黎Online+S.A.S
       - 俄罗斯+V2CROSS.COM
+      - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司 [1]
+      - 亚太地区+V2CROSS.COM
+      - 美国+CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -932,15 +770,15 @@ proxy-groups:
       - 🇺🇸 美国5|@ripaojiedian
       - 🇷🇺RU_1|1.5MB/s
       - 🇺🇸US_2|1016KB/s
-      - 🇨🇭CH_1|2.5MB/s
-      - 🇺🇸US_3|2.7MB/s
+      - CH_speednode_0002
+      - RU_speednode_0021
       - 🇨🇭CH_2|2.1MB/s
-      - 🇺🇸US_4|2.0MB/s
+      - RU_speednode_0025
       - 🇹🇷TR_1|2.3MB/s
       - 🇳🇱NL_2|2.0MB/s
       - 🇦🇺AU_2|3.2MB/s
       - 🇫🇮FI_1|2.0MB/s
-      - 🇺🇸US_6|3.0MB/s
+      - RU_speednode_0022
       - 🇺🇸US_7|2.2MB/s
       - 🇺🇸US_8|2.5MB/s
       - 🇫🇷FR_1|3.3MB/s
@@ -950,7 +788,7 @@ proxy-groups:
       - 🇸🇨SC_1|1.6MB/s
       - 🇯🇵JP_1|1.0MB/s
       - 🇨🇦CA_1|1.5MB/s
-      - 🇪🇸ES_1|1.1MB/s
+      - ES_speednode_0005
       - 🇫🇷FR_2|1.1MB/s
       - 🇩🇪DE_3|3.1MB/s
       - 🇷🇺RU_2|1.8MB/s
@@ -958,39 +796,25 @@ proxy-groups:
       - 🇸🇬SG_3|3.8MB/s
       - 🇩🇪DE_4|2.5MB/s
       - 🇦🇺AU_3|2.6MB/s
-      - 🇳🇱NL_4|3.1MB/s
+      - NL_speednode_0013
       - 🇬🇧GB_1|1.8MB/s
       - 🇫🇮FI_2|1.8MB/s
       - 🇬🇧GB_2|2.2MB/s
-      - BG_speednode_0001
-      - CH_speednode_0003
-      - GB_speednode_0006
-      - GB_speednode_0010
-      - MD_speednode_0014
-      - NL_speednode_0015
-      - NZ_speednode_0017
-      - SG_speednode_0021
-      - US_speednode_0024
-      - US_speednode_0025
-      - US_speednode_0026
-      - US_speednode_0027
+      - CH_speednode_0001
+      - HK_speednode_0007
+      - MD_speednode_0010
+      - MD_speednode_0011
+      - MD_speednode_0012
+      - RU_speednode_0019
       - US_speednode_0028
-      - US_speednode_0029
-      - US_speednode_0030
-      - US_speednode_0031
-      - US_speednode_0032
-      - US_speednode_0033
-      - US_speednode_0034
-      - 美国+CloudFlare节点
-      - 德国+黑森州法兰克福Linode数据中心
-      - 美国+Akamai科技公司CDN网络节点
-      - 巴西圣保罗+CloudFlare节点
-      - 美国+Akamai科技公司CDN网络节点 [1]
-      - 摩尔多瓦+V2CROSS.COM
-      - 美国+Versaweb
-      - 北美地区+V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
+      - 法国+巴黎Choopa数据中心
+      - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+      - 台湾省+V2CROSS.COM
+      - 法国+巴黎Online+S.A.S
       - 俄罗斯+V2CROSS.COM
+      - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司 [1]
+      - 亚太地区+V2CROSS.COM
+      - 美国+CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
