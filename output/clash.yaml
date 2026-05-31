@@ -645,66 +645,63 @@ proxies:
       path: /fp=chrome
       headers:
         Host: newspeedbypass.wt4p2ppro.me
+  - name: 美国+CloudFlare节点
+    type: trojan
+    server: 22b.net
+    port: 2087
+    password: trojan
+    sni: store.timimi.dpdns.org
+    skip-cert-verify: false
+  - name: 德国+黑森州法兰克福Linode数据中心
+    type: trojan
+    server: 172.104.237.100
+    port: 443
+    password: VPTFm%3DoZ++SuNT+jMRqGZqrAnWq-r8KJyY
+    sni: 172.104.237.100
+    skip-cert-verify: true
   - name: 美国+Akamai科技公司CDN网络节点
+    type: trojan
+    server: 172.236.220.10
+    port: 443
+    password: s_WEN9lMmufG+qDIsn-4C7JOVAnDdbS3Ui
+    sni: 172.236.220.10
+    skip-cert-verify: false
+  - name: 巴西圣保罗+CloudFlare节点
+    type: trojan
+    server: 188.114.96.3
+    port: 443
+    password: humanity
+    sni: www.calmlunch.com
+    skip-cert-verify: false
+  - name: 美国+Akamai科技公司CDN网络节点 [1]
     type: trojan
     server: 172.238.120.124
     port: 443
     password: r-_YbwF.j0TtHVewoFIppramjAnmSfqYzJ
     sni: 172.238.120.124
     skip-cert-verify: false
-  - name: 美国+V2CROSS.COM
+  - name: 摩尔多瓦+V2CROSS.COM
     type: vless
-    server: 45.130.125.206
+    server: pl.prostosetup.org
     port: 443
-    uuid: f9fa9ed3-1381-441c-8672-588cbedd012d
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: r.bibak.bz
-  - name: 德国+V2CROSS.COM
-    type: vless
-    server: de-2.srv.vpnza300.org
-    port: 443
-    uuid: d0b60427-ccb0-4026-aeec-d095b6b7dd08
+    uuid: 1b43419a-b711-40d4-a0ee-eb5c73e60c92
     tls: false
     network: tcp
     flow: xtls-rprx-vision
-  - name: 美国+Akamai科技公司CDN网络节点 [1]
+  - name: 美国+Versaweb
     type: trojan
-    server: 172.235.63.252
-    port: 443
-    password: bX_lNHWoW6ywq82mI%3DKUr+8i__VSp0Hs_E
-    sni: 172.235.63.252
+    server: 104.143.0.117
+    port: 8443
+    password: 433e785b-2077-47f7-a43d-985f63dd18d1
+    sni: vpn.rnmcnm.com
     skip-cert-verify: true
-  - name: 美国+CloudFlare节点
+  - name: 北美地区+V2CROSS.COM
     type: trojan
-    server: 104.20.6.134
+    server: 23.227.193.173
     port: 443
-    password: humanity
-    sni: www.calmloud.com
-    skip-cert-verify: false
-  - name: 美国+DXC+Technology
-    type: vless
-    server: 20.103.221.187
-    port: 443
-    uuid: 4b616b6f-6f6c-4e65-7773-b8e2c9f3d541
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers: {}
-  - name: 英国+Level3通信股份有限公司
-    type: vless
-    server: 217.163.76.118
-    port: 2083
-    uuid: 41f37ced-2021-4111-93a8-82d57ff2eb5b
-    tls: true
-    network: ws
-    ws-opts:
-      path: /?ed
-      headers: {}
+    password: AZWY%3DWAZk5TeVYmMUudr2xmeb00I3ymeMQ
+    sni: www.dataset-logger.click
+    skip-cert-verify: true
   - name: 亚太地区 V2CROSS.COM
     type: vmess
     server: 103.181.164.145
@@ -714,21 +711,13 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 英国+社会保险安全部
+  - name: 俄罗斯+V2CROSS.COM
     type: vless
-    server: 51.250.106.197
-    port: 443
-    uuid: Fluffy_VPN-757700MA
+    server: 90.156.254.164
+    port: 19562
+    uuid: 5b96be74-656d-4bb7-85c2-d2d8a3b7c2f3
     tls: false
     network: tcp
-    flow: xtls-rprx-vision
-  - name: 美国+CloudFlare节点 [1]
-    type: trojan
-    server: www.gossipglove.com
-    port: 443
-    password: humanity
-    sni: www.gossipglove.com
-    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -812,16 +801,16 @@ proxy-groups:
       - US_speednode_0032
       - US_speednode_0033
       - US_speednode_0034
-      - 美国+Akamai科技公司CDN网络节点
-      - 美国+V2CROSS.COM
-      - 德国+V2CROSS.COM
-      - 美国+Akamai科技公司CDN网络节点 [1]
       - 美国+CloudFlare节点
-      - 美国+DXC+Technology
-      - 英国+Level3通信股份有限公司
+      - 德国+黑森州法兰克福Linode数据中心
+      - 美国+Akamai科技公司CDN网络节点
+      - 巴西圣保罗+CloudFlare节点
+      - 美国+Akamai科技公司CDN网络节点 [1]
+      - 摩尔多瓦+V2CROSS.COM
+      - 美国+Versaweb
+      - 北美地区+V2CROSS.COM
       - 亚太地区 V2CROSS.COM
-      - 英国+社会保险安全部
-      - 美国+CloudFlare节点 [1]
+      - 俄罗斯+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -901,16 +890,16 @@ proxy-groups:
       - US_speednode_0032
       - US_speednode_0033
       - US_speednode_0034
-      - 美国+Akamai科技公司CDN网络节点
-      - 美国+V2CROSS.COM
-      - 德国+V2CROSS.COM
-      - 美国+Akamai科技公司CDN网络节点 [1]
       - 美国+CloudFlare节点
-      - 美国+DXC+Technology
-      - 英国+Level3通信股份有限公司
+      - 德国+黑森州法兰克福Linode数据中心
+      - 美国+Akamai科技公司CDN网络节点
+      - 巴西圣保罗+CloudFlare节点
+      - 美国+Akamai科技公司CDN网络节点 [1]
+      - 摩尔多瓦+V2CROSS.COM
+      - 美国+Versaweb
+      - 北美地区+V2CROSS.COM
       - 亚太地区 V2CROSS.COM
-      - 英国+社会保险安全部
-      - 美国+CloudFlare节点 [1]
+      - 俄罗斯+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -992,16 +981,16 @@ proxy-groups:
       - US_speednode_0032
       - US_speednode_0033
       - US_speednode_0034
-      - 美国+Akamai科技公司CDN网络节点
-      - 美国+V2CROSS.COM
-      - 德国+V2CROSS.COM
-      - 美国+Akamai科技公司CDN网络节点 [1]
       - 美国+CloudFlare节点
-      - 美国+DXC+Technology
-      - 英国+Level3通信股份有限公司
+      - 德国+黑森州法兰克福Linode数据中心
+      - 美国+Akamai科技公司CDN网络节点
+      - 巴西圣保罗+CloudFlare节点
+      - 美国+Akamai科技公司CDN网络节点 [1]
+      - 摩尔多瓦+V2CROSS.COM
+      - 美国+Versaweb
+      - 北美地区+V2CROSS.COM
       - 亚太地区 V2CROSS.COM
-      - 英国+社会保险安全部
-      - 美国+CloudFlare节点 [1]
+      - 俄罗斯+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
