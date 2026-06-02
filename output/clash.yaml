@@ -678,133 +678,96 @@ proxies:
       path: /35cdnwsfp=firefox
       headers:
         Host: 35cdnws.frnstatic.info
-  - name: 俄罗斯+V2CROSS.COM
-    type: vless
-    server: cdn3-25.vk-cdnvideo.com
-    port: 8443
-    uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-    tls: true
-    network: tcp
-  - name: 美国+德克萨斯州达拉斯Linode数据中心
+  - name: 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
     type: trojan
-    server: 45.79.8.17
+    server: 130.94.107.171
     port: 443
-    password: rXyShM8Jni%2B5Sbq3k4gkyr5Lq0zOMRL2Uf
-    sni: 45.79.8.17
+    password: s.wRSE4ANZp4%3D4h.%3DB_9Qbetw6XUc0V1SV
+    sni: www.logger-guard.click
     skip-cert-verify: false
-  - name: 俄罗斯+V2CROSS.COM [1]
+  - name: 美国+CloudFlare节点
+    type: trojan
+    server: 104.20.6.134
+    port: 443
+    password: humanity
+    sni: www.calmloud.com
+    skip-cert-verify: false
+  - name: 美国+加利福尼亚
+    type: trojan
+    server: 64.176.65.85
+    port: 443
+    password: iGccGWTMHtoXtBhGYK4mogg7iIUhGbcvCf
+    sni: 64.176.65.85
+    skip-cert-verify: false
+  - name: 美国+Akamai科技公司CDN网络节点
+    type: trojan
+    server: 172.237.145.189
+    port: 443
+    password: A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6%3DVIM
+    sni: 172.237.145.189
+    skip-cert-verify: false
+  - name: 美国+V2CROSS.COM
+    type: vless
+    server: 134.33.73.249
+    port: 54254
+    uuid: acba684c-4098-4eca-f519-828b09f96464
+    tls: false
+    network: tcp
+    flow: xtls-rprx-vision
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: gtm-sg-cc54q7d1q01.365cloud0285.com
+    port: 6001
+    uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 美国+CloudFlare节点 [1]
+    type: vless
+    server: 104.25.242.61
+    port: 443
+    uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: juzi.qea.ccwu.cc
+  - name: 美国+V2CROSS.COM [1]
     type: vless
     server: cdn7-39.vk-cdnvideo.com
     port: 8443
     uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
     tls: true
     network: tcp
-  - name: 英国 V2CROSS.COM
-    type: vmess
-    server: 82.198.246.214
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 208.103.161.170
-    port: 443
-    password: 386bd471-4e29-4e79-9a3c-6bc6076ce4b6
-    sni: edu.ruangguru.com.cyylr.eu.cc
-    skip-cert-verify: false
-  - name: 俄罗斯+V2CROSS.COM [2]
-    type: vless
-    server: cdn9-33.vk-cdnvideo.com
-    port: 8443
-    uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-    tls: true
-    network: tcp
-  - name: 英国+V2CROSS.COM
-    type: vless
-    server: mag3.portal-guard.com
-    port: 8443
-    uuid: 8ea09611-4e24-49f9-8b2a-25974d8ebf8c
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 美国+CloudFlare节点
-    type: vless
-    server: 104.17.172.209
-    port: 443
-    uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-    tls: true
-    network: ws
-    ws-opts:
-      path: /proxyip=ProxyIP.CMLiussss.net
-      headers:
-        Host: sni.skylee4.cloudns.ch
-  - name: 美国+CloudFlare节点 [1]
-    type: vless
-    server: france.cloudpath.live
-    port: 443
-    uuid: a1fbffe9-8e5a-5a0e-9333-045d32eccd59
-    tls: false
-    network: tcp
-  - name: 美国+CloudFlare节点 [2]
-    type: vless
-    server: 162.159.13.245
-    port: 443
-    uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
-    tls: true
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: juzi.qea.ccwu.cc
-  - name: 德国+黑森州法兰克福Linode数据中心
-    type: trojan
-    server: 172.104.237.100
-    port: 443
-    password: VPTFm%3DoZ%2B%2BSuNT%2BjMRqGZqrAnWq-r8KJyY
-    sni: 172.104.237.100
-    skip-cert-verify: false
-  - name: 美国+Fastly全球Anycast节点
-    type: vless
-    server: 151.101.193.57
-    port: 80
-    uuid: 2c15f192-3812-98db-85a2-88cd7d02b868
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: Vpsdelta.com
-  - name: 美国+Akamai科技公司CDN网络节点
-    type: trojan
-    server: 172.238.120.124
-    port: 443
-    password: r-_YbwF.j0TtHVewoFIppramjAnmSfqYzJ
-    sni: 172.238.120.124
-    skip-cert-verify: false
   - name: 美国+Akamai科技公司CDN网络节点 [1]
     type: trojan
-    server: 172.236.220.10
+    server: 172.235.63.252
     port: 443
-    password: s_WEN9lMmufG+qDIsn-4C7JOVAnDdbS3Ui
-    sni: 172.236.220.10
+    password: bX_lNHWoW6ywq82mI%3DKUr+8i__VSp0Hs_E
+    sni: 172.235.63.252
     skip-cert-verify: false
-  - name: 罗马尼亚+V2CROSS.COM
-    type: trojan
-    server: 185.137.157.254
+  - name: 俄罗斯 V2CROSS.COM
+    type: vmess
+    server: renderer-stream-1-411.mirra.now
     port: 443
-    password: hxn2jK9Uzezogua0oHuq9Y8viN%3DUCe.2Jd
-    sni: www.directorypipeline.click
+    uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /api/v1/gpu-stream/socket
+      headers:
+        Host: renderer-stream-1-411.mirra.now
+  - name: 亚太地区+V2CROSS.COM
+    type: trojan
+    server: 103.45.245.208
+    port: 2053
+    password: rYuChHcwQZskq9E0zdoR
+    sni: vpn5.rnmcnm.com
     skip-cert-verify: false
-  - name: 美国+CloudFlare节点 [3]
-    type: trojan
-    server: 104.18.0.55
-    port: 443
-    password: humanity
-    sni: www.gossipglove.com
-    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -891,22 +854,17 @@ proxy-groups:
       - RU_speednode_0046
       - RU_speednode_0047
       - US_speednode_0054
-      - 俄罗斯+V2CROSS.COM
-      - 美国+德克萨斯州达拉斯Linode数据中心
-      - 俄罗斯+V2CROSS.COM [1]
-      - 英国 V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM [2]
-      - 英国+V2CROSS.COM
+      - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
       - 美国+CloudFlare节点
-      - 美国+CloudFlare节点 [1]
-      - 美国+CloudFlare节点 [2]
-      - 德国+黑森州法兰克福Linode数据中心
-      - 美国+Fastly全球Anycast节点
+      - 美国+加利福尼亚
       - 美国+Akamai科技公司CDN网络节点
+      - 美国+V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 美国+CloudFlare节点 [1]
+      - 美国+V2CROSS.COM [1]
       - 美国+Akamai科技公司CDN网络节点 [1]
-      - 罗马尼亚+V2CROSS.COM
-      - 美国+CloudFlare节点 [3]
+      - 俄罗斯 V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -989,22 +947,17 @@ proxy-groups:
       - RU_speednode_0046
       - RU_speednode_0047
       - US_speednode_0054
-      - 俄罗斯+V2CROSS.COM
-      - 美国+德克萨斯州达拉斯Linode数据中心
-      - 俄罗斯+V2CROSS.COM [1]
-      - 英国 V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM [2]
-      - 英国+V2CROSS.COM
+      - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
       - 美国+CloudFlare节点
-      - 美国+CloudFlare节点 [1]
-      - 美国+CloudFlare节点 [2]
-      - 德国+黑森州法兰克福Linode数据中心
-      - 美国+Fastly全球Anycast节点
+      - 美国+加利福尼亚
       - 美国+Akamai科技公司CDN网络节点
+      - 美国+V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 美国+CloudFlare节点 [1]
+      - 美国+V2CROSS.COM [1]
       - 美国+Akamai科技公司CDN网络节点 [1]
-      - 罗马尼亚+V2CROSS.COM
-      - 美国+CloudFlare节点 [3]
+      - 俄罗斯 V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -1089,22 +1042,17 @@ proxy-groups:
       - RU_speednode_0046
       - RU_speednode_0047
       - US_speednode_0054
-      - 俄罗斯+V2CROSS.COM
-      - 美国+德克萨斯州达拉斯Linode数据中心
-      - 俄罗斯+V2CROSS.COM [1]
-      - 英国 V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM [2]
-      - 英国+V2CROSS.COM
+      - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
       - 美国+CloudFlare节点
-      - 美国+CloudFlare节点 [1]
-      - 美国+CloudFlare节点 [2]
-      - 德国+黑森州法兰克福Linode数据中心
-      - 美国+Fastly全球Anycast节点
+      - 美国+加利福尼亚
       - 美国+Akamai科技公司CDN网络节点
+      - 美国+V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 美国+CloudFlare节点 [1]
+      - 美国+V2CROSS.COM [1]
       - 美国+Akamai科技公司CDN网络节点 [1]
-      - 罗马尼亚+V2CROSS.COM
-      - 美国+CloudFlare节点 [3]
+      - 俄罗斯 V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
