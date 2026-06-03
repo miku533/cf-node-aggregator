@@ -741,13 +741,33 @@ proxies:
       path: /vpnhusecurity=tls
       headers:
         Host: cdn.veilvpn.fans
-  - name: 美国+Akamai科技公司CDN网络节点
+  - name: 美国 Akamai科技公司CDN网络节点
+    type: vmess
+    server: usaapp1.jisuyun.top
+    port: 2053
+    uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /usavm
+      headers:
+        Host: usaapp1.jisuyun.top
+  - name: 德国+V2CROSS.COM
     type: trojan
-    server: 172.235.63.252
+    server: 91.233.8.25
     port: 443
-    password: bX_lNHWoW6ywq82mI%3DKUr+8i__VSp0Hs_E
-    sni: 172.235.63.252
+    password: I1vtf6pjYsAu-nFnraWAMjKTy90AHitdAz
+    sni: fra34.tracker-ws.click
     skip-cert-verify: false
+  - name: 俄罗斯+State+University;St-Petersburg.
+    type: vless
+    server: germ-node.datamove.online
+    port: 2040
+    uuid: 17451fec-af94-4715-8c2f-7f6839130d0a
+    tls: false
+    network: tcp
   - name: 美国+CloudFlare节点
     type: trojan
     server: cf.wdqgn.eu.org
@@ -755,99 +775,47 @@ proxies:
     password: 8b6fa5e7-2583-4dcf-a589-f3924c685dbb
     sni: HKNTT1.nauk.eu.cc
     skip-cert-verify: false
-  - name: 美国 V2CROSS.COM
+  - name: 克罗地亚+V2CROSS.COM
+    type: vless
+    server: cdn7-39.vk-cdnvideo.com
+    port: 8443
+    uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+    tls: true
+    network: tcp
+  - name: 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+    type: trojan
+    server: 130.94.104.210
+    port: 443
+    password: lTs6OZOMoqYAkDEbK10t-tE8KMjuREBW3m
+    sni: www.cdn-structure.click
+    skip-cert-verify: false
+  - name: 英国 V2CROSS.COM
     type: vmess
-    server: gtm-sg-cc54q7d1q01.365cloud0285.com
-    port: 6004
-    uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
+    server: 82.198.246.37
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     alterId: 0
     cipher: auto
     tls: false
     network: tcp
-  - name: 捷克+V2CROSS.COM
-    type: vless
-    server: 31.207.5.73
-    port: 443
-    uuid: 6d088fbd-528d-4f2a-be26-317dcda3c6ee
-    tls: false
-    network: tcp
-  - name: 亚太地区+V2CROSS.COM
-    type: vless
-    server: 103.123.162.50
-    port: 10011
-    uuid: 17011a43-97e2-44b0-b0da-a2ea151ad75c
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 美国+Akamai科技公司CDN网络节点 [1]
-    type: trojan
-    server: 172.236.220.10
-    port: 443
-    password: s_WEN9lMmufG+qDIsn-4C7JOVAnDdbS3Ui
-    sni: 172.236.220.10
-    skip-cert-verify: false
   - name: 美国+CloudFlare节点 [1]
     type: trojan
-    server: 104.17.126.186
+    server: 198.41.209.228
     port: 443
     password: 8b6fa5e7-2583-4dcf-a589-f3924c685dbb
     sni: HKNTT1.nauk.eu.cc
     skip-cert-verify: false
-  - name: 德国+黑森州法兰克福Linode数据中心
-    type: trojan
-    server: 172.104.237.100
-    port: 443
-    password: VPTFm%3DoZ++SuNT+jMRqGZqrAnWq-r8KJyY
-    sni: 172.104.237.100
-    skip-cert-verify: false
-  - name: 法国+国际航空电讯集团公司(SITA)
+  - name: 立陶宛+V2CROSS.COM
     type: vless
-    server: 57.128.180.59
+    server: 89.116.46.210
     port: 443
-    uuid: c871b272-4bb8-4d52-a1a9-a94a19220aa0
+    uuid: 9a74144f-6218-4257-9e70-a4c50fe1e5a4
     tls: true
     network: ws
     ws-opts:
-      path: /TG@wxgqlfx
+      path: /sg-melbi
       headers:
-        Host: us2.wxgqlfx.xyz
-  - name: 俄罗斯+V2CROSS.COM
-    type: vless
-    server: kz-1.nodes.ac
-    port: 443
-    uuid: 593f4d6c-aff1-4832-87a7-b5d8e71584ea
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 台湾省+V2CROSS.COM
-    type: trojan
-    server: jpbgp.netvigor.cc
-    port: 19128
-    password: gcuCpQfaiVeDBdWG
-    sni: yazhou10.dynu.net
-    skip-cert-verify: false
-  - name: 美国+V2CROSS.COM
-    type: vless
-    server: 164.92.181.129
-    port: 443
-    uuid: e9728f25-f6cd-4a83-b851-f296d722b3d6
-    tls: false
-    network: tcp
-  - name: 英国+V2CROSS.COM
-    type: vless
-    server: mag3.portal-guard.com
-    port: 8443
-    uuid: 8ea09611-4e24-49f9-8b2a-25974d8ebf8c
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
-    type: trojan
-    server: 130.94.107.171
-    port: 443
-    password: s.wRSE4ANZp4%3D4h.%3DB_9Qbetw6XUc0V1SV
-    sni: www.logger-guard.click
-    skip-cert-verify: false
+        Host: zaintest.vuclip.com.cyylr.eu.cc
   - name: 委内瑞拉+V2CROSS.COM
     type: vless
     server: 158.160.252.176
@@ -859,6 +827,33 @@ proxies:
       path: /sequre/ws
       headers:
         Host: cloudflare.vhub.pro
+  - name: 美国+CloudFlare节点 [2]
+    type: vless
+    server: 172.66.47.45
+    port: 443
+    uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+    tls: true
+    network: ws
+    ws-opts:
+      path: /tsghdws
+      headers:
+        Host: octopusss4.com
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: gtm-sg-cc54q7d1q01.365cloud0285.com
+    port: 6001
+    uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 美国+RF+Engineering
+    type: trojan
+    server: 141.193.213.11
+    port: 443
+    password: humanity
+    sni: www.calmloud.com
+    skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -963,21 +958,19 @@ proxy-groups:
       - US_speednode_0051
       - US_speednode_0054
       - US_speednode_0055
-      - 美国+Akamai科技公司CDN网络节点
+      - 美国 Akamai科技公司CDN网络节点
+      - 德国+V2CROSS.COM
+      - 俄罗斯+State+University;St-Petersburg.
       - 美国+CloudFlare节点
-      - 美国 V2CROSS.COM
-      - 捷克+V2CROSS.COM
-      - 亚太地区+V2CROSS.COM
-      - 美国+Akamai科技公司CDN网络节点 [1]
-      - 美国+CloudFlare节点 [1]
-      - 德国+黑森州法兰克福Linode数据中心
-      - 法国+国际航空电讯集团公司(SITA)
-      - 俄罗斯+V2CROSS.COM
-      - 台湾省+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 英国+V2CROSS.COM
+      - 克罗地亚+V2CROSS.COM
       - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+      - 英国 V2CROSS.COM
+      - 美国+CloudFlare节点 [1]
+      - 立陶宛+V2CROSS.COM
       - 委内瑞拉+V2CROSS.COM
+      - 美国+CloudFlare节点 [2]
+      - 美国 V2CROSS.COM
+      - 美国+RF+Engineering
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -1078,21 +1071,19 @@ proxy-groups:
       - US_speednode_0051
       - US_speednode_0054
       - US_speednode_0055
-      - 美国+Akamai科技公司CDN网络节点
+      - 美国 Akamai科技公司CDN网络节点
+      - 德国+V2CROSS.COM
+      - 俄罗斯+State+University;St-Petersburg.
       - 美国+CloudFlare节点
-      - 美国 V2CROSS.COM
-      - 捷克+V2CROSS.COM
-      - 亚太地区+V2CROSS.COM
-      - 美国+Akamai科技公司CDN网络节点 [1]
-      - 美国+CloudFlare节点 [1]
-      - 德国+黑森州法兰克福Linode数据中心
-      - 法国+国际航空电讯集团公司(SITA)
-      - 俄罗斯+V2CROSS.COM
-      - 台湾省+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 英国+V2CROSS.COM
+      - 克罗地亚+V2CROSS.COM
       - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+      - 英国 V2CROSS.COM
+      - 美国+CloudFlare节点 [1]
+      - 立陶宛+V2CROSS.COM
       - 委内瑞拉+V2CROSS.COM
+      - 美国+CloudFlare节点 [2]
+      - 美国 V2CROSS.COM
+      - 美国+RF+Engineering
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -1195,21 +1186,19 @@ proxy-groups:
       - US_speednode_0051
       - US_speednode_0054
       - US_speednode_0055
-      - 美国+Akamai科技公司CDN网络节点
+      - 美国 Akamai科技公司CDN网络节点
+      - 德国+V2CROSS.COM
+      - 俄罗斯+State+University;St-Petersburg.
       - 美国+CloudFlare节点
-      - 美国 V2CROSS.COM
-      - 捷克+V2CROSS.COM
-      - 亚太地区+V2CROSS.COM
-      - 美国+Akamai科技公司CDN网络节点 [1]
-      - 美国+CloudFlare节点 [1]
-      - 德国+黑森州法兰克福Linode数据中心
-      - 法国+国际航空电讯集团公司(SITA)
-      - 俄罗斯+V2CROSS.COM
-      - 台湾省+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 英国+V2CROSS.COM
+      - 克罗地亚+V2CROSS.COM
       - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+      - 英国 V2CROSS.COM
+      - 美国+CloudFlare节点 [1]
+      - 立陶宛+V2CROSS.COM
       - 委内瑞拉+V2CROSS.COM
+      - 美国+CloudFlare节点 [2]
+      - 美国 V2CROSS.COM
+      - 美国+RF+Engineering
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
