@@ -381,40 +381,41 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 美国+CloudFlare节点
+  - name: 克罗地亚+V2CROSS.COM
     type: vless
-    server: cosmin.ns.cloudflare.com
-    port: 443
-    uuid: 7270612b-49f6-4b04-999c-34d8263da767
-    tls: true
-    network: ws
-    ws-opts:
-      path: /aymdlws
-      headers:
-        Host: picassooo.info
-  - name: 保加利亚+V2CROSS.COM
-    type: vless
-    server: 87.120.126.205
-    port: 443
-    uuid: 91e120bc-159a-4390-b4e1-197b19602ea0
+    server: cdn7-09.vk-cdnvideo.com
+    port: 8443
+    uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
     tls: true
     network: tcp
-    flow: xtls-rprx-vision
-  - name: 英国+V2CROSS.COM
-    type: vless
-    server: 31.76.113.123
-    port: 443
-    uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 德国+V2CROSS.COM
+  - name: 美国+加利福尼亚
     type: trojan
-    server: 91.233.8.138
+    server: 64.176.65.85
     port: 443
-    password: qDVh0NalwefxyZlHh3Ni2JSlhErcuC3Wiq
-    sni: www.homelywebs.click
+    password: iGccGWTMHtoXtBhGYK4mogg7iIUhGbcvCf
+    sni: 64.176.65.85
     skip-cert-verify: false
+  - name: 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+    type: trojan
+    server: 130.94.92.144
+    port: 443
+    password: oUAfbL8z87q-mhgjZ6g7mWQobf9%3Db7ut_F
+    sni: www.node-finder.click
+    skip-cert-verify: false
+  - name: 美国+德克萨斯州达拉斯Linode数据中心
+    type: trojan
+    server: 45.79.8.17
+    port: 443
+    password: rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf
+    sni: 45.79.8.17
+    skip-cert-verify: false
+  - name: 巴西+V2CROSS.COM
+    type: vless
+    server: 152.233.28.198
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    tls: true
+    network: tcp
   - name: 欧盟+V2CROSS.COM
     type: vless
     server: 45.92.219.119
@@ -423,35 +424,6 @@ proxies:
     tls: false
     network: tcp
     flow: xtls-rprx-vision
-  - name: 美国+CloudFlare节点 [1]
-    type: vless
-    server: 172.64.33.162
-    port: 443
-    uuid: c35050ce-01ab-45a9-91b8-54cec637d0a8
-    tls: true
-    network: ws
-    ws-opts:
-      path: /udfyfws
-      headers:
-        Host: octopusss5.info
-  - name: 美国+Akamai科技公司CDN网络节点
-    type: trojan
-    server: 172.235.63.252
-    port: 443
-    password: bX_lNHWoW6ywq82mI%3DKUr+8i__VSp0Hs_E
-    sni: 172.235.63.252
-    skip-cert-verify: false
-  - name: 美国+CloudFlare节点 [2]
-    type: vless
-    server: 104.25.242.61
-    port: 443
-    uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: juzi.qea.ccwu.cc
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -504,14 +476,12 @@ proxy-groups:
       - RU_speednode_0042
       - US_speednode_0045
       - US_speednode_0046
-      - 美国+CloudFlare节点
-      - 保加利亚+V2CROSS.COM
-      - 英国+V2CROSS.COM
-      - 德国+V2CROSS.COM
+      - 克罗地亚+V2CROSS.COM
+      - 美国+加利福尼亚
+      - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+      - 美国+德克萨斯州达拉斯Linode数据中心
+      - 巴西+V2CROSS.COM
       - 欧盟+V2CROSS.COM
-      - 美国+CloudFlare节点 [1]
-      - 美国+Akamai科技公司CDN网络节点
-      - 美国+CloudFlare节点 [2]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -560,14 +530,12 @@ proxy-groups:
       - RU_speednode_0042
       - US_speednode_0045
       - US_speednode_0046
-      - 美国+CloudFlare节点
-      - 保加利亚+V2CROSS.COM
-      - 英国+V2CROSS.COM
-      - 德国+V2CROSS.COM
+      - 克罗地亚+V2CROSS.COM
+      - 美国+加利福尼亚
+      - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+      - 美国+德克萨斯州达拉斯Linode数据中心
+      - 巴西+V2CROSS.COM
       - 欧盟+V2CROSS.COM
-      - 美国+CloudFlare节点 [1]
-      - 美国+Akamai科技公司CDN网络节点
-      - 美国+CloudFlare节点 [2]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -618,14 +586,12 @@ proxy-groups:
       - RU_speednode_0042
       - US_speednode_0045
       - US_speednode_0046
-      - 美国+CloudFlare节点
-      - 保加利亚+V2CROSS.COM
-      - 英国+V2CROSS.COM
-      - 德国+V2CROSS.COM
+      - 克罗地亚+V2CROSS.COM
+      - 美国+加利福尼亚
+      - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+      - 美国+德克萨斯州达拉斯Linode数据中心
+      - 巴西+V2CROSS.COM
       - 欧盟+V2CROSS.COM
-      - 美国+CloudFlare节点 [1]
-      - 美国+Akamai科技公司CDN网络节点
-      - 美国+CloudFlare节点 [2]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
