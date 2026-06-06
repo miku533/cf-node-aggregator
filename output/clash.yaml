@@ -505,90 +505,58 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 149.104.87.182
+  - name: 英国+V2CROSS.COM
+    type: vless
+    server: nl01.goodmaximum.com
     port: 443
-    password: PtRV8to08i8FMsY.Uw7%3DyMuIaR3eVTGmvA
-    sni: www.jewelapp.click
-    skip-cert-verify: true
-  - name: 英国 V2CROSS.COM
-    type: vmess
-    server: 82.198.246.214
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 希腊+V2CROSS.COM
-    type: vless
-    server: 144.24.66.151
-    port: 21828
-    uuid: 00000000-0000-4000-8000-000000000000
-    tls: true
-    network: ws
-    ws-opts:
-      path: /@Marisa_kristi
-      headers: {}
-  - name: 美国+V2CROSS.COM [1]
-    type: vless
-    server: cdn7-09.vk-cdnvideo.com
-    port: 8443
-    uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-    tls: true
-    network: tcp
-  - name: 白俄罗斯+V2CROSS.COM
-    type: vless
-    server: 185.66.68.90
-    port: 10444
-    uuid: f4df3096-8568-4c86-83d2-985623035724
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 亚太地区+V2CROSS.COM
-    type: vless
-    server: de01.goodmaximum.com
-    port: 443
-    uuid: ec6b9cd8-0b2c-0014-996f-df26fee230f7
+    uuid: c2401b12-8bb8-000a-abc0-89dbaea88116
     tls: false
     network: tcp
   - name: 美国+CloudFlare节点
-    type: trojan
-    server: www.ignitelimit.com
+    type: vless
+    server: hyperlink-free.poweredproyuz.com
     port: 443
-    password: humanity
-    sni: www.ignitelimit.com
+    uuid: 2be7b933-c720-4838-a35a-740ae50987ee
+    tls: true
+    network: ws
+    ws-opts:
+      path: /hyperlink-hyperlink-join-to-hyperlink-hyperlink_ch-hyperlink-hlink_robot-hyperlink
+      headers:
+        Host: hyperlink-free.poweredproyuz.com
+  - name: 美国+Akamai科技公司CDN网络节点
+    type: trojan
+    server: 172.237.145.189
+    port: 443
+    password: A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6%3DVIM
+    sni: 172.237.145.189
+    skip-cert-verify: false
+  - name: 美国+Akamai科技公司CDN网络节点 [1]
+    type: trojan
+    server: 172.238.19.11
+    port: 443
+    password: E_hUHrn0+6VeZO%3Dv9%3DfLgoPDXZWGfcrejg
+    sni: 172.238.19.11
+    skip-cert-verify: false
+  - name: 美国+Akamai科技公司CDN网络节点 [2]
+    type: trojan
+    server: 172.235.63.252
+    port: 443
+    password: bX_lNHWoW6ywq82mI%3DKUr+8i__VSp0Hs_E
+    sni: 172.235.63.252
     skip-cert-verify: false
   - name: 德国+V2CROSS.COM
-    type: vless
-    server: pl-1.illusion-vpn.ru
+    type: trojan
+    server: 91.233.8.138
     port: 443
-    uuid: e19966ec-7628-5252-89d2-43b5d4e51264
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 伊朗+V2CROSS.COM
-    type: vless
-    server: 151.241.228.254
-    port: 34754
-    uuid: 35762c02-ff2b-4526-b41b-e96e5d99528b
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 美国+V2CROSS.COM [2]
-    type: vless
-    server: cdn3-87.vk-cdnvideo.com
-    port: 8443
-    uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-    tls: true
-    network: tcp
+    password: qDVh0NalwefxyZlHh3Ni2JSlhErcuC3Wiq
+    sni: www.homelywebs.click
+    skip-cert-verify: false
   - name: 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
     type: trojan
-    server: 130.94.104.210
+    server: 130.94.68.100
     port: 443
-    password: lTs6OZOMoqYAkDEbK10t-tE8KMjuREBW3m
-    sni: www.cdn-structure.click
+    password: l64tlWoGT6USQr%3D3WnjWedzvVSHXn8TNTE
+    sni: www.rolll.click
     skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
@@ -660,16 +628,12 @@ proxy-groups:
       - RU_speednode_0042
       - US_speednode_0045
       - US_speednode_0046
-      - 美国+V2CROSS.COM
-      - 英国 V2CROSS.COM
-      - 希腊+V2CROSS.COM
-      - 美国+V2CROSS.COM [1]
-      - 白俄罗斯+V2CROSS.COM
-      - 亚太地区+V2CROSS.COM
+      - 英国+V2CROSS.COM
       - 美国+CloudFlare节点
+      - 美国+Akamai科技公司CDN网络节点
+      - 美国+Akamai科技公司CDN网络节点 [1]
+      - 美国+Akamai科技公司CDN网络节点 [2]
       - 德国+V2CROSS.COM
-      - 伊朗+V2CROSS.COM
-      - 美国+V2CROSS.COM [2]
       - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
   - name: ♻️ 自动选择
     type: url-test
@@ -737,16 +701,12 @@ proxy-groups:
       - RU_speednode_0042
       - US_speednode_0045
       - US_speednode_0046
-      - 美国+V2CROSS.COM
-      - 英国 V2CROSS.COM
-      - 希腊+V2CROSS.COM
-      - 美国+V2CROSS.COM [1]
-      - 白俄罗斯+V2CROSS.COM
-      - 亚太地区+V2CROSS.COM
+      - 英国+V2CROSS.COM
       - 美国+CloudFlare节点
+      - 美国+Akamai科技公司CDN网络节点
+      - 美国+Akamai科技公司CDN网络节点 [1]
+      - 美国+Akamai科技公司CDN网络节点 [2]
       - 德国+V2CROSS.COM
-      - 伊朗+V2CROSS.COM
-      - 美国+V2CROSS.COM [2]
       - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -816,16 +776,12 @@ proxy-groups:
       - RU_speednode_0042
       - US_speednode_0045
       - US_speednode_0046
-      - 美国+V2CROSS.COM
-      - 英国 V2CROSS.COM
-      - 希腊+V2CROSS.COM
-      - 美国+V2CROSS.COM [1]
-      - 白俄罗斯+V2CROSS.COM
-      - 亚太地区+V2CROSS.COM
+      - 英国+V2CROSS.COM
       - 美国+CloudFlare节点
+      - 美国+Akamai科技公司CDN网络节点
+      - 美国+Akamai科技公司CDN网络节点 [1]
+      - 美国+Akamai科技公司CDN网络节点 [2]
       - 德国+V2CROSS.COM
-      - 伊朗+V2CROSS.COM
-      - 美国+V2CROSS.COM [2]
       - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
     url: http://www.gstatic.com/generate_204
     interval: 300
