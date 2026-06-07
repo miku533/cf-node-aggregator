@@ -506,49 +506,36 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 英国+V2CROSS.COM
-    type: vless
-    server: 31.76.113.51
-    port: 443
-    uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 挪威+V2CROSS.COM
-    type: vless
-    server: poland.milas.click
-    port: 443
-    uuid: 91427003-38cb-473e-95f2-a4b500c91f7b
-    tls: false
-    network: grpc
-  - name: 美国+加利福尼亚
+  - name: 巴西圣保罗+CloudFlare节点
     type: trojan
-    server: 64.176.65.85
+    server: 188.114.98.0
     port: 443
-    password: iGccGWTMHtoXtBhGYK4mogg7iIUhGbcvCf
-    sni: 64.176.65.85
+    password: humanity
+    sni: www.calmloud.com
     skip-cert-verify: false
   - name: 美国+CloudFlare节点
     type: vless
-    server: 162.159.36.20
+    server: 172.64.33.162
     port: 443
-    uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+    uuid: c35050ce-01ab-45a9-91b8-54cec637d0a8
     tls: true
     network: ws
     ws-opts:
-      path: /tsghdws
+      path: /udfyfws
       headers:
-        Host: octopusss4.com
-  - name: 英国 V2CROSS.COM
-    type: vmess
-    server: 82.198.246.214
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
+        Host: octopusss5.info
   - name: 美国+CloudFlare节点 [1]
+    type: vless
+    server: 104.17.156.197
+    port: 443
+    uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: juzi.qea.ccwu.cc
+  - name: 美国+CloudFlare节点 [2]
     type: vless
     server: elliot.ns.cloudflare.com
     port: 443
@@ -559,25 +546,49 @@ proxies:
       path: /udfyfws
       headers:
         Host: octopusss5.info
-  - name: 广东省+珠江宽频
-    type: vless
-    server: 122.8.44.3
-    port: 993
-    uuid: 2703cda8-5cf4-019d-c4bd-6cf0c2261946
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 美国+CloudFlare节点 [2]
-    type: vless
-    server: 104.25.242.61
+  - name: 美国+Akamai科技公司CDN网络节点
+    type: trojan
+    server: 172.236.220.10
     port: 443
-    uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+    password: s_WEN9lMmufG+qDIsn-4C7JOVAnDdbS3Ui
+    sni: 172.236.220.10
+    skip-cert-verify: false
+  - name: 美国+Akamai科技公司CDN网络节点 [1]
+    type: trojan
+    server: 172.235.63.252
+    port: 443
+    password: bX_lNHWoW6ywq82mI%3DKUr+8i__VSp0Hs_E
+    sni: 172.235.63.252
+    skip-cert-verify: false
+  - name: 美国+Akamai科技公司CDN网络节点 [2]
+    type: trojan
+    server: 172.238.120.124
+    port: 443
+    password: r-_YbwF.j0TtHVewoFIppramjAnmSfqYzJ
+    sni: 172.238.120.124
+    skip-cert-verify: false
+  - name: 美国+CloudFlare节点 [3]
+    type: vless
+    server: 162.159.36.20
+    port: 443
+    uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+    tls: true
+    network: ws
+    ws-opts:
+      path: /tsghdws
+      headers:
+        Host: octopusss4.com
+  - name: 日本+东京Fastly节点
+    type: vless
+    server: 151.101.108.223
+    port: 443
+    uuid: a73ab8fb-5838-410f-ad52-c98a69f1b3ca
     tls: true
     network: ws
     ws-opts:
       path: /
       headers:
-        Host: juzi.qea.ccwu.cc
+        Host: pan1.global.ssl.fastly.net
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -649,14 +660,15 @@ proxy-groups:
       - RU_speednode_0042
       - US_speednode_0045
       - US_speednode_0046
-      - 英国+V2CROSS.COM
-      - 挪威+V2CROSS.COM
-      - 美国+加利福尼亚
+      - 巴西圣保罗+CloudFlare节点
       - 美国+CloudFlare节点
-      - 英国 V2CROSS.COM
       - 美国+CloudFlare节点 [1]
-      - 广东省+珠江宽频
       - 美国+CloudFlare节点 [2]
+      - 美国+Akamai科技公司CDN网络节点
+      - 美国+Akamai科技公司CDN网络节点 [1]
+      - 美国+Akamai科技公司CDN网络节点 [2]
+      - 美国+CloudFlare节点 [3]
+      - 日本+东京Fastly节点
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -724,14 +736,15 @@ proxy-groups:
       - RU_speednode_0042
       - US_speednode_0045
       - US_speednode_0046
-      - 英国+V2CROSS.COM
-      - 挪威+V2CROSS.COM
-      - 美国+加利福尼亚
+      - 巴西圣保罗+CloudFlare节点
       - 美国+CloudFlare节点
-      - 英国 V2CROSS.COM
       - 美国+CloudFlare节点 [1]
-      - 广东省+珠江宽频
       - 美国+CloudFlare节点 [2]
+      - 美国+Akamai科技公司CDN网络节点
+      - 美国+Akamai科技公司CDN网络节点 [1]
+      - 美国+Akamai科技公司CDN网络节点 [2]
+      - 美国+CloudFlare节点 [3]
+      - 日本+东京Fastly节点
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -801,14 +814,15 @@ proxy-groups:
       - RU_speednode_0042
       - US_speednode_0045
       - US_speednode_0046
-      - 英国+V2CROSS.COM
-      - 挪威+V2CROSS.COM
-      - 美国+加利福尼亚
+      - 巴西圣保罗+CloudFlare节点
       - 美国+CloudFlare节点
-      - 英国 V2CROSS.COM
       - 美国+CloudFlare节点 [1]
-      - 广东省+珠江宽频
       - 美国+CloudFlare节点 [2]
+      - 美国+Akamai科技公司CDN网络节点
+      - 美国+Akamai科技公司CDN网络节点 [1]
+      - 美国+Akamai科技公司CDN网络节点 [2]
+      - 美国+CloudFlare节点 [3]
+      - 日本+东京Fastly节点
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
