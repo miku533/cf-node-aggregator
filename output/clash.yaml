@@ -527,7 +527,87 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
+  - name: 波兰+V2CROSS.COM
+    type: vless
+    server: 141.98.6.113
+    port: 603
+    uuid: bae2fd3a-55fb-4094-99f6-c94e25d7d15d
+    tls: false
+    network: grpc
   - name: 美国+CloudFlare节点
+    type: vless
+    server: 172.67.185.178
+    port: 443
+    uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: hhlfy.twiladaphne.ndjp.net
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 149.104.87.182
+    port: 443
+    password: PtRV8to08i8FMsY.Uw7%3DyMuIaR3eVTGmvA
+    sni: www.jewelapp.click
+    skip-cert-verify: false
+  - name: 美国+CloudFlare节点 [1]
+    type: trojan
+    server: 104.18.152.225
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
+  - name: 广东省+珠江宽频
+    type: vless
+    server: 122.8.44.3
+    port: 993
+    uuid: 2703cda8-5cf4-019d-c4bd-6cf0c2261946
+    tls: false
+    network: tcp
+    flow: xtls-rprx-vision
+  - name: 美国+CloudFlare
+    type: vless
+    server: 162.159.18.105
+    port: 443
+    uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: juzi.qea.ccwu.cc
+  - name: 美国+CloudFlare节点 [2]
+    type: trojan
+    server: 104.21.40.34
+    port: 443
+    password: humanity
+    sni: www.gossipglove.com
+    skip-cert-verify: true
+  - name: 美国+CloudFlare节点 [3]
+    type: vless
+    server: 172.67.211.74
+    port: 80
+    uuid: e84064cc-617f-4ba8-aa6f-13e920fd2610
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: main.boobie.eu.cc
+  - name: 美国+V2CROSS.COM [1]
+    type: vless
+    server: 45.130.125.96
+    port: 443
+    uuid: 28607fa7-db30-47d6-942a-f5744e4be9ad
+    tls: true
+    network: ws
+    ws-opts:
+      path: /id-pusat
+      headers:
+        Host: dfsuporte.garena.com.ex33r.eu.cc
+  - name: 美国+CloudFlare节点 [4]
     type: vless
     server: 162.159.13.206
     port: 443
@@ -538,74 +618,6 @@ proxies:
       path: /
       headers:
         Host: juzi.qea.ccwu.cc
-  - name: 德国+V2CROSS.COM
-    type: trojan
-    server: 91.233.8.138
-    port: 443
-    password: qDVh0NalwefxyZlHh3Ni2JSlhErcuC3Wiq
-    sni: www.homelywebs.click
-    skip-cert-verify: false
-  - name: 美国+德克萨斯州达拉斯Linode数据中心
-    type: trojan
-    server: 45.79.8.17
-    port: 443
-    password: rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf
-    sni: 45.79.8.17
-    skip-cert-verify: false
-  - name: 巴西圣保罗+CloudFlare节点
-    type: vless
-    server: 188.114.97.6
-    port: 443
-    uuid: Telegram-Parsashonam-12
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: cdn.limoo.blog
-  - name: 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
-    type: trojan
-    server: 130.94.68.100
-    port: 443
-    password: l64tlWoGT6USQr%3D3WnjWedzvVSHXn8TNTE
-    sni: www.rolll.click
-    skip-cert-verify: false
-  - name: 美国+CloudFlare节点 [1]
-    type: trojan
-    server: www.ignitelimit.com
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: true
-  - name: 日本+东京Fastly节点
-    type: vless
-    server: 151.101.108.223
-    port: 443
-    uuid: 98c9f668-1f2f-4a6dbd7a-606fab0ac035
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: jookeji.global.ssl.fastly.net
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 149.104.87.182
-    port: 443
-    password: PtRV8to08i8FMsY.Uw7%3DyMuIaR3eVTGmvA
-    sni: www.jewelapp.click
-    skip-cert-verify: false
-  - name: 美国+CloudFlare节点 [2]
-    type: vless
-    server: 162.159.193.138
-    port: 443
-    uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-    tls: true
-    network: ws
-    ws-opts:
-      path: /tsghdws
-      headers:
-        Host: octopusss4.com
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -680,15 +692,16 @@ proxy-groups:
       - RU_speednode_0042
       - US_speednode_0045
       - US_speednode_0046
+      - 波兰+V2CROSS.COM
       - 美国+CloudFlare节点
-      - 德国+V2CROSS.COM
-      - 美国+德克萨斯州达拉斯Linode数据中心
-      - 巴西圣保罗+CloudFlare节点
-      - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
-      - 美国+CloudFlare节点 [1]
-      - 日本+东京Fastly节点
       - 美国+V2CROSS.COM
+      - 美国+CloudFlare节点 [1]
+      - 广东省+珠江宽频
+      - 美国+CloudFlare
       - 美国+CloudFlare节点 [2]
+      - 美国+CloudFlare节点 [3]
+      - 美国+V2CROSS.COM [1]
+      - 美国+CloudFlare节点 [4]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -759,15 +772,16 @@ proxy-groups:
       - RU_speednode_0042
       - US_speednode_0045
       - US_speednode_0046
+      - 波兰+V2CROSS.COM
       - 美国+CloudFlare节点
-      - 德国+V2CROSS.COM
-      - 美国+德克萨斯州达拉斯Linode数据中心
-      - 巴西圣保罗+CloudFlare节点
-      - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
-      - 美国+CloudFlare节点 [1]
-      - 日本+东京Fastly节点
       - 美国+V2CROSS.COM
+      - 美国+CloudFlare节点 [1]
+      - 广东省+珠江宽频
+      - 美国+CloudFlare
       - 美国+CloudFlare节点 [2]
+      - 美国+CloudFlare节点 [3]
+      - 美国+V2CROSS.COM [1]
+      - 美国+CloudFlare节点 [4]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -840,15 +854,16 @@ proxy-groups:
       - RU_speednode_0042
       - US_speednode_0045
       - US_speednode_0046
+      - 波兰+V2CROSS.COM
       - 美国+CloudFlare节点
-      - 德国+V2CROSS.COM
-      - 美国+德克萨斯州达拉斯Linode数据中心
-      - 巴西圣保罗+CloudFlare节点
-      - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
-      - 美国+CloudFlare节点 [1]
-      - 日本+东京Fastly节点
       - 美国+V2CROSS.COM
+      - 美国+CloudFlare节点 [1]
+      - 广东省+珠江宽频
+      - 美国+CloudFlare
       - 美国+CloudFlare节点 [2]
+      - 美国+CloudFlare节点 [3]
+      - 美国+V2CROSS.COM [1]
+      - 美国+CloudFlare节点 [4]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
