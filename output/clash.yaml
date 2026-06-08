@@ -527,35 +527,42 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 法国+V2CROSS.COM
+  - name: 美国+CloudFlare节点
     type: vless
-    server: de.jykvpn.com
+    server: 162.159.13.206
     port: 443
-    uuid: 372a64ab-298d-4b4f-abc1-9b3fbe242bc3
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 俄罗斯+Samara+State+University
-    type: vless
-    server: 195.209.88.153
-    port: 443
-    uuid: bfef1a3f-d106-4346-89fa-4f7e369e99de
+    uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
     tls: true
-    network: ws
-    ws-opts:
-      path: /stream/live
-      headers: {}
-  - name: 英国+V2CROSS.COM
-    type: vless
-    server: osre3.jykvpn.com
-    port: 2048
-    uuid: 372a64ab-298d-4b4f-abc1-9b3fbe242bc3
-    tls: false
     network: ws
     ws-opts:
       path: /
       headers:
-        Host: ads.x5.ru
+        Host: juzi.qea.ccwu.cc
+  - name: 德国+V2CROSS.COM
+    type: trojan
+    server: 91.233.8.138
+    port: 443
+    password: qDVh0NalwefxyZlHh3Ni2JSlhErcuC3Wiq
+    sni: www.homelywebs.click
+    skip-cert-verify: false
+  - name: 美国+德克萨斯州达拉斯Linode数据中心
+    type: trojan
+    server: 45.79.8.17
+    port: 443
+    password: rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf
+    sni: 45.79.8.17
+    skip-cert-verify: false
+  - name: 巴西圣保罗+CloudFlare节点
+    type: vless
+    server: 188.114.97.6
+    port: 443
+    uuid: Telegram-Parsashonam-12
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: cdn.limoo.blog
   - name: 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
     type: trojan
     server: 130.94.68.100
@@ -563,60 +570,42 @@ proxies:
     password: l64tlWoGT6USQr%3D3WnjWedzvVSHXn8TNTE
     sni: www.rolll.click
     skip-cert-verify: false
-  - name: 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司 [1]
+  - name: 美国+CloudFlare节点 [1]
     type: trojan
-    server: 130.94.92.144
+    server: www.ignitelimit.com
     port: 443
-    password: oUAfbL8z87q-mhgjZ6g7mWQobf9%3Db7ut_F
-    sni: www.node-finder.click
-    skip-cert-verify: false
-  - name: 亚太地区 V2CROSS.COM
-    type: vmess
-    server: 6654c734ccab8f440ff0825eb443dc7f.qos.onl
-    port: 10020
-    uuid: 52f9cbfb-5bb3-3dd3-b947-725e365c59f3
-    alterId: 0
-    cipher: auto
-    tls: false
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+  - name: 日本+东京Fastly节点
+    type: vless
+    server: 151.101.108.223
+    port: 443
+    uuid: 98c9f668-1f2f-4a6dbd7a-606fab0ac035
+    tls: true
     network: ws
     ws-opts:
       path: /
       headers:
-        Host: 6654c734ccab8f440ff0825eb443dc7f.qos.onl
-  - name: 立陶宛+V2CROSS.COM
-    type: vless
-    server: se-modx.nodexphere.net
+        Host: jookeji.global.ssl.fastly.net
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 149.104.87.182
     port: 443
-    uuid: be2e1543-d450-481b-a955-c691086e41b1
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 英国+V2CROSS.COM [1]
+    password: PtRV8to08i8FMsY.Uw7%3DyMuIaR3eVTGmvA
+    sni: www.jewelapp.click
+    skip-cert-verify: false
+  - name: 美国+CloudFlare节点 [2]
     type: vless
-    server: pl-modx.nodexphere.net
+    server: 162.159.193.138
     port: 443
-    uuid: be2e1543-d450-481b-a955-c691086e41b1
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 立陶宛+V2CROSS.COM [1]
-    type: vless
-    server: lt-modx.nodexphere.net
-    port: 443
-    uuid: be2e1543-d450-481b-a955-c691086e41b1
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 俄罗斯+Samara+State+University [1]
-    type: vless
-    server: 195.209.87.184
-    port: 443
-    uuid: bfef1a3f-d106-4346-89fa-4f7e369e99de
+    uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
     tls: true
     network: ws
     ws-opts:
-      path: /stream/live
-      headers: {}
+      path: /tsghdws
+      headers:
+        Host: octopusss4.com
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -691,16 +680,15 @@ proxy-groups:
       - RU_speednode_0042
       - US_speednode_0045
       - US_speednode_0046
-      - 法国+V2CROSS.COM
-      - 俄罗斯+Samara+State+University
-      - 英国+V2CROSS.COM
+      - 美国+CloudFlare节点
+      - 德国+V2CROSS.COM
+      - 美国+德克萨斯州达拉斯Linode数据中心
+      - 巴西圣保罗+CloudFlare节点
       - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
-      - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司 [1]
-      - 亚太地区 V2CROSS.COM
-      - 立陶宛+V2CROSS.COM
-      - 英国+V2CROSS.COM [1]
-      - 立陶宛+V2CROSS.COM [1]
-      - 俄罗斯+Samara+State+University [1]
+      - 美国+CloudFlare节点 [1]
+      - 日本+东京Fastly节点
+      - 美国+V2CROSS.COM
+      - 美国+CloudFlare节点 [2]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -771,16 +759,15 @@ proxy-groups:
       - RU_speednode_0042
       - US_speednode_0045
       - US_speednode_0046
-      - 法国+V2CROSS.COM
-      - 俄罗斯+Samara+State+University
-      - 英国+V2CROSS.COM
+      - 美国+CloudFlare节点
+      - 德国+V2CROSS.COM
+      - 美国+德克萨斯州达拉斯Linode数据中心
+      - 巴西圣保罗+CloudFlare节点
       - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
-      - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司 [1]
-      - 亚太地区 V2CROSS.COM
-      - 立陶宛+V2CROSS.COM
-      - 英国+V2CROSS.COM [1]
-      - 立陶宛+V2CROSS.COM [1]
-      - 俄罗斯+Samara+State+University [1]
+      - 美国+CloudFlare节点 [1]
+      - 日本+东京Fastly节点
+      - 美国+V2CROSS.COM
+      - 美国+CloudFlare节点 [2]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -853,16 +840,15 @@ proxy-groups:
       - RU_speednode_0042
       - US_speednode_0045
       - US_speednode_0046
-      - 法国+V2CROSS.COM
-      - 俄罗斯+Samara+State+University
-      - 英国+V2CROSS.COM
+      - 美国+CloudFlare节点
+      - 德国+V2CROSS.COM
+      - 美国+德克萨斯州达拉斯Linode数据中心
+      - 巴西圣保罗+CloudFlare节点
       - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
-      - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司 [1]
-      - 亚太地区 V2CROSS.COM
-      - 立陶宛+V2CROSS.COM
-      - 英国+V2CROSS.COM [1]
-      - 立陶宛+V2CROSS.COM [1]
-      - 俄罗斯+Samara+State+University [1]
+      - 美国+CloudFlare节点 [1]
+      - 日本+东京Fastly节点
+      - 美国+V2CROSS.COM
+      - 美国+CloudFlare节点 [2]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
