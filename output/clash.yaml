@@ -576,50 +576,9 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 美国+华盛顿Cogent通信公司
+  - name: 美国+V2CROSS.COM
     type: vless
-    server: vpnv1.aspidnet.xyz
-    port: 443
-    uuid: 158d03db-e5d7-4540-a31c-b2daa7aa4964
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 美国+CloudFlare节点
-    type: vless
-    server: 172.64.53.74
-    port: 443
-    uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: fgnix832fx.fx6hsv0.ccwu.cc
-  - name: 日本+东京Linode数据中心
-    type: vless
-    server: 172.104.110.10
-    port: 14673
-    uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
-    tls: true
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: 2026060522.yja.de5.net
-  - name: 美国+CloudFlare
-    type: vless
-    server: 162.159.19.202
-    port: 80
-    uuid: e284098e-7ffd-4fce-a9d3-ea6bc98ce629
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: empty-sea-3392.amir-1385-poo.workers.dev
-  - name: 美国+Fastly全球Anycast节点
-    type: vless
-    server: speedtest.net
+    server: 167.82.0.1
     port: 80
     uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
     tls: false
@@ -628,6 +587,46 @@ proxies:
       path: /
       headers:
         Host: max-gb1.global.ssl.fastly.net
+  - name: 法国+国际航空电讯集团公司(SITA)
+    type: vless
+    server: roi1.mwnst.com
+    port: 443
+    uuid: bbd67e54-1b4b-488b-a5df-708ef896ecaa
+    tls: false
+    network: tcp
+    flow: xtls-rprx-vision
+  - name: 印度+V2CROSS.COM
+    type: vless
+    server: 14.102.228.76
+    port: 443
+    uuid: bbd67e54-1b4b-488b-a5df-708ef896ecaa
+    tls: true
+    network: ws
+    ws-opts:
+      path: /api/v2/sync/data-stream
+      headers: {}
+  - name: 美国+加利福尼亚
+    type: trojan
+    server: 64.176.65.85
+    port: 443
+    password: iGccGWTMHtoXtBhGYK4mogg7iIUhGbcvCf
+    sni: 64.176.65.85
+    skip-cert-verify: false
+  - name: 巴西圣保罗+CloudFlare节点
+    type: trojan
+    server: 188.114.96.3
+    port: 443
+    password: humanity
+    sni: www.calmlunch.com
+    skip-cert-verify: false
+  - name: 罗马尼亚+V2CROSS.COM
+    type: vless
+    server: rt1.mwnst.com
+    port: 443
+    uuid: bbd67e54-1b4b-488b-a5df-708ef896ecaa
+    tls: false
+    network: tcp
+    flow: xtls-rprx-vision
   - name: 美国+德克萨斯州达拉斯Linode数据中心
     type: trojan
     server: 45.79.8.17
@@ -635,37 +634,6 @@ proxies:
     password: rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf
     sni: 45.79.8.17
     skip-cert-verify: false
-  - name: 美国+CloudFlare节点 [1]
-    type: vless
-    server: 172.64.147.236
-    port: 443
-    uuid: c35050ce-01ab-45a9-91b8-54cec637d0a8
-    tls: true
-    network: ws
-    ws-opts:
-      path: /udfyfws
-      headers:
-        Host: octopusss5.info
-  - name: 美国+CloudFlare节点 [2]
-    type: vless
-    server: youxuan.cf.090227.xyz
-    port: 443
-    uuid: 00000000-0000-4000-8000-000000000000
-    tls: true
-    network: ws
-    ws-opts:
-      path: /@Marisa_kristi
-      headers: {}
-  - name: 英国+V2CROSS.COM
-    type: vless
-    server: 158.178.225.153
-    port: 41493
-    uuid: 00000000-0000-4000-8000-000000000000
-    tls: true
-    network: ws
-    ws-opts:
-      path: /@Marisa_kristi
-      headers: {}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -743,15 +711,13 @@ proxy-groups:
       - US_speednode_0057
       - US_speednode_0058
       - US_speednode_0060
-      - 美国+华盛顿Cogent通信公司
-      - 美国+CloudFlare节点
-      - 日本+东京Linode数据中心
-      - 美国+CloudFlare
-      - 美国+Fastly全球Anycast节点
+      - 美国+V2CROSS.COM
+      - 法国+国际航空电讯集团公司(SITA)
+      - 印度+V2CROSS.COM
+      - 美国+加利福尼亚
+      - 巴西圣保罗+CloudFlare节点
+      - 罗马尼亚+V2CROSS.COM
       - 美国+德克萨斯州达拉斯Linode数据中心
-      - 美国+CloudFlare节点 [1]
-      - 美国+CloudFlare节点 [2]
-      - 英国+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -825,15 +791,13 @@ proxy-groups:
       - US_speednode_0057
       - US_speednode_0058
       - US_speednode_0060
-      - 美国+华盛顿Cogent通信公司
-      - 美国+CloudFlare节点
-      - 日本+东京Linode数据中心
-      - 美国+CloudFlare
-      - 美国+Fastly全球Anycast节点
+      - 美国+V2CROSS.COM
+      - 法国+国际航空电讯集团公司(SITA)
+      - 印度+V2CROSS.COM
+      - 美国+加利福尼亚
+      - 巴西圣保罗+CloudFlare节点
+      - 罗马尼亚+V2CROSS.COM
       - 美国+德克萨斯州达拉斯Linode数据中心
-      - 美国+CloudFlare节点 [1]
-      - 美国+CloudFlare节点 [2]
-      - 英国+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -909,15 +873,13 @@ proxy-groups:
       - US_speednode_0057
       - US_speednode_0058
       - US_speednode_0060
-      - 美国+华盛顿Cogent通信公司
-      - 美国+CloudFlare节点
-      - 日本+东京Linode数据中心
-      - 美国+CloudFlare
-      - 美国+Fastly全球Anycast节点
+      - 美国+V2CROSS.COM
+      - 法国+国际航空电讯集团公司(SITA)
+      - 印度+V2CROSS.COM
+      - 美国+加利福尼亚
+      - 巴西圣保罗+CloudFlare节点
+      - 罗马尼亚+V2CROSS.COM
       - 美国+德克萨斯州达拉斯Linode数据中心
-      - 美国+CloudFlare节点 [1]
-      - 美国+CloudFlare节点 [2]
-      - 英国+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
