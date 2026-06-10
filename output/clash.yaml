@@ -697,6 +697,13 @@ proxies:
       path: /vpnhusecurity=tls
       headers:
         Host: cdn.veilvpn.fans
+  - name: 美国+CloudFlare节点
+    type: trojan
+    server: www.gossipglove.com
+    port: 443
+    password: humanity
+    sni: www.gossipglove.com
+    skip-cert-verify: true
   - name: 美国+德克萨斯州达拉斯Linode数据中心
     type: trojan
     server: 45.79.8.17
@@ -704,97 +711,42 @@ proxies:
     password: rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf
     sni: 45.79.8.17
     skip-cert-verify: false
-  - name: 韩国+蘑菇主机BGP数据中心
+  - name: 美国+CloudFlare节点 [1]
     type: vless
-    server: 103.214.68.51
-    port: 10702
-    uuid: 00000000-0000-4000-8000-000000000000
-    tls: true
-    network: ws
-    ws-opts:
-      path: /@Marisa_kristifp=chrome
-      headers:
-        Host: 49ax00d7kmg3ijp3vbkua090bws.majusti.dpdns.org
-  - name: 英国+V2CROSS.COM
-    type: vless
-    server: 158.178.225.153
-    port: 41493
-    uuid: 00000000-0000-4000-8000-000000000000
-    tls: true
-    network: ws
-    ws-opts:
-      path: /@Marisa_kristi
-      headers: {}
-  - name: 美国+加利福尼亚
-    type: vless
-    server: 64.188.77.219
+    server: 104.17.121.71
     port: 443
-    uuid: 9bc4a008-bc91-4ec2-aa3d-589584511965
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 美国+CloudFlare节点
-    type: vless
-    server: personal.sabteahval.qzz.io
-    port: 2083
-    uuid: 8ea46bde-de0a-4864-96f0-af5c6ac9da36
+    uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
     tls: true
     network: ws
     ws-opts:
-      path: /eyJqdW5rIjoibXhLcG43Z3hKR1pqRkRzIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
+      path: /tsghdws
       headers:
-        Host: personal.sabteahval.qzz.io
-  - name: 伊朗+V2CROSS.COM
-    type: vless
-    server: 31.56.188.90
-    port: 7443
-    uuid: adea61c0-0bb2-4ad3-8dba-7766eebd50f8
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
+        Host: octopusss4.com
   - name: 美国+Fastly全球Anycast节点
     type: vless
     server: 151.101.66.219
     port: 80
-    uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
     tls: false
     network: ws
     ws-opts:
       path: /
       headers:
         Host: max-gb1.global.ssl.fastly.net
-  - name: 亚太地区 V2CROSS.COM
-    type: vmess
-    server: 103.179.142.212
-    port: 22047
-    uuid: 948763b5-a064-453c-a015-185cb183bbfe
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers: {}
-  - name: 英国 V2CROSS.COM
-    type: vmess
-    server: 82.198.246.214
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 美国+CloudFlare节点 [1]
-    type: vless
-    server: www.speedtest.org
-    port: 8080
-    uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tr-cd.sublink-vip2.com
+  - name: 西班牙+V2CROSS.COM
+    type: trojan
+    server: 185.18.250.245
+    port: 443
+    password: humanity
+    sni: www.calmlunch.com
+    skip-cert-verify: true
+  - name: 美国+CloudFlare节点 [2]
+    type: trojan
+    server: 172.64.147.24
+    port: 443
+    password: humanity
+    sni: www.gossipglove.com
+    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -883,16 +835,12 @@ proxy-groups:
       - US_speednode_0060
       - US_speednode_0061
       - US_speednode_0062
-      - 美国+德克萨斯州达拉斯Linode数据中心
-      - 韩国+蘑菇主机BGP数据中心
-      - 英国+V2CROSS.COM
-      - 美国+加利福尼亚
       - 美国+CloudFlare节点
-      - 伊朗+V2CROSS.COM
-      - 美国+Fastly全球Anycast节点
-      - 亚太地区 V2CROSS.COM
-      - 英国 V2CROSS.COM
+      - 美国+德克萨斯州达拉斯Linode数据中心
       - 美国+CloudFlare节点 [1]
+      - 美国+Fastly全球Anycast节点
+      - 西班牙+V2CROSS.COM
+      - 美国+CloudFlare节点 [2]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -977,16 +925,12 @@ proxy-groups:
       - US_speednode_0060
       - US_speednode_0061
       - US_speednode_0062
-      - 美国+德克萨斯州达拉斯Linode数据中心
-      - 韩国+蘑菇主机BGP数据中心
-      - 英国+V2CROSS.COM
-      - 美国+加利福尼亚
       - 美国+CloudFlare节点
-      - 伊朗+V2CROSS.COM
-      - 美国+Fastly全球Anycast节点
-      - 亚太地区 V2CROSS.COM
-      - 英国 V2CROSS.COM
+      - 美国+德克萨斯州达拉斯Linode数据中心
       - 美国+CloudFlare节点 [1]
+      - 美国+Fastly全球Anycast节点
+      - 西班牙+V2CROSS.COM
+      - 美国+CloudFlare节点 [2]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -1073,16 +1017,12 @@ proxy-groups:
       - US_speednode_0060
       - US_speednode_0061
       - US_speednode_0062
-      - 美国+德克萨斯州达拉斯Linode数据中心
-      - 韩国+蘑菇主机BGP数据中心
-      - 英国+V2CROSS.COM
-      - 美国+加利福尼亚
       - 美国+CloudFlare节点
-      - 伊朗+V2CROSS.COM
-      - 美国+Fastly全球Anycast节点
-      - 亚太地区 V2CROSS.COM
-      - 英国 V2CROSS.COM
+      - 美国+德克萨斯州达拉斯Linode数据中心
       - 美国+CloudFlare节点 [1]
+      - 美国+Fastly全球Anycast节点
+      - 西班牙+V2CROSS.COM
+      - 美国+CloudFlare节点 [2]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
