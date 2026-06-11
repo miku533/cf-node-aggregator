@@ -197,24 +197,364 @@ proxies:
     cipher: auto
     tls: false
     network: tcp
-  - name: 🇨🇭CH_1|2.3MB/s
+  - name: 🇨🇭CH_1|2.1MB/s
     type: vless
     server: 172.65.111.43
     port: 22
     uuid: monacoVPN
     tls: false
     network: tcp
-  - name: 🇸🇦SA_1|1.7MB/s
+  - name: 🇳🇱NL_1|1.9MB/s
     type: vless
-    server: 162.159.36.79
-    port: 2095
-    uuid: 1ab3d947-87ee-4f0b-8d1a-19e9ba2a3dd0
+    server: 104.21.46.80
+    port: 80
+    uuid: aed8656b-6479-4c04-9437-c7e16aa52a06
+    tls: false
+    network: ws
+    ws-opts:
+      path: /eyJqdW5rIjoidXlXRjN1SVB6MllockoiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iXX0=?ed=2560
+      headers:
+        Host: jolly-base-0bce.hamedpop2.workers.dev
+  - name: 🇵🇱PL_1|2.1MB/s
+    type: vless
+    server: 45.194.71.115
+    port: 8443
+    uuid: 6f9b4509-6c9c-4905-85c5-a6c6e138804b
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇩🇪DE_2|2.6MB/s
+    type: vless
+    server: 167.172.104.197
+    port: 443
+    uuid: 66dba463-31e2-4101-a2ff-cfd30ad4402d
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇩🇪DE_3|2.7MB/s
+    type: vless
+    server: 199.232.197.131
+    port: 80
+    uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
     tls: false
     network: ws
     ws-opts:
       path: /
       headers:
-        Host: ab.kaliroses.ir
+        Host: max-gb1.global.ssl.fastly.net
+  - name: 🇷🇺RU_1|2.5MB/s
+    type: vless
+    server: 213.165.56.102
+    port: 443
+    uuid: 0a12381a-e241-4b63-a03c-1a5a45a95977
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇦🇺AU_1|2.4MB/s
+    type: vless
+    server: 172.64.152.23
+    port: 2053
+    uuid: 88aa7378-9a74-4855-ac5d-3f53db9c7e68
+    tls: true
+    network: ws
+    ws-opts:
+      path: fp=chrome
+      headers:
+        Host: nl.diiginet.ir
+  - name: 🇩🇪DE_4|1.3MB/s
+    type: vless
+    server: 199.232.78.159
+    port: 443
+    uuid: 0c09799a-47ca-494e-a50e-828632ef9d81
+    tls: true
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: bazaryabab.global.ssl.fastly.net
+  - name: 🇩🇪DE_5|2.1MB/s
+    type: vless
+    server: de.tgru.in
+    port: 443
+    uuid: 33bd7d64-2b03-4b19-82e5-9610afde3c3d
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇺🇸US_1|2.3MB/s
+    type: vless
+    server: 104.254.140.30
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vms.lifetime54.workers.dev
+  - name: 🇺🇸US_6|2.4MB/s
+    type: vless
+    server: api.yandex-dev.online
+    port: 443
+    uuid: c3d866fa-e679-4b10-9bb1-e4075ef4a1cd
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇫🇷FR_1|2.6MB/s
+    type: vless
+    server: 186.246.2.119
+    port: 443
+    uuid: 5729c1fc-c7cf-41b7-8c17-f9b5f59772da
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇩🇪DE_6|2.2MB/s
+    type: vless
+    server: ip.feywebsite.ir
+    port: 2096
+    uuid: ad356e93-cc14-417d-9f4e-32376d03f5b7
+    tls: true
+    network: ws
+    ws-opts:
+      path: /ws?ed=2560fp=chrome
+      headers:
+        Host: greattehran.hozheen.ir
+  - name: 🇨🇾CY_1|2.5MB/s
+    type: vless
+    server: 45.9.12.74
+    port: 443
+    uuid: 9cb3b610-af02-4c01-80a2-1c3477ba9b80
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇺🇸US_3|2.1MB/s
+    type: vless
+    server: 85.234.114.53
+    port: 443
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇹🇷TR_1|1.2MB/s
+    type: vless
+    server: tr.tgru.in
+    port: 443
+    uuid: 33bd7d64-2b03-4b19-82e5-9610afde3c3d
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇩🇪DE_7|2.1MB/s
+    type: vless
+    server: 109.71.253.204
+    port: 24758
+    uuid: e30c66d8-725a-4bb6-9173-58b1769d9c6f
+    tls: false
+    network: tcp
+  - name: 🇺🇸US_4|1.7MB/s
+    type: vless
+    server: 85.234.114.53
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇳🇱NL_3|1.3MB/s
+    type: vless
+    server: 194.147.149.142
+    port: 443
+    uuid: 5a96b986-1a96-4005-b5ae-45096ae6f85a
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇮🇳IN_1|1.7MB/s
+    type: vless
+    server: 187.124.98.130
+    port: 3443
+    uuid: d4d234ea-80ea-4820-ac5e-05d653960579
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇺🇸US_5|2.0MB/s
+    type: vless
+    server: newyorkcity.instasup.ir
+    port: 1004
+    uuid: ad356e93-cc14-417d-9f4e-32376d03f5b7
+    tls: true
+    network: tcp
+  - name: 🇪🇸ES_1|2.1MB/s
+    type: vless
+    server: es2.tgru.in
+    port: 443
+    uuid: 33bd7d64-2b03-4b19-82e5-9610afde3c3d
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇫🇷FR_2|2.2MB/s
+    type: vmess
+    server: 51.254.133.152
+    port: 80
+    uuid: ac8bcf5e-bb58-4e8b-b4e4-5fdea010a6c6
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: fr5.niekotin.de
+  - name: 🇩🇪DE_8|2.5MB/s
+    type: vless
+    server: 185.229.9.8
+    port: 8443
+    uuid: 3a836fe1-8de7-489b-b189-8f0d3bf31ec9
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇦🇪AE_1|2.0MB/s
+    type: vless
+    server: ip2.feywebsite.ir
+    port: 2096
+    uuid: ad356e93-cc14-417d-9f4e-32376d03f5b7
+    tls: true
+    network: ws
+    ws-opts:
+      path: /ws?ed=2560fp=chrome
+      headers:
+        Host: hhh.hozheen.ir
+  - name: 🇩🇪DE_9|2.6MB/s
+    type: vless
+    server: hamrahaval.soft26.ir
+    port: 8443
+    uuid: d39664df-5bc0-4f49-9894-8f03b4150082
+    tls: true
+    network: tcp
+  - name: 🇳🇱NL_4|2.6MB/s
+    type: vless
+    server: nl.tgru.in
+    port: 8443
+    uuid: 33bd7d64-2b03-4b19-82e5-9610afde3c3d
+    tls: false
+    network: tcp
+  - name: 🇫🇷FR_3|2.4MB/s
+    type: vless
+    server: fr.tgru.in
+    port: 443
+    uuid: 33bd7d64-2b03-4b19-82e5-9610afde3c3d
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇩🇪DE_10|2.5MB/s
+    type: vless
+    server: de2.tgru.in
+    port: 443
+    uuid: 33bd7d64-2b03-4b19-82e5-9610afde3c3d
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇺🇸US_7|1.6MB/s
+    type: vless
+    server: 2.26.134.124
+    port: 443
+    uuid: c5945c28-ecab-4c5b-8681-f742b7c88cf5
+    tls: false
+    network: ws
+    ws-opts:
+      path: /Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN
+      headers: {}
+  - name: 🇨🇦CA_1|2.5MB/s
+    type: vless
+    server: ca-dp-01.com
+    port: 8443
+    uuid: 977f2eea-9f37-417b-bdc3-5abfba1e54df
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇳🇱NL_6|2.3MB/s
+    type: vless
+    server: nl.tgru.in
+    port: 443
+    uuid: 33bd7d64-2b03-4b19-82e5-9610afde3c3d
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇳🇱NL_7|3.2MB/s
+    type: vless
+    server: ne999.sonicservice.digital
+    port: 443
+    uuid: 76b220dc-df21-4299-aa41-f0c056912e68
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇬🇧GB_1|2.5MB/s
+    type: vless
+    server: 84.201.139.114
+    port: 443
+    uuid: d205ae68-0819-473c-b425-6c5947ac2f8d
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇬🇧GB_2|2.2MB/s
+    type: vless
+    server: 31.77.196.103
+    port: 443
+    uuid: 3d6518df-cab2-4840-83fa-a0d0759d1309
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇩🇪DE_11|2.5MB/s
+    type: vless
+    server: de1.gamelistak.com
+    port: 443
+    uuid: 54a83fbb-c966-4bb2-bed6-a808b2fc3913
+    tls: true
+    network: tcp
+  - name: 🇫🇮FI_1|1.0MB/s
+    type: vless
+    server: ru2.cdn-global.pro
+    port: 443
+    uuid: d4d234ea-80ea-4820-ac5e-05d653960579
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇺🇸US_8|2.4MB/s
+    type: vless
+    server: 104.253.43.225
+    port: 443
+    uuid: 5f57df48-45c4-4e1d-aa13-dd539ecb257d
+    tls: true
+    network: tcp
+  - name: 🇩🇪DE_12|2.5MB/s
+    type: vless
+    server: de.tgru.in
+    port: 8443
+    uuid: 33bd7d64-2b03-4b19-82e5-9610afde3c3d
+    tls: false
+    network: tcp
+  - name: 🇸🇬SG_1|3.7MB/s
+    type: vless
+    server: 198.41.222.191
+    port: 80
+    uuid: e388fffb-03b0-4227-ac2c-2b5cec1f5c34
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: leecher56.matinheydri.workers.dev
+  - name: 🇪🇸ES_2|2.4MB/s
+    type: vless
+    server: technology.proektblog.space
+    port: 443
+    uuid: 0e074e87-fc9c-4431-8b36-0d3151d34937
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇩🇪DE_13|3.3MB/s
+    type: vless
+    server: 46.225.155.159
+    port: 1006
+    uuid: ad356e93-cc14-417d-9f4e-32376d03f5b7
+    tls: true
+    network: tcp
   - name: HK_speednode_0002
     type: vless
     server: hk4.miyazono-kaori.com
@@ -223,19 +563,11 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: US_speednode_0074
+  - name: ID_speednode_0003
     type: vless
-    server: tw3.miyazono-kaori.com
-    port: 443
-    uuid: 4442c33c-9889-4e0f-bff7-14f1f626dd6c
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: US_speednode_0075
-    type: vless
-    server: tw4.miyazono-kaori.com
-    port: 443
-    uuid: 4442c33c-9889-4e0f-bff7-14f1f626dd6c
+    server: tralalero.site
+    port: 8443
+    uuid: 85c42ce4-7789-49cb-9012-9d6d6ba16581
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
@@ -247,63 +579,6 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 🇰🇷KR_2|3.6MB/s
-    type: vless
-    server: 54.180.89.193
-    port: 8686
-    uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
-    tls: true
-    network: tcp
-  - name: 🇩🇪DE_2|2.5MB/s
-    type: vless
-    server: xco.xonline.sbs
-    port: 8443
-    uuid: 6ecedc16-5766-4f33-b08a-0624317f9b75
-    tls: true
-    network: tcp
-  - name: 🇺🇸US_1|2.0MB/s
-    type: vless
-    server: newyorkcity.instasup.ir
-    port: 1005
-    uuid: ad356e93-cc14-417d-9f4e-32376d03f5b7
-    tls: true
-    network: tcp
-  - name: 🇫🇮FI_1|1.5MB/s
-    type: vless
-    server: 104.16.122.177
-    port: 80
-    uuid: b7977b65-cfd8-4db9-a029-6ef014a4ae4a
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: xU.aSaCO.sTorE
-  - name: 🇨🇭CH_3|2.4MB/s
-    type: vless
-    server: 138.124.72.97
-    port: 443
-    uuid: dbfa97b8-f4fb-4687-96dc-a5a2aebfae11
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: 🇮🇪IE_1|2.5MB/s
-    type: vmess
-    server: v8.hdacd.com
-    port: 30808
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: ID_speednode_0003
-    type: vless
-    server: tralalero.site
-    port: 8443
-    uuid: 85c42ce4-7789-49cb-9012-9d6d6ba16581
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
   - name: RU_speednode_0062
     type: vless
     server: r1.mizulina.top
@@ -312,17 +587,6 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443-udp443
-  - name: US_speednode_0066
-    type: vless
-    server: 199.232.197.131
-    port: 80
-    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: max-gb1.global.ssl.fastly.net
   - name: US_speednode_0067
     type: vless
     server: speedtest.net
@@ -378,99 +642,89 @@ proxies:
       path: /
       headers:
         Host: max-gb1.global.ssl.fastly.net
-  - name: 巴西+V2CROSS.COM
+  - name: US_speednode_0074
     type: vless
-    server: 187.124.98.130
-    port: 3443
+    server: tw3.miyazono-kaori.com
+    port: 443
+    uuid: 4442c33c-9889-4e0f-bff7-14f1f626dd6c
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: US_speednode_0075
+    type: vless
+    server: tw4.miyazono-kaori.com
+    port: 443
+    uuid: 4442c33c-9889-4e0f-bff7-14f1f626dd6c
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 立陶宛+V2CROSS.COM
+    type: vless
+    server: 89.116.46.210
+    port: 443
+    uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+    tls: true
+    network: ws
+    ws-opts:
+      path: /tsghdws
+      headers:
+        Host: octopusss4.com
+  - name: 美国+Linode数据中心
+    type: trojan
+    server: 172.105.9.126
+    port: 443
+    password: lTLVIqIvFqp+es9giS.0o77ztLrCQLaxVh
+    sni: 172.105.9.126
+    skip-cert-verify: false
+  - name: 南非+V2CROSS.COM
+    type: vless
+    server: lt-cherry-01.com
+    port: 8443
+    uuid: e97a7931-500b-4777-82a2-4237f15bcedd
+    tls: false
+    network: tcp
+    flow: xtls-rprx-vision
+  - name: 罗马尼亚+V2CROSS.COM
+    type: trojan
+    server: 185.137.157.254
+    port: 443
+    password: hxn2jK9Uzezogua0oHuq9Y8viN%3DUCe.2Jd
+    sni: www.directorypipeline.click
+    skip-cert-verify: false
+  - name: 南非+V2CROSS.COM [1]
+    type: vless
+    server: fr-gt-01.com
+    port: 8443
+    uuid: a6349c3f-5234-4821-80b4-d99b33f0924d
+    tls: false
+    network: tcp
+    flow: xtls-rprx-vision
+  - name: 美国+V2CROSS.COM
+    type: vless
+    server: 132.243.65.0
+    port: 443
     uuid: d4d234ea-80ea-4820-ac5e-05d653960579
     tls: false
     network: tcp
     flow: xtls-rprx-vision
-  - name: 巴西圣保罗+CloudFlare节点
-    type: trojan
-    server: 188.114.97.6
-    port: 443
-    password: mitivpn
-    sni: mitivpn.sddde.ssddl.globddal.fassdtdly.cow.mitivpn.site
-    skip-cert-verify: false
-  - name: 美国+佛罗里达州迈阿密市
-    type: vless
-    server: ru.tgru.in
-    port: 443
-    uuid: 33bd7d64-2b03-4b19-82e5-9610afde3c3d
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 美国+Fastly全球Anycast节点
-    type: vless
-    server: 151.101.66.219
-    port: 80
-    uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: max-gb1.global.ssl.fastly.net
-  - name: 南非+V2CROSS.COM
-    type: vless
-    server: quarenty.site
-    port: 8443
-    uuid: 0d5cba76-b113-4085-ae38-1cd3f0f77523
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 荷兰+V2CROSS.COM
-    type: vless
-    server: 194.26.229.161
-    port: 443
-    uuid: 5729c1fc-c7cf-41b7-8c17-f9b5f59772da
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 英国+V2CROSS.COM
-    type: trojan
-    server: 185.126.236.44
-    port: 443
-    password: BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL
-    sni: www.mesaly.click
-    skip-cert-verify: true
   - name: 美国+CloudFlare节点
-    type: trojan
-    server: 104.20.42.250
-    port: 443
-    password: humanity
-    sni: www.calmloud.com
-    skip-cert-verify: false
-  - name: 美国+V2CROSS.COM
     type: vless
-    server: nl.tgru.in
+    server: 172.66.47.45
     port: 443
-    uuid: 33bd7d64-2b03-4b19-82e5-9610afde3c3d
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 美国+V2CROSS.COM [1]
-    type: vless
-    server: de2.tgru.in
-    port: 443
-    uuid: 33bd7d64-2b03-4b19-82e5-9610afde3c3d
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 法国 ovh
-    type: vmess
-    server: 51.254.133.152
-    port: 80
-    uuid: ac8bcf5e-bb58-4e8b-b4e4-5fdea010a6c6
-    alterId: 0
-    cipher: auto
-    tls: false
+    uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+    tls: true
     network: ws
     ws-opts:
-      path: /vmess
+      path: /tsghdws
       headers:
-        Host: fr5.niekotin.de
+        Host: octopusss4.com
+  - name: 美国+加利福尼亚
+    type: trojan
+    server: 64.176.65.85
+    port: 443
+    password: iGccGWTMHtoXtBhGYK4mogg7iIUhGbcvCf
+    sni: 64.176.65.85
+    skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -502,37 +756,67 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇺🇸 美国4|@ripaojiedian
-      - 🇨🇭CH_1|2.3MB/s
-      - 🇸🇦SA_1|1.7MB/s
+      - 🇨🇭CH_1|2.1MB/s
+      - 🇳🇱NL_1|1.9MB/s
+      - 🇵🇱PL_1|2.1MB/s
+      - 🇩🇪DE_2|2.6MB/s
+      - 🇩🇪DE_3|2.7MB/s
+      - 🇷🇺RU_1|2.5MB/s
+      - 🇦🇺AU_1|2.4MB/s
+      - 🇩🇪DE_4|1.3MB/s
+      - 🇩🇪DE_5|2.1MB/s
+      - 🇺🇸US_1|2.3MB/s
+      - 🇺🇸US_6|2.4MB/s
+      - 🇫🇷FR_1|2.6MB/s
+      - 🇩🇪DE_6|2.2MB/s
+      - 🇨🇾CY_1|2.5MB/s
+      - 🇺🇸US_3|2.1MB/s
+      - 🇹🇷TR_1|1.2MB/s
+      - 🇩🇪DE_7|2.1MB/s
+      - 🇺🇸US_4|1.7MB/s
+      - 🇳🇱NL_3|1.3MB/s
+      - 🇮🇳IN_1|1.7MB/s
+      - 🇺🇸US_5|2.0MB/s
+      - 🇪🇸ES_1|2.1MB/s
+      - 🇫🇷FR_2|2.2MB/s
+      - 🇩🇪DE_8|2.5MB/s
+      - 🇦🇪AE_1|2.0MB/s
+      - 🇩🇪DE_9|2.6MB/s
+      - 🇳🇱NL_4|2.6MB/s
+      - 🇫🇷FR_3|2.4MB/s
+      - 🇩🇪DE_10|2.5MB/s
+      - 🇺🇸US_7|1.6MB/s
+      - 🇨🇦CA_1|2.5MB/s
+      - 🇳🇱NL_6|2.3MB/s
+      - 🇳🇱NL_7|3.2MB/s
+      - 🇬🇧GB_1|2.5MB/s
+      - 🇬🇧GB_2|2.2MB/s
+      - 🇩🇪DE_11|2.5MB/s
+      - 🇫🇮FI_1|1.0MB/s
+      - 🇺🇸US_8|2.4MB/s
+      - 🇩🇪DE_12|2.5MB/s
+      - 🇸🇬SG_1|3.7MB/s
+      - 🇪🇸ES_2|2.4MB/s
+      - 🇩🇪DE_13|3.3MB/s
       - HK_speednode_0002
-      - US_speednode_0074
-      - US_speednode_0075
-      - KR_speednode_0004
-      - 🇰🇷KR_2|3.6MB/s
-      - 🇩🇪DE_2|2.5MB/s
-      - 🇺🇸US_1|2.0MB/s
-      - 🇫🇮FI_1|1.5MB/s
-      - 🇨🇭CH_3|2.4MB/s
-      - 🇮🇪IE_1|2.5MB/s
       - ID_speednode_0003
+      - KR_speednode_0004
       - RU_speednode_0062
-      - US_speednode_0066
       - US_speednode_0067
       - US_speednode_0069
       - US_speednode_0070
       - US_speednode_0071
       - US_speednode_0072
-      - 巴西+V2CROSS.COM
-      - 巴西圣保罗+CloudFlare节点
-      - 美国+佛罗里达州迈阿密市
-      - 美国+Fastly全球Anycast节点
+      - US_speednode_0074
+      - US_speednode_0075
+      - 立陶宛+V2CROSS.COM
+      - 美国+Linode数据中心
       - 南非+V2CROSS.COM
-      - 荷兰+V2CROSS.COM
-      - 英国+V2CROSS.COM
-      - 美国+CloudFlare节点
+      - 罗马尼亚+V2CROSS.COM
+      - 南非+V2CROSS.COM [1]
       - 美国+V2CROSS.COM
-      - 美国+V2CROSS.COM [1]
-      - 法国 ovh
+      - 美国+CloudFlare节点
+      - 美国+加利福尼亚
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -560,37 +844,67 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇺🇸 美国4|@ripaojiedian
-      - 🇨🇭CH_1|2.3MB/s
-      - 🇸🇦SA_1|1.7MB/s
+      - 🇨🇭CH_1|2.1MB/s
+      - 🇳🇱NL_1|1.9MB/s
+      - 🇵🇱PL_1|2.1MB/s
+      - 🇩🇪DE_2|2.6MB/s
+      - 🇩🇪DE_3|2.7MB/s
+      - 🇷🇺RU_1|2.5MB/s
+      - 🇦🇺AU_1|2.4MB/s
+      - 🇩🇪DE_4|1.3MB/s
+      - 🇩🇪DE_5|2.1MB/s
+      - 🇺🇸US_1|2.3MB/s
+      - 🇺🇸US_6|2.4MB/s
+      - 🇫🇷FR_1|2.6MB/s
+      - 🇩🇪DE_6|2.2MB/s
+      - 🇨🇾CY_1|2.5MB/s
+      - 🇺🇸US_3|2.1MB/s
+      - 🇹🇷TR_1|1.2MB/s
+      - 🇩🇪DE_7|2.1MB/s
+      - 🇺🇸US_4|1.7MB/s
+      - 🇳🇱NL_3|1.3MB/s
+      - 🇮🇳IN_1|1.7MB/s
+      - 🇺🇸US_5|2.0MB/s
+      - 🇪🇸ES_1|2.1MB/s
+      - 🇫🇷FR_2|2.2MB/s
+      - 🇩🇪DE_8|2.5MB/s
+      - 🇦🇪AE_1|2.0MB/s
+      - 🇩🇪DE_9|2.6MB/s
+      - 🇳🇱NL_4|2.6MB/s
+      - 🇫🇷FR_3|2.4MB/s
+      - 🇩🇪DE_10|2.5MB/s
+      - 🇺🇸US_7|1.6MB/s
+      - 🇨🇦CA_1|2.5MB/s
+      - 🇳🇱NL_6|2.3MB/s
+      - 🇳🇱NL_7|3.2MB/s
+      - 🇬🇧GB_1|2.5MB/s
+      - 🇬🇧GB_2|2.2MB/s
+      - 🇩🇪DE_11|2.5MB/s
+      - 🇫🇮FI_1|1.0MB/s
+      - 🇺🇸US_8|2.4MB/s
+      - 🇩🇪DE_12|2.5MB/s
+      - 🇸🇬SG_1|3.7MB/s
+      - 🇪🇸ES_2|2.4MB/s
+      - 🇩🇪DE_13|3.3MB/s
       - HK_speednode_0002
-      - US_speednode_0074
-      - US_speednode_0075
-      - KR_speednode_0004
-      - 🇰🇷KR_2|3.6MB/s
-      - 🇩🇪DE_2|2.5MB/s
-      - 🇺🇸US_1|2.0MB/s
-      - 🇫🇮FI_1|1.5MB/s
-      - 🇨🇭CH_3|2.4MB/s
-      - 🇮🇪IE_1|2.5MB/s
       - ID_speednode_0003
+      - KR_speednode_0004
       - RU_speednode_0062
-      - US_speednode_0066
       - US_speednode_0067
       - US_speednode_0069
       - US_speednode_0070
       - US_speednode_0071
       - US_speednode_0072
-      - 巴西+V2CROSS.COM
-      - 巴西圣保罗+CloudFlare节点
-      - 美国+佛罗里达州迈阿密市
-      - 美国+Fastly全球Anycast节点
+      - US_speednode_0074
+      - US_speednode_0075
+      - 立陶宛+V2CROSS.COM
+      - 美国+Linode数据中心
       - 南非+V2CROSS.COM
-      - 荷兰+V2CROSS.COM
-      - 英国+V2CROSS.COM
-      - 美国+CloudFlare节点
+      - 罗马尼亚+V2CROSS.COM
+      - 南非+V2CROSS.COM [1]
       - 美国+V2CROSS.COM
-      - 美国+V2CROSS.COM [1]
-      - 法国 ovh
+      - 美国+CloudFlare节点
+      - 美国+加利福尼亚
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -620,37 +934,67 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
       - 🇺🇸 美国4|@ripaojiedian
-      - 🇨🇭CH_1|2.3MB/s
-      - 🇸🇦SA_1|1.7MB/s
+      - 🇨🇭CH_1|2.1MB/s
+      - 🇳🇱NL_1|1.9MB/s
+      - 🇵🇱PL_1|2.1MB/s
+      - 🇩🇪DE_2|2.6MB/s
+      - 🇩🇪DE_3|2.7MB/s
+      - 🇷🇺RU_1|2.5MB/s
+      - 🇦🇺AU_1|2.4MB/s
+      - 🇩🇪DE_4|1.3MB/s
+      - 🇩🇪DE_5|2.1MB/s
+      - 🇺🇸US_1|2.3MB/s
+      - 🇺🇸US_6|2.4MB/s
+      - 🇫🇷FR_1|2.6MB/s
+      - 🇩🇪DE_6|2.2MB/s
+      - 🇨🇾CY_1|2.5MB/s
+      - 🇺🇸US_3|2.1MB/s
+      - 🇹🇷TR_1|1.2MB/s
+      - 🇩🇪DE_7|2.1MB/s
+      - 🇺🇸US_4|1.7MB/s
+      - 🇳🇱NL_3|1.3MB/s
+      - 🇮🇳IN_1|1.7MB/s
+      - 🇺🇸US_5|2.0MB/s
+      - 🇪🇸ES_1|2.1MB/s
+      - 🇫🇷FR_2|2.2MB/s
+      - 🇩🇪DE_8|2.5MB/s
+      - 🇦🇪AE_1|2.0MB/s
+      - 🇩🇪DE_9|2.6MB/s
+      - 🇳🇱NL_4|2.6MB/s
+      - 🇫🇷FR_3|2.4MB/s
+      - 🇩🇪DE_10|2.5MB/s
+      - 🇺🇸US_7|1.6MB/s
+      - 🇨🇦CA_1|2.5MB/s
+      - 🇳🇱NL_6|2.3MB/s
+      - 🇳🇱NL_7|3.2MB/s
+      - 🇬🇧GB_1|2.5MB/s
+      - 🇬🇧GB_2|2.2MB/s
+      - 🇩🇪DE_11|2.5MB/s
+      - 🇫🇮FI_1|1.0MB/s
+      - 🇺🇸US_8|2.4MB/s
+      - 🇩🇪DE_12|2.5MB/s
+      - 🇸🇬SG_1|3.7MB/s
+      - 🇪🇸ES_2|2.4MB/s
+      - 🇩🇪DE_13|3.3MB/s
       - HK_speednode_0002
-      - US_speednode_0074
-      - US_speednode_0075
-      - KR_speednode_0004
-      - 🇰🇷KR_2|3.6MB/s
-      - 🇩🇪DE_2|2.5MB/s
-      - 🇺🇸US_1|2.0MB/s
-      - 🇫🇮FI_1|1.5MB/s
-      - 🇨🇭CH_3|2.4MB/s
-      - 🇮🇪IE_1|2.5MB/s
       - ID_speednode_0003
+      - KR_speednode_0004
       - RU_speednode_0062
-      - US_speednode_0066
       - US_speednode_0067
       - US_speednode_0069
       - US_speednode_0070
       - US_speednode_0071
       - US_speednode_0072
-      - 巴西+V2CROSS.COM
-      - 巴西圣保罗+CloudFlare节点
-      - 美国+佛罗里达州迈阿密市
-      - 美国+Fastly全球Anycast节点
+      - US_speednode_0074
+      - US_speednode_0075
+      - 立陶宛+V2CROSS.COM
+      - 美国+Linode数据中心
       - 南非+V2CROSS.COM
-      - 荷兰+V2CROSS.COM
-      - 英国+V2CROSS.COM
-      - 美国+CloudFlare节点
+      - 罗马尼亚+V2CROSS.COM
+      - 南非+V2CROSS.COM [1]
       - 美国+V2CROSS.COM
-      - 美国+V2CROSS.COM [1]
-      - 法国 ovh
+      - 美国+CloudFlare节点
+      - 美国+加利福尼亚
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
