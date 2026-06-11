@@ -658,73 +658,43 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 立陶宛+V2CROSS.COM
+  - name: 英国+V2CROSS.COM
     type: vless
-    server: 89.116.46.210
+    server: uk.americanprime.vip
     port: 443
-    uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-    tls: true
-    network: ws
-    ws-opts:
-      path: /tsghdws
-      headers:
-        Host: octopusss4.com
-  - name: 美国+Linode数据中心
+    uuid: 06b81e47-5955-4020-89cb-33f3dd74d5e9
+    tls: false
+    network: tcp
+    flow: xtls-rprx-vision
+  - name: 英国+V2CROSS.COM [1]
     type: trojan
-    server: 172.105.9.126
+    server: 185.126.236.44
     port: 443
-    password: lTLVIqIvFqp+es9giS.0o77ztLrCQLaxVh
-    sni: 172.105.9.126
-    skip-cert-verify: false
-  - name: 南非+V2CROSS.COM
-    type: vless
-    server: lt-cherry-01.com
-    port: 8443
-    uuid: e97a7931-500b-4777-82a2-4237f15bcedd
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 罗马尼亚+V2CROSS.COM
-    type: trojan
-    server: 185.137.157.254
-    port: 443
-    password: hxn2jK9Uzezogua0oHuq9Y8viN%3DUCe.2Jd
-    sni: www.directorypipeline.click
-    skip-cert-verify: false
-  - name: 南非+V2CROSS.COM [1]
-    type: vless
-    server: fr-gt-01.com
-    port: 8443
-    uuid: a6349c3f-5234-4821-80b4-d99b33f0924d
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 美国+V2CROSS.COM
-    type: vless
-    server: 132.243.65.0
-    port: 443
-    uuid: d4d234ea-80ea-4820-ac5e-05d653960579
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
+    password: BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL
+    sni: www.mesaly.click
+    skip-cert-verify: true
   - name: 美国+CloudFlare节点
-    type: vless
-    server: 172.66.47.45
-    port: 443
-    uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-    tls: true
-    network: ws
-    ws-opts:
-      path: /tsghdws
-      headers:
-        Host: octopusss4.com
-  - name: 美国+加利福尼亚
     type: trojan
-    server: 64.176.65.85
+    server: 104.16.174.36
     port: 443
-    password: iGccGWTMHtoXtBhGYK4mogg7iIUhGbcvCf
-    sni: 64.176.65.85
+    password: humanity
+    sni: www.ignitelimit.com
     skip-cert-verify: false
+  - name: 巴西圣保罗+CloudFlare节点
+    type: trojan
+    server: 188.114.96.3
+    port: 443
+    password: humanity
+    sni: www.creationlong.org
+    skip-cert-verify: false
+  - name: 荷兰+V2CROSS.COM
+    type: vless
+    server: 194.26.229.161
+    port: 443
+    uuid: 5729c1fc-c7cf-41b7-8c17-f9b5f59772da
+    tls: false
+    network: tcp
+    flow: xtls-rprx-vision
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -809,14 +779,11 @@ proxy-groups:
       - US_speednode_0072
       - US_speednode_0074
       - US_speednode_0075
-      - 立陶宛+V2CROSS.COM
-      - 美国+Linode数据中心
-      - 南非+V2CROSS.COM
-      - 罗马尼亚+V2CROSS.COM
-      - 南非+V2CROSS.COM [1]
-      - 美国+V2CROSS.COM
+      - 英国+V2CROSS.COM
+      - 英国+V2CROSS.COM [1]
       - 美国+CloudFlare节点
-      - 美国+加利福尼亚
+      - 巴西圣保罗+CloudFlare节点
+      - 荷兰+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -897,14 +864,11 @@ proxy-groups:
       - US_speednode_0072
       - US_speednode_0074
       - US_speednode_0075
-      - 立陶宛+V2CROSS.COM
-      - 美国+Linode数据中心
-      - 南非+V2CROSS.COM
-      - 罗马尼亚+V2CROSS.COM
-      - 南非+V2CROSS.COM [1]
-      - 美国+V2CROSS.COM
+      - 英国+V2CROSS.COM
+      - 英国+V2CROSS.COM [1]
       - 美国+CloudFlare节点
-      - 美国+加利福尼亚
+      - 巴西圣保罗+CloudFlare节点
+      - 荷兰+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -987,14 +951,11 @@ proxy-groups:
       - US_speednode_0072
       - US_speednode_0074
       - US_speednode_0075
-      - 立陶宛+V2CROSS.COM
-      - 美国+Linode数据中心
-      - 南非+V2CROSS.COM
-      - 罗马尼亚+V2CROSS.COM
-      - 南非+V2CROSS.COM [1]
-      - 美国+V2CROSS.COM
+      - 英国+V2CROSS.COM
+      - 英国+V2CROSS.COM [1]
       - 美国+CloudFlare节点
-      - 美国+加利福尼亚
+      - 巴西圣保罗+CloudFlare节点
+      - 荷兰+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
