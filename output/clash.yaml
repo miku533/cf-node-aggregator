@@ -564,83 +564,55 @@ proxies:
       path: /
       headers:
         Host: max-gb1.global.ssl.fastly.net
-  - name: 英国 V2CROSS.COM
-    type: vmess
-    server: 82.198.246.37
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 伊朗+V2CROSS.COM
+  - name: 美国+V2CROSS.COM
     type: vless
-    server: 46.225.155.159
-    port: 1006
-    uuid: ad356e93-cc14-417d-9f4e-32376d03f5b7
+    server: 167.104.223.68
+    port: 7443
+    uuid: 1c0277ad-bb4d-496f-bc0c-40ccee03fca5
     tls: false
     network: tcp
-  - name: 克罗地亚+V2CROSS.COM
+    flow: xtls-rprx-vision
+  - name: 英国+V2CROSS.COM
+    type: vless
+    server: cdn3-87.vk-cdnvideo.com
+    port: 8443
+    uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+    tls: true
+    network: tcp
+  - name: 奥地利+V2CROSS.COM
+    type: trojan
+    server: 212.183.88.136
+    port: 443
+    password: humanity
+    sni: www.calmlunch.com
+    skip-cert-verify: false
+  - name: 巴西圣保罗+CloudFlare节点
+    type: trojan
+    server: 188.114.97.6
+    port: 443
+    password: humanity
+    sni: www.creationlong.org
+    skip-cert-verify: false
+  - name: 乌克兰+V2CROSS.COM
     type: vless
     server: cdn7-09.vk-cdnvideo.com
     port: 8443
     uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
     tls: true
     network: tcp
-  - name: 立陶宛+V2CROSS.COM
-    type: vless
-    server: 89.116.46.68
-    port: 443
-    uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-    tls: true
-    network: ws
-    ws-opts:
-      path: /tsghdws
-      headers:
-        Host: octopusss4.com
-  - name: 南非+V2CROSS.COM
-    type: vless
-    server: fr-gt-01.com
-    port: 8443
-    uuid: a6349c3f-5234-4821-80b4-d99b33f0924d
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
   - name: 美国+CloudFlare节点
     type: trojan
-    server: 104.20.6.134
+    server: 104.18.12.149
     port: 443
     password: humanity
-    sni: www.multiplydose.com
+    sni: www.ignitelimit.com
     skip-cert-verify: false
-  - name: 美国+V2CROSS.COM
-    type: vless
-    server: 45.131.5.144
-    port: 8880
-    uuid: Shh-proxy
-    tls: false
-    network: ws
-    ws-opts:
-      path: /---@SHH_PROXY/---@SHH_PROXY/---@SHH_PROXY/---@SHH_PROXY/---@SHH_PROXY
-      headers:
-        Host: shhp.akbarjoojeh.shop
-  - name: 🔵@chillguy_vpn
-    type: vless
-    server: library2.ketabkhane.dpdns.org
-    port: 2083
-    uuid: 95497965-318f-4c12-81e5-248698de07ed
-    tls: true
-    network: ws
-    ws-opts:
-      path: /api
-      headers:
-        Host: library2.ketabkhane.dpdns.org
-  - name: 英国+V2CROSS.COM
+  - name: 罗马尼亚+V2CROSS.COM
     type: trojan
-    server: 185.126.236.44
+    server: 185.137.157.254
     port: 443
-    password: BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL
-    sni: www.mesaly.click
+    password: hxn2jK9Uzezogua0oHuq9Y8viN%3DUCe.2Jd
+    sni: www.directorypipeline.click
     skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
@@ -714,15 +686,13 @@ proxy-groups:
       - NL_speednode_0005
       - US_speednode_0051
       - US_speednode_0052
-      - 英国 V2CROSS.COM
-      - 伊朗+V2CROSS.COM
-      - 克罗地亚+V2CROSS.COM
-      - 立陶宛+V2CROSS.COM
-      - 南非+V2CROSS.COM
-      - 美国+CloudFlare节点
       - 美国+V2CROSS.COM
-      - 🔵@chillguy_vpn
       - 英国+V2CROSS.COM
+      - 奥地利+V2CROSS.COM
+      - 巴西圣保罗+CloudFlare节点
+      - 乌克兰+V2CROSS.COM
+      - 美国+CloudFlare节点
+      - 罗马尼亚+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -791,15 +761,13 @@ proxy-groups:
       - NL_speednode_0005
       - US_speednode_0051
       - US_speednode_0052
-      - 英国 V2CROSS.COM
-      - 伊朗+V2CROSS.COM
-      - 克罗地亚+V2CROSS.COM
-      - 立陶宛+V2CROSS.COM
-      - 南非+V2CROSS.COM
-      - 美国+CloudFlare节点
       - 美国+V2CROSS.COM
-      - 🔵@chillguy_vpn
       - 英国+V2CROSS.COM
+      - 奥地利+V2CROSS.COM
+      - 巴西圣保罗+CloudFlare节点
+      - 乌克兰+V2CROSS.COM
+      - 美国+CloudFlare节点
+      - 罗马尼亚+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -870,15 +838,13 @@ proxy-groups:
       - NL_speednode_0005
       - US_speednode_0051
       - US_speednode_0052
-      - 英国 V2CROSS.COM
-      - 伊朗+V2CROSS.COM
-      - 克罗地亚+V2CROSS.COM
-      - 立陶宛+V2CROSS.COM
-      - 南非+V2CROSS.COM
-      - 美国+CloudFlare节点
       - 美国+V2CROSS.COM
-      - 🔵@chillguy_vpn
       - 英国+V2CROSS.COM
+      - 奥地利+V2CROSS.COM
+      - 巴西圣保罗+CloudFlare节点
+      - 乌克兰+V2CROSS.COM
+      - 美国+CloudFlare节点
+      - 罗马尼亚+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
