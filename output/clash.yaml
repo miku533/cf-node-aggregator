@@ -493,35 +493,14 @@ proxies:
     uuid: 534cbbe2-cc36-4f2d-8fb0-90410e7148c9
     tls: true
     network: tcp
-  - name: 拉脱维亚+V2CROSS.COM
-    type: vless
-    server: 213.21.246.51
-    port: 29800
-    uuid: 3120446f-78e3-4974-8a00-42b718382bda
-    tls: false
-    network: tcp
-  - name: 德国+V2CROSS.COM
-    type: trojan
-    server: 91.233.8.25
-    port: 443
-    password: I1vtf6pjYsAu-nFnraWAMjKTy90AHitdAz
-    sni: fra34.tracker-ws.click
-    skip-cert-verify: false
   - name: 美国+CloudFlare节点
     type: trojan
-    server: 104.16.174.71
+    server: 104.18.152.233
     port: 443
     password: humanity
-    sni: www.ignitelimit.com
+    sni: www.calmloud.com
     skip-cert-verify: false
-  - name: 北美地区+V2CROSS.COM
-    type: trojan
-    server: 198.62.62.23
-    port: 443
-    password: humanity
-    sni: www.calmlunch.com
-    skip-cert-verify: false
-  - name: 德国+V2CROSS.COM [1]
+  - name: 德国+V2CROSS.COM
     type: vless
     server: nl08.abvpn.ru
     port: 443
@@ -534,37 +513,39 @@ proxies:
         Host: nl08.abvpn.ru
   - name: 美国+CloudFlare节点 [1]
     type: trojan
-    server: 104.17.121.9
+    server: www.calmloud.com
     port: 443
     password: humanity
-    sni: www.calmlunch.com
-    skip-cert-verify: true
+    sni: www.calmloud.com
+    skip-cert-verify: false
+  - name: 美国+V2CROSS.COM
+    type: vless
+    server: cdn3-87.vk-cdnvideo.com
+    port: 8443
+    uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+    tls: true
+    network: tcp
+  - name: 英国+V2CROSS.COM
+    type: trojan
+    server: 185.126.236.44
+    port: 443
+    password: BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL
+    sni: www.mesaly.click
+    skip-cert-verify: false
   - name: 美国+CloudFlare节点 [2]
+    type: trojan
+    server: 104.18.152.97
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
+  - name: 美国+CloudFlare节点 [3]
     type: trojan
     server: 104.16.174.117
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: false
-  - name: 美国+CloudFlare节点 [3]
-    type: vless
-    server: 172.64.146.68
-    port: 443
-    uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-    tls: true
-    network: ws
-    ws-opts:
-      path: /tsghdws
-      headers:
-        Host: octopusss4.com
-  - name: 丹麦+V2CROSS.COM
-    type: vless
-    server: 159.195.60.65
-    port: 443
-    uuid: c897facf-2836-4538-be6e-25386fb49284
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -632,15 +613,13 @@ proxy-groups:
       - GB_speednode_0002
       - LB_speednode_0004
       - NL_speednode_0005
-      - 拉脱维亚+V2CROSS.COM
-      - 德国+V2CROSS.COM
       - 美国+CloudFlare节点
-      - 北美地区+V2CROSS.COM
-      - 德国+V2CROSS.COM [1]
+      - 德国+V2CROSS.COM
       - 美国+CloudFlare节点 [1]
+      - 美国+V2CROSS.COM
+      - 英国+V2CROSS.COM
       - 美国+CloudFlare节点 [2]
       - 美国+CloudFlare节点 [3]
-      - 丹麦+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -704,15 +683,13 @@ proxy-groups:
       - GB_speednode_0002
       - LB_speednode_0004
       - NL_speednode_0005
-      - 拉脱维亚+V2CROSS.COM
-      - 德国+V2CROSS.COM
       - 美国+CloudFlare节点
-      - 北美地区+V2CROSS.COM
-      - 德国+V2CROSS.COM [1]
+      - 德国+V2CROSS.COM
       - 美国+CloudFlare节点 [1]
+      - 美国+V2CROSS.COM
+      - 英国+V2CROSS.COM
       - 美国+CloudFlare节点 [2]
       - 美国+CloudFlare节点 [3]
-      - 丹麦+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -778,15 +755,13 @@ proxy-groups:
       - GB_speednode_0002
       - LB_speednode_0004
       - NL_speednode_0005
-      - 拉脱维亚+V2CROSS.COM
-      - 德国+V2CROSS.COM
       - 美国+CloudFlare节点
-      - 北美地区+V2CROSS.COM
-      - 德国+V2CROSS.COM [1]
+      - 德国+V2CROSS.COM
       - 美国+CloudFlare节点 [1]
+      - 美国+V2CROSS.COM
+      - 英国+V2CROSS.COM
       - 美国+CloudFlare节点 [2]
       - 美国+CloudFlare节点 [3]
-      - 丹麦+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
