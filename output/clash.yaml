@@ -494,19 +494,16 @@ proxies:
     tls: true
     network: tcp
   - name: 美国+CloudFlare节点
-    type: trojan
-    server: 104.17.121.9
-    port: 443
-    password: humanity
-    sni: www.calmlunch.com
-    skip-cert-verify: true
-  - name: 美国+CloudFlare节点 [1]
-    type: trojan
-    server: 104.20.6.134
-    port: 443
-    password: humanity
-    sni: www.calmloud.com
-    skip-cert-verify: false
+    type: vless
+    server: 104.26.14.16
+    port: 8080
+    uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: tr-cd.sublink-vip2.com
   - name: 英国+V2CROSS.COM
     type: trojan
     server: 185.126.236.44
@@ -514,24 +511,6 @@ proxies:
     password: BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL
     sni: www.mesaly.click
     skip-cert-verify: false
-  - name: 德国+V2CROSS.COM
-    type: trojan
-    server: 91.233.8.25
-    port: 443
-    password: I1vtf6pjYsAu-nFnraWAMjKTy90AHitdAz
-    sni: fra34.tracker-ws.click
-    skip-cert-verify: false
-  - name: 美国+CloudFlare节点 [2]
-    type: vless
-    server: www.parsvds.com
-    port: 8080
-    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tr-cd.sublink-vip2.com
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -600,10 +579,7 @@ proxy-groups:
       - LB_speednode_0004
       - NL_speednode_0005
       - 美国+CloudFlare节点
-      - 美国+CloudFlare节点 [1]
       - 英国+V2CROSS.COM
-      - 德国+V2CROSS.COM
-      - 美国+CloudFlare节点 [2]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -668,10 +644,7 @@ proxy-groups:
       - LB_speednode_0004
       - NL_speednode_0005
       - 美国+CloudFlare节点
-      - 美国+CloudFlare节点 [1]
       - 英国+V2CROSS.COM
-      - 德国+V2CROSS.COM
-      - 美国+CloudFlare节点 [2]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -738,10 +711,7 @@ proxy-groups:
       - LB_speednode_0004
       - NL_speednode_0005
       - 美国+CloudFlare节点
-      - 美国+CloudFlare节点 [1]
       - 英国+V2CROSS.COM
-      - 德国+V2CROSS.COM
-      - 美国+CloudFlare节点 [2]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
