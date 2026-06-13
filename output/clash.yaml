@@ -495,36 +495,18 @@ proxies:
     network: tcp
   - name: 美国+CloudFlare节点
     type: trojan
-    server: 104.18.152.233
+    server: 104.17.121.9
     port: 443
     password: humanity
-    sni: www.calmloud.com
-    skip-cert-verify: false
-  - name: 德国+V2CROSS.COM
-    type: vless
-    server: nl08.abvpn.ru
-    port: 443
-    uuid: 95e118b4-4352-4218-8493-f20cc7fc467a
-    tls: true
-    network: ws
-    ws-opts:
-      path: /websocket
-      headers:
-        Host: nl08.abvpn.ru
+    sni: www.calmlunch.com
+    skip-cert-verify: true
   - name: 美国+CloudFlare节点 [1]
     type: trojan
-    server: www.calmloud.com
+    server: 104.20.6.134
     port: 443
     password: humanity
     sni: www.calmloud.com
     skip-cert-verify: false
-  - name: 美国+V2CROSS.COM
-    type: vless
-    server: cdn3-87.vk-cdnvideo.com
-    port: 8443
-    uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-    tls: true
-    network: tcp
   - name: 英国+V2CROSS.COM
     type: trojan
     server: 185.126.236.44
@@ -532,20 +514,24 @@ proxies:
     password: BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL
     sni: www.mesaly.click
     skip-cert-verify: false
+  - name: 德国+V2CROSS.COM
+    type: trojan
+    server: 91.233.8.25
+    port: 443
+    password: I1vtf6pjYsAu-nFnraWAMjKTy90AHitdAz
+    sni: fra34.tracker-ws.click
+    skip-cert-verify: false
   - name: 美国+CloudFlare节点 [2]
-    type: trojan
-    server: 104.18.152.97
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: false
-  - name: 美国+CloudFlare节点 [3]
-    type: trojan
-    server: 104.16.174.117
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: false
+    type: vless
+    server: www.parsvds.com
+    port: 8080
+    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: tr-cd.sublink-vip2.com
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -614,12 +600,10 @@ proxy-groups:
       - LB_speednode_0004
       - NL_speednode_0005
       - 美国+CloudFlare节点
-      - 德国+V2CROSS.COM
       - 美国+CloudFlare节点 [1]
-      - 美国+V2CROSS.COM
       - 英国+V2CROSS.COM
+      - 德国+V2CROSS.COM
       - 美国+CloudFlare节点 [2]
-      - 美国+CloudFlare节点 [3]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -684,12 +668,10 @@ proxy-groups:
       - LB_speednode_0004
       - NL_speednode_0005
       - 美国+CloudFlare节点
-      - 德国+V2CROSS.COM
       - 美国+CloudFlare节点 [1]
-      - 美国+V2CROSS.COM
       - 英国+V2CROSS.COM
+      - 德国+V2CROSS.COM
       - 美国+CloudFlare节点 [2]
-      - 美国+CloudFlare节点 [3]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -756,12 +738,10 @@ proxy-groups:
       - LB_speednode_0004
       - NL_speednode_0005
       - 美国+CloudFlare节点
-      - 德国+V2CROSS.COM
       - 美国+CloudFlare节点 [1]
-      - 美国+V2CROSS.COM
       - 英国+V2CROSS.COM
+      - 德国+V2CROSS.COM
       - 美国+CloudFlare节点 [2]
-      - 美国+CloudFlare节点 [3]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
