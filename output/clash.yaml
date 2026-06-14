@@ -493,24 +493,56 @@ proxies:
     uuid: 534cbbe2-cc36-4f2d-8fb0-90410e7148c9
     tls: true
     network: tcp
-  - name: 美国+CloudFlare节点
+  - name: 美国+马萨诸塞州埃塞克斯县安多弗镇ClearBlue科技公司
     type: vless
-    server: 104.26.14.16
-    port: 8080
-    uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
-    tls: false
+    server: 207.211.214.42
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    tls: true
+    network: tcp
+  - name: 克罗地亚+V2CROSS.COM
+    type: vless
+    server: 46.229.243.123
+    port: 8443
+    uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+    tls: true
+    network: tcp
+  - name: 英国+V2CROSS.COM
+    type: trojan
+    server: 2.26.54.174
+    port: 8448
+    password: TrojanPass2026%21
+    sni: foolsland.ru
+    skip-cert-verify: false
+  - name: 美国+V2CROSS.COM
+    type: vless
+    server: 45.130.125.229
+    port: 443
+    uuid: c35050ce-01ab-45a9-91b8-54cec637d0a8
+    tls: true
     network: ws
     ws-opts:
-      path: /
+      path: /udfyfws
       headers:
-        Host: tr-cd.sublink-vip2.com
-  - name: 英国+V2CROSS.COM
+        Host: octopusss5.info
+  - name: 英国+V2CROSS.COM [1]
     type: trojan
     server: 185.126.236.44
     port: 443
     password: BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL
     sni: www.mesaly.click
     skip-cert-verify: false
+  - name: 俄罗斯+V2CROSS.COM
+    type: vless
+    server: top395200747.mwscdn.ru
+    port: 80
+    uuid: e592c66c-7dda-4cbe-b26d-93a365b431c3
+    tls: false
+    network: ws
+    ws-opts:
+      path: /zuuvpn
+      headers:
+        Host: top395200747.mwscdn.ru
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -578,8 +610,12 @@ proxy-groups:
       - GB_speednode_0002
       - LB_speednode_0004
       - NL_speednode_0005
-      - 美国+CloudFlare节点
+      - 美国+马萨诸塞州埃塞克斯县安多弗镇ClearBlue科技公司
+      - 克罗地亚+V2CROSS.COM
       - 英国+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 英国+V2CROSS.COM [1]
+      - 俄罗斯+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -643,8 +679,12 @@ proxy-groups:
       - GB_speednode_0002
       - LB_speednode_0004
       - NL_speednode_0005
-      - 美国+CloudFlare节点
+      - 美国+马萨诸塞州埃塞克斯县安多弗镇ClearBlue科技公司
+      - 克罗地亚+V2CROSS.COM
       - 英国+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 英国+V2CROSS.COM [1]
+      - 俄罗斯+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -710,8 +750,12 @@ proxy-groups:
       - GB_speednode_0002
       - LB_speednode_0004
       - NL_speednode_0005
-      - 美国+CloudFlare节点
+      - 美国+马萨诸塞州埃塞克斯县安多弗镇ClearBlue科技公司
+      - 克罗地亚+V2CROSS.COM
       - 英国+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 英国+V2CROSS.COM [1]
+      - 俄罗斯+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
