@@ -493,47 +493,36 @@ proxies:
     uuid: 534cbbe2-cc36-4f2d-8fb0-90410e7148c9
     tls: true
     network: tcp
-  - name: 乌克兰+V2CROSS.COM
+  - name: 南非+V2CROSS.COM
     type: vless
-    server: 95.133.245.165
+    server: uk-gthost-01.com
     port: 8443
-    uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-    tls: true
+    uuid: 4d606920-62d7-4d28-a5c4-f8a70fe56aaa
+    tls: false
     network: tcp
-  - name: 克罗地亚+V2CROSS.COM
+    flow: xtls-rprx-vision
+  - name: 美国+V2CROSS.COM
+    type: vless
+    server: bypass.ch-gt-02.com
+    port: 8443
+    uuid: 06bcd513-ef0b-4c0c-a03b-e25fcda66fe2
+    tls: false
+    network: tcp
+    flow: xtls-rprx-vision
+  - name: 乌克兰+V2CROSS.COM
     type: vless
     server: cdn3-87.vk-cdnvideo.com
     port: 8443
     uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
     tls: true
     network: tcp
-  - name: 德国 V2CROSS.COM
-    type: vmess
-    server: nlt.reata.ir
-    port: 1020
-    uuid: 6244c41a-f4c1-4733-a654-c38f7729b13c
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 荷兰+V2CROSS.COM
+  - name: 克罗地亚+V2CROSS.COM
     type: vless
-    server: 185.229.191.10
+    server: 46.229.243.124
     port: 8443
-    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
     tls: true
     network: tcp
-  - name: 日本+东京Fastly节点
-    type: vless
-    server: 151.101.109.223
-    port: 443
-    uuid: 62d26257-546d-a267-c4f1-fb19de937929
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: wwwfgggffffii.global.ssl.fastly.net
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -601,11 +590,10 @@ proxy-groups:
       - GB_speednode_0002
       - LB_speednode_0004
       - NL_speednode_0005
+      - 南非+V2CROSS.COM
+      - 美国+V2CROSS.COM
       - 乌克兰+V2CROSS.COM
       - 克罗地亚+V2CROSS.COM
-      - 德国 V2CROSS.COM
-      - 荷兰+V2CROSS.COM
-      - 日本+东京Fastly节点
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -669,11 +657,10 @@ proxy-groups:
       - GB_speednode_0002
       - LB_speednode_0004
       - NL_speednode_0005
+      - 南非+V2CROSS.COM
+      - 美国+V2CROSS.COM
       - 乌克兰+V2CROSS.COM
       - 克罗地亚+V2CROSS.COM
-      - 德国 V2CROSS.COM
-      - 荷兰+V2CROSS.COM
-      - 日本+东京Fastly节点
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -739,11 +726,10 @@ proxy-groups:
       - GB_speednode_0002
       - LB_speednode_0004
       - NL_speednode_0005
+      - 南非+V2CROSS.COM
+      - 美国+V2CROSS.COM
       - 乌克兰+V2CROSS.COM
       - 克罗地亚+V2CROSS.COM
-      - 德国 V2CROSS.COM
-      - 荷兰+V2CROSS.COM
-      - 日本+东京Fastly节点
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
