@@ -493,6 +493,35 @@ proxies:
     uuid: 534cbbe2-cc36-4f2d-8fb0-90410e7148c9
     tls: true
     network: tcp
+  - name: 日本+东京Fastly节点
+    type: vless
+    server: 151.101.109.223
+    port: 443
+    uuid: 62d26257-546d-a267-c4f1-fb19de937929
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: wwwfgggffffii.global.ssl.fastly.net
+  - name: 美国+CloudFlare节点
+    type: trojan
+    server: 104.16.174.117
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
+  - name: 美国+Fastly全球Anycast节点
+    type: vless
+    server: 151.101.66.219
+    port: 80
+    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: max-gb1.global.ssl.fastly.net
   - name: 美国+马萨诸塞州埃塞克斯县安多弗镇ClearBlue科技公司
     type: vless
     server: 207.211.214.42
@@ -500,6 +529,17 @@ proxies:
     uuid: 394f6981-a782-4779-9a85-e6cf22935d93
     tls: true
     network: tcp
+  - name: 美国+CloudFlare节点 [1]
+    type: vless
+    server: 172.67.185.178
+    port: 443
+    uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: hhlfy.twiladaphne.ndjp.net
   - name: 克罗地亚+V2CROSS.COM
     type: vless
     server: 46.229.243.123
@@ -507,42 +547,34 @@ proxies:
     uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
     tls: true
     network: tcp
-  - name: 英国+V2CROSS.COM
+  - name: 罗马尼亚+V2CROSS.COM
     type: trojan
-    server: 2.26.54.174
-    port: 8448
-    password: TrojanPass2026%21
-    sni: foolsland.ru
-    skip-cert-verify: false
-  - name: 美国+V2CROSS.COM
-    type: vless
-    server: 45.130.125.229
+    server: 185.137.157.254
     port: 443
-    uuid: c35050ce-01ab-45a9-91b8-54cec637d0a8
+    password: hxn2jK9Uzezogua0oHuq9Y8viN%3DUCe.2Jd
+    sni: www.directorypipeline.click
+    skip-cert-verify: true
+  - name: 荷兰+V2CROSS.COM
+    type: vless
+    server: 185.229.191.10
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
     tls: true
-    network: ws
-    ws-opts:
-      path: /udfyfws
-      headers:
-        Host: octopusss5.info
-  - name: 英国+V2CROSS.COM [1]
+    network: tcp
+  - name: 美国+洛杉矶
     type: trojan
-    server: 185.126.236.44
+    server: 66.81.247.155
     port: 443
-    password: BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL
-    sni: www.mesaly.click
+    password: humanity
+    sni: www.calmloud.com
     skip-cert-verify: false
-  - name: 俄罗斯+V2CROSS.COM
+  - name: 克罗地亚+V2CROSS.COM [1]
     type: vless
-    server: top395200747.mwscdn.ru
-    port: 80
-    uuid: e592c66c-7dda-4cbe-b26d-93a365b431c3
-    tls: false
-    network: ws
-    ws-opts:
-      path: /zuuvpn
-      headers:
-        Host: top395200747.mwscdn.ru
+    server: cdn3-87.vk-cdnvideo.com
+    port: 8443
+    uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+    tls: true
+    network: tcp
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -610,12 +642,16 @@ proxy-groups:
       - GB_speednode_0002
       - LB_speednode_0004
       - NL_speednode_0005
+      - 日本+东京Fastly节点
+      - 美国+CloudFlare节点
+      - 美国+Fastly全球Anycast节点
       - 美国+马萨诸塞州埃塞克斯县安多弗镇ClearBlue科技公司
+      - 美国+CloudFlare节点 [1]
       - 克罗地亚+V2CROSS.COM
-      - 英国+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 英国+V2CROSS.COM [1]
-      - 俄罗斯+V2CROSS.COM
+      - 罗马尼亚+V2CROSS.COM
+      - 荷兰+V2CROSS.COM
+      - 美国+洛杉矶
+      - 克罗地亚+V2CROSS.COM [1]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -679,12 +715,16 @@ proxy-groups:
       - GB_speednode_0002
       - LB_speednode_0004
       - NL_speednode_0005
+      - 日本+东京Fastly节点
+      - 美国+CloudFlare节点
+      - 美国+Fastly全球Anycast节点
       - 美国+马萨诸塞州埃塞克斯县安多弗镇ClearBlue科技公司
+      - 美国+CloudFlare节点 [1]
       - 克罗地亚+V2CROSS.COM
-      - 英国+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 英国+V2CROSS.COM [1]
-      - 俄罗斯+V2CROSS.COM
+      - 罗马尼亚+V2CROSS.COM
+      - 荷兰+V2CROSS.COM
+      - 美国+洛杉矶
+      - 克罗地亚+V2CROSS.COM [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -750,12 +790,16 @@ proxy-groups:
       - GB_speednode_0002
       - LB_speednode_0004
       - NL_speednode_0005
+      - 日本+东京Fastly节点
+      - 美国+CloudFlare节点
+      - 美国+Fastly全球Anycast节点
       - 美国+马萨诸塞州埃塞克斯县安多弗镇ClearBlue科技公司
+      - 美国+CloudFlare节点 [1]
       - 克罗地亚+V2CROSS.COM
-      - 英国+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 英国+V2CROSS.COM [1]
-      - 俄罗斯+V2CROSS.COM
+      - 罗马尼亚+V2CROSS.COM
+      - 荷兰+V2CROSS.COM
+      - 美国+洛杉矶
+      - 克罗地亚+V2CROSS.COM [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
