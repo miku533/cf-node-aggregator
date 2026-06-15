@@ -500,100 +500,52 @@ proxies:
     uuid: 534cbbe2-cc36-4f2d-8fb0-90410e7148c9
     tls: true
     network: tcp
-  - name: 俄罗斯+V2CROSS.COM
-    type: vless
-    server: 81.177.212.231
-    port: 1020
-    uuid: 42e0d02c-b75c-4b9d-bc15-773aa3cbe6bc
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 乌克兰+V2CROSS.COM
-    type: vless
-    server: 93.157.106.189
-    port: 1020
-    uuid: 42e0d02c-b75c-4b9d-bc15-773aa3cbe6bc
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
   - name: 美国+CloudFlare节点
     type: trojan
-    server: 104.16.174.121
+    server: 104.17.121.9
     port: 443
     password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: false
-  - name: 巴西圣保罗+CloudFlare节点
-    type: trojan
-    server: 188.114.96.3
-    port: 443
-    password: humanity
-    sni: www.gossipglove.com
+    sni: www.calmlunch.com
     skip-cert-verify: true
-  - name: 芬兰+赫尔辛基Fastly节点
-    type: vless
-    server: 151.101.246.151
-    port: 80
-    uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?https://t.me/WangCai2🇨🇳
-      headers:
-        Host: max-gb1.global.ssl.fastly.net
   - name: 罗马尼亚+V2CROSS.COM
-    type: vless
-    server: 109.236.57.139
+    type: trojan
+    server: 185.137.157.254
     port: 443
-    uuid: ff19693c-11f3-4df9-8713-79a85a5ca090
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 美国弗吉尼亚州阿什本+CloudFlare节点
-    type: vless
-    server: 173.245.49.22
-    port: 8880
-    uuid: b6e42688-3076-47aa-9345-6ff10fe1a36b
-    tls: false
-    network: ws
-    ws-opts:
-      path: /sync
-      headers:
-        Host: wandering-rice-1ac4.cloudfelar.workers.dev
-  - name: 马来西亚+吉隆坡阿里云
-    type: vless
-    server: 47.250.195.135
-    port: 20393
-    uuid: '%40Net2ray'
-    tls: false
-    network: tcp
-  - name: 西班牙+V2CROSS.COM
-    type: vless
-    server: 150.241.230.172
-    port: 1020
-    uuid: 42e0d02c-b75c-4b9d-bc15-773aa3cbe6bc
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 西班牙+V2CROSS.COM [1]
-    type: vless
-    server: 150.241.230.185
-    port: 1020
-    uuid: 42e0d02c-b75c-4b9d-bc15-773aa3cbe6bc
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
+    password: hxn2jK9Uzezogua0oHuq9Y8viN%3DUCe.2Jd
+    sni: www.directorypipeline.click
+    skip-cert-verify: false
   - name: 美国+CloudFlare节点 [1]
     type: vless
-    server: 104.21.46.80
-    port: 80
-    uuid: aed8656b-6479-4c04-9437-c7e16aa52a06
-    tls: false
+    server: 172.64.35.7
+    port: 2053
+    uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+    tls: true
     network: ws
     ws-opts:
-      path: /eyJqdW5rIjoidXlXRjN1SVB6MllockoiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iXX0=?ed=2560
+      path: /
       headers:
-        Host: jolly-base-0bce.hamedpop2.workers.dev
+        Host: josni.hoyes.cloudns.ch
+  - name: 美国+CloudFlare节点 [2]
+    type: trojan
+    server: 104.20.6.134
+    port: 443
+    password: humanity
+    sni: www.calmloud.com
+    skip-cert-verify: false
+  - name: 荷兰+V2CROSS.COM
+    type: vless
+    server: 185.229.191.10
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    tls: true
+    network: tcp
+  - name: 伊朗+V2CROSS.COM
+    type: vless
+    server: 31.57.225.201
+    port: 40282
+    uuid: ecb092b3-040f-4b3c-b819-de9291c2f452
+    tls: false
+    network: tcp
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -662,17 +614,12 @@ proxy-groups:
       - GB_speednode_0002
       - LB_speednode_0004
       - NL_speednode_0005
-      - 俄罗斯+V2CROSS.COM
-      - 乌克兰+V2CROSS.COM
       - 美国+CloudFlare节点
-      - 巴西圣保罗+CloudFlare节点
-      - 芬兰+赫尔辛基Fastly节点
       - 罗马尼亚+V2CROSS.COM
-      - 美国弗吉尼亚州阿什本+CloudFlare节点
-      - 马来西亚+吉隆坡阿里云
-      - 西班牙+V2CROSS.COM
-      - 西班牙+V2CROSS.COM [1]
       - 美国+CloudFlare节点 [1]
+      - 美国+CloudFlare节点 [2]
+      - 荷兰+V2CROSS.COM
+      - 伊朗+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -737,17 +684,12 @@ proxy-groups:
       - GB_speednode_0002
       - LB_speednode_0004
       - NL_speednode_0005
-      - 俄罗斯+V2CROSS.COM
-      - 乌克兰+V2CROSS.COM
       - 美国+CloudFlare节点
-      - 巴西圣保罗+CloudFlare节点
-      - 芬兰+赫尔辛基Fastly节点
       - 罗马尼亚+V2CROSS.COM
-      - 美国弗吉尼亚州阿什本+CloudFlare节点
-      - 马来西亚+吉隆坡阿里云
-      - 西班牙+V2CROSS.COM
-      - 西班牙+V2CROSS.COM [1]
       - 美国+CloudFlare节点 [1]
+      - 美国+CloudFlare节点 [2]
+      - 荷兰+V2CROSS.COM
+      - 伊朗+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -814,17 +756,12 @@ proxy-groups:
       - GB_speednode_0002
       - LB_speednode_0004
       - NL_speednode_0005
-      - 俄罗斯+V2CROSS.COM
-      - 乌克兰+V2CROSS.COM
       - 美国+CloudFlare节点
-      - 巴西圣保罗+CloudFlare节点
-      - 芬兰+赫尔辛基Fastly节点
       - 罗马尼亚+V2CROSS.COM
-      - 美国弗吉尼亚州阿什本+CloudFlare节点
-      - 马来西亚+吉隆坡阿里云
-      - 西班牙+V2CROSS.COM
-      - 西班牙+V2CROSS.COM [1]
       - 美国+CloudFlare节点 [1]
+      - 美国+CloudFlare节点 [2]
+      - 荷兰+V2CROSS.COM
+      - 伊朗+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
