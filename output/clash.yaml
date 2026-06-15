@@ -500,52 +500,37 @@ proxies:
     uuid: 534cbbe2-cc36-4f2d-8fb0-90410e7148c9
     tls: true
     network: tcp
-  - name: 美国+CloudFlare节点
-    type: trojan
-    server: 104.17.121.9
-    port: 443
-    password: humanity
-    sni: www.calmlunch.com
-    skip-cert-verify: true
-  - name: 罗马尼亚+V2CROSS.COM
-    type: trojan
-    server: 185.137.157.254
-    port: 443
-    password: hxn2jK9Uzezogua0oHuq9Y8viN%3DUCe.2Jd
-    sni: www.directorypipeline.click
-    skip-cert-verify: false
-  - name: 美国+CloudFlare节点 [1]
+  - name: 瑞士+V2CROSS.COM
     type: vless
-    server: 172.64.35.7
-    port: 2053
-    uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: josni.hoyes.cloudns.ch
-  - name: 美国+CloudFlare节点 [2]
+    server: 1.sdwan.realm-sync.com
+    port: 54387
+    uuid: 48959fe8-4a5e-4996-bc87-8d66398e6860
+    tls: false
+    network: tcp
+    flow: xtls-rprx-vision
+  - name: 美国+CloudFlare节点
     type: trojan
     server: 104.20.6.134
     port: 443
     password: humanity
     sni: www.calmloud.com
     skip-cert-verify: false
-  - name: 荷兰+V2CROSS.COM
+  - name: 俄罗斯+V2CROSS.COM
     type: vless
-    server: 185.229.191.10
-    port: 8443
-    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-    tls: true
-    network: tcp
-  - name: 伊朗+V2CROSS.COM
-    type: vless
-    server: 31.57.225.201
-    port: 40282
-    uuid: ecb092b3-040f-4b3c-b819-de9291c2f452
+    server: 185.212.117.118
+    port: 1020
+    uuid: 42e0d02c-b75c-4b9d-bc15-773aa3cbe6bc
     tls: false
     network: tcp
+    flow: xtls-rprx-vision
+  - name: 俄罗斯+V2CROSS.COM [1]
+    type: vless
+    server: 81.177.213.232
+    port: 1020
+    uuid: 42e0d02c-b75c-4b9d-bc15-773aa3cbe6bc
+    tls: false
+    network: tcp
+    flow: xtls-rprx-vision
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -614,12 +599,10 @@ proxy-groups:
       - GB_speednode_0002
       - LB_speednode_0004
       - NL_speednode_0005
+      - 瑞士+V2CROSS.COM
       - 美国+CloudFlare节点
-      - 罗马尼亚+V2CROSS.COM
-      - 美国+CloudFlare节点 [1]
-      - 美国+CloudFlare节点 [2]
-      - 荷兰+V2CROSS.COM
-      - 伊朗+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM [1]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -684,12 +667,10 @@ proxy-groups:
       - GB_speednode_0002
       - LB_speednode_0004
       - NL_speednode_0005
+      - 瑞士+V2CROSS.COM
       - 美国+CloudFlare节点
-      - 罗马尼亚+V2CROSS.COM
-      - 美国+CloudFlare节点 [1]
-      - 美国+CloudFlare节点 [2]
-      - 荷兰+V2CROSS.COM
-      - 伊朗+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -756,12 +737,10 @@ proxy-groups:
       - GB_speednode_0002
       - LB_speednode_0004
       - NL_speednode_0005
+      - 瑞士+V2CROSS.COM
       - 美国+CloudFlare节点
-      - 罗马尼亚+V2CROSS.COM
-      - 美国+CloudFlare节点 [1]
-      - 美国+CloudFlare节点 [2]
-      - 荷兰+V2CROSS.COM
-      - 伊朗+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM [1]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
