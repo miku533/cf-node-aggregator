@@ -605,47 +605,57 @@ proxies:
     skip-cert-verify: false
   - name: 荷兰+V2CROSS.COM
     type: vless
-    server: 185.229.191.170
-    port: 8443
-    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-    tls: true
-    network: tcp
-  - name: 美国+CloudFlare节点 [1]
-    type: trojan
-    server: 104.18.7.147
-    port: 443
-    password: humanity
-    sni: www.creationlong.org
-    skip-cert-verify: false
-  - name: 罗马尼亚+V2CROSS.COM
-    type: trojan
-    server: 185.137.157.59
-    port: 443
-    password: fFj7MAGy1VlAWmB_gMBG_27oPYTSHvV6MX
-    sni: www.lateralio.click
-    skip-cert-verify: true
-  - name: 保加利亚+V2CROSS.COM
-    type: vless
-    server: 87.121.221.110
-    port: 443
-    uuid: 82dbc26e-2dcc-436a-84ee-f57d098209cd
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 美国+CloudFlare节点 [2]
-    type: trojan
-    server: 172.64.152.23
-    port: 443
-    password: humanity
-    sni: www.calmlunch.com
-    skip-cert-verify: false
-  - name: 荷兰+V2CROSS.COM [1]
-    type: vless
     server: 185.229.191.10
     port: 8443
     uuid: 394f6981-a782-4779-9a85-e6cf22935d93
     tls: true
     network: tcp
+  - name: 美国+华盛顿Cogent通信公司
+    type: trojan
+    server: 38.54.13.189
+    port: 443
+    password: lhvfOzkRQqNd9cLDwpryrAkFGgqzlZR9Fi
+    sni: 38.54.13.189
+    skip-cert-verify: true
+  - name: 美国+CloudFlare节点 [1]
+    type: trojan
+    server: 104.16.174.36
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
+  - name: 伊朗+V2CROSS.COM
+    type: vless
+    server: n1.nolockhere.xyz
+    port: 8444
+    uuid: 06a15a9b-9c24-4b0d-aaf2-6946b5143c69
+    tls: false
+    network: grpc
+  - name: 俄罗斯+V2CROSS.COM
+    type: trojan
+    server: 46.8.226.197
+    port: 8443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: tjsp.hhxaf.cc.cd
+    skip-cert-verify: false
+  - name: 美国+CloudFlare节点 [2]
+    type: vless
+    server: cf.090227.xyz
+    port: 443
+    uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: t1s1.rittbo.kdns.fr
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 130.162.130.105
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: tjsp.hhxaf.cc.cd
+    skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -725,11 +735,12 @@ proxy-groups:
       - US_speednode_0052
       - 美国+CloudFlare节点
       - 荷兰+V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司
       - 美国+CloudFlare节点 [1]
-      - 罗马尼亚+V2CROSS.COM
-      - 保加利亚+V2CROSS.COM
+      - 伊朗+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
       - 美国+CloudFlare节点 [2]
-      - 荷兰+V2CROSS.COM [1]
+      - 美国+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -805,11 +816,12 @@ proxy-groups:
       - US_speednode_0052
       - 美国+CloudFlare节点
       - 荷兰+V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司
       - 美国+CloudFlare节点 [1]
-      - 罗马尼亚+V2CROSS.COM
-      - 保加利亚+V2CROSS.COM
+      - 伊朗+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
       - 美国+CloudFlare节点 [2]
-      - 荷兰+V2CROSS.COM [1]
+      - 美国+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -887,11 +899,12 @@ proxy-groups:
       - US_speednode_0052
       - 美国+CloudFlare节点
       - 荷兰+V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司
       - 美国+CloudFlare节点 [1]
-      - 罗马尼亚+V2CROSS.COM
-      - 保加利亚+V2CROSS.COM
+      - 伊朗+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
       - 美国+CloudFlare节点 [2]
-      - 荷兰+V2CROSS.COM [1]
+      - 美国+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
