@@ -588,42 +588,27 @@ proxies:
       path: /
       headers:
         Host: max-gb1.global.ssl.fastly.net
-  - name: 荷兰+V2CROSS.COM
-    type: vless
-    server: 185.229.191.10
-    port: 8443
-    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-    tls: true
-    network: tcp
-  - name: 捷克+V2CROSS.COM
-    type: vless
-    server: 95.173.199.86
-    port: 8443
-    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-    tls: true
-    network: tcp
-  - name: 南非+V2CROSS.COM
-    type: vless
-    server: velsanto.online
-    port: 8443
-    uuid: 0f985b88-a750-420a-a128-bca6fbd7a90b
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
+  - name: 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+    type: trojan
+    server: 130.94.94.15
+    port: 443
+    password: tUtK5TKdjxsPnOyritLtv8OQWHAK8f8yNR
+    sni: 130.94.94.15
+    skip-cert-verify: true
   - name: 美国+CloudFlare节点
     type: vless
-    server: auth.vercel.com
+    server: betty.ns.cloudflare.com
     port: 443
-    uuid: f7e3ff36-276c-4477-b6d4-47257500d869
+    uuid: 4f013568-a58b-4b04-b5dd-4d52bf1c33a4
     tls: true
     network: ws
     ws-opts:
-      path: /?ed=3000
+      path: /poiuyws
       headers:
-        Host: pon.antalmani.mm.am
+        Host: amoosamiii.net
   - name: 美国+CloudFlare节点 [1]
     type: vless
-    server: cf.008500.xyz
+    server: cloudflare.czkcdn.cn
     port: 443
     uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
     tls: true
@@ -632,6 +617,32 @@ proxies:
       path: /
       headers:
         Host: t1s1.rittbo.kdns.fr
+  - name: 捷克+V2CROSS.COM
+    type: vless
+    server: 95.173.199.86
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    tls: true
+    network: tcp
+  - name: 捷克+V2CROSS.COM [1]
+    type: vless
+    server: 79.127.227.215
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    tls: true
+    network: tcp
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 104.16.0.0
+    port: 443
+    uuid: 95d2c461-61f5-4dae-bc74-4d10ce1f6236
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /ws-gongyi
+      headers: {}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -712,11 +723,12 @@ proxy-groups:
       - US_speednode_0049
       - US_speednode_0051
       - US_speednode_0052
-      - 荷兰+V2CROSS.COM
-      - 捷克+V2CROSS.COM
-      - 南非+V2CROSS.COM
+      - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
       - 美国+CloudFlare节点
       - 美国+CloudFlare节点 [1]
+      - 捷克+V2CROSS.COM
+      - 捷克+V2CROSS.COM [1]
+      - 美国 CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -793,11 +805,12 @@ proxy-groups:
       - US_speednode_0049
       - US_speednode_0051
       - US_speednode_0052
-      - 荷兰+V2CROSS.COM
-      - 捷克+V2CROSS.COM
-      - 南非+V2CROSS.COM
+      - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
       - 美国+CloudFlare节点
       - 美国+CloudFlare节点 [1]
+      - 捷克+V2CROSS.COM
+      - 捷克+V2CROSS.COM [1]
+      - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -876,11 +889,12 @@ proxy-groups:
       - US_speednode_0049
       - US_speednode_0051
       - US_speednode_0052
-      - 荷兰+V2CROSS.COM
-      - 捷克+V2CROSS.COM
-      - 南非+V2CROSS.COM
+      - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
       - 美国+CloudFlare节点
       - 美国+CloudFlare节点 [1]
+      - 捷克+V2CROSS.COM
+      - 捷克+V2CROSS.COM [1]
+      - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
