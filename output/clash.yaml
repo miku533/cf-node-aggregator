@@ -762,13 +762,120 @@ proxies:
       path: /
       headers:
         Host: max-gb1.global.ssl.fastly.net
-  - name: 希腊+V2CROSS.COM
-    type: trojan
-    server: 92.119.35.130
+  - name: 美国+CloudFlare节点
+    type: vless
+    server: 172.64.147.236
     port: 443
-    password: aR9EJWEB2Jp3m6xKJK%3DCt7kLyqFSU-iDBR
-    sni: 92.119.35.130
+    uuid: c35050ce-01ab-45a9-91b8-54cec637d0a8
+    tls: true
+    network: ws
+    ws-opts:
+      path: /udfyfws
+      headers:
+        Host: octopusss5.info
+  - name: 美国+伊利诺伊州芝加哥Fastly节点
+    type: vless
+    server: 151.101.44.151
+    port: 80
+    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: max-gb1.global.ssl.fastly.net
+  - name: 加拿大+安大略省多伦多Fastly节点
+    type: vless
+    server: 151.101.127.151
+    port: 80
+    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?https://t.me/WangCai2🇨🇳
+      headers:
+        Host: max-gb1.global.ssl.fastly.net
+  - name: 美国+Fastly全球Anycast节点
+    type: vless
+    server: 151.101.0.60
+    port: 80
+    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: max-gb1.global.ssl.fastly.net
+  - name: 美国+Fastly全球Anycast节点 [1]
+    type: vless
+    server: 151.101.64.151
+    port: 80
+    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?https://t.me/WangCai2🇨🇳
+      headers:
+        Host: max-gb1.global.ssl.fastly.net
+  - name: 加拿大+不列颠哥伦比亚省温哥华Fastly节点
+    type: vless
+    server: 151.101.214.151
+    port: 80
+    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?https://t.me/WangCai2🇨🇳
+      headers:
+        Host: max-gb1.global.ssl.fastly.net
+  - name: 美国+Akamai科技公司CDN网络节点
+    type: trojan
+    server: 172.235.229.227
+    port: 443
+    password: zK%3D0KfL3IG+sNNZL-J7d0Nonu4wFBx8MOy
+    sni: 172.235.229.227
     skip-cert-verify: false
+  - name: 伊拉克+V2CROSS.COM
+    type: vless
+    server: 81.90.29.53
+    port: 8443
+    uuid: cf038a28-8f85-41fc-9e86-ba99a3fdd0d9
+    tls: false
+    network: tcp
+    flow: xtls-rprx-vision
+  - name: 美国+弗吉尼亚州阿什本Fastly节点
+    type: vless
+    server: 151.101.203.151
+    port: 80
+    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?https://t.me/WangCai2🇨🇳
+      headers:
+        Host: max-gb1.global.ssl.fastly.net
+  - name: 阿联酋+Fastly节点
+    type: vless
+    server: 151.101.140.151
+    port: 80
+    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?https://t.me/WangCai2🇨🇳
+      headers:
+        Host: max-gb1.global.ssl.fastly.net
+  - name: 美国+CloudFlare节点 [1]
+    type: vless
+    server: youxuan.cf.090227.xyz
+    port: 443
+    uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: t1s1.rittbo.kdns.fr
   - name: 澳大利亚+Fastly节点
     type: vless
     server: 151.101.170.151
@@ -780,9 +887,9 @@ proxies:
       path: /?https://t.me/WangCai2🇨🇳
       headers:
         Host: max-gb1.global.ssl.fastly.net
-  - name: 英国+伯克郡斯劳Fastly节点
+  - name: 美国+Fastly全球Anycast节点 [2]
     type: vless
-    server: 151.101.60.151
+    server: 151.101.131.151
     port: 80
     uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
     tls: false
@@ -791,7 +898,18 @@ proxies:
       path: /?https://t.me/WangCai2🇨🇳
       headers:
         Host: max-gb1.global.ssl.fastly.net
-  - name: 美国+Fastly全球Anycast节点
+  - name: 美国+Fastly全球Anycast节点 [3]
+    type: vless
+    server: 151.101.0.51
+    port: 80
+    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: max-gb1.global.ssl.fastly.net
+  - name: 美国+Fastly全球Anycast节点 [4]
     type: vless
     server: 151.101.194.151
     port: 80
@@ -802,90 +920,16 @@ proxies:
       path: /?https://t.me/WangCai2🇨🇳
       headers:
         Host: max-gb1.global.ssl.fastly.net
-  - name: 美国+Fastly全球Anycast节点 [1]
-    type: vless
-    server: 151.101.0.35
-    port: 80
-    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: max-gb1.global.ssl.fastly.net
-  - name: 斯洛文尼亚+V2CROSS.COM
-    type: vless
-    server: 92.53.189.140
-    port: 80
-    uuid: f9255507-1b65-433f-bfd8-193b35e068e2
-    tls: false
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2
-      headers:
-        Host: s5.868001.xyz
-  - name: 美国+伊利诺伊州芝加哥Fastly节点
-    type: vless
-    server: 151.101.46.151
-    port: 80
-    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: max-gb1.global.ssl.fastly.net
-  - name: 美国+Fastly全球Anycast节点 [2]
-    type: vless
-    server: 151.101.0.151
-    port: 80
-    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: max-gb1.global.ssl.fastly.net
-  - name: 罗马尼亚+V2CROSS.COM
+  - name: 英国+V2CROSS.COM
     type: trojan
-    server: 185.137.157.149
+    server: 185.126.236.44
     port: 443
-    password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-    sni: 185.137.157.149
+    password: BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL
+    sni: www.mesaly.click
     skip-cert-verify: false
-  - name: 美国+明尼苏达州明尼阿波利斯Fastly节点
+  - name: 澳大利亚+Fastly节点 [1]
     type: vless
-    server: 151.101.151.151
-    port: 80
-    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: max-gb1.global.ssl.fastly.net
-  - name: 美国+Fastly全球Anycast节点 [3]
-    type: vless
-    server: 151.101.0.1
-    port: 80
-    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: max-gb1.global.ssl.fastly.net
-  - name: 俄罗斯+V2CROSS.COM
-    type: vless
-    server: 109.196.101.41
-    port: 443
-    uuid: 7b3b6e39-dd78-000b-af6e-6d00da419aa0
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 美国+Fastly节点
-    type: vless
-    server: 151.101.191.151
+    server: 151.101.99.151
     port: 80
     uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
     tls: false
@@ -894,64 +938,13 @@ proxies:
       path: /?https://t.me/WangCai2🇨🇳
       headers:
         Host: max-gb1.global.ssl.fastly.net
-  - name: 英国+伦敦Choopa数据中心
+  - name: 美国+CloudFlare节点 [2]
     type: trojan
-    server: 45.77.227.183
+    server: 172.64.152.23
     port: 443
-    password: kflYwtj8VD7Pd4V9ixedIxEDsac4QQXvbP
-    sni: 45.77.227.183
+    password: humanity
+    sni: www.calmlunch.com
     skip-cert-verify: false
-  - name: 德国+Fastly节点
-    type: vless
-    server: 151.101.112.151
-    port: 80
-    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?https://t.me/WangCai2🇨🇳
-      headers:
-        Host: max-gb1.global.ssl.fastly.net
-  - name: 美国+德克萨斯州休斯顿Fastly节点
-    type: vless
-    server: 151.101.182.151
-    port: 80
-    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?https://t.me/WangCai2🇨🇳
-      headers:
-        Host: max-gb1.global.ssl.fastly.net
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 45.61.58.89
-    port: 443
-    password: O4O8.Ew+ujFX6GJBQ%3DxQr.heGwux0GYHqk
-    sni: 45.61.58.89
-    skip-cert-verify: false
-  - name: 瑞典+Fastly节点
-    type: vless
-    server: 151.101.86.151
-    port: 80
-    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: max-gb1.global.ssl.fastly.net
-  - name: 美国+俄亥俄州哥伦布Fastly节点
-    type: vless
-    server: 151.101.144.151
-    port: 80
-    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: max-gb1.global.ssl.fastly.net
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1039,25 +1032,24 @@ proxy-groups:
       - US_speednode_0071
       - US_speednode_0072
       - US_speednode_0073
-      - 希腊+V2CROSS.COM
-      - 澳大利亚+Fastly节点
-      - 英国+伯克郡斯劳Fastly节点
+      - 美国+CloudFlare节点
+      - 美国+伊利诺伊州芝加哥Fastly节点
+      - 加拿大+安大略省多伦多Fastly节点
       - 美国+Fastly全球Anycast节点
       - 美国+Fastly全球Anycast节点 [1]
-      - 斯洛文尼亚+V2CROSS.COM
-      - 美国+伊利诺伊州芝加哥Fastly节点
+      - 加拿大+不列颠哥伦比亚省温哥华Fastly节点
+      - 美国+Akamai科技公司CDN网络节点
+      - 伊拉克+V2CROSS.COM
+      - 美国+弗吉尼亚州阿什本Fastly节点
+      - 阿联酋+Fastly节点
+      - 美国+CloudFlare节点 [1]
+      - 澳大利亚+Fastly节点
       - 美国+Fastly全球Anycast节点 [2]
-      - 罗马尼亚+V2CROSS.COM
-      - 美国+明尼苏达州明尼阿波利斯Fastly节点
       - 美国+Fastly全球Anycast节点 [3]
-      - 俄罗斯+V2CROSS.COM
-      - 美国+Fastly节点
-      - 英国+伦敦Choopa数据中心
-      - 德国+Fastly节点
-      - 美国+德克萨斯州休斯顿Fastly节点
-      - 美国+V2CROSS.COM
-      - 瑞典+Fastly节点
-      - 美国+俄亥俄州哥伦布Fastly节点
+      - 美国+Fastly全球Anycast节点 [4]
+      - 英国+V2CROSS.COM
+      - 澳大利亚+Fastly节点 [1]
+      - 美国+CloudFlare节点 [2]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -1141,25 +1133,24 @@ proxy-groups:
       - US_speednode_0071
       - US_speednode_0072
       - US_speednode_0073
-      - 希腊+V2CROSS.COM
-      - 澳大利亚+Fastly节点
-      - 英国+伯克郡斯劳Fastly节点
+      - 美国+CloudFlare节点
+      - 美国+伊利诺伊州芝加哥Fastly节点
+      - 加拿大+安大略省多伦多Fastly节点
       - 美国+Fastly全球Anycast节点
       - 美国+Fastly全球Anycast节点 [1]
-      - 斯洛文尼亚+V2CROSS.COM
-      - 美国+伊利诺伊州芝加哥Fastly节点
+      - 加拿大+不列颠哥伦比亚省温哥华Fastly节点
+      - 美国+Akamai科技公司CDN网络节点
+      - 伊拉克+V2CROSS.COM
+      - 美国+弗吉尼亚州阿什本Fastly节点
+      - 阿联酋+Fastly节点
+      - 美国+CloudFlare节点 [1]
+      - 澳大利亚+Fastly节点
       - 美国+Fastly全球Anycast节点 [2]
-      - 罗马尼亚+V2CROSS.COM
-      - 美国+明尼苏达州明尼阿波利斯Fastly节点
       - 美国+Fastly全球Anycast节点 [3]
-      - 俄罗斯+V2CROSS.COM
-      - 美国+Fastly节点
-      - 英国+伦敦Choopa数据中心
-      - 德国+Fastly节点
-      - 美国+德克萨斯州休斯顿Fastly节点
-      - 美国+V2CROSS.COM
-      - 瑞典+Fastly节点
-      - 美国+俄亥俄州哥伦布Fastly节点
+      - 美国+Fastly全球Anycast节点 [4]
+      - 英国+V2CROSS.COM
+      - 澳大利亚+Fastly节点 [1]
+      - 美国+CloudFlare节点 [2]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -1245,25 +1236,24 @@ proxy-groups:
       - US_speednode_0071
       - US_speednode_0072
       - US_speednode_0073
-      - 希腊+V2CROSS.COM
-      - 澳大利亚+Fastly节点
-      - 英国+伯克郡斯劳Fastly节点
+      - 美国+CloudFlare节点
+      - 美国+伊利诺伊州芝加哥Fastly节点
+      - 加拿大+安大略省多伦多Fastly节点
       - 美国+Fastly全球Anycast节点
       - 美国+Fastly全球Anycast节点 [1]
-      - 斯洛文尼亚+V2CROSS.COM
-      - 美国+伊利诺伊州芝加哥Fastly节点
+      - 加拿大+不列颠哥伦比亚省温哥华Fastly节点
+      - 美国+Akamai科技公司CDN网络节点
+      - 伊拉克+V2CROSS.COM
+      - 美国+弗吉尼亚州阿什本Fastly节点
+      - 阿联酋+Fastly节点
+      - 美国+CloudFlare节点 [1]
+      - 澳大利亚+Fastly节点
       - 美国+Fastly全球Anycast节点 [2]
-      - 罗马尼亚+V2CROSS.COM
-      - 美国+明尼苏达州明尼阿波利斯Fastly节点
       - 美国+Fastly全球Anycast节点 [3]
-      - 俄罗斯+V2CROSS.COM
-      - 美国+Fastly节点
-      - 英国+伦敦Choopa数据中心
-      - 德国+Fastly节点
-      - 美国+德克萨斯州休斯顿Fastly节点
-      - 美国+V2CROSS.COM
-      - 瑞典+Fastly节点
-      - 美国+俄亥俄州哥伦布Fastly节点
+      - 美国+Fastly全球Anycast节点 [4]
+      - 英国+V2CROSS.COM
+      - 澳大利亚+Fastly节点 [1]
+      - 美国+CloudFlare节点 [2]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
