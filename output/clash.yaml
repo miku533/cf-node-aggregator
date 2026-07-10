@@ -44,7 +44,7 @@ proxies:
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
-  - name: 🇯🇵JP_1|5.1MB/s
+  - name: 日本|@ripaojiedian
     type: trojan
     server: 18.183.199.219
     port: 54411
@@ -58,7 +58,7 @@ proxies:
     password: bb839d14960b7a4fb1e95a3aef990528
     sni: www.nintendogames.net
     skip-cert-verify: true
-  - name: 🇸🇬SG_3|2.6MB/s
+  - name: 新加坡|@ripaojiedian
     type: trojan
     server: 95.40.50.224
     port: 6357
@@ -72,7 +72,7 @@ proxies:
     password: bb839d14960b7a4fb1e95a3aef990528
     sni: www.nintendogames.net
     skip-cert-verify: true
-  - name: 🇸🇬SG_4|3.3MB/s
+  - name: 新加坡3|@ripaojiedian
     type: trojan
     server: 43.199.202.97
     port: 51396
@@ -93,76 +93,55 @@ proxies:
     password: bb839d14960b7a4fb1e95a3aef990528
     sni: www.nintendogames.net
     skip-cert-verify: true
-  - name: 🇺🇸US_5|2.7MB/s
+  - name: 美国3|@ripaojiedian
     type: trojan
     server: 18.162.154.153
     port: 34638
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
-  - name: 🇺🇸US_1|2.5MB/s
+  - name: 🇩🇪DE_1|1.8MB/s
     type: vless
-    server: 185.92.180.178
-    port: 443
-    uuid: Telegram-CNT-Cafe
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: 🇭🇰HK_1|4.6MB/s
+    server: 104.27.82.154
+    port: 8880
+    uuid: 0ed342c3-eb45-4d63-83a1-697252636ca9
+    tls: false
+    network: ws
+    ws-opts:
+      path: /pyip=ProxyIP.KR.CMLiussss.net
+      headers:
+        Host: yellow-hall-d482.260-d22.workers.dev
+  - name: 🇭🇰HK_1|4.0MB/s
     type: trojan
     server: 114.80.8.128
     port: 39001
     password: 1df3ece1218bedba28c6c6ac726a07bb
     sni: 114.80.8.128
     skip-cert-verify: true
-  - name: 🇸🇬SG_5|4.2MB/s
+  - name: 🇺🇸US_1|3.8MB/s
+    type: vmess
+    server: v45.hdacd.com
+    port: 30845
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 🇸🇬SG_1|3.7MB/s
     type: trojan
     server: 104.18.33.209
     port: 443
     password: '666'
     sni: gdurt.ia6o.2s1.hh.penqiask.ccwu.cc
     skip-cert-verify: false
-  - name: 🇸🇬SG_6|3.5MB/s
-    type: vless
-    server: 172.64.42.44
-    port: 443
-    uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-    tls: true
-    network: ws
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: t1s1.rittbo.kdns.fr
-  - name: 🇯🇵JP_3|3.9MB/s
+  - name: 🇸🇬SG_2|4.5MB/s
     type: trojan
-    server: rich-mule.rooster465.autos
+    server: yx.cloudflare.182682.xyz
     port: 443
-    password: PI36027154
-    sni: rich-mule.rooster465.autos
-    skip-cert-verify: true
-  - name: 🇯🇵JP_6|3.9MB/s
-    type: vless
-    server: download.yunzhongzhuan.com
-    port: 8880
-    uuid: 1cae67cd-9f09-4c59-94e6-998ed0346c44
-    tls: false
-    network: ws
-    ws-opts:
-      path: /pyip=ProxyIP.US.CMLiussss.net
-      headers:
-        Host: lingering-lab-91a6.54-8c3.workers.dev
-  - name: 🇸🇬SG_9|1.8MB/s
-    type: vless
-    server: 162.159.48.193
-    port: 8880
-    uuid: 8995976a-1c81-4b44-a414-d3bc71058a21
-    tls: false
-    network: ws
-    ws-opts:
-      path: /pyip=ProxyIP.JP.CMLiussss.net
-      headers:
-        Host: muddy-queen-cdda.181-cf9.workers.dev
-  - name: 🇺🇸US_7|3.1MB/s
+    password: '666'
+    sni: gdurt.ia6o.2s1.hh.penqiask.ccwu.cc
+    skip-cert-verify: false
+  - name: 🇺🇸US_3|2.7MB/s
     type: vless
     server: 64.186.234.50
     port: 443
@@ -170,12 +149,95 @@ proxies:
     tls: true
     network: ws
     ws-opts:
-      path: /fp=chrome
+      path: /fp=chromefp=chrome
       headers:
         Host: t1s1.rittbo.kdns.fr
-  - name: 🇺🇸US_8|2.7MB/s
+  - name: 🇺🇸US_4|3.5MB/s
     type: vless
     server: www.ntu.edu.sg
+    port: 443
+    uuid: 552a071a-7a69-49b5-9a82-f353229d82ad
+    tls: true
+    network: ws
+    ws-opts:
+      path: /fp=randomfp=chrome
+      headers:
+        Host: gy.hhawks.kdns.fr
+  - name: 🇸🇬SG_4|4.7MB/s
+    type: trojan
+    server: 104.18.33.225
+    port: 443
+    password: '666'
+    sni: gdurt.ia6o.2s1.hh.penqiask.ccwu.cc
+    skip-cert-verify: false
+  - name: 🇸🇬SG_5|3.6MB/s
+    type: trojan
+    server: 104.18.39.216
+    port: 443
+    password: '666'
+    sni: gdurt.ia6o.2s1.hh.penqiask.ccwu.cc
+    skip-cert-verify: false
+  - name: 🇯🇵JP_1|4.1MB/s
+    type: trojan
+    server: saas.sin.fan
+    port: 443
+    password: '666'
+    sni: gdurt.ia6o.2s1.hh.penqiask.ccwu.cc
+    skip-cert-verify: false
+  - name: 🇯🇵JP_2|4.5MB/s
+    type: trojan
+    server: happy-monkfish.rooster465.autos
+    port: 443
+    password: HW85960347
+    sni: happy-monkfish.rooster465.autos
+    skip-cert-verify: false
+  - name: 🇳🇱NL_1|2.3MB/s
+    type: vless
+    server: log.bpminecraft.com
+    port: 8880
+    uuid: 38135fde-7044-4407-8faf-e1ab08e47402
+    tls: false
+    network: ws
+    ws-opts:
+      path: /pyip=ProxyIP.KR.CMLiussss.net
+      headers:
+        Host: white-bush-712e.498-f8f.workers.dev
+  - name: 🇩🇪DE_2|2.0MB/s
+    type: vless
+    server: 45.155.71.170
+    port: 50443
+    uuid: ab51054f-de76-4a0f-9f3a-b44c8df86a6c
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇯🇵JP_3|4.8MB/s
+    type: vless
+    server: 151.244.134.175
+    port: 443
+    uuid: 1fefd524-5e7c-4091-9777-4c9c3c360b21
+    tls: true
+    network: tcp
+  - name: 🇺🇸US_5|2.5MB/s
+    type: vless
+    server: 10086.cf.3666888.xyz
+    port: 2095
+    uuid: 4a805850-a2c4-42b3-898a-798f0c19c609
+    tls: false
+    network: ws
+    ws-opts:
+      path: /aba36820.xn--nxa.nyc.mn
+      headers:
+        Host: aba36820.xn--nxa.nyc.mn
+  - name: 🇫🇷FR_2|2.1MB/s
+    type: trojan
+    server: intense-basilisk.rooster465.autos
+    port: 443
+    password: XG59623478
+    sni: intense-basilisk.rooster465.autos
+    skip-cert-verify: false
+  - name: 🇺🇸US_7|3.2MB/s
+    type: vless
+    server: 38.59.242.198
     port: 443
     uuid: 552a071a-7a69-49b5-9a82-f353229d82ad
     tls: true
@@ -184,31 +246,27 @@ proxies:
       path: /fp=random
       headers:
         Host: gy.hhawks.kdns.fr
-  - name: 🇸🇬SG_11|2.2MB/s
+  - name: 🇯🇵JP_4|3.5MB/s
     type: vless
-    server: codecanyon.net
+    server: download.yunzhongzhuan.com
     port: 8880
-    uuid: 1cae67cd-9f09-4c59-94e6-998ed0346c44
+    uuid: e9d9f06f-d5dd-460a-998f-52efc4732636
     tls: false
     network: ws
     ws-opts:
-      path: /pyip=ProxyIP.US.CMLiussss.net
+      path: /pyip=ProxyIP.SG.CMLiussss.net
       headers:
-        Host: lingering-lab-91a6.54-8c3.workers.dev
-  - name: 🇩🇪DE_1|3.3MB/s
-    type: vless
-    server: icook.tw
-    port: 8880
-    uuid: 80cead8e-0d28-4b0a-bacd-8005471a5c39
-    tls: false
-    network: ws
-    ws-opts:
-      path: /pyip=ProxyIP.KR.CMLiussss.net
-      headers:
-        Host: flat-fire-40ed.96-042.workers.dev
-  - name: 🇸🇬SG_12|3.7MB/s
+        Host: bitter-meadow-1d60.313-0f9.workers.dev
+  - name: 🇸🇬SG_6|4.0MB/s
     type: trojan
-    server: yx.cloudflare.182682.xyz
+    server: 104.18.46.170
+    port: 443
+    password: '666'
+    sni: gdurt.ia6o.2s1.hh.penqiask.ccwu.cc
+    skip-cert-verify: false
+  - name: 🇯🇵JP_7|4.3MB/s
+    type: trojan
+    server: 13.113.194.44
     port: 443
     password: '666'
     sni: gdurt.ia6o.2s1.hh.penqiask.ccwu.cc
@@ -313,6 +371,33 @@ proxies:
     password: Mitivpn
     sni: www.gamingdll.ir
     skip-cert-verify: false
+  - name: 香港+电讯盈科有限公司
+    type: trojan
+    server: jpbgp.netvigor.cc
+    port: 19128
+    password: OccIqeORGQwiNkwS
+    sni: yazhou10.dynu.net
+    skip-cert-verify: false
+  - name: 德国 法尔肯施泰因HETZNER
+    type: vmess
+    server: me.echo-license.gr
+    port: 14991
+    uuid: fbd2b2f1-af4a-4e5f-9556-af37edea9db5
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: tcp
+  - name: 美国+CloudFlare节点
+    type: vless
+    server: cloudflare-ip.mofashi.ltd
+    port: 443
+    uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: t1s1.rittbo.kdns.fr
   - name: 美国+V2CROSS.COM
     type: trojan
     server: 149.104.104.58
@@ -320,49 +405,13 @@ proxies:
     password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
     sni: 149.104.104.58
     skip-cert-verify: false
-  - name: 美国+CloudFlare节点
-    type: vless
-    server: 172.64.153.159
-    port: 443
-    uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: t1s1.rittbo.kdns.fr
-  - name: 美国+CloudFlare节点 [1]
-    type: vless
-    server: 104.21.227.134
-    port: 443
-    uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: t1s1.rittbo.kdns.fr
   - name: 罗马尼亚+V2CROSS.COM
     type: trojan
-    server: 185.137.157.138
+    server: 185.137.157.156
     port: 443
     password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-    sni: 185.137.157.138
+    sni: 185.137.157.156
     skip-cert-verify: false
-  - name: 土耳其+V2CROSS.COM
-    type: trojan
-    server: 78.135.73.38
-    port: 449
-    password: 0ds_NIm933rf_Nxio294_nbZi3
-    sni: grape-ataturk-tr.yyuyy.com
-    skip-cert-verify: false
-  - name: 美国+新泽西州(Merck公司)
-    type: vless
-    server: 54.37.5.124
-    port: 53411
-    uuid: aec17618-49c5-4bda-8f55-db9f430f7ca0
-    tls: false
-    network: tcp
   - name: 罗马尼亚+V2CROSS.COM [1]
     type: trojan
     server: 185.137.157.149
@@ -372,10 +421,10 @@ proxies:
     skip-cert-verify: false
   - name: 罗马尼亚+V2CROSS.COM [2]
     type: trojan
-    server: 185.137.157.145
+    server: 185.137.157.140
     port: 443
     password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-    sni: 185.137.157.145
+    sni: 185.137.157.140
     skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
@@ -389,26 +438,34 @@ proxy-groups:
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
-      - 🇯🇵JP_1|5.1MB/s
+      - 日本|@ripaojiedian
       - 日本3|@ripaojiedian
-      - 🇸🇬SG_3|2.6MB/s
+      - 新加坡|@ripaojiedian
       - 新加坡2|@ripaojiedian
-      - 🇸🇬SG_4|3.3MB/s
+      - 新加坡3|@ripaojiedian
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
-      - 🇺🇸US_5|2.7MB/s
-      - 🇺🇸US_1|2.5MB/s
-      - 🇭🇰HK_1|4.6MB/s
-      - 🇸🇬SG_5|4.2MB/s
-      - 🇸🇬SG_6|3.5MB/s
-      - 🇯🇵JP_3|3.9MB/s
-      - 🇯🇵JP_6|3.9MB/s
-      - 🇸🇬SG_9|1.8MB/s
-      - 🇺🇸US_7|3.1MB/s
-      - 🇺🇸US_8|2.7MB/s
-      - 🇸🇬SG_11|2.2MB/s
-      - 🇩🇪DE_1|3.3MB/s
-      - 🇸🇬SG_12|3.7MB/s
+      - 美国3|@ripaojiedian
+      - 🇩🇪DE_1|1.8MB/s
+      - 🇭🇰HK_1|4.0MB/s
+      - 🇺🇸US_1|3.8MB/s
+      - 🇸🇬SG_1|3.7MB/s
+      - 🇸🇬SG_2|4.5MB/s
+      - 🇺🇸US_3|2.7MB/s
+      - 🇺🇸US_4|3.5MB/s
+      - 🇸🇬SG_4|4.7MB/s
+      - 🇸🇬SG_5|3.6MB/s
+      - 🇯🇵JP_1|4.1MB/s
+      - 🇯🇵JP_2|4.5MB/s
+      - 🇳🇱NL_1|2.3MB/s
+      - 🇩🇪DE_2|2.0MB/s
+      - 🇯🇵JP_3|4.8MB/s
+      - 🇺🇸US_5|2.5MB/s
+      - 🇫🇷FR_2|2.1MB/s
+      - 🇺🇸US_7|3.2MB/s
+      - 🇯🇵JP_4|3.5MB/s
+      - 🇸🇬SG_6|4.0MB/s
+      - 🇯🇵JP_7|4.3MB/s
       - AE_speednode_0001
       - CZ_speednode_0002
       - GB_speednode_0005
@@ -422,12 +479,11 @@ proxy-groups:
       - US_speednode_0055
       - US_speednode_0056
       - US_speednode_0063
-      - 美国+V2CROSS.COM
+      - 香港+电讯盈科有限公司
+      - 德国 法尔肯施泰因HETZNER
       - 美国+CloudFlare节点
-      - 美国+CloudFlare节点 [1]
+      - 美国+V2CROSS.COM
       - 罗马尼亚+V2CROSS.COM
-      - 土耳其+V2CROSS.COM
-      - 美国+新泽西州(Merck公司)
       - 罗马尼亚+V2CROSS.COM [1]
       - 罗马尼亚+V2CROSS.COM [2]
   - name: ♻️ 自动选择
@@ -438,26 +494,34 @@ proxy-groups:
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
-      - 🇯🇵JP_1|5.1MB/s
+      - 日本|@ripaojiedian
       - 日本3|@ripaojiedian
-      - 🇸🇬SG_3|2.6MB/s
+      - 新加坡|@ripaojiedian
       - 新加坡2|@ripaojiedian
-      - 🇸🇬SG_4|3.3MB/s
+      - 新加坡3|@ripaojiedian
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
-      - 🇺🇸US_5|2.7MB/s
-      - 🇺🇸US_1|2.5MB/s
-      - 🇭🇰HK_1|4.6MB/s
-      - 🇸🇬SG_5|4.2MB/s
-      - 🇸🇬SG_6|3.5MB/s
-      - 🇯🇵JP_3|3.9MB/s
-      - 🇯🇵JP_6|3.9MB/s
-      - 🇸🇬SG_9|1.8MB/s
-      - 🇺🇸US_7|3.1MB/s
-      - 🇺🇸US_8|2.7MB/s
-      - 🇸🇬SG_11|2.2MB/s
-      - 🇩🇪DE_1|3.3MB/s
-      - 🇸🇬SG_12|3.7MB/s
+      - 美国3|@ripaojiedian
+      - 🇩🇪DE_1|1.8MB/s
+      - 🇭🇰HK_1|4.0MB/s
+      - 🇺🇸US_1|3.8MB/s
+      - 🇸🇬SG_1|3.7MB/s
+      - 🇸🇬SG_2|4.5MB/s
+      - 🇺🇸US_3|2.7MB/s
+      - 🇺🇸US_4|3.5MB/s
+      - 🇸🇬SG_4|4.7MB/s
+      - 🇸🇬SG_5|3.6MB/s
+      - 🇯🇵JP_1|4.1MB/s
+      - 🇯🇵JP_2|4.5MB/s
+      - 🇳🇱NL_1|2.3MB/s
+      - 🇩🇪DE_2|2.0MB/s
+      - 🇯🇵JP_3|4.8MB/s
+      - 🇺🇸US_5|2.5MB/s
+      - 🇫🇷FR_2|2.1MB/s
+      - 🇺🇸US_7|3.2MB/s
+      - 🇯🇵JP_4|3.5MB/s
+      - 🇸🇬SG_6|4.0MB/s
+      - 🇯🇵JP_7|4.3MB/s
       - AE_speednode_0001
       - CZ_speednode_0002
       - GB_speednode_0005
@@ -471,12 +535,11 @@ proxy-groups:
       - US_speednode_0055
       - US_speednode_0056
       - US_speednode_0063
-      - 美国+V2CROSS.COM
+      - 香港+电讯盈科有限公司
+      - 德国 法尔肯施泰因HETZNER
       - 美国+CloudFlare节点
-      - 美国+CloudFlare节点 [1]
+      - 美国+V2CROSS.COM
       - 罗马尼亚+V2CROSS.COM
-      - 土耳其+V2CROSS.COM
-      - 美国+新泽西州(Merck公司)
       - 罗马尼亚+V2CROSS.COM [1]
       - 罗马尼亚+V2CROSS.COM [2]
     url: http://www.gstatic.com/generate_204
@@ -489,26 +552,34 @@ proxy-groups:
       - 香港3|@ripaojiedian
       - 香港4|@ripaojiedian
       - 香港5|@ripaojiedian
-      - 🇯🇵JP_1|5.1MB/s
+      - 日本|@ripaojiedian
       - 日本3|@ripaojiedian
-      - 🇸🇬SG_3|2.6MB/s
+      - 新加坡|@ripaojiedian
       - 新加坡2|@ripaojiedian
-      - 🇸🇬SG_4|3.3MB/s
+      - 新加坡3|@ripaojiedian
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
-      - 🇺🇸US_5|2.7MB/s
-      - 🇺🇸US_1|2.5MB/s
-      - 🇭🇰HK_1|4.6MB/s
-      - 🇸🇬SG_5|4.2MB/s
-      - 🇸🇬SG_6|3.5MB/s
-      - 🇯🇵JP_3|3.9MB/s
-      - 🇯🇵JP_6|3.9MB/s
-      - 🇸🇬SG_9|1.8MB/s
-      - 🇺🇸US_7|3.1MB/s
-      - 🇺🇸US_8|2.7MB/s
-      - 🇸🇬SG_11|2.2MB/s
-      - 🇩🇪DE_1|3.3MB/s
-      - 🇸🇬SG_12|3.7MB/s
+      - 美国3|@ripaojiedian
+      - 🇩🇪DE_1|1.8MB/s
+      - 🇭🇰HK_1|4.0MB/s
+      - 🇺🇸US_1|3.8MB/s
+      - 🇸🇬SG_1|3.7MB/s
+      - 🇸🇬SG_2|4.5MB/s
+      - 🇺🇸US_3|2.7MB/s
+      - 🇺🇸US_4|3.5MB/s
+      - 🇸🇬SG_4|4.7MB/s
+      - 🇸🇬SG_5|3.6MB/s
+      - 🇯🇵JP_1|4.1MB/s
+      - 🇯🇵JP_2|4.5MB/s
+      - 🇳🇱NL_1|2.3MB/s
+      - 🇩🇪DE_2|2.0MB/s
+      - 🇯🇵JP_3|4.8MB/s
+      - 🇺🇸US_5|2.5MB/s
+      - 🇫🇷FR_2|2.1MB/s
+      - 🇺🇸US_7|3.2MB/s
+      - 🇯🇵JP_4|3.5MB/s
+      - 🇸🇬SG_6|4.0MB/s
+      - 🇯🇵JP_7|4.3MB/s
       - AE_speednode_0001
       - CZ_speednode_0002
       - GB_speednode_0005
@@ -522,12 +593,11 @@ proxy-groups:
       - US_speednode_0055
       - US_speednode_0056
       - US_speednode_0063
-      - 美国+V2CROSS.COM
+      - 香港+电讯盈科有限公司
+      - 德国 法尔肯施泰因HETZNER
       - 美国+CloudFlare节点
-      - 美国+CloudFlare节点 [1]
+      - 美国+V2CROSS.COM
       - 罗马尼亚+V2CROSS.COM
-      - 土耳其+V2CROSS.COM
-      - 美国+新泽西州(Merck公司)
       - 罗马尼亚+V2CROSS.COM [1]
       - 罗马尼亚+V2CROSS.COM [2]
     url: http://www.gstatic.com/generate_204
