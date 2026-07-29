@@ -188,17 +188,94 @@ proxies:
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
-  - name: ❓Other_1|2.1MB/s
+  - name: 🇩🇪DE_1|2.5MB/s
+    type: trojan
+    server: undef.network
+    port: 8443
+    password: 5xjmr1dz66pgsew0
+    sni: com.digitalposts.dpdns.org
+    skip-cert-verify: true
+  - name: 🇳🇱NL_1|2.5MB/s
     type: vless
-    server: 172.64.146.86
+    server: api.getsavesafe.net
     port: 443
-    uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+    uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
+    tls: true
+    network: tcp
+  - name: 🇹🇷TR_1|1.5MB/s
+    type: vless
+    server: 170.168.97.3
+    port: 8443
+    uuid: 5e243126-4a2a-84b6-782a-73b14797fb5f
+    tls: true
+    network: grpc
+  - name: 🇨🇦CA_2|2.1MB/s
+    type: vless
+    server: 216.152.147.28
+    port: 443
+    uuid: d9e4721d-cdac-44c7-bc91-117367eac194
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇺🇸US_2|2.6MB/s
+    type: vless
+    server: 167.17.69.171
+    port: 443
+    uuid: 00144519-7e0d-476b-8d28-435576af9262
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇳🇱NL_3|2.2MB/s
+    type: vless
+    server: 88.218.44.4
+    port: 993
+    uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇫🇮FI_1|1.8MB/s
+    type: vless
+    server: 188.241.241.3
+    port: 2053
+    uuid: c7e9c591-2764-423a-afca-efbd010fd396
     tls: true
     network: ws
     ws-opts:
-      path: /sg-melbifp=chrome
+      path: /fp=chrome
       headers:
-        Host: support.zoom.us.yxls.eu.cc
+        Host: forfreeuse.sub-flow.online
+  - name: 🇫🇮FI_2|2.3MB/s
+    type: vless
+    server: 212.34.144.154
+    port: 2053
+    uuid: c7e9c591-2764-423a-afca-efbd010fd396
+    tls: true
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: forfreeuse.sub-flow.online
+  - name: 🇩🇪DE_2|2.5MB/s
+    type: trojan
+    server: hyperon.site
+    port: 8443
+    password: 5xjmr1dz66pgsew0
+    sni: com.digitalposts.dpdns.org
+    skip-cert-verify: false
+  - name: 🇷🇺RU_2|2.3MB/s
+    type: vless
+    server: 88.218.44.4
+    port: 8443
+    uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+    tls: true
+    network: grpc
+  - name: 🇳🇱NL_5|3.1MB/s
+    type: vless
+    server: 193.123.62.167
+    port: 62145
+    uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+    tls: false
+    network: tcp
   - name: DE_speednode_0002
     type: vless
     server: 51.89.23.94
@@ -280,60 +357,61 @@ proxies:
     password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
     sni: hk.catxstar.com
     skip-cert-verify: true
-  - name: 美国+Fastly全球Anycast节点
+  - name: 美国+V2CROSS.COM
     type: vless
-    server: 151.101.193.54
+    server: 167.82.0.17
     port: 80
-    uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
+    uuid: 993aa8b6-7160-4202-970b-b3139cbc72a6
     tls: false
     network: ws
     ws-opts:
       path: /
       headers:
         Host: BankMelat.glObal.ssl.faStly.nEt.
-  - name: 美国+CloudFlare节点
+  - name: 美国+宾利大学
     type: vless
-    server: icook.hk
+    server: 141.133.172.222
+    port: 20342
+    uuid: 5eecb34f-c905-4c77-b7fb-d830b451cd11
+    tls: false
+    network: tcp
+  - name: 西班牙+V2CROSS.COM
+    type: trojan
+    server: 185.18.250.252
     port: 443
-    uuid: 29ca503d-e6b8-4509-b666-48133f450857
-    tls: true
-    network: ws
-    ws-opts:
-      path: /fdip
-      headers:
-        Host: learn00.evany.de5.net
-  - name: 俄罗斯+V2CROSS.COM
+    password: humanity
+    sni: www.calmlunch.com
+    skip-cert-verify: false
+  - name: 美国+CloudFlare节点
+    type: trojan
+    server: 104.17.121.9
+    port: 443
+    password: humanity
+    sni: www.calmlunch.com
+    skip-cert-verify: true
+  - name: 捷克+V2CROSS.COM
+    type: vless
+    server: 95.85.229.112
+    port: 443
+    uuid: a34b5e88-cf0d-4c01-8199-2d1002d3c787
+    tls: false
+    network: tcp
+    flow: xtls-rprx-vision
+  - name: 美国+V2CROSS.COM [1]
+    type: vless
+    server: jdvymxi.cvewfjg.shop
+    port: 443
+    uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
+    tls: false
+    network: tcp
+    flow: xtls-rprx-vision
+  - name: 伊朗+V2CROSS.COM
     type: vless
     server: fn.fifapes.monster
     port: 2090
     uuid: eab915bc-d2df-73d1-47d0-6eb240497055
     tls: false
     network: tcp
-  - name: 英国+Technicolor+SA
-    type: trojan
-    server: oplosgru-c.catcat321.com
-    port: 20068
-    password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-    sni: hk.catxstar.com
-    skip-cert-verify: false
-  - name: 美国+CloudFlare节点 [1]
-    type: vless
-    server: 172.67.149.60
-    port: 443
-    uuid: 5aafc2be-9348-4dec-b896-f4a91253bbca
-    tls: true
-    network: ws
-    ws-opts:
-      path: /id-tksi
-      headers:
-        Host: support.zoom.us.yxls.eu.cc
-  - name: 英国+Technicolor+SA [1]
-    type: trojan
-    server: Hkdcrtc-e.catcat321.com
-    port: 20066
-    password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-    sni: hk.catxstar.com
-    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -364,7 +442,17 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - ❓Other_1|2.1MB/s
+      - 🇩🇪DE_1|2.5MB/s
+      - 🇳🇱NL_1|2.5MB/s
+      - 🇹🇷TR_1|1.5MB/s
+      - 🇨🇦CA_2|2.1MB/s
+      - 🇺🇸US_2|2.6MB/s
+      - 🇳🇱NL_3|2.2MB/s
+      - 🇫🇮FI_1|1.8MB/s
+      - 🇫🇮FI_2|2.3MB/s
+      - 🇩🇪DE_2|2.5MB/s
+      - 🇷🇺RU_2|2.3MB/s
+      - 🇳🇱NL_5|3.1MB/s
       - DE_speednode_0002
       - ES_speednode_0004
       - GB_speednode_0005
@@ -374,12 +462,13 @@ proxy-groups:
       - US_speednode_0082
       - US_speednode_0083
       - US_speednode_0084
-      - 美国+Fastly全球Anycast节点
+      - 美国+V2CROSS.COM
+      - 美国+宾利大学
+      - 西班牙+V2CROSS.COM
       - 美国+CloudFlare节点
-      - 俄罗斯+V2CROSS.COM
-      - 英国+Technicolor+SA
-      - 美国+CloudFlare节点 [1]
-      - 英国+Technicolor+SA [1]
+      - 捷克+V2CROSS.COM
+      - 美国+V2CROSS.COM [1]
+      - 伊朗+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -406,7 +495,17 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - ❓Other_1|2.1MB/s
+      - 🇩🇪DE_1|2.5MB/s
+      - 🇳🇱NL_1|2.5MB/s
+      - 🇹🇷TR_1|1.5MB/s
+      - 🇨🇦CA_2|2.1MB/s
+      - 🇺🇸US_2|2.6MB/s
+      - 🇳🇱NL_3|2.2MB/s
+      - 🇫🇮FI_1|1.8MB/s
+      - 🇫🇮FI_2|2.3MB/s
+      - 🇩🇪DE_2|2.5MB/s
+      - 🇷🇺RU_2|2.3MB/s
+      - 🇳🇱NL_5|3.1MB/s
       - DE_speednode_0002
       - ES_speednode_0004
       - GB_speednode_0005
@@ -416,12 +515,13 @@ proxy-groups:
       - US_speednode_0082
       - US_speednode_0083
       - US_speednode_0084
-      - 美国+Fastly全球Anycast节点
+      - 美国+V2CROSS.COM
+      - 美国+宾利大学
+      - 西班牙+V2CROSS.COM
       - 美国+CloudFlare节点
-      - 俄罗斯+V2CROSS.COM
-      - 英国+Technicolor+SA
-      - 美国+CloudFlare节点 [1]
-      - 英国+Technicolor+SA [1]
+      - 捷克+V2CROSS.COM
+      - 美国+V2CROSS.COM [1]
+      - 伊朗+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -450,7 +550,17 @@ proxy-groups:
       - 美国|@ripaojiedian
       - 美国2|@ripaojiedian
       - 美国3|@ripaojiedian
-      - ❓Other_1|2.1MB/s
+      - 🇩🇪DE_1|2.5MB/s
+      - 🇳🇱NL_1|2.5MB/s
+      - 🇹🇷TR_1|1.5MB/s
+      - 🇨🇦CA_2|2.1MB/s
+      - 🇺🇸US_2|2.6MB/s
+      - 🇳🇱NL_3|2.2MB/s
+      - 🇫🇮FI_1|1.8MB/s
+      - 🇫🇮FI_2|2.3MB/s
+      - 🇩🇪DE_2|2.5MB/s
+      - 🇷🇺RU_2|2.3MB/s
+      - 🇳🇱NL_5|3.1MB/s
       - DE_speednode_0002
       - ES_speednode_0004
       - GB_speednode_0005
@@ -460,12 +570,13 @@ proxy-groups:
       - US_speednode_0082
       - US_speednode_0083
       - US_speednode_0084
-      - 美国+Fastly全球Anycast节点
+      - 美国+V2CROSS.COM
+      - 美国+宾利大学
+      - 西班牙+V2CROSS.COM
       - 美国+CloudFlare节点
-      - 俄罗斯+V2CROSS.COM
-      - 英国+Technicolor+SA
-      - 美国+CloudFlare节点 [1]
-      - 英国+Technicolor+SA [1]
+      - 捷克+V2CROSS.COM
+      - 美国+V2CROSS.COM [1]
+      - 伊朗+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
