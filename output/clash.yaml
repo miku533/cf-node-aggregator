@@ -306,78 +306,68 @@ proxies:
     password: 41c406e2-12b5-41f2-a329-d0621052d675
     sni: hk.catxstar.com
     skip-cert-verify: false
-  - name: 英国+Technicolor+SA [1]
-    type: trojan
-    server: hkdcrtc-e.catcat321.com
-    port: 20129
-    password: 41c406e2-12b5-41f2-a329-d0621052d675
-    sni: hk.catxstar.com
-    skip-cert-verify: false
-  - name: 俄罗斯+V2CROSS.COM
+  - name: 德国+V2CROSS.COM
     type: vless
-    server: 91.193.58.140
-    port: 2096
-    uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+    server: kzbkjum.cvewfjg.shop
+    port: 443
+    uuid: 59eefc04-b831-45cf-8d68-63ca23381171
+    tls: false
+    network: tcp
+    flow: xtls-rprx-vision
+  - name: 美国+CloudFlare节点
+    type: vless
+    server: 162.159.141.83
+    port: 443
+    uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
     tls: true
     network: ws
     ws-opts:
-      path: /free-server.techsonic.dev
+      path: /sg-melbi
       headers:
-        Host: free-server.techsonic.dev
+        Host: support.zoom.us.yxls.eu.cc
   - name: 美国+V2CROSS.COM
+    type: vless
+    server: jdwadgw.cvewfjg.shop
+    port: 443
+    uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
+    tls: false
+    network: tcp
+    flow: xtls-rprx-vision
+  - name: 美国+V2CROSS.COM [1]
+    type: vless
+    server: 152.53.127.214
+    port: 443
+    uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
+    tls: false
+    network: raw
+    flow: xtls-rprx-vision
+  - name: 美国+V2CROSS.COM [2]
     type: trojan
     server: 149.104.104.58
     port: 443
     password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
     sni: 149.104.104.58
     skip-cert-verify: false
-  - name: 美国+V2CROSS.COM [1]
+  - name: 俄罗斯+V2CROSS.COM
     type: vless
-    server: 45.155.52.231
+    server: 185.232.117.114
     port: 443
-    uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
-    tls: false
-    network: tcp
-  - name: 保加利亚+V2CROSS.COM
-    type: vless
-    server: 185.246.223.158
-    port: 443
-    uuid: dd8b69d3-5ef6-418c-a94c-2f4f37d88a7f
+    uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
     tls: false
     network: tcp
     flow: xtls-rprx-vision
-  - name: 美国+V2CROSS.COM [2]
+  - name: 英国+Technicolor+SA [1]
+    type: trojan
+    server: oplosgru-c.catcat321.com
+    port: 20088
+    password: 41c406e2-12b5-41f2-a329-d0621052d675
+    sni: hk.catxstar.com
+    skip-cert-verify: true
+  - name: 希腊+V2CROSS.COM
     type: vless
-    server: 152.53.127.214
-    port: 443
-    uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 英国+V2CROSS.COM
-    type: vless
-    server: 31.76.251.127.cdn-one.org
-    port: 443
-    uuid: 4f375fb4-3c95-425f-bc7b-8085487a6f3c
-    tls: true
-    network: ws
-    ws-opts:
-      path: /10336/2GCOqG7bvA
-      headers:
-        Host: 31.76.251.127.cdn-one.org
-  - name: 美国+V2CROSS.COM [3]
-    type: vless
-    server: 152.53.239.182
-    port: 443
-    uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 美国+V2CROSS.COM [4]
-    type: vless
-    server: 170.168.97.3
+    server: 88.218.44.4
     port: 993
-    uuid: e6d41d6f-d58a-7650-bba4-d7f0dde3ba4d
+    uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
     tls: false
     network: tcp
     flow: xtls-rprx-vision
@@ -426,15 +416,14 @@ proxy-groups:
       - 🇳🇱NL_7|4.0MB/s
       - US_speednode_0021
       - 英国+Technicolor+SA
-      - 英国+Technicolor+SA [1]
-      - 俄罗斯+V2CROSS.COM
+      - 德国+V2CROSS.COM
+      - 美国+CloudFlare节点
       - 美国+V2CROSS.COM
       - 美国+V2CROSS.COM [1]
-      - 保加利亚+V2CROSS.COM
       - 美国+V2CROSS.COM [2]
-      - 英国+V2CROSS.COM
-      - 美国+V2CROSS.COM [3]
-      - 美国+V2CROSS.COM [4]
+      - 俄罗斯+V2CROSS.COM
+      - 英国+Technicolor+SA [1]
+      - 希腊+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -476,15 +465,14 @@ proxy-groups:
       - 🇳🇱NL_7|4.0MB/s
       - US_speednode_0021
       - 英国+Technicolor+SA
-      - 英国+Technicolor+SA [1]
-      - 俄罗斯+V2CROSS.COM
+      - 德国+V2CROSS.COM
+      - 美国+CloudFlare节点
       - 美国+V2CROSS.COM
       - 美国+V2CROSS.COM [1]
-      - 保加利亚+V2CROSS.COM
       - 美国+V2CROSS.COM [2]
-      - 英国+V2CROSS.COM
-      - 美国+V2CROSS.COM [3]
-      - 美国+V2CROSS.COM [4]
+      - 俄罗斯+V2CROSS.COM
+      - 英国+Technicolor+SA [1]
+      - 希腊+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -528,15 +516,14 @@ proxy-groups:
       - 🇳🇱NL_7|4.0MB/s
       - US_speednode_0021
       - 英国+Technicolor+SA
-      - 英国+Technicolor+SA [1]
-      - 俄罗斯+V2CROSS.COM
+      - 德国+V2CROSS.COM
+      - 美国+CloudFlare节点
       - 美国+V2CROSS.COM
       - 美国+V2CROSS.COM [1]
-      - 保加利亚+V2CROSS.COM
       - 美国+V2CROSS.COM [2]
-      - 英国+V2CROSS.COM
-      - 美国+V2CROSS.COM [3]
-      - 美国+V2CROSS.COM [4]
+      - 俄罗斯+V2CROSS.COM
+      - 英国+Technicolor+SA [1]
+      - 希腊+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
