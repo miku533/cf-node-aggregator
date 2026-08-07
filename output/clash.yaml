@@ -106,29 +106,29 @@ proxies:
     network: tcp
   - name: 香港3|@ripaojiedian
     type: trojan
-    server: 18.163.100.58
-    port: 17111
+    server: 18.166.178.12
+    port: 5077
     password: d1960ba9f0f6353353994fa844cf817b
     sni: www.nintendogames.net
     skip-cert-verify: true
   - name: 香港4|@ripaojiedian
     type: trojan
-    server: 16.162.3.64
-    port: 50115
+    server: 43.198.209.68
+    port: 27161
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
   - name: 香港5|@ripaojiedian
     type: trojan
-    server: 16.162.3.64
-    port: 11231
+    server: 16.162.161.131
+    port: 29444
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
   - name: 日本|@ripaojiedian
     type: trojan
-    server: 16.162.3.64
-    port: 4099
+    server: 95.40.58.84
+    port: 9408
     password: BxceQaOe
     sni: t.me%2Fripaojiedian
     skip-cert-verify: true
@@ -162,8 +162,8 @@ proxies:
     skip-cert-verify: false
   - name: 新加坡3|@ripaojiedian
     type: trojan
-    server: 95.40.205.94
-    port: 26704
+    server: 43.198.209.68
+    port: 41421
     password: BxceQaOe
     sni: t.me%2Fripaojiedian
     skip-cert-verify: true
@@ -183,8 +183,8 @@ proxies:
     skip-cert-verify: true
   - name: 美国3|@ripaojiedian
     type: trojan
-    server: 16.162.3.64
-    port: 53001
+    server: 95.40.58.84
+    port: 34039
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
@@ -299,7 +299,54 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
+  - name: 英国+Technicolor+SA
+    type: trojan
+    server: oplosgru-c.catcat321.com
+    port: 20034
+    password: 41c406e2-12b5-41f2-a329-d0621052d675
+    sni: hk.catxstar.com
+    skip-cert-verify: false
+  - name: 英国+Technicolor+SA [1]
+    type: trojan
+    server: hkdcrtc-e.catcat321.com
+    port: 20129
+    password: 41c406e2-12b5-41f2-a329-d0621052d675
+    sni: hk.catxstar.com
+    skip-cert-verify: false
+  - name: 俄罗斯+V2CROSS.COM
+    type: vless
+    server: 91.193.58.140
+    port: 2096
+    uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+    tls: true
+    network: ws
+    ws-opts:
+      path: /free-server.techsonic.dev
+      headers:
+        Host: free-server.techsonic.dev
   - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 149.104.104.58
+    port: 443
+    password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
+    sni: 149.104.104.58
+    skip-cert-verify: false
+  - name: 美国+V2CROSS.COM [1]
+    type: vless
+    server: 45.155.52.231
+    port: 443
+    uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
+    tls: false
+    network: tcp
+  - name: 保加利亚+V2CROSS.COM
+    type: vless
+    server: 185.246.223.158
+    port: 443
+    uuid: dd8b69d3-5ef6-418c-a94c-2f4f37d88a7f
+    tls: false
+    network: tcp
+    flow: xtls-rprx-vision
+  - name: 美国+V2CROSS.COM [2]
     type: vless
     server: 152.53.127.214
     port: 443
@@ -307,87 +354,33 @@ proxies:
     tls: false
     network: tcp
     flow: xtls-rprx-vision
-  - name: 美国 Microsoft数据中心
-    type: vmess
-    server: cindy52.ceoiii.com
-    port: 36803
-    uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /hls/cctv5phd.m3u8
-      headers:
-        Host: ajax.microsoft.com
-  - name: 英国+Technicolor+SA
-    type: trojan
-    server: hkdcrtc-e.catcat321.com
-    port: 20129
-    password: 41c406e2-12b5-41f2-a329-d0621052d675
-    sni: hk.catxstar.com
-    skip-cert-verify: false
-  - name: 希腊+V2CROSS.COM
+  - name: 英国+V2CROSS.COM
     type: vless
-    server: 88.218.44.4
-    port: 993
-    uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 美国+CloudFlare
-    type: trojan
-    server: 162.159.24.245
+    server: 31.76.251.127.cdn-one.org
     port: 443
-    password: 87961f9d-bee1-4377-826b-e169e7891c4f
-    sni: yks-dd9.pages.dev
-    skip-cert-verify: false
-  - name: 英国+Technicolor+SA [1]
-    type: trojan
-    server: oplosgru-c.catcat321.com
-    port: 20004
-    password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-    sni: hk.catxstar.com
-    skip-cert-verify: false
-  - name: 美国+CloudFlare节点
-    type: vless
-    server: 172.64.146.86
-    port: 443
-    uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+    uuid: 4f375fb4-3c95-425f-bc7b-8085487a6f3c
     tls: true
     network: ws
     ws-opts:
-      path: /sg-melbi
+      path: /10336/2GCOqG7bvA
       headers:
-        Host: support.zoom.us.yxls.eu.cc
-  - name: 美国+V2CROSS.COM [1]
+        Host: 31.76.251.127.cdn-one.org
+  - name: 美国+V2CROSS.COM [3]
     type: vless
-    server: jdwadgw.cvewfjg.shop
+    server: 152.53.239.182
     port: 443
     uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
     tls: false
     network: tcp
     flow: xtls-rprx-vision
-  - name: 芬兰 赫尔辛基Hetzner数据中心
-    type: vmess
-    server: y.telewebion.ir.varzesh3.com.de
-    port: 80
-    uuid: 524646b7-fe8f-42ee-8b73-e1ccc6855773
-    alterId: 0
-    cipher: auto
+  - name: 美国+V2CROSS.COM [4]
+    type: vless
+    server: 170.168.97.3
+    port: 993
+    uuid: e6d41d6f-d58a-7650-bba4-d7f0dde3ba4d
     tls: false
     network: tcp
-  - name: 美国+V2CROSS.COM [2]
-    type: vless
-    server: 199.232.78.159
-    port: 443
-    uuid: 82880171-779d-4c28-8a38-59f2769dccfa
-    tls: true
-    network: ws
-    ws-opts:
-      path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
-      headers:
-        Host: pan11.global.ssl.fastly.net
+    flow: xtls-rprx-vision
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -432,16 +425,16 @@ proxy-groups:
       - 🇨🇴CO_2|3.1MB/s
       - 🇳🇱NL_7|4.0MB/s
       - US_speednode_0021
-      - 美国+V2CROSS.COM
-      - 美国 Microsoft数据中心
       - 英国+Technicolor+SA
-      - 希腊+V2CROSS.COM
-      - 美国+CloudFlare
       - 英国+Technicolor+SA [1]
-      - 美国+CloudFlare节点
+      - 俄罗斯+V2CROSS.COM
+      - 美国+V2CROSS.COM
       - 美国+V2CROSS.COM [1]
-      - 芬兰 赫尔辛基Hetzner数据中心
+      - 保加利亚+V2CROSS.COM
       - 美国+V2CROSS.COM [2]
+      - 英国+V2CROSS.COM
+      - 美国+V2CROSS.COM [3]
+      - 美国+V2CROSS.COM [4]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -482,16 +475,16 @@ proxy-groups:
       - 🇨🇴CO_2|3.1MB/s
       - 🇳🇱NL_7|4.0MB/s
       - US_speednode_0021
-      - 美国+V2CROSS.COM
-      - 美国 Microsoft数据中心
       - 英国+Technicolor+SA
-      - 希腊+V2CROSS.COM
-      - 美国+CloudFlare
       - 英国+Technicolor+SA [1]
-      - 美国+CloudFlare节点
+      - 俄罗斯+V2CROSS.COM
+      - 美国+V2CROSS.COM
       - 美国+V2CROSS.COM [1]
-      - 芬兰 赫尔辛基Hetzner数据中心
+      - 保加利亚+V2CROSS.COM
       - 美国+V2CROSS.COM [2]
+      - 英国+V2CROSS.COM
+      - 美国+V2CROSS.COM [3]
+      - 美国+V2CROSS.COM [4]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -534,16 +527,16 @@ proxy-groups:
       - 🇨🇴CO_2|3.1MB/s
       - 🇳🇱NL_7|4.0MB/s
       - US_speednode_0021
-      - 美国+V2CROSS.COM
-      - 美国 Microsoft数据中心
       - 英国+Technicolor+SA
-      - 希腊+V2CROSS.COM
-      - 美国+CloudFlare
       - 英国+Technicolor+SA [1]
-      - 美国+CloudFlare节点
+      - 俄罗斯+V2CROSS.COM
+      - 美国+V2CROSS.COM
       - 美国+V2CROSS.COM [1]
-      - 芬兰 赫尔辛基Hetzner数据中心
+      - 保加利亚+V2CROSS.COM
       - 美国+V2CROSS.COM [2]
+      - 英国+V2CROSS.COM
+      - 美国+V2CROSS.COM [3]
+      - 美国+V2CROSS.COM [4]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
