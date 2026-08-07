@@ -299,24 +299,9 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 英国+Technicolor+SA
-    type: trojan
-    server: oplosgru-c.catcat321.com
-    port: 20034
-    password: 41c406e2-12b5-41f2-a329-d0621052d675
-    sni: hk.catxstar.com
-    skip-cert-verify: false
-  - name: 德国+V2CROSS.COM
+  - name: 巴西圣保罗+CloudFlare节点
     type: vless
-    server: kzbkjum.cvewfjg.shop
-    port: 443
-    uuid: 59eefc04-b831-45cf-8d68-63ca23381171
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 美国+CloudFlare节点
-    type: vless
-    server: 162.159.141.83
+    server: 188.114.98.66
     port: 443
     uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
     tls: true
@@ -325,49 +310,55 @@ proxies:
       path: /sg-melbi
       headers:
         Host: support.zoom.us.yxls.eu.cc
-  - name: 美国+V2CROSS.COM
+  - name: 英国+Technicolor+SA
+    type: trojan
+    server: oplosgru-c.catcat321.com
+    port: 20068
+    password: 41c406e2-12b5-41f2-a329-d0621052d675
+    sni: hk.catxstar.com
+    skip-cert-verify: false
+  - name: 乌克兰+V2CROSS.COM
     type: vless
-    server: jdwadgw.cvewfjg.shop
+    server: 31.43.191.39
     port: 443
-    uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
+    uuid: c28ee61d-0d43-4e69-8e6a-6397ed0ffc03
     tls: false
     network: tcp
     flow: xtls-rprx-vision
-  - name: 美国+V2CROSS.COM [1]
+  - name: 美国+纽约市DigitalOcean云公司
     type: vless
-    server: 152.53.127.214
+    server: 138.68.53.88
+    port: 443
+    uuid: 413a66e9-b05b-4ae6-a9eb-6d28204a28f4
+    tls: false
+    network: tcp
+  - name: 美国+V2CROSS.COM
+    type: vless
+    server: 152.53.239.182
     port: 443
     uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
     tls: false
     network: raw
     flow: xtls-rprx-vision
-  - name: 美国+V2CROSS.COM [2]
-    type: trojan
-    server: 149.104.104.58
-    port: 443
-    password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
-    sni: 149.104.104.58
-    skip-cert-verify: false
-  - name: 俄罗斯+V2CROSS.COM
-    type: vless
-    server: 185.232.117.114
-    port: 443
-    uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
   - name: 英国+Technicolor+SA [1]
     type: trojan
     server: oplosgru-c.catcat321.com
-    port: 20088
-    password: 41c406e2-12b5-41f2-a329-d0621052d675
+    port: 20004
+    password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
     sni: hk.catxstar.com
-    skip-cert-verify: true
-  - name: 希腊+V2CROSS.COM
+    skip-cert-verify: false
+  - name: 美国+V2CROSS.COM [1]
     type: vless
-    server: 88.218.44.4
-    port: 993
-    uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+    server: 45.155.52.231
+    port: 443
+    uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
+    tls: false
+    network: tcp
+  - name: 荷兰+V2CROSS.COM
+    type: vless
+    server: 94.102.51.218
+    port: 443
+    uuid: c28ee61d-0d43-4e69-8e6a-6397ed0ffc03
     tls: false
     network: tcp
     flow: xtls-rprx-vision
@@ -415,15 +406,14 @@ proxy-groups:
       - 🇨🇴CO_2|3.1MB/s
       - 🇳🇱NL_7|4.0MB/s
       - US_speednode_0021
+      - 巴西圣保罗+CloudFlare节点
       - 英国+Technicolor+SA
-      - 德国+V2CROSS.COM
-      - 美国+CloudFlare节点
+      - 乌克兰+V2CROSS.COM
+      - 美国+纽约市DigitalOcean云公司
       - 美国+V2CROSS.COM
-      - 美国+V2CROSS.COM [1]
-      - 美国+V2CROSS.COM [2]
-      - 俄罗斯+V2CROSS.COM
       - 英国+Technicolor+SA [1]
-      - 希腊+V2CROSS.COM
+      - 美国+V2CROSS.COM [1]
+      - 荷兰+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -464,15 +454,14 @@ proxy-groups:
       - 🇨🇴CO_2|3.1MB/s
       - 🇳🇱NL_7|4.0MB/s
       - US_speednode_0021
+      - 巴西圣保罗+CloudFlare节点
       - 英国+Technicolor+SA
-      - 德国+V2CROSS.COM
-      - 美国+CloudFlare节点
+      - 乌克兰+V2CROSS.COM
+      - 美国+纽约市DigitalOcean云公司
       - 美国+V2CROSS.COM
-      - 美国+V2CROSS.COM [1]
-      - 美国+V2CROSS.COM [2]
-      - 俄罗斯+V2CROSS.COM
       - 英国+Technicolor+SA [1]
-      - 希腊+V2CROSS.COM
+      - 美国+V2CROSS.COM [1]
+      - 荷兰+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -515,15 +504,14 @@ proxy-groups:
       - 🇨🇴CO_2|3.1MB/s
       - 🇳🇱NL_7|4.0MB/s
       - US_speednode_0021
+      - 巴西圣保罗+CloudFlare节点
       - 英国+Technicolor+SA
-      - 德国+V2CROSS.COM
-      - 美国+CloudFlare节点
+      - 乌克兰+V2CROSS.COM
+      - 美国+纽约市DigitalOcean云公司
       - 美国+V2CROSS.COM
-      - 美国+V2CROSS.COM [1]
-      - 美国+V2CROSS.COM [2]
-      - 俄罗斯+V2CROSS.COM
       - 英国+Technicolor+SA [1]
-      - 希腊+V2CROSS.COM
+      - 美国+V2CROSS.COM [1]
+      - 荷兰+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
