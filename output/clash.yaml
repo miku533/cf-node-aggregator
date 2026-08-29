@@ -5,96 +5,6 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - name: 防范境外势力渗透
-    type: vmess
-    server: 127.0.0.53
-    port: 80
-    uuid: 88888888-8888-8888-8888-888888888888
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: '防范境外势力渗透 #1'
-    type: vmess
-    server: 127.0.0.53
-    port: 81
-    uuid: 88888888-8888-8888-8888-888888888888
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: '防范境外势力渗透 #2'
-    type: vmess
-    server: 127.0.0.53
-    port: 82
-    uuid: 88888888-8888-8888-8888-888888888888
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: '防范境外势力渗透 #3'
-    type: vmess
-    server: 127.0.0.53
-    port: 83
-    uuid: 88888888-8888-8888-8888-888888888888
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: '防范境外势力渗透 #4'
-    type: vmess
-    server: 127.0.0.53
-    port: 84
-    uuid: 88888888-8888-8888-8888-888888888888
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: '防范境外势力渗透 #5'
-    type: vmess
-    server: 127.0.0.53
-    port: 85
-    uuid: 88888888-8888-8888-8888-888888888888
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: '防范境外势力渗透 #6'
-    type: vmess
-    server: 127.0.0.53
-    port: 86
-    uuid: 88888888-8888-8888-8888-888888888888
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: '防范境外势力渗透 #7'
-    type: vmess
-    server: 127.0.0.53
-    port: 87
-    uuid: 88888888-8888-8888-8888-888888888888
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: '防范境外势力渗透 #8'
-    type: vmess
-    server: 127.0.0.53
-    port: 88
-    uuid: 88888888-8888-8888-8888-888888888888
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: '防范境外势力渗透 #9'
-    type: vmess
-    server: 127.0.0.53
-    port: 89
-    uuid: 88888888-8888-8888-8888-888888888888
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
   - name: 🇭🇰 香港|@ripaojiedian
     type: vmess
     server: v10.hdacd.com
@@ -153,51 +63,137 @@ proxies:
     password: BxceQaOe
     sni: t.me%2Fripaojiedian
     skip-cert-verify: true
-  - name: 🇱🇹LT_1|1.0MB/s
+  - name: 🇫🇮FI_1|1.3MB/s
     type: vless
-    server: lt.superbuba.top
+    server: de57.tranzit-net.ru
     port: 443
-    uuid: d4cae7df-50a1-428c-bd62-881c8f3bbd90
+    uuid: be3c103d-2c93-4f8e-adb9-2631537f80eb
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 🇳🇱NL_2|3.3MB/s
+  - name: 🇺🇸US_1|1.6MB/s
     type: vless
-    server: 84.235.163.101
-    port: 62145
-    uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-    tls: false
-    network: tcp
-  - name: 🇺🇸US_3|1.4MB/s
-    type: vless
-    server: 162.35.231.73
+    server: 162.35.231.81
     port: 443
     uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
     tls: true
     network: tcp
-  - name: 🇺🇸US_4|1.1MB/s
+  - name: 🇫🇷FR_1|1.1MB/s
     type: vless
-    server: 216.167.27.162
-    port: 27694
-    uuid: 2de6ff95-84ca-45c9-99f6-9dbe3427cc69
+    server: 213.130.137.130
+    port: 443
+    uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+    tls: true
+    network: tcp
+  - name: 🇫🇷FR_2|1.8MB/s
+    type: vless
+    server: 213.130.137.190
+    port: 443
+    uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+    tls: true
+    network: tcp
+  - name: 🇫🇷FR_3|1.7MB/s
+    type: vless
+    server: 213.130.137.60
+    port: 443
+    uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+    tls: true
+    network: tcp
+  - name: 🇫🇷FR_4|2.0MB/s
+    type: vless
+    server: 213.130.137.20
+    port: 443
+    uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+    tls: true
+    network: tcp
+  - name: 🇫🇷FR_5|1.5MB/s
+    type: vless
+    server: 213.130.137.70
+    port: 443
+    uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+    tls: true
+    network: tcp
+  - name: 🇭🇰HK_1|3.8MB/s
+    type: vless
+    server: nian.001.url111.kcloud02.top
+    port: 15003
+    uuid: 399c4c9b-27e1-37f1-9dce-22ccc2727a86
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 🇸🇬SG_1|4.9MB/s
+  - name: US_speednode_0136
     type: vless
-    server: 47.129.200.244
-    port: 41159
-    uuid: cc138c2d-5e03-4efd-a935-fc500e938033
+    server: 155.117.199.13
+    port: 29893
+    uuid: f06c6039-a489-3d78-a676-ed43be6deca3
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 🇺🇸US_10|1.9MB/s
+  - name: US_speednode_0137
     type: vless
-    server: usa1.milkabebar.ir
-    port: 10694
-    uuid: 76bbe281-1c85-4df7-9008-fa49a1a615c2
+    server: 155.117.199.13
+    port: 39399
+    uuid: f06c6039-a489-3d78-a676-ed43be6deca3
     tls: true
     network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: US_speednode_0142
+    type: vless
+    server: 155.117.199.13
+    port: 39211
+    uuid: f06c6039-a489-3d78-a676-ed43be6deca3
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇸🇬SG_3|4.8MB/s
+    type: vless
+    server: 13.229.47.178
+    port: 20414
+    uuid: c3e2c992-6721-443f-a051-331cb8a29fad
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇺🇸US_8|1.9MB/s
+    type: vless
+    server: us.tutvpn.com
+    port: 443
+    uuid: 05bfcbaa-cba0-4bce-9103-09fe3f5f0667
+    tls: true
+    network: tcp
+  - name: 🇩🇪DE_4|1.0MB/s
+    type: vless
+    server: 216.24.57.15
+    port: 443
+    uuid: 2ee0d2aa-867e-a77e-9538-2edfc0b242aa
+    tls: true
+    network: ws
+    ws-opts:
+      path: /ws/2ee0d2aa-867e-a77e-9538-2edfc0b242aafp=firefox
+      headers:
+        Host: four04-rd37.onrender.com
+  - name: 🇯🇵JP_1|3.5MB/s
+    type: vless
+    server: 82.38.46.66
+    port: 15007
+    uuid: 399c4c9b-27e1-37f1-9dce-22ccc2727a86
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇫🇷FR_9|1.5MB/s
+    type: vless
+    server: panel.freesavesafe.com
+    port: 443
+    uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+    tls: true
+    network: tcp
+  - name: 🇨🇭CH_1|2.5MB/s
+    type: vless
+    server: de48.tranzit-net.ru
+    port: 443
+    uuid: be3c103d-2c93-4f8e-adb9-2631537f80eb
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
   - name: US_speednode_0130
     type: vless
     server: 38.244.4.1
@@ -222,22 +218,6 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: US_speednode_0136
-    type: vless
-    server: 155.117.199.13
-    port: 29893
-    uuid: f06c6039-a489-3d78-a676-ed43be6deca3
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
-  - name: US_speednode_0137
-    type: vless
-    server: 155.117.199.13
-    port: 39399
-    uuid: f06c6039-a489-3d78-a676-ed43be6deca3
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
   - name: US_speednode_0138
     type: vless
     server: 107.151.250.68
@@ -254,14 +234,6 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: US_speednode_0142
-    type: vless
-    server: 155.117.199.13
-    port: 39211
-    uuid: f06c6039-a489-3d78-a676-ed43be6deca3
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
   - name: US_speednode_0144
     type: vless
     server: nsuc-znkbig.avonex.top
@@ -270,83 +242,18 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
+  - name: 挪威+V2CROSS.COM
+    type: vless
+    server: fin2.helper-internet.com
+    port: 443
+    uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
+    tls: false
+    network: tcp
+    flow: xtls-rprx-vision
   - name: 美国+CloudFlare节点
-    type: trojan
-    server: ip.myip2.qzz.io
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: false
-  - name: 美国+CloudFlare节点 [1]
-    type: trojan
-    server: 104.18.152.144
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: false
-  - name: 美国+CloudFlare节点 [2]
-    type: trojan
-    server: 172.67.221.242
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: false
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: rush-t2tvv.ceeopp.site
-    port: 443
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: rush-t2tvv.ceeopp.site
-  - name: 美国+CloudFlare节点 [3]
     type: vless
-    server: 172.64.52.68
-    port: 2087
-    uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  - name: 美国+CloudFlare节点 [4]
-    type: trojan
-    server: 104.16.174.72
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: false
-  - name: 美国+加州
-    type: trojan
-    server: render.com
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: false
-  - name: 欧盟+V2CROSS.COM
-    type: trojan
-    server: 45.80.111.7
-    port: 443
-    password: humanity
-    sni: www.calmlunch.com
-    skip-cert-verify: false
-  - name: 美国+CloudFlare节点 [5]
-    type: trojan
-    server: 104.16.174.33
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: false
-  - name: 美国+CloudFlare节点 [6]
-    type: vless
-    server: 162.159.0.53
-    port: 8080
+    server: 172.64.158.146
+    port: 2082
     uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
     tls: false
     network: ws
@@ -354,24 +261,101 @@ proxies:
       path: /?ed=2560security=tls
       headers:
         Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  - name: 美国+CloudFlare节点 [7]
+  - name: 美国+CloudFlare节点 [1]
+    type: vless
+    server: 172.64.154.8
+    port: 2082
+    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2560security=tls
+      headers:
+        Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  - name: 美国+CloudFlare节点 [2]
     type: trojan
     server: 104.16.174.124
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: false
-  - name: 英国+V2CROSS.COM
-    type: vless
-    server: 31.76.70.32
+  - name: 美国+CloudFlare节点 [3]
+    type: trojan
+    server: 104.18.152.210
     port: 443
-    uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
+  - name: 美国+CloudFlare节点 [4]
+    type: trojan
+    server: join-telegram-channel.tirexnet.kdns.fr
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
+  - name: 美国+麻省理工学院
+    type: vless
+    server: 18.239.134.69
+    port: 80
+    uuid: de27291c-15a9-4256-9ba7-ad517569877e
     tls: false
-    network: tcp
-    flow: xtls-rprx-vision
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
   - name: 加拿大+V2CROSS.COM
     type: trojan
     server: 130.250.137.171
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
+  - name: 美国+CloudFlare节点 [5]
+    type: trojan
+    server: 104.16.174.12
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
+  - name: 美国+CloudFlare节点 [6]
+    type: trojan
+    server: 104.18.152.113
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
+  - name: 美国+CloudFlare节点 [7]
+    type: trojan
+    server: 198.41.223.96
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
+  - name: 美国+CloudFlare节点 [8]
+    type: trojan
+    server: 104.16.174.6
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
+  - name: 美国+CloudFlare节点 [9]
+    type: trojan
+    server: 104.18.152.155
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
+  - name: 美国+CloudFlare节点 [10]
+    type: trojan
+    server: 104.18.152.97
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 45.130.125.160
     port: 443
     password: humanity
     sni: www.ignitelimit.com
@@ -383,28 +367,20 @@ proxies:
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: false
-  - name: 美国+CloudFlare节点 [8]
+  - name: 美国+CloudFlare节点 [11]
     type: trojan
-    server: 104.18.152.204
+    server: 104.18.152.230
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: false
-  - name: 美国+CloudFlare节点 [9]
+  - name: 英国+V2CROSS.COM
     type: trojan
-    server: 104.18.12.149
+    server: 176.97.66.175
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: false
-  - name: 美国+V2CROSS.COM
-    type: vless
-    server: 144.31.131.241
-    port: 8443
-    uuid: b406bc51-9002-474c-beae-b194b02c91da
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -412,16 +388,6 @@ proxy-groups:
       - ♻️ 自动选择
       - 🔰 故障转移
       - DIRECT
-      - 防范境外势力渗透
-      - '防范境外势力渗透 #1'
-      - '防范境外势力渗透 #2'
-      - '防范境外势力渗透 #3'
-      - '防范境外势力渗透 #4'
-      - '防范境外势力渗透 #5'
-      - '防范境外势力渗透 #6'
-      - '防范境外势力渗透 #7'
-      - '防范境外势力渗透 #8'
-      - '防范境外势力渗透 #9'
       - 🇭🇰 香港|@ripaojiedian
       - 香港4|@ripaojiedian
       - 🇭🇰 香港5|@ripaojiedian
@@ -430,51 +396,50 @@ proxy-groups:
       - 美国3|@ripaojiedian
       - 香港5|@ripaojiedian
       - 日本|@ripaojiedian
-      - 🇱🇹LT_1|1.0MB/s
-      - 🇳🇱NL_2|3.3MB/s
-      - 🇺🇸US_3|1.4MB/s
-      - 🇺🇸US_4|1.1MB/s
-      - 🇸🇬SG_1|4.9MB/s
-      - 🇺🇸US_10|1.9MB/s
+      - 🇫🇮FI_1|1.3MB/s
+      - 🇺🇸US_1|1.6MB/s
+      - 🇫🇷FR_1|1.1MB/s
+      - 🇫🇷FR_2|1.8MB/s
+      - 🇫🇷FR_3|1.7MB/s
+      - 🇫🇷FR_4|2.0MB/s
+      - 🇫🇷FR_5|1.5MB/s
+      - 🇭🇰HK_1|3.8MB/s
+      - US_speednode_0136
+      - US_speednode_0137
+      - US_speednode_0142
+      - 🇸🇬SG_3|4.8MB/s
+      - 🇺🇸US_8|1.9MB/s
+      - 🇩🇪DE_4|1.0MB/s
+      - 🇯🇵JP_1|3.5MB/s
+      - 🇫🇷FR_9|1.5MB/s
+      - 🇨🇭CH_1|2.5MB/s
       - US_speednode_0130
       - US_speednode_0132
       - US_speednode_0135
-      - US_speednode_0136
-      - US_speednode_0137
       - US_speednode_0138
       - US_speednode_0139
-      - US_speednode_0142
       - US_speednode_0144
+      - 挪威+V2CROSS.COM
       - 美国+CloudFlare节点
       - 美国+CloudFlare节点 [1]
       - 美国+CloudFlare节点 [2]
-      - 美国 CloudFlare节点
       - 美国+CloudFlare节点 [3]
       - 美国+CloudFlare节点 [4]
-      - 美国+加州
-      - 欧盟+V2CROSS.COM
+      - 美国+麻省理工学院
+      - 加拿大+V2CROSS.COM
       - 美国+CloudFlare节点 [5]
       - 美国+CloudFlare节点 [6]
       - 美国+CloudFlare节点 [7]
-      - 英国+V2CROSS.COM
-      - 加拿大+V2CROSS.COM
-      - 立陶宛+V2CROSS.COM
       - 美国+CloudFlare节点 [8]
       - 美国+CloudFlare节点 [9]
+      - 美国+CloudFlare节点 [10]
       - 美国+V2CROSS.COM
+      - 立陶宛+V2CROSS.COM
+      - 美国+CloudFlare节点 [11]
+      - 英国+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 防范境外势力渗透
-      - '防范境外势力渗透 #1'
-      - '防范境外势力渗透 #2'
-      - '防范境外势力渗透 #3'
-      - '防范境外势力渗透 #4'
-      - '防范境外势力渗透 #5'
-      - '防范境外势力渗透 #6'
-      - '防范境外势力渗透 #7'
-      - '防范境外势力渗透 #8'
-      - '防范境外势力渗透 #9'
       - 🇭🇰 香港|@ripaojiedian
       - 香港4|@ripaojiedian
       - 🇭🇰 香港5|@ripaojiedian
@@ -483,53 +448,52 @@ proxy-groups:
       - 美国3|@ripaojiedian
       - 香港5|@ripaojiedian
       - 日本|@ripaojiedian
-      - 🇱🇹LT_1|1.0MB/s
-      - 🇳🇱NL_2|3.3MB/s
-      - 🇺🇸US_3|1.4MB/s
-      - 🇺🇸US_4|1.1MB/s
-      - 🇸🇬SG_1|4.9MB/s
-      - 🇺🇸US_10|1.9MB/s
+      - 🇫🇮FI_1|1.3MB/s
+      - 🇺🇸US_1|1.6MB/s
+      - 🇫🇷FR_1|1.1MB/s
+      - 🇫🇷FR_2|1.8MB/s
+      - 🇫🇷FR_3|1.7MB/s
+      - 🇫🇷FR_4|2.0MB/s
+      - 🇫🇷FR_5|1.5MB/s
+      - 🇭🇰HK_1|3.8MB/s
+      - US_speednode_0136
+      - US_speednode_0137
+      - US_speednode_0142
+      - 🇸🇬SG_3|4.8MB/s
+      - 🇺🇸US_8|1.9MB/s
+      - 🇩🇪DE_4|1.0MB/s
+      - 🇯🇵JP_1|3.5MB/s
+      - 🇫🇷FR_9|1.5MB/s
+      - 🇨🇭CH_1|2.5MB/s
       - US_speednode_0130
       - US_speednode_0132
       - US_speednode_0135
-      - US_speednode_0136
-      - US_speednode_0137
       - US_speednode_0138
       - US_speednode_0139
-      - US_speednode_0142
       - US_speednode_0144
+      - 挪威+V2CROSS.COM
       - 美国+CloudFlare节点
       - 美国+CloudFlare节点 [1]
       - 美国+CloudFlare节点 [2]
-      - 美国 CloudFlare节点
       - 美国+CloudFlare节点 [3]
       - 美国+CloudFlare节点 [4]
-      - 美国+加州
-      - 欧盟+V2CROSS.COM
+      - 美国+麻省理工学院
+      - 加拿大+V2CROSS.COM
       - 美国+CloudFlare节点 [5]
       - 美国+CloudFlare节点 [6]
       - 美国+CloudFlare节点 [7]
-      - 英国+V2CROSS.COM
-      - 加拿大+V2CROSS.COM
-      - 立陶宛+V2CROSS.COM
       - 美国+CloudFlare节点 [8]
       - 美国+CloudFlare节点 [9]
+      - 美国+CloudFlare节点 [10]
       - 美国+V2CROSS.COM
+      - 立陶宛+V2CROSS.COM
+      - 美国+CloudFlare节点 [11]
+      - 英国+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
     type: fallback
     proxies:
-      - 防范境外势力渗透
-      - '防范境外势力渗透 #1'
-      - '防范境外势力渗透 #2'
-      - '防范境外势力渗透 #3'
-      - '防范境外势力渗透 #4'
-      - '防范境外势力渗透 #5'
-      - '防范境外势力渗透 #6'
-      - '防范境外势力渗透 #7'
-      - '防范境外势力渗透 #8'
-      - '防范境外势力渗透 #9'
       - 🇭🇰 香港|@ripaojiedian
       - 香港4|@ripaojiedian
       - 🇭🇰 香港5|@ripaojiedian
@@ -538,38 +502,47 @@ proxy-groups:
       - 美国3|@ripaojiedian
       - 香港5|@ripaojiedian
       - 日本|@ripaojiedian
-      - 🇱🇹LT_1|1.0MB/s
-      - 🇳🇱NL_2|3.3MB/s
-      - 🇺🇸US_3|1.4MB/s
-      - 🇺🇸US_4|1.1MB/s
-      - 🇸🇬SG_1|4.9MB/s
-      - 🇺🇸US_10|1.9MB/s
+      - 🇫🇮FI_1|1.3MB/s
+      - 🇺🇸US_1|1.6MB/s
+      - 🇫🇷FR_1|1.1MB/s
+      - 🇫🇷FR_2|1.8MB/s
+      - 🇫🇷FR_3|1.7MB/s
+      - 🇫🇷FR_4|2.0MB/s
+      - 🇫🇷FR_5|1.5MB/s
+      - 🇭🇰HK_1|3.8MB/s
+      - US_speednode_0136
+      - US_speednode_0137
+      - US_speednode_0142
+      - 🇸🇬SG_3|4.8MB/s
+      - 🇺🇸US_8|1.9MB/s
+      - 🇩🇪DE_4|1.0MB/s
+      - 🇯🇵JP_1|3.5MB/s
+      - 🇫🇷FR_9|1.5MB/s
+      - 🇨🇭CH_1|2.5MB/s
       - US_speednode_0130
       - US_speednode_0132
       - US_speednode_0135
-      - US_speednode_0136
-      - US_speednode_0137
       - US_speednode_0138
       - US_speednode_0139
-      - US_speednode_0142
       - US_speednode_0144
+      - 挪威+V2CROSS.COM
       - 美国+CloudFlare节点
       - 美国+CloudFlare节点 [1]
       - 美国+CloudFlare节点 [2]
-      - 美国 CloudFlare节点
       - 美国+CloudFlare节点 [3]
       - 美国+CloudFlare节点 [4]
-      - 美国+加州
-      - 欧盟+V2CROSS.COM
+      - 美国+麻省理工学院
+      - 加拿大+V2CROSS.COM
       - 美国+CloudFlare节点 [5]
       - 美国+CloudFlare节点 [6]
       - 美国+CloudFlare节点 [7]
-      - 英国+V2CROSS.COM
-      - 加拿大+V2CROSS.COM
-      - 立陶宛+V2CROSS.COM
       - 美国+CloudFlare节点 [8]
       - 美国+CloudFlare节点 [9]
+      - 美国+CloudFlare节点 [10]
       - 美国+V2CROSS.COM
+      - 立陶宛+V2CROSS.COM
+      - 美国+CloudFlare节点 [11]
+      - 英国+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
