@@ -273,55 +273,39 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 福建省福州市+联通
+  - name: 美国+V2CROSS.COM
     type: vless
-    server: us22.sofast.live
-    port: 58011
-    uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+    server: 144.31.140.127
+    port: 443
+    uuid: d31aefb3-775b-4e87-a093-a4677addf10a
     tls: false
     network: tcp
+    flow: xtls-rprx-vision
   - name: 美国+CloudFlare节点
-    type: vless
-    server: 172.64.158.146
-    port: 8080
-    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed=2560security=tls
-      headers:
-        Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+    type: trojan
+    server: www.speedtest.net
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
   - name: 美国+CloudFlare节点 [1]
     type: trojan
-    server: 172.67.221.242
+    server: 104.16.174.185
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: false
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: 130.250.137.171
+  - name: 俄罗斯+V2CROSS.COM
+    type: vless
+    server: 176.109.88.216
     port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: false
-  - name: 美国+CloudFlare节点 [2]
-    type: trojan
-    server: 172.67.74.2
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: false
-  - name: 美国+CloudFlare节点 [3]
-    type: trojan
-    server: 104.26.14.137
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: false
+    uuid: 2c7f1414-87ae-4a01-9796-a02c067891a6
+    tls: false
+    network: tcp
+    flow: xtls-rprx-vision
   - name: 欧盟+V2CROSS.COM
     type: vless
-    server: 45.9.15.206
+    server: ru05.abvpn.ru
     port: 443
     uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
     tls: true
@@ -330,45 +314,68 @@ proxies:
       path: /websocket
       headers:
         Host: ru05.abvpn.ru
-  - name: 法国+巴黎Online+S.A.S
+  - name: 美国+Muskingum+College
     type: vless
-    server: 51.158.241.182
-    port: 8080
-    uuid: 11af1c47-865a-47c6-92ff-118013655d78
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers: {}
-  - name: 美国+CloudFlare节点 [4]
-    type: vless
-    server: 104.21.62.202
+    server: api-uk.upd-media.com
     port: 443
-    uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
-    tls: true
-    network: ws
-    ws-opts:
-      path: /fVs1qv0xm8dxmnwuaPwokxgY4XlP
-      headers:
-        Host: 3-m17.KazaKHStaN-link.kDnS.FR
+    uuid: ef4f4c3d-0b16-48ad-a8d8-2d22512b3b36
+    tls: false
+    network: tcp
+    flow: xtls-rprx-vision
   - name: 英国+V2CROSS.COM
     type: trojan
-    server: 185.75.243.102
+    server: 176.97.66.175
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: false
-  - name: 乌克兰+V2CROSS.COM
+  - name: 美国+CloudFlare节点 [2]
+    type: trojan
+    server: www.ignitelimit.com
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
+  - name: 英国+V2CROSS.COM [1]
     type: vless
-    server: 178.95.170.83
-    port: 2087
-    uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
+    server: 31.76.71.140
+    port: 443
+    uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
+    tls: false
+    network: tcp
+    flow: xtls-rprx-vision
+  - name: 美国+CloudFlare节点 [3]
+    type: trojan
+    server: 172.67.221.242
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
+  - name: 美国+CloudFlare节点 [4]
+    type: trojan
+    server: 104.18.152.97
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
+  - name: 美国+CloudFlare节点 [5]
+    type: trojan
+    server: ip.myip2.qzz.io
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
+  - name: 美国+CloudFlare节点 [6]
+    type: vless
+    server: 104.18.47.113
+    port: 8880
+    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
     tls: false
     network: ws
     ws-opts:
-      path: /4bc027a44532
+      path: /?ed=2560security=tls
       headers:
-        Host: Telegram-Leviko_v2ray
+        Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -409,17 +416,19 @@ proxy-groups:
       - US_speednode_0139
       - US_speednode_0142
       - US_speednode_0144
-      - 福建省福州市+联通
+      - 美国+V2CROSS.COM
       - 美国+CloudFlare节点
       - 美国+CloudFlare节点 [1]
-      - 加拿大+V2CROSS.COM
-      - 美国+CloudFlare节点 [2]
-      - 美国+CloudFlare节点 [3]
+      - 俄罗斯+V2CROSS.COM
       - 欧盟+V2CROSS.COM
-      - 法国+巴黎Online+S.A.S
-      - 美国+CloudFlare节点 [4]
+      - 美国+Muskingum+College
       - 英国+V2CROSS.COM
-      - 乌克兰+V2CROSS.COM
+      - 美国+CloudFlare节点 [2]
+      - 英国+V2CROSS.COM [1]
+      - 美国+CloudFlare节点 [3]
+      - 美国+CloudFlare节点 [4]
+      - 美国+CloudFlare节点 [5]
+      - 美国+CloudFlare节点 [6]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -456,17 +465,19 @@ proxy-groups:
       - US_speednode_0139
       - US_speednode_0142
       - US_speednode_0144
-      - 福建省福州市+联通
+      - 美国+V2CROSS.COM
       - 美国+CloudFlare节点
       - 美国+CloudFlare节点 [1]
-      - 加拿大+V2CROSS.COM
-      - 美国+CloudFlare节点 [2]
-      - 美国+CloudFlare节点 [3]
+      - 俄罗斯+V2CROSS.COM
       - 欧盟+V2CROSS.COM
-      - 法国+巴黎Online+S.A.S
-      - 美国+CloudFlare节点 [4]
+      - 美国+Muskingum+College
       - 英国+V2CROSS.COM
-      - 乌克兰+V2CROSS.COM
+      - 美国+CloudFlare节点 [2]
+      - 英国+V2CROSS.COM [1]
+      - 美国+CloudFlare节点 [3]
+      - 美国+CloudFlare节点 [4]
+      - 美国+CloudFlare节点 [5]
+      - 美国+CloudFlare节点 [6]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -505,17 +516,19 @@ proxy-groups:
       - US_speednode_0139
       - US_speednode_0142
       - US_speednode_0144
-      - 福建省福州市+联通
+      - 美国+V2CROSS.COM
       - 美国+CloudFlare节点
       - 美国+CloudFlare节点 [1]
-      - 加拿大+V2CROSS.COM
-      - 美国+CloudFlare节点 [2]
-      - 美国+CloudFlare节点 [3]
+      - 俄罗斯+V2CROSS.COM
       - 欧盟+V2CROSS.COM
-      - 法国+巴黎Online+S.A.S
-      - 美国+CloudFlare节点 [4]
+      - 美国+Muskingum+College
       - 英国+V2CROSS.COM
-      - 乌克兰+V2CROSS.COM
+      - 美国+CloudFlare节点 [2]
+      - 英国+V2CROSS.COM [1]
+      - 美国+CloudFlare节点 [3]
+      - 美国+CloudFlare节点 [4]
+      - 美国+CloudFlare节点 [5]
+      - 美国+CloudFlare节点 [6]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
