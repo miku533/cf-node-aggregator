@@ -273,109 +273,159 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 美国+V2CROSS.COM
+  - name: 德国+V2CROSS.COM
     type: vless
-    server: 144.31.140.127
+    server: dump.whit3.net
     port: 443
-    uuid: d31aefb3-775b-4e87-a093-a4677addf10a
+    uuid: 1e1c72f4-325b-4db0-b2d4-dc9c7cddc46a
+    tls: false
+    network: tcp
+    flow: xtls-rprx-vision
+  - name: 南非约翰内斯堡+V2CROSS.COM
+    type: vless
+    server: 193.239.179.15
+    port: 443
+    uuid: df08fd27-d7c2-4cd2-8a79-a32287682a79
     tls: false
     network: tcp
     flow: xtls-rprx-vision
   - name: 美国+CloudFlare节点
     type: trojan
-    server: www.speedtest.net
+    server: 104.18.12.149
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: false
-  - name: 美国+CloudFlare节点 [1]
-    type: trojan
-    server: 104.16.174.185
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: false
-  - name: 俄罗斯+V2CROSS.COM
+  - name: 美国+乔治亚洲亚特兰大Fastly节点
     type: vless
-    server: 176.109.88.216
+    server: 151.101.56.7
     port: 443
-    uuid: 2c7f1414-87ae-4a01-9796-a02c067891a6
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 欧盟+V2CROSS.COM
-    type: vless
-    server: ru05.abvpn.ru
-    port: 443
-    uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+    uuid: d2299018-601d-488e-afd6-8f55b3f7439f
     tls: true
     network: ws
     ws-opts:
-      path: /websocket
+      path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
       headers:
-        Host: ru05.abvpn.ru
-  - name: 美国+Muskingum+College
+        Host: pan1.global.ssl.fastly.net
+  - name: 香港+特别行政区
     type: vless
-    server: api-uk.upd-media.com
-    port: 443
-    uuid: ef4f4c3d-0b16-48ad-a8d8-2d22512b3b36
+    server: 154.92.9.2
+    port: 8880
+    uuid: fb5058f5-a9ed-424e-9ed7-33d455438286
     tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 英国+V2CROSS.COM
+    network: ws
+    ws-opts:
+      path: /pyip=Telegram🇨🇳 @WangCai2
+      headers:
+        Host: old-violet-a5ce.29-440.workers.dev
+  - name: 美国+CloudFlare节点 [1]
+    type: vless
+    server: 172.67.153.109
+    port: 8080
+    uuid: 45643c5f-ffc2-46f3-b82c-329aea9962d4
+    tls: false
+    network: ws
+    ws-opts:
+      path: /eyJqdW5rIjoiQkRZWDhCN01sIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19?ed=2560
+      headers:
+        Host: server10.sotowoy673.workers.dev
+  - name: 爱尔兰 V2CROSS.COM
+    type: vmess
+    server: 78.17.71.236
+    port: 33736
+    uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /vmess-ws
+      headers:
+        Host: Telegram-Leviko_v2ray
+  - name: 美国+V2CROSS.COM
     type: trojan
-    server: 176.97.66.175
+    server: 45.130.125.158
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: false
   - name: 美国+CloudFlare节点 [2]
     type: trojan
-    server: www.ignitelimit.com
+    server: 172.67.74.2
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: false
-  - name: 英国+V2CROSS.COM [1]
-    type: vless
-    server: 31.76.71.140
-    port: 443
-    uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
   - name: 美国+CloudFlare节点 [3]
     type: trojan
-    server: 172.67.221.242
+    server: 104.16.174.148
     port: 443
     password: humanity
     sni: www.ignitelimit.com
+    skip-cert-verify: false
+  - name: 卢森堡+root.lu数据中心
+    type: trojan
+    server: 188.42.145.180
+    port: 443
+    password: humanity
+    sni: www.volumeroot.com
     skip-cert-verify: false
   - name: 美国+CloudFlare节点 [4]
     type: trojan
-    server: 104.18.152.97
+    server: 104.18.152.210
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: false
   - name: 美国+CloudFlare节点 [5]
     type: trojan
-    server: ip.myip2.qzz.io
+    server: 104.16.174.117
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: false
   - name: 美国+CloudFlare节点 [6]
-    type: vless
-    server: 104.18.47.113
-    port: 8880
-    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed=2560security=tls
-      headers:
-        Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+    type: trojan
+    server: 104.16.73.213
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
+  - name: 美国+CloudFlare节点 [7]
+    type: trojan
+    server: 104.17.177.143
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
+  - name: 巴西圣保罗+CloudFlare节点
+    type: trojan
+    server: 188.114.97.7
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
+  - name: 美国+CloudFlare节点 [8]
+    type: trojan
+    server: 104.18.152.208
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
+  - name: 美国+CloudFlare节点 [9]
+    type: trojan
+    server: 104.16.174.109
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
+  - name: 美国+CloudFlare节点 [10]
+    type: trojan
+    server: 104.19.229.21
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -416,19 +466,25 @@ proxy-groups:
       - US_speednode_0139
       - US_speednode_0142
       - US_speednode_0144
-      - 美国+V2CROSS.COM
+      - 德国+V2CROSS.COM
+      - 南非约翰内斯堡+V2CROSS.COM
       - 美国+CloudFlare节点
+      - 美国+乔治亚洲亚特兰大Fastly节点
+      - 香港+特别行政区
       - 美国+CloudFlare节点 [1]
-      - 俄罗斯+V2CROSS.COM
-      - 欧盟+V2CROSS.COM
-      - 美国+Muskingum+College
-      - 英国+V2CROSS.COM
+      - 爱尔兰 V2CROSS.COM
+      - 美国+V2CROSS.COM
       - 美国+CloudFlare节点 [2]
-      - 英国+V2CROSS.COM [1]
       - 美国+CloudFlare节点 [3]
+      - 卢森堡+root.lu数据中心
       - 美国+CloudFlare节点 [4]
       - 美国+CloudFlare节点 [5]
       - 美国+CloudFlare节点 [6]
+      - 美国+CloudFlare节点 [7]
+      - 巴西圣保罗+CloudFlare节点
+      - 美国+CloudFlare节点 [8]
+      - 美国+CloudFlare节点 [9]
+      - 美国+CloudFlare节点 [10]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -465,19 +521,25 @@ proxy-groups:
       - US_speednode_0139
       - US_speednode_0142
       - US_speednode_0144
-      - 美国+V2CROSS.COM
+      - 德国+V2CROSS.COM
+      - 南非约翰内斯堡+V2CROSS.COM
       - 美国+CloudFlare节点
+      - 美国+乔治亚洲亚特兰大Fastly节点
+      - 香港+特别行政区
       - 美国+CloudFlare节点 [1]
-      - 俄罗斯+V2CROSS.COM
-      - 欧盟+V2CROSS.COM
-      - 美国+Muskingum+College
-      - 英国+V2CROSS.COM
+      - 爱尔兰 V2CROSS.COM
+      - 美国+V2CROSS.COM
       - 美国+CloudFlare节点 [2]
-      - 英国+V2CROSS.COM [1]
       - 美国+CloudFlare节点 [3]
+      - 卢森堡+root.lu数据中心
       - 美国+CloudFlare节点 [4]
       - 美国+CloudFlare节点 [5]
       - 美国+CloudFlare节点 [6]
+      - 美国+CloudFlare节点 [7]
+      - 巴西圣保罗+CloudFlare节点
+      - 美国+CloudFlare节点 [8]
+      - 美国+CloudFlare节点 [9]
+      - 美国+CloudFlare节点 [10]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -516,19 +578,25 @@ proxy-groups:
       - US_speednode_0139
       - US_speednode_0142
       - US_speednode_0144
-      - 美国+V2CROSS.COM
+      - 德国+V2CROSS.COM
+      - 南非约翰内斯堡+V2CROSS.COM
       - 美国+CloudFlare节点
+      - 美国+乔治亚洲亚特兰大Fastly节点
+      - 香港+特别行政区
       - 美国+CloudFlare节点 [1]
-      - 俄罗斯+V2CROSS.COM
-      - 欧盟+V2CROSS.COM
-      - 美国+Muskingum+College
-      - 英国+V2CROSS.COM
+      - 爱尔兰 V2CROSS.COM
+      - 美国+V2CROSS.COM
       - 美国+CloudFlare节点 [2]
-      - 英国+V2CROSS.COM [1]
       - 美国+CloudFlare节点 [3]
+      - 卢森堡+root.lu数据中心
       - 美国+CloudFlare节点 [4]
       - 美国+CloudFlare节点 [5]
       - 美国+CloudFlare节点 [6]
+      - 美国+CloudFlare节点 [7]
+      - 巴西圣保罗+CloudFlare节点
+      - 美国+CloudFlare节点 [8]
+      - 美国+CloudFlare节点 [9]
+      - 美国+CloudFlare节点 [10]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
