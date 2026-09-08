@@ -139,14 +139,13 @@ proxies:
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
-  - name: 🇺🇸US_11|1011KB/s
-    type: vless
-    server: 152.232.57.99
-    port: 443
-    uuid: 90546412-d9c5-4442-831b-e9b7ca3643de
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision-udp443
+  - name: 🇸🇩SD_1|3.6MB/s
+    type: trojan
+    server: z-jp2.1card.cc
+    port: 10012
+    password: ultra%40kWZdAzt_IH593eGLRjdxnBZ0
+    sni: www.cloudflare.com
+    skip-cert-verify: true
   - name: US_speednode_0130
     type: vless
     server: 38.244.4.1
@@ -220,38 +219,9 @@ proxies:
     network: tcp
     flow: xtls-rprx-vision-udp443
   - name: 美国+CloudFlare节点
-    type: trojan
-    server: 104.16.174.22
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: false
-  - name: 美国+加州
-    type: trojan
-    server: render.com
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: false
-  - name: 美国+纽约州伊利县威廉斯维尔村ColoCrossing有限公司
     type: vless
-    server: 192.227.168.162
-    port: 33414
-    uuid: 41f4cb15-5a3f-3934-89fe-b4177146adf4
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 美国+CloudFlare节点 [1]
-    type: trojan
-    server: 172.67.74.2
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: false
-  - name: 美国+CloudFlare节点 [2]
-    type: vless
-    server: 104.18.39.218
-    port: 2095
+    server: 172.64.154.8
+    port: 2052
     uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
     tls: false
     network: ws
@@ -259,108 +229,164 @@ proxies:
       path: /?ed=2560security=tls
       headers:
         Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  - name: 美国+CloudFlare节点 [1]
+    type: trojan
+    server: 104.18.152.225
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
+  - name: 美国+CloudFlare节点 [2]
+    type: trojan
+    server: 172.67.74.2
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
   - name: 美国+CloudFlare节点 [3]
-    type: trojan
-    server: 104.18.152.233
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: false
-  - name: 美国+CloudFlare节点 [4]
-    type: trojan
-    server: 198.41.223.96
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: false
-  - name: 美国+CloudFlare节点 [5]
     type: vless
-    server: www.speedtest.net
-    port: 2086
-    uuid: bba14c1d-f08c-4c9a-ac87-cf85d38d8aff
+    server: 172.67.205.153
+    port: 443
+    uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
+    tls: true
+    network: ws
+    ws-opts:
+      path: /8qMLgNapWf6SBxo8fhQlVPYO
+      headers:
+        Host: 6-m20.c98a10b6-5ab2-4974-8750-c24cffb2c622.kdns.fr
+  - name: 俄罗斯+V2CROSS.COM
+    type: vless
+    server: 95.163.232.171
+    port: 14443
+    uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
+    tls: true
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: {}
+  - name: 美国+CloudFlare节点 [4]
+    type: vless
+    server: 104.18.42.54
+    port: 2087
+    uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  - name: 美国+CloudFlare节点 [5]
+    type: trojan
+    server: 104.18.152.175
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
+  - name: 美国+CloudFlare节点 [6]
+    type: vless
+    server: 172.64.154.8
+    port: 8880
+    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
     tls: false
     network: ws
     ws-opts:
-      path: /eyJqdW5rIjoiRGtvTEVIeGU4cXFaTVVZIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19
+      path: /?ed=2560security=tls
       headers:
-        Host: tight-thunder-ce8e.hamid-r-aliakbari1379-0f0.workers.dev
-  - name: 美国+CloudFlare节点 [6]
-    type: trojan
-    server: 104.18.152.159
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: false
+        Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   - name: 美国+CloudFlare节点 [7]
     type: trojan
-    server: 104.17.177.143
+    server: 104.16.174.12
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: false
-  - name: 加拿大+安大略省研究网络
+  - name: 芬兰+V2CROSS.COM
     type: vless
-    server: 130.12.102.125
-    port: 443
-    uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-    tls: false
+    server: 193.142.59.97
+    port: 10829
+    uuid: 41f4cb15-5a3f-3934-89fe-b4177146adf4
+    tls: true
     network: tcp
+    flow: xtls-rprx-vision
   - name: 美国+CloudFlare节点 [8]
-    type: trojan
-    server: 104.18.152.230
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: false
+    type: vless
+    server: 172.64.158.146
+    port: 2052
+    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2560security=tls
+      headers:
+        Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   - name: 美国+CloudFlare节点 [9]
     type: trojan
-    server: 104.18.152.73
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: false
-  - name: 英国+V2CROSS.COM
-    type: trojan
-    server: 176.97.66.175
+    server: 104.18.22.63
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: false
   - name: 美国+CloudFlare节点 [10]
+    type: vless
+    server: 104.16.150.130
+    port: 2087
+    uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  - name: 美国+加州
     type: trojan
-    server: 104.16.174.14
+    server: 216.24.57.7
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: false
   - name: 美国+CloudFlare节点 [11]
-    type: trojan
-    server: www.speedtest.net
-    port: 443
-    password: humanity
-    sni: www.ignitelimit.com
-    skip-cert-verify: false
-  - name: 北京市+惟译天创信息技术有限公司
     type: vless
-    server: jp.sofast.live
-    port: 52683
-    uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
+    server: 172.64.154.8
+    port: 2082
+    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
     tls: false
-    network: tcp
+    network: ws
+    ws-opts:
+      path: /?ed=2560security=tls
+      headers:
+        Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   - name: 美国+CloudFlare节点 [12]
     type: trojan
-    server: 104.20.6.134
+    server: 104.18.152.155
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: false
   - name: 美国+CloudFlare节点 [13]
     type: trojan
-    server: 104.18.152.143
+    server: 104.18.152.133
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: false
+  - name: 美国+罗德岛州普罗维登斯市布朗大学
+    type: vless
+    server: 138.16.141.59
+    port: 7443
+    uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+    tls: false
+    network: tcp
+  - name: 美国+CloudFlare节点 [14]
+    type: vless
+    server: 104.18.39.218
+    port: 8880
+    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2560security=tls
+      headers:
+        Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -384,7 +410,7 @@ proxy-groups:
       - 日本|@ripaojiedian
       - 新加坡3|@ripaojiedian
       - 美国3|@ripaojiedian
-      - 🇺🇸US_11|1011KB/s
+      - 🇸🇩SD_1|3.6MB/s
       - US_speednode_0130
       - US_speednode_0132
       - US_speednode_0135
@@ -395,24 +421,24 @@ proxy-groups:
       - US_speednode_0142
       - US_speednode_0144
       - 美国+CloudFlare节点
-      - 美国+加州
-      - 美国+纽约州伊利县威廉斯维尔村ColoCrossing有限公司
       - 美国+CloudFlare节点 [1]
       - 美国+CloudFlare节点 [2]
       - 美国+CloudFlare节点 [3]
+      - 俄罗斯+V2CROSS.COM
       - 美国+CloudFlare节点 [4]
       - 美国+CloudFlare节点 [5]
       - 美国+CloudFlare节点 [6]
       - 美国+CloudFlare节点 [7]
-      - 加拿大+安大略省研究网络
+      - 芬兰+V2CROSS.COM
       - 美国+CloudFlare节点 [8]
       - 美国+CloudFlare节点 [9]
-      - 英国+V2CROSS.COM
       - 美国+CloudFlare节点 [10]
+      - 美国+加州
       - 美国+CloudFlare节点 [11]
-      - 北京市+惟译天创信息技术有限公司
       - 美国+CloudFlare节点 [12]
       - 美国+CloudFlare节点 [13]
+      - 美国+罗德岛州普罗维登斯市布朗大学
+      - 美国+CloudFlare节点 [14]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -432,7 +458,7 @@ proxy-groups:
       - 日本|@ripaojiedian
       - 新加坡3|@ripaojiedian
       - 美国3|@ripaojiedian
-      - 🇺🇸US_11|1011KB/s
+      - 🇸🇩SD_1|3.6MB/s
       - US_speednode_0130
       - US_speednode_0132
       - US_speednode_0135
@@ -443,24 +469,24 @@ proxy-groups:
       - US_speednode_0142
       - US_speednode_0144
       - 美国+CloudFlare节点
-      - 美国+加州
-      - 美国+纽约州伊利县威廉斯维尔村ColoCrossing有限公司
       - 美国+CloudFlare节点 [1]
       - 美国+CloudFlare节点 [2]
       - 美国+CloudFlare节点 [3]
+      - 俄罗斯+V2CROSS.COM
       - 美国+CloudFlare节点 [4]
       - 美国+CloudFlare节点 [5]
       - 美国+CloudFlare节点 [6]
       - 美国+CloudFlare节点 [7]
-      - 加拿大+安大略省研究网络
+      - 芬兰+V2CROSS.COM
       - 美国+CloudFlare节点 [8]
       - 美国+CloudFlare节点 [9]
-      - 英国+V2CROSS.COM
       - 美国+CloudFlare节点 [10]
+      - 美国+加州
       - 美国+CloudFlare节点 [11]
-      - 北京市+惟译天创信息技术有限公司
       - 美国+CloudFlare节点 [12]
       - 美国+CloudFlare节点 [13]
+      - 美国+罗德岛州普罗维登斯市布朗大学
+      - 美国+CloudFlare节点 [14]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -482,7 +508,7 @@ proxy-groups:
       - 日本|@ripaojiedian
       - 新加坡3|@ripaojiedian
       - 美国3|@ripaojiedian
-      - 🇺🇸US_11|1011KB/s
+      - 🇸🇩SD_1|3.6MB/s
       - US_speednode_0130
       - US_speednode_0132
       - US_speednode_0135
@@ -493,24 +519,24 @@ proxy-groups:
       - US_speednode_0142
       - US_speednode_0144
       - 美国+CloudFlare节点
-      - 美国+加州
-      - 美国+纽约州伊利县威廉斯维尔村ColoCrossing有限公司
       - 美国+CloudFlare节点 [1]
       - 美国+CloudFlare节点 [2]
       - 美国+CloudFlare节点 [3]
+      - 俄罗斯+V2CROSS.COM
       - 美国+CloudFlare节点 [4]
       - 美国+CloudFlare节点 [5]
       - 美国+CloudFlare节点 [6]
       - 美国+CloudFlare节点 [7]
-      - 加拿大+安大略省研究网络
+      - 芬兰+V2CROSS.COM
       - 美国+CloudFlare节点 [8]
       - 美国+CloudFlare节点 [9]
-      - 英国+V2CROSS.COM
       - 美国+CloudFlare节点 [10]
+      - 美国+加州
       - 美国+CloudFlare节点 [11]
-      - 北京市+惟译天创信息技术有限公司
       - 美国+CloudFlare节点 [12]
       - 美国+CloudFlare节点 [13]
+      - 美国+罗德岛州普罗维登斯市布朗大学
+      - 美国+CloudFlare节点 [14]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
