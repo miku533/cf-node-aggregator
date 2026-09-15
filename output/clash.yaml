@@ -139,21 +139,84 @@ proxies:
     password: BxceQaOe
     sni: t.me/ripaojiedian
     skip-cert-verify: true
-  - name: 🇳🇱NL_1|1.6MB/s
+  - name: 🇩🇪DE_1|3.7MB/s
     type: vless
-    server: m2-production-2516.up.railway.app
+    server: 212.16.92.112
     port: 443
-    uuid: ec43c5d5-b6f9-4077-95cf-1450abf48441
+    uuid: 32721515-985b-4773-9e70-5d2e1b88a060
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: 🇱🇹LT_1|4.3MB/s
+    type: vless
+    server: 188.72.103.3
+    port: 443
+    uuid: 01a21e01-6098-4c3b-a6fd-1a04d64d0c7f
+    tls: true
+    network: tcp
+  - name: 🇺🇸US_1|2.7MB/s
+    type: vless
+    server: 69.46.46.104
+    port: 443
+    uuid: 10c3b62f-59da-55cb-b24f-2072ecb4348c
     tls: true
     network: ws
     ws-opts:
-      path: /vlessfp=ios
-      headers: {}
-  - name: 🇫🇮FI_1|1.3MB/s
+      path: /ws/Defaultfp=chrome
+      headers:
+        Host: net-5307e1-dff579-production.up.railway.app
+  - name: 🇫🇮FI_1|4.5MB/s
     type: vless
-    server: 213.176.17.50
+    server: 188.114.97.8
+    port: 8443
+    uuid: 2fad05d3-9fab-45a0-addc-3fc229673c5e
+    tls: true
+    network: tcp
+  - name: 🇺🇸US_2|3.0MB/s
+    type: vless
+    server: 69.46.46.107
     port: 443
-    uuid: eb0e3aec-f67f-4fa2-8577-b0bff0484e77
+    uuid: 10c3b62f-59da-55cb-b24f-2072ecb4348c
+    tls: true
+    network: ws
+    ws-opts:
+      path: /ws/Defaultfp=chrome
+      headers:
+        Host: api-xvdhdv8374gdv-dyehgd638-6b85bd-production.up.railway.app
+  - name: 🇺🇸US_3|2.5MB/s
+    type: vless
+    server: 69.46.46.108
+    port: 443
+    uuid: 10c3b62f-59da-55cb-b24f-2072ecb4348c
+    tls: true
+    network: ws
+    ws-opts:
+      path: /ws/Defaultfp=chrome
+      headers:
+        Host: esmal-locj45-ugfufuffufuff-0bfedd-production.up.railway.app
+  - name: 🇺🇸US_4|1.8MB/s
+    type: vless
+    server: 69.46.46.109
+    port: 443
+    uuid: 10c3b62f-59da-55cb-b24f-2072ecb4348c
+    tls: true
+    network: ws
+    ws-opts:
+      path: /ws/Defaultfp=chrome
+      headers:
+        Host: cloud-0c2055-082cd3-production.up.railway.app
+  - name: 🇫🇮FI_2|1.6MB/s
+    type: vless
+    server: 170.168.97.6
+    port: 443
+    uuid: 1e4668ca-6526-84ac-2a53-28bbc209da13
+    tls: true
+    network: tcp
+  - name: 🇩🇪DE_7|3.7MB/s
+    type: vless
+    server: 172.67.156.105
+    port: 443
+    uuid: c3923ff7-a642-40bc-86cd-520bd6401f67
     tls: true
     network: tcp
   - name: US_speednode_0130
@@ -228,96 +291,61 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
-  - name: 立陶宛+V2CROSS.COM
-    type: vless
-    server: game.betust.net
-    port: 443
-    uuid: 01a21e01-6098-4c3b-a6fd-1a04d64d0c7f
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
   - name: 美国+CloudFlare节点
-    type: vless
-    server: 104.21.85.121
-    port: 443
-    uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
-    tls: true
-    network: ws
-    ws-opts:
-      path: /8qMLgNapWf6SBxo8fhQlVPYO
-      headers:
-        Host: 5-m20.c98a10b6-5ab2-4974-8750-c24cffb2c622.kdns.fr
-  - name: 捷克+V2CROSS.COM
-    type: vless
-    server: 95.85.245.163
-    port: 442
-    uuid: 2c070f10-57e8-442b-b6cb-ff39b35d929d
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 165.140.217.14
-    port: 443
-    uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-    alterId: 0
-    cipher: none
-    tls: false
-    network: tcp
-  - name: 立陶宛+V2CROSS.COM [1]
-    type: vless
-    server: app.betust.net
-    port: 443
-    uuid: 01a21e01-6098-4c3b-a6fd-1a04d64d0c7f
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 美国+CloudFlare节点 [1]
     type: trojan
-    server: 172.67.149.60
+    server: 104.20.6.134
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: false
-  - name: 美国+V2CROSS.COM
-    type: vless
-    server: spider-gzsv-production.up.railway.app
-    port: 443
-    uuid: 823a4043-6734-410f-9bef-d52cf1b6b10b
-    tls: true
-    network: ws
-    ws-opts:
-      path: /ws/823a4043-6734-410f-9bef-d52cf1b6b10b
-      headers:
-        Host: spider-gzsv-production.up.railway.app
-  - name: 俄罗斯+V2CROSS.COM
-    type: vless
-    server: api.betust.net
-    port: 443
-    uuid: 01a21e01-6098-4c3b-a6fd-1a04d64d0c7f
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: 美国+CloudFlare节点 [2]
+  - name: 美国+CloudFlare节点 [1]
     type: trojan
     server: 104.21.46.3
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: false
+  - name: 德国+法尔肯施泰因Hetzner
+    type: trojan
+    server: 88.198.82.150
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
+  - name: 美国+CloudFlare节点 [2]
+    type: trojan
+    server: join-telegram-channel.tirexnet.kdns.fr
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: false
   - name: 美国+CloudFlare节点 [3]
     type: trojan
-    server: 104.26.14.137
+    server: www.speedtest.org
     port: 443
     password: humanity
     sni: www.ignitelimit.com
     skip-cert-verify: false
   - name: 美国+CloudFlare节点 [4]
     type: trojan
-    server: 198.41.223.96
+    server: 172.67.149.60
     port: 443
     password: humanity
     sni: www.ignitelimit.com
+    skip-cert-verify: false
+  - name: 美国+乔治亚洲亚特兰大Fastly节点
+    type: trojan
+    server: 151.101.56.7
+    port: 443
+    password: MITIVPN
+    sni: ssl.fastly.com
+    skip-cert-verify: false
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 199.232.78.101
+    port: 443
+    password: MITIVPN
+    sni: ssl.fastly.com
     skip-cert-verify: false
 proxy-groups:
   - name: 🚀 节点选择
@@ -342,8 +370,15 @@ proxy-groups:
       - 日本|@ripaojiedian
       - 新加坡3|@ripaojiedian
       - 美国3|@ripaojiedian
-      - 🇳🇱NL_1|1.6MB/s
-      - 🇫🇮FI_1|1.3MB/s
+      - 🇩🇪DE_1|3.7MB/s
+      - 🇱🇹LT_1|4.3MB/s
+      - 🇺🇸US_1|2.7MB/s
+      - 🇫🇮FI_1|4.5MB/s
+      - 🇺🇸US_2|3.0MB/s
+      - 🇺🇸US_3|2.5MB/s
+      - 🇺🇸US_4|1.8MB/s
+      - 🇫🇮FI_2|1.6MB/s
+      - 🇩🇪DE_7|3.7MB/s
       - US_speednode_0130
       - US_speednode_0132
       - US_speednode_0135
@@ -353,17 +388,14 @@ proxy-groups:
       - US_speednode_0139
       - US_speednode_0142
       - US_speednode_0144
-      - 立陶宛+V2CROSS.COM
       - 美国+CloudFlare节点
-      - 捷克+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 立陶宛+V2CROSS.COM [1]
       - 美国+CloudFlare节点 [1]
-      - 美国+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
+      - 德国+法尔肯施泰因Hetzner
       - 美国+CloudFlare节点 [2]
       - 美国+CloudFlare节点 [3]
       - 美国+CloudFlare节点 [4]
+      - 美国+乔治亚洲亚特兰大Fastly节点
+      - 美国+V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -383,8 +415,15 @@ proxy-groups:
       - 日本|@ripaojiedian
       - 新加坡3|@ripaojiedian
       - 美国3|@ripaojiedian
-      - 🇳🇱NL_1|1.6MB/s
-      - 🇫🇮FI_1|1.3MB/s
+      - 🇩🇪DE_1|3.7MB/s
+      - 🇱🇹LT_1|4.3MB/s
+      - 🇺🇸US_1|2.7MB/s
+      - 🇫🇮FI_1|4.5MB/s
+      - 🇺🇸US_2|3.0MB/s
+      - 🇺🇸US_3|2.5MB/s
+      - 🇺🇸US_4|1.8MB/s
+      - 🇫🇮FI_2|1.6MB/s
+      - 🇩🇪DE_7|3.7MB/s
       - US_speednode_0130
       - US_speednode_0132
       - US_speednode_0135
@@ -394,17 +433,14 @@ proxy-groups:
       - US_speednode_0139
       - US_speednode_0142
       - US_speednode_0144
-      - 立陶宛+V2CROSS.COM
       - 美国+CloudFlare节点
-      - 捷克+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 立陶宛+V2CROSS.COM [1]
       - 美国+CloudFlare节点 [1]
-      - 美国+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
+      - 德国+法尔肯施泰因Hetzner
       - 美国+CloudFlare节点 [2]
       - 美国+CloudFlare节点 [3]
       - 美国+CloudFlare节点 [4]
+      - 美国+乔治亚洲亚特兰大Fastly节点
+      - 美国+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -426,8 +462,15 @@ proxy-groups:
       - 日本|@ripaojiedian
       - 新加坡3|@ripaojiedian
       - 美国3|@ripaojiedian
-      - 🇳🇱NL_1|1.6MB/s
-      - 🇫🇮FI_1|1.3MB/s
+      - 🇩🇪DE_1|3.7MB/s
+      - 🇱🇹LT_1|4.3MB/s
+      - 🇺🇸US_1|2.7MB/s
+      - 🇫🇮FI_1|4.5MB/s
+      - 🇺🇸US_2|3.0MB/s
+      - 🇺🇸US_3|2.5MB/s
+      - 🇺🇸US_4|1.8MB/s
+      - 🇫🇮FI_2|1.6MB/s
+      - 🇩🇪DE_7|3.7MB/s
       - US_speednode_0130
       - US_speednode_0132
       - US_speednode_0135
@@ -437,17 +480,14 @@ proxy-groups:
       - US_speednode_0139
       - US_speednode_0142
       - US_speednode_0144
-      - 立陶宛+V2CROSS.COM
       - 美国+CloudFlare节点
-      - 捷克+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 立陶宛+V2CROSS.COM [1]
       - 美国+CloudFlare节点 [1]
-      - 美国+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
+      - 德国+法尔肯施泰因Hetzner
       - 美国+CloudFlare节点 [2]
       - 美国+CloudFlare节点 [3]
       - 美国+CloudFlare节点 [4]
+      - 美国+乔治亚洲亚特兰大Fastly节点
+      - 美国+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
