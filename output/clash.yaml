@@ -108,7 +108,7 @@ proxies:
         Host: 95.174.68.188
   - name: '🇦🇪[www.v2nodes.com] vless-AE-1... #1'
     type: vless
-    server: uae.unixzone.us
+    server: 84.235.244.108
     port: 22573
     uuid: 39947382-3212-41c9-bc3a-589574ac8b23
     tls: false
@@ -148,14 +148,6 @@ proxies:
     network: tcp
   - name: 🇦🇹[www.v2nodes.com] vless-AT-1...
     type: vless
-    server: 94.228.162.222
-    port: 443
-    uuid: 46c16b68-2553-4e5e-8176-f63d6bf6ec0c
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: '🇦🇹[www.v2nodes.com] vless-AT-1... #1'
-    type: vless
     server: 146.19.143.218
     port: 443
     uuid: ca14493b-b984-4ffb-bc0e-9cb5da969e15
@@ -169,7 +161,7 @@ proxies:
     uuid: a14b736b-a92a-48d6-a596-5d31f7378ded
     tls: false
     network: tcp
-  - name: '🇵🇱[www.v2nodes.com] vless-PL-1... #9'
+  - name: '🇵🇱[www.v2nodes.com] vless-PL-1... #7'
     type: vless
     server: 104.21.221.158
     port: 443
@@ -241,14 +233,10 @@ proxies:
   - name: '🇧🇾[www.v2nodes.com] vless-BY-1... #1'
     type: vless
     server: 178.172.227.124
-    port: 14430
+    port: 10443
     uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
     tls: false
-    network: ws
-    ws-opts:
-      path: /vless
-      headers:
-        Host: 178.172.227.124
+    network: tcp
   - name: '🇧🇾[www.v2nodes.com] vless-BY-1... #2'
     type: vless
     server: 95.128.71.79
@@ -262,22 +250,30 @@ proxies:
         Host: 95.128.71.79
   - name: 🇨🇦[www.v2nodes.com] vless-CA-1...
     type: vless
+    server: 66.163.113.238
+    port: 443
+    uuid: 13bf9403-22d1-4221-939b-f6606c423139
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision
+  - name: '🏳[www.v2nodes.com] vless- #2'
+    type: vless
     server: 209.200.246.148
     port: 443
     uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: '🇨🇦[www.v2nodes.com] vless-CA-1... #1'
+  - name: '🏳[www.v2nodes.com] vless- #3'
     type: vless
     server: 66.70.179.198
     port: 2053
     uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
     tls: true
     network: tcp
-  - name: '🇨🇦[www.v2nodes.com] vless-CA-1... #2'
+  - name: '🇨🇦[www.v2nodes.com] vless-CA-1... #1'
     type: vless
-    server: 168.222.43.53
+    server: milo.rubinaz.xyz
     port: 8080
     uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
     tls: false
@@ -293,6 +289,28 @@ proxies:
       path: /fp=unsafefp=chrome
       headers:
         Host: ccc.010304.xyz
+  - name: 🇸🇬[www.v2nodes.com] vless-SG
+    type: vless
+    server: 104.18.45.38
+    port: 443
+    uuid: d342d11e-d224-4463-b982-532309285094
+    tls: true
+    network: ws
+    ws-opts:
+      path: /fpfp=unsafe
+      headers:
+        Host: ccc.010304.xyz
+  - name: '🇸🇬[www.v2nodes.com] vless-SG #1'
+    type: vless
+    server: 88.216.69.253
+    port: 443
+    uuid: d342d11e-d224-4463-b982-532309285094
+    tls: true
+    network: ws
+    ws-opts:
+      path: /fp=chromefp=unsafe
+      headers:
+        Host: ccc.010304.xyz
   - name: 🇨🇭[www.v2nodes.com] vless-CH-1...
     type: vless
     server: 144.31.129.174
@@ -301,7 +319,7 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: '🇨🇭[www.v2nodes.com] vless-CH-1... #1'
+  - name: '🏳[www.v2nodes.com] vless- #4'
     type: vless
     server: 45.90.57.119
     port: 8443
@@ -309,7 +327,7 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: '🇨🇭[www.v2nodes.com] vless-CH-1... #2'
+  - name: '🇨🇭[www.v2nodes.com] vless-CH-1... #1'
     type: vless
     server: 45.90.59.15
     port: 443
@@ -317,7 +335,7 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: '🇨🇭[www.v2nodes.com] vless-CH-1... #3'
+  - name: '🇨🇭[www.v2nodes.com] vless-CH-1... #2'
     type: vless
     server: 208.69.78.217
     port: 2053
@@ -357,21 +375,22 @@ proxies:
       path: /socks5=888:888@hkip.1d.mom:1080fp=chromesecurity=tls
       headers:
         Host: vlso5.1d.mom
-  - name: '🇨🇿[www.v2nodes.com] vless-CZ-1... #1'
+  - name: ❓Other_1|2.2MB/s
+    type: vless
+    server: 31.77.13.22
+    port: 2063
+    uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision-udp443
+  - name: ❓Other_2|1.1MB/s
     type: vless
     server: cz-prg.dontblockmepls.com
     port: 2063
     uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
     tls: true
     network: tcp
-    flow: xtls-rprx-vision
-  - name: '🇨🇿[www.v2nodes.com] vless-CZ-1... #2'
-    type: vless
-    server: 31.77.13.22
-    port: 2063
-    uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-    tls: false
-    network: tcp
+    flow: xtls-rprx-vision-udp443
   - name: '🇨🇿[www.v2nodes.com] vless-CZ-1... #4'
     type: vless
     server: 195.123.245.241
@@ -385,7 +404,7 @@ proxies:
     server: 193.148.253.194
     port: 25362
     uuid: 36fb6650-8a50-42b5-9f66-06538806f32c
-    tls: false
+    tls: true
     network: tcp
   - name: '🇩🇪[www.v2nodes.com] vless-DE-1... #1'
     type: vless
@@ -499,14 +518,15 @@ proxies:
       path: /useraction/events/b892639b7195/fp=random
       headers:
         Host: z1q3pv4g78.rucdncomp.pro
-  - name: '🇩🇪[www.v2nodes.com] vless-DE-1... #13'
+  - name: '🏳[www.v2nodes.com] vless- #5'
     type: vless
     server: germany1.xorsand.eu
     port: 10105
     uuid: ad3f4a0a-a89f-498e-9869-a93c8fa185b1
-    tls: false
+    tls: true
     network: tcp
-  - name: '🇩🇪[www.v2nodes.com] vless-DE-1... #14'
+    flow: xtls-rprx-vision
+  - name: '🇩🇪[www.v2nodes.com] vless-DE-1... #13'
     type: vless
     server: de.poncheki.xyz
     port: 2083
@@ -520,12 +540,19 @@ proxies:
     uuid: a346c521-7a7f-452b-9356-a4893feb5982
     tls: true
     network: grpc
-  - name: '🇪🇪[www.v2nodes.com] vless-EE-1... #10'
+  - name: 🇪🇪[www.v2nodes.com] vless-EE-1...
+    type: vless
+    server: 79.182.39.232
+    port: 25895
+    uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+    tls: true
+    network: tcp
+  - name: '🇮🇱 以色列 | ISR #1'
     type: vless
     server: ee.h1cloud.net
     port: 25895
     uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-    tls: false
+    tls: true
     network: tcp
   - name: '🇪🇪[www.v2nodes.com] vless-EE-1... #3'
     type: vless
@@ -542,21 +569,21 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: '🇪🇸[www.v2nodes.com] vless-ES-1... #13'
+  - name: '🇪🇸[www.v2nodes.com] vless-ES-1... #15'
     type: vless
     server: 156.252.229.136
     port: 8443
     uuid: 3e21e3d3-6d26-4155-b851-764dd8e8c6b5
     tls: true
     network: tcp
-  - name: '🇪🇸[www.v2nodes.com] vless-ES-1... #18'
+  - name: '🇪🇸[www.v2nodes.com] vless-ES-1... #19'
     type: vless
     server: 156.252.229.11
     port: 8443
     uuid: 3e21e3d3-6d26-4155-b851-764dd8e8c6b5
     tls: false
     network: tcp
-  - name: '🇪🇸[www.v2nodes.com] vless-ES-1... #17'
+  - name: '🇪🇸[www.v2nodes.com] vless-ES-1... #18'
     type: vless
     server: 156.252.229.30
     port: 8443
@@ -564,6 +591,16 @@ proxies:
     tls: true
     network: tcp
   - name: 🇫🇮[www.v2nodes.com] vless-FI-1...
+    type: vless
+    server: 92.242.165.11
+    port: 2083
+    uuid: 75b517db-1f97-4bda-a479-863d988c31a0
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vless-wsfp=firefox
+      headers: {}
+  - name: '🇫🇮[www.v2nodes.com] vless-FI-1... #1'
     type: vless
     server: hw5.roghanmo.com
     port: 465
@@ -574,14 +611,14 @@ proxies:
       path: /fp=chrome
       headers:
         Host: hw5.roghanmo.com
-  - name: '🇫🇮[www.v2nodes.com] vless-FI-1... #1'
+  - name: '🇫🇮[www.v2nodes.com] vless-FI-1... #2'
     type: vless
     server: 6.bmi.ir.asopardaz.ir
     port: 8443
     uuid: 2da85937-93d9-4509-8491-63b1921cf447
     tls: false
     network: tcp
-  - name: '🇫🇮[www.v2nodes.com] vless-FI-1... #2'
+  - name: '🏳[www.v2nodes.com] vless- #6'
     type: vless
     server: hw6.divarkhaghazi.com
     port: 465
@@ -610,7 +647,7 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: '🇫🇮[www.v2nodes.com] vless-FI-1... #6'
+  - name: '🏳[www.v2nodes.com] vless- #7'
     type: vless
     server: 94.156.79.93
     port: 443
@@ -618,7 +655,7 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: '🇫🇮[www.v2nodes.com] vless-FI-1... #7'
+  - name: '🇫🇮[www.v2nodes.com] vless-FI-1... #6'
     type: vless
     server: 45.144.234.157
     port: 14430
@@ -629,14 +666,7 @@ proxies:
       path: /vless
       headers:
         Host: 45.144.234.157
-  - name: '🇫🇮[www.v2nodes.com] vless-FI-1... #8'
-    type: vless
-    server: 95.216.27.15
-    port: 2053
-    uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-    tls: true
-    network: tcp
-  - name: '🇫🇮[www.v2nodes.com] vless-FI-1... #9'
+  - name: '🇫🇮[www.v2nodes.com] vless-FI-1... #7'
     type: vless
     server: 87.239.249.137
     port: 443
@@ -654,14 +684,14 @@ proxies:
     ws-opts:
       path: /bp-vless
       headers: {}
-  - name: '🇫🇷[www.v2nodes.com] vless-FR-1... #1'
+  - name: '🏳[www.v2nodes.com] vless- #8'
     type: vless
     server: w.geogame.ir
     port: 2053
     uuid: fbda2834-b1e7-4148-afb9-deda31036a30
     tls: true
     network: tcp
-  - name: '🇫🇷[www.v2nodes.com] vless-FR-1... #2'
+  - name: '🇫🇷[www.v2nodes.com] vless-FR-1... #1'
     type: vless
     server: 145.223.68.58
     port: 443
@@ -669,7 +699,7 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: '🇫🇷[www.v2nodes.com] vless-FR-1... #3'
+  - name: '🇫🇷[www.v2nodes.com] vless-FR-1... #2'
     type: vless
     server: 138.124.70.41
     port: 14430
@@ -680,7 +710,7 @@ proxies:
       path: /vless
       headers:
         Host: 138.124.70.41
-  - name: '🇫🇷[www.v2nodes.com] vless-FR-1... #4'
+  - name: '🇫🇷[www.v2nodes.com] vless-FR-1... #3'
     type: vless
     server: 199.232.78.160
     port: 443
@@ -691,7 +721,7 @@ proxies:
       path: /fp=chrome
       headers:
         Host: Appxdn.global.ssl.fastly.net
-  - name: '🇫🇷[www.v2nodes.com] vless-FR-1... #5'
+  - name: '🇫🇷[www.v2nodes.com] vless-FR-1... #4'
     type: vless
     server: 137.74.16.237
     port: 443
@@ -699,21 +729,21 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: '🇫🇷[www.v2nodes.com] vless-FR-1... #6'
+  - name: '🇫🇷[www.v2nodes.com] vless-FR-1... #5'
     type: vless
     server: 152.228.139.33
-    port: 35108
-    uuid: 81dc0b61-f9fe-4ad6-8b4e-b8c067b73712
-    tls: false
-    network: tcp
-  - name: '🇫🇷[www.v2nodes.com] vless-FR-1... #7'
+    port: 51671
+    uuid: 75cc7568-abb0-46a8-88be-8137d3c647d4
+    tls: true
+    network: grpc
+  - name: '🏳[www.v2nodes.com] vless- #9'
     type: vless
     server: 161.97.160.224
     port: 443
     uuid: b81b4d1b-7f20-48f1-82dc-d24bef898cab
     tls: false
     network: tcp
-  - name: '🇫🇷[www.v2nodes.com] vless-FR-1... #8'
+  - name: '🇫🇷[www.v2nodes.com] vless-FR-1... #6'
     type: vless
     server: 51.77.217.70
     port: 2053
@@ -790,7 +820,7 @@ proxies:
       path: /fp=chrome
       headers:
         Host: ccc.010304.xyz
-  - name: 🇬🇷[www.v2nodes.com] vless-GR-1...
+  - name: '🏳[www.v2nodes.com] vless- #10'
     type: vless
     server: 85.90.197.220
     port: 443
@@ -818,17 +848,6 @@ proxies:
     network: tcp
   - name: '🇭🇰[www.v2nodes.com] vless-HK-1... #1'
     type: vless
-    server: 38.76.180.144
-    port: 1443
-    uuid: d98b67d4-024a-4bba-91e2-e6ebece6df11
-    tls: false
-    network: ws
-    ws-opts:
-      path: /vless-wsfp=chrome
-      headers:
-        Host: 38.76.180.144
-  - name: '🇭🇰[www.v2nodes.com] vless-HK-1... #2'
-    type: vless
     server: px2.5ibtc.cn
     port: 443
     uuid: 326227e2-f2d1-4f43-8715-9da854f5f4c0
@@ -838,14 +857,14 @@ proxies:
       path: /326227e2-f2d1-4f43-8715-9da854f5f4c0fp=chrome
       headers:
         Host: px2.5ibtc.cn
-  - name: '🇭🇰[www.v2nodes.com] vless-HK-1... #3'
+  - name: '🇭🇰[www.v2nodes.com] vless-HK-1... #2'
     type: vless
     server: 195.58.144.56
     port: 11907
     uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
     tls: true
     network: tcp
-  - name: '🏳[www.v2nodes.com] vless- #2'
+  - name: '🏳[www.v2nodes.com] vless- #11'
     type: vless
     server: 103.148.73.173
     port: 8443
@@ -887,13 +906,6 @@ proxies:
     network: tcp
   - name: 🇮🇳[www.v2nodes.com] vless-IN-1...
     type: vless
-    server: 122.176.216.52
-    port: 443
-    uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
-    tls: false
-    network: tcp
-  - name: '🇮🇳[www.v2nodes.com] vless-IN-1... #1'
-    type: vless
     server: 13.140.56.100
     port: 14430
     uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
@@ -903,14 +915,15 @@ proxies:
       path: /vless
       headers:
         Host: 13.140.56.100
-  - name: '🇮🇳[www.v2nodes.com] vless-IN-1... #2'
+  - name: '🇮🇳[www.v2nodes.com] vless-IN-1... #1'
     type: vless
-    server: 5.253.42.164
+    server: dorado.yokkastars.com
     port: 40443
-    uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
-    tls: false
+    uuid: af5eac96-e478-488a-bc8c-45269d7e8847
+    tls: true
     network: tcp
-  - name: '🇮🇳[www.v2nodes.com] vless-IN-1... #3'
+    flow: xtls-rprx-vision
+  - name: '🇮🇳[www.v2nodes.com] vless-IN-1... #2'
     type: vless
     server: 141.11.139.215
     port: 443
@@ -921,21 +934,14 @@ proxies:
       path: /fp=chrome
       headers:
         Host: ccc.010304.xyz
-  - name: '🇮🇳[www.v2nodes.com] vless-IN-1... #4'
+  - name: '🇮🇳[www.v2nodes.com] vless-IN-1... #3'
     type: vless
     server: 194.61.31.126
     port: 2053
     uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
     tls: true
     network: tcp
-  - name: '🇮🇷 伊朗 | IRN #1'
-    type: vless
-    server: tunell2027.crackerbinam.org
-    port: 48312
-    uuid: f47057d5-120d-4b42-b6d6-30469aef6813
-    tls: true
-    network: tcp
-  - name: '🇮🇷[www.v2nodes.com] vless-IR-1... #1'
+  - name: 🇮🇷[www.v2nodes.com] vless-IR-1...
     type: vless
     server: 198.16.113.222
     port: 8443
@@ -943,7 +949,7 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: '🏳[www.v2nodes.com] vless- #3'
+  - name: '🏳[www.v2nodes.com] vless- #12'
     type: vless
     server: 198.16.113.220
     port: 8443
@@ -951,7 +957,7 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: '🇮🇷[www.v2nodes.com] vless-IR-1... #2'
+  - name: '🇮🇷[www.v2nodes.com] vless-IR-1... #1'
     type: vless
     server: 198.16.113.221
     port: 8443
@@ -970,7 +976,7 @@ proxies:
       path: /announcement?ed=2048fp=randomsecurity=tls
       headers:
         Host: it-mil.862400.xyz
-  - name: '🇮🇹[www.v2nodes.com] vless-IT-1... #1'
+  - name: '🏳[www.v2nodes.com] vless- #13'
     type: vless
     server: 82.118.16.189
     port: 443
@@ -978,7 +984,7 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: '🇮🇹[www.v2nodes.com] vless-IT-1... #2'
+  - name: '🇮🇹[www.v2nodes.com] vless-IT-1... #1'
     type: vless
     server: 82.118.16.187
     port: 443
@@ -986,7 +992,7 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: '🇮🇹[www.v2nodes.com] vless-IT-1... #3'
+  - name: '🇮🇹[www.v2nodes.com] vless-IT-1... #2'
     type: vless
     server: 57.131.38.163
     port: 2053
@@ -1006,40 +1012,37 @@ proxies:
         Host: vp58.cc.cd
   - name: 🇯🇵[www.v2nodes.com] vless-JP-1...
     type: vless
-    server: 31.76.91.238
-    port: 443
-    uuid: a6be8b6d-3033-4a99-b9bd-75e2ab12cfd0
-    tls: false
-    network: tcp
-  - name: '🇯🇵[www.v2nodes.com] vless-JP-1... #1'
-    type: vless
     server: 31.76.91.98
     port: 443
     uuid: 7072eeba-94fd-4fb3-92f2-a4506dd84cd8
     tls: false
     network: tcp
-  - name: '🇯🇵[www.v2nodes.com] vless-JP-1... #2'
+  - name: '🇯🇵[www.v2nodes.com] vless-JP-1... #1'
     type: vless
     server: 142.91.108.25
     port: 443
     uuid: ee18d188-14cc-417e-beb1-70e4add6d023
     tls: false
     network: tcp
-  - name: '🇯🇵[www.v2nodes.com] vless-JP-1... #3'
+  - name: '🇯🇵[www.v2nodes.com] vless-JP-1... #2'
     type: vless
-    server: 104.16.111.102
+    server: 104.21.219.160
     port: 443
     uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-    tls: false
-    network: tcp
-  - name: '🇯🇵[www.v2nodes.com] vless-JP-1... #4'
+    tls: true
+    network: ws
+    ws-opts:
+      path: /tyxywsfp=unsafe
+      headers:
+        Host: jp3.yohototo.top
+  - name: '🇯🇵[www.v2nodes.com] vless-JP-1... #3'
     type: vless
     server: 137.220.221.179
     port: 443
     uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
     tls: false
     network: tcp
-  - name: '🇯🇵[www.v2nodes.com] vless-JP-1... #5'
+  - name: '🇯🇵[www.v2nodes.com] vless-JP-1... #4'
     type: vless
     server: 103.75.118.228
     port: 12683
@@ -1047,7 +1050,7 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: '🏳[www.v2nodes.com] vless- #4'
+  - name: '🇯🇵[www.v2nodes.com] vless-JP-1... #5'
     type: vless
     server: 3.114.220.22
     port: 19645
@@ -1055,9 +1058,9 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: '🇸🇬[www.v2nodes.com] vless-SG #1'
+  - name: '🇸🇬[www.v2nodes.com] vless-SG #2'
     type: vless
-    server: 67.159.52.81
+    server: sg.fasti.win
     port: 443
     uuid: a16bd0e2-ff2e-4e4c-a955-0c684255a065
     tls: true
@@ -1074,7 +1077,7 @@ proxies:
       path: /e47f26811455/proxyip=146.190.100.44?u=dailydoseofvpnfp=unsafe
       headers:
         Host: mellow-pine-465b-4e9d050c.pages.dev
-  - name: '🏳[www.v2nodes.com] vless- #5'
+  - name: '🏳[www.v2nodes.com] vless- #14'
     type: vless
     server: 104.21.70.21
     port: 443
@@ -1085,6 +1088,17 @@ proxies:
       path: /138.2.74.219-28616fp=unsafe
       headers:
         Host: nautica-cff.kloningstrife002.workers.dev
+  - name: 🇯🇵[www.v2nodes.com] vless-JP-4...
+    type: vless
+    server: kclx.eu.org
+    port: 443
+    uuid: 0575005f-0ba9-4d6d-85e0-4a6a8cbafc1b
+    tls: true
+    network: ws
+    ws-opts:
+      path: /154.16.10.34-8080fp=chrome
+      headers:
+        Host: kclx.eu.org
   - name: 🇰🇷[www.v2nodes.com] vless-KR-1...
     type: vless
     server: 152.69.226.63
@@ -1147,7 +1161,7 @@ proxies:
     uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
     tls: true
     network: tcp
-  - name: '🏳[www.v2nodes.com] vless- #6'
+  - name: 🇱🇰[www.v2nodes.com] vless-LK-6...
     type: vless
     server: support.zoom.us
     port: 8080
@@ -1158,17 +1172,6 @@ proxies:
       path: /
       headers:
         Host: Free.nadun.store
-  - name: 🇱🇰[www.v2nodes.com] vless-LK-6...
-    type: vless
-    server: 170.114.45.6
-    port: 8080
-    uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: free.nadun.store
   - name: 🇱🇺[www.v2nodes.com] vless-LU-1...
     type: vless
     server: 107.189.7.176
@@ -1192,13 +1195,6 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: 🇲🇩[www.v2nodes.com] vless-MD-1...
-    type: vless
-    server: rus.play-cat.uk
-    port: 443
-    uuid: 76ef5ab3-7075-4e23-b445-f3b1bd05d431
-    tls: true
-    network: grpc
   - name: 🇲🇩[www.v2nodes.com] vless-MD-4...
     type: vless
     server: 185.153.198.86
@@ -1223,16 +1219,34 @@ proxies:
         Host: kclx.eu.org
   - name: 🇲🇾[www.v2nodes.com] vless-MY-1...
     type: vless
-    server: 188.114.98.0
+    server: 8.35.211.242
     port: 443
     uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-    tls: false
+    tls: true
     network: ws
     ws-opts:
-      path: /vlesswssecurity=tls
+      path: /vlesswsfp=chrome
       headers:
         Host: vpn.cintaku.qzz.io
-  - name: '🇳🇱[www.v2nodes.com] vless-NL-1... #2'
+  - name: 🇳🇱[www.v2nodes.com] vless-NL-1...
+    type: vless
+    server: fr.golangwikito.cfd
+    port: 443
+    uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision
+  - name: '🇳🇱 荷兰 | NLD #1'
+    type: vless
+    server: 89.105.218.106
+    port: 2083
+    uuid: 58037ab8-a8e2-4927-a8b1-f909f9fdb64c
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vless-wsfp=ios
+      headers: {}
+  - name: '🇳🇱[www.v2nodes.com] vless-NL-1... #4'
     type: vless
     server: 188.114.96.25
     port: 443
@@ -1243,14 +1257,14 @@ proxies:
       path: /stream/DEVCOP/8651a8ada76c/loc-0security=tls
       headers:
         Host: tepar-k4j9.jounet.workers.dev
-  - name: '🇳🇱[www.v2nodes.com] vless-NL-1... #11'
+  - name: '🇳🇱[www.v2nodes.com] vless-NL-1... #13'
     type: vless
     server: 87.232.116.20
     port: 443
     uuid: d86e6fda-e519-46ab-98eb-9ff9a9da5984
     tls: true
     network: grpc
-  - name: '🇳🇱[www.v2nodes.com] vless-NL-1... #3'
+  - name: '🇳🇱[www.v2nodes.com] vless-NL-1... #5'
     type: vless
     server: 31.58.234.135
     port: 47443
@@ -1258,7 +1272,7 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: '🇳🇱[www.v2nodes.com] vless-NL-1... #5'
+  - name: '🇳🇱[www.v2nodes.com] vless-NL-1... #7'
     type: vless
     server: 138.16.140.168
     port: 443
@@ -1266,14 +1280,14 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: '🇳🇱[www.v2nodes.com] vless-NL-1... #8'
+  - name: '🇳🇱[www.v2nodes.com] vless-NL-1... #10'
     type: vless
     server: 189.74.114.119
     port: 443
     uuid: abd5755a-8b77-4ed4-afbd-f2ccbc08e6f5
     tls: true
     network: grpc
-  - name: '🇳🇱[www.v2nodes.com] vless-NL-1... #9'
+  - name: '🇳🇱[www.v2nodes.com] vless-NL-1... #11'
     type: vless
     server: 173.249.208.27
     port: 443
@@ -1284,14 +1298,14 @@ proxies:
       path: /ws/930d11dc-0c6f-9e1a-4d57-b8473c715465fp=chrome
       headers:
         Host: ahbpanel-4134.shiprr.dev
-  - name: '🇳🇱[www.v2nodes.com] vless-NL-1... #10'
+  - name: '🇳🇱[www.v2nodes.com] vless-NL-1... #12'
     type: vless
     server: 186.246.9.29
     port: 443
     uuid: b2847c3b-5278-4b06-9c66-bc919d2dfec7
     tls: true
     network: tcp
-  - name: '🇳🇱[www.v2nodes.com] vless-NL-1... #12'
+  - name: '🇳🇱[www.v2nodes.com] vless-NL-1... #14'
     type: vless
     server: 185.14.30.98
     port: 8443
@@ -1299,33 +1313,14 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: '🇳🇱[www.v2nodes.com] vless-NL-1... #13'
-    type: vless
-    server: sw.golangwikito.cfd
-    port: 443
-    uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: '🇳🇱[www.v2nodes.com] vless-NL-1... #14'
-    type: vless
-    server: fr.golangwikito.cfd
-    port: 443
-    uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision
   - name: '🇳🇱[www.v2nodes.com] vless-NL-1... #15'
     type: vless
-    server: 146.75.59.186
+    server: 154.86.119.65
     port: 443
-    uuid: 85656e50-ee8d-4266-8b48-b99833c090dd
+    uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
     tls: true
-    network: ws
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: looabnetheroijji.global.ssl.fastly.net.
+    network: tcp
+    flow: xtls-rprx-vision
   - name: '🇳🇱[www.v2nodes.com] vless-NL-1... #16'
     type: vless
     server: 2.27.118.10
@@ -1333,14 +1328,7 @@ proxies:
     uuid: d9fe2431-8351-41eb-b956-75d96dec5d4a
     tls: true
     network: tcp
-  - name: '🇳🇱[www.v2nodes.com] vless-NL-1... #17'
-    type: vless
-    server: renderer-bridge-1-881.mirra.now
-    port: 443
-    uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
-    tls: true
-    network: tcp
-  - name: '🏳[www.v2nodes.com] vless- #7'
+  - name: '🏳[www.v2nodes.com] vless- #16'
     type: vless
     server: 208.67.106.154
     port: 443
@@ -1348,7 +1336,7 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: '🇳🇱[www.v2nodes.com] vless-NL-1... #18'
+  - name: '🇳🇱[www.v2nodes.com] vless-NL-1... #17'
     type: vless
     server: 108.61.164.217
     port: 4443
@@ -1356,7 +1344,7 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: '🇳🇱[www.v2nodes.com] vless-NL-1... #19'
+  - name: '🏳[www.v2nodes.com] vless- #17'
     type: vless
     server: 195.123.221.36
     port: 443
@@ -1386,28 +1374,21 @@ proxies:
     uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
     tls: false
     network: tcp
-  - name: '🇵🇱[www.v2nodes.com] vless-PL-1... #3'
-    type: vless
-    server: 2.26.6.1
-    port: 2087
-    uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-    tls: true
-    network: tcp
-  - name: '🇵🇱[www.v2nodes.com] vless-PL-1... #4'
+  - name: '🏳[www.v2nodes.com] vless- #18'
     type: vless
     server: 77.232.135.141
     port: 8445
     uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
     tls: true
     network: grpc
-  - name: '🇵🇱[www.v2nodes.com] vless-PL-1... #5'
+  - name: '🇵🇱[www.v2nodes.com] vless-PL-1... #3'
     type: vless
     server: site.teslamotor.site
     port: 20001
     uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
     tls: false
     network: tcp
-  - name: '🇵🇱[www.v2nodes.com] vless-PL-1... #6'
+  - name: '🇵🇱[www.v2nodes.com] vless-PL-1... #4'
     type: vless
     server: 150.251.113.34
     port: 443
@@ -1415,14 +1396,14 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: '🇵🇱[www.v2nodes.com] vless-PL-1... #7'
+  - name: '🇵🇱[www.v2nodes.com] vless-PL-1... #5'
     type: vless
     server: 54.37.136.194
     port: 2053
     uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-    tls: false
+    tls: true
     network: tcp
-  - name: '🇵🇱[www.v2nodes.com] vless-PL-1... #8'
+  - name: '🇵🇱[www.v2nodes.com] vless-PL-1... #6'
     type: vless
     server: 38.180.38.137
     port: 443
@@ -1443,7 +1424,7 @@ proxies:
     flow: xtls-rprx-vision
   - name: '🇷🇴[www.v2nodes.com] vless-RO-1... #1'
     type: vless
-    server: 178.83.45.226
+    server: edge10.cyrionflare.com
     port: 2052
     uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
     tls: false
@@ -1489,21 +1470,28 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: '🇷🇺[www.v2nodes.com] vless-RU-1... #4'
+  - name: '🏳[www.v2nodes.com] vless- #19'
     type: vless
     server: 201.24.121.243
     port: 443
     uuid: 32b5ca9b-3f81-4031-965d-e8b074216e8d
     tls: true
     network: grpc
-  - name: '🇷🇺[www.v2nodes.com] vless-RU-1... #5'
+  - name: '🇷🇺[www.v2nodes.com] vless-RU-1... #4'
     type: vless
     server: xsru1.ddnsfree.com
     port: 443
     uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
     tls: true
     network: grpc
-  - name: '🏳[www.v2nodes.com] vless- #8'
+  - name: '🇷🇺[www.v2nodes.com] vless-RU-1... #5'
+    type: vless
+    server: 45.12.75.242
+    port: 26424
+    uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+    tls: true
+    network: tcp
+  - name: '🏳[www.v2nodes.com] vless- #20'
     type: vless
     server: 81.208.170.142
     port: 1500
@@ -1561,12 +1549,12 @@ proxies:
     flow: xtls-rprx-vision
   - name: 🇸🇬[www.v2nodes.com] vless-SG-1...
     type: vless
-    server: sg1.zestapp778.com
-    port: 56984
+    server: sg003.zestapp778.com
+    port: 443
     uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
     tls: true
     network: tcp
-  - name: '🇸🇬[www.v2nodes.com] vless-SG-1... #1'
+  - name: '🏳[www.v2nodes.com] vless- #22'
     type: vless
     server: 134.185.81.5
     port: 47881
@@ -1574,14 +1562,14 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: '🇸🇬[www.v2nodes.com] vless-SG-1... #2'
+  - name: '🇸🇬[www.v2nodes.com] vless-SG-1... #1'
     type: vless
     server: 45.132.75.213
     port: 2053
     uuid: f46182d1-e13b-47d3-97e2-fa5426a93e7c
     tls: true
     network: tcp
-  - name: '🏳[www.v2nodes.com] vless- #10'
+  - name: '🇸🇬[www.v2nodes.com] vless-SG-1... #2'
     type: vless
     server: 147.93.173.45
     port: 10444
@@ -1634,10 +1622,10 @@ proxies:
   - name: 🇮🇳[www.v2nodes.com] vless-IN
     type: vless
     server: 5.253.28.240
-    port: 40443
-    uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
-    tls: false
-    network: tcp
+    port: 2443
+    uuid: 5e679ccd-1586-4d5f-b87b-48251046cad8
+    tls: true
+    network: grpc
   - name: '🇸🇬[www.v2nodes.com] vless-SG-1... #8'
     type: vless
     server: cf.877774.xyz
@@ -1652,7 +1640,7 @@ proxies:
   - name: '🇸🇬[www.v2nodes.com] vless-SG-1... #9'
     type: vless
     server: 3.0.111.82
-    port: 12972
+    port: 17623
     uuid: 814bd064-544d-4255-a070-5705c03f6da9
     tls: true
     network: tcp
@@ -1664,15 +1652,15 @@ proxies:
     uuid: d342d11e-d224-4463-b982-532309285094
     tls: false
     network: tcp
-  - name: '🇸🇬[www.v2nodes.com] vless-SG-9... #1'
+  - name: '🇸🇬 新加坡 | SGP #2'
     type: vless
-    server: 172.64.150.28
-    port: 2082
+    server: 104.18.35.86
+    port: 8080
     uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
     tls: false
     network: ws
     ws-opts:
-      path: /fpfp=chrome
+      path: /sg-melbi
       headers:
         Host: hhlfy.twiladaphne.ndjp.net
   - name: 🇹🇭[www.v2nodes.com] vless-TH-1...
@@ -1683,13 +1671,6 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: '🏳[www.v2nodes.com] vless- #11'
-    type: vless
-    server: 104.16.10.9
-    port: 443
-    uuid: 3c52e091-6714-4915-949f-2149fe69951b
-    tls: false
-    network: tcp
   - name: '🇹🇷[www.v2nodes.com] vless-TR-1... #1'
     type: vless
     server: 177.3.208.65
@@ -1724,15 +1705,12 @@ proxies:
     network: tcp
   - name: 🇹🇼[www.v2nodes.com] vless-TW-1...
     type: vless
-    server: n04.jinggai.online
-    port: 8443
+    server: 152.32.167.33
+    port: 443
     uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
     tls: true
-    network: ws
-    ws-opts:
-      path: /nvl-n04-ws/e0577fe8fd7c8823fp=chrome
-      headers:
-        Host: n04.jinggai.online
+    network: tcp
+    flow: xtls-rprx-vision
   - name: '🇹🇼[www.v2nodes.com] vless-TW-1... #1'
     type: vless
     server: 60.248.219.53
@@ -1744,7 +1722,7 @@ proxies:
       path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530fp=chrome
       headers:
         Host: ty986gfazs.cainiaohub.xyz
-  - name: '🇺🇦[www.v2nodes.com] vless-UA-1... #3'
+  - name: '🇺🇦[www.v2nodes.com] vless-UA-1... #4'
     type: vless
     server: 83.147.18.75
     port: 443
@@ -1759,6 +1737,14 @@ proxies:
     uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
     tls: true
     network: tcp
+  - name: '🇺🇦[www.v2nodes.com] vless-UA-1... #2'
+    type: vless
+    server: staging.lastilhame.monster
+    port: 443
+    uuid: 2f6e2b17-4d5e-4a12-8979-f53fdd347580
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision
   - name: '🇺🇸[www.v2nodes.com] vless-US-1... #7'
     type: vless
     server: finlandlanzarotte.live
@@ -1767,7 +1753,7 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: '🇺🇸[www.v2nodes.com] vless-US-1... #10'
+  - name: '🇺🇸[www.v2nodes.com] vless-US-1... #1'
     type: vless
     server: wwww.qarvian.ir
     port: 443
@@ -1805,6 +1791,17 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
+  - name: '🇺🇸[www.v2nodes.com] vless-US-1... #9'
+    type: vless
+    server: 146.75.59.186
+    port: 443
+    uuid: 780aa2f6-1a02-4fa2-bcd0-fa7d469bdff7
+    tls: true
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: copy_az_channel_NUFiLTER_6i.global.ssl.fastly.net.
   - name: '🇺🇸[www.v2nodes.com] vless-US-1... #11'
     type: vless
     server: fast.145779.xyz
@@ -1812,14 +1809,7 @@ proxies:
     uuid: c83f15bf-1817-4ec8-a19f-6393d226434c
     tls: false
     network: tcp
-  - name: 🇻🇳[www.v2nodes.com] vless-VN-1...
-    type: vless
-    server: 150.95.109.109
-    port: 2086
-    uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
-    tls: false
-    network: tcp
-  - name: '🇻🇳[www.v2nodes.com] vless-VN-1... #1'
+  - name: '🏳[www.v2nodes.com] vless- #24'
     type: vless
     server: 154.21.203.106
     port: 51279
@@ -1851,26 +1841,26 @@ proxies:
     password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
     sni: 216.238.104.154
     skip-cert-verify: false
-  - name: '🇨🇦[www.v2nodes.com] trojan-CA-... #4'
+  - name: '🇨🇦[www.v2nodes.com] trojan-CA-... #5'
     type: trojan
     server: 216.152.147.89
     port: 443
     password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
     sni: 216.152.147.89
     skip-cert-verify: false
-  - name: '🇨🇦[www.v2nodes.com] trojan-CA-... #1'
+  - name: '🇨🇦[www.v2nodes.com] trojan-CA-... #2'
     type: trojan
-    server: 216.152.147.152
+    server: 216.152.147.79
     port: 443
     password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    sni: learn.connectingpeoplewithgreatjobs.com
+    sni: 216.152.147.79
     skip-cert-verify: false
   - name: '🇨🇦[www.v2nodes.com] trojan-CA-... #6'
     type: trojan
-    server: 216.152.147.48
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    sni: courses.connectingpeoplewithgreatjobs.com
+    server: ca001.zestapp778.com
+    port: 46977
+    password: 5t6i121em5lkmsmk
+    sni: ca001.zestapp778.com
     skip-cert-verify: false
   - name: '🇨🇭[www.v2nodes.com] trojan-CH-... #4'
     type: trojan
@@ -1891,16 +1881,9 @@ proxies:
     server: de-bots4.h1cloud.net
     port: 25267
     password: happybirthdaydaniel
-    sni: t.me/fuckthewall
-    skip-cert-verify: true
-  - name: '🇩🇪[www.v2nodes.com] trojan-DE-... #1'
-    type: trojan
-    server: 193.108.119.15
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    sni: 193.108.119.15
+    sni: de-bots4.h1cloud.net
     skip-cert-verify: false
-  - name: '🇩🇪[www.v2nodes.com] trojan-DE-... #2'
+  - name: '🇩🇪[www.v2nodes.com] trojan-DE-... #1'
     type: trojan
     server: 193.108.119.96
     port: 443
@@ -1909,12 +1892,12 @@ proxies:
     skip-cert-verify: false
   - name: '🇩🇪[www.v2nodes.com] trojan-DE-... #3'
     type: trojan
-    server: 193.108.119.29
+    server: 193.108.119.15
     port: 443
     password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    sni: blog.iloverussia2026.com
+    sni: courses.iloverussia2026.com
     skip-cert-verify: false
-  - name: '🇪🇸[www.v2nodes.com] trojan-ES-... #4'
+  - name: '🇪🇸[www.v2nodes.com] trojan-ES-... #3'
     type: trojan
     server: 66.163.118.244
     port: 443
@@ -1923,19 +1906,12 @@ proxies:
     skip-cert-verify: false
   - name: '🇪🇸[www.v2nodes.com] trojan-ES-... #1'
     type: trojan
-    server: 66.163.118.62
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    sni: 66.163.118.62
-    skip-cert-verify: false
-  - name: '🇪🇸[www.v2nodes.com] trojan-ES-... #2'
-    type: trojan
     server: 66.163.118.251
     port: 443
     password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    sni: 66.163.118.251
+    sni: resources.discovergreatjobsandadvanceyourcareer.com
     skip-cert-verify: false
-  - name: '🇪🇸[www.v2nodes.com] trojan-ES-... #3'
+  - name: '🇪🇸[www.v2nodes.com] trojan-ES-... #2'
     type: trojan
     server: 66.163.118.166
     port: 443
@@ -1944,74 +1920,67 @@ proxies:
     skip-cert-verify: false
   - name: 🇫🇷[www.v2nodes.com] trojan-FR-...
     type: trojan
-    server: 185.255.179.166
-    port: 443
-    password: humanity
-    sni: www.calmlunch.com
-    skip-cert-verify: false
-  - name: '🇫🇷[www.v2nodes.com] trojan-FR-... #7'
-    type: trojan
     server: 185.220.100.168
     port: 443
     password: humanity
     sni: www.calmlunch.com
     skip-cert-verify: false
-  - name: '🇫🇷[www.v2nodes.com] trojan-FR-... #2'
+  - name: '🇫🇷[www.v2nodes.com] trojan-FR-... #1'
     type: trojan
     server: 212.227.144.37
     port: 8443
     password: humanity
     sni: www.calmlunch.com
     skip-cert-verify: false
-  - name: '🇫🇷[www.v2nodes.com] trojan-FR-... #3'
+  - name: '🇫🇷[www.v2nodes.com] trojan-FR-... #2'
     type: trojan
     server: 45.87.41.18
     port: 443
     password: humanity
     sni: www.calmlunch.com
     skip-cert-verify: false
-  - name: '🇫🇷[www.v2nodes.com] trojan-FR-... #4'
+  - name: '🇫🇷[www.v2nodes.com] trojan-FR-... #3'
     type: trojan
     server: www.calmlunch.com
     port: 443
     password: humanity
     sni: www.calmlunch.com
     skip-cert-verify: false
-  - name: '🇫🇷[www.v2nodes.com] trojan-FR-... #5'
+  - name: '🇫🇷[www.v2nodes.com] trojan-FR-... #4'
     type: trojan
     server: 185.114.72.31
     port: 2053
     password: humanity
     sni: www.calmlunch.com
     skip-cert-verify: false
-  - name: '🇫🇷[www.v2nodes.com] trojan-FR-... #6'
+  - name: '🇫🇷[www.v2nodes.com] trojan-FR-... #5'
     type: trojan
     server: 45.130.125.160
     port: 443
     password: humanity
     sni: www.calmlunch.com
     skip-cert-verify: false
-  - name: '🇫🇷[www.v2nodes.com] trojan-FR-... #8'
+  - name: '🇫🇷[www.v2nodes.com] trojan-FR-... #7'
     type: trojan
     server: 165.215.250.14
     port: 443
     password: humanity
     sni: 165.215.250.14
     skip-cert-verify: false
-  - name: '🇫🇷[www.v2nodes.com] trojan-FR-... #9'
+  - name: '🇫🇷[www.v2nodes.com] trojan-FR-... #8'
     type: trojan
     server: 104.19.229.21
     port: 443
     password: humanity
     sni: www.calmlunch.com
     skip-cert-verify: false
-  - name: 🇬🇧[www.v2nodes.com] trojan-GB-...
+  - name: '🏳[www.v2nodes.com] trojan- #2'
     type: trojan
     server: en001.zestapp778.com
     port: 29813
     password: 5t6i121em5lkmsmk
     sni: en001.zestapp778.com
-    skip-cert-verify: true
+    skip-cert-verify: false
   - name: 🇮🇱[www.v2nodes.com] trojan-IL-...
     type: trojan
     server: 64.176.163.182
@@ -2025,7 +1994,7 @@ proxies:
     port: 42733
     password: 5t6i121em5lkmsmk
     sni: in002.zestapp778.com
-    skip-cert-verify: true
+    skip-cert-verify: false
   - name: 🇯🇵[www.v2nodes.com] trojan-JP-...
     type: trojan
     server: 43.167.186.78
@@ -2054,6 +2023,13 @@ proxies:
     password: 5931134d1cde66bf83a54acdfebe7ab2
     sni: moltbot.doctoroyy.net
     skip-cert-verify: false
+  - name: '🏳[www.v2nodes.com] trojan- #3'
+    type: trojan
+    server: 172.66.40.99
+    port: 443
+    password: humanity
+    sni: www.trusteeforward.com
+    skip-cert-verify: false
   - name: 🇵🇱[www.v2nodes.com] trojan-PL-...
     type: trojan
     server: 70.34.252.255
@@ -2075,7 +2051,7 @@ proxies:
     password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
     sni: 139.180.146.200
     skip-cert-verify: false
-  - name: '🇺🇸[www.v2nodes.com] trojan-US-... #8'
+  - name: '🇺🇸[www.v2nodes.com] trojan-US-... #6'
     type: trojan
     server: 167.88.61.193
     port: 443
@@ -2091,33 +2067,26 @@ proxies:
     skip-cert-verify: false
   - name: '🇺🇸[www.v2nodes.com] trojan-US-... #2'
     type: trojan
-    server: 170.101.101.211
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    sni: api.explorecreativejobsandenhanceyourcareerportfolio.com
-    skip-cert-verify: false
-  - name: '🇺🇸[www.v2nodes.com] trojan-US-... #3'
-    type: trojan
     server: us001.zestapp778.com
     port: 57277
     password: 5t6i121em5lkmsmk
     sni: us001.zestapp778.com
     skip-cert-verify: true
-  - name: '🇺🇸[www.v2nodes.com] trojan-US-... #4'
+  - name: '🇺🇸[www.v2nodes.com] trojan-US-... #3'
     type: trojan
-    server: 170.101.101.131
+    server: 170.101.101.19
     port: 443
     password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    sni: blog.explorecreativejobsandenhanceyourcareerportfolio.com
+    sni: learn.explorecreativejobsandenhanceyourcareerportfolio.com
     skip-cert-verify: false
-  - name: '🇺🇸[www.v2nodes.com] trojan-US-... #9'
+  - name: '🇺🇸[www.v2nodes.com] trojan-US-... #7'
     type: trojan
     server: 170.101.101.67
     port: 443
     password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
     sni: courses.explorecreativejobsandenhanceyourcareerportfolio.com
     skip-cert-verify: false
-  - name: '🇺🇸[www.v2nodes.com] trojan-US-... #10'
+  - name: '🇺🇸[www.v2nodes.com] trojan-US-... #8'
     type: trojan
     server: 167.82.64.120
     port: 443
@@ -2359,184 +2328,137 @@ proxies:
     password: AA885B42-133C-3828-FB69-E45105C06092
     sni: m.ctrip.com
     skip-cert-verify: true
-  - name: '🇦🇹 奥地利 | AUT #1'
+  - name: '🇭🇰 香港 | HKG #3'
     type: trojan
     server: ench-snet-app.w-ctrip.cn
-    port: 38963
+    port: 53004
     password: b17e9b52db9623bd6c16eea3d7adb5b3
     sni: cm.g.doubleclick.net
     skip-cert-verify: true
-  - name: '🇯🇵 日本 | JPN #2'
+  - name: '🇸🇬 新加坡 | SGP #1'
     type: trojan
     server: ench-snet-app.w-ctrip.cn
-    port: 24133
-    password: b17e9b52db9623bd6c16eea3d7adb5b3
-    sni: cm.g.doubleclick.net
-    skip-cert-verify: true
-  - name: '🇰🇷 韩国 | KOR #2'
-    type: trojan
-    server: ench-snet-app.w-ctrip.cn
-    port: 29628
-    password: b17e9b52db9623bd6c16eea3d7adb5b3
-    sni: cm.g.doubleclick.net
-    skip-cert-verify: true
-  - name: '🇸🇬 新加坡 | SGP #2'
-    type: trojan
-    server: ench-snet-app.w-ctrip.cn
-    port: 15589
-    password: b17e9b52db9623bd6c16eea3d7adb5b3
-    sni: cm.g.doubleclick.net
-    skip-cert-verify: true
-  - name: '🇹🇼 🇨🇳 台湾 | TWN #1'
-    type: trojan
-    server: ench-snet-app.w-ctrip.cn
-    port: 22003
+    port: 42338
     password: b17e9b52db9623bd6c16eea3d7adb5b3
     sni: cm.g.doubleclick.net
     skip-cert-verify: true
   - name: '🇹🇼 🇨🇳 台湾 | TWN #2'
     type: trojan
     server: ench-snet-app.w-ctrip.cn
-    port: 45502
+    port: 47786
     password: b17e9b52db9623bd6c16eea3d7adb5b3
     sni: cm.g.doubleclick.net
     skip-cert-verify: true
-  - name: '🇹🇼 🇨🇳 台湾 | TWN #3'
-    type: trojan
-    server: ench-snet-app.w-ctrip.cn
-    port: 54815
-    password: b17e9b52db9623bd6c16eea3d7adb5b3
-    sni: cm.g.doubleclick.net
-    skip-cert-verify: true
-  - name: '🇺🇸 美国 | USA #1'
-    type: trojan
-    server: ench-snet-app.w-ctrip.cn
-    port: 26429
-    password: b17e9b52db9623bd6c16eea3d7adb5b3
-    sni: cm.g.doubleclick.net
-    skip-cert-verify: true
-  - name: '🇦🇱 AL_22 #1'
-    type: vless
-    server: 157.22.240.20
-    port: 443
-    uuid: f28ce4eb-62cd-45f5-b3b3-be1c1a95e335
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: '🇨🇳 CN_147 #1'
-    type: trojan
-    server: ench-snet-app.w-ctrip.cn
-    port: 30298
-    password: b17e9b52db9623bd6c16eea3d7adb5b3
-    sni: cm.g.doubleclick.net
-    skip-cert-verify: true
-  - name: '🇩🇪 德国 | DEU #1'
-    type: vless
-    server: 92.242.165.11
-    port: 2083
-    uuid: 75b517db-1f97-4bda-a479-863d988c31a0
-    tls: true
-    network: ws
-    ws-opts:
-      path: /vless-wsfp=firefox
-      headers: {}
-  - name: '🇩🇪 德国 | DEU #2'
-    type: vless
-    server: 199.232.239.239
-    port: 443
-    uuid: 40694ced-9a8c-42fd-f5f8-3ac3c8b27fc2
-    tls: true
-    network: ws
-    ws-opts:
-      path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056fp=chrome
-      headers:
-        Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
-  - name: '🇩🇪 德国 | DEU #3'
-    type: vless
-    server: test.configurationn.ir
-    port: 2000
-    uuid: ddddb239-9e8b-415b-a21a-3708c599f04b
-    tls: false
-    network: tcp
-  - name: '🇩🇪 德国 | DEU #4'
-    type: vless
-    server: 151.101.131.6
-    port: 443
-    uuid: bdf38176-48e9-40f1-9d1c-d501c333b464
-    tls: true
-    network: tcp
-  - name: '🇪🇪 爱沙尼亚 | EST #1'
-    type: vless
-    server: 31.77.143.70
-    port: 443
-    uuid: 24b5a8bc-3648-42e1-b02d-227ceeead1c9
-    tls: true
-    network: tcp
-    flow: xtls-rprx-vision
-  - name: '🇪🇸 西班牙 | ESP #1'
-    type: trojan
-    server: ench-snet-app.w-ctrip.cn
-    port: 22100
-    password: b17e9b52db9623bd6c16eea3d7adb5b3
-    sni: cm.g.doubleclick.net
-    skip-cert-verify: true
-  - name: '🇪🇸 西班牙 | ESP #2'
-    type: vless
-    server: 84.32.184.218
-    port: 443
-    uuid: 7d1a74fd-8a38-4a29-863f-5da53a9e557e
-    tls: true
-    network: tcp
-  - name: '🇫🇷 法国 | FRA #1'
+  - name: 🇫🇷FR_3|2.0MB/s
     type: vless
     server: 62.210.70.194
     port: 37783
     uuid: a289c660-1b12-432b-a06c-c2ae469272b0
     tls: true
     network: tcp
-  - name: 🇬🇪 GE_43
+  - name: 🇸🇬SG_2|1006KB/s
+    type: trojan
+    server: ench-snet-app.w-ctrip.cn
+    port: 15589
+    password: b17e9b52db9623bd6c16eea3d7adb5b3
+    sni: cm.g.doubleclick.net
+    skip-cert-verify: true
+  - name: 🇺🇸US_18|3.2MB/s
+    type: trojan
+    server: 186.241.105.213
+    port: 443
+    password: va3E77I9fZCnCVcGKkxBCfz5
+    sni: vpn.liumr.top
+    skip-cert-verify: false
+  - name: 🇺🇸US_20|4.2MB/s
     type: vless
-    server: 93.190.8.153
-    port: 3090
-    uuid: e5ec2701-f2d6-42ee-b125-1e17fce8daff
+    server: us3.shtil.io
+    port: 443
+    uuid: 86a83d11-d751-4b60-aa4e-1dca5cff7028
+    tls: true
+    network: tcp
+  - name: '🇧🇷 巴西 | BRA #1'
+    type: trojan
+    server: ench-snet-app.w-ctrip.cn
+    port: 16932
+    password: b17e9b52db9623bd6c16eea3d7adb5b3
+    sni: cm.g.doubleclick.net
+    skip-cert-verify: true
+  - name: '🇨🇭 瑞士 | CHE #1'
+    type: vless
+    server: ch2.h1cloud.net
+    port: 25879
+    uuid: 241306b3-9f27-4ed3-9524-6c0792c55856
+    tls: true
+    network: tcp
+  - name: '🇩🇪 德国 | DEU #1'
+    type: vless
+    server: 185.44.64.166
+    port: 59397
+    uuid: ac36b6f8-d03d-46cb-808f-e655183fb76d
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision
+  - name: 🇩🇪 德国 | DEU 2
+    type: vmess
+    server: 109.70.74.113
+    port: 30553
+    uuid: 8846e18f-109a-4d8f-a32f-1a41fd6afc8e
+    alterId: 0
+    cipher: auto
     tls: false
-    network: grpc
+    network: tcp
+  - name: '🇩🇪 德国 | DEU #3'
+    type: vless
+    server: 151.101.67.6
+    port: 443
+    uuid: bdf38176-48e9-40f1-9d1c-d501c333b464
+    tls: true
+    network: tcp
+  - name: '🇩🇪 德国 | DEU #4'
+    type: trojan
+    server: ench-snet-app.w-ctrip.cn
+    port: 41184
+    password: b17e9b52db9623bd6c16eea3d7adb5b3
+    sni: cm.g.doubleclick.net
+    skip-cert-verify: true
+  - name: '🇩🇪 德国 | DEU #5'
+    type: vless
+    server: 151.101.131.6
+    port: 443
+    uuid: bdf38176-48e9-40f1-9d1c-d501c333b464
+    tls: true
+    network: tcp
+  - name: '🇩🇪 德国 | DEU #6'
+    type: vless
+    server: 185.184.122.157
+    port: 443
+    uuid: 9c55c7eb-d53e-40fa-a0c9-e25d2a345073
+    tls: true
+    network: ws
+    ws-opts:
+      path: /announcement?ed=2048fp=random
+      headers:
+        Host: se-sto.862400.xyz
+  - name: '🇩🇪 德国 | DEU #7'
+    type: vless
+    server: 103.88.242.98
+    port: 18443
+    uuid: 260c3225-67b4-4d36-ac56-fef94aaef311
+    tls: true
+    network: tcp
+  - name: '🇬🇪 GE_46 #1'
+    type: vless
+    server: 94.43.238.112
+    port: 2053
+    uuid: 9c55c7eb-d53e-40fa-a0c9-e25d2a345073
+    tls: true
+    network: ws
+    ws-opts:
+      path: /announcement?ed=2048fp=random
+      headers:
+        Host: jp-osa.862400.xyz
   - name: '🇭🇰 香港 | HKG #1'
-    type: vmess
-    server: euu1yAlfmcqvLJEx.v.3dns.vip
-    port: 443
-    uuid: d237ab38-1974-4b36-94a3-0665ce8587b9
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /ws-vmess
-      headers:
-        Host: euu1yAlfmcqvLJEx.v.3dns.vip
-  - name: '🇭🇰 香港 | HKG #2'
-    type: vmess
-    server: 47.76.57.83
-    port: 443
-    uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /ws-vmess
-      headers:
-        Host: vah4urdzl3jdx5r2.v.3dns.vip
-  - name: '🇭🇰 香港 | HKG #3'
-    type: vmess
-    server: 47.242.81.94
-    port: 52080
-    uuid: e47b9f77-60e4-4738-8d53-772b6002e146
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: http
-  - name: '🇭🇰 香港 | HKG #4'
     type: vmess
     server: 47.244.120.197
     port: 23026
@@ -2549,29 +2471,100 @@ proxies:
       path: /arki
       headers:
         Host: 47.244.120.197
-  - name: 🇯🇵 日本 | JPN
+  - name: '🇭🇰 香港 | HKG #2'
     type: vmess
-    server: vt50k-g01.jp05-6786-vm0.entry.fr0307a.art
-    port: 46482
-    uuid: 7a6cb59b-fbcd-3f50-b5f2-a2534326c4c8
-    alterId: 1
+    server: 47.243.153.153
+    port: 443
+    uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /ws-vmess
+      headers:
+        Host: i2psm3knof5qjjix.v.3dns.vip
+  - name: '🇭🇰 香港 | HKG #4'
+    type: trojan
+    server: ench-snet-app.w-ctrip.cn
+    port: 43638
+    password: b17e9b52db9623bd6c16eea3d7adb5b3
+    sni: cm.g.doubleclick.net
+    skip-cert-verify: true
+  - name: '🇭🇰 香港 | HKG #5'
+    type: vmess
+    server: 8.217.254.88
+    port: 443
+    uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /ws-vmess
+      headers:
+        Host: 2b9hwy8ocx7q74nm.v.3dns.vip
+  - name: '🇭🇰 香港 | HKG #6'
+    type: vmess
+    server: 47.243.65.243
+    port: 443
+    uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /ws-vmess
+      headers:
+        Host: lcv8v9l7oyamxxfz.v.3dns.vip
+  - name: '🇭🇰 香港 | HKG #7'
+    type: trojan
+    server: hik160.pacemakere.com
+    port: 20014
+    password: 778f5385b4254495
+    sni: hik160.pacemakere.com
+    skip-cert-verify: true
+  - name: '🇭🇰 香港 | HKG #8'
+    type: vmess
+    server: 47.242.81.94
+    port: 52080
+    uuid: e47b9f77-60e4-4738-8d53-772b6002e146
+    alterId: 0
     cipher: auto
     tls: false
+    network: http
+  - name: 🇯🇵 日本 | JPN
+    type: vmess
+    server: qdiysly-g05.jp06-jz-vm0.entry.fr0528.art
+    port: 28787
+    uuid: 2ce005b4-e57a-3670-be88-60eeeb078bb7
+    alterId: 1
+    cipher: auto
+    tls: true
     network: tcp
+  - name: '🇯🇵 日本 | JPN #2'
+    type: trojan
+    server: zz.jp01.fogvip-zz.uk
+    port: 40014
+    password: ef95390a-0bcb-45b8-a2bc-3ab33bf0e297
+    sni: ld.jp01.yuiuingkig.icu
+    skip-cert-verify: true
   - name: '🇯🇵 日本 | JPN #3'
-    type: vless
-    server: 94.43.238.112
-    port: 2053
-    uuid: 9c55c7eb-d53e-40fa-a0c9-e25d2a345073
+    type: vmess
+    server: JP032008.ssgreen.org
+    port: 443
+    uuid: 9ddbe6b7-8ad5-43d5-b30a-35e35b633103
+    alterId: 0
+    cipher: auto
     tls: true
     network: ws
     ws-opts:
-      path: /announcement?ed=2048fp=random
+      path: /wes
       headers:
-        Host: jp-osa.862400.xyz
+        Host: JP032008.ssgreen.org
   - name: '🇯🇵 日本 | JPN #4'
     type: vless
-    server: 193.122.115.184
+    server: 13.230.191.90
     port: 443
     uuid: 9c55c7eb-d53e-40fa-a0c9-e25d2a345073
     tls: true
@@ -2580,57 +2573,97 @@ proxies:
       path: /announcement?ed=2048fp=random
       headers:
         Host: jp-osa.862400.xyz
-  - name: '🇸🇪 瑞典 | SWE #1'
+  - name: '🇱🇻 拉脱维亚 | LVA #1'
     type: vless
-    server: 83.147.241.197
+    server: test.wolf-moose.test-cdn-kkk.com
     port: 443
-    uuid: 9c55c7eb-d53e-40fa-a0c9-e25d2a345073
-    tls: true
-    network: ws
-    ws-opts:
-      path: /announcement?ed=2048fp=random
-      headers:
-        Host: se-sto.862400.xyz
-  - name: '🇸🇪 瑞典 | SWE #2'
-    type: vless
-    server: 185.184.122.157
-    port: 443
-    uuid: 9c55c7eb-d53e-40fa-a0c9-e25d2a345073
-    tls: true
-    network: ws
-    ws-opts:
-      path: /announcement?ed=2048fp=random
-      headers:
-        Host: se-sto.862400.xyz
-  - name: '🇸🇪 瑞典 | SWE #3'
-    type: vless
-    server: 23.94.123.231
-    port: 443
-    uuid: 9c55c7eb-d53e-40fa-a0c9-e25d2a345073
-    tls: true
-    network: ws
-    ws-opts:
-      path: /announcement?ed=2048fp=random
-      headers:
-        Host: se-sto.862400.xyz
-  - name: 🇸🇬 新加坡 | SGP
-    type: trojan
-    server: 104.18.35.86
-    port: 8443
-    password: trojan
-    sni: longwanghen.pages.dev
-    skip-cert-verify: true
-  - name: '🇸🇬 新加坡 | SGP #3'
-    type: vless
-    server: 54.169.236.182
-    port: 443
-    uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
+    uuid: bbe37c75-d097-4b72-a074-445a56fe3969
     tls: true
     network: tcp
     flow: xtls-rprx-vision
+  - name: 🇳🇱 荷兰 | NLD 2
+    type: vless
+    server: 94.183.206.48
+    port: 7443
+    uuid: 12776e55-6230-48b9-b069-1bb8a04b4237
+    tls: true
+    network: grpc
+  - name: '🇳🇱 荷兰 | NLD #3'
+    type: vless
+    server: app-mi-26.spbstudentlife.com
+    port: 443
+    uuid: 07680ffb-0666-4836-b6ad-ec0de62bc38f
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision
+  - name: '🇷🇺 俄罗斯 | RUS #1'
+    type: vless
+    server: 147.45.184.91
+    port: 443
+    uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa
+    tls: true
+    network: tcp
+  - name: '🇷🇺 俄罗斯 | RUS #2'
+    type: vless
+    server: 5.42.118.163
+    port: 443
+    uuid: 4777d90d-265b-4927-a0d1-63f36ed1421c
+    tls: true
+    network: tcp
+  - name: '🇸🇪 瑞典 | SWE #1'
+    type: vless
+    server: 13.143.180.141
+    port: 443
+    uuid: 2614a96d-e39f-02f0-a9c7-467a178c2c0a
+    tls: true
+    network: tcp
+    flow: xtls-rprx-vision
+  - name: '🇸🇬 新加坡 | SGP #4'
+    type: vless
+    server: 104.18.35.86
+    port: 2082
+    uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+    tls: false
+    network: ws
+    ws-opts:
+      path: /fp
+      headers:
+        Host: hhlfy.twiladaphne.ndjp.net
+  - name: '🇸🇬 新加坡 | SGP #5'
+    type: trojan
+    server: zz.xinjp01.fogvip-zz.uk
+    port: 40013
+    password: ef95390a-0bcb-45b8-a2bc-3ab33bf0e297
+    sni: ld.xinjp01.yuiuingkig.icu
+    skip-cert-verify: true
+  - name: '🇹🇷 土耳其 | TUR #1'
+    type: vless
+    server: melomusic.plavex.ir
+    port: 2196
+    uuid: 37e0baee-d29a-b7d2-b9d1-2b39d481c6de
+    tls: true
+    network: tcp
+  - name: '🇹🇼 🇨🇳 台湾 | TWN #1'
+    type: trojan
+    server: ench-snet-app.w-ctrip.cn
+    port: 45503
+    password: b17e9b52db9623bd6c16eea3d7adb5b3
+    sni: cm.g.doubleclick.net
+    skip-cert-verify: true
+  - name: '🇺🇸 美国 | USA #1'
+    type: vless
+    server: piracy-android.video-streams.org
+    port: 443
+    uuid: 71ee5343-b431-44be-bed7-22b9b9f7253c
+    tls: true
+    network: ws
+    ws-opts:
+      path: /wsfp=chrome
+      headers:
+        Host: piracy-android.video-streams.org
   - name: '🇺🇸 美国 | USA #2'
     type: vless
-    server: 151.101.161.242
+    server: 151.101.21.242
     port: 443
     uuid: f80cfcb4-9bd1-4a0d-a50b-28e3eea107d8
     tls: true
@@ -2641,122 +2674,120 @@ proxies:
         Host: bounded-crammed.video-streams.org
   - name: '🇺🇸 美国 | USA #3'
     type: vless
-    server: piracy-android.video-streams.org
+    server: ghosts-spasm.quick-cdn.net
     port: 443
-    uuid: 72a258a9-281d-41ae-a9d9-2247064923e0
+    uuid: e262a993-a3be-4f36-95ba-81dc1e32d78c
     tls: true
     network: ws
     ws-opts:
       path: /wsfp=chrome
       headers:
-        Host: piracy-android.video-streams.org
+        Host: ghosts-spasm.quick-cdn.net
   - name: '🇺🇸 美国 | USA #4'
     type: vless
-    server: bounded-crammed.video-streams.org
+    server: adheres-scruple.quick-cdn.net
     port: 443
-    uuid: eb199167-16d6-45d0-aadb-314cab5a4e72
+    uuid: ecbc4229-e8d3-4607-8f02-fd592c9a0743
+    tls: true
+    network: ws
+    ws-opts:
+      path: /wsfp=chrome
+      headers:
+        Host: adheres-scruple.quick-cdn.net
+  - name: '🇺🇸 美国 | USA #5'
+    type: vless
+    server: 151.101.201.242
+    port: 443
+    uuid: 11e6c528-434f-4b15-83b3-40a46237ea13
     tls: true
     network: ws
     ws-opts:
       path: /wsfp=chrome
       headers:
         Host: bounded-crammed.video-streams.org
-  - name: '🇺🇸 美国 | USA #5'
+  - name: '🇺🇸 美国 | USA #6'
     type: vless
-    server: www.qarvian.ir
+    server: freev2.cloudflare.182682.xyz
     port: 443
-    uuid: 780aa2f6-1a02-4fa2-bcd0-fa7d469bdff7
+    uuid: 9c55c7eb-d53e-40fa-a0c9-e25d2a345073
     tls: true
     network: ws
     ws-opts:
-      path: /?TELEGRAM--FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE--TELEGRAMfp=chrome
+      path: /announcement?ed=2048fp=random
       headers:
-        Host: copy_az_channel_NUFiLTER_7i.global.ssl.fastly.net.
-  - name: '🇺🇸 美国 | USA #6'
+        Host: ap-south.862400.xyz
+  - name: '🇺🇸 美国 | USA #7'
     type: vless
-    server: ghosts-spasm.quick-cdn.net
+    server: 151.101.161.242
     port: 443
-    uuid: b7eb28c2-9bd0-4c53-859c-dc0646288b8c
+    uuid: f80cfcb4-9bd1-4a0d-a50b-28e3eea107d8
     tls: true
     network: ws
     ws-opts:
       path: /wsfp=chrome
       headers:
-        Host: ghosts-spasm.quick-cdn.net
-  - name: '🇺🇸 美国 | USA #8'
+        Host: bounded-crammed.video-streams.org
+  - name: '🇺🇸 美国 | USA #9'
+    type: trojan
+    server: ench-snet-app.w-ctrip.cn
+    port: 35929
+    password: b17e9b52db9623bd6c16eea3d7adb5b3
+    sni: cm.g.doubleclick.net
+    skip-cert-verify: true
+  - name: '🇺🇸 美国 | USA #12'
+    type: vmess
+    server: cf.0sm.com
+    port: 443
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /ws
+      headers:
+        Host: vmess.lbw666.dpdns.org
+  - name: '🇺🇸 美国 | USA #13'
     type: vless
     server: grimness-backlogs.cdn-content.com
     port: 443
-    uuid: d42d9712-b622-4378-b906-4662d3b1da4a
+    uuid: 8fa74247-8816-4caf-b2c8-0dadff14ee3c
     tls: true
     network: ws
     ws-opts:
-      path: /wsfp=chrome
+      path: /wsfp=safari
       headers:
         Host: grimness-backlogs.cdn-content.com
-  - name: '🇺🇸 美国 | USA #9'
+  - name: '🇺🇸 美国 | USA #15'
+    type: trojan
+    server: zz.usa02.fogvip-zz.uk
+    port: 40044
+    password: ef95390a-0bcb-45b8-a2bc-3ab33bf0e297
+    sni: ld.meiguo02.yuiuingkig.icu
+    skip-cert-verify: true
+  - name: '🇺🇸 美国 | USA #16'
+    type: trojan
+    server: ench-snet-app.w-ctrip.cn
+    port: 38994
+    password: b17e9b52db9623bd6c16eea3d7adb5b3
+    sni: cm.g.doubleclick.net
+    skip-cert-verify: true
+  - name: '🇺🇸 美国 | USA #17'
     type: vless
-    server: minimize-evenness.cdn-content.com
+    server: 43.153.90.117
     port: 443
-    uuid: c2917886-1bf3-4588-913f-8909a4b40792
-    tls: true
-    network: ws
-    ws-opts:
-      path: /wsfp=chrome
-      headers:
-        Host: minimize-evenness.cdn-content.com
-  - name: '🇺🇸 美国 | USA #11'
-    type: vless
-    server: 43.153.121.144
-    port: 443
-    uuid: df63ee5d-9530-464d-bb1c-ca1fa00e8b98
+    uuid: b9dd6833-9121-41fc-badc-ecbab952f606
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: '🇺🇸 美国 | USA #13'
-    type: vless
-    server: 146.75.29.242
-    port: 443
-    uuid: abd924f4-132d-4ad3-ac2a-3aa01b8e5923
-    tls: true
-    network: ws
-    ws-opts:
-      path: /wsfp=chrome
-      headers:
-        Host: adheres-scruple.quick-cdn.net
-  - name: '🇺🇸 美国 | USA #14'
-    type: vless
-    server: adheres-scruple.quick-cdn.net
-    port: 443
-    uuid: d78a47b6-dbd2-4ed1-8749-17a22dbe8c3e
-    tls: true
-    network: ws
-    ws-opts:
-      path: /wsfp=chrome
-      headers:
-        Host: adheres-scruple.quick-cdn.net
-  - name: '🇺🇸 美国 | USA #16'
-    type: vless
-    server: vodiwalker-panel-development-hp599.lucity.app
-    port: 443
-    uuid: 2c8af5ed-bf4c-d7cc-e398-8a2193c884dc
-    tls: true
-    network: ws
-    ws-opts:
-      path: /ws/2c8af5ed-bf4c-d7cc-e398-8a2193c884dcfp=chrome
-      headers:
-        Host: vodiwalker-panel-development-hp599.lucity.app
   - name: '🇺🇸 美国 | USA #18'
     type: vless
-    server: 151.101.65.242
+    server: 193.239.179.15
     port: 443
-    uuid: 57a8ea50-1a8d-4e9f-b6e8-e991a9914a8a
+    uuid: 1d38d2b2-342f-4a01-93df-f24fb0277c70
     tls: true
-    network: ws
-    ws-opts:
-      path: /wsfp=chrome
-      headers:
-        Host: ghosts-spasm.quick-cdn.net
+    network: tcp
+    flow: xtls-rprx-vision
   - name: AT_speednode_0001
     type: vless
     server: au2.pad-sservice.lat
@@ -2911,30 +2942,26 @@ proxies:
     uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
     tls: true
     network: tcp
-  - name: 英国+伦敦DigitalOcean数据中心
-    type: trojan
-    server: 138.68.131.253
-    port: 443
-    password: humanity
-    sni: www.pleadcourt.org
-    skip-cert-verify: false
+  - name: 广东省广州市+华为云
+    type: vless
+    server: us22.sofast.live
+    port: 58011
+    uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+    tls: false
+    network: tcp
   - name: 美国+CloudFlare节点
-    type: trojan
-    server: 104.17.155.44
+    type: vless
+    server: ccc.010304.xyz
     port: 443
-    password: humanity
-    sni: www.cordweave.com
-    skip-cert-verify: true
-  - name: 乌克兰+V2CROSS.COM
-    type: trojan
-    server: 82.117.245.125
-    port: 2053
-    password: humanity
-    sni: www.calmlunch.com
-    skip-cert-verify: false
+    uuid: d342d11e-d224-4463-b982-532309285094
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers: {}
   - name: 美国+CloudFlare节点 [1]
     type: vless
-    server: 104.20.5.134
+    server: 104.20.6.134
     port: 8080
     uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
     tls: false
@@ -2945,33 +2972,15 @@ proxies:
         Host: hhlfy.twiladaphne.ndjp.net
   - name: 美国+CloudFlare节点 [2]
     type: vless
-    server: 104.26.13.31
-    port: 2082
+    server: 172.67.68.157
+    port: 8080
     uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
     tls: false
     network: ws
     ws-opts:
-      path: /
+      path: /sg-melbi
       headers:
         Host: hhlfy.twiladaphne.ndjp.net
-  - name: 美国+CloudFlare节点 [3]
-    type: trojan
-    server: 108.162.194.134
-    port: 443
-    password: humanity
-    sni: www.pleadcourt.org
-    skip-cert-verify: false
-  - name: 美国+CloudFlare节点 [4]
-    type: vless
-    server: 172.64.146.66
-    port: 443
-    uuid: d342d11e-d224-4463-b982-532309285094
-    tls: true
-    network: ws
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: ccc.010304.xyz
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -2995,9 +3004,8 @@ proxy-groups:
       - 🇦🇱[www.v2nodes.com] vless-AL-1...
       - 🇦🇲[www.v2nodes.com] vless-AM-1...
       - 🇦🇹[www.v2nodes.com] vless-AT-1...
-      - '🇦🇹[www.v2nodes.com] vless-AT-1... #1'
       - 🇦🇺[www.v2nodes.com] vless-AU-1...
-      - '🇵🇱[www.v2nodes.com] vless-PL-1... #9'
+      - '🇵🇱[www.v2nodes.com] vless-PL-1... #7'
       - 🇧🇬[www.v2nodes.com] vless-BG-1...
       - '🇧🇬[www.v2nodes.com] vless-BG-1... #2'
       - '🇧🇬[www.v2nodes.com] vless-BG-3... #4'
@@ -3007,18 +3015,21 @@ proxy-groups:
       - '🇧🇾[www.v2nodes.com] vless-BY-1... #1'
       - '🇧🇾[www.v2nodes.com] vless-BY-1... #2'
       - 🇨🇦[www.v2nodes.com] vless-CA-1...
+      - '🏳[www.v2nodes.com] vless- #2'
+      - '🏳[www.v2nodes.com] vless- #3'
       - '🇨🇦[www.v2nodes.com] vless-CA-1... #1'
-      - '🇨🇦[www.v2nodes.com] vless-CA-1... #2'
       - 🇳🇱[www.v2nodes.com] vless-NL
+      - 🇸🇬[www.v2nodes.com] vless-SG
+      - '🇸🇬[www.v2nodes.com] vless-SG #1'
       - 🇨🇭[www.v2nodes.com] vless-CH-1...
+      - '🏳[www.v2nodes.com] vless- #4'
       - '🇨🇭[www.v2nodes.com] vless-CH-1... #1'
       - '🇨🇭[www.v2nodes.com] vless-CH-1... #2'
-      - '🇨🇭[www.v2nodes.com] vless-CH-1... #3'
       - 🇨🇱[www.v2nodes.com] vless-CL-1...
       - 🇨🇾[www.v2nodes.com] vless-CY-1...
       - '🇨🇾[www.v2nodes.com] vless-CY-1... #1'
-      - '🇨🇿[www.v2nodes.com] vless-CZ-1... #1'
-      - '🇨🇿[www.v2nodes.com] vless-CZ-1... #2'
+      - ❓Other_1|2.2MB/s
+      - ❓Other_2|1.1MB/s
       - '🇨🇿[www.v2nodes.com] vless-CZ-1... #4'
       - 🇩🇪[www.v2nodes.com] vless-DE-1...
       - '🇩🇪[www.v2nodes.com] vless-DE-1... #1'
@@ -3033,34 +3044,35 @@ proxy-groups:
       - '🇩🇪[www.v2nodes.com] vless-DE-1... #10'
       - '🇩🇪[www.v2nodes.com] vless-DE-1... #11'
       - '🇩🇪[www.v2nodes.com] vless-DE-1... #12'
+      - '🏳[www.v2nodes.com] vless- #5'
       - '🇩🇪[www.v2nodes.com] vless-DE-1... #13'
-      - '🇩🇪[www.v2nodes.com] vless-DE-1... #14'
       - 🇩🇰[www.v2nodes.com] vless-DK-1...
-      - '🇪🇪[www.v2nodes.com] vless-EE-1... #10'
+      - 🇪🇪[www.v2nodes.com] vless-EE-1...
+      - '🇮🇱 以色列 | ISR #1'
       - '🇪🇪[www.v2nodes.com] vless-EE-1... #3'
       - '🇪🇪[www.v2nodes.com] vless-EE-1... #5'
-      - '🇪🇸[www.v2nodes.com] vless-ES-1... #13'
+      - '🇪🇸[www.v2nodes.com] vless-ES-1... #15'
+      - '🇪🇸[www.v2nodes.com] vless-ES-1... #19'
       - '🇪🇸[www.v2nodes.com] vless-ES-1... #18'
-      - '🇪🇸[www.v2nodes.com] vless-ES-1... #17'
       - 🇫🇮[www.v2nodes.com] vless-FI-1...
       - '🇫🇮[www.v2nodes.com] vless-FI-1... #1'
       - '🇫🇮[www.v2nodes.com] vless-FI-1... #2'
+      - '🏳[www.v2nodes.com] vless- #6'
       - '🇫🇮[www.v2nodes.com] vless-FI-1... #3'
       - '🇫🇮[www.v2nodes.com] vless-FI-1... #4'
       - '🇫🇮[www.v2nodes.com] vless-FI-1... #5'
+      - '🏳[www.v2nodes.com] vless- #7'
       - '🇫🇮[www.v2nodes.com] vless-FI-1... #6'
       - '🇫🇮[www.v2nodes.com] vless-FI-1... #7'
-      - '🇫🇮[www.v2nodes.com] vless-FI-1... #8'
-      - '🇫🇮[www.v2nodes.com] vless-FI-1... #9'
       - 🇫🇷[www.v2nodes.com] vless-FR-1...
+      - '🏳[www.v2nodes.com] vless- #8'
       - '🇫🇷[www.v2nodes.com] vless-FR-1... #1'
       - '🇫🇷[www.v2nodes.com] vless-FR-1... #2'
       - '🇫🇷[www.v2nodes.com] vless-FR-1... #3'
       - '🇫🇷[www.v2nodes.com] vless-FR-1... #4'
       - '🇫🇷[www.v2nodes.com] vless-FR-1... #5'
+      - '🏳[www.v2nodes.com] vless- #9'
       - '🇫🇷[www.v2nodes.com] vless-FR-1... #6'
-      - '🇫🇷[www.v2nodes.com] vless-FR-1... #7'
-      - '🇫🇷[www.v2nodes.com] vless-FR-1... #8'
       - 🇬🇧[www.v2nodes.com] vless-GB-1...
       - '🇬🇧[www.v2nodes.com] vless-GB-1... #2'
       - '🇬🇧[www.v2nodes.com] vless-GB-1... #3'
@@ -3070,13 +3082,12 @@ proxy-groups:
       - '🇬🇧[www.v2nodes.com] vless-GB-1... #7'
       - '🇬🇧[www.v2nodes.com] vless-GB-1... #8'
       - '🇬🇧[www.v2nodes.com] vless-GB-1... #9'
-      - 🇬🇷[www.v2nodes.com] vless-GR-1...
+      - '🏳[www.v2nodes.com] vless- #10'
       - 🇬🇷[www.v2nodes.com] vless-GR-3...
       - 🇭🇰[www.v2nodes.com] vless-HK-1...
       - '🇭🇰[www.v2nodes.com] vless-HK-1... #1'
       - '🇭🇰[www.v2nodes.com] vless-HK-1... #2'
-      - '🇭🇰[www.v2nodes.com] vless-HK-1... #3'
-      - '🏳[www.v2nodes.com] vless- #2'
+      - '🏳[www.v2nodes.com] vless- #11'
       - 🇲🇾[www.v2nodes.com] vless-MY-5...
       - 🇭🇺[www.v2nodes.com] vless-HU-6...
       - 🇮🇩[www.v2nodes.com] vless-ID-1...
@@ -3084,15 +3095,13 @@ proxy-groups:
       - '🇮🇳[www.v2nodes.com] vless-IN-1... #1'
       - '🇮🇳[www.v2nodes.com] vless-IN-1... #2'
       - '🇮🇳[www.v2nodes.com] vless-IN-1... #3'
-      - '🇮🇳[www.v2nodes.com] vless-IN-1... #4'
-      - '🇮🇷 伊朗 | IRN #1'
+      - 🇮🇷[www.v2nodes.com] vless-IR-1...
+      - '🏳[www.v2nodes.com] vless- #12'
       - '🇮🇷[www.v2nodes.com] vless-IR-1... #1'
-      - '🏳[www.v2nodes.com] vless- #3'
-      - '🇮🇷[www.v2nodes.com] vless-IR-1... #2'
       - 🇮🇹[www.v2nodes.com] vless-IT-1...
+      - '🏳[www.v2nodes.com] vless- #13'
       - '🇮🇹[www.v2nodes.com] vless-IT-1... #1'
       - '🇮🇹[www.v2nodes.com] vless-IT-1... #2'
-      - '🇮🇹[www.v2nodes.com] vless-IT-1... #3'
       - 🇮🇹[www.v2nodes.com] vless-IT-7...
       - 🇯🇵[www.v2nodes.com] vless-JP-1...
       - '🇯🇵[www.v2nodes.com] vless-JP-1... #1'
@@ -3100,10 +3109,10 @@ proxy-groups:
       - '🇯🇵[www.v2nodes.com] vless-JP-1... #3'
       - '🇯🇵[www.v2nodes.com] vless-JP-1... #4'
       - '🇯🇵[www.v2nodes.com] vless-JP-1... #5'
-      - '🏳[www.v2nodes.com] vless- #4'
-      - '🇸🇬[www.v2nodes.com] vless-SG #1'
+      - '🇸🇬[www.v2nodes.com] vless-SG #2'
       - 🇯🇵[www.v2nodes.com] vless-JP-7...
-      - '🏳[www.v2nodes.com] vless- #5'
+      - '🏳[www.v2nodes.com] vless- #14'
+      - 🇯🇵[www.v2nodes.com] vless-JP-4...
       - 🇰🇷[www.v2nodes.com] vless-KR-1...
       - '🇰🇷[www.v2nodes.com] vless-KR-1... #1'
       - '🇰🇷[www.v2nodes.com] vless-KR-1... #2'
@@ -3112,40 +3121,36 @@ proxy-groups:
       - '🇰🇿[www.v2nodes.com] vless-KZ-1... #1'
       - '🇰🇿[www.v2nodes.com] vless-KZ-1... #2'
       - '🇰🇿[www.v2nodes.com] vless-KZ-1... #3'
-      - '🏳[www.v2nodes.com] vless- #6'
       - 🇱🇰[www.v2nodes.com] vless-LK-6...
       - 🇱🇺[www.v2nodes.com] vless-LU-1...
       - 🇱🇻[www.v2nodes.com] vless-LV-1...
       - '🇱🇻[www.v2nodes.com] vless-LV-1... #1'
-      - 🇲🇩[www.v2nodes.com] vless-MD-1...
       - 🇲🇩[www.v2nodes.com] vless-MD-4...
       - '🇲🇽[www.v2nodes.com] vless-MX-1... #1'
       - 🇲🇾[www.v2nodes.com] vless-MY-1...
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #2'
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #11'
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #3'
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #5'
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #8'
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #9'
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #10'
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #12'
+      - 🇳🇱[www.v2nodes.com] vless-NL-1...
+      - '🇳🇱 荷兰 | NLD #1'
+      - '🇳🇱[www.v2nodes.com] vless-NL-1... #4'
       - '🇳🇱[www.v2nodes.com] vless-NL-1... #13'
+      - '🇳🇱[www.v2nodes.com] vless-NL-1... #5'
+      - '🇳🇱[www.v2nodes.com] vless-NL-1... #7'
+      - '🇳🇱[www.v2nodes.com] vless-NL-1... #10'
+      - '🇳🇱[www.v2nodes.com] vless-NL-1... #11'
+      - '🇳🇱[www.v2nodes.com] vless-NL-1... #12'
       - '🇳🇱[www.v2nodes.com] vless-NL-1... #14'
       - '🇳🇱[www.v2nodes.com] vless-NL-1... #15'
       - '🇳🇱[www.v2nodes.com] vless-NL-1... #16'
+      - '🏳[www.v2nodes.com] vless- #16'
       - '🇳🇱[www.v2nodes.com] vless-NL-1... #17'
-      - '🏳[www.v2nodes.com] vless- #7'
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #18'
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #19'
+      - '🏳[www.v2nodes.com] vless- #17'
       - 🇵🇱[www.v2nodes.com] vless-PL-1...
       - '🇵🇱[www.v2nodes.com] vless-PL-1... #1'
       - '🇵🇱[www.v2nodes.com] vless-PL-1... #2'
+      - '🏳[www.v2nodes.com] vless- #18'
       - '🇵🇱[www.v2nodes.com] vless-PL-1... #3'
       - '🇵🇱[www.v2nodes.com] vless-PL-1... #4'
       - '🇵🇱[www.v2nodes.com] vless-PL-1... #5'
       - '🇵🇱[www.v2nodes.com] vless-PL-1... #6'
-      - '🇵🇱[www.v2nodes.com] vless-PL-1... #7'
-      - '🇵🇱[www.v2nodes.com] vless-PL-1... #8'
       - 🇷🇴[www.v2nodes.com] vless-RO-1...
       - '🇷🇴[www.v2nodes.com] vless-RO-1... #1'
       - '🇷🇴[www.v2nodes.com] vless-RO-1... #2'
@@ -3153,9 +3158,10 @@ proxy-groups:
       - '🇷🇺[www.v2nodes.com] vless-RU-1... #1'
       - '🇷🇺[www.v2nodes.com] vless-RU-1... #2'
       - '🇷🇺[www.v2nodes.com] vless-RU-1... #3'
+      - '🏳[www.v2nodes.com] vless- #19'
       - '🇷🇺[www.v2nodes.com] vless-RU-1... #4'
       - '🇷🇺[www.v2nodes.com] vless-RU-1... #5'
-      - '🏳[www.v2nodes.com] vless- #8'
+      - '🏳[www.v2nodes.com] vless- #20'
       - 🇸🇪[www.v2nodes.com] vless-SE-1...
       - '🇸🇪[www.v2nodes.com] vless-SE-1... #1'
       - '🇸🇪[www.v2nodes.com] vless-SE-1... #2'
@@ -3163,9 +3169,9 @@ proxy-groups:
       - '🇸🇪[www.v2nodes.com] vless-SE-1... #4'
       - '🇸🇪[www.v2nodes.com] vless-SE-1... #5'
       - 🇸🇬[www.v2nodes.com] vless-SG-1...
+      - '🏳[www.v2nodes.com] vless- #22'
       - '🇸🇬[www.v2nodes.com] vless-SG-1... #1'
       - '🇸🇬[www.v2nodes.com] vless-SG-1... #2'
-      - '🏳[www.v2nodes.com] vless- #10'
       - '🇸🇬[www.v2nodes.com] vless-SG-1... #3'
       - '🇸🇬[www.v2nodes.com] vless-SG-1... #4'
       - '🇸🇬[www.v2nodes.com] vless-SG-1... #5'
@@ -3175,68 +3181,65 @@ proxy-groups:
       - '🇸🇬[www.v2nodes.com] vless-SG-1... #8'
       - '🇸🇬[www.v2nodes.com] vless-SG-1... #9'
       - 🇸🇬[www.v2nodes.com] vless-SG-9...
-      - '🇸🇬[www.v2nodes.com] vless-SG-9... #1'
+      - '🇸🇬 新加坡 | SGP #2'
       - 🇹🇭[www.v2nodes.com] vless-TH-1...
-      - '🏳[www.v2nodes.com] vless- #11'
       - '🇹🇷[www.v2nodes.com] vless-TR-1... #1'
       - '🇹🇷[www.v2nodes.com] vless-TR-1... #2'
       - '🇹🇷[www.v2nodes.com] vless-TR-1... #3'
       - '🇹🇷[www.v2nodes.com] vless-TR-1... #4'
       - 🇹🇼[www.v2nodes.com] vless-TW-1...
       - '🇹🇼[www.v2nodes.com] vless-TW-1... #1'
-      - '🇺🇦[www.v2nodes.com] vless-UA-1... #3'
+      - '🇺🇦[www.v2nodes.com] vless-UA-1... #4'
       - '🇺🇦[www.v2nodes.com] vless-UA-1... #1'
+      - '🇺🇦[www.v2nodes.com] vless-UA-1... #2'
       - '🇺🇸[www.v2nodes.com] vless-US-1... #7'
-      - '🇺🇸[www.v2nodes.com] vless-US-1... #10'
+      - '🇺🇸[www.v2nodes.com] vless-US-1... #1'
       - '🇺🇸[www.v2nodes.com] vless-US-1... #2'
       - '🇺🇸[www.v2nodes.com] vless-US-1... #3'
       - '🇺🇸[www.v2nodes.com] vless-US-1... #4'
       - '🇺🇸[www.v2nodes.com] vless-US-1... #5'
+      - '🇺🇸[www.v2nodes.com] vless-US-1... #9'
       - '🇺🇸[www.v2nodes.com] vless-US-1... #11'
-      - 🇻🇳[www.v2nodes.com] vless-VN-1...
-      - '🇻🇳[www.v2nodes.com] vless-VN-1... #1'
+      - '🏳[www.v2nodes.com] vless- #24'
       - 🇿🇦[www.v2nodes.com] vless-ZA-1...
       - 🇦🇺[www.v2nodes.com] trojan-AU-...
       - 🇧🇷[www.v2nodes.com] trojan-BR-...
-      - '🇨🇦[www.v2nodes.com] trojan-CA-... #4'
-      - '🇨🇦[www.v2nodes.com] trojan-CA-... #1'
+      - '🇨🇦[www.v2nodes.com] trojan-CA-... #5'
+      - '🇨🇦[www.v2nodes.com] trojan-CA-... #2'
       - '🇨🇦[www.v2nodes.com] trojan-CA-... #6'
       - '🇨🇭[www.v2nodes.com] trojan-CH-... #4'
       - 🇨🇱[www.v2nodes.com] trojan-CL-...
       - 🇩🇪[www.v2nodes.com] trojan-DE-...
       - '🇩🇪[www.v2nodes.com] trojan-DE-... #1'
-      - '🇩🇪[www.v2nodes.com] trojan-DE-... #2'
       - '🇩🇪[www.v2nodes.com] trojan-DE-... #3'
-      - '🇪🇸[www.v2nodes.com] trojan-ES-... #4'
+      - '🇪🇸[www.v2nodes.com] trojan-ES-... #3'
       - '🇪🇸[www.v2nodes.com] trojan-ES-... #1'
       - '🇪🇸[www.v2nodes.com] trojan-ES-... #2'
-      - '🇪🇸[www.v2nodes.com] trojan-ES-... #3'
       - 🇫🇷[www.v2nodes.com] trojan-FR-...
-      - '🇫🇷[www.v2nodes.com] trojan-FR-... #7'
+      - '🇫🇷[www.v2nodes.com] trojan-FR-... #1'
       - '🇫🇷[www.v2nodes.com] trojan-FR-... #2'
       - '🇫🇷[www.v2nodes.com] trojan-FR-... #3'
       - '🇫🇷[www.v2nodes.com] trojan-FR-... #4'
       - '🇫🇷[www.v2nodes.com] trojan-FR-... #5'
-      - '🇫🇷[www.v2nodes.com] trojan-FR-... #6'
+      - '🇫🇷[www.v2nodes.com] trojan-FR-... #7'
       - '🇫🇷[www.v2nodes.com] trojan-FR-... #8'
-      - '🇫🇷[www.v2nodes.com] trojan-FR-... #9'
-      - 🇬🇧[www.v2nodes.com] trojan-GB-...
+      - '🏳[www.v2nodes.com] trojan- #2'
       - 🇮🇱[www.v2nodes.com] trojan-IL-...
       - 🇮🇳[www.v2nodes.com] trojan-IN-...
       - 🇯🇵[www.v2nodes.com] trojan-JP-...
       - '🇯🇵[www.v2nodes.com] trojan-JP-... #1'
       - '🇯🇵[www.v2nodes.com] trojan-JP-... #2'
       - 🇲🇾[www.v2nodes.com] trojan-MY-...
+      - '🏳[www.v2nodes.com] trojan- #3'
       - 🇵🇱[www.v2nodes.com] trojan-PL-...
       - 🇸🇬[www.v2nodes.com] trojan-SG-...
       - '🇸🇬[www.v2nodes.com] trojan-SG-... #1'
-      - '🇺🇸[www.v2nodes.com] trojan-US-... #8'
+      - '🇺🇸[www.v2nodes.com] trojan-US-... #6'
       - '🇺🇸[www.v2nodes.com] trojan-US-... #1'
       - '🇺🇸[www.v2nodes.com] trojan-US-... #2'
       - '🇺🇸[www.v2nodes.com] trojan-US-... #3'
-      - '🇺🇸[www.v2nodes.com] trojan-US-... #4'
-      - '🇺🇸[www.v2nodes.com] trojan-US-... #9'
-      - '🇺🇸[www.v2nodes.com] trojan-US-... #10'
+      - '🇺🇸[www.v2nodes.com] trojan-US-... #7'
+      - '🇺🇸[www.v2nodes.com] trojan-US-... #8'
       - 🇭🇰 香港|@ripaojiedian
       - 🇭🇰 香港3|@ripaojiedian
       - 🇭🇰 香港2|@ripaojiedian
@@ -3260,48 +3263,57 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 台湾|@ripaojiedian
       - 韩国|@ripaojiedian
-      - '🇦🇹 奥地利 | AUT #1'
-      - '🇯🇵 日本 | JPN #2'
-      - '🇰🇷 韩国 | KOR #2'
-      - '🇸🇬 新加坡 | SGP #2'
-      - '🇹🇼 🇨🇳 台湾 | TWN #1'
+      - '🇭🇰 香港 | HKG #3'
+      - '🇸🇬 新加坡 | SGP #1'
       - '🇹🇼 🇨🇳 台湾 | TWN #2'
-      - '🇹🇼 🇨🇳 台湾 | TWN #3'
-      - '🇺🇸 美国 | USA #1'
-      - '🇦🇱 AL_22 #1'
-      - '🇨🇳 CN_147 #1'
+      - 🇫🇷FR_3|2.0MB/s
+      - 🇸🇬SG_2|1006KB/s
+      - 🇺🇸US_18|3.2MB/s
+      - 🇺🇸US_20|4.2MB/s
+      - '🇧🇷 巴西 | BRA #1'
+      - '🇨🇭 瑞士 | CHE #1'
       - '🇩🇪 德国 | DEU #1'
-      - '🇩🇪 德国 | DEU #2'
+      - 🇩🇪 德国 | DEU 2
       - '🇩🇪 德国 | DEU #3'
       - '🇩🇪 德国 | DEU #4'
-      - '🇪🇪 爱沙尼亚 | EST #1'
-      - '🇪🇸 西班牙 | ESP #1'
-      - '🇪🇸 西班牙 | ESP #2'
-      - '🇫🇷 法国 | FRA #1'
-      - 🇬🇪 GE_43
+      - '🇩🇪 德国 | DEU #5'
+      - '🇩🇪 德国 | DEU #6'
+      - '🇩🇪 德国 | DEU #7'
+      - '🇬🇪 GE_46 #1'
       - '🇭🇰 香港 | HKG #1'
       - '🇭🇰 香港 | HKG #2'
-      - '🇭🇰 香港 | HKG #3'
       - '🇭🇰 香港 | HKG #4'
+      - '🇭🇰 香港 | HKG #5'
+      - '🇭🇰 香港 | HKG #6'
+      - '🇭🇰 香港 | HKG #7'
+      - '🇭🇰 香港 | HKG #8'
       - 🇯🇵 日本 | JPN
+      - '🇯🇵 日本 | JPN #2'
       - '🇯🇵 日本 | JPN #3'
       - '🇯🇵 日本 | JPN #4'
+      - '🇱🇻 拉脱维亚 | LVA #1'
+      - 🇳🇱 荷兰 | NLD 2
+      - '🇳🇱 荷兰 | NLD #3'
+      - '🇷🇺 俄罗斯 | RUS #1'
+      - '🇷🇺 俄罗斯 | RUS #2'
       - '🇸🇪 瑞典 | SWE #1'
-      - '🇸🇪 瑞典 | SWE #2'
-      - '🇸🇪 瑞典 | SWE #3'
-      - 🇸🇬 新加坡 | SGP
-      - '🇸🇬 新加坡 | SGP #3'
+      - '🇸🇬 新加坡 | SGP #4'
+      - '🇸🇬 新加坡 | SGP #5'
+      - '🇹🇷 土耳其 | TUR #1'
+      - '🇹🇼 🇨🇳 台湾 | TWN #1'
+      - '🇺🇸 美国 | USA #1'
       - '🇺🇸 美国 | USA #2'
       - '🇺🇸 美国 | USA #3'
       - '🇺🇸 美国 | USA #4'
       - '🇺🇸 美国 | USA #5'
       - '🇺🇸 美国 | USA #6'
-      - '🇺🇸 美国 | USA #8'
+      - '🇺🇸 美国 | USA #7'
       - '🇺🇸 美国 | USA #9'
-      - '🇺🇸 美国 | USA #11'
+      - '🇺🇸 美国 | USA #12'
       - '🇺🇸 美国 | USA #13'
-      - '🇺🇸 美国 | USA #14'
+      - '🇺🇸 美国 | USA #15'
       - '🇺🇸 美国 | USA #16'
+      - '🇺🇸 美国 | USA #17'
       - '🇺🇸 美国 | USA #18'
       - AT_speednode_0001
       - AT_speednode_0002
@@ -3321,13 +3333,10 @@ proxy-groups:
       - TR_speednode_0038
       - US_speednode_0042
       - US_speednode_0043
-      - 英国+伦敦DigitalOcean数据中心
+      - 广东省广州市+华为云
       - 美国+CloudFlare节点
-      - 乌克兰+V2CROSS.COM
       - 美国+CloudFlare节点 [1]
       - 美国+CloudFlare节点 [2]
-      - 美国+CloudFlare节点 [3]
-      - 美国+CloudFlare节点 [4]
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -3347,9 +3356,8 @@ proxy-groups:
       - 🇦🇱[www.v2nodes.com] vless-AL-1...
       - 🇦🇲[www.v2nodes.com] vless-AM-1...
       - 🇦🇹[www.v2nodes.com] vless-AT-1...
-      - '🇦🇹[www.v2nodes.com] vless-AT-1... #1'
       - 🇦🇺[www.v2nodes.com] vless-AU-1...
-      - '🇵🇱[www.v2nodes.com] vless-PL-1... #9'
+      - '🇵🇱[www.v2nodes.com] vless-PL-1... #7'
       - 🇧🇬[www.v2nodes.com] vless-BG-1...
       - '🇧🇬[www.v2nodes.com] vless-BG-1... #2'
       - '🇧🇬[www.v2nodes.com] vless-BG-3... #4'
@@ -3359,18 +3367,21 @@ proxy-groups:
       - '🇧🇾[www.v2nodes.com] vless-BY-1... #1'
       - '🇧🇾[www.v2nodes.com] vless-BY-1... #2'
       - 🇨🇦[www.v2nodes.com] vless-CA-1...
+      - '🏳[www.v2nodes.com] vless- #2'
+      - '🏳[www.v2nodes.com] vless- #3'
       - '🇨🇦[www.v2nodes.com] vless-CA-1... #1'
-      - '🇨🇦[www.v2nodes.com] vless-CA-1... #2'
       - 🇳🇱[www.v2nodes.com] vless-NL
+      - 🇸🇬[www.v2nodes.com] vless-SG
+      - '🇸🇬[www.v2nodes.com] vless-SG #1'
       - 🇨🇭[www.v2nodes.com] vless-CH-1...
+      - '🏳[www.v2nodes.com] vless- #4'
       - '🇨🇭[www.v2nodes.com] vless-CH-1... #1'
       - '🇨🇭[www.v2nodes.com] vless-CH-1... #2'
-      - '🇨🇭[www.v2nodes.com] vless-CH-1... #3'
       - 🇨🇱[www.v2nodes.com] vless-CL-1...
       - 🇨🇾[www.v2nodes.com] vless-CY-1...
       - '🇨🇾[www.v2nodes.com] vless-CY-1... #1'
-      - '🇨🇿[www.v2nodes.com] vless-CZ-1... #1'
-      - '🇨🇿[www.v2nodes.com] vless-CZ-1... #2'
+      - ❓Other_1|2.2MB/s
+      - ❓Other_2|1.1MB/s
       - '🇨🇿[www.v2nodes.com] vless-CZ-1... #4'
       - 🇩🇪[www.v2nodes.com] vless-DE-1...
       - '🇩🇪[www.v2nodes.com] vless-DE-1... #1'
@@ -3385,34 +3396,35 @@ proxy-groups:
       - '🇩🇪[www.v2nodes.com] vless-DE-1... #10'
       - '🇩🇪[www.v2nodes.com] vless-DE-1... #11'
       - '🇩🇪[www.v2nodes.com] vless-DE-1... #12'
+      - '🏳[www.v2nodes.com] vless- #5'
       - '🇩🇪[www.v2nodes.com] vless-DE-1... #13'
-      - '🇩🇪[www.v2nodes.com] vless-DE-1... #14'
       - 🇩🇰[www.v2nodes.com] vless-DK-1...
-      - '🇪🇪[www.v2nodes.com] vless-EE-1... #10'
+      - 🇪🇪[www.v2nodes.com] vless-EE-1...
+      - '🇮🇱 以色列 | ISR #1'
       - '🇪🇪[www.v2nodes.com] vless-EE-1... #3'
       - '🇪🇪[www.v2nodes.com] vless-EE-1... #5'
-      - '🇪🇸[www.v2nodes.com] vless-ES-1... #13'
+      - '🇪🇸[www.v2nodes.com] vless-ES-1... #15'
+      - '🇪🇸[www.v2nodes.com] vless-ES-1... #19'
       - '🇪🇸[www.v2nodes.com] vless-ES-1... #18'
-      - '🇪🇸[www.v2nodes.com] vless-ES-1... #17'
       - 🇫🇮[www.v2nodes.com] vless-FI-1...
       - '🇫🇮[www.v2nodes.com] vless-FI-1... #1'
       - '🇫🇮[www.v2nodes.com] vless-FI-1... #2'
+      - '🏳[www.v2nodes.com] vless- #6'
       - '🇫🇮[www.v2nodes.com] vless-FI-1... #3'
       - '🇫🇮[www.v2nodes.com] vless-FI-1... #4'
       - '🇫🇮[www.v2nodes.com] vless-FI-1... #5'
+      - '🏳[www.v2nodes.com] vless- #7'
       - '🇫🇮[www.v2nodes.com] vless-FI-1... #6'
       - '🇫🇮[www.v2nodes.com] vless-FI-1... #7'
-      - '🇫🇮[www.v2nodes.com] vless-FI-1... #8'
-      - '🇫🇮[www.v2nodes.com] vless-FI-1... #9'
       - 🇫🇷[www.v2nodes.com] vless-FR-1...
+      - '🏳[www.v2nodes.com] vless- #8'
       - '🇫🇷[www.v2nodes.com] vless-FR-1... #1'
       - '🇫🇷[www.v2nodes.com] vless-FR-1... #2'
       - '🇫🇷[www.v2nodes.com] vless-FR-1... #3'
       - '🇫🇷[www.v2nodes.com] vless-FR-1... #4'
       - '🇫🇷[www.v2nodes.com] vless-FR-1... #5'
+      - '🏳[www.v2nodes.com] vless- #9'
       - '🇫🇷[www.v2nodes.com] vless-FR-1... #6'
-      - '🇫🇷[www.v2nodes.com] vless-FR-1... #7'
-      - '🇫🇷[www.v2nodes.com] vless-FR-1... #8'
       - 🇬🇧[www.v2nodes.com] vless-GB-1...
       - '🇬🇧[www.v2nodes.com] vless-GB-1... #2'
       - '🇬🇧[www.v2nodes.com] vless-GB-1... #3'
@@ -3422,13 +3434,12 @@ proxy-groups:
       - '🇬🇧[www.v2nodes.com] vless-GB-1... #7'
       - '🇬🇧[www.v2nodes.com] vless-GB-1... #8'
       - '🇬🇧[www.v2nodes.com] vless-GB-1... #9'
-      - 🇬🇷[www.v2nodes.com] vless-GR-1...
+      - '🏳[www.v2nodes.com] vless- #10'
       - 🇬🇷[www.v2nodes.com] vless-GR-3...
       - 🇭🇰[www.v2nodes.com] vless-HK-1...
       - '🇭🇰[www.v2nodes.com] vless-HK-1... #1'
       - '🇭🇰[www.v2nodes.com] vless-HK-1... #2'
-      - '🇭🇰[www.v2nodes.com] vless-HK-1... #3'
-      - '🏳[www.v2nodes.com] vless- #2'
+      - '🏳[www.v2nodes.com] vless- #11'
       - 🇲🇾[www.v2nodes.com] vless-MY-5...
       - 🇭🇺[www.v2nodes.com] vless-HU-6...
       - 🇮🇩[www.v2nodes.com] vless-ID-1...
@@ -3436,15 +3447,13 @@ proxy-groups:
       - '🇮🇳[www.v2nodes.com] vless-IN-1... #1'
       - '🇮🇳[www.v2nodes.com] vless-IN-1... #2'
       - '🇮🇳[www.v2nodes.com] vless-IN-1... #3'
-      - '🇮🇳[www.v2nodes.com] vless-IN-1... #4'
-      - '🇮🇷 伊朗 | IRN #1'
+      - 🇮🇷[www.v2nodes.com] vless-IR-1...
+      - '🏳[www.v2nodes.com] vless- #12'
       - '🇮🇷[www.v2nodes.com] vless-IR-1... #1'
-      - '🏳[www.v2nodes.com] vless- #3'
-      - '🇮🇷[www.v2nodes.com] vless-IR-1... #2'
       - 🇮🇹[www.v2nodes.com] vless-IT-1...
+      - '🏳[www.v2nodes.com] vless- #13'
       - '🇮🇹[www.v2nodes.com] vless-IT-1... #1'
       - '🇮🇹[www.v2nodes.com] vless-IT-1... #2'
-      - '🇮🇹[www.v2nodes.com] vless-IT-1... #3'
       - 🇮🇹[www.v2nodes.com] vless-IT-7...
       - 🇯🇵[www.v2nodes.com] vless-JP-1...
       - '🇯🇵[www.v2nodes.com] vless-JP-1... #1'
@@ -3452,10 +3461,10 @@ proxy-groups:
       - '🇯🇵[www.v2nodes.com] vless-JP-1... #3'
       - '🇯🇵[www.v2nodes.com] vless-JP-1... #4'
       - '🇯🇵[www.v2nodes.com] vless-JP-1... #5'
-      - '🏳[www.v2nodes.com] vless- #4'
-      - '🇸🇬[www.v2nodes.com] vless-SG #1'
+      - '🇸🇬[www.v2nodes.com] vless-SG #2'
       - 🇯🇵[www.v2nodes.com] vless-JP-7...
-      - '🏳[www.v2nodes.com] vless- #5'
+      - '🏳[www.v2nodes.com] vless- #14'
+      - 🇯🇵[www.v2nodes.com] vless-JP-4...
       - 🇰🇷[www.v2nodes.com] vless-KR-1...
       - '🇰🇷[www.v2nodes.com] vless-KR-1... #1'
       - '🇰🇷[www.v2nodes.com] vless-KR-1... #2'
@@ -3464,40 +3473,36 @@ proxy-groups:
       - '🇰🇿[www.v2nodes.com] vless-KZ-1... #1'
       - '🇰🇿[www.v2nodes.com] vless-KZ-1... #2'
       - '🇰🇿[www.v2nodes.com] vless-KZ-1... #3'
-      - '🏳[www.v2nodes.com] vless- #6'
       - 🇱🇰[www.v2nodes.com] vless-LK-6...
       - 🇱🇺[www.v2nodes.com] vless-LU-1...
       - 🇱🇻[www.v2nodes.com] vless-LV-1...
       - '🇱🇻[www.v2nodes.com] vless-LV-1... #1'
-      - 🇲🇩[www.v2nodes.com] vless-MD-1...
       - 🇲🇩[www.v2nodes.com] vless-MD-4...
       - '🇲🇽[www.v2nodes.com] vless-MX-1... #1'
       - 🇲🇾[www.v2nodes.com] vless-MY-1...
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #2'
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #11'
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #3'
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #5'
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #8'
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #9'
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #10'
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #12'
+      - 🇳🇱[www.v2nodes.com] vless-NL-1...
+      - '🇳🇱 荷兰 | NLD #1'
+      - '🇳🇱[www.v2nodes.com] vless-NL-1... #4'
       - '🇳🇱[www.v2nodes.com] vless-NL-1... #13'
+      - '🇳🇱[www.v2nodes.com] vless-NL-1... #5'
+      - '🇳🇱[www.v2nodes.com] vless-NL-1... #7'
+      - '🇳🇱[www.v2nodes.com] vless-NL-1... #10'
+      - '🇳🇱[www.v2nodes.com] vless-NL-1... #11'
+      - '🇳🇱[www.v2nodes.com] vless-NL-1... #12'
       - '🇳🇱[www.v2nodes.com] vless-NL-1... #14'
       - '🇳🇱[www.v2nodes.com] vless-NL-1... #15'
       - '🇳🇱[www.v2nodes.com] vless-NL-1... #16'
+      - '🏳[www.v2nodes.com] vless- #16'
       - '🇳🇱[www.v2nodes.com] vless-NL-1... #17'
-      - '🏳[www.v2nodes.com] vless- #7'
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #18'
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #19'
+      - '🏳[www.v2nodes.com] vless- #17'
       - 🇵🇱[www.v2nodes.com] vless-PL-1...
       - '🇵🇱[www.v2nodes.com] vless-PL-1... #1'
       - '🇵🇱[www.v2nodes.com] vless-PL-1... #2'
+      - '🏳[www.v2nodes.com] vless- #18'
       - '🇵🇱[www.v2nodes.com] vless-PL-1... #3'
       - '🇵🇱[www.v2nodes.com] vless-PL-1... #4'
       - '🇵🇱[www.v2nodes.com] vless-PL-1... #5'
       - '🇵🇱[www.v2nodes.com] vless-PL-1... #6'
-      - '🇵🇱[www.v2nodes.com] vless-PL-1... #7'
-      - '🇵🇱[www.v2nodes.com] vless-PL-1... #8'
       - 🇷🇴[www.v2nodes.com] vless-RO-1...
       - '🇷🇴[www.v2nodes.com] vless-RO-1... #1'
       - '🇷🇴[www.v2nodes.com] vless-RO-1... #2'
@@ -3505,9 +3510,10 @@ proxy-groups:
       - '🇷🇺[www.v2nodes.com] vless-RU-1... #1'
       - '🇷🇺[www.v2nodes.com] vless-RU-1... #2'
       - '🇷🇺[www.v2nodes.com] vless-RU-1... #3'
+      - '🏳[www.v2nodes.com] vless- #19'
       - '🇷🇺[www.v2nodes.com] vless-RU-1... #4'
       - '🇷🇺[www.v2nodes.com] vless-RU-1... #5'
-      - '🏳[www.v2nodes.com] vless- #8'
+      - '🏳[www.v2nodes.com] vless- #20'
       - 🇸🇪[www.v2nodes.com] vless-SE-1...
       - '🇸🇪[www.v2nodes.com] vless-SE-1... #1'
       - '🇸🇪[www.v2nodes.com] vless-SE-1... #2'
@@ -3515,9 +3521,9 @@ proxy-groups:
       - '🇸🇪[www.v2nodes.com] vless-SE-1... #4'
       - '🇸🇪[www.v2nodes.com] vless-SE-1... #5'
       - 🇸🇬[www.v2nodes.com] vless-SG-1...
+      - '🏳[www.v2nodes.com] vless- #22'
       - '🇸🇬[www.v2nodes.com] vless-SG-1... #1'
       - '🇸🇬[www.v2nodes.com] vless-SG-1... #2'
-      - '🏳[www.v2nodes.com] vless- #10'
       - '🇸🇬[www.v2nodes.com] vless-SG-1... #3'
       - '🇸🇬[www.v2nodes.com] vless-SG-1... #4'
       - '🇸🇬[www.v2nodes.com] vless-SG-1... #5'
@@ -3527,68 +3533,65 @@ proxy-groups:
       - '🇸🇬[www.v2nodes.com] vless-SG-1... #8'
       - '🇸🇬[www.v2nodes.com] vless-SG-1... #9'
       - 🇸🇬[www.v2nodes.com] vless-SG-9...
-      - '🇸🇬[www.v2nodes.com] vless-SG-9... #1'
+      - '🇸🇬 新加坡 | SGP #2'
       - 🇹🇭[www.v2nodes.com] vless-TH-1...
-      - '🏳[www.v2nodes.com] vless- #11'
       - '🇹🇷[www.v2nodes.com] vless-TR-1... #1'
       - '🇹🇷[www.v2nodes.com] vless-TR-1... #2'
       - '🇹🇷[www.v2nodes.com] vless-TR-1... #3'
       - '🇹🇷[www.v2nodes.com] vless-TR-1... #4'
       - 🇹🇼[www.v2nodes.com] vless-TW-1...
       - '🇹🇼[www.v2nodes.com] vless-TW-1... #1'
-      - '🇺🇦[www.v2nodes.com] vless-UA-1... #3'
+      - '🇺🇦[www.v2nodes.com] vless-UA-1... #4'
       - '🇺🇦[www.v2nodes.com] vless-UA-1... #1'
+      - '🇺🇦[www.v2nodes.com] vless-UA-1... #2'
       - '🇺🇸[www.v2nodes.com] vless-US-1... #7'
-      - '🇺🇸[www.v2nodes.com] vless-US-1... #10'
+      - '🇺🇸[www.v2nodes.com] vless-US-1... #1'
       - '🇺🇸[www.v2nodes.com] vless-US-1... #2'
       - '🇺🇸[www.v2nodes.com] vless-US-1... #3'
       - '🇺🇸[www.v2nodes.com] vless-US-1... #4'
       - '🇺🇸[www.v2nodes.com] vless-US-1... #5'
+      - '🇺🇸[www.v2nodes.com] vless-US-1... #9'
       - '🇺🇸[www.v2nodes.com] vless-US-1... #11'
-      - 🇻🇳[www.v2nodes.com] vless-VN-1...
-      - '🇻🇳[www.v2nodes.com] vless-VN-1... #1'
+      - '🏳[www.v2nodes.com] vless- #24'
       - 🇿🇦[www.v2nodes.com] vless-ZA-1...
       - 🇦🇺[www.v2nodes.com] trojan-AU-...
       - 🇧🇷[www.v2nodes.com] trojan-BR-...
-      - '🇨🇦[www.v2nodes.com] trojan-CA-... #4'
-      - '🇨🇦[www.v2nodes.com] trojan-CA-... #1'
+      - '🇨🇦[www.v2nodes.com] trojan-CA-... #5'
+      - '🇨🇦[www.v2nodes.com] trojan-CA-... #2'
       - '🇨🇦[www.v2nodes.com] trojan-CA-... #6'
       - '🇨🇭[www.v2nodes.com] trojan-CH-... #4'
       - 🇨🇱[www.v2nodes.com] trojan-CL-...
       - 🇩🇪[www.v2nodes.com] trojan-DE-...
       - '🇩🇪[www.v2nodes.com] trojan-DE-... #1'
-      - '🇩🇪[www.v2nodes.com] trojan-DE-... #2'
       - '🇩🇪[www.v2nodes.com] trojan-DE-... #3'
-      - '🇪🇸[www.v2nodes.com] trojan-ES-... #4'
+      - '🇪🇸[www.v2nodes.com] trojan-ES-... #3'
       - '🇪🇸[www.v2nodes.com] trojan-ES-... #1'
       - '🇪🇸[www.v2nodes.com] trojan-ES-... #2'
-      - '🇪🇸[www.v2nodes.com] trojan-ES-... #3'
       - 🇫🇷[www.v2nodes.com] trojan-FR-...
-      - '🇫🇷[www.v2nodes.com] trojan-FR-... #7'
+      - '🇫🇷[www.v2nodes.com] trojan-FR-... #1'
       - '🇫🇷[www.v2nodes.com] trojan-FR-... #2'
       - '🇫🇷[www.v2nodes.com] trojan-FR-... #3'
       - '🇫🇷[www.v2nodes.com] trojan-FR-... #4'
       - '🇫🇷[www.v2nodes.com] trojan-FR-... #5'
-      - '🇫🇷[www.v2nodes.com] trojan-FR-... #6'
+      - '🇫🇷[www.v2nodes.com] trojan-FR-... #7'
       - '🇫🇷[www.v2nodes.com] trojan-FR-... #8'
-      - '🇫🇷[www.v2nodes.com] trojan-FR-... #9'
-      - 🇬🇧[www.v2nodes.com] trojan-GB-...
+      - '🏳[www.v2nodes.com] trojan- #2'
       - 🇮🇱[www.v2nodes.com] trojan-IL-...
       - 🇮🇳[www.v2nodes.com] trojan-IN-...
       - 🇯🇵[www.v2nodes.com] trojan-JP-...
       - '🇯🇵[www.v2nodes.com] trojan-JP-... #1'
       - '🇯🇵[www.v2nodes.com] trojan-JP-... #2'
       - 🇲🇾[www.v2nodes.com] trojan-MY-...
+      - '🏳[www.v2nodes.com] trojan- #3'
       - 🇵🇱[www.v2nodes.com] trojan-PL-...
       - 🇸🇬[www.v2nodes.com] trojan-SG-...
       - '🇸🇬[www.v2nodes.com] trojan-SG-... #1'
-      - '🇺🇸[www.v2nodes.com] trojan-US-... #8'
+      - '🇺🇸[www.v2nodes.com] trojan-US-... #6'
       - '🇺🇸[www.v2nodes.com] trojan-US-... #1'
       - '🇺🇸[www.v2nodes.com] trojan-US-... #2'
       - '🇺🇸[www.v2nodes.com] trojan-US-... #3'
-      - '🇺🇸[www.v2nodes.com] trojan-US-... #4'
-      - '🇺🇸[www.v2nodes.com] trojan-US-... #9'
-      - '🇺🇸[www.v2nodes.com] trojan-US-... #10'
+      - '🇺🇸[www.v2nodes.com] trojan-US-... #7'
+      - '🇺🇸[www.v2nodes.com] trojan-US-... #8'
       - 🇭🇰 香港|@ripaojiedian
       - 🇭🇰 香港3|@ripaojiedian
       - 🇭🇰 香港2|@ripaojiedian
@@ -3612,48 +3615,57 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 台湾|@ripaojiedian
       - 韩国|@ripaojiedian
-      - '🇦🇹 奥地利 | AUT #1'
-      - '🇯🇵 日本 | JPN #2'
-      - '🇰🇷 韩国 | KOR #2'
-      - '🇸🇬 新加坡 | SGP #2'
-      - '🇹🇼 🇨🇳 台湾 | TWN #1'
+      - '🇭🇰 香港 | HKG #3'
+      - '🇸🇬 新加坡 | SGP #1'
       - '🇹🇼 🇨🇳 台湾 | TWN #2'
-      - '🇹🇼 🇨🇳 台湾 | TWN #3'
-      - '🇺🇸 美国 | USA #1'
-      - '🇦🇱 AL_22 #1'
-      - '🇨🇳 CN_147 #1'
+      - 🇫🇷FR_3|2.0MB/s
+      - 🇸🇬SG_2|1006KB/s
+      - 🇺🇸US_18|3.2MB/s
+      - 🇺🇸US_20|4.2MB/s
+      - '🇧🇷 巴西 | BRA #1'
+      - '🇨🇭 瑞士 | CHE #1'
       - '🇩🇪 德国 | DEU #1'
-      - '🇩🇪 德国 | DEU #2'
+      - 🇩🇪 德国 | DEU 2
       - '🇩🇪 德国 | DEU #3'
       - '🇩🇪 德国 | DEU #4'
-      - '🇪🇪 爱沙尼亚 | EST #1'
-      - '🇪🇸 西班牙 | ESP #1'
-      - '🇪🇸 西班牙 | ESP #2'
-      - '🇫🇷 法国 | FRA #1'
-      - 🇬🇪 GE_43
+      - '🇩🇪 德国 | DEU #5'
+      - '🇩🇪 德国 | DEU #6'
+      - '🇩🇪 德国 | DEU #7'
+      - '🇬🇪 GE_46 #1'
       - '🇭🇰 香港 | HKG #1'
       - '🇭🇰 香港 | HKG #2'
-      - '🇭🇰 香港 | HKG #3'
       - '🇭🇰 香港 | HKG #4'
+      - '🇭🇰 香港 | HKG #5'
+      - '🇭🇰 香港 | HKG #6'
+      - '🇭🇰 香港 | HKG #7'
+      - '🇭🇰 香港 | HKG #8'
       - 🇯🇵 日本 | JPN
+      - '🇯🇵 日本 | JPN #2'
       - '🇯🇵 日本 | JPN #3'
       - '🇯🇵 日本 | JPN #4'
+      - '🇱🇻 拉脱维亚 | LVA #1'
+      - 🇳🇱 荷兰 | NLD 2
+      - '🇳🇱 荷兰 | NLD #3'
+      - '🇷🇺 俄罗斯 | RUS #1'
+      - '🇷🇺 俄罗斯 | RUS #2'
       - '🇸🇪 瑞典 | SWE #1'
-      - '🇸🇪 瑞典 | SWE #2'
-      - '🇸🇪 瑞典 | SWE #3'
-      - 🇸🇬 新加坡 | SGP
-      - '🇸🇬 新加坡 | SGP #3'
+      - '🇸🇬 新加坡 | SGP #4'
+      - '🇸🇬 新加坡 | SGP #5'
+      - '🇹🇷 土耳其 | TUR #1'
+      - '🇹🇼 🇨🇳 台湾 | TWN #1'
+      - '🇺🇸 美国 | USA #1'
       - '🇺🇸 美国 | USA #2'
       - '🇺🇸 美国 | USA #3'
       - '🇺🇸 美国 | USA #4'
       - '🇺🇸 美国 | USA #5'
       - '🇺🇸 美国 | USA #6'
-      - '🇺🇸 美国 | USA #8'
+      - '🇺🇸 美国 | USA #7'
       - '🇺🇸 美国 | USA #9'
-      - '🇺🇸 美国 | USA #11'
+      - '🇺🇸 美国 | USA #12'
       - '🇺🇸 美国 | USA #13'
-      - '🇺🇸 美国 | USA #14'
+      - '🇺🇸 美国 | USA #15'
       - '🇺🇸 美国 | USA #16'
+      - '🇺🇸 美国 | USA #17'
       - '🇺🇸 美国 | USA #18'
       - AT_speednode_0001
       - AT_speednode_0002
@@ -3673,13 +3685,10 @@ proxy-groups:
       - TR_speednode_0038
       - US_speednode_0042
       - US_speednode_0043
-      - 英国+伦敦DigitalOcean数据中心
+      - 广东省广州市+华为云
       - 美国+CloudFlare节点
-      - 乌克兰+V2CROSS.COM
       - 美国+CloudFlare节点 [1]
       - 美国+CloudFlare节点 [2]
-      - 美国+CloudFlare节点 [3]
-      - 美国+CloudFlare节点 [4]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -3701,9 +3710,8 @@ proxy-groups:
       - 🇦🇱[www.v2nodes.com] vless-AL-1...
       - 🇦🇲[www.v2nodes.com] vless-AM-1...
       - 🇦🇹[www.v2nodes.com] vless-AT-1...
-      - '🇦🇹[www.v2nodes.com] vless-AT-1... #1'
       - 🇦🇺[www.v2nodes.com] vless-AU-1...
-      - '🇵🇱[www.v2nodes.com] vless-PL-1... #9'
+      - '🇵🇱[www.v2nodes.com] vless-PL-1... #7'
       - 🇧🇬[www.v2nodes.com] vless-BG-1...
       - '🇧🇬[www.v2nodes.com] vless-BG-1... #2'
       - '🇧🇬[www.v2nodes.com] vless-BG-3... #4'
@@ -3713,18 +3721,21 @@ proxy-groups:
       - '🇧🇾[www.v2nodes.com] vless-BY-1... #1'
       - '🇧🇾[www.v2nodes.com] vless-BY-1... #2'
       - 🇨🇦[www.v2nodes.com] vless-CA-1...
+      - '🏳[www.v2nodes.com] vless- #2'
+      - '🏳[www.v2nodes.com] vless- #3'
       - '🇨🇦[www.v2nodes.com] vless-CA-1... #1'
-      - '🇨🇦[www.v2nodes.com] vless-CA-1... #2'
       - 🇳🇱[www.v2nodes.com] vless-NL
+      - 🇸🇬[www.v2nodes.com] vless-SG
+      - '🇸🇬[www.v2nodes.com] vless-SG #1'
       - 🇨🇭[www.v2nodes.com] vless-CH-1...
+      - '🏳[www.v2nodes.com] vless- #4'
       - '🇨🇭[www.v2nodes.com] vless-CH-1... #1'
       - '🇨🇭[www.v2nodes.com] vless-CH-1... #2'
-      - '🇨🇭[www.v2nodes.com] vless-CH-1... #3'
       - 🇨🇱[www.v2nodes.com] vless-CL-1...
       - 🇨🇾[www.v2nodes.com] vless-CY-1...
       - '🇨🇾[www.v2nodes.com] vless-CY-1... #1'
-      - '🇨🇿[www.v2nodes.com] vless-CZ-1... #1'
-      - '🇨🇿[www.v2nodes.com] vless-CZ-1... #2'
+      - ❓Other_1|2.2MB/s
+      - ❓Other_2|1.1MB/s
       - '🇨🇿[www.v2nodes.com] vless-CZ-1... #4'
       - 🇩🇪[www.v2nodes.com] vless-DE-1...
       - '🇩🇪[www.v2nodes.com] vless-DE-1... #1'
@@ -3739,34 +3750,35 @@ proxy-groups:
       - '🇩🇪[www.v2nodes.com] vless-DE-1... #10'
       - '🇩🇪[www.v2nodes.com] vless-DE-1... #11'
       - '🇩🇪[www.v2nodes.com] vless-DE-1... #12'
+      - '🏳[www.v2nodes.com] vless- #5'
       - '🇩🇪[www.v2nodes.com] vless-DE-1... #13'
-      - '🇩🇪[www.v2nodes.com] vless-DE-1... #14'
       - 🇩🇰[www.v2nodes.com] vless-DK-1...
-      - '🇪🇪[www.v2nodes.com] vless-EE-1... #10'
+      - 🇪🇪[www.v2nodes.com] vless-EE-1...
+      - '🇮🇱 以色列 | ISR #1'
       - '🇪🇪[www.v2nodes.com] vless-EE-1... #3'
       - '🇪🇪[www.v2nodes.com] vless-EE-1... #5'
-      - '🇪🇸[www.v2nodes.com] vless-ES-1... #13'
+      - '🇪🇸[www.v2nodes.com] vless-ES-1... #15'
+      - '🇪🇸[www.v2nodes.com] vless-ES-1... #19'
       - '🇪🇸[www.v2nodes.com] vless-ES-1... #18'
-      - '🇪🇸[www.v2nodes.com] vless-ES-1... #17'
       - 🇫🇮[www.v2nodes.com] vless-FI-1...
       - '🇫🇮[www.v2nodes.com] vless-FI-1... #1'
       - '🇫🇮[www.v2nodes.com] vless-FI-1... #2'
+      - '🏳[www.v2nodes.com] vless- #6'
       - '🇫🇮[www.v2nodes.com] vless-FI-1... #3'
       - '🇫🇮[www.v2nodes.com] vless-FI-1... #4'
       - '🇫🇮[www.v2nodes.com] vless-FI-1... #5'
+      - '🏳[www.v2nodes.com] vless- #7'
       - '🇫🇮[www.v2nodes.com] vless-FI-1... #6'
       - '🇫🇮[www.v2nodes.com] vless-FI-1... #7'
-      - '🇫🇮[www.v2nodes.com] vless-FI-1... #8'
-      - '🇫🇮[www.v2nodes.com] vless-FI-1... #9'
       - 🇫🇷[www.v2nodes.com] vless-FR-1...
+      - '🏳[www.v2nodes.com] vless- #8'
       - '🇫🇷[www.v2nodes.com] vless-FR-1... #1'
       - '🇫🇷[www.v2nodes.com] vless-FR-1... #2'
       - '🇫🇷[www.v2nodes.com] vless-FR-1... #3'
       - '🇫🇷[www.v2nodes.com] vless-FR-1... #4'
       - '🇫🇷[www.v2nodes.com] vless-FR-1... #5'
+      - '🏳[www.v2nodes.com] vless- #9'
       - '🇫🇷[www.v2nodes.com] vless-FR-1... #6'
-      - '🇫🇷[www.v2nodes.com] vless-FR-1... #7'
-      - '🇫🇷[www.v2nodes.com] vless-FR-1... #8'
       - 🇬🇧[www.v2nodes.com] vless-GB-1...
       - '🇬🇧[www.v2nodes.com] vless-GB-1... #2'
       - '🇬🇧[www.v2nodes.com] vless-GB-1... #3'
@@ -3776,13 +3788,12 @@ proxy-groups:
       - '🇬🇧[www.v2nodes.com] vless-GB-1... #7'
       - '🇬🇧[www.v2nodes.com] vless-GB-1... #8'
       - '🇬🇧[www.v2nodes.com] vless-GB-1... #9'
-      - 🇬🇷[www.v2nodes.com] vless-GR-1...
+      - '🏳[www.v2nodes.com] vless- #10'
       - 🇬🇷[www.v2nodes.com] vless-GR-3...
       - 🇭🇰[www.v2nodes.com] vless-HK-1...
       - '🇭🇰[www.v2nodes.com] vless-HK-1... #1'
       - '🇭🇰[www.v2nodes.com] vless-HK-1... #2'
-      - '🇭🇰[www.v2nodes.com] vless-HK-1... #3'
-      - '🏳[www.v2nodes.com] vless- #2'
+      - '🏳[www.v2nodes.com] vless- #11'
       - 🇲🇾[www.v2nodes.com] vless-MY-5...
       - 🇭🇺[www.v2nodes.com] vless-HU-6...
       - 🇮🇩[www.v2nodes.com] vless-ID-1...
@@ -3790,15 +3801,13 @@ proxy-groups:
       - '🇮🇳[www.v2nodes.com] vless-IN-1... #1'
       - '🇮🇳[www.v2nodes.com] vless-IN-1... #2'
       - '🇮🇳[www.v2nodes.com] vless-IN-1... #3'
-      - '🇮🇳[www.v2nodes.com] vless-IN-1... #4'
-      - '🇮🇷 伊朗 | IRN #1'
+      - 🇮🇷[www.v2nodes.com] vless-IR-1...
+      - '🏳[www.v2nodes.com] vless- #12'
       - '🇮🇷[www.v2nodes.com] vless-IR-1... #1'
-      - '🏳[www.v2nodes.com] vless- #3'
-      - '🇮🇷[www.v2nodes.com] vless-IR-1... #2'
       - 🇮🇹[www.v2nodes.com] vless-IT-1...
+      - '🏳[www.v2nodes.com] vless- #13'
       - '🇮🇹[www.v2nodes.com] vless-IT-1... #1'
       - '🇮🇹[www.v2nodes.com] vless-IT-1... #2'
-      - '🇮🇹[www.v2nodes.com] vless-IT-1... #3'
       - 🇮🇹[www.v2nodes.com] vless-IT-7...
       - 🇯🇵[www.v2nodes.com] vless-JP-1...
       - '🇯🇵[www.v2nodes.com] vless-JP-1... #1'
@@ -3806,10 +3815,10 @@ proxy-groups:
       - '🇯🇵[www.v2nodes.com] vless-JP-1... #3'
       - '🇯🇵[www.v2nodes.com] vless-JP-1... #4'
       - '🇯🇵[www.v2nodes.com] vless-JP-1... #5'
-      - '🏳[www.v2nodes.com] vless- #4'
-      - '🇸🇬[www.v2nodes.com] vless-SG #1'
+      - '🇸🇬[www.v2nodes.com] vless-SG #2'
       - 🇯🇵[www.v2nodes.com] vless-JP-7...
-      - '🏳[www.v2nodes.com] vless- #5'
+      - '🏳[www.v2nodes.com] vless- #14'
+      - 🇯🇵[www.v2nodes.com] vless-JP-4...
       - 🇰🇷[www.v2nodes.com] vless-KR-1...
       - '🇰🇷[www.v2nodes.com] vless-KR-1... #1'
       - '🇰🇷[www.v2nodes.com] vless-KR-1... #2'
@@ -3818,40 +3827,36 @@ proxy-groups:
       - '🇰🇿[www.v2nodes.com] vless-KZ-1... #1'
       - '🇰🇿[www.v2nodes.com] vless-KZ-1... #2'
       - '🇰🇿[www.v2nodes.com] vless-KZ-1... #3'
-      - '🏳[www.v2nodes.com] vless- #6'
       - 🇱🇰[www.v2nodes.com] vless-LK-6...
       - 🇱🇺[www.v2nodes.com] vless-LU-1...
       - 🇱🇻[www.v2nodes.com] vless-LV-1...
       - '🇱🇻[www.v2nodes.com] vless-LV-1... #1'
-      - 🇲🇩[www.v2nodes.com] vless-MD-1...
       - 🇲🇩[www.v2nodes.com] vless-MD-4...
       - '🇲🇽[www.v2nodes.com] vless-MX-1... #1'
       - 🇲🇾[www.v2nodes.com] vless-MY-1...
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #2'
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #11'
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #3'
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #5'
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #8'
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #9'
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #10'
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #12'
+      - 🇳🇱[www.v2nodes.com] vless-NL-1...
+      - '🇳🇱 荷兰 | NLD #1'
+      - '🇳🇱[www.v2nodes.com] vless-NL-1... #4'
       - '🇳🇱[www.v2nodes.com] vless-NL-1... #13'
+      - '🇳🇱[www.v2nodes.com] vless-NL-1... #5'
+      - '🇳🇱[www.v2nodes.com] vless-NL-1... #7'
+      - '🇳🇱[www.v2nodes.com] vless-NL-1... #10'
+      - '🇳🇱[www.v2nodes.com] vless-NL-1... #11'
+      - '🇳🇱[www.v2nodes.com] vless-NL-1... #12'
       - '🇳🇱[www.v2nodes.com] vless-NL-1... #14'
       - '🇳🇱[www.v2nodes.com] vless-NL-1... #15'
       - '🇳🇱[www.v2nodes.com] vless-NL-1... #16'
+      - '🏳[www.v2nodes.com] vless- #16'
       - '🇳🇱[www.v2nodes.com] vless-NL-1... #17'
-      - '🏳[www.v2nodes.com] vless- #7'
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #18'
-      - '🇳🇱[www.v2nodes.com] vless-NL-1... #19'
+      - '🏳[www.v2nodes.com] vless- #17'
       - 🇵🇱[www.v2nodes.com] vless-PL-1...
       - '🇵🇱[www.v2nodes.com] vless-PL-1... #1'
       - '🇵🇱[www.v2nodes.com] vless-PL-1... #2'
+      - '🏳[www.v2nodes.com] vless- #18'
       - '🇵🇱[www.v2nodes.com] vless-PL-1... #3'
       - '🇵🇱[www.v2nodes.com] vless-PL-1... #4'
       - '🇵🇱[www.v2nodes.com] vless-PL-1... #5'
       - '🇵🇱[www.v2nodes.com] vless-PL-1... #6'
-      - '🇵🇱[www.v2nodes.com] vless-PL-1... #7'
-      - '🇵🇱[www.v2nodes.com] vless-PL-1... #8'
       - 🇷🇴[www.v2nodes.com] vless-RO-1...
       - '🇷🇴[www.v2nodes.com] vless-RO-1... #1'
       - '🇷🇴[www.v2nodes.com] vless-RO-1... #2'
@@ -3859,9 +3864,10 @@ proxy-groups:
       - '🇷🇺[www.v2nodes.com] vless-RU-1... #1'
       - '🇷🇺[www.v2nodes.com] vless-RU-1... #2'
       - '🇷🇺[www.v2nodes.com] vless-RU-1... #3'
+      - '🏳[www.v2nodes.com] vless- #19'
       - '🇷🇺[www.v2nodes.com] vless-RU-1... #4'
       - '🇷🇺[www.v2nodes.com] vless-RU-1... #5'
-      - '🏳[www.v2nodes.com] vless- #8'
+      - '🏳[www.v2nodes.com] vless- #20'
       - 🇸🇪[www.v2nodes.com] vless-SE-1...
       - '🇸🇪[www.v2nodes.com] vless-SE-1... #1'
       - '🇸🇪[www.v2nodes.com] vless-SE-1... #2'
@@ -3869,9 +3875,9 @@ proxy-groups:
       - '🇸🇪[www.v2nodes.com] vless-SE-1... #4'
       - '🇸🇪[www.v2nodes.com] vless-SE-1... #5'
       - 🇸🇬[www.v2nodes.com] vless-SG-1...
+      - '🏳[www.v2nodes.com] vless- #22'
       - '🇸🇬[www.v2nodes.com] vless-SG-1... #1'
       - '🇸🇬[www.v2nodes.com] vless-SG-1... #2'
-      - '🏳[www.v2nodes.com] vless- #10'
       - '🇸🇬[www.v2nodes.com] vless-SG-1... #3'
       - '🇸🇬[www.v2nodes.com] vless-SG-1... #4'
       - '🇸🇬[www.v2nodes.com] vless-SG-1... #5'
@@ -3881,68 +3887,65 @@ proxy-groups:
       - '🇸🇬[www.v2nodes.com] vless-SG-1... #8'
       - '🇸🇬[www.v2nodes.com] vless-SG-1... #9'
       - 🇸🇬[www.v2nodes.com] vless-SG-9...
-      - '🇸🇬[www.v2nodes.com] vless-SG-9... #1'
+      - '🇸🇬 新加坡 | SGP #2'
       - 🇹🇭[www.v2nodes.com] vless-TH-1...
-      - '🏳[www.v2nodes.com] vless- #11'
       - '🇹🇷[www.v2nodes.com] vless-TR-1... #1'
       - '🇹🇷[www.v2nodes.com] vless-TR-1... #2'
       - '🇹🇷[www.v2nodes.com] vless-TR-1... #3'
       - '🇹🇷[www.v2nodes.com] vless-TR-1... #4'
       - 🇹🇼[www.v2nodes.com] vless-TW-1...
       - '🇹🇼[www.v2nodes.com] vless-TW-1... #1'
-      - '🇺🇦[www.v2nodes.com] vless-UA-1... #3'
+      - '🇺🇦[www.v2nodes.com] vless-UA-1... #4'
       - '🇺🇦[www.v2nodes.com] vless-UA-1... #1'
+      - '🇺🇦[www.v2nodes.com] vless-UA-1... #2'
       - '🇺🇸[www.v2nodes.com] vless-US-1... #7'
-      - '🇺🇸[www.v2nodes.com] vless-US-1... #10'
+      - '🇺🇸[www.v2nodes.com] vless-US-1... #1'
       - '🇺🇸[www.v2nodes.com] vless-US-1... #2'
       - '🇺🇸[www.v2nodes.com] vless-US-1... #3'
       - '🇺🇸[www.v2nodes.com] vless-US-1... #4'
       - '🇺🇸[www.v2nodes.com] vless-US-1... #5'
+      - '🇺🇸[www.v2nodes.com] vless-US-1... #9'
       - '🇺🇸[www.v2nodes.com] vless-US-1... #11'
-      - 🇻🇳[www.v2nodes.com] vless-VN-1...
-      - '🇻🇳[www.v2nodes.com] vless-VN-1... #1'
+      - '🏳[www.v2nodes.com] vless- #24'
       - 🇿🇦[www.v2nodes.com] vless-ZA-1...
       - 🇦🇺[www.v2nodes.com] trojan-AU-...
       - 🇧🇷[www.v2nodes.com] trojan-BR-...
-      - '🇨🇦[www.v2nodes.com] trojan-CA-... #4'
-      - '🇨🇦[www.v2nodes.com] trojan-CA-... #1'
+      - '🇨🇦[www.v2nodes.com] trojan-CA-... #5'
+      - '🇨🇦[www.v2nodes.com] trojan-CA-... #2'
       - '🇨🇦[www.v2nodes.com] trojan-CA-... #6'
       - '🇨🇭[www.v2nodes.com] trojan-CH-... #4'
       - 🇨🇱[www.v2nodes.com] trojan-CL-...
       - 🇩🇪[www.v2nodes.com] trojan-DE-...
       - '🇩🇪[www.v2nodes.com] trojan-DE-... #1'
-      - '🇩🇪[www.v2nodes.com] trojan-DE-... #2'
       - '🇩🇪[www.v2nodes.com] trojan-DE-... #3'
-      - '🇪🇸[www.v2nodes.com] trojan-ES-... #4'
+      - '🇪🇸[www.v2nodes.com] trojan-ES-... #3'
       - '🇪🇸[www.v2nodes.com] trojan-ES-... #1'
       - '🇪🇸[www.v2nodes.com] trojan-ES-... #2'
-      - '🇪🇸[www.v2nodes.com] trojan-ES-... #3'
       - 🇫🇷[www.v2nodes.com] trojan-FR-...
-      - '🇫🇷[www.v2nodes.com] trojan-FR-... #7'
+      - '🇫🇷[www.v2nodes.com] trojan-FR-... #1'
       - '🇫🇷[www.v2nodes.com] trojan-FR-... #2'
       - '🇫🇷[www.v2nodes.com] trojan-FR-... #3'
       - '🇫🇷[www.v2nodes.com] trojan-FR-... #4'
       - '🇫🇷[www.v2nodes.com] trojan-FR-... #5'
-      - '🇫🇷[www.v2nodes.com] trojan-FR-... #6'
+      - '🇫🇷[www.v2nodes.com] trojan-FR-... #7'
       - '🇫🇷[www.v2nodes.com] trojan-FR-... #8'
-      - '🇫🇷[www.v2nodes.com] trojan-FR-... #9'
-      - 🇬🇧[www.v2nodes.com] trojan-GB-...
+      - '🏳[www.v2nodes.com] trojan- #2'
       - 🇮🇱[www.v2nodes.com] trojan-IL-...
       - 🇮🇳[www.v2nodes.com] trojan-IN-...
       - 🇯🇵[www.v2nodes.com] trojan-JP-...
       - '🇯🇵[www.v2nodes.com] trojan-JP-... #1'
       - '🇯🇵[www.v2nodes.com] trojan-JP-... #2'
       - 🇲🇾[www.v2nodes.com] trojan-MY-...
+      - '🏳[www.v2nodes.com] trojan- #3'
       - 🇵🇱[www.v2nodes.com] trojan-PL-...
       - 🇸🇬[www.v2nodes.com] trojan-SG-...
       - '🇸🇬[www.v2nodes.com] trojan-SG-... #1'
-      - '🇺🇸[www.v2nodes.com] trojan-US-... #8'
+      - '🇺🇸[www.v2nodes.com] trojan-US-... #6'
       - '🇺🇸[www.v2nodes.com] trojan-US-... #1'
       - '🇺🇸[www.v2nodes.com] trojan-US-... #2'
       - '🇺🇸[www.v2nodes.com] trojan-US-... #3'
-      - '🇺🇸[www.v2nodes.com] trojan-US-... #4'
-      - '🇺🇸[www.v2nodes.com] trojan-US-... #9'
-      - '🇺🇸[www.v2nodes.com] trojan-US-... #10'
+      - '🇺🇸[www.v2nodes.com] trojan-US-... #7'
+      - '🇺🇸[www.v2nodes.com] trojan-US-... #8'
       - 🇭🇰 香港|@ripaojiedian
       - 🇭🇰 香港3|@ripaojiedian
       - 🇭🇰 香港2|@ripaojiedian
@@ -3966,48 +3969,57 @@ proxy-groups:
       - 美国2|@ripaojiedian
       - 台湾|@ripaojiedian
       - 韩国|@ripaojiedian
-      - '🇦🇹 奥地利 | AUT #1'
-      - '🇯🇵 日本 | JPN #2'
-      - '🇰🇷 韩国 | KOR #2'
-      - '🇸🇬 新加坡 | SGP #2'
-      - '🇹🇼 🇨🇳 台湾 | TWN #1'
+      - '🇭🇰 香港 | HKG #3'
+      - '🇸🇬 新加坡 | SGP #1'
       - '🇹🇼 🇨🇳 台湾 | TWN #2'
-      - '🇹🇼 🇨🇳 台湾 | TWN #3'
-      - '🇺🇸 美国 | USA #1'
-      - '🇦🇱 AL_22 #1'
-      - '🇨🇳 CN_147 #1'
+      - 🇫🇷FR_3|2.0MB/s
+      - 🇸🇬SG_2|1006KB/s
+      - 🇺🇸US_18|3.2MB/s
+      - 🇺🇸US_20|4.2MB/s
+      - '🇧🇷 巴西 | BRA #1'
+      - '🇨🇭 瑞士 | CHE #1'
       - '🇩🇪 德国 | DEU #1'
-      - '🇩🇪 德国 | DEU #2'
+      - 🇩🇪 德国 | DEU 2
       - '🇩🇪 德国 | DEU #3'
       - '🇩🇪 德国 | DEU #4'
-      - '🇪🇪 爱沙尼亚 | EST #1'
-      - '🇪🇸 西班牙 | ESP #1'
-      - '🇪🇸 西班牙 | ESP #2'
-      - '🇫🇷 法国 | FRA #1'
-      - 🇬🇪 GE_43
+      - '🇩🇪 德国 | DEU #5'
+      - '🇩🇪 德国 | DEU #6'
+      - '🇩🇪 德国 | DEU #7'
+      - '🇬🇪 GE_46 #1'
       - '🇭🇰 香港 | HKG #1'
       - '🇭🇰 香港 | HKG #2'
-      - '🇭🇰 香港 | HKG #3'
       - '🇭🇰 香港 | HKG #4'
+      - '🇭🇰 香港 | HKG #5'
+      - '🇭🇰 香港 | HKG #6'
+      - '🇭🇰 香港 | HKG #7'
+      - '🇭🇰 香港 | HKG #8'
       - 🇯🇵 日本 | JPN
+      - '🇯🇵 日本 | JPN #2'
       - '🇯🇵 日本 | JPN #3'
       - '🇯🇵 日本 | JPN #4'
+      - '🇱🇻 拉脱维亚 | LVA #1'
+      - 🇳🇱 荷兰 | NLD 2
+      - '🇳🇱 荷兰 | NLD #3'
+      - '🇷🇺 俄罗斯 | RUS #1'
+      - '🇷🇺 俄罗斯 | RUS #2'
       - '🇸🇪 瑞典 | SWE #1'
-      - '🇸🇪 瑞典 | SWE #2'
-      - '🇸🇪 瑞典 | SWE #3'
-      - 🇸🇬 新加坡 | SGP
-      - '🇸🇬 新加坡 | SGP #3'
+      - '🇸🇬 新加坡 | SGP #4'
+      - '🇸🇬 新加坡 | SGP #5'
+      - '🇹🇷 土耳其 | TUR #1'
+      - '🇹🇼 🇨🇳 台湾 | TWN #1'
+      - '🇺🇸 美国 | USA #1'
       - '🇺🇸 美国 | USA #2'
       - '🇺🇸 美国 | USA #3'
       - '🇺🇸 美国 | USA #4'
       - '🇺🇸 美国 | USA #5'
       - '🇺🇸 美国 | USA #6'
-      - '🇺🇸 美国 | USA #8'
+      - '🇺🇸 美国 | USA #7'
       - '🇺🇸 美国 | USA #9'
-      - '🇺🇸 美国 | USA #11'
+      - '🇺🇸 美国 | USA #12'
       - '🇺🇸 美国 | USA #13'
-      - '🇺🇸 美国 | USA #14'
+      - '🇺🇸 美国 | USA #15'
       - '🇺🇸 美国 | USA #16'
+      - '🇺🇸 美国 | USA #17'
       - '🇺🇸 美国 | USA #18'
       - AT_speednode_0001
       - AT_speednode_0002
@@ -4027,13 +4039,10 @@ proxy-groups:
       - TR_speednode_0038
       - US_speednode_0042
       - US_speednode_0043
-      - 英国+伦敦DigitalOcean数据中心
+      - 广东省广州市+华为云
       - 美国+CloudFlare节点
-      - 乌克兰+V2CROSS.COM
       - 美国+CloudFlare节点 [1]
       - 美国+CloudFlare节点 [2]
-      - 美国+CloudFlare节点 [3]
-      - 美国+CloudFlare节点 [4]
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
