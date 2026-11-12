@@ -1989,14 +1989,57 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: 🇦🇺AU_1|1.3MB/s
+  - name: '🇺🇸 美国 | USA #4'
     type: vless
-    server: zfapi.zalolink.com
-    port: 54528
-    uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+    server: 200.102.179.69
+    port: 443
+    uuid: 7592ca5c-b352-4562-8856-a9c936a3331b
+    tls: true
+    network: tcp
+  - name: 🇱🇻LV_1|3.0MB/s
+    type: vless
+    server: n1.topingr.ir
+    port: 443
+    uuid: 84be02cf-c5c5-4b33-ba26-31b5f8320033
+    tls: true
+    network: ws
+    ws-opts:
+      path: /api/v3/pulsefp=chrome
+      headers:
+        Host: cdn2.zovip2.ir
+  - name: 🇩🇪DE_1|2.0MB/s
+    type: vless
+    server: ir.li6nk.ir
+    port: 1001
+    uuid: 7b24b15b-4f09-4ace-867b-dcd2f5a08c4d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: filimo.com
+  - name: 🇪🇸ES_1|2.2MB/s
+    type: vless
+    server: 9.247.174.134
+    port: 8443
+    uuid: 585a421d-d782-4420-912e-dd58ff5966d7
+    tls: true
+    network: tcp
+  - name: 🇰🇷KR_2|1.4MB/s
+    type: vless
+    server: 3.35.47.150
+    port: 2087
+    uuid: bf5129f1-31f5-4edf-a07a-27ec31b26c1d
     tls: true
     network: tcp
     flow: xtls-rprx-vision-udp443
+  - name: 🇳🇱NL_12|1.8MB/s
+    type: vless
+    server: 196.196.148.85
+    port: 443
+    uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+    tls: true
+    network: tcp
   - name: '🇧🇬 保加利亚 | BGR #1'
     type: vless
     server: earlytrain.net
@@ -2160,13 +2203,6 @@ proxies:
     tls: true
     network: tcp
     flow: xtls-rprx-vision
-  - name: '🇺🇸 美国 | USA #4'
-    type: vless
-    server: 200.102.179.69
-    port: 443
-    uuid: 7592ca5c-b352-4562-8856-a9c936a3331b
-    tls: true
-    network: tcp
   - name: AT_speednode_0001
     type: vless
     server: au2.pad-sservice.lat
@@ -2321,21 +2357,17 @@ proxies:
     uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
     tls: true
     network: tcp
-  - name: 北京市+惟译天创信息技术有限公司
+  - name: 美国+Amazon+EC2服务器
     type: vless
-    server: jp.sofast.live
-    port: 52683
-    uuid: 399b6b23-cc40-4831-a494-61948e2df133
-    tls: false
-    network: tcp
-  - name: 塞舌尔+V2CROSS.COM
-    type: vless
-    server: 196.199.122.2
+    server: 3.169.9.125
     port: 443
-    uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-    tls: false
-    network: tcp
-    flow: xtls-rprx-vision
+    uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: d14jyezfrcyf60.cloudfront.net
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -2585,7 +2617,12 @@ proxy-groups:
       - 美国4|@ripaojiedian
       - 德国|@ripaojiedian
       - 德国2|@ripaojiedian
-      - 🇦🇺AU_1|1.3MB/s
+      - '🇺🇸 美国 | USA #4'
+      - 🇱🇻LV_1|3.0MB/s
+      - 🇩🇪DE_1|2.0MB/s
+      - 🇪🇸ES_1|2.2MB/s
+      - 🇰🇷KR_2|1.4MB/s
+      - 🇳🇱NL_12|1.8MB/s
       - '🇧🇬 保加利亚 | BGR #1'
       - '🇩🇪 德国 | DEU #3'
       - '🇩🇪 德国 | DEU #4'
@@ -2605,7 +2642,6 @@ proxy-groups:
       - 🇷🇺 俄罗斯 | RUS 3
       - '🇹🇼 🇨🇳 台湾 | TWN #1'
       - '🇺🇸 美国 | USA #3'
-      - '🇺🇸 美国 | USA #4'
       - AT_speednode_0001
       - AT_speednode_0002
       - BR_speednode_0003
@@ -2624,8 +2660,7 @@ proxy-groups:
       - TR_speednode_0038
       - US_speednode_0042
       - US_speednode_0043
-      - 北京市+惟译天创信息技术有限公司
-      - 塞舌尔+V2CROSS.COM
+      - 美国+Amazon+EC2服务器
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -2871,7 +2906,12 @@ proxy-groups:
       - 美国4|@ripaojiedian
       - 德国|@ripaojiedian
       - 德国2|@ripaojiedian
-      - 🇦🇺AU_1|1.3MB/s
+      - '🇺🇸 美国 | USA #4'
+      - 🇱🇻LV_1|3.0MB/s
+      - 🇩🇪DE_1|2.0MB/s
+      - 🇪🇸ES_1|2.2MB/s
+      - 🇰🇷KR_2|1.4MB/s
+      - 🇳🇱NL_12|1.8MB/s
       - '🇧🇬 保加利亚 | BGR #1'
       - '🇩🇪 德国 | DEU #3'
       - '🇩🇪 德国 | DEU #4'
@@ -2891,7 +2931,6 @@ proxy-groups:
       - 🇷🇺 俄罗斯 | RUS 3
       - '🇹🇼 🇨🇳 台湾 | TWN #1'
       - '🇺🇸 美国 | USA #3'
-      - '🇺🇸 美国 | USA #4'
       - AT_speednode_0001
       - AT_speednode_0002
       - BR_speednode_0003
@@ -2910,8 +2949,7 @@ proxy-groups:
       - TR_speednode_0038
       - US_speednode_0042
       - US_speednode_0043
-      - 北京市+惟译天创信息技术有限公司
-      - 塞舌尔+V2CROSS.COM
+      - 美国+Amazon+EC2服务器
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🔰 故障转移
@@ -3159,7 +3197,12 @@ proxy-groups:
       - 美国4|@ripaojiedian
       - 德国|@ripaojiedian
       - 德国2|@ripaojiedian
-      - 🇦🇺AU_1|1.3MB/s
+      - '🇺🇸 美国 | USA #4'
+      - 🇱🇻LV_1|3.0MB/s
+      - 🇩🇪DE_1|2.0MB/s
+      - 🇪🇸ES_1|2.2MB/s
+      - 🇰🇷KR_2|1.4MB/s
+      - 🇳🇱NL_12|1.8MB/s
       - '🇧🇬 保加利亚 | BGR #1'
       - '🇩🇪 德国 | DEU #3'
       - '🇩🇪 德国 | DEU #4'
@@ -3179,7 +3222,6 @@ proxy-groups:
       - 🇷🇺 俄罗斯 | RUS 3
       - '🇹🇼 🇨🇳 台湾 | TWN #1'
       - '🇺🇸 美国 | USA #3'
-      - '🇺🇸 美国 | USA #4'
       - AT_speednode_0001
       - AT_speednode_0002
       - BR_speednode_0003
@@ -3198,8 +3240,7 @@ proxy-groups:
       - TR_speednode_0038
       - US_speednode_0042
       - US_speednode_0043
-      - 北京市+惟译天创信息技术有限公司
-      - 塞舌尔+V2CROSS.COM
+      - 美国+Amazon+EC2服务器
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
